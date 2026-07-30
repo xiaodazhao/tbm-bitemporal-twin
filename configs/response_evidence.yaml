@@ -1,0 +1,31 @@
+method_version: response_evidence_v1
+features:
+  - advance_speed
+  - total_thrust
+  - cutterhead_torque
+  - cutterhead_rpm
+  - penetration
+statistics:
+  - count
+  - valid_count
+  - missing_rate
+  - mean
+  - median
+  - standard_deviation
+  - p10
+  - p90
+  - minimum
+  - maximum
+  - coefficient_of_variation
+quality:
+  min_core_observation_count: 5
+  max_missing_rate_for_a: 0.2
+  max_missing_rate_for_b: 0.5
+  min_temporal_coverage_for_a: 0.8
+  advance_related_features:
+    - advance_speed
+    - penetration
+baseline:
+  method: GLOBAL_ROBUST_BASELINE
+  robust_z_near_threshold: 1.5
+  robust_z_strong_threshold: 3.0

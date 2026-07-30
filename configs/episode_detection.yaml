@@ -1,0 +1,28 @@
+phase_rules:
+  speed_eps: 1.0e-9
+  thrust_eps: 1.0e-9
+  torque_eps: 1.0e-9
+  rpm_eps: 1.0e-9
+  large_gap_factor: 5.0
+  minimum_large_gap_seconds: 300.0
+  set_speed_relative_tolerance: 0.2
+episode_builder:
+  max_short_idle_seconds: 120.0
+  max_edge_phase_seconds: 180.0
+  min_core_observation_count_for_a: 3
+  min_core_duration_seconds_for_a: 1.0
+  min_temporal_coverage_ratio_for_a: 0.8
+  chainage_reverse_tolerance_m: 0.01
+  chainage_jump_threshold_m: 5.0
+diagnostics:
+  small_reverse_tolerance_m: 0.01
+  large_reverse_threshold_m: 0.5
+  large_jump_threshold_m: 5.0
+  support_conflict_tolerance_m: 2.0
+  zero_advance_threshold_m: 0.01
+  rapid_phase_flip_seconds: 60.0
+  short_episode_seconds: 120.0
+  implausible_advance_m: 100.0
+episode_evaluation:
+  minimum_iou_for_match: 0.5
+  boundary_tolerance_seconds: 60.0

@@ -1,0 +1,127 @@
+catalog_version: plc_channels_v1
+timezone:
+  source_timezone: Asia/Shanghai
+  canonical_timezone: UTC
+  timezone_confidence: ASSUMED
+  timezone_basis: PROJECT_LOCATION_ASSUMPTION
+channels:
+  - canonical_name: timestamp
+    aliases: ["运行时间-time", "timestamp", "time", "datetime", "date_time", "采集时间"]
+    physical_quantity: time
+    unit: null
+    unit_verified: true
+    usage_level: PRIMARY
+    required: true
+    valid_min: null
+    valid_max: null
+    description: Time at which the PLC observation was recorded.
+  - canonical_name: shield_head_chainage
+    aliases: ["chainage", "当前里程", "导向盾首里程", "盾首里程", "里程"]
+    physical_quantity: position
+    unit: m
+    unit_verified: false
+    usage_level: PRIMARY
+    required: true
+    valid_min: null
+    valid_max: null
+    description: Primary absolute position anchor, subject to quality checks.
+  - canonical_name: daily_advance
+    aliases: ["日进尺", "daily_advance", "当日进尺"]
+    physical_quantity: length
+    unit: null
+    unit_verified: false
+    usage_level: SUPPORTING
+    required: false
+    valid_min: 0
+    valid_max: null
+    description: Daily advance indicator used only for consistency checks.
+  - canonical_name: cumulative_advance
+    aliases: ["开累进尺", "累计进尺", "cumulative_advance", "total_advance"]
+    physical_quantity: length
+    unit: null
+    unit_verified: false
+    usage_level: SUPPORTING
+    required: false
+    valid_min: 0
+    valid_max: null
+    description: Cumulative advance indicator used only for consistency checks.
+  - canonical_name: cylinder_displacement
+    aliases: ["油缸行程", "推进油缸行程", "cylinder_displacement", "cylinder stroke"]
+    physical_quantity: displacement
+    unit: null
+    unit_verified: false
+    usage_level: SUPPORTING
+    required: false
+    valid_min: null
+    valid_max: null
+    description: Cylinder displacement used only as supporting motion evidence.
+  - canonical_name: excavation_state
+    aliases: ["掘进状态", "施工状态", "state", "excavation_state"]
+    physical_quantity: state
+    unit: null
+    unit_verified: true
+    usage_level: PRIMARY
+    required: false
+    valid_min: null
+    valid_max: null
+    description: Raw machine state code or label.
+  - canonical_name: advance_speed
+    aliases: ["推进速度", "advance_speed", "speed", "actual_speed"]
+    physical_quantity: speed
+    unit: null
+    unit_verified: false
+    usage_level: PRIMARY
+    required: false
+    valid_min: 0
+    valid_max: null
+    description: Actual advance speed; unit must be confirmed before physical use.
+  - canonical_name: set_advance_speed
+    aliases: ["推进给定速度", "给定速度", "target_speed", "set_speed", "set_advance_speed"]
+    physical_quantity: speed
+    unit: null
+    unit_verified: false
+    usage_level: SUPPORTING
+    required: false
+    valid_min: 0
+    valid_max: null
+    description: Set advance speed from PLC.
+  - canonical_name: total_thrust
+    aliases: ["推力", "总推力", "thrust", "total_thrust"]
+    physical_quantity: force
+    unit: null
+    unit_verified: false
+    usage_level: PRIMARY
+    required: false
+    valid_min: 0
+    valid_max: null
+    description: Total thrust; unit must be confirmed before physical use.
+  - canonical_name: cutterhead_torque
+    aliases: ["刀盘扭矩", "扭矩", "cutter_torque", "torque", "cutterhead_torque"]
+    physical_quantity: torque
+    unit: null
+    unit_verified: false
+    usage_level: PRIMARY
+    required: false
+    valid_min: 0
+    valid_max: null
+    description: Cutterhead torque; unit must be confirmed before physical use.
+  - canonical_name: cutterhead_rpm
+    aliases: ["刀盘实际转速", "刀盘转速", "转速", "cutter_rpm", "rpm", "cutterhead_rpm"]
+    physical_quantity: rotation_rate
+    unit: null
+    unit_verified: false
+    usage_level: PRIMARY
+    required: false
+    valid_min: 0
+    valid_max: null
+    description: Cutterhead rotation signal.
+  - canonical_name: penetration
+    aliases: ["贯入度", "penetration"]
+    physical_quantity: penetration
+    unit: null
+    unit_verified: false
+    usage_level: SUPPORTING
+    required: false
+    valid_min: 0
+    valid_max: null
+    description: Penetration signal with unverified unit.

@@ -1,0 +1,57 @@
+{
+  "source_type": "SONIC_FORECAST",
+  "document_metadata": {
+    "observed_local_date": "2023-09-13",
+    "document_local_date": "2023-09-14",
+    "submitted_local_date": "2023-09-14",
+    "available_local_date": "2023-09-14",
+    "available_basis": "submitted_time",
+    "face_chainage": 1013190.2,
+    "document_scope": [1013190.2, 1013290.2]
+  },
+  "primary_evidence_count": 5,
+  "face_observation": {
+    "type": "FACE_OBSERVATION",
+    "epistemic_status": "OBSERVED",
+    "expected_attributes": {
+      "lithology": "板岩夹变质砂岩",
+      "weathering": "弱风化",
+      "rock_mass_state": "岩体破碎"
+    }
+  },
+  "forecast_segments": [
+    {
+      "range": [1013190.2, 1013224.0],
+      "type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "anomaly_level": "NONE",
+      "suggested_grade": "Ⅴ级"
+    },
+    {
+      "range": [1013224.0, 1013238.0],
+      "type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "anomaly_level": "MODERATE",
+      "suggested_grade": "Ⅴ级",
+      "risk_points": [1013224.0, 1013232.0]
+    },
+    {
+      "range": [1013238.0, 1013265.0],
+      "type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "anomaly_level": "NONE",
+      "suggested_grade": "Ⅴ级"
+    },
+    {
+      "range": [1013265.0, 1013290.2],
+      "type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "anomaly_level": "HIGH",
+      "suggested_grade": "Ⅴ级",
+      "risk_points": [1013265.0, 1013273.0, 1013282.0]
+    }
+  ],
+  "must_include_source_pages": [10],
+  "must_include_source_cell_text": ["DyK1013+190.2", "该段未见", "里程+224", "Ⅴ级围岩"],
+  "report_assertions": []
+}

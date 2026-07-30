@@ -1,0 +1,6 @@
+{
+  "historically_evaluable_geological_evidence_count": 0,
+  "real_data_temporal_applicability_validation": "NOT_EVALUABLE",
+  "detected_future_leakage_count": 0,
+  "interpretation": "No geological evidence has confirmed available_time in the real data; zero future leakage only shows unknown-time evidence was not unconditionally used."
+}

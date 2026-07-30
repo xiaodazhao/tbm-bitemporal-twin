@@ -1,0 +1,323 @@
+{
+  "document": {
+    "document_id": "898eee2c900a3f8cd2555800",
+    "source_pdf_path": "/Users/zhaoxiaoda/Library/CloudStorage/GoogleDrive-xiaodazhao0608@gmail.com/我的云端硬盘/TBM9/HSP/DyK1013+190.20_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1013+190.2～DyK1013+290.2)-20230914.pdf",
+    "source_type": "SONIC_FORECAST",
+    "report_id": "DyK1013+190.20_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1013+190.2～DyK1013+290.2)-20230914",
+    "document_spatial_scope": {
+      "kind": "INTERVAL",
+      "start_chainage": 1013190.2,
+      "end_chainage": 1013290.2,
+      "raw_expression": "DyK1013+190.2～DyK1013+290.2",
+      "basis": "document_forecast_scope"
+    },
+    "face_chainage": 1013190.2,
+    "temporal": {
+      "observed_local_date": "2023-09-13",
+      "documented_local_date": "2023-09-14",
+      "submitted_local_date": "2023-09-14",
+      "available_local_date": "2023-09-14",
+      "available_basis": "SUBMITTED_TIME_PRIORITY"
+    },
+    "source_spans": [
+      {
+        "span_id": "fd3e039758f5e5635cab6d24",
+        "page_number": 10,
+        "extraction_method": "pymupdf_text_layer",
+        "bbox": null,
+        "text_start": 217,
+        "text_end": 312,
+        "raw_text": "开挖面 \n地质概况 \n掌子面地层岩性为石炭二叠系板岩夹变质砂岩，围岩整体弱风化，岩质软\n硬不均，节理裂隙发育，岩体破碎，拱顶节理裂隙发育相对密集，存在掉块现\n象，岩体相对破碎，围岩自稳性差。",
+        "normalized_text": "开挖面地质概况掌子面地层岩性为石炭二叠系板岩夹变质砂岩，围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，拱顶节理裂隙发育相对密集，存在掉块现象，岩体相对破碎，围岩自稳性差。",
+        "source_role": "hsp_face_observation"
+      },
+      {
+        "span_id": "6400f0134e2e49204fb1160f",
+        "page_number": 10,
+        "extraction_method": "pymupdf_text_layer",
+        "bbox": null,
+        "text_start": 373,
+        "text_end": 493,
+        "raw_text": "DyK1013+190.2 \n~ \nDyK1013+224 \n（33.8m） \n该段未见\n明显反射\n异常 \n该段围岩与当前掌子面相当。岩\n性为板岩夹变质砂岩，弱风化，\n岩质软硬不均，节理裂隙发育，\n岩体破碎，围岩整体稳定性差 \n \nⅤ级围岩",
+        "normalized_text": "DyK1013+190.2~DyK1013+224（33.8m）该段未见明显反射异常该段围岩与当前掌子面相当。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，围岩整体稳定性差Ⅴ级围岩",
+        "source_role": "hsp_forecast_table_row"
+      },
+      {
+        "span_id": "13172ef238786c5f3bc539cd",
+        "page_number": 10,
+        "extraction_method": "pymupdf_text_layer",
+        "bbox": null,
+        "text_start": 499,
+        "text_end": 641,
+        "raw_text": "DyK1013+224 \n~ \nDyK1013+238 \n（14m） \n该段存在\n较明显反\n射异常 \n该段围岩较前段变差。岩性为板\n岩夹变质砂岩，弱风化，岩质软\n硬不均，节理裂隙发育密集，岩\n体破碎-极破碎，围岩整体稳定性\n差 \n里程+224、\n+232 附近有\n掉块风险 \nⅤ级围岩",
+        "normalized_text": "DyK1013+224~DyK1013+238（14m）该段存在较明显反射异常该段围岩较前段变差。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育密集，岩体破碎-极破碎，围岩整体稳定性差里程+224、+232附近有掉块风险Ⅴ级围岩",
+        "source_role": "hsp_forecast_table_row"
+      },
+      {
+        "span_id": "7d907320803e2935c78c34bf",
+        "page_number": 10,
+        "extraction_method": "pymupdf_text_layer",
+        "bbox": null,
+        "text_start": 647,
+        "text_end": 762,
+        "raw_text": "DyK1013+238 \n~ \nDyK1013+265 \n（27m） \n该段未见\n明显反射\n异常 \n该段围岩较前段稍有变好。岩性\n为板岩夹变质砂岩，弱风化，岩\n质软硬不均，节理裂隙发育，岩\n体破碎，围岩整体稳定性差 \n \nⅤ级围岩",
+        "normalized_text": "DyK1013+238~DyK1013+265（27m）该段未见明显反射异常该段围岩较前段稍有变好。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，围岩整体稳定性差Ⅴ级围岩",
+        "source_role": "hsp_forecast_table_row"
+      },
+      {
+        "span_id": "29b883cb736a1780eefd9f7a",
+        "page_number": 10,
+        "extraction_method": "pymupdf_text_layer",
+        "bbox": null,
+        "text_start": 769,
+        "text_end": 922,
+        "raw_text": "DyK1013+265 \n~ \nDyK1013+290.2 \n（25.2m） \n该段存在\n明显反射\n异常 \n该段围岩较前段明显变差。岩性\n为板岩夹变质砂岩，弱风化，岩\n质软硬不均，节理裂隙发育密集，\n岩体破碎-极破碎，围岩整体稳定\n性差 \n里程+265、\n+273 、+282\n附近有掉块\n风险 \nⅤ级围岩",
+        "normalized_text": "DyK1013+265~DyK1013+290.2（25.2m）该段存在明显反射异常该段围岩较前段明显变差。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育密集，岩体破碎-极破碎，围岩整体稳定性差里程+265、+273、+282附近有掉块风险Ⅴ级围岩",
+        "source_role": "hsp_forecast_table_row"
+      }
+    ],
+    "template_variant_id": "HSP_TABLE_V1",
+    "parse_warnings": []
+  },
+  "primary_evidence": [
+    {
+      "evidence_id": "6ad5d5bc2a9185dad531af3d",
+      "document_id": "898eee2c900a3f8cd2555800",
+      "evidence_type": "FACE_OBSERVATION",
+      "epistemic_status": "OBSERVED",
+      "spatial_scope": {
+        "kind": "POINT",
+        "start_chainage": 1013190.2,
+        "end_chainage": 1013190.2,
+        "raw_expression": "DyK1013.1902",
+        "basis": "explicit_hsp_face_chainage"
+      },
+      "source_spans": [
+        {
+          "span_id": "fd3e039758f5e5635cab6d24",
+          "page_number": 10,
+          "extraction_method": "pymupdf_text_layer",
+          "bbox": null,
+          "text_start": 217,
+          "text_end": 312,
+          "raw_text": "开挖面 \n地质概况 \n掌子面地层岩性为石炭二叠系板岩夹变质砂岩，围岩整体弱风化，岩质软\n硬不均，节理裂隙发育，岩体破碎，拱顶节理裂隙发育相对密集，存在掉块现\n象，岩体相对破碎，围岩自稳性差。",
+          "normalized_text": "开挖面地质概况掌子面地层岩性为石炭二叠系板岩夹变质砂岩，围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，拱顶节理裂隙发育相对密集，存在掉块现象，岩体相对破碎，围岩自稳性差。",
+          "source_role": "hsp_face_observation"
+        }
+      ],
+      "field_spans": {
+        "face_observation": [
+          "fd3e039758f5e5635cab6d24"
+        ],
+        "face_chainage": [
+          "fd3e039758f5e5635cab6d24"
+        ]
+      },
+      "assembled_text": "开挖面 \n地质概况 \n掌子面地层岩性为石炭二叠系板岩夹变质砂岩，围岩整体弱风化，岩质软\n硬不均，节理裂隙发育，岩体破碎，拱顶节理裂隙发育相对密集，存在掉块现\n象，岩体相对破碎，围岩自稳性差。",
+      "attributes": {
+        "face_geology": "开挖面地质概况掌子面地层岩性为石炭二叠系板岩夹变质砂岩，围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，拱顶节理裂隙发育相对密集，存在掉块现象，岩体相对破碎，围岩自稳性差。"
+      }
+    },
+    {
+      "evidence_id": "abfc3324a994bdfde8873935",
+      "document_id": "898eee2c900a3f8cd2555800",
+      "evidence_type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "spatial_scope": {
+        "kind": "INTERVAL",
+        "start_chainage": 1013190.2,
+        "end_chainage": 1013224.0,
+        "raw_expression": "DyK1013+190.2 \n~ \nDyK1013+224",
+        "basis": "hsp_table_row_range"
+      },
+      "source_spans": [
+        {
+          "span_id": "6400f0134e2e49204fb1160f",
+          "page_number": 10,
+          "extraction_method": "pymupdf_text_layer",
+          "bbox": null,
+          "text_start": 373,
+          "text_end": 493,
+          "raw_text": "DyK1013+190.2 \n~ \nDyK1013+224 \n（33.8m） \n该段未见\n明显反射\n异常 \n该段围岩与当前掌子面相当。岩\n性为板岩夹变质砂岩，弱风化，\n岩质软硬不均，节理裂隙发育，\n岩体破碎，围岩整体稳定性差 \n \nⅤ级围岩",
+          "normalized_text": "DyK1013+190.2~DyK1013+224（33.8m）该段未见明显反射异常该段围岩与当前掌子面相当。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，围岩整体稳定性差Ⅴ级围岩",
+          "source_role": "hsp_forecast_table_row"
+        }
+      ],
+      "field_spans": {
+        "range": [
+          "6400f0134e2e49204fb1160f"
+        ],
+        "anomaly_raw_text": [
+          "6400f0134e2e49204fb1160f"
+        ],
+        "geological_conclusion": [
+          "6400f0134e2e49204fb1160f"
+        ],
+        "risk_hint": [
+          "6400f0134e2e49204fb1160f"
+        ],
+        "suggested_grade": [
+          "6400f0134e2e49204fb1160f"
+        ]
+      },
+      "assembled_text": "DyK1013+190.2 \n~ \nDyK1013+224 \n（33.8m） \n该段未见\n明显反射\n异常 \n该段围岩与当前掌子面相当。岩\n性为板岩夹变质砂岩，弱风化，\n岩质软硬不均，节理裂隙发育，\n岩体破碎，围岩整体稳定性差 \n \nⅤ级围岩",
+      "attributes": {
+        "anomaly_raw_text": "未见明显反射异常",
+        "geological_conclusion": "该段围岩与当前掌子面相当。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，围岩整体稳定性差",
+        "risk_hint": null,
+        "suggested_grade": "Ⅴ级"
+      }
+    },
+    {
+      "evidence_id": "556e1c03c658e75ab2d35a03",
+      "document_id": "898eee2c900a3f8cd2555800",
+      "evidence_type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "spatial_scope": {
+        "kind": "INTERVAL",
+        "start_chainage": 1013224.0,
+        "end_chainage": 1013238.0,
+        "raw_expression": "DyK1013+224 \n~ \nDyK1013+238",
+        "basis": "hsp_table_row_range"
+      },
+      "source_spans": [
+        {
+          "span_id": "13172ef238786c5f3bc539cd",
+          "page_number": 10,
+          "extraction_method": "pymupdf_text_layer",
+          "bbox": null,
+          "text_start": 499,
+          "text_end": 641,
+          "raw_text": "DyK1013+224 \n~ \nDyK1013+238 \n（14m） \n该段存在\n较明显反\n射异常 \n该段围岩较前段变差。岩性为板\n岩夹变质砂岩，弱风化，岩质软\n硬不均，节理裂隙发育密集，岩\n体破碎-极破碎，围岩整体稳定性\n差 \n里程+224、\n+232 附近有\n掉块风险 \nⅤ级围岩",
+          "normalized_text": "DyK1013+224~DyK1013+238（14m）该段存在较明显反射异常该段围岩较前段变差。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育密集，岩体破碎-极破碎，围岩整体稳定性差里程+224、+232附近有掉块风险Ⅴ级围岩",
+          "source_role": "hsp_forecast_table_row"
+        }
+      ],
+      "field_spans": {
+        "range": [
+          "13172ef238786c5f3bc539cd"
+        ],
+        "anomaly_raw_text": [
+          "13172ef238786c5f3bc539cd"
+        ],
+        "geological_conclusion": [
+          "13172ef238786c5f3bc539cd"
+        ],
+        "risk_hint": [
+          "13172ef238786c5f3bc539cd"
+        ],
+        "suggested_grade": [
+          "13172ef238786c5f3bc539cd"
+        ]
+      },
+      "assembled_text": "DyK1013+224 \n~ \nDyK1013+238 \n（14m） \n该段存在\n较明显反\n射异常 \n该段围岩较前段变差。岩性为板\n岩夹变质砂岩，弱风化，岩质软\n硬不均，节理裂隙发育密集，岩\n体破碎-极破碎，围岩整体稳定性\n差 \n里程+224、\n+232 附近有\n掉块风险 \nⅤ级围岩",
+      "attributes": {
+        "anomaly_raw_text": "较明显反射异常",
+        "geological_conclusion": "该段围岩较前段变差。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育密集，岩体破碎-极破碎，围岩整体稳定性差",
+        "risk_hint": "里程1013+224、+232附近有掉块风险",
+        "suggested_grade": "Ⅴ级"
+      }
+    },
+    {
+      "evidence_id": "299510be040a72a9ecfe658e",
+      "document_id": "898eee2c900a3f8cd2555800",
+      "evidence_type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "spatial_scope": {
+        "kind": "INTERVAL",
+        "start_chainage": 1013238.0,
+        "end_chainage": 1013265.0,
+        "raw_expression": "DyK1013+238 \n~ \nDyK1013+265",
+        "basis": "hsp_table_row_range"
+      },
+      "source_spans": [
+        {
+          "span_id": "7d907320803e2935c78c34bf",
+          "page_number": 10,
+          "extraction_method": "pymupdf_text_layer",
+          "bbox": null,
+          "text_start": 647,
+          "text_end": 762,
+          "raw_text": "DyK1013+238 \n~ \nDyK1013+265 \n（27m） \n该段未见\n明显反射\n异常 \n该段围岩较前段稍有变好。岩性\n为板岩夹变质砂岩，弱风化，岩\n质软硬不均，节理裂隙发育，岩\n体破碎，围岩整体稳定性差 \n \nⅤ级围岩",
+          "normalized_text": "DyK1013+238~DyK1013+265（27m）该段未见明显反射异常该段围岩较前段稍有变好。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，围岩整体稳定性差Ⅴ级围岩",
+          "source_role": "hsp_forecast_table_row"
+        }
+      ],
+      "field_spans": {
+        "range": [
+          "7d907320803e2935c78c34bf"
+        ],
+        "anomaly_raw_text": [
+          "7d907320803e2935c78c34bf"
+        ],
+        "geological_conclusion": [
+          "7d907320803e2935c78c34bf"
+        ],
+        "risk_hint": [
+          "7d907320803e2935c78c34bf"
+        ],
+        "suggested_grade": [
+          "7d907320803e2935c78c34bf"
+        ]
+      },
+      "assembled_text": "DyK1013+238 \n~ \nDyK1013+265 \n（27m） \n该段未见\n明显反射\n异常 \n该段围岩较前段稍有变好。岩性\n为板岩夹变质砂岩，弱风化，岩\n质软硬不均，节理裂隙发育，岩\n体破碎，围岩整体稳定性差 \n \nⅤ级围岩",
+      "attributes": {
+        "anomaly_raw_text": "未见明显反射异常",
+        "geological_conclusion": "该段围岩较前段稍有变好。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，围岩整体稳定性差",
+        "risk_hint": null,
+        "suggested_grade": "Ⅴ级"
+      }
+    },
+    {
+      "evidence_id": "542a0dfdd60d572ba1a59495",
+      "document_id": "898eee2c900a3f8cd2555800",
+      "evidence_type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "spatial_scope": {
+        "kind": "INTERVAL",
+        "start_chainage": 1013265.0,
+        "end_chainage": 1013290.2,
+        "raw_expression": "DyK1013+265 \n~ \nDyK1013+290.2",
+        "basis": "hsp_table_row_range"
+      },
+      "source_spans": [
+        {
+          "span_id": "29b883cb736a1780eefd9f7a",
+          "page_number": 10,
+          "extraction_method": "pymupdf_text_layer",
+          "bbox": null,
+          "text_start": 769,
+          "text_end": 922,
+          "raw_text": "DyK1013+265 \n~ \nDyK1013+290.2 \n（25.2m） \n该段存在\n明显反射\n异常 \n该段围岩较前段明显变差。岩性\n为板岩夹变质砂岩，弱风化，岩\n质软硬不均，节理裂隙发育密集，\n岩体破碎-极破碎，围岩整体稳定\n性差 \n里程+265、\n+273 、+282\n附近有掉块\n风险 \nⅤ级围岩",
+          "normalized_text": "DyK1013+265~DyK1013+290.2（25.2m）该段存在明显反射异常该段围岩较前段明显变差。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育密集，岩体破碎-极破碎，围岩整体稳定性差里程+265、+273、+282附近有掉块风险Ⅴ级围岩",
+          "source_role": "hsp_forecast_table_row"
+        }
+      ],
+      "field_spans": {
+        "range": [
+          "29b883cb736a1780eefd9f7a"
+        ],
+        "anomaly_raw_text": [
+          "29b883cb736a1780eefd9f7a"
+        ],
+        "geological_conclusion": [
+          "29b883cb736a1780eefd9f7a"
+        ],
+        "risk_hint": [
+          "29b883cb736a1780eefd9f7a"
+        ],
+        "suggested_grade": [
+          "29b883cb736a1780eefd9f7a"
+        ]
+      },
+      "assembled_text": "DyK1013+265 \n~ \nDyK1013+290.2 \n（25.2m） \n该段存在\n明显反射\n异常 \n该段围岩较前段明显变差。岩性\n为板岩夹变质砂岩，弱风化，岩\n质软硬不均，节理裂隙发育密集，\n岩体破碎-极破碎，围岩整体稳定\n性差 \n里程+265、\n+273 、+282\n附近有掉块\n风险 \nⅤ级围岩",
+      "attributes": {
+        "anomaly_raw_text": "明显反射异常",
+        "geological_conclusion": "该段围岩较前段明显变差。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育密集，岩体破碎-极破碎，围岩整体稳定性差",
+        "risk_hint": "里程1013+265、+273、+282附近有掉块风险",
+        "suggested_grade": "Ⅴ级"
+      }
+    }
+  ],
+  "report_assertions": []
+}

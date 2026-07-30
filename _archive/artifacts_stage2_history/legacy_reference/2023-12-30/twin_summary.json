@@ -1,0 +1,1019 @@
+{
+  "operation_summary": {
+    "schema_version": "operation_context_v1",
+    "data_quality": {
+      "schema_version": "plc_quality_v1",
+      "ok": true,
+      "date": "2023-12-30",
+      "row_count": 4098,
+      "time": {
+        "time_col": "运行时间-time",
+        "valid_time_count": 4098,
+        "duplicate_time_count": 0,
+        "is_monotonic": true,
+        "sample_interval_sec_median": 20.0,
+        "sample_interval_sec_p95": 30.0,
+        "large_gap_count": 0,
+        "large_gap_threshold_sec": 300.0
+      },
+      "chainage": {
+        "chainage_col": "导向盾首里程",
+        "valid_chainage_count": 4098,
+        "start_chainage": 1014601.0,
+        "end_chainage": 1014616.0,
+        "advance_length_m": 15.0,
+        "negative_step_count": 0,
+        "large_jump_count": 0,
+        "large_jump_threshold_m": 10.0,
+        "zero_or_static_ratio": 0.9963387844764462
+      },
+      "missing_rate": {
+        "推进速度": 0.0,
+        "推力": 0.0,
+        "刀盘扭矩": 0.0,
+        "刀盘实际转速": 0.0
+      },
+      "gas_field_diagnostics": {
+        "CH4检测": {
+          "exists": true,
+          "value_type_guess": "concentration",
+          "min": 197.4536,
+          "max": 199.4372,
+          "unique_count": 470,
+          "non_null_count": 4098,
+          "unit_assumption": "% 或报警量，需由数据质量检查识别。",
+          "warning": null
+        },
+        "CO2检测": {
+          "exists": true,
+          "value_type_guess": "concentration",
+          "min": 0.07233796,
+          "max": 0.08499711,
+          "unique_count": 8,
+          "non_null_count": 4098,
+          "unit_assumption": null,
+          "warning": null
+        },
+        "H2S检测": {
+          "exists": true,
+          "value_type_guess": "alarm_flag",
+          "min": 0.0,
+          "max": 0.0,
+          "unique_count": 1,
+          "non_null_count": 4098,
+          "unit_assumption": null,
+          "warning": "该字段疑似报警量，不宜直接按浓度值解释。"
+        },
+        "SO2检测": {
+          "exists": true,
+          "value_type_guess": "concentration",
+          "min": 0.0,
+          "max": 0.7024016,
+          "unique_count": 31,
+          "non_null_count": 4098,
+          "unit_assumption": null,
+          "warning": null
+        },
+        "NO2检测": {
+          "exists": true,
+          "value_type_guess": "alarm_flag",
+          "min": 0.06872106,
+          "max": 0.09042245,
+          "unique_count": 4,
+          "non_null_count": 4098,
+          "unit_assumption": null,
+          "warning": "该字段疑似报警量，不宜直接按浓度值解释。"
+        },
+        "NO检测": {
+          "exists": true,
+          "value_type_guess": "concentration",
+          "min": 0.007233796,
+          "max": 0.04340278,
+          "unique_count": 10,
+          "non_null_count": 4098,
+          "unit_assumption": null,
+          "warning": null
+        }
+      },
+      "warnings": [
+        "H2S检测: 该字段疑似报警量，不宜直接按浓度值解释。",
+        "NO2检测: 该字段疑似报警量，不宜直接按浓度值解释。"
+      ]
+    },
+    "position": {
+      "start_chainage": 1014601.0,
+      "end_chainage": 1014616.0,
+      "start_chainage_dk": "DK1014+601",
+      "end_chainage_dk": "DK1014+616",
+      "advance_length_m": 15.0
+    },
+    "operation_mode_summary": {
+      "dominant_mode": "stop",
+      "dominant_mode_cn": "停机",
+      "work_total_min": 360.1666666666667,
+      "stop_total_min": 1074.0,
+      "transition_total_min": 3.0,
+      "abnormal_total_min": 2.3333333333333335,
+      "work_count": 15,
+      "stop_count": 18,
+      "transition_count": 9,
+      "abnormal_count": 5,
+      "work_ratio": 0.25020261664929955,
+      "stop_ratio": 0.7460923931920805
+    },
+    "key_operation_segments": [
+      {
+        "start": "2023-12-30 00:00:10",
+        "end": "2023-12-30 10:49:10",
+        "operation_mode": "stop",
+        "operation_mode_cn": "停机",
+        "duration_min": 649.3333333333334,
+        "sample_count": 1843,
+        "reason": "longest_stop"
+      },
+      {
+        "start": "2023-12-30 20:34:40",
+        "end": "2023-12-30 21:21:40",
+        "operation_mode": "work",
+        "operation_mode_cn": "稳定掘进",
+        "duration_min": 47.333333333333336,
+        "sample_count": 133,
+        "reason": "longest_work"
+      },
+      {
+        "start": "2023-12-30 20:34:00",
+        "end": "2023-12-30 20:34:20",
+        "operation_mode": "abnormal",
+        "operation_mode_cn": "异常扭矩",
+        "duration_min": 0.6666666666666666,
+        "sample_count": 2,
+        "reason": "abnormal_event"
+      },
+      {
+        "start": "2023-12-30 23:37:30",
+        "end": "2023-12-30 23:37:50",
+        "operation_mode": "abnormal",
+        "operation_mode_cn": "异常扭矩",
+        "duration_min": 0.6666666666666666,
+        "sample_count": 2,
+        "reason": "abnormal_event"
+      },
+      {
+        "start": "2023-12-30 10:49:40",
+        "end": "2023-12-30 10:49:40",
+        "operation_mode": "abnormal",
+        "operation_mode_cn": "异常扭矩",
+        "duration_min": 0.3333333333333333,
+        "sample_count": 1,
+        "reason": "abnormal_event"
+      },
+      {
+        "start": "2023-12-30 13:19:20",
+        "end": "2023-12-30 13:19:20",
+        "operation_mode": "abnormal",
+        "operation_mode_cn": "异常扭矩",
+        "duration_min": 0.3333333333333333,
+        "sample_count": 1,
+        "reason": "abnormal_event"
+      },
+      {
+        "start": "2023-12-30 14:04:20",
+        "end": "2023-12-30 14:04:20",
+        "operation_mode": "abnormal",
+        "operation_mode_cn": "异常扭矩",
+        "duration_min": 0.3333333333333333,
+        "sample_count": 1,
+        "reason": "abnormal_event"
+      },
+      {
+        "start": "2023-12-30 21:22:00",
+        "end": "2023-12-30 22:35:40",
+        "operation_mode": "stop",
+        "operation_mode_cn": "停机",
+        "duration_min": 74.0,
+        "sample_count": 210,
+        "reason": "long_duration"
+      },
+      {
+        "start": "2023-12-30 19:31:20",
+        "end": "2023-12-30 20:33:40",
+        "operation_mode": "stop",
+        "operation_mode_cn": "停机",
+        "duration_min": 62.666666666666664,
+        "sample_count": 178,
+        "reason": "long_duration"
+      },
+      {
+        "start": "2023-12-30 17:50:40",
+        "end": "2023-12-30 18:51:00",
+        "operation_mode": "stop",
+        "operation_mode_cn": "停机",
+        "duration_min": 60.666666666666664,
+        "sample_count": 176,
+        "reason": "long_duration"
+      },
+      {
+        "start": "2023-12-30 22:36:20",
+        "end": "2023-12-30 23:19:30",
+        "operation_mode": "work",
+        "operation_mode_cn": "稳定掘进",
+        "duration_min": 43.5,
+        "sample_count": 122,
+        "reason": "long_duration"
+      },
+      {
+        "start": "2023-12-30 16:01:20",
+        "end": "2023-12-30 16:41:50",
+        "operation_mode": "stop",
+        "operation_mode_cn": "停机",
+        "duration_min": 40.833333333333336,
+        "sample_count": 117,
+        "reason": "long_duration"
+      }
+    ],
+    "short_event_summary": {
+      "short_stop_count": 1,
+      "short_transition_count": 9,
+      "short_work_count": 0,
+      "short_abnormal_count": 5
+    },
+    "routine_stop_summary": {
+      "candidate_row_count": 0,
+      "candidate_ratio": 0.0,
+      "mean_score": null
+    },
+    "warnings": []
+  },
+  "response_summary": {
+    "cell_count": 14,
+    "RAI_available_count": 2,
+    "plc_enhanced_cell_count": 2,
+    "cluster_summary": {
+      "schema_version": "cluster_context_v1",
+      "has_cluster": true,
+      "n_states": 3,
+      "feature_columns": [
+        "推力",
+        "刀盘扭矩",
+        "刀盘实际转速",
+        "推进速度"
+      ],
+      "cluster_quality": {
+        "valid_sample_count": 1020,
+        "cluster_count": 3,
+        "min_cluster_ratio": 0.1784313725490196,
+        "is_stable_enough": true,
+        "warnings": [],
+        "note": "state_id only valid within the current day"
+      },
+      "state_summaries": [
+        {
+          "state_id": 0,
+          "semantic_label": "高负载稳定推进状态",
+          "duration_min": 82.66666666666667,
+          "ratio": 0.05742069923593424,
+          "sample_count": 240,
+          "max_continuous_duration_min": 25.833333333333332,
+          "mean_advance_speed": 45.51202670833333,
+          "mean_thrust": 26231.100749999998,
+          "mean_torque": 4582.562270833334,
+          "mean_rpm": 90.59392654166666,
+          "efficiency_features": {
+            "平均推进给定速度": 35.399640041666665,
+            "单位推进阻力_推力除速度": 576.3553519984573,
+            "单位推进扭矩_扭矩除速度": 100.68903763640175,
+            "速度跟随率": 1.285663508699538
+          }
+        },
+        {
+          "state_id": 1,
+          "semantic_label": "低负载调整状态",
+          "duration_min": 58.333333333333336,
+          "ratio": 0.04051863857374392,
+          "sample_count": 182,
+          "max_continuous_duration_min": 20.0,
+          "mean_advance_speed": 11.987408987912088,
+          "mean_thrust": 17404.196982857142,
+          "mean_torque": 1272.2269214285714,
+          "mean_rpm": 74.4128221978022,
+          "efficiency_features": {
+            "平均推进给定速度": 12.465637263736264,
+            "单位推进阻力_推力除速度": 1451.8730067969025,
+            "单位推进扭矩_扭矩除速度": 106.1302585555566,
+            "速度跟随率": 0.9616361981868679
+          }
+        },
+        {
+          "state_id": 2,
+          "semantic_label": "高负载稳定推进状态",
+          "duration_min": 206.66666666666666,
+          "ratio": 0.14355174808983562,
+          "sample_count": 598,
+          "max_continuous_duration_min": 41.5,
+          "mean_advance_speed": 44.7605762541806,
+          "mean_thrust": 26077.228695652175,
+          "mean_torque": 4752.83674916388,
+          "mean_rpm": 82.1849425083612,
+          "efficiency_features": {
+            "平均推进给定速度": 33.851988545150505,
+            "单位推进阻力_推力除速度": 582.593663785169,
+            "单位推进扭矩_扭矩除速度": 106.18354455471125,
+            "速度跟随率": 1.3222435920488702
+          }
+        }
+      ],
+      "switch_count": 33,
+      "warnings": []
+    }
+  },
+  "plc_response_summary": {
+    "working_sample_cell_count": 2
+  },
+  "geology_summary": {
+    "GRS_available_count": 14
+  },
+  "forward_summary": {
+    "has_forward_evidence": true,
+    "current_chainage": 1014616.0,
+    "lookahead_m": 30.0,
+    "overall_attention_level": "medium",
+    "profile": [
+      {
+        "range_label": "0-10m",
+        "start_chainage": 1014616.0,
+        "end_chainage": 1014626.0,
+        "main_hazards": [
+          "围岩极破碎",
+          "掉块",
+          "裂隙密集",
+          "软硬不均",
+          "明显反射异常"
+        ],
+        "fused_grade": "Ⅳ",
+        "attention_level": "medium",
+        "confidence_score": 0.33623728763912264,
+        "uncertainty_level": "medium",
+        "monitoring_focus": [
+          "重点复核围岩极破碎、掉块、裂隙密集、软硬不均、明显反射异常相关地质迹象",
+          "关注围岩破碎、裂隙发育及局部掉块迹象",
+          "关注多源证据不确定性，必要时结合现场揭示进行核查"
+        ],
+        "support_actions": [
+          "按中等关注区段进行过程跟踪",
+          "关注支护时效，必要时加强超前支护或初期支护参数复核",
+          "对冲突或不确定证据进行人工复核，不将缺证解释为低风险"
+        ],
+        "supporting_cell_ids": [
+          "cell_1014620_1014630"
+        ],
+        "supporting_evidence_ids": [
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_1",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4"
+        ]
+      },
+      {
+        "range_label": "10-20m",
+        "start_chainage": 1014626.0,
+        "end_chainage": 1014636.0,
+        "main_hazards": [
+          "围岩极破碎",
+          "掉块",
+          "裂隙密集",
+          "软硬不均",
+          "明显反射异常"
+        ],
+        "fused_grade": "Ⅳ",
+        "attention_level": "medium",
+        "confidence_score": 0.3384697721301786,
+        "uncertainty_level": "medium",
+        "monitoring_focus": [
+          "重点复核围岩极破碎、掉块、裂隙密集、软硬不均、明显反射异常相关地质迹象",
+          "关注围岩破碎、裂隙发育及局部掉块迹象",
+          "关注多源证据不确定性，必要时结合现场揭示进行核查"
+        ],
+        "support_actions": [
+          "按中等关注区段进行过程跟踪",
+          "关注支护时效，必要时加强超前支护或初期支护参数复核",
+          "对冲突或不确定证据进行人工复核，不将缺证解释为低风险"
+        ],
+        "supporting_cell_ids": [
+          "cell_1014630_1014640"
+        ],
+        "supporting_evidence_ids": [
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4"
+        ]
+      },
+      {
+        "range_label": "20-30m",
+        "start_chainage": 1014636.0,
+        "end_chainage": 1014646.0,
+        "main_hazards": [
+          "围岩极破碎",
+          "明显反射异常",
+          "掉块",
+          "裂隙密集",
+          "围岩破碎"
+        ],
+        "fused_grade": "Ⅳ",
+        "attention_level": "low",
+        "confidence_score": 0.21668702955785712,
+        "uncertainty_level": "high",
+        "monitoring_focus": [
+          "重点复核围岩极破碎、明显反射异常、掉块、裂隙密集、围岩破碎相关地质迹象",
+          "关注围岩破碎、裂隙发育及局部掉块迹象",
+          "关注多源证据不确定性，必要时结合现场揭示进行核查"
+        ],
+        "support_actions": [
+          "保持常规监测并关注证据变化",
+          "关注支护时效，必要时加强超前支护或初期支护参数复核",
+          "对冲突或不确定证据进行人工复核，不将缺证解释为低风险"
+        ],
+        "supporting_cell_ids": [
+          "cell_1014640_1014650"
+        ],
+        "supporting_evidence_ids": [
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4"
+        ]
+      }
+    ],
+    "forward_attention_cells": [
+      {
+        "cell_id": "cell_1014620_1014630",
+        "cell_start": 1014620.0,
+        "cell_end": 1014630.0,
+        "cell_center": 1014625.0,
+        "supporting_evidence_ids": [
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_1",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4"
+        ],
+        "source_trace": [
+          {
+            "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+            "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+            "source_type": "HSP",
+            "evidence_role": "prediction",
+            "evidence_report_role": "daily_review_evidence",
+            "spatial_type": "segment",
+            "start_chainage": 1014562.0,
+            "end_chainage": 1014608.0,
+            "evidence_confidence": null,
+            "evidence_confidence_method": "unavailable",
+            "manual_review_status": null,
+            "source_reliability": 0.9,
+            "source_reliability_method": "source_field",
+            "raw_text_excerpt": "里程范围: DyK1014+562 ~ DyK1014+608 （46m） 物探探测结果: 该段无明 显反射异 常 预报结论: 该段围岩较前段稍变好。岩性为 板岩夹变质砂岩，弱风化，岩质 硬，节理裂隙发育，岩体破碎。 风险提示: 建议围岩等级: Ⅳ级围岩"
+          },
+          {
+            "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_1",
+            "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+            "source_type": "HSP",
+            "evidence_role": "prediction",
+            "evidence_report_role": "daily_review_evidence",
+            "spatial_type": "anomaly_point",
+            "start_chainage": 1014616.0,
+            "end_chainage": 1014616.0,
+            "evidence_confidence": null,
+            "evidence_confidence_method": "unavailable",
+            "manual_review_status": null,
+            "source_reliability": 0.9,
+            "source_reliability_method": "source_field",
+            "raw_text_excerpt": "里程范围: DyK1014+608 ~ DyK1014+641 （33m） 物探探测结果: 该段存在 较强反射 异常 预报结论: 该段围岩较前段变差。岩性为板 岩夹变质砂岩，弱风化，岩质软 硬不均，节理裂隙发育密集，岩 体破碎-极破碎，层间结合度差。 风险提示: 里程+608、 +616、+631 附近有掉块 风险 建议围岩等级: Ⅳ级围岩"
+          },
+          {
+            "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+            "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+            "source_type": "HSP",
+            "evidence_role": "prediction",
+            "evidence_report_role": "daily_review_evidence",
+            "spatial_type": "segment",
+            "start_chainage": 1014608.0,
+            "end_chainage": 1014641.0,
+            "evidence_confidence": null,
+            "evidence_confidence_method": "unavailable",
+            "manual_review_status": null,
+            "source_reliability": 0.9,
+            "source_reliability_method": "source_field",
+            "raw_text_excerpt": "里程范围: DyK1014+608 ~ DyK1014+641 （33m） 物探探测结果: 该段存在 较强反射 异常 预报结论: 该段围岩较前段变差。岩性为板 岩夹变质砂岩，弱风化，岩质软 硬不均，节理裂隙发育密集，岩 体破碎-极破碎，层间结合度差。 风险提示: 里程+608、 +616、+631 附近有掉块 风险 建议围岩等级: Ⅳ级围岩"
+          },
+          {
+            "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_2",
+            "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+            "source_type": "HSP",
+            "evidence_role": "prediction",
+            "evidence_report_role": "forward_attention_evidence",
+            "spatial_type": "anomaly_point",
+            "start_chainage": 1014631.0,
+            "end_chainage": 1014631.0,
+            "evidence_confidence": null,
+            "evidence_confidence_method": "unavailable",
+            "manual_review_status": null,
+            "source_reliability": 0.9,
+            "source_reliability_method": "source_field",
+            "raw_text_excerpt": "里程范围: DyK1014+608 ~ DyK1014+641 （33m） 物探探测结果: 该段存在 较强反射 异常 预报结论: 该段围岩较前段变差。岩性为板 岩夹变质砂岩，弱风化，岩质软 硬不均，节理裂隙发育密集，岩 体破碎-极破碎，层间结合度差。 风险提示: 里程+608、 +616、+631 附近有掉块 风险 建议围岩等级: Ⅳ级围岩"
+          },
+          {
+            "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4",
+            "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+            "source_type": "HSP",
+            "evidence_role": "prediction",
+            "evidence_report_role": "forward_attention_evidence",
+            "spatial_type": "segment",
+            "start_chainage": 1014641.0,
+            "end_chainage": 1014645.0,
+            "evidence_confidence": null,
+            "evidence_confidence_method": "unavailable",
+            "manual_review_status": null,
+            "source_reliability": 0.9,
+            "source_reliability_method": "source_field",
+            "raw_text_excerpt": "里程范围: DyK1014+641 ~ DyK1014+645 （4m） 物探探测结果: 该段无明 显反射异 常 预报结论: 该段围岩较前段稍变好。岩性为 板岩夹变质砂岩，弱风化，岩质 硬，节理裂隙发育，岩体破碎。 风险提示: 建议围岩等级: Ⅳ级围岩"
+          }
+        ],
+        "evidence_overlap_length": 10.0,
+        "evidence_overlap_ratio": 1.0,
+        "max_overlap_ratio": 1.0,
+        "mean_overlap_ratio": 0.2,
+        "total_overlap_length": 10.0,
+        "evidence_count": 5,
+        "evidence_ids": [
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_1",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4"
+        ],
+        "source_type_distribution": {
+          "HSP": 5
+        },
+        "evidence_confidence": null,
+        "evidence_confidence_method": "unavailable",
+        "trace_completeness": 1.0,
+        "trace_completeness_method": "heuristic_by_trace_fields",
+        "manual_review_status": null,
+        "source_reliability": 0.9,
+        "source_reliability_method": "mean_projected_source_reliability",
+        "fused_grade": "Ⅳ",
+        "main_hazards": [
+          "围岩极破碎",
+          "掉块",
+          "裂隙密集",
+          "软硬不均",
+          "明显反射异常"
+        ],
+        "hazard_scores": {
+          "extremely_fractured_rock": 0.4509880628857319,
+          "block_fall": 0.40046325163930074,
+          "dense_joints": 0.40046325163930074,
+          "soft_hard_uneven": 0.29447107117027727,
+          "strong_reflection_anomaly": 0.23002597639751443,
+          "fractured_rock": 0.1989963163436398,
+          "joint_development": 0.16735625838403212
+        },
+        "confidence_score": 0.33623728763912264,
+        "uncertainty_level": "medium",
+        "conflict_level": "none",
+        "GRS_geo_base": 0.5352694815880935,
+        "grade_score_component": 0.7,
+        "hazard_component": 0.41476833960929166,
+        "confidence_component": 0.33623728763912264,
+        "GRS_formula_text": "GRS_geo_base = 0.45×grade_score_component + 0.45×hazard_component + 0.10×confidence_component",
+        "GRS_component_method": "direct_from_fusion_engine",
+        "GRS_available": true,
+        "GRS_unavailable_reason": null,
+        "is_current_face_cell": false,
+        "is_forward_cell": true,
+        "distance_to_face_m": 9.0,
+        "forward_distance_band": "near_forward",
+        "forward_distance_weight": 1.0,
+        "cell_role": "forward_attention",
+        "trace_refs": [
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_1",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4"
+        ]
+      },
+      {
+        "cell_id": "cell_1014630_1014640",
+        "cell_start": 1014630.0,
+        "cell_end": 1014640.0,
+        "cell_center": 1014635.0,
+        "supporting_evidence_ids": [
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4"
+        ],
+        "source_trace": [
+          {
+            "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+            "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+            "source_type": "HSP",
+            "evidence_role": "prediction",
+            "evidence_report_role": "daily_review_evidence",
+            "spatial_type": "segment",
+            "start_chainage": 1014562.0,
+            "end_chainage": 1014608.0,
+            "evidence_confidence": null,
+            "evidence_confidence_method": "unavailable",
+            "manual_review_status": null,
+            "source_reliability": 0.9,
+            "source_reliability_method": "source_field",
+            "raw_text_excerpt": "里程范围: DyK1014+562 ~ DyK1014+608 （46m） 物探探测结果: 该段无明 显反射异 常 预报结论: 该段围岩较前段稍变好。岩性为 板岩夹变质砂岩，弱风化，岩质 硬，节理裂隙发育，岩体破碎。 风险提示: 建议围岩等级: Ⅳ级围岩"
+          },
+          {
+            "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+            "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+            "source_type": "HSP",
+            "evidence_role": "prediction",
+            "evidence_report_role": "daily_review_evidence",
+            "spatial_type": "segment",
+            "start_chainage": 1014608.0,
+            "end_chainage": 1014641.0,
+            "evidence_confidence": null,
+            "evidence_confidence_method": "unavailable",
+            "manual_review_status": null,
+            "source_reliability": 0.9,
+            "source_reliability_method": "source_field",
+            "raw_text_excerpt": "里程范围: DyK1014+608 ~ DyK1014+641 （33m） 物探探测结果: 该段存在 较强反射 异常 预报结论: 该段围岩较前段变差。岩性为板 岩夹变质砂岩，弱风化，岩质软 硬不均，节理裂隙发育密集，岩 体破碎-极破碎，层间结合度差。 风险提示: 里程+608、 +616、+631 附近有掉块 风险 建议围岩等级: Ⅳ级围岩"
+          },
+          {
+            "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_2",
+            "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+            "source_type": "HSP",
+            "evidence_role": "prediction",
+            "evidence_report_role": "forward_attention_evidence",
+            "spatial_type": "anomaly_point",
+            "start_chainage": 1014631.0,
+            "end_chainage": 1014631.0,
+            "evidence_confidence": null,
+            "evidence_confidence_method": "unavailable",
+            "manual_review_status": null,
+            "source_reliability": 0.9,
+            "source_reliability_method": "source_field",
+            "raw_text_excerpt": "里程范围: DyK1014+608 ~ DyK1014+641 （33m） 物探探测结果: 该段存在 较强反射 异常 预报结论: 该段围岩较前段变差。岩性为板 岩夹变质砂岩，弱风化，岩质软 硬不均，节理裂隙发育密集，岩 体破碎-极破碎，层间结合度差。 风险提示: 里程+608、 +616、+631 附近有掉块 风险 建议围岩等级: Ⅳ级围岩"
+          },
+          {
+            "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4",
+            "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+            "source_type": "HSP",
+            "evidence_role": "prediction",
+            "evidence_report_role": "forward_attention_evidence",
+            "spatial_type": "segment",
+            "start_chainage": 1014641.0,
+            "end_chainage": 1014645.0,
+            "evidence_confidence": null,
+            "evidence_confidence_method": "unavailable",
+            "manual_review_status": null,
+            "source_reliability": 0.9,
+            "source_reliability_method": "source_field",
+            "raw_text_excerpt": "里程范围: DyK1014+641 ~ DyK1014+645 （4m） 物探探测结果: 该段无明 显反射异 常 预报结论: 该段围岩较前段稍变好。岩性为 板岩夹变质砂岩，弱风化，岩质 硬，节理裂隙发育，岩体破碎。 风险提示: 建议围岩等级: Ⅳ级围岩"
+          }
+        ],
+        "evidence_overlap_length": 10.0,
+        "evidence_overlap_ratio": 1.0,
+        "max_overlap_ratio": 1.0,
+        "mean_overlap_ratio": 0.25,
+        "total_overlap_length": 10.0,
+        "evidence_count": 4,
+        "evidence_ids": [
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4"
+        ],
+        "source_type_distribution": {
+          "HSP": 4
+        },
+        "evidence_confidence": null,
+        "evidence_confidence_method": "unavailable",
+        "trace_completeness": 1.0,
+        "trace_completeness_method": "heuristic_by_trace_fields",
+        "manual_review_status": null,
+        "source_reliability": 0.9,
+        "source_reliability_method": "mean_projected_source_reliability",
+        "fused_grade": "Ⅳ",
+        "main_hazards": [
+          "围岩极破碎",
+          "掉块",
+          "裂隙密集",
+          "软硬不均",
+          "明显反射异常"
+        ],
+        "hazard_scores": {
+          "extremely_fractured_rock": 0.49974466399779083,
+          "block_fall": 0.4458741530994934,
+          "dense_joints": 0.4458741530994934,
+          "soft_hard_uneven": 0.33076378378739046,
+          "strong_reflection_anomaly": 0.296081081099402,
+          "fractured_rock": 0.2546368476926696,
+          "joint_development": 0.21290825965487636
+        },
+        "confidence_score": 0.3384697721301786,
+        "uncertainty_level": "medium",
+        "conflict_level": "none",
+        "GRS_geo_base": 0.5574624914584867,
+        "grade_score_component": 0.7,
+        "hazard_component": 0.4635900316565973,
+        "confidence_component": 0.3384697721301786,
+        "GRS_formula_text": "GRS_geo_base = 0.45×grade_score_component + 0.45×hazard_component + 0.10×confidence_component",
+        "GRS_component_method": "direct_from_fusion_engine",
+        "GRS_available": true,
+        "GRS_unavailable_reason": null,
+        "is_current_face_cell": false,
+        "is_forward_cell": true,
+        "distance_to_face_m": 19.0,
+        "forward_distance_band": "short_forward",
+        "forward_distance_weight": 0.7,
+        "cell_role": "forward_attention",
+        "trace_refs": [
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_2",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4"
+        ]
+      },
+      {
+        "cell_id": "cell_1014640_1014650",
+        "cell_start": 1014640.0,
+        "cell_end": 1014650.0,
+        "cell_center": 1014645.0,
+        "supporting_evidence_ids": [
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4"
+        ],
+        "source_trace": [
+          {
+            "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+            "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+            "source_type": "HSP",
+            "evidence_role": "prediction",
+            "evidence_report_role": "daily_review_evidence",
+            "spatial_type": "segment",
+            "start_chainage": 1014608.0,
+            "end_chainage": 1014641.0,
+            "evidence_confidence": null,
+            "evidence_confidence_method": "unavailable",
+            "manual_review_status": null,
+            "source_reliability": 0.9,
+            "source_reliability_method": "source_field",
+            "raw_text_excerpt": "里程范围: DyK1014+608 ~ DyK1014+641 （33m） 物探探测结果: 该段存在 较强反射 异常 预报结论: 该段围岩较前段变差。岩性为板 岩夹变质砂岩，弱风化，岩质软 硬不均，节理裂隙发育密集，岩 体破碎-极破碎，层间结合度差。 风险提示: 里程+608、 +616、+631 附近有掉块 风险 建议围岩等级: Ⅳ级围岩"
+          },
+          {
+            "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4",
+            "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+            "source_type": "HSP",
+            "evidence_role": "prediction",
+            "evidence_report_role": "forward_attention_evidence",
+            "spatial_type": "segment",
+            "start_chainage": 1014641.0,
+            "end_chainage": 1014645.0,
+            "evidence_confidence": null,
+            "evidence_confidence_method": "unavailable",
+            "manual_review_status": null,
+            "source_reliability": 0.9,
+            "source_reliability_method": "source_field",
+            "raw_text_excerpt": "里程范围: DyK1014+641 ~ DyK1014+645 （4m） 物探探测结果: 该段无明 显反射异 常 预报结论: 该段围岩较前段稍变好。岩性为 板岩夹变质砂岩，弱风化，岩质 硬，节理裂隙发育，岩体破碎。 风险提示: 建议围岩等级: Ⅳ级围岩"
+          }
+        ],
+        "evidence_overlap_length": 5.0,
+        "evidence_overlap_ratio": 0.4,
+        "max_overlap_ratio": 0.4,
+        "mean_overlap_ratio": 0.25,
+        "total_overlap_length": 5.0,
+        "evidence_count": 2,
+        "evidence_ids": [
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4"
+        ],
+        "source_type_distribution": {
+          "HSP": 2
+        },
+        "evidence_confidence": null,
+        "evidence_confidence_method": "unavailable",
+        "trace_completeness": 1.0,
+        "trace_completeness_method": "heuristic_by_trace_fields",
+        "manual_review_status": null,
+        "source_reliability": 0.9,
+        "source_reliability_method": "mean_projected_source_reliability",
+        "fused_grade": "Ⅳ",
+        "main_hazards": [
+          "围岩极破碎",
+          "明显反射异常",
+          "掉块",
+          "裂隙密集",
+          "围岩破碎"
+        ],
+        "hazard_scores": {
+          "extremely_fractured_rock": 0.3405454088064356,
+          "strong_reflection_anomaly": 0.31499999999999995,
+          "block_fall": 0.29797723270563115,
+          "dense_joints": 0.29797723270563115,
+          "fractured_rock": 0.27,
+          "joint_development": 0.22499999999999998,
+          "soft_hard_uneven": 0.21284088050402228
+        },
+        "confidence_score": 0.21668702955785712,
+        "uncertainty_level": "high",
+        "conflict_level": "none",
+        "GRS_geo_base": 0.48309218341455684,
+        "grade_score_component": 0.7,
+        "hazard_component": 0.3253855121306024,
+        "confidence_component": 0.21668702955785712,
+        "GRS_formula_text": "GRS_geo_base = 0.45×grade_score_component + 0.45×hazard_component + 0.10×confidence_component",
+        "GRS_component_method": "direct_from_fusion_engine",
+        "GRS_available": true,
+        "GRS_unavailable_reason": null,
+        "is_current_face_cell": false,
+        "is_forward_cell": true,
+        "distance_to_face_m": 29.0,
+        "forward_distance_band": "extended_forward",
+        "forward_distance_weight": 0.4,
+        "cell_role": "forward_attention",
+        "trace_refs": [
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3",
+          "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_4"
+        ]
+      }
+    ]
+  },
+  "gas_summary": {
+    "schema_version": "gas_context_v1",
+    "gas_field_diagnostics": {
+      "CH4检测": {
+        "exists": true,
+        "value_type_guess": "concentration",
+        "min": 197.4536,
+        "max": 199.4372,
+        "unique_count": 470,
+        "non_null_count": 4098,
+        "unit_assumption": "% 或报警量，需由数据质量检查识别。",
+        "warning": null
+      },
+      "CO2检测": {
+        "exists": true,
+        "value_type_guess": "concentration",
+        "min": 0.07233796,
+        "max": 0.08499711,
+        "unique_count": 8,
+        "non_null_count": 4098,
+        "unit_assumption": null,
+        "warning": null
+      },
+      "H2S检测": {
+        "exists": true,
+        "value_type_guess": "alarm_flag",
+        "min": 0.0,
+        "max": 0.0,
+        "unique_count": 1,
+        "non_null_count": 4098,
+        "unit_assumption": null,
+        "warning": "该字段疑似报警量，不宜直接按浓度值解释。"
+      },
+      "SO2检测": {
+        "exists": true,
+        "value_type_guess": "concentration",
+        "min": 0.0,
+        "max": 0.7024016,
+        "unique_count": 31,
+        "non_null_count": 4098,
+        "unit_assumption": null,
+        "warning": null
+      },
+      "NO2检测": {
+        "exists": true,
+        "value_type_guess": "alarm_flag",
+        "min": 0.06872106,
+        "max": 0.09042245,
+        "unique_count": 4,
+        "non_null_count": 4098,
+        "unit_assumption": null,
+        "warning": "该字段疑似报警量，不宜直接按浓度值解释。"
+      },
+      "NO检测": {
+        "exists": true,
+        "value_type_guess": "concentration",
+        "min": 0.007233796,
+        "max": 0.04340278,
+        "unique_count": 10,
+        "non_null_count": 4098,
+        "unit_assumption": null,
+        "warning": null
+      }
+    },
+    "exceed_summary": {
+      "has_exceedance": true,
+      "exceed_gases": [
+        "CH4检测"
+      ],
+      "exceed_event_count_total": 1
+    },
+    "gas_summaries": [
+      {
+        "gas": "CO2检测",
+        "canonical_gas": "CO2",
+        "field_type_guess": "concentration",
+        "unit_assumption": "%",
+        "mean": 0.07885773398731089,
+        "max": 0.08499711,
+        "min": 0.07233796,
+        "threshold": 0.5,
+        "exceed_event_count": 0,
+        "exceed_segments_preview": [],
+        "interpretation_caution": "该字段按浓度值解释，但仍需结合原始数据字典确认单位。"
+      },
+      {
+        "gas": "H2S检测",
+        "canonical_gas": "H2S",
+        "field_type_guess": "alarm_flag",
+        "unit_assumption": "ppm",
+        "mean": 0.0,
+        "max": 0.0,
+        "min": 0.0,
+        "threshold": null,
+        "exceed_event_count": 0,
+        "exceed_segments_preview": [],
+        "interpretation_caution": "该字段疑似报警量，应按报警事件解释，不宜直接作为浓度值。"
+      },
+      {
+        "gas": "SO2检测",
+        "canonical_gas": "SO2",
+        "field_type_guess": "concentration",
+        "unit_assumption": "ppm",
+        "mean": 0.014222935760248901,
+        "max": 0.7024016,
+        "min": 0.0,
+        "threshold": 2.0,
+        "exceed_event_count": 0,
+        "exceed_segments_preview": [],
+        "interpretation_caution": "该字段按浓度值解释，但仍需结合原始数据字典确认单位。"
+      },
+      {
+        "gas": "NO2检测",
+        "canonical_gas": "NO2",
+        "field_type_guess": "alarm_flag",
+        "unit_assumption": "ppm",
+        "mean": 0.07338737290629575,
+        "max": 0.09042245,
+        "min": 0.06872106,
+        "threshold": null,
+        "exceed_event_count": 0,
+        "exceed_segments_preview": [],
+        "interpretation_caution": "该字段疑似报警量，应按报警事件解释，不宜直接作为浓度值。"
+      },
+      {
+        "gas": "NO检测",
+        "canonical_gas": "NO",
+        "field_type_guess": "concentration",
+        "unit_assumption": "ppm",
+        "mean": 0.021585768174719376,
+        "max": 0.04340278,
+        "min": 0.007233796,
+        "threshold": 20.0,
+        "exceed_event_count": 0,
+        "exceed_segments_preview": [],
+        "interpretation_caution": "该字段按浓度值解释，但仍需结合原始数据字典确认单位。"
+      },
+      {
+        "gas": "CH4检测",
+        "canonical_gas": "CH4",
+        "field_type_guess": "concentration",
+        "unit_assumption": "% 或报警量，需由数据质量检查识别。",
+        "mean": 198.0472893118594,
+        "max": 199.4372,
+        "min": 197.4536,
+        "threshold": 0.5,
+        "exceed_event_count": 1,
+        "exceed_segments_preview": [
+          {
+            "start": "2023-12-30 00:00:10",
+            "end": "2023-12-30 23:59:50",
+            "duration_sec": 86380.0
+          }
+        ],
+        "interpretation_caution": "该字段按浓度值解释，但仍需结合原始数据字典确认单位。"
+      }
+    ],
+    "warnings": [
+      "H2S检测: 该字段疑似报警量，不宜直接按浓度值解释。",
+      "NO2检测: 该字段疑似报警量，不宜直接按浓度值解释。"
+    ]
+  },
+  "coupling_summary": {
+    "GRCI_available_count": 2,
+    "high_or_medium_review_count": 1
+  },
+  "quality_summary": {
+    "trace_summary": {}
+  }
+}

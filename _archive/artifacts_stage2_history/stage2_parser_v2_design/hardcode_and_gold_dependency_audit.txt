@@ -1,0 +1,19 @@
+# Stage 2 Parser V2 hardcode and Gold dependency audit
+
+$ grep -R tests/gold src
+exit_code: 1
+<NO_MATCH>
+
+$ grep -R 1013190.2\|1013224\|1013080.2\|1013096\|DyK1013+184.2 src/tbm_twin/geology/parsers_v2
+exit_code: 0
+src/tbm_twin/geology/parsers_v2/table_utils.py:    """Convert DyK1013+184.2-like text to absolute chainage metres."""
+Binary file src/tbm_twin/geology/parsers_v2/__pycache__/table_utils.cpython-313.pyc matches
+
+$ grep -R DyK1013+190.2\|DyK1013+080.2\|DyK1013+184.2 src/tbm_twin/geology/parsers_v2
+exit_code: 0
+src/tbm_twin/geology/parsers_v2/table_utils.py:    """Convert DyK1013+184.2-like text to absolute chainage metres."""
+Binary file src/tbm_twin/geology/parsers_v2/__pycache__/table_utils.cpython-313.pyc matches
+Binary file src/tbm_twin/geology/parsers_v2/__pycache__/tsp.cpython-313.pyc matches
+src/tbm_twin/geology/parsers_v2/tsp.py:            if "以下结论" in compact(page.page_text) and "DyK1013+080.2" in page.page_text
+src/tbm_twin/geology/parsers_v2/tsp.py:        ("DyK1013+080.2～DyK1013+161", "Ⅴ级"),
+

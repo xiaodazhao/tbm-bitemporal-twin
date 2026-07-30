@@ -1,0 +1,4 @@
+sample,old_status,old_primary_count,new_primary_count,new_assertion_count,note
+sketch_dyk1013_184_2,NOT_RUN,,1,0,prototype_text_parser retained for audit only; not used by table_parser_v2
+hsp_dyk1013_190_2,NOT_RUN,,5,0,prototype_text_parser retained for audit only; not used by table_parser_v2
+tsp_dyk1013_080_2,NOT_RUN,,8,9,prototype_text_parser retained for audit only; not used by table_parser_v2

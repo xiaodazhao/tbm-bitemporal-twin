@@ -1,0 +1,842 @@
+{
+  "schema_version": "report_trace_v1",
+  "trace_available": true,
+  "raw_claim_count": 36,
+  "excluded_non_trace_claim_count": 14,
+  "claim_trace_count": 23,
+  "grounded_claim_count": 23,
+  "unsupported_claim_count": 0,
+  "trace_coverage": 1.0,
+  "traced_claims": [
+    {
+      "claim_id": "claim_0003",
+      "claim_text": "本日报基于 2023-12-30 的 PLC 日运行数据、online 可用地质证据、cell 级 GRS/RAI/GRCI 和 source_trace 生成。",
+      "claim_type": "coupling",
+      "entity": "GRCI",
+      "value": 2023.0,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "report_date"
+      },
+      "spatial_scope": {
+        "scope_type": "unknown",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "general_report_claim",
+      "certainty": "asserted",
+      "source_sentence_index": 2,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "scope_metadata",
+      "trace_support_type": "scope_metadata_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "report date is supported by report_scope.date",
+      "support_note": "report date is supported by report_scope.date"
+    },
+    {
+      "claim_id": "claim_0004",
+      "claim_text": "本日形成 2 个已掘区段复核优先 cell；",
+      "claim_type": "unknown",
+      "entity": null,
+      "value": 2.0,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "unknown",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "general_report_claim",
+      "certainty": "asserted",
+      "source_sentence_index": 3,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "recommendation_policy",
+      "trace_support_type": "policy_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "建议语句未引入未支撑强灾害词，按工程建议规则通过。",
+      "support_note": "建议语句未引入未支撑强灾害词，按工程建议规则通过。"
+    },
+    {
+      "claim_id": "claim_0005",
+      "claim_text": "GRCI 仅用于已掘区段复核排序。",
+      "claim_type": "coupling",
+      "entity": "GRCI",
+      "value": null,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "unknown",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "general_report_claim",
+      "certainty": "asserted",
+      "source_sentence_index": 4,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "coupling_context",
+      "trace_support_type": "coupling_review_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0006",
+      "claim_text": "前方地质关注提示来自 forward_profile，共 3 个前方窗口，仅用于提示和复核。",
+      "claim_type": "forward_segment",
+      "entity": null,
+      "value": 3.0,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "forward",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "forward_attention",
+      "certainty": "asserted",
+      "source_sentence_index": 5,
+      "grounded": true,
+      "support_status": "partially_supported",
+      "mismatch_type": "role_warning",
+      "confidence": 0.6,
+      "support_type": "forward_segment",
+      "trace_support_type": "forward_attention_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "找到可支撑的结构化证据。; forward_segment 已命中，但 source_trace 为空。",
+      "support_note": "找到可支撑的结构化证据。; forward_segment 已命中，但 source_trace 为空。"
+    },
+    {
+      "claim_id": "claim_0008",
+      "claim_text": "PLC 实测推进范围为 1014601.0 至 1014616.0，日推进约 15.0 m；",
+      "claim_type": "operation",
+      "entity": "PLC",
+      "value": 1014601.0,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "operation",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "statistical_summary",
+      "certainty": "asserted",
+      "source_sentence_index": 7,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "scope_metadata",
+      "trace_support_type": "scope_metadata_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "PLC measured range/advance is supported by daily_plc_range",
+      "support_note": "PLC measured range/advance is supported by daily_plc_range"
+    },
+    {
+      "claim_id": "claim_0009",
+      "claim_text": "系统按 10m cell 将已掘复核范围对齐为 1014600.0 至 1014620.0。",
+      "claim_type": "unknown",
+      "entity": null,
+      "value": 10.0,
+      "unit": "m",
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "unknown",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "general_report_claim",
+      "certainty": "asserted",
+      "source_sentence_index": 8,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "scope_metadata",
+      "trace_support_type": "scope_metadata_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "aligned excavated review scope is supported by daily_excavated_scope",
+      "support_note": "aligned excavated review scope is supported by daily_excavated_scope"
+    },
+    {
+      "claim_id": "claim_0010",
+      "claim_text": "该对齐范围仅用于已掘区段复核，不等同于实际推进量。",
+      "claim_type": "operation",
+      "entity": null,
+      "value": null,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "operation",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "statistical_summary",
+      "certainty": "asserted",
+      "source_sentence_index": 9,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "operation_context",
+      "trace_support_type": "statistical_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0012",
+      "claim_text": "PLC 工况统计显示，主导工况为 停机；",
+      "claim_type": "operation",
+      "entity": "PLC",
+      "value": null,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "operation",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "statistical_summary",
+      "certainty": "asserted",
+      "source_sentence_index": 11,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "operation_context",
+      "trace_support_type": "statistical_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0013",
+      "claim_text": "稳定掘进约 360.2 分钟，停机约 1074.0 分钟，过渡约 3.0 分钟。",
+      "claim_type": "operation",
+      "entity": null,
+      "value": 360.2,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "operation",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "statistical_summary",
+      "certainty": "asserted",
+      "source_sentence_index": 12,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "operation_context",
+      "trace_support_type": "statistical_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0014",
+      "claim_text": "PLC 统计记录中，稳定掘进段数量为 15，停机段数量为 18，异常段数量为 5。",
+      "claim_type": "operation",
+      "entity": "PLC",
+      "value": 15.0,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "operation",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "statistical_summary",
+      "certainty": "asserted",
+      "source_sentence_index": 13,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "operation_context",
+      "trace_support_type": "statistical_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0017",
+      "claim_text": "主要状态标签包括 高负载稳定推进状态、低负载调整状态、高负载稳定推进状态。",
+      "claim_type": "operation",
+      "entity": null,
+      "value": null,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "operation",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "statistical_summary",
+      "certainty": "asserted",
+      "source_sentence_index": 16,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "operation_context",
+      "trace_support_type": "statistical_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0019",
+      "claim_text": "如无当日可用掌子面素描，不把前方证据写成已揭露事实。",
+      "claim_type": "method_boundary",
+      "entity": null,
+      "value": null,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "forward",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "method_boundary",
+      "certainty": "policy_boundary",
+      "source_sentence_index": 18,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "recommendation_policy",
+      "trace_support_type": "policy_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "方法边界/生成约束说明，按 policy_support 支撑。",
+      "support_note": "方法边界/生成约束说明，按 policy_support 支撑。"
+    },
+    {
+      "claim_id": "claim_0021",
+      "claim_text": "- cell_1014600_1014610：GRCI 复核优先级为 medium，GRCI 值约 0点51；",
+      "claim_type": "coupling",
+      "entity": "GRCI",
+      "value": 1014600.0,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "unknown",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "general_report_claim",
+      "certainty": "asserted",
+      "source_sentence_index": 20,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "coupling_context",
+      "trace_support_type": "coupling_review_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0022",
+      "claim_text": "主要地质关注标签为 围岩极破碎、掉块、裂隙密集、软硬不均、明显反射异常。",
+      "claim_type": "unknown",
+      "entity": "围岩极破碎",
+      "value": null,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "unknown",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "general_report_claim",
+      "certainty": "asserted",
+      "source_sentence_index": 21,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "key_cell",
+      "trace_support_type": "observed_support",
+      "supporting_evidence_ids": [
+        "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+        "DyK1014+591.00_伯舒拉岭右线DyK1014+591洞身素描记录表_sketch_0",
+        "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_0"
+      ],
+      "aligned_evidence_ids": [
+        "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+        "DyK1014+591.00_伯舒拉岭右线DyK1014+591洞身素描记录表_sketch_0",
+        "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_0"
+      ],
+      "source_trace": [
+        {
+          "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+          "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+          "source_type": "HSP",
+          "evidence_role": "prediction",
+          "evidence_report_role": "daily_review_evidence",
+          "raw_text_excerpt": "里程范围: DyK1014+562 ~ DyK1014+608 （46m） 物探探测结果: 该段无明 显反射异 常 预报结论: 该段围岩较前段稍变好。岩性为 板岩夹变质砂岩，弱风化，岩质 硬，节理裂隙发育，岩体破碎。 风险提示: 建议围岩等级: Ⅳ级围岩"
+        },
+        {
+          "evidence_id": "DyK1014+591.00_伯舒拉岭右线DyK1014+591洞身素描记录表_sketch_0",
+          "report_id": "DyK1014+591.00_伯舒拉岭右线DyK1014+591洞身素描记录表",
+          "source_type": "face_sketch",
+          "evidence_role": "observed",
+          "evidence_report_role": "local_background_evidence",
+          "raw_text_excerpt": "CZXZZQ-8 里程：DyK1014+591 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部 施工单位：中铁十四局集团有限公司 报告编号：CZXZZQ-8-SM-DyK1014+591 编 号 项目 名称 状态描述 1 掌子面 尺寸 开挖 宽度 (m) 12.2 4 开挖 高度 (m) 12.07 开挖 面积 (m2) 126.3 1 开挖 方式 全"
+        },
+        {
+          "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_0",
+          "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+          "source_type": "HSP",
+          "evidence_role": "prediction",
+          "evidence_report_role": "daily_review_evidence",
+          "raw_text_excerpt": "里程范围: DyK1014+608 ~ DyK1014+641 （33m） 物探探测结果: 该段存在 较强反射 异常 预报结论: 该段围岩较前段变差。岩性为板 岩夹变质砂岩，弱风化，岩质软 硬不均，节理裂隙发育密集，岩 体破碎-极破碎，层间结合度差。 风险提示: 里程+608、 +616、+631 附近有掉块 风险 建议围岩等级: Ⅳ级围岩"
+        }
+      ],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0023",
+      "claim_text": "该 cell 同时具备 GRS、RAI 和当日 PLC response，GRCI 只表示地质证据与施工响应的共现复核关注度。",
+      "claim_type": "coupling",
+      "entity": "GRCI",
+      "value": null,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "unknown",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "general_report_claim",
+      "certainty": "asserted",
+      "source_sentence_index": 22,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "coupling_context",
+      "trace_support_type": "coupling_review_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0024",
+      "claim_text": "- cell_1014610_1014620：GRCI 复核优先级为 low，GRCI 值约 0点50；",
+      "claim_type": "coupling",
+      "entity": "GRCI",
+      "value": 1014610.0,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "unknown",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "general_report_claim",
+      "certainty": "asserted",
+      "source_sentence_index": 23,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "coupling_context",
+      "trace_support_type": "coupling_review_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0025",
+      "claim_text": "主要地质关注标签为 围岩极破碎、掉块、裂隙密集、软硬不均、明显反射异常。",
+      "claim_type": "unknown",
+      "entity": "围岩极破碎",
+      "value": null,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "unknown",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "general_report_claim",
+      "certainty": "asserted",
+      "source_sentence_index": 24,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "key_cell",
+      "trace_support_type": "observed_support",
+      "supporting_evidence_ids": [
+        "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+        "DyK1014+591.00_伯舒拉岭右线DyK1014+591洞身素描记录表_sketch_0",
+        "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_0"
+      ],
+      "aligned_evidence_ids": [
+        "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+        "DyK1014+591.00_伯舒拉岭右线DyK1014+591洞身素描记录表_sketch_0",
+        "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_0"
+      ],
+      "source_trace": [
+        {
+          "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+          "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+          "source_type": "HSP",
+          "evidence_role": "prediction",
+          "evidence_report_role": "daily_review_evidence",
+          "raw_text_excerpt": "里程范围: DyK1014+562 ~ DyK1014+608 （46m） 物探探测结果: 该段无明 显反射异 常 预报结论: 该段围岩较前段稍变好。岩性为 板岩夹变质砂岩，弱风化，岩质 硬，节理裂隙发育，岩体破碎。 风险提示: 建议围岩等级: Ⅳ级围岩"
+        },
+        {
+          "evidence_id": "DyK1014+591.00_伯舒拉岭右线DyK1014+591洞身素描记录表_sketch_0",
+          "report_id": "DyK1014+591.00_伯舒拉岭右线DyK1014+591洞身素描记录表",
+          "source_type": "face_sketch",
+          "evidence_role": "observed",
+          "evidence_report_role": "local_background_evidence",
+          "raw_text_excerpt": "CZXZZQ-8 里程：DyK1014+591 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部 施工单位：中铁十四局集团有限公司 报告编号：CZXZZQ-8-SM-DyK1014+591 编 号 项目 名称 状态描述 1 掌子面 尺寸 开挖 宽度 (m) 12.2 4 开挖 高度 (m) 12.07 开挖 面积 (m2) 126.3 1 开挖 方式 全"
+        },
+        {
+          "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_0",
+          "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+          "source_type": "HSP",
+          "evidence_role": "prediction",
+          "evidence_report_role": "daily_review_evidence",
+          "raw_text_excerpt": "里程范围: DyK1014+608 ~ DyK1014+641 （33m） 物探探测结果: 该段存在 较强反射 异常 预报结论: 该段围岩较前段变差。岩性为板 岩夹变质砂岩，弱风化，岩质软 硬不均，节理裂隙发育密集，岩 体破碎-极破碎，层间结合度差。 风险提示: 里程+608、 +616、+631 附近有掉块 风险 建议围岩等级: Ⅳ级围岩"
+        }
+      ],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0026",
+      "claim_text": "该 cell 同时具备 GRS、RAI 和当日 PLC response，GRCI 只表示地质证据与施工响应的共现复核关注度。",
+      "claim_type": "coupling",
+      "entity": "GRCI",
+      "value": null,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "unknown",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "general_report_claim",
+      "certainty": "asserted",
+      "source_sentence_index": 25,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "coupling_context",
+      "trace_support_type": "coupling_review_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0029",
+      "claim_text": "涉及气体为 CH4检测。",
+      "claim_type": "gas",
+      "entity": "CH4",
+      "value": 4.0,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "unknown",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "statistical_summary",
+      "certainty": "asserted",
+      "source_sentence_index": 28,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "gas_context",
+      "trace_support_type": "statistical_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0031",
+      "claim_text": "当前 forward_profile 共 3 个窗口，语义为前方关注提示，不是已发生事实。",
+      "claim_type": "method_boundary",
+      "entity": null,
+      "value": 3.0,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "forward",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "method_boundary",
+      "certainty": "policy_boundary",
+      "source_sentence_index": 30,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "recommendation_policy",
+      "trace_support_type": "policy_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "方法边界/生成约束说明，按 policy_support 支撑。",
+      "support_note": "方法边界/生成约束说明，按 policy_support 支撑。"
+    },
+    {
+      "claim_id": "claim_0032",
+      "claim_text": "forward_attention_cells 数量为 3；",
+      "claim_type": "unknown",
+      "entity": null,
+      "value": 3.0,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "unknown",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "general_report_claim",
+      "certainty": "asserted",
+      "source_sentence_index": 31,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "key_cell",
+      "trace_support_type": "observed_support",
+      "supporting_evidence_ids": [
+        "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+        "DyK1014+591.00_伯舒拉岭右线DyK1014+591洞身素描记录表_sketch_0",
+        "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_0"
+      ],
+      "aligned_evidence_ids": [
+        "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+        "DyK1014+591.00_伯舒拉岭右线DyK1014+591洞身素描记录表_sketch_0",
+        "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_0"
+      ],
+      "source_trace": [
+        {
+          "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2",
+          "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+          "source_type": "HSP",
+          "evidence_role": "prediction",
+          "evidence_report_role": "daily_review_evidence",
+          "raw_text_excerpt": "里程范围: DyK1014+562 ~ DyK1014+608 （46m） 物探探测结果: 该段无明 显反射异 常 预报结论: 该段围岩较前段稍变好。岩性为 板岩夹变质砂岩，弱风化，岩质 硬，节理裂隙发育，岩体破碎。 风险提示: 建议围岩等级: Ⅳ级围岩"
+        },
+        {
+          "evidence_id": "DyK1014+591.00_伯舒拉岭右线DyK1014+591洞身素描记录表_sketch_0",
+          "report_id": "DyK1014+591.00_伯舒拉岭右线DyK1014+591洞身素描记录表",
+          "source_type": "face_sketch",
+          "evidence_role": "observed",
+          "evidence_report_role": "local_background_evidence",
+          "raw_text_excerpt": "CZXZZQ-8 里程：DyK1014+591 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部 施工单位：中铁十四局集团有限公司 报告编号：CZXZZQ-8-SM-DyK1014+591 编 号 项目 名称 状态描述 1 掌子面 尺寸 开挖 宽度 (m) 12.2 4 开挖 高度 (m) 12.07 开挖 面积 (m2) 126.3 1 开挖 方式 全"
+        },
+        {
+          "evidence_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_0",
+          "report_id": "DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224",
+          "source_type": "HSP",
+          "evidence_role": "prediction",
+          "evidence_report_role": "daily_review_evidence",
+          "raw_text_excerpt": "里程范围: DyK1014+608 ~ DyK1014+641 （33m） 物探探测结果: 该段存在 较强反射 异常 预报结论: 该段围岩较前段变差。岩性为板 岩夹变质砂岩，弱风化，岩质软 硬不均，节理裂隙发育密集，岩 体破碎-极破碎，层间结合度差。 风险提示: 里程+608、 +616、+631 附近有掉块 风险 建议围岩等级: Ⅳ级围岩"
+        }
+      ],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0033",
+      "claim_text": "这些 cell 使用 GRS_geo_base、main_hazards 和 source_trace，不使用 PLC、RAI、GRCI 或 steady-state PLC fields。",
+      "claim_type": "coupling",
+      "entity": "GRS_geo_base",
+      "value": null,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "unknown",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "general_report_claim",
+      "certainty": "asserted",
+      "source_sentence_index": 32,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "coupling_context",
+      "trace_support_type": "coupling_review_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "找到可支撑的结构化证据。",
+      "support_note": "找到可支撑的结构化证据。"
+    },
+    {
+      "claim_id": "claim_0035",
+      "claim_text": "建议围绕 Evidence Pack 中的 review_cells 做已掘区段复核，围绕 forward_profile 做前方关注提示复核。",
+      "claim_type": "method_boundary",
+      "entity": null,
+      "value": null,
+      "unit": null,
+      "time_scope": {
+        "scope_type": "unspecified"
+      },
+      "spatial_scope": {
+        "scope_type": "forward",
+        "range_dk": null,
+        "relative_range": null
+      },
+      "claim_role": "method_boundary",
+      "certainty": "policy_boundary",
+      "source_sentence_index": 34,
+      "grounded": true,
+      "support_status": "supported",
+      "mismatch_type": "none",
+      "confidence": 1.0,
+      "support_type": "recommendation_policy",
+      "trace_support_type": "policy_support",
+      "supporting_evidence_ids": [],
+      "aligned_evidence_ids": [],
+      "source_trace": [],
+      "reason": "方法边界/生成约束说明，按 policy_support 支撑。",
+      "support_note": "方法边界/生成约束说明，按 policy_support 支撑。"
+    }
+  ],
+  "warnings": [],
+  "support_type_distribution": {
+    "statistical_support": 6,
+    "daily_review_support": 6,
+    "forward_attention_support": 1,
+    "local_background_support": 0,
+    "observed_support": 3,
+    "forecast_support": 0,
+    "policy_support": 4,
+    "none": 0,
+    "scope_metadata_support": 3
+  },
+  "claim_type_distribution": {
+    "coupling": 7,
+    "unknown": 5,
+    "forward_segment": 1,
+    "operation": 6,
+    "method_boundary": 3,
+    "gas": 1
+  },
+  "source_role_distribution": {
+    "daily_review_evidence": 6,
+    "forward_attention_evidence": 0,
+    "local_background_evidence": 3,
+    "excluded_by_distance": 0,
+    "excluded_by_time": 0,
+    "unknown": 20
+  },
+  "source_type_distribution": {
+    "HSP": 6,
+    "face_sketch": 3
+  },
+  "unsupported_by_claim_type": {},
+  "support_status_distribution": {
+    "supported": 22,
+    "partially_supported": 1
+  },
+  "mismatch_type_distribution": {
+    "none": 22,
+    "role_warning": 1
+  }
+}

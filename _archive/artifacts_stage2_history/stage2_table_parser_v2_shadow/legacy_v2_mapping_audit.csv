@@ -1,0 +1,6 @@
+count,count_basis,mapping_category,note
+,duplicate_primary_hard_check,V1重复而V2合并,See evidence_hard_checks.csv for DUPLICATE_PRIMARY_EVIDENCE
+,manual_audit_required,V1错误BACKGROUND而V2 OBSERVED,Automatic semantic matching to V1 categories is not reliable in this shadow run.
+122,report_assertions_v2,V1混入预测属性而V2分离,V2 separates ReportAssertion from PrimaryEvidence.
+281,hsp/tsp table rows,V1漏表格行而V2恢复,Requires manual row-level confirmation.
+876,legacy comparison rows present,旧comparison文件,Loaded for audit context only.

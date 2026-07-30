@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tbm-bitemporal-twin"
+version = "0.1.0"
+description = "Stage 1 research project for TBM dynamic construction evidence modeling."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+  "pandas",
+  "pdfplumber",
+  "pyarrow",
+  "pydantic>=2",
+  "PyMuPDF",
+  "python-dotenv",
+  "PyYAML",
+]
+
+[project.optional-dependencies]
+dev = [
+  "matplotlib",
+  "mypy",
+  "pytest",
+  "pytest-cov",
+  "ruff",
+]
+validation = [
+  "matplotlib",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = ["_archive"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "N", "SIM", "RUF"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+mypy_path = "src"
+warn_unused_ignores = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

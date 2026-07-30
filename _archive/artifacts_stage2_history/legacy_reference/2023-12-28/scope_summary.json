@@ -1,0 +1,39 @@
+{
+  "date": "2023-12-28",
+  "cell_length_m": 10.0,
+  "lookahead_m": 30.0,
+  "local_background_back_m": 100.0,
+  "daily_chainage_min": 1014570.0,
+  "daily_chainage_max": 1014580.0,
+  "daily_advance_m": 10.0,
+  "current_chainage": 1014580.0,
+  "daily_excavated_scope": {
+    "start": 1014570.0,
+    "end": 1014580.0
+  },
+  "forward_scope": {
+    "start": 1014580.0,
+    "end": 1014610.0
+  },
+  "local_background_scope": {
+    "start": 1014480.0,
+    "end": 1014570.0
+  },
+  "report_scope": {
+    "start": 1014480.0,
+    "end": 1014610.0
+  },
+  "cell_scope_mode": "time_valid_and_spatial_relevant_report_scope",
+  "time_valid_evidence_count": 197,
+  "spatial_relevant_evidence_count": 15,
+  "excluded_by_distance_evidence_count": 182,
+  "excluded_by_missing_geometry_evidence_count": 0,
+  "excluded_by_time_evidence_count": 0,
+  "geo_states_cell_count": 13,
+  "construction_state_cell_count": 13,
+  "cell_evidence_row_count": 73,
+  "daily_review_cell_count": 1,
+  "forward_attention_cell_count": 3,
+  "local_background_cell_count": 9,
+  "GRCI_available_count": 1
+}

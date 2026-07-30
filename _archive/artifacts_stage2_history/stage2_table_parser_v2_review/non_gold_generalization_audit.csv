@@ -1,0 +1,5 @@
+sample,source_type,template_variant_id,primary_evidence_count,forecast_segment_count,report_assertion_count,range_count,status,notes
+blank_trailing_page_sketch,FACE_SKETCH,sketch_main_table_16x17,1,0,0,0,PASS,supports one-page main sketch table plus blank trailing page
+hsp_13_page,SONIC_FORECAST,hsp_forecast_continued_without_repeated_header,7,6,0,6,PASS,
+tsp_21_page,TSP_REPORT,tsp_table2_mixed_6col_4col_continuation,8,7,17,7,PASS,
+hsp_non1013_prefix,SONIC_FORECAST,hsp_forecast_continued_without_repeated_header,9,8,0,8,PASS,

@@ -1,0 +1,22 @@
+.env
+.venv
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+artifacts/
+data/
+outputs/
+*.parquet
+*.duckdb
+*.sqlite
+
+# Local read-only reference checkout from the previous project.
+tbm-report/
+
+# Real engineering source files must stay outside version control.
+*真实工程*.csv
+*真实工程*.pdf
+

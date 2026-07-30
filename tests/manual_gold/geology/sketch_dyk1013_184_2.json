@@ -1,0 +1,49 @@
+{
+  "source_type": "FACE_SKETCH",
+  "document_metadata": {
+    "observed_local_date": "2023-09-09",
+    "document_local_date": "2023-09-09",
+    "submitted_local_date": null,
+    "available_local_date": "2023-09-09",
+    "available_basis": "form_date",
+    "face_chainage": 1013184.2,
+    "document_scope": [1013184.2, 1013184.2]
+  },
+  "primary_evidence": [
+    {
+      "type": "FACE_OBSERVATION",
+      "epistemic_status": "OBSERVED",
+      "spatial_scope": {
+        "kind": "POINT",
+        "start_chainage": 1013184.2,
+        "end_chainage": 1013184.2
+      },
+      "expected_attributes": {
+        "face_state": "正面掉块",
+        "excavated_face_state": "随时间松弛、掉块",
+        "rock_strength": "30＜R≤60",
+        "weathering": "弱风化",
+        "joint_spacing": "0.2～0.6",
+        "joint_extension": "中等",
+        "joint_roughness": "平整光滑有擦痕",
+        "joint_aperture": "部分张开0.1～0.5",
+        "karst_development": "无",
+        "design_surrounding_rock_grade": "Ⅴ级",
+        "suggested_surrounding_rock_grade": "Ⅴ级",
+        "lithology": "板岩夹变质砂岩",
+        "joint_development": "节理裂隙发育",
+        "rock_mass_state": "岩体破碎",
+        "block_fall_or_collapse": "轻微掉块",
+        "form_water_status": "25～125涌出或喷出",
+        "form_water_other_raw": "500",
+        "narrative_water_observation": "渗滴水；线状出水",
+        "water_status_conflict": true,
+        "stability": "自稳性较差",
+        "anomaly_level": "NONE"
+      },
+      "must_include_source_pages": [1],
+      "must_include_source_cell_text": ["正面掉块", "30＜R≤60", "0.2～0.6", "弱风化"]
+    }
+  ],
+  "report_assertions": []
+}

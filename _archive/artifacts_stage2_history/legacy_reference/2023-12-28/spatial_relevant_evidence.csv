@@ -1,0 +1,748 @@
+﻿evidence_id,report_id,report_date,issue_date,source_type_raw,source_type_norm,evidence_role,source_level,spatial_type,start_chainage,end_chainage,center_chainage,face_chainage,grade,lithology,weathering,joint_development,rock_mass_state,stability,water_flag,water_type,collapse_flag,deformation_flag,water_state,collapse_state,deformation_state,hazard_tags,attribute_tags,method_tags,unknown_hazard_tags,source_reliability,evidence_strength,confidence_text,raw_text,attrs_obj,parse_warnings,duplicate_count,duplicate_evidence_ids,dedup_key,dedup_note,duplicate_raw_text_snippets,time_valid,time_invalid_reason,spatial_relevant,spatial_invalid_reason,overlap_daily_excavated_scope,overlap_forward_scope,overlap_local_background_scope,overlap_report_scope,distance_to_current_chainage,distance_to_daily_range,evidence_report_role
+DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219_hsp_0,DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219,2023 年12 月18 日,2023 年12 月18 日,sonic,HSP,prediction,segment,segment,1014455.0,1014512.0,1014483.5,1014455.0,Ⅳ,板岩夹变质砂岩,弱风化,发育,破碎,,0,,0,0,unknown,unknown,unknown,"[""明显反射异常"", ""裂隙发育"", ""围岩破碎""]","[""围岩等级建议""]","[""HSP""]",[],0.9,1.1,medium,"里程范围: DyK1014+455
+~
+DyK1014+512
+（57m）
+物探探测结果: 该段无明
+显反射异
+常
+预报结论: 该段围岩与当前掌子面相当。岩
+性为板岩夹变质砂岩，弱风化，
+节理裂隙发育，岩体破碎。
+风险提示: 
+建议围岩等级: Ⅳ级围岩","{""fact_type"": ""hsp_segment"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": null, ""joint_degree"": ""发育"", ""rock_mass_state"": ""破碎"", ""mud_filling_flag"": 0, ""stability"": null, ""water_flag"": 0, ""water_type"": null, ""collapse_flag"": 0, ""deformation_flag"": 0, ""anomaly_level"": ""strong"", ""risk_hint_text"": null, ""collapse_points"": [], ""risk_level"": ""high"", ""risk_tags"": [""明显反射异常"", ""裂隙发育"", ""围岩破碎"", ""围岩等级建议""], ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""hsp_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""forecast_segment"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""明显反射异常"", ""裂隙发育"", ""围岩破碎"", ""围岩等级建议""]}",[],1,[],,,[],True,,True,,False,False,True,True,68.0,58.0,local_background_evidence
+DyK1014+501.00_伯舒拉岭右线DyK1014+501洞身素描记录表_sketch_0,DyK1014+501.00_伯舒拉岭右线DyK1014+501洞身素描记录表,2023 年12 月19日,2023 年12 月19日,sketch,face_sketch,observed,point,point,1014501.0,1014501.0,1014501.0,1014501.0,Ⅳ,板岩夹变质砂岩,弱风化,发育,破碎,较差,1,渗水,1,0,positive,positive,unknown,"[""出水"", ""渗水"", ""掉块"", ""裂隙发育"", ""围岩破碎"", ""稳定性较差""]","[""围岩等级建议""]","[""face_sketch""]",[],1.2,1.5306500000000003,high,"CZXZZQ-8
+里程：DyK1014+501
+地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部
+施工单位：中铁十四局集团有限公司
+报告编号：CZXZZQ-8-SM-DyK1014+501
+编
+号
+项目
+名称
+状态描述
+1
+掌子面
+尺寸
+开挖
+宽度
+(m)
+12.2
+4
+开挖
+高度
+(m)
+12.07
+开挖
+面积
+(m2)
+126.3
+1
+开挖
+方式
+全断面
+其它:
+2
+掌子面状态
+稳定
+正面掉块√
+正面挤出
+正面不能自稳
+其它：
+3
+毛开挖
+面状态
+自稳
+随时间松弛、
+掉块√
+自稳困难、要
+及时支护
+要超前支护
+其它：
+4
+岩石强度
+(Mpa)
+R＞60
+30＜R≤60√
+15＜R≤30
+5＜R≤15
+R＜5
+其它：
+5
+风化程度
+未风化
+微风化
+弱风化√
+强风化
+全风化
+其它：
+6
+地
+质
+结
+构
+面
+间距（m）
+>1.5
+0.6~1.5
+0.2~0.6√
+0.06~0.2
+＜0.06
+不易测取
+延伸性
+极差
+差√
+中等
+好
+极好
+粗糙度
+明显台阶状
+粗糙波纹状
+平整光滑有擦痕√
+平整光滑
+不易测取
+张开性
+（mm）
+密闭＜0. 1
+部分张开
+0.1~0.5
+张开
+0.5~1.0
+无充填张
+开＞1.0√
+黏土充填
+7
+涌水状态
+[L/min1·10m]
+＜10
+无水
+＜10
+湿润
+10~25
+偶有渗水√
+25~125
+经常渗水
+其它
+8
+岩溶发育程度
+无√
+弱
+中等
+强烈
+9
+设计围岩级别
+Ⅳ
+建议围岩级别
+Ⅳ
+地
+质
+描
+述
+伯舒拉岭隧道进口右线DyK1014+501~DyK1014+531洞身推测岩性为石炭二叠系板岩夹变质
+砂岩，矿物成分以石英、长石为主，钙质胶结。围岩整体弱风化，岩质硬，节理裂隙发育，岩体
+破碎,层间结合差，掌子面滴渗水，存在掉块现象，岩质硬，板理产状：N15°W/33°S 。发育2组节
+理裂隙，产状如下：
+J1 ：N19°W45°N，d=0.2~0.4m ，L= 3~5m ，平直、光滑、微张、无充填；
+J2 ：N32°E/51° S ，d=0.3~0.5m ，L=3~5m ，平直、光滑、微张、无充填。
+综上所述，判定洞身围岩为Ⅳ级，与设计相符。
+建议：在开挖后及时对左右两侧边墙处松动的岩块进行处理，对局部岩体破碎、易掉块的位
+置应提前支护，防止掉块，如有异常及时上报，确保隧道施工和人员安全，避免设备受损和卡机
+。
+当前开挖段落见滴渗水，建议做好拱底防排水措施。
+示
+意
+图
+1
+调绘：
+复核：
+审核：
+日期：2023 年12 月19日","{""fact_type"": ""sketch_observation"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": null, ""joint_degree"": ""发育"", ""rock_mass_state"": ""破碎"", ""mud_filling_flag"": 0, ""stability"": ""较差"", ""water_flag"": 1, ""water_type"": ""渗水"", ""collapse_flag"": 1, ""deformation_flag"": 0, ""risk_level"": ""high"", ""risk_tags"": [""出水"", ""渗水"", ""掉块"", ""裂隙发育"", ""围岩破碎"", ""围岩等级建议""], ""chainage_extract_method"": ""labeled_or_first_mileage"", ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""sketch_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""face_observation"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""出水"", ""渗水"", ""掉块"", ""裂隙发育"", ""围岩破碎"", ""围岩等级建议""]}",[],1,[],,,[],True,,True,,False,False,True,True,79.0,69.0,local_background_evidence
+DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219_hsp_1_collapse_point_0,DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219,2023 年12 月18 日,2023 年12 月18 日,sonic,HSP,prediction,anomaly_point,anomaly_point,1014512.0,1014512.0,1014512.0,1014455.0,Ⅳ,板岩夹变质砂岩,弱风化,发育密集,破碎,,0,,1,0,unknown,positive,unknown,"[""掉块"", ""裂隙密集"", ""围岩破碎"", ""软硬不均""]","[""围岩等级建议""]","[""HSP""]",[],0.9,1.2,medium,"里程范围: DyK1014+512
+~
+DyK1014+527
+（15m）
+物探探测结果: 该段存在
+较强反射
+异常
+预报结论: 该段围岩较前段变差。岩性为板
+岩夹变质砂岩，弱风化，岩质软
+硬不均，节理裂隙发育密集，岩
+体破碎，层间结合度差。
+风险提示: 里程+512、
++522 附近有
+掉块风险
+建议围岩等级: Ⅳ级围岩","{""fact_type"": ""hsp_segment"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": ""软硬不均"", ""joint_degree"": ""发育密集"", ""rock_mass_state"": ""破碎"", ""mud_filling_flag"": 0, ""stability"": null, ""water_flag"": 0, ""water_type"": null, ""collapse_flag"": 1, ""deformation_flag"": 0, ""anomaly_level"": ""none"", ""risk_hint_text"": ""里程+512、\n+522 附近有\n掉块风险"", ""collapse_points"": [512.0, 522.0], ""risk_level"": ""high"", ""risk_tags"": [""掉块"", ""裂隙密集"", ""围岩破碎"", ""围岩等级建议""], ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""hsp_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""forecast_segment"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""掉块"", ""裂隙密集"", ""围岩破碎"", ""围岩等级建议""], ""parent_evidence_id"": ""DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219_hsp_1"", ""anomaly_point_type"": ""collapse_point"", ""anomaly_point_raw_value"": 512.0, ""anomaly_point_chainage"": 1014512.0}",[],1,"[""DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219_hsp_1_collapse_point_0""]","{""center_chainage"": 1014512.0, ""face_chainage"": 1014455.0, ""hazard_family"": ""collapse"", ""report_id"": ""DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219"", ""source_type_norm"": ""HSP"", ""spatial_type"": ""anomaly_point""}",,[],True,,True,,False,False,True,True,68.0,58.0,local_background_evidence
+DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219_hsp_1,DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219,2023 年12 月18 日,2023 年12 月18 日,sonic,HSP,prediction,segment,segment,1014512.0,1014527.0,1014519.5,1014455.0,Ⅳ,板岩夹变质砂岩,弱风化,发育密集,破碎,,0,,1,0,unknown,positive,unknown,"[""掉块"", ""裂隙密集"", ""围岩破碎"", ""软硬不均""]","[""围岩等级建议""]","[""HSP""]",[],0.9,1.1,medium,"里程范围: DyK1014+512
+~
+DyK1014+527
+（15m）
+物探探测结果: 该段存在
+较强反射
+异常
+预报结论: 该段围岩较前段变差。岩性为板
+岩夹变质砂岩，弱风化，岩质软
+硬不均，节理裂隙发育密集，岩
+体破碎，层间结合度差。
+风险提示: 里程+512、
++522 附近有
+掉块风险
+建议围岩等级: Ⅳ级围岩","{""fact_type"": ""hsp_segment"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": ""软硬不均"", ""joint_degree"": ""发育密集"", ""rock_mass_state"": ""破碎"", ""mud_filling_flag"": 0, ""stability"": null, ""water_flag"": 0, ""water_type"": null, ""collapse_flag"": 1, ""deformation_flag"": 0, ""anomaly_level"": ""none"", ""risk_hint_text"": ""里程+512、\n+522 附近有\n掉块风险"", ""collapse_points"": [512.0, 522.0], ""risk_level"": ""high"", ""risk_tags"": [""掉块"", ""裂隙密集"", ""围岩破碎"", ""围岩等级建议""], ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""hsp_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""forecast_segment"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""掉块"", ""裂隙密集"", ""围岩破碎"", ""围岩等级建议""]}",[],1,[],,,[],True,,True,,False,False,True,True,53.0,43.0,local_background_evidence
+DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219_hsp_1_collapse_point_1,DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219,2023 年12 月18 日,2023 年12 月18 日,sonic,HSP,prediction,anomaly_point,anomaly_point,1014522.0,1014522.0,1014522.0,1014455.0,Ⅳ,板岩夹变质砂岩,弱风化,发育密集,破碎,,0,,1,0,unknown,positive,unknown,"[""掉块"", ""裂隙密集"", ""围岩破碎"", ""软硬不均""]","[""围岩等级建议""]","[""HSP""]",[],0.9,1.2,medium,"里程范围: DyK1014+512
+~
+DyK1014+527
+（15m）
+物探探测结果: 该段存在
+较强反射
+异常
+预报结论: 该段围岩较前段变差。岩性为板
+岩夹变质砂岩，弱风化，岩质软
+硬不均，节理裂隙发育密集，岩
+体破碎，层间结合度差。
+风险提示: 里程+512、
++522 附近有
+掉块风险
+建议围岩等级: Ⅳ级围岩","{""fact_type"": ""hsp_segment"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": ""软硬不均"", ""joint_degree"": ""发育密集"", ""rock_mass_state"": ""破碎"", ""mud_filling_flag"": 0, ""stability"": null, ""water_flag"": 0, ""water_type"": null, ""collapse_flag"": 1, ""deformation_flag"": 0, ""anomaly_level"": ""none"", ""risk_hint_text"": ""里程+512、\n+522 附近有\n掉块风险"", ""collapse_points"": [512.0, 522.0], ""risk_level"": ""high"", ""risk_tags"": [""掉块"", ""裂隙密集"", ""围岩破碎"", ""围岩等级建议""], ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""hsp_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""forecast_segment"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""掉块"", ""裂隙密集"", ""围岩破碎"", ""围岩等级建议""], ""parent_evidence_id"": ""DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219_hsp_1"", ""anomaly_point_type"": ""collapse_point"", ""anomaly_point_raw_value"": 522.0, ""anomaly_point_chainage"": 1014522.0}",[],1,"[""DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219_hsp_1_collapse_point_1""]","{""center_chainage"": 1014522.0, ""face_chainage"": 1014455.0, ""hazard_family"": ""collapse"", ""report_id"": ""DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219"", ""source_type_norm"": ""HSP"", ""spatial_type"": ""anomaly_point""}",,[],True,,True,,False,False,True,True,58.0,48.0,local_background_evidence
+DyK1014+531.00_伯舒拉岭右线DyK1014+531洞身素描记录表_sketch_0,DyK1014+531.00_伯舒拉岭右线DyK1014+531洞身素描记录表,2023 年12 月21日,2023 年12 月21日,sketch,face_sketch,observed,point,point,1014531.0,1014531.0,1014531.0,1014531.0,Ⅳ,板岩夹变质砂岩,弱风化,发育密集,破碎-极破碎,较差,1,渗水,1,0,positive,positive,unknown,"[""出水"", ""渗水"", ""掉块"", ""裂隙密集"", ""围岩极破碎"", ""稳定性较差""]","[""围岩等级建议""]","[""face_sketch""]",[],1.2,1.5306500000000003,high,"CZXZZQ-8
+里程：DyK1014+531
+地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部
+施工单位：中铁十四局集团有限公司
+报告编号：CZXZZQ-8-SM-DyK1014+531
+编
+号
+项目
+名称
+状态描述
+1
+掌子面
+尺寸
+开挖
+宽度
+(m)
+12.2
+4
+开挖
+高度
+(m)
+12.07
+开挖
+面积
+(m2)
+126.3
+1
+开挖
+方式
+全断面
+其它:
+2
+掌子面状态
+稳定
+正面掉块√
+正面挤出
+正面不能自稳
+其它：
+3
+毛开挖
+面状态
+自稳
+随时间松弛、
+掉块√
+自稳困难、要
+及时支护
+要超前支护
+其它：
+4
+岩石强度
+(Mpa)
+R＞60
+30＜R≤60√
+15＜R≤30
+5＜R≤15
+R＜5
+其它：
+5
+风化程度
+未风化
+微风化
+弱风化√
+强风化
+全风化
+其它：
+6
+地
+质
+结
+构
+面
+间距（m）
+>1.5
+0.6~1.5
+0.2~0.6√
+0.06~0.2
+＜0.06
+不易测取
+延伸性
+极差
+差√
+中等
+好
+极好
+粗糙度
+明显台阶状
+粗糙波纹状
+平整光滑有擦痕√
+平整光滑
+不易测取
+张开性
+（mm）
+密闭＜0. 1
+部分张开
+0.1~0.5
+张开
+0.5~1.0
+无充填张
+开＞1.0√
+黏土充填
+7
+涌水状态
+[L/min1·10m]
+＜10
+无水
+＜10
+湿润
+10~25
+偶有渗水√
+25~125
+经常渗水
+其它
+8
+岩溶发育程度
+无√
+弱
+中等
+强烈
+9
+设计围岩级别
+Ⅳ
+建议围岩级别
+Ⅳ
+地
+质
+描
+述
+伯舒拉岭隧道进口右线DyK1014+531~DyK1014+561洞身推测岩性为石炭二叠系板岩夹变质
+砂岩，矿物成分以石英、长石为主，钙质胶结。围岩整体弱风化，岩质硬，节理裂隙发育，岩体
+破碎,当前开挖段落掌子面拱顶及左边墙节理裂隙发育密集，岩体破碎-极破碎，层间结合差，掌
+子面滴渗水，存在掉块现象。
+板理产状：N35°W/41°S 。同时发育2组节理裂隙，产状如下：
+J1 ：N19°W45°N，d=0.2~0.4m ，L= 3~5m ，平直、光滑、微张、无充填；
+J2 ：N32°E/51° S ，d=0.3~0.5m ，L=3~5m ，平直、光滑、微张、无充填。
+综上所述，判定洞身围岩为Ⅳ级，与设计相符。
+建议：在开挖后及时对左右两侧边墙处松动的岩块进行处理，对局部岩体破碎、易掉块的位
+置应提前支护，防止掉块，如有异常及时上报，确保隧道施工和人员安全，避免设备受损和卡机
+。
+当前开挖段落见滴渗水，建议做好拱底防排水措施。
+示
+意
+图
+1
+调绘：
+复核：
+审核：
+日期：2023 年12 月21日","{""fact_type"": ""sketch_observation"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": null, ""joint_degree"": ""发育密集"", ""rock_mass_state"": ""破碎-极破碎"", ""mud_filling_flag"": 0, ""stability"": ""较差"", ""water_flag"": 1, ""water_type"": ""渗水"", ""collapse_flag"": 1, ""deformation_flag"": 0, ""risk_level"": ""high"", ""risk_tags"": [""出水"", ""渗水"", ""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""], ""chainage_extract_method"": ""labeled_or_first_mileage"", ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""sketch_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""face_observation"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""出水"", ""渗水"", ""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""]}",[],1,[],,,[],True,,True,,False,False,True,True,49.0,39.0,local_background_evidence
+DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219_hsp_2,DyK1014+455.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+455～DyK1014+555)-20231219,2023 年12 月18 日,2023 年12 月18 日,sonic,HSP,prediction,segment,segment,1014527.0,1014555.0,1014541.0,1014455.0,Ⅳ,板岩夹变质砂岩,弱风化,发育,破碎,,0,,0,0,unknown,unknown,unknown,"[""明显反射异常"", ""裂隙发育"", ""围岩破碎""]","[""围岩等级建议""]","[""HSP""]",[],0.9,1.1,medium,"里程范围: DyK1014+527
+~
+DyK1014+555
+（28m）
+物探探测结果: 该段无明
+显反射异
+常
+预报结论: 该段围岩较前段稍变好。岩性为
+板岩夹变质砂岩，弱风化，节理
+裂隙发育，岩体破碎。
+风险提示: 
+建议围岩等级: Ⅳ级围岩","{""fact_type"": ""hsp_segment"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": null, ""joint_degree"": ""发育"", ""rock_mass_state"": ""破碎"", ""mud_filling_flag"": 0, ""stability"": null, ""water_flag"": 0, ""water_type"": null, ""collapse_flag"": 0, ""deformation_flag"": 0, ""anomaly_level"": ""strong"", ""risk_hint_text"": null, ""collapse_points"": [], ""risk_level"": ""high"", ""risk_tags"": [""明显反射异常"", ""裂隙发育"", ""围岩破碎"", ""围岩等级建议""], ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""hsp_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""forecast_segment"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""明显反射异常"", ""裂隙发育"", ""围岩破碎"", ""围岩等级建议""]}",[],1,[],,,[],True,,True,,False,False,True,True,25.0,15.0,local_background_evidence
+DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_0,DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224,2023 年12 月23 日,2023 年12 月23 日,sonic,HSP,prediction,segment,segment,1014545.0,1014555.0,1014550.0,1014545.0,Ⅳ,板岩夹变质砂岩,弱风化,发育密集,破碎-极破碎,,0,,1,0,unknown,positive,unknown,"[""明显反射异常"", ""掉块"", ""裂隙密集"", ""围岩极破碎""]","[""围岩等级建议""]","[""HSP""]",[],0.9,1.1,medium,"里程范围: DyK1014+545
+~
+DyK1014+555
+（10m）
+物探探测结果: 该段无明
+显反射异
+常
+预报结论: 该段围岩与当前掌子面相当。岩
+性为板岩夹变质砂岩，弱风化，
+岩质硬，节理裂隙发育密集，岩
+体破碎-极破碎，层间结合差。
+风险提示: 该段存在掉
+块风险
+建议围岩等级: Ⅳ级围岩","{""fact_type"": ""hsp_segment"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": null, ""joint_degree"": ""发育密集"", ""rock_mass_state"": ""破碎-极破碎"", ""mud_filling_flag"": 0, ""stability"": null, ""water_flag"": 0, ""water_type"": null, ""collapse_flag"": 1, ""deformation_flag"": 0, ""anomaly_level"": ""strong"", ""risk_hint_text"": ""该段存在掉\n块风险"", ""collapse_points"": [], ""risk_level"": ""high"", ""risk_tags"": [""明显反射异常"", ""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""], ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""hsp_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""forecast_segment"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""明显反射异常"", ""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""]}",[],1,[],,,[],True,,True,,False,False,True,True,25.0,15.0,local_background_evidence
+DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_1_collapse_point_0,DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224,2023 年12 月23 日,2023 年12 月23 日,sonic,HSP,prediction,anomaly_point,anomaly_point,1014555.0,1014555.0,1014555.0,1014545.0,Ⅳ,板岩夹变质砂岩,弱风化,发育密集,破碎-极破碎,,0,,1,0,unknown,positive,unknown,"[""掉块"", ""裂隙密集"", ""围岩极破碎"", ""软硬不均""]","[""围岩等级建议""]","[""HSP""]",[],0.9,1.2,medium,"里程范围: DyK1014+555
+~
+DyK1014+562
+（7m）
+物探探测结果: 该段存在
+弱反射异
+常
+预报结论: 该段围岩较前段稍变差。岩性为
+板岩夹变质砂岩，弱风化，岩质
+软硬不均，节理裂隙发育密集，
+岩体破碎-极破碎，层间结合度
+差。
+风险提示: 里程+555 附
+近有掉块风
+险
+建议围岩等级: Ⅳ级围岩","{""fact_type"": ""hsp_segment"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": ""软硬不均"", ""joint_degree"": ""发育密集"", ""rock_mass_state"": ""破碎-极破碎"", ""mud_filling_flag"": 0, ""stability"": null, ""water_flag"": 0, ""water_type"": null, ""collapse_flag"": 1, ""deformation_flag"": 0, ""anomaly_level"": ""none"", ""risk_hint_text"": ""里程+555 附\n近有掉块风\n险"", ""collapse_points"": [555.0], ""risk_level"": ""high"", ""risk_tags"": [""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""], ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""hsp_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""forecast_segment"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""], ""parent_evidence_id"": ""DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_1"", ""anomaly_point_type"": ""collapse_point"", ""anomaly_point_raw_value"": 555.0, ""anomaly_point_chainage"": 1014555.0}",[],1,"[""DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_1_collapse_point_0""]","{""center_chainage"": 1014555.0, ""face_chainage"": 1014545.0, ""hazard_family"": ""collapse"", ""report_id"": ""DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224"", ""source_type_norm"": ""HSP"", ""spatial_type"": ""anomaly_point""}",,[],True,,True,,False,False,True,True,25.0,15.0,local_background_evidence
+DyK1014+555.00_伯舒拉岭右线DyK1014+555洞身素描记录表_sketch_0,DyK1014+555.00_伯舒拉岭右线DyK1014+555洞身素描记录表,2023 年12 月23日,2023 年12 月23日,sketch,face_sketch,observed,point,point,1014555.0,1014555.0,1014555.0,1014555.0,Ⅳ,板岩夹变质砂岩,弱风化,发育密集,破碎-极破碎,较差,1,渗水,1,0,positive,positive,unknown,"[""出水"", ""渗水"", ""掉块"", ""裂隙密集"", ""围岩极破碎"", ""稳定性较差""]","[""围岩等级建议""]","[""face_sketch""]",[],1.2,1.5306500000000003,high,"CZXZZQ-8
+里程：DyK1014+555
+地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部
+施工单位：中铁十四局集团有限公司
+报告编号：CZXZZQ-8-SM-DyK1014+555
+编
+号
+项目
+名称
+状态描述
+1
+掌子面
+尺寸
+开挖
+宽度
+(m)
+12.2
+4
+开挖
+高度
+(m)
+12.07
+开挖
+面积
+(m2)
+126.3
+1
+开挖
+方式
+全断面
+其它:
+2
+掌子面状态
+稳定
+正面掉块√
+正面挤出
+正面不能自稳
+其它：
+3
+毛开挖
+面状态
+自稳
+随时间松弛、
+掉块√
+自稳困难、要
+及时支护
+要超前支护
+其它：
+4
+岩石强度
+(Mpa)
+R＞60
+30＜R≤60√
+15＜R≤30
+5＜R≤15
+R＜5
+其它：
+5
+风化程度
+未风化
+微风化
+弱风化√
+强风化
+全风化
+其它：
+6
+地
+质
+结
+构
+面
+间距（m）
+>1.5
+0.6~1.5
+0.2~0.6√
+0.06~0.2
+＜0.06
+不易测取
+延伸性
+极差
+差√
+中等
+好
+极好
+粗糙度
+明显台阶状
+粗糙波纹状
+平整光滑有擦痕√
+平整光滑
+不易测取
+张开性
+（mm）
+密闭＜0. 1
+部分张开
+0.1~0.5
+张开
+0.5~1.0
+无充填张
+开＞1.0√
+黏土充填
+7
+涌水状态
+[L/min1·10m]
+＜10
+无水
+＜10
+湿润
+10~25
+偶有渗水√
+25~125
+经常渗水
+其它
+8
+岩溶发育程度
+无√
+弱
+中等
+强烈
+9
+设计围岩级别
+Ⅳ
+建议围岩级别
+Ⅳ
+地
+质
+描
+述
+伯舒拉岭隧道进口右线DyK1014+555~DyK1014+585洞身推测岩性为石炭二叠系板岩夹变质
+砂岩，矿物成分以石英、长石为主，钙质胶结。围岩整体弱风化，岩质硬，节理裂隙发育密集，
+岩体破碎-极破碎,层间结合差，存在掉块现象，掌子面滴渗水。
+板理产状：N22°W/38°S 。同时发育3组节理裂隙，产状如下：
+J1 ：N26°W50°N，d=0.2~0.4m ，L= 3~5m，平直、光滑、微张、无充填；
+J2 ：N11°W/23°N，d=0.3~0.5m ，L=3~5m ，平直、光滑、微张、无充填；
+J3 ：N24°E/56° S，d=0.3~0.5m ，L=3~5m ，平直、光滑、微张、无充填。
+综上所述，判定洞身围岩为Ⅳ级，与设计相符。
+建议：在开挖后及时对左右两侧边墙处松动的岩块进行处理，对局部岩体破碎、易掉块的位
+置应提前支护，防止掉块，如有异常及时上报，确保隧道施工和人员安全，避免设备受损和卡机
+。
+当前开挖段落见滴渗水，建议做好拱底防排水措施。
+示
+意
+图
+1
+调绘：
+复核：
+审核：
+日期：2023 年12 月23日","{""fact_type"": ""sketch_observation"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": null, ""joint_degree"": ""发育密集"", ""rock_mass_state"": ""破碎-极破碎"", ""mud_filling_flag"": 0, ""stability"": ""较差"", ""water_flag"": 1, ""water_type"": ""渗水"", ""collapse_flag"": 1, ""deformation_flag"": 0, ""risk_level"": ""high"", ""risk_tags"": [""出水"", ""渗水"", ""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""], ""chainage_extract_method"": ""labeled_or_first_mileage"", ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""sketch_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""face_observation"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""出水"", ""渗水"", ""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""]}",[],1,[],,,[],True,,True,,False,False,True,True,25.0,15.0,local_background_evidence
+DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_1,DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224,2023 年12 月23 日,2023 年12 月23 日,sonic,HSP,prediction,segment,segment,1014555.0,1014562.0,1014558.5,1014545.0,Ⅳ,板岩夹变质砂岩,弱风化,发育密集,破碎-极破碎,,0,,1,0,unknown,positive,unknown,"[""掉块"", ""裂隙密集"", ""围岩极破碎"", ""软硬不均""]","[""围岩等级建议""]","[""HSP""]",[],0.9,1.1,medium,"里程范围: DyK1014+555
+~
+DyK1014+562
+（7m）
+物探探测结果: 该段存在
+弱反射异
+常
+预报结论: 该段围岩较前段稍变差。岩性为
+板岩夹变质砂岩，弱风化，岩质
+软硬不均，节理裂隙发育密集，
+岩体破碎-极破碎，层间结合度
+差。
+风险提示: 里程+555 附
+近有掉块风
+险
+建议围岩等级: Ⅳ级围岩","{""fact_type"": ""hsp_segment"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": ""软硬不均"", ""joint_degree"": ""发育密集"", ""rock_mass_state"": ""破碎-极破碎"", ""mud_filling_flag"": 0, ""stability"": null, ""water_flag"": 0, ""water_type"": null, ""collapse_flag"": 1, ""deformation_flag"": 0, ""anomaly_level"": ""none"", ""risk_hint_text"": ""里程+555 附\n近有掉块风\n险"", ""collapse_points"": [555.0], ""risk_level"": ""high"", ""risk_tags"": [""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""], ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""hsp_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""forecast_segment"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""]}",[],1,[],,,[],True,,True,,False,False,True,True,18.0,8.0,local_background_evidence
+DyK1014+561.00_伯舒拉岭右线DyK1014+561洞身素描记录表_sketch_0,DyK1014+561.00_伯舒拉岭右线DyK1014+561洞身素描记录表,2023 年12 月23日,2023 年12 月23日,sketch,face_sketch,observed,point,point,1014561.0,1014561.0,1014561.0,1014561.0,Ⅳ,板岩夹变质砂岩,弱风化,发育密集,破碎-极破碎,较差,1,渗水,1,0,positive,positive,unknown,"[""出水"", ""渗水"", ""掉块"", ""裂隙密集"", ""围岩极破碎"", ""稳定性较差""]","[""围岩等级建议""]","[""face_sketch""]",[],1.2,1.5306500000000003,high,"CZXZZQ-8
+里程：DyK1014+561
+地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部
+施工单位：中铁十四局集团有限公司
+报告编号：CZXZZQ-8-SM-DyK1014+561
+编
+号
+项目
+名称
+状态描述
+1
+掌子面
+尺寸
+开挖
+宽度
+(m)
+12.2
+4
+开挖
+高度
+(m)
+12.07
+开挖
+面积
+(m2)
+126.3
+1
+开挖
+方式
+全断面
+其它:
+2
+掌子面状态
+稳定
+正面掉块√
+正面挤出
+正面不能自稳
+其它：
+3
+毛开挖
+面状态
+自稳
+随时间松弛、
+掉块√
+自稳困难、要
+及时支护
+要超前支护
+其它：
+4
+岩石强度
+(Mpa)
+R＞60
+30＜R≤60√
+15＜R≤30
+5＜R≤15
+R＜5
+其它：
+5
+风化程度
+未风化
+微风化
+弱风化√
+强风化
+全风化
+其它：
+6
+地
+质
+结
+构
+面
+间距（m）
+>1.5
+0.6~1.5
+0.2~0.6√
+0.06~0.2
+＜0.06
+不易测取
+延伸性
+极差
+差√
+中等
+好
+极好
+粗糙度
+明显台阶状
+粗糙波纹状
+平整光滑有擦痕√
+平整光滑
+不易测取
+张开性
+（mm）
+密闭＜0. 1
+部分张开
+0.1~0.5
+张开
+0.5~1.0
+无充填张
+开＞1.0√
+黏土充填
+7
+涌水状态
+[L/min1·10m]
+＜10
+无水
+＜10
+湿润
+10~25
+偶有渗水√
+25~125
+经常渗水
+其它
+8
+岩溶发育程度
+无√
+弱
+中等
+强烈
+9
+设计围岩级别
+Ⅳ
+建议围岩级别
+Ⅳ
+地
+质
+描
+述
+伯舒拉岭隧道进口右线DyK1014+561~DyK1014+591洞身推测岩性为石炭二叠系板岩夹变质
+砂岩，矿物成分以石英、长石为主，钙质胶结。围岩整体弱风化，岩质硬，节理裂隙发育，岩体
+破碎,当前开挖段落掌子面拱顶及左右边墙节理裂隙发育密集，岩体破碎-极破碎，层间结合差，
+存在掉块现象，掌子面滴渗水。
+板理产状：N34°W/45°S 。同时发育3组节理裂隙，产状如下：
+J1 ：N22°W48°N，d=0.2~0.4m ，L= 3~5m，平直、光滑、微张、无充填；
+J2 ：N10°W/25°N，d=0.3~0.5m ，L=3~5m ，平直、光滑、微张、无充填；
+J3 ：N20°E/55° S，d=0.3~0.5m ，L=3~5m ，平直、光滑、微张、无充填。
+综上所述，判定洞身围岩为Ⅳ级，与设计相符。
+建议：在开挖后及时对左右两侧边墙处松动的岩块进行处理，对局部岩体破碎、易掉块的位
+置应提前支护，防止掉块，如有异常及时上报，确保隧道施工和人员安全，避免设备受损和卡机
+。
+当前开挖段落见滴渗水，建议做好拱底防排水措施。
+示
+意
+图
+1
+调绘：
+复核：
+审核：
+日期：2023 年12 月23日","{""fact_type"": ""sketch_observation"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": null, ""joint_degree"": ""发育密集"", ""rock_mass_state"": ""破碎-极破碎"", ""mud_filling_flag"": 0, ""stability"": ""较差"", ""water_flag"": 1, ""water_type"": ""渗水"", ""collapse_flag"": 1, ""deformation_flag"": 0, ""risk_level"": ""high"", ""risk_tags"": [""出水"", ""渗水"", ""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""], ""chainage_extract_method"": ""labeled_or_first_mileage"", ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""sketch_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""face_observation"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""出水"", ""渗水"", ""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""]}",[],1,[],,,[],True,,True,,False,False,True,True,19.0,9.0,local_background_evidence
+DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_2,DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224,2023 年12 月23 日,2023 年12 月23 日,sonic,HSP,prediction,segment,segment,1014562.0,1014608.0,1014585.0,1014545.0,Ⅳ,板岩夹变质砂岩,弱风化,发育,破碎,,0,,0,0,unknown,unknown,unknown,"[""明显反射异常"", ""裂隙发育"", ""围岩破碎""]","[""围岩等级建议""]","[""HSP""]",[],0.9,1.1,medium,"里程范围: DyK1014+562
+~
+DyK1014+608
+（46m）
+物探探测结果: 该段无明
+显反射异
+常
+预报结论: 该段围岩较前段稍变好。岩性为
+板岩夹变质砂岩，弱风化，岩质
+硬，节理裂隙发育，岩体破碎。
+风险提示: 
+建议围岩等级: Ⅳ级围岩","{""fact_type"": ""hsp_segment"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": null, ""joint_degree"": ""发育"", ""rock_mass_state"": ""破碎"", ""mud_filling_flag"": 0, ""stability"": null, ""water_flag"": 0, ""water_type"": null, ""collapse_flag"": 0, ""deformation_flag"": 0, ""anomaly_level"": ""strong"", ""risk_hint_text"": null, ""collapse_points"": [], ""risk_level"": ""high"", ""risk_tags"": [""明显反射异常"", ""裂隙发育"", ""围岩破碎"", ""围岩等级建议""], ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""hsp_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""forecast_segment"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""明显反射异常"", ""裂隙发育"", ""围岩破碎"", ""围岩等级建议""]}",[],1,[],,,[],True,,True,,True,True,True,True,0.0,0.0,daily_review_evidence
+DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_0,DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224,2023 年12 月23 日,2023 年12 月23 日,sonic,HSP,prediction,anomaly_point,anomaly_point,1014608.0,1014608.0,1014608.0,1014545.0,Ⅳ,板岩夹变质砂岩,弱风化,发育密集,破碎-极破碎,,0,,1,0,unknown,positive,unknown,"[""掉块"", ""裂隙密集"", ""围岩极破碎"", ""软硬不均""]","[""围岩等级建议""]","[""HSP""]",[],0.9,1.2,medium,"里程范围: DyK1014+608
+~
+DyK1014+641
+（33m）
+物探探测结果: 该段存在
+较强反射
+异常
+预报结论: 该段围岩较前段变差。岩性为板
+岩夹变质砂岩，弱风化，岩质软
+硬不均，节理裂隙发育密集，岩
+体破碎-极破碎，层间结合度差。
+风险提示: 里程+608、
++616、+631
+附近有掉块
+风险
+建议围岩等级: Ⅳ级围岩","{""fact_type"": ""hsp_segment"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": ""软硬不均"", ""joint_degree"": ""发育密集"", ""rock_mass_state"": ""破碎-极破碎"", ""mud_filling_flag"": 0, ""stability"": null, ""water_flag"": 0, ""water_type"": null, ""collapse_flag"": 1, ""deformation_flag"": 0, ""anomaly_level"": ""none"", ""risk_hint_text"": ""里程+608、\n+616、+631\n附近有掉块\n风险"", ""collapse_points"": [608.0, 616.0, 631.0], ""risk_level"": ""high"", ""risk_tags"": [""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""], ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""hsp_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""forecast_segment"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""], ""parent_evidence_id"": ""DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3"", ""anomaly_point_type"": ""collapse_point"", ""anomaly_point_raw_value"": 608.0, ""anomaly_point_chainage"": 1014608.0}",[],1,"[""DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3_collapse_point_0""]","{""center_chainage"": 1014608.0, ""face_chainage"": 1014545.0, ""hazard_family"": ""collapse"", ""report_id"": ""DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224"", ""source_type_norm"": ""HSP"", ""spatial_type"": ""anomaly_point""}",,[],True,,True,,False,True,False,True,28.0,28.0,forward_attention_evidence
+DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224_hsp_3,DyK1014+545.00_伯舒拉岭隧道进口右线水平声波剖面法超前地质预报报告(DyK1014+545～DyK1014+645)-20231224,2023 年12 月23 日,2023 年12 月23 日,sonic,HSP,prediction,segment,segment,1014608.0,1014641.0,1014624.5,1014545.0,Ⅳ,板岩夹变质砂岩,弱风化,发育密集,破碎-极破碎,,0,,1,0,unknown,positive,unknown,"[""掉块"", ""裂隙密集"", ""围岩极破碎"", ""软硬不均""]","[""围岩等级建议""]","[""HSP""]",[],0.9,1.1,medium,"里程范围: DyK1014+608
+~
+DyK1014+641
+（33m）
+物探探测结果: 该段存在
+较强反射
+异常
+预报结论: 该段围岩较前段变差。岩性为板
+岩夹变质砂岩，弱风化，岩质软
+硬不均，节理裂隙发育密集，岩
+体破碎-极破碎，层间结合度差。
+风险提示: 里程+608、
++616、+631
+附近有掉块
+风险
+建议围岩等级: Ⅳ级围岩","{""fact_type"": ""hsp_segment"", ""lithology"": ""板岩夹变质砂岩"", ""weathering"": ""弱风化"", ""support_grade"": ""Ⅳ"", ""rock_hardness"": null, ""rock_uniformity"": ""软硬不均"", ""joint_degree"": ""发育密集"", ""rock_mass_state"": ""破碎-极破碎"", ""mud_filling_flag"": 0, ""stability"": null, ""water_flag"": 0, ""water_type"": null, ""collapse_flag"": 1, ""deformation_flag"": 0, ""anomaly_level"": ""none"", ""risk_hint_text"": ""里程+608、\n+616、+631\n附近有掉块\n风险"", ""collapse_points"": [608.0, 616.0, 631.0], ""risk_level"": ""high"", ""risk_tags"": [""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""], ""evidence_attrs_schema_version"": ""evidence_attrs_v2"", ""parser_name"": ""hsp_parser"", ""parser_version"": ""v2"", ""parse_quality"": ""rule_based"", ""parse_warnings"": [], ""source_semantics"": ""forecast_segment"", ""source_risk_level"": ""high"", ""source_risk_tags"": [""掉块"", ""裂隙密集"", ""围岩极破碎"", ""围岩等级建议""]}",[],1,[],,,[],True,,True,,False,True,False,True,28.0,28.0,forward_attention_evidence

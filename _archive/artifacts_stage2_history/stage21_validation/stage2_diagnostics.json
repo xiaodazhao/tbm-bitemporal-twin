@@ -1,0 +1,65 @@
+{
+  "response_evidence_count": 100,
+  "response_quality_distribution": {
+    "B": 100
+  },
+  "geological_evidence_count": 484,
+  "geological_quality_distribution": {
+    "B": 462,
+    "C": 22
+  },
+  "available_time_unknown_count": 484,
+  "spatial_scope_unknown_count": 0,
+  "epistemic_status_unknown_count": 0,
+  "epistemic_status_distribution": {
+    "OBSERVED": 169,
+    "FORECAST": 315
+  },
+  "applicability_result_distribution": {
+    "APPLICABLE": 90,
+    "APPLICABLE_WITH_QUALIFICATION": 10,
+    "NOT_APPLICABLE": 9626,
+    "UNDETERMINED": 54
+  },
+  "temporal_status_distribution": {
+    "AVAILABLE": 100,
+    "AVAILABLE_TIME_UNKNOWN": 9680
+  },
+  "spatial_status_distribution": {
+    "OVERLAP": 127,
+    "BEHIND": 2116,
+    "AHEAD": 38,
+    "DISJOINT": 7050,
+    "INVALID": 440,
+    "ADJACENT": 9
+  },
+  "detected_future_leakage_count": 0,
+  "future_evidence_leakage_count": 0,
+  "hard_exclusion_distribution": {
+    "OBSERVED_BEHIND_WITHOUT_TARGET_COVERAGE": 945,
+    "OBSERVED_AHEAD_OF_TARGET": 20,
+    "SPATIAL_DISJOINT": 7050,
+    "INVALID_SPATIAL_SCOPE": 440,
+    "FORECAST_BEHIND_TARGET": 1171
+  },
+  "excluded_by_future_time": 0,
+  "excluded_by_spatial_disjoint": 7050,
+  "excluded_by_epistemic_conflict": 0,
+  "excluded_by_invalid_spatial_scope": 440,
+  "geological_evidence_level_summary": {
+    "applicable_to_at_least_one_episode": 0,
+    "qualified_for_at_least_one_episode": 0,
+    "undetermined_for_all_episodes": 0,
+    "not_applicable_to_all_episodes": 472,
+    "mixed_applicability_results": 12
+  },
+  "response_evidence_level_summary": {
+    "applicable_to_at_least_one_episode": 90,
+    "qualified_for_at_least_one_episode": 10,
+    "undetermined_for_all_episodes": 0,
+    "not_applicable_to_all_episodes": 0,
+    "mixed_applicability_results": 0
+  },
+  "historically_evaluable_geological_evidence_count": 0,
+  "real_data_temporal_applicability_validation": "NOT_EVALUABLE"
+}

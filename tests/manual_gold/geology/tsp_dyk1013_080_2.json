@@ -1,0 +1,132 @@
+{
+  "source_type": "TSP_REPORT",
+  "document_metadata": {
+    "observed_local_date": "2023-06-02",
+    "document_local_date": "2023-06-03",
+    "submitted_local_date": "2023-06-03",
+    "available_local_date": "2023-06-03",
+    "available_basis": "submitted_time",
+    "face_chainage": 1013080.2,
+    "document_scope": [1013080.2, 1013200.2]
+  },
+  "primary_evidence_count": 8,
+  "forecast_segments": [
+    {
+      "range": [1013080.2, 1013096.0],
+      "type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "vp": "4871",
+      "vs": "2752",
+      "vp_vs": "1.77",
+      "poisson_ratio": "0.27",
+      "dynamic_elastic_modulus": "50",
+      "suggested_grade": "Ⅴ级"
+    },
+    {
+      "range": [1013096.0, 1013114.0],
+      "type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "water_type": "线-股状出水",
+      "suggested_grade": "Ⅴ级"
+    },
+    {
+      "range": [1013114.0, 1013120.0],
+      "type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "suggested_grade": "Ⅴ级"
+    },
+    {
+      "range": [1013120.0, 1013137.0],
+      "type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "water_type": "线-股状出水",
+      "suggested_grade": "Ⅴ级"
+    },
+    {
+      "range": [1013137.0, 1013161.0],
+      "type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "joint_development": "节理裂隙发育密集",
+      "rock_mass_state": "岩体破碎-极破碎",
+      "water_type": "线状出水",
+      "suggested_grade": "Ⅴ级"
+    },
+    {
+      "range": [1013161.0, 1013182.0],
+      "type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "joint_development": "节理裂隙较发育",
+      "rock_mass_state": "岩体较破碎",
+      "suggested_grade": "Ⅳ级"
+    },
+    {
+      "range": [1013182.0, 1013200.2],
+      "type": "FORECAST_SEGMENT",
+      "epistemic_status": "FORECAST",
+      "joint_development": "节理裂隙发育密集",
+      "rock_mass_state": "岩体破碎-极破碎",
+      "water_type": "线-股状出水",
+      "suggested_grade": "Ⅴ级"
+    }
+  ],
+  "report_assertion_count": 9,
+  "report_assertions": [
+    {
+      "type": "GRADE_SUMMARY",
+      "range": [1013080.2, 1013161.0],
+      "suggested_grade": "Ⅴ级",
+      "consistency_status": "CONSISTENT"
+    },
+    {
+      "type": "GRADE_SUMMARY",
+      "range": [1013161.0, 1013182.0],
+      "suggested_grade": "Ⅳ级",
+      "consistency_status": "CONSISTENT"
+    },
+    {
+      "type": "GRADE_SUMMARY",
+      "range": [1013182.0, 1013200.2],
+      "suggested_grade": "Ⅳ级",
+      "consistency_status": "CONFLICT",
+      "conflict_contains": "table suggested_grade=Ⅴ级; summary suggested_grade=Ⅳ级"
+    },
+    {
+      "type": "BLOCK_FALL_SUMMARY",
+      "range": [1013137.0, 1013161.0],
+      "block_fall_or_collapse": "掉块风险",
+      "consistency_status": "CONSISTENT"
+    },
+    {
+      "type": "BLOCK_FALL_SUMMARY",
+      "range": [1013182.0, 1013200.2],
+      "block_fall_or_collapse": "掉块风险",
+      "consistency_status": "CONSISTENT"
+    },
+    {
+      "type": "WATER_SUMMARY",
+      "range": [1013096.0, 1013114.0],
+      "water_type": "线-股状出水",
+      "consistency_status": "CONSISTENT"
+    },
+    {
+      "type": "WATER_SUMMARY",
+      "range": [1013130.0, 1013137.0],
+      "water_type": "线-股状出水",
+      "consistency_status": "CONSISTENT"
+    },
+    {
+      "type": "WATER_SUMMARY",
+      "range": [1013137.0, 1013161.0],
+      "water_type": "线状出水",
+      "consistency_status": "CONSISTENT"
+    },
+    {
+      "type": "WATER_SUMMARY",
+      "range": [1013182.0, 1013200.2],
+      "water_type": "线-股状出水",
+      "consistency_status": "CONSISTENT"
+    }
+  ],
+  "must_include_source_pages": [10, 11, 12, 13],
+  "must_include_source_cell_text": ["纵波速度Vp", "建议该段按Ⅴ", "DyK1013+182", "线-股状出水"]
+}

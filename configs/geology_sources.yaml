@@ -1,0 +1,32 @@
+method_version: geological_evidence_normalization_v1
+default_source_type: OTHER
+default_epistemic_status: UNKNOWN
+field_aliases:
+  title: ["title", "标题", "报告名称", "name", "report_id"]
+  raw_text: ["raw_text", "text", "内容", "描述", "地质描述", "summary"]
+  observed_time: ["observed_time", "观测时间", "描述时间", "date", "日期", "report_date"]
+  issued_time: ["issued_time", "发布时间", "报告时间", "issued_date", "issue_date"]
+  available_time: ["available_time", "可用时间", "到达时间"]
+  source_record_id: ["source_record_id", "record_id", "id", "evidence_id"]
+  source_type: ["source_type", "资料类型", "report_type"]
+  epistemic_status: ["epistemic_status", "认识性质", "evidence_role"]
+  start_chainage: ["start_chainage", "起始里程", "起点里程", "start_num"]
+  end_chainage: ["end_chainage", "结束里程", "终点里程", "end_num"]
+source_type_mapping:
+  forecast: ["TSP_REPORT", "HSP_REPORT", "SONIC_FORECAST"]
+  observed: ["FACE_SKETCH", "FIELD_OBSERVATION", "EXCAVATED_FACE_RECORD"]
+  background: ["DESIGN_GEOLOGY", "REGIONAL_GEOLOGY", "DESIGN_BACKGROUND"]
+source_type_aliases:
+  TSP_REPORT: ["tsp", "TSP", "TSP_REPORT", "超前地质预报", "地质预报"]
+  HSP_REPORT: ["HSP", "HSP_REPORT"]
+  SONIC_FORECAST: ["sonic", "SONIC_FORECAST", "声波预报"]
+  FIELD_OBSERVATION: ["FIELD_OBSERVATION", "现场观测", "掌子面观测", "现场记录"]
+  FACE_SKETCH: ["sketch", "FACE_SKETCH", "掌子面素描", "地质素描"]
+  EXCAVATED_FACE_RECORD: ["EXCAVATED_FACE_RECORD", "开挖面记录"]
+  DESIGN_GEOLOGY: ["DESIGN_GEOLOGY", "设计地质"]
+  REGIONAL_GEOLOGY: ["REGIONAL_GEOLOGY", "区域地质"]
+  DESIGN_BACKGROUND: ["DESIGN_BACKGROUND", "设计背景", "背景地质"]
+chainage_validation:
+  maximum_reasonable_interval_m: 5000.0
+  scale_ratio_threshold: 5.0
+  prefix_consistency_check: true

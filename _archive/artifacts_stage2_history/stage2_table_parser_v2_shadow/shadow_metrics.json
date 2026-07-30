@@ -1,0 +1,33 @@
+{
+  "raw_assets": 227,
+  "in_scope_assets": 225,
+  "duplicate_assets": 2,
+  "out_of_scope_assets": 2,
+  "canonical_in_scope_assets": 223,
+  "asset_governance_matches_stage2a": true,
+  "status_counts": {
+    "SUCCESS": 223,
+    "INVALID_DOCUMENT": 4
+  },
+  "in_scope_canonical_processing_coverage": "223/223",
+  "success_or_warning_ratio": 1.0,
+  "unsupported_ratio": 0.0,
+  "parse_error_ratio": 0.0,
+  "primary_evidence_count": 504,
+  "report_assertion_count": 122,
+  "span_total": 3768,
+  "bbox_span_count": 3646,
+  "text_block_span_count": 122,
+  "span_valid_count": 3768,
+  "source_span_valid_ratio": 1.0,
+  "invalid_span_count": 0,
+  "field_span_covered_count": 6606,
+  "field_span_total_count": 6606,
+  "field_span_coverage_ratio": 1.0,
+  "header_evidence_count": 0,
+  "duplicate_primary_evidence_count": 0,
+  "forecast_outside_document_scope_count": 0,
+  "fixed_regression_pass_rate": "10/10",
+  "gold_pass_rate": "3/3",
+  "evidence_check_counts": {}
+}

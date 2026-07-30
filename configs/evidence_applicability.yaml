@@ -1,0 +1,11 @@
+method_version: evidence_applicability_v1
+temporal:
+  unknown_available_time_result: UNDETERMINED
+spatial:
+  adjacent_tolerance_m: 5.0
+  ahead_context_limit_m: 30.0
+  background_context_limit_m: 50.0
+quality:
+  low_target_grades: ["C", "D"]
+  low_evidence_grades: ["C", "D"]
+

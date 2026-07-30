@@ -1,0 +1,47 @@
+[
+  {
+    "sample": "sketch_dyk1013_184_2",
+    "source_type": "FACE_SKETCH",
+    "primary_evidence_count": 1,
+    "forecast_segment_count": 0,
+    "report_assertion_count": 0,
+    "template_variant_id": "sketch_main_table_16x17",
+    "document_scope": [
+      1013184.2,
+      1013184.2
+    ],
+    "submitted_local_date": null,
+    "available_basis": "form_date",
+    "status": "PASS"
+  },
+  {
+    "sample": "hsp_dyk1013_190_2",
+    "source_type": "SONIC_FORECAST",
+    "primary_evidence_count": 5,
+    "forecast_segment_count": 4,
+    "report_assertion_count": 0,
+    "template_variant_id": "hsp_forecast_continued_without_repeated_header",
+    "document_scope": [
+      1013190.2,
+      1013290.2
+    ],
+    "submitted_local_date": "2023-09-14",
+    "available_basis": "submitted_time",
+    "status": "PASS"
+  },
+  {
+    "sample": "tsp_dyk1013_080_2",
+    "source_type": "TSP_REPORT",
+    "primary_evidence_count": 8,
+    "forecast_segment_count": 7,
+    "report_assertion_count": 9,
+    "template_variant_id": "tsp_table2_mixed_6col_4col_continuation",
+    "document_scope": [
+      1013080.2,
+      1013200.2
+    ],
+    "submitted_local_date": "2023-06-03",
+    "available_basis": "submitted_time",
+    "status": "PASS"
+  }
+]

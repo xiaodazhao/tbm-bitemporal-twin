@@ -1,0 +1,174 @@
+{
+  "raw_asset_count": 227,
+  "in_scope_asset_count": 225,
+  "duplicate_asset_count": 2,
+  "out_of_scope_asset_count": 2,
+  "canonical_document_count": 223,
+  "canonical_evidence_count": 653,
+  "asset_source_type_distribution": {
+    "FACE_SKETCH": 171,
+    "SONIC_FORECAST": 49,
+    "TSP_REPORT": 7
+  },
+  "document_source_type_distribution": {
+    "FACE_SKETCH": 167,
+    "SONIC_FORECAST": 49,
+    "TSP_REPORT": 7
+  },
+  "evidence_source_type_distribution": {
+    "SONIC_FORECAST": 316,
+    "FACE_SKETCH": 240,
+    "TSP_REPORT": 97
+  },
+  "evidence_type_distribution": {
+    "GEOLOGICAL_OBSERVATION": 297,
+    "GEOLOGICAL_FORECAST": 293,
+    "GEOLOGICAL_BACKGROUND": 63
+  },
+  "evidence_epistemic_distribution": {
+    "OBSERVED": 297,
+    "FORECAST": 293,
+    "BACKGROUND": 63
+  },
+  "cover_metadata_excluded_count": 57,
+  "non_evidence_section_count": 625,
+  "non_evidence_reason_distribution": {
+    "INSTRUMENT_PARAMETER_OR_CALIBRATION": 185,
+    "TASK_OR_WORK_REQUIREMENT": 168,
+    "METHOD_PRINCIPLE": 154,
+    "TABLE_HEADER_ONLY": 61,
+    "EXECUTION_STANDARD": 56,
+    "TABLE_ROW_WITHOUT_GEOLOGY": 1
+  },
+  "forecast_evidence_count": 293,
+  "forecast_range_source_distribution": {
+    "TABLE_ROW_RANGE": 281,
+    "SELF_RANGE": 12
+  },
+  "forecast_without_explicit_or_legal_inherited_range_count": 0,
+  "table_row_reconstruction_count": 289,
+  "unresolved_table_cell_count": 648,
+  "exact_duplicate_evidence_count": 0,
+  "structured_attribute_coverage": [
+    {
+      "attribute": "lithology",
+      "known_count": 470,
+      "unknown_count": 183,
+      "coverage_ratio": 0.7197549770290965
+    },
+    {
+      "attribute": "weathering",
+      "known_count": 465,
+      "unknown_count": 188,
+      "coverage_ratio": 0.7120980091883614
+    },
+    {
+      "attribute": "surrounding_rock_grade",
+      "known_count": 517,
+      "unknown_count": 136,
+      "coverage_ratio": 0.7917304747320061
+    },
+    {
+      "attribute": "joint_development",
+      "known_count": 529,
+      "unknown_count": 124,
+      "coverage_ratio": 0.8101071975497703
+    },
+    {
+      "attribute": "rock_mass_state",
+      "known_count": 591,
+      "unknown_count": 62,
+      "coverage_ratio": 0.9050535987748851
+    },
+    {
+      "attribute": "stability",
+      "known_count": 80,
+      "unknown_count": 573,
+      "coverage_ratio": 0.1225114854517611
+    },
+    {
+      "attribute": "water_state",
+      "known_count": 209,
+      "unknown_count": 444,
+      "coverage_ratio": 0.32006125574272587
+    },
+    {
+      "attribute": "water_type",
+      "known_count": 209,
+      "unknown_count": 444,
+      "coverage_ratio": 0.32006125574272587
+    },
+    {
+      "attribute": "block_fall_or_collapse",
+      "known_count": 333,
+      "unknown_count": 320,
+      "coverage_ratio": 0.5099540581929556
+    },
+    {
+      "attribute": "deformation",
+      "known_count": 21,
+      "unknown_count": 632,
+      "coverage_ratio": 0.03215926493108729
+    },
+    {
+      "attribute": "anomaly_level",
+      "known_count": 214,
+      "unknown_count": 439,
+      "coverage_ratio": 0.327718223583461
+    },
+    {
+      "attribute": "source_risk_text",
+      "known_count": 412,
+      "unknown_count": 241,
+      "coverage_ratio": 0.6309341500765697
+    },
+    {
+      "attribute": "forecast_qualifiers",
+      "known_count": 91,
+      "unknown_count": 562,
+      "coverage_ratio": 0.13935681470137826
+    }
+  ],
+  "temporal_local_date_consistency": {
+    "temporal_local_date_consistency_count": 725,
+    "temporal_local_date_consistency_total": 725,
+    "temporal_local_date_consistency_ratio": 1.0
+  },
+  "provenance_consistency": {
+    "provenance_consistency_count": 491,
+    "provenance_consistency_total": 653,
+    "provenance_consistency_ratio": 0.7519142419601837
+  },
+  "forecast_face_chainage_validation": {
+    "WITHIN_FORECAST_SCOPE": 56
+  },
+  "warning_propagation": {
+    "legacy_style_warning_pollution_candidate_count": 76,
+    "post_fix_warning_pollution_count": 0
+  },
+  "invalid_spatial_evidence_count": 23,
+  "invalid_spatial_reason_distribution": {
+    "CHAINAGE_DIRECTION_CONFLICT;CHAINAGE_PREFIX_MISMATCH": 18,
+    "CHAINAGE_DIRECTION_CONFLICT": 5
+  },
+  "applicability_result_distribution": {
+    "NOT_APPLICABLE": 12578,
+    "APPLICABLE_WITH_QUALIFICATION": 482
+  },
+  "applicability_temporal_status_distribution": {
+    "NOT_YET_AVAILABLE": 9210,
+    "AVAILABLE": 3838,
+    "UNKNOWN_WITHIN_PRECISION": 12
+  },
+  "applicability_spatial_status_distribution": {
+    "DISJOINT": 8791,
+    "BEHIND": 3480,
+    "INVALID": 460,
+    "OVERLAP": 272,
+    "AHEAD": 48,
+    "ADJACENT": 9
+  },
+  "future_leakage_check": {
+    "non_not_applicable_future_leakage_count": 0
+  }
+}
