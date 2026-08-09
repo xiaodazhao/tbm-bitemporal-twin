@@ -1,0 +1,25 @@
+method_version: stage4a1_1_metric_method_freeze_v1
+scalar_geological_attention_dimension_count: 6
+dimensions:
+  - dimension_name: EXPLICIT_ANOMALY
+    attributes:
+      - anomaly_level
+  - dimension_name: SURROUNDING_ROCK_GRADE
+    attributes:
+      - suggested_grade
+      - suggested_surrounding_rock_grade
+  - dimension_name: ROCK_MASS_INTEGRITY
+    attributes:
+      - rock_mass_state
+  - dimension_name: JOINT_DEVELOPMENT
+    attributes:
+      - joint_development
+  - dimension_name: STABILITY_BLOCK
+    attributes:
+      - stability
+      - block_fall_or_collapse
+  - dimension_name: WATER_ATTENTION
+    attributes:
+      - water_type
+      - form_water_status
+trace_only_status: TRACE_ONLY_NOT_SCALAR_ATTENTION

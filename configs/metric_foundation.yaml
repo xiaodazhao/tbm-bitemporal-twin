@@ -1,0 +1,14 @@
+metric_foundation_method_version: stage4a1_metric_foundation_v1_causal_response_inventory
+schema_version: stage4a1_metric_foundation.v1
+alignment_id: boshulaling_import_right
+channels:
+  - advance_speed
+  - total_thrust
+  - cutterhead_torque
+  - cutterhead_rpm
+  - penetration
+minimum_baseline_sample_count: 30
+mad_scale_factor: 1.4826
+iqr_scale_divisor: 1.349
+mechanically_invalid_quality_flags: []
+mechanically_invalid_reason_codes: []

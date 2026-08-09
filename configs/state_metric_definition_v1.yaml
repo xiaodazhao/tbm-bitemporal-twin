@@ -1,0 +1,38 @@
+method_version: stage4a2_bitemporal_state_metrics_v1_family_rai_ordinal_grs
+schema_version: stage4a2_bitemporal_state_metrics.v1
+rai:
+  saturation_robust_z: 3.0
+  scalar_response_families:
+    LOAD_RESPONSE:
+      channels:
+        - total_thrust
+        - cutterhead_torque
+    ADVANCE_KINEMATIC_RESPONSE:
+      channels:
+        - advance_speed
+        - penetration
+  diagnostic_response_families:
+    ROTATION_DIAGNOSTIC:
+      channels:
+        - cutterhead_rpm
+      included_in_scalar_rai: false
+  aggregation:
+    family_channel_operator: max_channel_median_abs_z
+    family_attention_operator: min_raw_deviation_divided_by_3
+    rai_operator: max_scalar_family_attention
+grs:
+  dimensions:
+    - EXPLICIT_ANOMALY
+    - SURROUNDING_ROCK_GRADE
+    - ROCK_MASS_INTEGRITY
+    - JOINT_DEVELOPMENT
+    - STABILITY_BLOCK
+    - WATER_ATTENTION
+  dimension_operator: max_mapped_attention
+  state_operator: mean_non_null_dimension_attention
+grci:
+  scope: DAILY_REVIEW_CELL_ONLY
+  operator: NONPROBABILISTIC_CONJUNCTIVE_PRODUCT
+  is_probability: false
+  is_causal_estimate: false
+  is_hazard_probability: false

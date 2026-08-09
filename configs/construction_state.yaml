@@ -1,0 +1,6 @@
+alignment_id: boshulaling_import_right
+chainage_direction: INCREASING
+cell_size_m: 10.0
+grid_origin_m: 0.0
+point_boundary_policy: RIGHT_CLOSED_PREVIOUS_CELL
+state_method_version: stage3a_initial_epistemic_state_v1_1_point_response_complete

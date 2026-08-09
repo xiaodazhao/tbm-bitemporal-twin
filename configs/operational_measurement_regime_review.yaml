@@ -1,0 +1,15 @@
+method_version: stage4a2_bitemporal_state_metrics_v1_family_rai_ordinal_grs
+reviewed_channel_regimes:
+  - channel_name: cutterhead_rpm
+    reviewed_boundary_date: 2023-12-01
+    boundary_status: MANUALLY_REVIEWED_MEASUREMENT_REGIME_BOUNDARY
+    pre_boundary_status: STABLE_REFERENCE_REGIME
+    post_boundary_status: SCALE_REGIME_SHIFT
+    unit_verified: false
+    scale_verified: false
+    automatic_scale_correction: false
+    scalar_rai_eligible: false
+    basis:
+      - RPM raw daily median moves from approximately 5.x to approximately 90.
+      - RPM consistency ratio moves from approximately 1 to approximately 16.6.
+      - Original unit and scaling metadata remain unverified.

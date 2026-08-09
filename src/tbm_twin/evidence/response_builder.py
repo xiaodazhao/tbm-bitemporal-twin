@@ -116,15 +116,23 @@ def build_response_evidence(
     *,
     config: ResponseEvidenceConfig | None = None,
     baselines: dict[str, ResponseBaseline] | None = None,
+    baseline_mode: BaselineMethod | str | None = None,
+    reconstruction_time: datetime | None = None,
 ) -> list[ResponseEvidence]:
     """Build response evidence over core EXCAVATING observations only."""
 
     config = config or load_response_config()
-    baselines = baselines or build_global_robust_baselines(
-        normalized_frame,
-        features=config.features,
-        data_scope="provided_normalized_frame",
+    selected_baseline_mode = (
+        BaselineMethod(str(baseline_mode)) if baseline_mode is not None else config.baseline_method
     )
+    if selected_baseline_mode == BaselineMethod.NO_BASELINE:
+        baselines = {}
+    else:
+        baselines = baselines or build_global_robust_baselines(
+            normalized_frame,
+            features=config.features,
+            data_scope="provided_normalized_frame",
+        )
     by_obs = normalized_frame.set_index("observation_id", drop=False)
     footprint_by_episode = {footprint.episode_id: footprint for footprint in footprints}
     evidence: list[ResponseEvidence] = []
@@ -140,6 +148,7 @@ def build_response_evidence(
                 baseline=baselines.get(feature),
                 footprint=footprint,
                 config=config,
+                reconstruction_time=reconstruction_time,
             )
             if record is not None:
                 evidence.append(record)
@@ -154,6 +163,7 @@ def _feature_evidence(
     baseline: ResponseBaseline | None,
     footprint: SpatialFootprint | None,
     config: ResponseEvidenceConfig,
+    reconstruction_time: datetime | None,
 ) -> ResponseEvidence | None:
     if feature not in rows.columns:
         return None
@@ -201,13 +211,16 @@ def _feature_evidence(
         if baseline
         else None
     )
-    deviation_value, direction, strength = _deviation(stats.mean, baseline, config)
-    deviation = DeviationAssessment(
-        statistic="mean",
-        deviation_value=deviation_value,
-        deviation_direction=direction or DeviationDirection.UNDETERMINED,
-        deviation_strength=strength,
-    )
+    if baseline is None:
+        deviation = None
+    else:
+        deviation_value, direction, strength = _deviation(stats.mean, baseline, config)
+        deviation = DeviationAssessment(
+            statistic="mean",
+            deviation_value=deviation_value,
+            deviation_direction=direction or DeviationDirection.UNDETERMINED,
+            deviation_strength=strength,
+        )
     evidence_id = _stable_id("response", episode.episode_id, feature, RESPONSE_METHOD_VERSION)
     return ResponseEvidence(
         evidence_id=evidence_id,
@@ -215,7 +228,7 @@ def _feature_evidence(
         source_asset_ids=source_asset_ids,
         valid_time=TimeInterval(start=episode.excavation_start, end=episode.excavation_end),
         available_time=episode.excavation_end,
-        ingested_time=datetime.now(UTC),
+        ingested_time=reconstruction_time or datetime.now(UTC),
         spatial_scope=spatial_scope,
         quality_grade=quality,
         quality_flags=sorted(set(reason_codes)),

@@ -80,8 +80,8 @@ artifacts/stage2_raw_geology_validation/
 Reason:
 
 These are historical Stage 2 development, validation, comparison, and shadow
-artifacts. Formal Stage 3 input is limited to the freeze candidate and
-Applicability V2 directories.
+artifacts. Formal Stage 3 input is limited to the formal Stage 2 directories
+listed in `docs/STAGE2_FROZEN_PIPELINE.md`.
 
 Deletion status:
 
@@ -126,4 +126,3 @@ part of the formal route.
 Deletion status:
 
 Retain until the user confirms old-repository retention is no longer needed.
-

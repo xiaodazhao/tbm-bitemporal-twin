@@ -1,6 +1,8 @@
 .env
 .venv
+.DS_Store
 __pycache__/
+*.py[cod]
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
@@ -19,4 +21,3 @@ tbm-report/
 # Real engineering source files must stay outside version control.
 *真实工程*.csv
 *真实工程*.pdf
-

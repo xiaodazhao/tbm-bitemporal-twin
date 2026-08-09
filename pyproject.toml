@@ -37,7 +37,7 @@ where = ["src"]
 [tool.ruff]
 line-length = 100
 target-version = "py311"
-exclude = ["_archive"]
+exclude = ["_archive", "stage4_full_acceptance_review"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "N", "SIM", "RUF"]

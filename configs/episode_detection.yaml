@@ -23,6 +23,9 @@ diagnostics:
   rapid_phase_flip_seconds: 60.0
   short_episode_seconds: 120.0
   implausible_advance_m: 100.0
+cross_file_episode_candidates:
+  max_cross_file_time_gap_seconds: 60.0
+  max_cross_file_chainage_gap_m: 1.0
 episode_evaluation:
   minimum_iou_for_match: 0.5
   boundary_tolerance_seconds: 60.0
