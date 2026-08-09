@@ -74,6 +74,93 @@ Raw PLC CSV
 
 本阶段不实现日报、LLM、Prompt、API、前端、数据库服务、Evidence Pack或Claim推理。机械响应只用于施工过程弱标签、状态连接和非概率指标，不被解释为地质原因。
 
+## 目录结构与文件职责
+
+```text
+tbm-bitemporal-twin/
+├─ README.md                         # GitHub主页说明：研究目标、冻结链路、命令和目录结构
+├─ pyproject.toml                    # Python项目元数据、依赖、ruff/mypy/pytest配置
+├─ AGENTS.md                         # Codex协作规则：研究边界、测试要求、禁止事项
+├─ .env.example                      # 本地环境变量示例；不包含真实密钥
+├─ .gitignore                        # 忽略本机缓存、真实数据、artifacts等大型生成产物
+│
+├─ configs/                          # ★ 方法配置与合同，不写入业务结果，只驱动构建
+│  ├─ plc_channels.yaml              # PLC字段目录和单位/语义审计入口
+│  ├─ episode_detection.yaml         # OperationPhase与ExcavationEpisode识别参数
+│  ├─ response_evidence.yaml         # ResponseEvidence通道选择、质量和聚合配置
+│  ├─ geology_sources.yaml           # 地质PDF/证据来源治理配置
+│  ├─ evidence_applicability.yaml    # EvidenceApplicability空间/时间/角色规则
+│  ├─ construction_state.yaml        # Stage3 10m Cell、日期窗口和状态构建配置
+│  ├─ metric_foundation.yaml         # Stage4A1机械响应baseline和偏离组件配置
+│  ├─ operational_measurement_regime_review.yaml # 机械通道制度、可用性和排除规则
+│  ├─ geological_attention_dimension_contract.yaml # GRS地质关注维度合同
+│  ├─ geological_attention_mapping_v1.yaml        # 44项地质值到ordinal attention的人工冻结映射
+│  └─ state_metric_definition_v1.yaml             # RAI/GRS/GRCI正式指标定义合同
+│
+├─ scripts/                          # ★ 可执行入口；每个Stage的正式构建都从这里启动
+│  ├─ audit_channels.py              # Stage1 PLC字段审计
+│  ├─ normalize_plc.py               # 原始PLC CSV标准化为时间序列观测
+│  ├─ build_episodes.py              # 从标准化PLC构建OperationPhase和ExcavationEpisode
+│  ├─ build_response_evidence.py     # 早期ResponseEvidence构建入口
+│  ├─ normalize_geological_evidence.py # 早期地质证据标准化入口
+│  ├─ validate_stage1_real_data.py   # 真实PLC三日/多日验证与Episode复核
+│  ├─ validate_stage2_evidence.py    # Stage2 Evidence治理验证
+│  ├─ validate_stage2_raw_geology.py # 地质PDF解析和证据冻结审计入口
+│  ├─ build_stage2e_plc_operational_freeze.py # 91天PLC Operational Evidence冻结
+│  ├─ run_stage2d_applicability_v2_1.py       # Applicability V2.1正式重建入口
+│  ├─ build_stage3a_initial_state.py          # Stage3A初始认识状态与Cell Link冻结
+│  ├─ build_stage3b_bitemporal_state.py       # Stage3B按knowledge time修订双时间状态
+│  ├─ build_stage4a1_metric_foundation.py     # Stage4A1 baseline与response deviation基础
+│  ├─ build_stage4a1_1_metric_method_freeze.py # Stage4A1.1测量制度和指标合同冻结
+│  └─ build_stage4a2_bitemporal_state_metrics.py # Stage4正式RAI/GRS/GRCI生成与审计
+│
+├─ src/tbm_twin/                     # ★ 研究型Python包主体
+│  ├─ assets/                        # SourceAsset、文件hash、输入资产登记
+│  ├─ channels/                      # PLC ChannelCatalog、字段解析和语义解析
+│  ├─ timeseries/                    # PLC读取、时间标准化、观测质量诊断
+│  ├─ process/                       # OperationPhase弱标签、ExcavationEpisode模型和构建
+│  ├─ trajectory/                    # SpatialFootprint与里程轨迹质量估计
+│  ├─ geology/                       # 地质文档模型、里程/时间解析、PDF证据读取
+│  │  └─ table_parser_v2/            # pdfplumber表格Parser V2：FaceSketch/HSP/TSP专用解析
+│  ├─ evidence/                      # Geological/Response Evidence模型、质量和Applicability规则
+│  ├─ operational_freeze/            # Stage2E PLC Operational Evidence冻结模型、构建和校验
+│  ├─ state/                         # Stage3A Cell网格、DailyState、Evidence到Cell连接
+│  ├─ bitemporal/                    # Stage3B knowledge-time修订链、as-of查询和快照物化
+│  ├─ metrics/                       # Stage4 RAI、GRS、GRCI、baseline、mapping和方法合同
+│  └─ validation/                    # 验证配置、诊断汇总、可视化和Stage级审计辅助
+│
+├─ tests/                            # ★ 单元测试和集成测试；每个冻结Stage都有回归保护
+│  ├─ unit/                          # 模型、ID、时间语义、空间规则、指标公式等细粒度测试
+│  ├─ integration/                   # Stage2E/Stage3A/Stage3B/Stage4真实冻结链路测试
+│  ├─ fixtures/                      # 小型PLC、地质PDF和构造数据fixture
+│  └─ manual_gold/                   # table_parser_v2人工Gold；禁止由Parser自动生成
+│
+├─ docs/                             # 方法说明和冻结路线文档
+│  ├─ architecture.md                # 总体架构：证据→状态→双时间→指标→未来Claim边界
+│  ├─ STAGE2_FROZEN_PIPELINE.md      # Stage2冻结链路和Stage3/4正式读取路径
+│  ├─ evidence_applicability.md      # Applicability角色、时间门和空间门说明
+│  ├─ response_evidence.md           # 机械响应证据边界：不直接解释地质原因
+│  ├─ geological_evidence.md         # 地质证据结构化与来源约束
+│  ├─ stage1_real_data_validation.md # Stage1真实PLC验证方法
+│  ├─ stage2_validation.md           # Stage2验证记录
+│  ├─ migration_notes.md             # 历史迁移记录
+│  └─ ARCHIVE_INDEX.md               # 被替代/归档产物索引
+│
+├─ artifacts/                        # 本地生成产物目录，默认被Git忽略，不在GitHub源码中展开
+│  ├─ stage2_geology_v2_freeze_candidate/       # Stage2地质Evidence冻结快照
+│  ├─ stage2_plc_operational_freeze_v2/         # Stage2E PLC Operational Evidence冻结
+│  ├─ stage2d_applicability_v2_1/               # Applicability V2.1冻结输出
+│  ├─ stage3a_initial_epistemic_state_v1_1/     # Stage3A初始状态冻结
+│  ├─ stage3b_bitemporal_epistemic_state_v1_1/  # Stage3B双时间状态冻结
+│  └─ stage4_bitemporal_state_metrics_v1_1/     # Stage4正式RAI/GRS/GRCI冻结输出
+│
+└─ _archive/                         # 历史说明和人工审查包；不作为正式运行入口
+   ├─ artifacts_stage2_history/      # Stage2历史产物说明
+   └─ review_packages/               # 早期人工审查ZIP留档
+```
+
+主链路只认正式冻结路径：`Stage 2 Evidence / Stage2E Operational Freeze / Applicability V2.1 → Stage 3A → Stage 3B → Stage 4`。`artifacts/` 中的正式快照保留在本地用于复现和审计，但不随GitHub源码提交；GitHub仓库主要保存可复现这些快照的源码、配置、测试和文档。
+
 ## 安装
 
 ```bash
