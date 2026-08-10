@@ -1,0 +1,126 @@
+schema_version: stage5a_typed_claim_contract.v1
+contract_version: claim_contract_v1
+claim_types:
+  - contract_id: claim_contract_operational_response_attention_v1
+    claim_type: OPERATIONAL_RESPONSE_ATTENTION
+    allowed_state_roles: [DAILY_REVIEW_CELL]
+    required_support_kinds: [STATE_RAI]
+    allowed_support_kinds:
+      [CONSTRUCTION_STATE_VERSION, DAILY_CONSTRUCTION_STATE, STATE_RAI, RAI_FAMILY_COMPONENT,
+       RESPONSE_EVIDENCE, EXCAVATION_EPISODE, SOURCE_ASSET]
+    forbidden_support_kinds: [GEOLOGICAL_EVIDENCE, STATE_GRS, STATE_GRCI]
+    allowed_modalities: [DERIVED_ATTENTION]
+    allowed_semantic_interpretations: [OPERATIONAL_RESPONSE_ATTENTION]
+    required_epistemic_statuses: []
+    forbidden_epistemic_promotions: [RESPONSE_TO_GEOLOGICAL_FACT]
+    required_metric: RAI
+    requires_spatial_location: true
+    required_qualifiers: [NONPROBABILISTIC_ATTENTION, SOURCE_CONSTRAINED]
+    forbidden_semantics:
+      [RISK_PROBABILITY, HAZARD_PROBABILITY, FAILURE_PROBABILITY, CAUSAL_GEOLOGICAL_DIAGNOSIS,
+       CAUSAL_MECHANICAL_DIAGNOSIS]
+    generation_eligible: true
+    metric_semantics: OPERATIONAL_RESPONSE_ATTENTION_INDEX
+    notes: RAI may express only operational response attention value and identity.
+
+  - contract_id: claim_contract_geological_evidence_attention_review_v1
+    claim_type: GEOLOGICAL_EVIDENCE_ATTENTION_REVIEW
+    allowed_state_roles: [DAILY_REVIEW_CELL]
+    required_support_kinds: [STATE_GRS]
+    allowed_support_kinds:
+      [CONSTRUCTION_STATE_VERSION, DAILY_CONSTRUCTION_STATE, STATE_GRS, GRS_DIMENSION_COMPONENT,
+       GEOLOGICAL_EVIDENCE, SOURCE_SPAN, SOURCE_ASSET]
+    forbidden_support_kinds: [STATE_RAI, RESPONSE_EVIDENCE, STATE_GRCI]
+    allowed_modalities: [DERIVED_ATTENTION]
+    allowed_semantic_interpretations: [GEOLOGICAL_EVIDENCE_ATTENTION]
+    required_epistemic_statuses: [OBSERVED, FORECAST]
+    forbidden_epistemic_promotions: [FORECAST_TO_OBSERVED]
+    required_metric: GRS
+    requires_spatial_location: true
+    required_qualifiers: [NONPROBABILISTIC_ATTENTION, SOURCE_CONSTRAINED]
+    forbidden_semantics:
+      [RISK_PROBABILITY, HAZARD_PROBABILITY, FAILURE_PROBABILITY, CAUSAL_GEOLOGICAL_DIAGNOSIS]
+    generation_eligible: true
+    metric_semantics: GEOLOGICAL_EVIDENCE_ATTENTION_INDEX
+    notes: GRS may express geological evidence attention while preserving source epistemic status.
+
+  - contract_id: claim_contract_coupled_attention_review_v1
+    claim_type: COUPLED_ATTENTION_REVIEW
+    allowed_state_roles: [DAILY_REVIEW_CELL]
+    required_support_kinds: [STATE_GRCI]
+    allowed_support_kinds:
+      [CONSTRUCTION_STATE_VERSION, DAILY_CONSTRUCTION_STATE, STATE_RAI, STATE_GRS, STATE_GRCI,
+       RAI_FAMILY_COMPONENT, GRS_DIMENSION_COMPONENT, RESPONSE_EVIDENCE, GEOLOGICAL_EVIDENCE]
+    forbidden_support_kinds: []
+    allowed_modalities: [DERIVED_ATTENTION]
+    allowed_semantic_interpretations: [COUPLED_ATTENTION]
+    required_epistemic_statuses: []
+    forbidden_epistemic_promotions: [ATTENTION_TO_PROBABILITY, ATTENTION_TO_CAUSAL_ESTIMATE]
+    required_metric: GRCI
+    requires_spatial_location: true
+    required_qualifiers: [NONPROBABILISTIC_ATTENTION, SOURCE_CONSTRAINED]
+    forbidden_semantics:
+      [RISK_PROBABILITY, HAZARD_PROBABILITY, FAILURE_PROBABILITY, CAUSAL_GEOLOGICAL_DIAGNOSIS,
+       CAUSAL_MECHANICAL_DIAGNOSIS]
+    generation_eligible: true
+    metric_semantics: NONPROBABILISTIC_CONJUNCTIVE_PRODUCT
+    notes: GRCI is a non-probabilistic conjunctive product and never a hazard probability.
+
+  - contract_id: claim_contract_forward_geological_attention_v1
+    claim_type: FORWARD_GEOLOGICAL_ATTENTION
+    allowed_state_roles: [FORWARD_ATTENTION_CELL]
+    required_support_kinds: [STATE_GRS]
+    allowed_support_kinds:
+      [CONSTRUCTION_STATE_VERSION, DAILY_CONSTRUCTION_STATE, STATE_GRS, GRS_DIMENSION_COMPONENT,
+       GEOLOGICAL_EVIDENCE, SOURCE_SPAN, SOURCE_ASSET]
+    forbidden_support_kinds: [STATE_RAI, STATE_GRCI, RESPONSE_EVIDENCE]
+    allowed_modalities: [DERIVED_ATTENTION]
+    allowed_semantic_interpretations: [GEOLOGICAL_EVIDENCE_ATTENTION]
+    required_epistemic_statuses: [FORECAST]
+    forbidden_epistemic_promotions: [FORECAST_TO_OBSERVED]
+    required_metric: GRS
+    requires_spatial_location: true
+    required_qualifiers: [FORECAST, INDICATED_AHEAD, AHEAD_OF_FACE, SOURCE_CONSTRAINED]
+    forbidden_semantics:
+      [RISK_PROBABILITY, HAZARD_PROBABILITY, FAILURE_PROBABILITY, CAUSAL_GEOLOGICAL_DIAGNOSIS]
+    generation_eligible: true
+    metric_semantics: FORWARD_GEOLOGICAL_EVIDENCE_ATTENTION_INDEX
+    notes: Forward geological attention must remain forecast-qualified.
+
+  - contract_id: claim_contract_observed_geological_condition_v1
+    claim_type: OBSERVED_GEOLOGICAL_CONDITION
+    allowed_state_roles: [DAILY_REVIEW_CELL]
+    required_support_kinds: [GEOLOGICAL_EVIDENCE]
+    allowed_support_kinds: [GEOLOGICAL_EVIDENCE, SOURCE_SPAN, SOURCE_ASSET]
+    forbidden_support_kinds: [STATE_RAI, RESPONSE_EVIDENCE, RAI_FAMILY_COMPONENT]
+    allowed_modalities: [GEOLOGICAL_OBSERVED]
+    allowed_semantic_interpretations: [OBSERVED_GEOLOGICAL_CONDITION]
+    required_epistemic_statuses: [OBSERVED]
+    forbidden_epistemic_promotions: [FORECAST_TO_OBSERVED, BACKGROUND_TO_OBSERVED]
+    required_metric:
+    requires_spatial_location: true
+    required_qualifiers: [SOURCE_CONSTRAINED]
+    forbidden_semantics:
+      [RISK_PROBABILITY, HAZARD_PROBABILITY, FAILURE_PROBABILITY, CAUSAL_GEOLOGICAL_DIAGNOSIS]
+    generation_eligible: true
+    metric_semantics:
+    notes: Observed geological claims require observed located geological evidence.
+
+  - contract_id: claim_contract_forecast_geological_condition_v1
+    claim_type: FORECAST_GEOLOGICAL_CONDITION
+    allowed_state_roles: [FORWARD_ATTENTION_CELL, DAILY_REVIEW_CELL]
+    required_support_kinds: [GEOLOGICAL_EVIDENCE]
+    allowed_support_kinds: [GEOLOGICAL_EVIDENCE, SOURCE_SPAN, SOURCE_ASSET]
+    forbidden_support_kinds: [STATE_RAI, RESPONSE_EVIDENCE, RAI_FAMILY_COMPONENT]
+    allowed_modalities: [GEOLOGICAL_FORECAST]
+    allowed_semantic_interpretations: [FORECAST_GEOLOGICAL_CONDITION]
+    required_epistemic_statuses: [FORECAST]
+    forbidden_epistemic_promotions: [FORECAST_TO_OBSERVED]
+    required_metric:
+    requires_spatial_location: true
+    required_qualifiers: [FORECAST, PREDICTED, INDICATED_AHEAD, SOURCE_CONSTRAINED]
+    forbidden_semantics:
+      [RISK_PROBABILITY, HAZARD_PROBABILITY, FAILURE_PROBABILITY, CAUSAL_GEOLOGICAL_DIAGNOSIS]
+    generation_eligible: true
+    metric_semantics:
+    notes: Forecast geological condition claims must remain forecast-qualified.

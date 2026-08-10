@@ -54,4 +54,15 @@ diagnostic trace，不进入 scalar RAI。GRS 使用六个人工冻结的地质�
 
 Stage5 以后只允许读取 `artifacts/stage4_bitemporal_state_metrics_v1_1/` 作为指标输入。
 
+Stage5A Typed Engineering Claim Schema & Claim Contract 的正式目录是：
+
+```text
+artifacts/stage5a_typed_claim_contract_v1/
+```
+
+Stage5A 只冻结 Claim schema、ClaimContract、source-constrained expressibility、
+abstention、subject binding 和 authoritative resolved support 输出。Stage5A 不批量
+生成 Claim，不生成 Evidence Pack，不调用 LLM。Stage5B Deterministic Claim Builder
+为 `NOT IMPLEMENTED`。
+
 `ConstructionStateVersion` 把10m Cell作为空间索引，但 Cell 身份只由 alignment、grid、cell index 和边界策略确定。Stage 2E 的 `reconstructed_at` 只表示离线冻结构建时间，不是历史摄取时间；`historical_ingestion_time` 在本轮保持未知。旧 Applicability V2、旧 PLC Operational Freeze 和旧 Stage3A v1 只保留作审计比较，不作为正式 Stage 3 输入。

@@ -9,7 +9,7 @@ Stage 2 Geology V2 Freeze
 -> Stage 3A Initial Construction State v1.1
 -> Stage 3B Bitemporal Epistemic State v1.1
 -> Stage 4 Bitemporal State Metrics v1.1
--> Stage 5 Typed Claim permissibility layers
+-> Stage 5A Typed Claim Contract v1
 ```
 
 Stage 3 must read only:
@@ -51,7 +51,7 @@ See [docs/STAGE2_FROZEN_PIPELINE.md](docs/STAGE2_FROZEN_PIPELINE.md) and
 
 PLC数据是不规则采样的，地质证据也会动态到达。本项目的长期问题是：如何把来源、时间、空间和认识性质不同的证据组织为可追溯状态对象，并在未来判断工程Claim是否被允许成立。
 
-当前仓库实现到 Stage 4 v1.1：从原始PLC CSV建立 `SourceAsset`、YAML驱动的 `ChannelCatalog`、标准化PLC观测、质量诊断、透明 `OperationPhase` 弱标签、PLC-inferred `ExcavationEpisode` 和质量感知 `SpatialFootprint`；随后冻结机械响应证据、规则化地质证据，并给出地质证据对91天PLC日期范围的非布尔适用性判断；再生成91天日终初始认识状态、10m Cell索引和地质/机械证据到Cell的可追溯连接；基于知识可用日期建立双时间认识状态修订链；最后生成非概率性的 RAI、GRS 和 GRCI 状态指标。
+当前仓库主线冻结到 Stage 5A：从原始PLC CSV建立 `SourceAsset`、YAML驱动的 `ChannelCatalog`、标准化PLC观测、质量诊断、透明 `OperationPhase` 弱标签、PLC-inferred `ExcavationEpisode` 和质量感知 `SpatialFootprint`；随后冻结机械响应证据、规则化地质证据，并给出地质证据对91天PLC日期范围的非布尔适用性判断；再生成91天日终初始认识状态、10m Cell索引和地质/机械证据到Cell的可追溯连接；基于知识可用日期建立双时间认识状态修订链；生成非概率性的 RAI、GRS 和 GRCI 状态指标；最后冻结 Stage5A Typed Claim Schema 与 Claim Contract。Stage5A 不批量生成Claim。
 
 ```text
 Raw PLC CSV
@@ -68,11 +68,13 @@ Raw PLC CSV
 → Stage 3A Initial Construction State v1.1
 → Stage 3B Bitemporal Epistemic State v1.1
 → Stage 4 Bitemporal State Metrics v1.1
+→ Stage 5A Typed Claim Contract v1
 ```
 
 ## 当前不做
 
 本阶段不实现日报、LLM、Prompt、API、前端、数据库服务、Evidence Pack或Claim推理。机械响应只用于施工过程弱标签、状态连接和非概率指标，不被解释为地质原因。
+Stage5A 只定义结构化 Claim schema、ClaimContract、support/scope/modality/abstention 规则和 fixture 级合同验证；Stage5B 才可能进入批量 Claim Builder。
 
 ## 安装
 
@@ -176,7 +178,11 @@ Stage 3B Bitemporal Epistemic State: FROZEN
 
 Stage 4 Bitemporal State Metrics: FROZEN
 
-Stage 5 Typed Engineering Claim: NOT IMPLEMENTED
+Stage 5A Typed Claim Schema / Claim Contract: FROZEN
+
+Stage 5B Claim Builder: NOT IMPLEMENTED
+
+Stage 5C Batch Expressibility / Abstention: NOT IMPLEMENTED
 
 Stage 6 Evidence Pack / Controlled LLM: NOT IMPLEMENTED
 
