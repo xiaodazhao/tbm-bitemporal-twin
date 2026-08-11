@@ -184,8 +184,8 @@ Stage 5A Typed Claim Schema / Claim Contract v1.1: FROZEN
 
 Stage 5B Deterministic Claim Builder v1: FROZEN
 
-Stage 5C Batch Expressibility / Abstention: NOT IMPLEMENTED
+Stage 5C Batch Claim Expressibility & Abstention Analysis v1: FROZEN
 
-Stage 6 Evidence Pack / Controlled LLM: NOT IMPLEMENTED
+Stage 6 Controlled Claim Realization / Fact Lock / Evidence Pack / LLM Realization: NEXT
 
 Stage 7 Experiments / Evaluation: NOT COMPLETED
