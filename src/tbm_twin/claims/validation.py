@@ -131,7 +131,10 @@ class ClaimContractEvaluator:
             failed_rules=[],
             passed_rules=passed,
             required_qualifiers=contract.required_qualifiers,
-            resolved_support_refs=self._support_resolver.resolve_many(proposal.support_refs),
+            resolved_support_refs=self._support_resolver.resolve_many(
+                proposal.support_refs,
+                proposal,
+            ),
         )
 
     def _first_failure(
@@ -436,7 +439,7 @@ class ClaimContractEvaluator:
         proposal: ClaimProposal,
         contract: ClaimContract,
     ) -> ClaimAbstentionReason | None:
-        resolved = self._support_resolver.resolve_many(proposal.support_refs)
+        resolved = self._support_resolver.resolve_many(proposal.support_refs, proposal)
         for support in resolved:
             if (
                 support.support_role == ClaimSupportRole.PRIMARY_SUPPORT

@@ -326,16 +326,24 @@ class AuthoritativeSupportResolver:
         self._lookup = lookup
         self._spatial_resolver = AuthoritativeSpatialResolver(lookup)
 
-    def resolve_many(self, support_refs: list[ClaimSupportRef]) -> list[ResolvedClaimSupportRef]:
+    def resolve_many(
+        self,
+        support_refs: list[ClaimSupportRef],
+        proposal: ClaimProposal | None = None,
+    ) -> list[ResolvedClaimSupportRef]:
         """Resolve all support refs without copying proposal fact metadata."""
 
-        return [self.resolve(ref) for ref in support_refs]
+        return [self.resolve(ref, proposal) for ref in support_refs]
 
-    def resolve(self, support: ClaimSupportRef) -> ResolvedClaimSupportRef:
+    def resolve(
+        self,
+        support: ClaimSupportRef,
+        proposal: ClaimProposal | None = None,
+    ) -> ResolvedClaimSupportRef:
         """Resolve one support ref from authoritative lookup records."""
 
         if support.support_kind == SupportKind.GEOLOGICAL_EVIDENCE:
-            return self._resolve_geological_evidence(support)
+            return self._resolve_geological_evidence(support, proposal)
         if support.support_kind in {
             SupportKind.STATE_RAI,
             SupportKind.STATE_GRS,
@@ -358,10 +366,11 @@ class AuthoritativeSupportResolver:
     def _resolve_geological_evidence(
         self,
         support: ClaimSupportRef,
+        proposal: ClaimProposal | None = None,
     ) -> ResolvedClaimSupportRef:
         evidence = self._lookup.geological_evidence.get(support.support_id)
         subjects = self._lookup.geological_subjects.get(support.support_id, [])
-        subject = subjects[0] if subjects else None
+        subject, subject_resolution_status = _select_context_bound_subject(subjects, proposal)
         if evidence is None:
             return ResolvedClaimSupportRef(
                 support_kind=support.support_kind,
@@ -373,6 +382,25 @@ class AuthoritativeSupportResolver:
                 trace_ref_ids=[],
                 resolution_source="FROZEN_GEOLOGICAL_EVIDENCE",
                 resolution_status="UNRESOLVED",
+            )
+        if subject_resolution_status != "RESOLVED":
+            return ResolvedClaimSupportRef(
+                support_kind=support.support_kind,
+                support_id=support.support_id,
+                support_role=support.support_role,
+                resolved_epistemic_status=(
+                    evidence.epistemic_status.upper() if evidence.epistemic_status else None
+                ),
+                resolved_spatial_scope=evidence.spatial_scope,
+                resolved_state_role=None,
+                resolved_bitemporal_version_id=None,
+                resolved_base_stage3a_state_version_id=None,
+                resolved_daily_state_id=None,
+                resolved_cell_id=None,
+                resolved_valid_date=None,
+                trace_ref_ids=[support.support_id],
+                resolution_source="FROZEN_GEOLOGICAL_EVIDENCE",
+                resolution_status=subject_resolution_status,
             )
         return ResolvedClaimSupportRef(
             support_kind=support.support_kind,
@@ -533,8 +561,10 @@ class ClaimSubjectResolver:
         subjects = self._lookup.geological_subjects.get(payload.source_evidence_id, [])
         declared = _declared_subject_fields(proposal)
         if not declared:
-            subject = subjects[0] if subjects else None
-            return _subject_result_from_record("PASS", None, subject)
+            subject, subject_status = _select_context_bound_subject(subjects, proposal)
+            if subject_status == "RESOLVED":
+                return _subject_result_from_record("PASS", None, subject)
+            return _subject_result_from_record("FAIL", "CLAIM_SUBJECT_MISMATCH", None)
         for subject in subjects:
             if _subject_matches_declared(subject, declared):
                 return _subject_result_from_record("PASS", None, subject)
@@ -542,7 +572,7 @@ class ClaimSubjectResolver:
         return _subject_result_from_record(
             "FAIL",
             "CLAIM_SUBJECT_MISMATCH",
-            subjects[0] if subjects else None,
+            sorted(subjects, key=_subject_identity)[0] if subjects else None,
             mismatch_fields,
         )
 
@@ -582,6 +612,37 @@ def _subject_matches_declared(subject: SubjectRecord, declared: dict[str, str]) 
         "state_role": subject.state_role,
     }
     return all(values.get(field_name) == value for field_name, value in declared.items())
+
+
+def _select_context_bound_subject(
+    subjects: list[SubjectRecord],
+    proposal: ClaimProposal | None,
+) -> tuple[SubjectRecord | None, str]:
+    if not subjects:
+        return None, "SUPPORT_SUBJECT_CONTEXT_UNRESOLVED"
+    declared = _declared_subject_fields(proposal) if proposal is not None else {}
+    matches = [
+        subject
+        for subject in subjects
+        if not declared or _subject_matches_declared(subject, declared)
+    ]
+    if not matches:
+        return None, "SUPPORT_SUBJECT_CONTEXT_UNRESOLVED"
+    identities = {_subject_identity(subject) for subject in matches}
+    if len(identities) > 1:
+        return None, "SUPPORT_SUBJECT_CONTEXT_AMBIGUOUS"
+    return sorted(matches, key=_subject_identity)[0], "RESOLVED"
+
+
+def _subject_identity(subject: SubjectRecord) -> tuple[str, str, str, str, str, str]:
+    return (
+        subject.bitemporal_version_id or "",
+        subject.base_stage3a_state_version_id or "",
+        subject.daily_state_id or "",
+        subject.cell_id or "",
+        subject.valid_date or "",
+        subject.state_role or "",
+    )
 
 
 def _subject_result_from_record(
