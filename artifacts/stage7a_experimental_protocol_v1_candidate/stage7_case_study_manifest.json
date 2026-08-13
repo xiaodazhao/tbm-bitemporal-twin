@@ -1,0 +1,82 @@
+{
+  "cases": [
+    {
+      "case_id": "CASE_1_BITEMPORAL_REVISION",
+      "case_type": "1_BITEMPORAL_REVISION",
+      "cell_id": "",
+      "product_type": "forward_attention",
+      "selection_reason": "Deterministic first matching frozen task for the requested semantic case.",
+      "slice_spec": {
+        "cell_id": null,
+        "claim_type": null,
+        "product_type": "forward_attention",
+        "state_role": null,
+        "valid_date": "2023-11-17"
+      },
+      "source_task_id": "stage7_task_81c815667a308176c477ae2f",
+      "valid_date": "2023-11-17"
+    },
+    {
+      "case_id": "CASE_2_ABSTAIN_BOUNDARY",
+      "case_type": "2_ABSTAIN_BOUNDARY",
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "product_type": "all",
+      "selection_reason": "Deterministic first matching frozen task for the requested semantic case.",
+      "slice_spec": {
+        "cell_id": "cell_3d2558b73586465c51997f14",
+        "claim_type": null,
+        "product_type": "all",
+        "state_role": null,
+        "valid_date": "2023-10-07"
+      },
+      "source_task_id": "stage7_task_0998ad43d3087904b58a1111",
+      "valid_date": "2023-10-07"
+    },
+    {
+      "case_id": "CASE_3_LLM_REALIZATION_VIOLATION",
+      "case_type": "LLM_REALIZATION_VIOLATION",
+      "selection_reason": "Frozen Stage6B real-model validator interceptions demonstrate architecture-level blocking.",
+      "source": "frozen_stage6b_real_model_smoke",
+      "task_ids": [
+        "stage6b_smoke_task_04",
+        "stage6b_smoke_task_07",
+        "stage6b_smoke_task_10",
+        "stage6b_smoke_task_11"
+      ]
+    },
+    {
+      "case_id": "CASE_4_FORECAST_OBSERVED_DISTINCTION",
+      "case_type": "4_FORECAST_OBSERVED_DISTINCTION",
+      "cell_id": "",
+      "product_type": "all",
+      "selection_reason": "Deterministic first matching frozen task for the requested semantic case.",
+      "slice_spec": {
+        "cell_id": null,
+        "claim_type": null,
+        "product_type": "all",
+        "state_role": null,
+        "valid_date": "2023-11-22"
+      },
+      "source_task_id": "stage7_task_3459a8739a0a39f0cb4d091f",
+      "valid_date": "2023-11-22"
+    },
+    {
+      "case_id": "CASE_5_RAI_GRS_GRCI_BOUNDARY",
+      "case_type": "5_RAI_GRS_GRCI_BOUNDARY",
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "product_type": "all",
+      "selection_reason": "Deterministic first matching frozen task for the requested semantic case.",
+      "slice_spec": {
+        "cell_id": "cell_3d2558b73586465c51997f14",
+        "claim_type": null,
+        "product_type": "all",
+        "state_role": null,
+        "valid_date": "2023-10-07"
+      },
+      "source_task_id": "stage7_task_0998ad43d3087904b58a1111",
+      "valid_date": "2023-10-07"
+    }
+  ],
+  "note": "Case studies are separate from the main paired statistical benchmark.",
+  "schema_version": "stage7a_experimental_protocol.v1"
+}
