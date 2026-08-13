@@ -823,7 +823,13 @@ def _manual_fact_lock_sample_audit(locks: list[Any]) -> list[dict[str, object]]:
 
 def _llm_negative_audit(repo_root: Path) -> list[dict[str, object]]:
     roots = [
-        repo_root / "src/tbm_twin/realization",
+        repo_root / "src/tbm_twin/realization/build_stage6a.py",
+        repo_root / "src/tbm_twin/realization/evidence_pack.py",
+        repo_root / "src/tbm_twin/realization/fact_lock.py",
+        repo_root / "src/tbm_twin/realization/io.py",
+        repo_root / "src/tbm_twin/realization/models.py",
+        repo_root / "src/tbm_twin/realization/rendering_contract.py",
+        repo_root / "src/tbm_twin/realization/validation.py",
         repo_root / "scripts/build_stage6a_fact_lock_evidence_pack.py",
     ]
     forbidden_modules = {

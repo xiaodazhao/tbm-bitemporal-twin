@@ -1,0 +1,16 @@
+attempt_result_count,raw_attempt_count,status,task_id
+1,1,PASS,stage6b_smoke_task_00
+1,1,PASS,stage6b_smoke_task_01
+1,1,PASS,stage6b_smoke_task_02
+1,1,PASS,stage6b_smoke_task_03
+1,1,PASS,stage6b_smoke_task_04
+1,1,PASS,stage6b_smoke_task_05
+1,1,PASS,stage6b_smoke_task_06
+1,1,PASS,stage6b_smoke_task_07
+1,1,PASS,stage6b_smoke_task_08
+1,1,PASS,stage6b_smoke_task_09
+1,1,PASS,stage6b_smoke_task_10
+1,1,PASS,stage6b_smoke_task_11
+1,1,PASS,stage6b_smoke_task_12
+1,1,PASS,stage6b_smoke_task_13
+1,1,PASS,stage6b_smoke_task_14

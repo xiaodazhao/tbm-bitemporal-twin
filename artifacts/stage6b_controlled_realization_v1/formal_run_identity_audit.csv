@@ -1,0 +1,13 @@
+check_name,status
+provider,PASS
+model,PASS
+base_url,PASS
+reasoning_effort,PASS
+temperature,PASS
+top_p,PASS
+max_output_tokens,PASS
+max_retries,PASS
+execution_protocol_hash,PASS
+execution_protocol_file_sha256,PASS
+task_manifest_hash,PASS
+prompt_template_hash,PASS

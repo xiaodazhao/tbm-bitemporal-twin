@@ -1,0 +1,2 @@
+status,trace_coverage,trace_coverage_denominator,trace_coverage_numerator,untraceable_final_fact_count
+PASS,1.0,358,358,0

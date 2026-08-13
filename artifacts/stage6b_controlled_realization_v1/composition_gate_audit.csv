@@ -1,0 +1,16 @@
+composition_status,plan_valid,status,task_id
+RUN,true,PASS,stage6b_smoke_task_00
+RUN,true,PASS,stage6b_smoke_task_01
+RUN,true,PASS,stage6b_smoke_task_02
+RUN,true,PASS,stage6b_smoke_task_03
+NOT_RUN,false,PASS,stage6b_smoke_task_04
+RUN,true,PASS,stage6b_smoke_task_05
+RUN,true,PASS,stage6b_smoke_task_06
+NOT_RUN,false,PASS,stage6b_smoke_task_07
+RUN,true,PASS,stage6b_smoke_task_08
+RUN,true,PASS,stage6b_smoke_task_09
+NOT_RUN,false,PASS,stage6b_smoke_task_10
+NOT_RUN,false,PASS,stage6b_smoke_task_11
+RUN,true,PASS,stage6b_smoke_task_12
+RUN,true,PASS,stage6b_smoke_task_13
+RUN,true,PASS,stage6b_smoke_task_14

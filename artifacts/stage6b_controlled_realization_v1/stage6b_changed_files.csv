@@ -1,0 +1,17 @@
+change_type,expected_stage6b_change,freeze_allowed,notes,path,semantic_category
+modified,true,true,,pyproject.toml,STAGE6B_SOURCE_OR_TEST
+untracked,true,true,,scripts/build_stage6b_controlled_realization.py,STAGE6B_SOURCE_OR_TEST
+untracked,true,true,,scripts/run_stage6b_real_model_smoke.py,STAGE6B_SOURCE_OR_TEST
+modified,true,true,Narrows Stage6A LLM negative audit source scan to Stage6A files; does not alter frozen Stage6A artifacts or FactLock semantics.,src/tbm_twin/realization/build_stage6a.py,STAGE6A_NEGATIVE_AUDIT_SCOPE_FIX
+untracked,true,true,,src/tbm_twin/realization/build_stage6b.py,STAGE6B_SOURCE_OR_TEST
+untracked,true,true,,src/tbm_twin/realization/providers/__init__.py,STAGE6B_SOURCE_OR_TEST
+untracked,true,true,,src/tbm_twin/realization/providers/base.py,STAGE6B_SOURCE_OR_TEST
+untracked,true,true,,src/tbm_twin/realization/providers/configured_llm.py,STAGE6B_SOURCE_OR_TEST
+untracked,true,true,,src/tbm_twin/realization/providers/deepseek_adapter.py,STAGE6B_SOURCE_OR_TEST
+untracked,true,true,,src/tbm_twin/realization/providers/openai_adapter.py,STAGE6B_SOURCE_OR_TEST
+untracked,true,true,,src/tbm_twin/realization/stage6b.py,STAGE6B_SOURCE_OR_TEST
+untracked,true,true,,src/tbm_twin/realization/stage6b_models.py,STAGE6B_SOURCE_OR_TEST
+untracked,true,true,,src/tbm_twin/realization/stage6b_smoke.py,STAGE6B_SOURCE_OR_TEST
+untracked,true,true,,tests/unit/stage6b_helpers.py,STAGE6B_SOURCE_OR_TEST
+untracked,true,true,,tests/unit/test_stage6b_grouping_rendering_plan.py,STAGE6B_SOURCE_OR_TEST
+untracked,true,true,,tests/unit/test_stage6b_presentation_and_abstention.py,STAGE6B_SOURCE_OR_TEST

@@ -1,0 +1,12 @@
+all_required_task_units_present,duplicate_units,metadata_valid,omitted_units_legal,out_of_task_units,plan_hash_valid,product_type,product_type_valid,section_order_valid,section_placement_valid,status,task_id,unknown_units
+true,0,true,true,0,true,daily_review,true,true,true,PASS,stage6b_smoke_task_00,0
+true,0,true,true,0,true,daily_review,true,true,true,PASS,stage6b_smoke_task_01,0
+true,0,true,true,0,true,daily_review,true,true,true,PASS,stage6b_smoke_task_02,0
+true,0,true,true,0,true,forward_attention,true,true,true,PASS,stage6b_smoke_task_03,0
+true,0,true,true,0,true,metric_review,true,true,true,PASS,stage6b_smoke_task_05,0
+true,0,true,true,0,true,metric_review,true,true,true,PASS,stage6b_smoke_task_06,0
+true,0,true,true,0,true,metric_review,true,true,true,PASS,stage6b_smoke_task_08,0
+true,0,true,true,0,true,metric_review,true,true,true,PASS,stage6b_smoke_task_09,0
+true,0,true,true,0,true,daily_review,true,true,true,PASS,stage6b_smoke_task_12,0
+true,0,true,true,0,true,daily_review,true,true,true,PASS,stage6b_smoke_task_13,0
+true,0,true,true,0,true,all,true,true,true,PASS,stage6b_smoke_task_14,0
