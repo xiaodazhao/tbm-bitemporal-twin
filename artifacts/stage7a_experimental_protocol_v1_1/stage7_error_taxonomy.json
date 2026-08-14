@@ -1,0 +1,114 @@
+[
+  {
+    "automatic_evaluability": false,
+    "code": "E1",
+    "definition": "Statement has no admissible supporting evidence.",
+    "human_evaluability": true,
+    "name": "UNSUPPORTED_CLAIM",
+    "severity": "SEVERE"
+  },
+  {
+    "automatic_evaluability": true,
+    "code": "E2",
+    "definition": "Value is invented, altered, or unsupported.",
+    "human_evaluability": true,
+    "name": "NUMERIC_VALUE_ERROR",
+    "severity": "MAJOR"
+  },
+  {
+    "automatic_evaluability": true,
+    "code": "E3",
+    "definition": "Missing numeric value is expressed as zero.",
+    "human_evaluability": true,
+    "name": "NUMERIC_MISSING_TO_ZERO",
+    "severity": "MAJOR"
+  },
+  {
+    "automatic_evaluability": true,
+    "code": "E4",
+    "definition": "Claim is expressed outside supported scope.",
+    "human_evaluability": true,
+    "name": "SPATIAL_SCOPE_ERROR",
+    "severity": "SEVERE"
+  },
+  {
+    "automatic_evaluability": true,
+    "code": "E5",
+    "definition": "Forecast is expressed as observed/current fact.",
+    "human_evaluability": true,
+    "name": "FORECAST_FACTIFICATION",
+    "severity": "SEVERE"
+  },
+  {
+    "automatic_evaluability": false,
+    "code": "E6",
+    "definition": "Observed modality is asserted without observed support.",
+    "human_evaluability": true,
+    "name": "OBSERVED_WITHOUT_PROOF",
+    "severity": "MAJOR"
+  },
+  {
+    "automatic_evaluability": true,
+    "code": "E7",
+    "definition": "Later-known evidence is used in an earlier knowledge state.",
+    "human_evaluability": true,
+    "name": "HINDSIGHT_LEAKAGE",
+    "severity": "SEVERE"
+  },
+  {
+    "automatic_evaluability": false,
+    "code": "E8",
+    "definition": "Evidence is used outside its authorized role.",
+    "human_evaluability": true,
+    "name": "ROLE_BOUNDARY_VIOLATION",
+    "severity": "MAJOR"
+  },
+  {
+    "automatic_evaluability": false,
+    "code": "E9",
+    "definition": "Mechanical response is promoted into geological cause.",
+    "human_evaluability": true,
+    "name": "MECHANICAL_TO_GEOLOGICAL_CAUSATION",
+    "severity": "SEVERE"
+  },
+  {
+    "automatic_evaluability": true,
+    "code": "E10",
+    "definition": "Attention index is expressed as hazard probability.",
+    "human_evaluability": true,
+    "name": "ATTENTION_TO_PROBABILITY_PROMOTION",
+    "severity": "SEVERE"
+  },
+  {
+    "automatic_evaluability": false,
+    "code": "E11",
+    "definition": "Unknown or missing state is described as normal/safe.",
+    "human_evaluability": true,
+    "name": "UNKNOWN_TO_NORMAL_PROMOTION",
+    "severity": "SEVERE"
+  },
+  {
+    "automatic_evaluability": true,
+    "code": "E12",
+    "definition": "A Claim that should ABSTAIN is expressed.",
+    "human_evaluability": true,
+    "name": "CLAIM_ADMISSIBILITY_VIOLATION",
+    "severity": "SEVERE"
+  },
+  {
+    "automatic_evaluability": true,
+    "code": "E13",
+    "definition": "Output violates frozen structure contract.",
+    "human_evaluability": true,
+    "name": "STRUCTURE_CONTRACT_VIOLATION",
+    "severity": "MAJOR"
+  },
+  {
+    "automatic_evaluability": true,
+    "code": "E14",
+    "definition": "Final statement cannot be traced to authoritative support.",
+    "human_evaluability": true,
+    "name": "TRACE_FAILURE",
+    "severity": "SEVERE"
+  }
+]
