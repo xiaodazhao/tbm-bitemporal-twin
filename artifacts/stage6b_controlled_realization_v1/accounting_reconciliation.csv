@@ -1,0 +1,15 @@
+expected_value,metric,recomputed_value,reported_value,status
+15,task_count,15,15,PASS
+15,provider_request_attempt_count,15,15,PASS
+15,provider_transport_success_count,15,15,PASS
+0,provider_transport_failure_count,0,0,PASS
+15,real_api_request_attempt_count,15,15,PASS
+15,real_api_transport_success_count,15,15,PASS
+0,real_api_transport_failure_count,0,0,PASS
+15,parse_valid_count,15,15,PASS
+15,schema_valid_count,15,15,PASS
+11,plan_accepted_count,11,11,PASS
+4,validator_interception_count,4,4,PASS
+11,composition_count,11,11,PASS
+11,post_audit_pass_count,11,11,PASS
+0,post_audit_violation_count,0,0,PASS

@@ -1,0 +1,6 @@
+hash_issue_count,manifest,status
+0,artifacts/stage4_bitemporal_state_metrics_v1_1/file_hashes.sha256,PASS
+0,artifacts/stage5a_claim_contract_v1_1/file_hashes.sha256,MISSING_MANIFEST
+0,artifacts/stage5b_deterministic_claim_builder_v1/file_hashes.sha256,PASS
+0,artifacts/stage5c_claim_expressibility_v1/file_hashes.sha256,MISSING_MANIFEST
+0,artifacts/stage6a_fact_lock_evidence_pack_v1/file_hashes.sha256,PASS

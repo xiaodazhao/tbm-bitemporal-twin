@@ -1,0 +1,80 @@
+[
+  {
+    "definition": "unsupported_claim_count / expressed_claim_count",
+    "denominator": "expressed_claim_count",
+    "metric_name": "Unsupported Claim Rate",
+    "primary_or_secondary": "PRIMARY"
+  },
+  {
+    "definition": "epistemic_violation_count / expressed_claim_count",
+    "denominator": "expressed_claim_count",
+    "metric_name": "Epistemic Violation Rate",
+    "primary_or_secondary": "PRIMARY"
+  },
+  {
+    "definition": "numeric_error_count / numeric_statement_count",
+    "denominator": "numeric_statement_count",
+    "metric_name": "Numeric Error Rate",
+    "primary_or_secondary": "SECONDARY"
+  },
+  {
+    "definition": "spatial_scope_error_count / spatial_statement_count",
+    "denominator": "spatial_statement_count",
+    "metric_name": "Spatial Scope Error Rate",
+    "primary_or_secondary": "SECONDARY"
+  },
+  {
+    "definition": "semantic_promotion_error_count / expressed_claim_count",
+    "denominator": "expressed_claim_count",
+    "metric_name": "Semantic Promotion Error Rate",
+    "primary_or_secondary": "SECONDARY"
+  },
+  {
+    "definition": "admissibility_violation_count / expressed_claim_count",
+    "denominator": "expressed_claim_count",
+    "metric_name": "Admissibility Violation Rate",
+    "primary_or_secondary": "SECONDARY"
+  },
+  {
+    "definition": "structure_compliant_task_count / evaluated_task_count",
+    "denominator": "evaluated_task_count",
+    "metric_name": "Structure Compliance Rate",
+    "primary_or_secondary": "SECONDARY"
+  },
+  {
+    "definition": "traceable_final_statement_count / final_statement_count",
+    "denominator": "final_statement_count",
+    "metric_name": "Trace Coverage",
+    "primary_or_secondary": "PRIMARY"
+  },
+  {
+    "definition": "severe_engineering_semantic_error_count / evaluated_task_count",
+    "denominator": "evaluated_task_count",
+    "metric_name": "Severe Engineering Semantic Error Rate",
+    "primary_or_secondary": "PRIMARY"
+  },
+  {
+    "definition": "final_semantic_violation_count / evaluated_task_count",
+    "denominator": "evaluated_task_count",
+    "metric_name": "Final Semantic Violation Rate",
+    "primary_or_secondary": "PRIMARY"
+  },
+  {
+    "definition": "expressed_claim_count / eligible_claim_opportunity_count",
+    "denominator": "eligible_claim_opportunity_count",
+    "metric_name": "Claim Coverage",
+    "primary_or_secondary": "PRIMARY"
+  },
+  {
+    "definition": "correct_abstention_count / system_abstention_count",
+    "denominator": "system_abstention_count",
+    "metric_name": "Abstention Precision",
+    "primary_or_secondary": "SECONDARY"
+  },
+  {
+    "definition": "correct_abstention_count / gold_should_abstain_count",
+    "denominator": "gold_should_abstain_count",
+    "metric_name": "Abstention Recall",
+    "primary_or_secondary": "SECONDARY"
+  }
+]

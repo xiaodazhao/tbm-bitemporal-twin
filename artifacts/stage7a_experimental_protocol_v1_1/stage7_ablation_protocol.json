@@ -1,0 +1,49 @@
+{
+  "ablations": [
+    {
+      "ablation_id": "A1_WITHOUT_BITEMPORAL_GATING",
+      "counterfactual": "Collapse evidence temporal availability while preserving other modules.",
+      "primary_metrics": [
+        "HINDSIGHT_LEAKAGE",
+        "FORECAST_FACTIFICATION",
+        "CLAIM_ADMISSIBILITY_VIOLATION"
+      ],
+      "purpose": "Test hindsight leakage and epistemic-state contribution.",
+      "requires_new_llm_call": true
+    },
+    {
+      "ablation_id": "A2_WITHOUT_CLAIM_ADMISSIBILITY_ABSTAIN",
+      "counterfactual": "Allow candidate Claims to proceed without admissibility gate.",
+      "primary_metrics": [
+        "UNSUPPORTED_CLAIM",
+        "CLAIM_ADMISSIBILITY_VIOLATION",
+        "EPISTEMIC_VIOLATION"
+      ],
+      "purpose": "Test deterministic EXPRESSIBLE/ABSTAIN gate contribution.",
+      "requires_new_llm_call": true
+    },
+    {
+      "ablation_id": "A3_WITHOUT_FACT_LOCK",
+      "counterfactual": "Use admissible Claims but remove FactLock identities and validators.",
+      "primary_metrics": [
+        "NUMERIC_VALUE_ERROR",
+        "SPATIAL_SCOPE_ERROR",
+        "TRACE_FAILURE"
+      ],
+      "purpose": "Test semantic drift without locked facts.",
+      "requires_new_llm_call": true
+    },
+    {
+      "ablation_id": "A4_WITHOUT_DETERMINISTIC_PLAN_VALIDATOR",
+      "counterfactual": "Replay frozen invalid real-model plans without final validator rejection.",
+      "offline_replay_source": "frozen_stage6b_interception_cases",
+      "primary_metrics": [
+        "STRUCTURE_CONTRACT_VIOLATION",
+        "FINAL_SEMANTIC_VIOLATION"
+      ],
+      "purpose": "Test invalid-plan propagation.",
+      "requires_new_llm_call": false
+    }
+  ],
+  "schema_version": "stage7a_experimental_protocol.v1.1"
+}

@@ -1,0 +1,15 @@
+check_name,details,status
+stage7a_main_manifest_hash,,PASS
+stage7a_asof_binding_hash,,PASS
+b0_prompt_hash,,PASS
+b1_prompt_hash,,PASS
+product_contract_hash,,PASS
+task_count,48,PASS
+method_execution_count,144,PASS
+product_quotas,,PASS
+provider,deepseek,PASS
+model,deepseek-v4-flash,PASS
+base_url,,PASS
+max_retries,,PASS
+credential_env_present,,PASS
+openai_sdk_importable,,PASS

@@ -1,0 +1,11 @@
+{
+  "base_url": "https://api.deepseek.com",
+  "execution_id": "stage6b_smoke_execution_93ce841716abf581304e740e",
+  "execution_protocol_file_sha256": "b17f8c9bdfe520be21c47a48b811116aeed31d459244fd045dfe795d259f3d42",
+  "execution_protocol_hash": "c6e2fd9bc8ca3fa37a3a07a3eff10e0da7233aea49bb8a4027f480e5b54e76cb",
+  "model": "deepseek-v4-flash",
+  "prompt_template_hash": "e54f22ef559d61caf51d0d4021989c96c92f3b3e1dc2adb5e7a7a1dbf0c95e0e",
+  "provider": "deepseek",
+  "run_directory": "real_model_smoke/runs/stage6b_smoke_execution_93ce841716abf581304e740e",
+  "task_manifest_hash": "c8b4e8d90e4d163dcf8f432a7c7ec79ecbbf947856eba3db38e23db4c4edd662"
+}

@@ -1,0 +1,13 @@
+{
+  "as_executed_protocol_hash": "19c1bb629765198316c44951bddfbdf7547f017da6793c698c6f98f376260cbf",
+  "execution_commit": "69507cc",
+  "execution_manifest_hash": "75f2f9976b2cc85bdcf79a790baf07a8c623fa3fa24c2de16cdbdef9eafe34cc",
+  "formal_protocol_binding_hash": "436b528ad185346dc852280e3c4676460b05d6dda5f6359f12dd7d283537c41e",
+  "official_execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+  "official_run_dir": "artifacts/stage7b_main_comparison_v1/runs/stage7b_main_execution_3ae0f791811a2e711cb9f488",
+  "p_validator_intercepted_count": 3,
+  "real_api_request_attempt_count": 144,
+  "final_artifact_commit": "RECORDED_BY_STAGE7B_MAIN_COMPARISON_V1_FROZEN_TAG",
+  "tag": "stage7b-main-comparison-v1-frozen",
+  "transport_failure_count": 0
+}

@@ -1,0 +1,69 @@
+{
+  "excluded_tasks": [
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_00"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_01"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_02"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_03"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_04"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_05"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_06"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_07"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_08"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_09"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_10"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_11"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_12"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_13"
+    },
+    {
+      "reason": "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE",
+      "task_id": "stage6b_smoke_task_14"
+    }
+  ],
+  "schema_version": "stage7a_experimental_protocol.v1",
+  "source": "stage6b_controlled_realization_v1/real_model_smoke/task_manifest.json",
+  "stage6b_freeze_commit": "ecf0fc47cd2f1f4a8bb5a962c32caaa7c5284550",
+  "stage6b_freeze_tag": "stage6b-controlled-realization-v1-frozen",
+  "stage6b_task_manifest_hash": "c8b4e8d90e4d163dcf8f432a7c7ec79ecbbf947856eba3db38e23db4c4edd662"
+}

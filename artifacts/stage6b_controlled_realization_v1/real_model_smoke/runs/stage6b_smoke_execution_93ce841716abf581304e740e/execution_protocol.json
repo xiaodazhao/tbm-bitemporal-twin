@@ -1,0 +1,48 @@
+{
+  "base_url": {
+    "applied": "https://api.deepseek.com",
+    "requested": "https://api.deepseek.com",
+    "supported": true
+  },
+  "composition_policy": "COMPOSE_ONLY_PARSE_SCHEMA_DOMAIN_VALID",
+  "execution_protocol_hash": "c6e2fd9bc8ca3fa37a3a07a3eff10e0da7233aea49bb8a4027f480e5b54e76cb",
+  "max_output_tokens": {
+    "applied": 4096,
+    "requested": 4096,
+    "supported": true
+  },
+  "max_retries": 0,
+  "model": "deepseek-v4-flash",
+  "parse_policy": "STRICT_PURE_JSON_NO_REPAIR",
+  "prompt_template_hash": "e54f22ef559d61caf51d0d4021989c96c92f3b3e1dc2adb5e7a7a1dbf0c95e0e",
+  "protocol_version": "stage6b_real_model_smoke_protocol_v1_candidate_execution",
+  "provider": "deepseek",
+  "reasoning_effort": {
+    "applied": "none",
+    "requested": "none",
+    "supported": true
+  },
+  "schema_policy": "MINIMAL_PROVIDER_PLAN_EXTRA_FORBID",
+  "seed": {
+    "applied": null,
+    "requested": 0,
+    "supported": false
+  },
+  "task_manifest_hash": "c8b4e8d90e4d163dcf8f432a7c7ec79ecbbf947856eba3db38e23db4c4edd662",
+  "temperature": {
+    "applied": 0.0,
+    "requested": 0.0,
+    "supported": true
+  },
+  "timeout_seconds": {
+    "applied": null,
+    "requested": 120,
+    "supported": false
+  },
+  "top_p": {
+    "applied": 1.0,
+    "requested": 1.0,
+    "supported": true
+  },
+  "validation_policy": "DETERMINISTIC_VALIDATE_PLAN_NO_AUTOCORRECTION"
+}

@@ -1,0 +1,6 @@
+check_name,diff_count,status
+parsed_plans_diff,0,PASS
+materialized_plans_diff,0,PASS
+validation_diff,0,PASS
+composition_semantic_diff,0,PASS
+post_audit_diff,0,PASS

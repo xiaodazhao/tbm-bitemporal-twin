@@ -1,0 +1,15 @@
+{
+  "case_study_count": 5,
+  "eligible_universe_size": 1416,
+  "generated_at": "2026-08-13T09:12:05+00:00",
+  "main_benchmark_manifest_hash": "79616722d91904dd81c23241a41955dd6c4eac4c1572920fecbd93eea60be773",
+  "main_benchmark_size": 48,
+  "method_version": "stage7a_experimental_protocol_v1_candidate",
+  "real_api_call_count": 0,
+  "sampling_seed": 740613,
+  "schema_version": "stage7a_experimental_protocol.v1",
+  "stage6b_freeze_commit": "ecf0fc47cd2f1f4a8bb5a962c32caaa7c5284550",
+  "stage6b_freeze_tag": "stage6b-controlled-realization-v1-frozen",
+  "stage6b_smoke_task_count": 15,
+  "stage7a_issue_count": 0
+}
