@@ -1,0 +1,15 @@
+{
+  "classification_counts": {
+    "EXPECTED_SUPPORT_ABSENT": 22,
+    "ROLE_OR_EPISTEMIC_BOUNDARY": 202,
+    "UPSTREAM_SUPPORT_PRESENT": 162
+  },
+  "correct_absence_count": 22,
+  "expected_absence_count": 22,
+  "role_or_epistemic_context_count": 202,
+  "role_or_epistemic_context_visible_count": 202,
+  "support_expected_count": 162,
+  "support_found_count": 162,
+  "total_abstain_opportunities": 386,
+  "unaccounted_abstain_context_count": 0
+}

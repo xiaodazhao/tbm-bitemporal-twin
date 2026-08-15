@@ -190,6 +190,8 @@ Stage 5C Batch Claim Expressibility & Abstention Analysis v1: FROZEN
 
 Stage 6A Deterministic Fact Lock & Controlled Evidence Pack v1: FROZEN
 
-Stage 6B Controlled Claim Realization / LLM Realization: NEXT
+Stage 6B Controlled Claim Realization / LLM Realization v1: FROZEN
 
-Stage 7 Experiments / Evaluation: NOT COMPLETED
+Stage 7A Experimental Protocol / Held-Out Benchmark v1.2: FROZEN
+
+Stage 7B Controlled Model Evaluation: NEXT

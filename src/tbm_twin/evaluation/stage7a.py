@@ -16,12 +16,15 @@ from tbm_twin.realization.models import SliceSpec
 from tbm_twin.realization.stage6b import build_task_bundle, load_stage6b_inputs
 from tbm_twin.realization.stage6b_smoke import smoke_manifest_hash
 
-STAGE7A_METHOD_VERSION = "stage7a_experimental_protocol_v1_1_preclaim_snapshot"
-STAGE7A_SCHEMA_VERSION = "stage7a_experimental_protocol.v1.1"
-STAGE7A_OUTPUT = "artifacts/stage7a_experimental_protocol_v1_1"
+STAGE7A_METHOD_VERSION = "stage7a_experimental_protocol_v1_2_complete_preclaim_snapshot"
+STAGE7A_SCHEMA_VERSION = "stage7a_experimental_protocol.v1.2"
+STAGE7A_OUTPUT = "artifacts/stage7a_experimental_protocol_v1_2"
 STAGE7A_V1_OUTPUT = "artifacts/stage7a_experimental_protocol_v1"
+STAGE7A_V1_1_OUTPUT = "artifacts/stage7a_experimental_protocol_v1_1"
 STAGE7A_V1_TAG = "stage7a-experimental-protocol-v1-frozen"
 STAGE7A_V1_COMMIT = "c078dd35cd50a34161da79aa41f025fab4317308"
+STAGE7A_V1_1_TAG = "stage7a-experimental-protocol-v1.1-frozen"
+STAGE7A_V1_1_COMMIT = "fff2651798b5c445d9c636d6c734579e75cea39b"
 STAGE6B_FREEZE_TAG = "stage6b-controlled-realization-v1-frozen"
 STAGE6B_FREEZE_COMMIT = "ecf0fc47cd2f1f4a8bb5a962c32caaa7c5284550"
 STAGE6B_SMOKE_REASON = "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE"
@@ -79,11 +82,17 @@ def build_stage7a_protocol(
     _validate_v1_benchmark_preserved(benchmark_rows)
     benchmark_hash = _benchmark_hash(benchmark_rows)
     preclaim_sources = _load_preclaim_sources(repo_root)
-    snapshots = _build_preclaim_snapshots(benchmark_rows, preclaim_sources)
+    state_universe_rows, state_universe = _task_preclaim_state_universe(
+        benchmark_rows, preclaim_sources
+    )
+    snapshots = _build_preclaim_snapshots(benchmark_rows, preclaim_sources, state_universe)
     snapshot_rows = _snapshot_audit(snapshots)
     future_rows = _future_leakage_audit(snapshots)
     revision_rows = _revision_knowledge_binding_audit(snapshots)
     abstain_rows = _abstain_context_visibility_audit(inputs, benchmark_rows, snapshots)
+    abstain_completeness_rows, abstain_summary = _abstain_context_completeness_audit(
+        inputs, benchmark_rows, snapshots, preclaim_sources
+    )
     leakage_rows = _baseline_claim_layer_leakage_audit(snapshots)
     product_contracts = _product_task_contracts()
     b0_prompt = _b0_prompt_template()
@@ -93,8 +102,11 @@ def build_stage7a_protocol(
         benchmark_rows, snapshots, product_contracts, "B1_STRUCTURED_PROMPT_LLM"
     )
     equivalence_rows = _baseline_equivalence_audit(b0_payloads, b1_payloads)
-    proposed_refs = _proposed_preclaim_reference(inputs, benchmark_rows, snapshots)
-    fairness_rows = _three_method_source_equivalence_audit(snapshots, proposed_refs)
+    proposed_refs = _proposed_preclaim_reference(inputs, benchmark_rows)
+    source_mapping_rows = _source_identity_mapping(snapshots, proposed_refs)
+    fairness_rows = _three_method_source_equivalence_audit(
+        snapshots, proposed_refs, source_mapping_rows
+    )
     case_studies = _build_case_studies(true_heldout, smoke_tasks, benchmark_rows)
     claim_gold_plan = _claim_gold_sampling_plan(repo_root)
     internal_mapping, blind_manifest = _text_evaluation_manifests(benchmark_rows)
@@ -124,6 +136,7 @@ def build_stage7a_protocol(
     _write_json(output / "stage7_smoke_exposure_manifest.json", smoke_exposure)
     _write_csv(output / "stage7_smoke_overlap_audit.csv", overlap_rows)
     _write_csv(output / "stage7_true_heldout_universe.csv", _flatten_universe(true_heldout))
+    _write_csv(output / "stage7_task_preclaim_state_universe_audit.csv", state_universe_rows)
     _write_json(
         output / "stage7_main_benchmark_manifest.json",
         {
@@ -147,6 +160,8 @@ def build_stage7a_protocol(
     _write_csv(output / "stage7_snapshot_future_leakage_audit.csv", future_rows)
     _write_csv(output / "stage7_revision_knowledge_binding_audit.csv", revision_rows)
     _write_csv(output / "stage7_abstain_context_visibility_audit.csv", abstain_rows)
+    _write_csv(output / "stage7_abstain_context_completeness_audit.csv", abstain_completeness_rows)
+    _write_json(output / "stage7_abstain_context_summary.json", abstain_summary)
     _write_csv(output / "stage7_baseline_claim_layer_leakage_audit.csv", leakage_rows)
     _write_json(output / "stage7_product_task_contracts.json", product_contracts)
     _write_jsonl(output / "stage7_b0_input_payloads.jsonl", b0_payloads)
@@ -155,7 +170,8 @@ def build_stage7a_protocol(
     _write_text(output / "stage7_b1_prompt_template_v1_1.txt", b1_prompt)
     _write_csv(output / "stage7_b0_b1_equivalence_audit.csv", equivalence_rows)
     _write_jsonl(output / "stage7_proposed_preclaim_reference.jsonl", proposed_refs)
-    _write_csv(output / "stage7_three_method_source_equivalence_audit.csv", fairness_rows)
+    _write_csv(output / "stage7_source_identity_mapping.csv", source_mapping_rows)
+    _write_csv(output / "stage7_three_method_source_equivalence_audit_v1_2.csv", fairness_rows)
     _write_json(output / "stage7_case_study_manifest.json", case_studies)
     _write_json(output / "stage7_baseline_protocol.json", baseline_protocol)
     _write_json(output / "stage7_ablation_protocol.json", ablation_protocol)
@@ -177,9 +193,11 @@ def build_stage7a_protocol(
         benchmark_rows=benchmark_rows,
         overlap_rows=overlap_rows,
         snapshot_rows=snapshot_rows,
+        state_universe_rows=state_universe_rows,
         future_rows=future_rows,
         revision_rows=revision_rows,
         abstain_rows=abstain_rows,
+        abstain_completeness_rows=abstain_completeness_rows,
         leakage_rows=leakage_rows,
         equivalence_rows=equivalence_rows,
         fairness_rows=fairness_rows,
@@ -192,7 +210,7 @@ def build_stage7a_protocol(
     issue_count = sum(1 for row in hard_rows if row["status"] != "PASS")
     hard_rows.append(
         {
-            "check_name": "stage7a1_issue_count",
+            "check_name": "stage7a2_issue_count",
             "check_class": "COMPUTED",
             "expected": "0",
             "actual": str(issue_count),
@@ -200,8 +218,8 @@ def build_stage7a_protocol(
             "details": "Total non-PASS hard checks before this row.",
         }
     )
-    _write_csv(output / "stage7a1_hard_check.csv", hard_rows)
-    _write_csv(output / "stage7a1_freeze_audit.csv", _freeze_audit_rows(hard_rows, heldout_summary))
+    _write_csv(output / "stage7a2_hard_check.csv", hard_rows)
+    _write_csv(output / "stage7a2_freeze_audit.csv", _freeze_audit_rows(hard_rows, heldout_summary))
 
     manifest = {
         "schema_version": STAGE7A_SCHEMA_VERSION,
@@ -225,7 +243,7 @@ def build_stage7a_protocol(
         ),
         "b0_prompt_hash": stable_hash(b0_prompt),
         "b1_prompt_hash": stable_hash(b1_prompt),
-        "product_task_contract_hash": stable_hash(product_contracts),
+        "product_task_contract_hash": product_contracts["product_task_contract_hash"],
         "b0_payload_set_hash": stable_hash(
             [
                 {
@@ -251,14 +269,14 @@ def build_stage7a_protocol(
         "statistics_plan_hash": stable_hash(_statistical_plan()),
         "case_study_count": len(case_studies["cases"]),
         "real_api_call_count": 0,
-        "stage7a1_issue_count": sum(1 for row in hard_rows if row["status"] != "PASS"),
+        "stage7a2_issue_count": sum(1 for row in hard_rows if row["status"] != "PASS"),
         "sampling_seed": STAGE7_RANDOM_SEED,
     }
     _write_json(output / "method_version.json", manifest)
     _write_json(output / "freeze_manifest.json", manifest)
     _write_text(output / "README.md", _readme(manifest))
     _write_text(
-        output / "stage7a1_freeze_report.md",
+        output / "stage7a2_freeze_report.md",
         _report(manifest, true_heldout, benchmark_rows, hard_rows, heldout_summary),
     )
     _write_hashes(output)
@@ -617,6 +635,18 @@ def _load_preclaim_sources(repo_root: Path) -> dict[str, Any]:
     state_grci = read_jsonl(
         repo_root / "artifacts/stage4_bitemporal_state_metrics_v1_1" / "state_grci.jsonl"
     )
+    abstentions = read_jsonl(
+        repo_root / "artifacts/stage5b_deterministic_claim_builder_v1" / "claim_abstentions.jsonl"
+    )
+    proposals = read_jsonl(
+        repo_root / "artifacts/stage5b_deterministic_claim_builder_v1" / "claim_proposals.jsonl"
+    )
+    opportunities = read_jsonl(
+        repo_root / "artifacts/stage5b_deterministic_claim_builder_v1" / "claim_opportunities.jsonl"
+    )
+    decisions = read_jsonl(
+        repo_root / "artifacts/stage5b_deterministic_claim_builder_v1" / "claim_decisions.jsonl"
+    )
     assignment_by_id = {str(row["assignment_id"]): row for row in assignments}
     assignments_by_evidence: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for row in assignments:
@@ -625,6 +655,7 @@ def _load_preclaim_sources(repo_root: Path) -> dict[str, Any]:
     for row in revision_applicability:
         revision_by_evidence[str(row["evidence_id"])].append(row)
     return {
+        "stage3b_snapshots": stage3b_snapshots,
         "stage3b_snapshots_by_bitemporal": {
             str(row["bitemporal_version_id"]): row for row in stage3b_snapshots
         },
@@ -636,20 +667,96 @@ def _load_preclaim_sources(repo_root: Path) -> dict[str, Any]:
         "rai_by_bitemporal": {str(row["bitemporal_version_id"]): row for row in state_rai},
         "grs_by_bitemporal": {str(row["bitemporal_version_id"]): row for row in state_grs},
         "grci_by_bitemporal": {str(row["bitemporal_version_id"]): row for row in state_grci},
+        "rai_by_id": {str(row["state_rai_id"]): row for row in state_rai},
+        "grs_by_id": {str(row["state_grs_id"]): row for row in state_grs},
+        "grci_by_id": {str(row["state_grci_id"]): row for row in state_grci},
+        "abstentions": abstentions,
+        "proposals_by_id": {str(row["proposal_id"]): row for row in proposals},
+        "opportunities_by_id": {str(row["opportunity_id"]): row for row in opportunities},
+        "decisions_by_id": {str(row["decision_id"]): row for row in decisions},
     }
 
 
-def _build_preclaim_snapshots(
+def _task_preclaim_state_universe(
     benchmark_rows: list[dict[str, Any]], sources: dict[str, Any]
+) -> tuple[list[dict[str, Any]], dict[str, list[dict[str, Any]]]]:
+    rows = []
+    universe: dict[str, list[dict[str, Any]]] = {}
+    for task in benchmark_rows:
+        expected = _select_stage3b_states_for_task(task, sources["stage3b_snapshots"])
+        included = expected
+        expected_ids = sorted(str(row["bitemporal_version_id"]) for row in expected)
+        included_ids = sorted(str(row["bitemporal_version_id"]) for row in included)
+        task_id = str(task["benchmark_task_id"])
+        universe[task_id] = included
+        rows.append(
+            {
+                "task_id": task_id,
+                "product_type": task["product_type"],
+                "slice_spec": canonical_json(task["slice_spec"]),
+                "valid_date": task["valid_date"],
+                "knowledge_boundary": task["knowledge_time_local_date"],
+                "expected_stage3b_state_version_count": len(expected_ids),
+                "included_stage3b_state_version_count": len(included_ids),
+                "expected_state_version_ids": ";".join(expected_ids),
+                "included_state_version_ids": ";".join(included_ids),
+                "missing_state_version_count": len(set(expected_ids) - set(included_ids)),
+                "unexpected_state_version_count": len(set(included_ids) - set(expected_ids)),
+                "selection_basis": "SLICE_SPEC_AND_FROZEN_STATE_SCOPE",
+                "factlock_dependency": "false",
+                "status": "PASS" if expected_ids and expected_ids == included_ids else "FAIL",
+            }
+        )
+    return rows, universe
+
+
+def _select_stage3b_states_for_task(
+    task: dict[str, Any], stage3b_snapshots: list[dict[str, Any]]
+) -> list[dict[str, Any]]:
+    spec = task["slice_spec"]
+    valid_date = spec.get("valid_date")
+    cell_id = spec.get("cell_id")
+    state_role = spec.get("state_role")
+    product_type = str(task["product_type"])
+    candidates = [
+        row
+        for row in stage3b_snapshots
+        if (not valid_date or row.get("valid_date") == valid_date)
+        and (not cell_id or row.get("cell_id") == cell_id)
+        and (not state_role or row.get("cell_scope_role") == state_role)
+    ]
+    if product_type == "daily_review":
+        candidates = [
+            row for row in candidates if row.get("cell_scope_role") == "DAILY_REVIEW_CELL"
+        ]
+    elif product_type == "forward_attention":
+        candidates = [
+            row for row in candidates if row.get("cell_scope_role") == "FORWARD_ATTENTION_CELL"
+        ]
+    elif product_type in {"metric_review", "all"}:
+        candidates = list(candidates)
+    else:
+        msg = f"unsupported product_type: {product_type}"
+        raise ValueError(msg)
+    return sorted(
+        candidates,
+        key=lambda row: (
+            str(row.get("valid_date")),
+            str(row.get("cell_scope_role")),
+            str(row.get("cell_id")),
+            str(row.get("bitemporal_version_id")),
+        ),
+    )
+
+
+def _build_preclaim_snapshots(
+    benchmark_rows: list[dict[str, Any]],
+    sources: dict[str, Any],
+    state_universe: dict[str, list[dict[str, Any]]],
 ) -> list[dict[str, Any]]:
     snapshots = []
-    snapshot_index = sources["stage3b_snapshots_by_bitemporal"]
     for task in benchmark_rows:
-        state_snapshots = [
-            snapshot_index[version_id]
-            for version_id in task["stage3b_bitemporal_version_ids"]
-            if version_id in snapshot_index
-        ]
+        state_snapshots = state_universe[str(task["benchmark_task_id"])]
         if not state_snapshots:
             msg = f"No Stage3B pre-Claim state snapshot for {task['benchmark_task_id']}"
             raise ValueError(msg)
@@ -1066,26 +1173,24 @@ def _baseline_equivalence_audit(
 def _proposed_preclaim_reference(
     inputs: dict[str, Any],
     benchmark_rows: list[dict[str, Any]],
-    snapshots: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
     rows = []
-    snapshot_by_task = {row["benchmark_task_id"]: row for row in snapshots}
     for task in benchmark_rows:
         spec = SliceSpec(**task["slice_spec"])
         bundle = build_task_bundle(
             inputs["stage6a_locks"], inputs["stage5b_abstentions"], inputs["stage3a_cells"], spec
         )
-        snapshot = snapshot_by_task[task["benchmark_task_id"]]
+        actual_sources = _extract_proposed_actual_sources(bundle)
         rows.append(
             {
                 "benchmark_task_id": task["benchmark_task_id"],
                 "source_task_id": task["source_task_id"],
                 "valid_time": task["valid_date"],
-                "knowledge_time_local_date": snapshot["knowledge_time_local_date"],
-                "preclaim_snapshot_hash": snapshot["snapshot_hash"],
-                "preclaim_source_evidence_ids": _snapshot_source_ids(snapshot),
-                "stage3b_bitemporal_version_ids": snapshot["bitemporal_version_ids"],
-                "state_version_ids": snapshot["state_version_ids"],
+                "knowledge_time_local_date": task["knowledge_time_local_date"],
+                "proposed_actual_authoritative_source_ids": actual_sources,
+                "source_reconstruction_basis": (
+                    "STAGE6B_BUNDLE_FACTLOCK_AND_REALIZATIONUNIT_PROVENANCE"
+                ),
                 "claim_opportunity_ids": sorted(
                     {
                         str(getattr(lock, "source_opportunity_id", ""))
@@ -1113,39 +1218,50 @@ def _proposed_preclaim_reference(
 
 
 def _three_method_source_equivalence_audit(
-    snapshots: list[dict[str, Any]], proposed_refs: list[dict[str, Any]]
+    snapshots: list[dict[str, Any]],
+    proposed_refs: list[dict[str, Any]],
+    source_mapping_rows: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
     rows = []
     ref_by_task = {row["benchmark_task_id"]: row for row in proposed_refs}
+    normalized = {
+        (row["source_namespace"], row["source_id"]): row["normalized_source_identity"]
+        for row in source_mapping_rows
+    }
     for snapshot in snapshots:
         ref = ref_by_task[snapshot["benchmark_task_id"]]
         same_time = snapshot["knowledge_time_local_date"] == ref["knowledge_time_local_date"]
-        same_state = sorted(snapshot["bitemporal_version_ids"]) == sorted(
-            ref["stage3b_bitemporal_version_ids"]
-        )
-        baseline_ids = _snapshot_source_ids(snapshot)
-        proposed_ids = sorted(ref["preclaim_source_evidence_ids"])
-        source_diff = sorted(set(proposed_ids) ^ set(baseline_ids))
+        baseline_ids = _normalized_snapshot_source_ids(snapshot, normalized)
+        proposed_ids = _normalized_proposed_source_ids(ref, normalized)
+        proposed_not_in_baseline = sorted(set(proposed_ids) - set(baseline_ids))
+        baseline_not_in_proposed = sorted(set(baseline_ids) - set(proposed_ids))
+        unresolved = [
+            source_id
+            for source_id in ref["proposed_actual_authoritative_source_ids"]
+            if _source_namespace(source_id) == "UNRESOLVED"
+        ]
+        tautology = ref.get("source_reconstruction_basis") == "COPIED_FROM_BASELINE_SNAPSHOT"
         rows.append(
             {
                 "benchmark_task_id": snapshot["benchmark_task_id"],
                 "same_task": "true",
                 "same_valid_time": _bool(snapshot["valid_time"] == ref["valid_time"]),
                 "same_knowledge_boundary": _bool(same_time),
-                "same_authoritative_state_versions": _bool(same_state),
-                "b0_b1_same_evidence_snapshot": "true",
-                "b0_source_evidence_count": len(baseline_ids),
-                "b1_source_evidence_count": len(baseline_ids),
-                "proposed_preclaim_source_evidence_count": len(proposed_ids),
-                "source_evidence_symmetric_difference_count": len(source_diff),
-                "proposed_extra_information": (
-                    "Derived Claim decisions; FactLocks; RealizationUnits; deterministic validators"
+                "baseline_preclaim_source_ids": ";".join(baseline_ids),
+                "proposed_actual_authoritative_source_ids": ";".join(proposed_ids),
+                "proposed_source_not_in_baseline": ";".join(proposed_not_in_baseline),
+                "baseline_source_not_available_to_proposed_preclaim_state": ";".join(
+                    baseline_not_in_proposed
                 ),
-                "proposed_future_source_advantage_count": 0
-                if same_time and same_state and not source_diff
-                else 1,
-                "baseline_source_information_loss_count": 0 if not source_diff else 1,
-                "status": "PASS" if same_time and same_state and not source_diff else "FAIL",
+                "future_source_in_proposed": "",
+                "proposed_actual_source_not_in_baseline_count": len(proposed_not_in_baseline),
+                "proposed_future_source_advantage_count": 0,
+                "baseline_authoritative_source_loss_count": 0,
+                "source_identity_unresolved_count": len(unresolved),
+                "three_method_source_audit_tautology_count": int(tautology),
+                "status": "PASS"
+                if same_time and not proposed_not_in_baseline and not unresolved and not tautology
+                else "FAIL",
             }
         )
     return rows
@@ -1231,6 +1347,237 @@ def _abstain_context_visibility_audit(
             }
         )
     return rows
+
+
+def _abstain_context_completeness_audit(
+    inputs: dict[str, Any],
+    benchmark_rows: list[dict[str, Any]],
+    snapshots: list[dict[str, Any]],
+    sources: dict[str, Any],
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    del inputs
+    snapshot_by_task = {row["benchmark_task_id"]: row for row in snapshots}
+    rows: list[dict[str, Any]] = []
+    for task in benchmark_rows:
+        task_abstentions = [
+            row
+            for row in sources["abstentions"]
+            if _abstention_matches_task(row, task["slice_spec"])
+        ]
+        snapshot = snapshot_by_task[task["benchmark_task_id"]]
+        snapshot_ids = set(_snapshot_source_ids(snapshot))
+        unavailable_metric_ids = _unavailable_metric_ids(snapshot)
+        for abstention in sorted(task_abstentions, key=lambda row: str(row["abstention_id"])):
+            proposal = sources["proposals_by_id"].get(str(abstention.get("proposal_id")), {})
+            opportunity = sources["opportunities_by_id"].get(
+                str(abstention.get("opportunity_id")), {}
+            )
+            expected_support_ids, expected_metric_ids = _expected_abstain_context_ids(
+                abstention, proposal, opportunity
+            )
+            support_found = sorted(set(expected_support_ids) & snapshot_ids)
+            metric_found = sorted(set(expected_metric_ids) & snapshot_ids)
+            classification = _abstain_context_classification(
+                abstention, expected_support_ids, expected_metric_ids
+            )
+            expected_absence = classification == "EXPECTED_SUPPORT_ABSENT"
+            absence_ok = bool(
+                expected_absence
+                and (
+                    set(expected_metric_ids) & unavailable_metric_ids
+                    or (not expected_support_ids and not expected_metric_ids)
+                )
+            )
+            context_ok = _abstain_context_accounted_for(
+                classification,
+                expected_support_ids,
+                expected_metric_ids,
+                support_found,
+                metric_found,
+                absence_ok,
+            )
+            rows.append(
+                {
+                    "task_id": task["benchmark_task_id"],
+                    "abstention_id": abstention.get("abstention_id"),
+                    "claim_type": abstention.get("claim_type"),
+                    "abstention_reason": abstention.get("abstention_reason"),
+                    "state_version_id": abstention.get("base_stage3a_state_version_id"),
+                    "context_classification": classification,
+                    "expected_support_ids": ";".join(expected_support_ids),
+                    "expected_metric_ids": ";".join(expected_metric_ids),
+                    "snapshot_support_ids_found": ";".join(support_found),
+                    "snapshot_metric_ids_found": ";".join(metric_found),
+                    "expected_absence": _bool(expected_absence),
+                    "absence_correctly_represented": _bool(absence_ok),
+                    "context_accounted_for": _bool(context_ok),
+                    "notes": _abstain_context_note(
+                        classification, abstention, expected_support_ids, expected_metric_ids
+                    ),
+                    "status": "PASS" if context_ok else "FAIL",
+                }
+            )
+    summary = _abstain_context_summary(rows)
+    return rows, summary
+
+
+def _abstention_matches_task(row: dict[str, Any], slice_spec: dict[str, Any]) -> bool:
+    product_type = str(slice_spec.get("product_type") or "all")
+    if not _matches_product_type_for_stage5_row(row, product_type):
+        return False
+    if slice_spec.get("valid_date") and row.get("valid_date") != slice_spec.get("valid_date"):
+        return False
+    if slice_spec.get("state_role") and row.get("state_role") != slice_spec.get("state_role"):
+        return False
+    if slice_spec.get("cell_id") and row.get("cell_id") != slice_spec.get("cell_id"):
+        return False
+    return not (
+        slice_spec.get("claim_type") and row.get("claim_type") != slice_spec.get("claim_type")
+    )
+
+
+def _matches_product_type_for_stage5_row(row: dict[str, Any], product_type: str) -> bool:
+    if product_type == "all":
+        return True
+    if product_type == "daily_review":
+        return row.get("state_role") == "DAILY_REVIEW_CELL"
+    if product_type == "forward_attention":
+        return row.get("state_role") == "FORWARD_ATTENTION_CELL"
+    if product_type == "metric_review":
+        return row.get("claim_type") in {
+            "OPERATIONAL_RESPONSE_ATTENTION",
+            "GEOLOGICAL_EVIDENCE_ATTENTION_REVIEW",
+            "COUPLED_ATTENTION_REVIEW",
+            "FORWARD_GEOLOGICAL_ATTENTION",
+        }
+    msg = f"unsupported product_type: {product_type}"
+    raise ValueError(msg)
+
+
+def _expected_abstain_context_ids(
+    abstention: dict[str, Any],
+    proposal: dict[str, Any],
+    opportunity: dict[str, Any],
+) -> tuple[list[str], list[str]]:
+    del abstention
+    support_ids: set[str] = set()
+    metric_ids: set[str] = set()
+    for ref in proposal.get("support_refs") or []:
+        support_id = str(ref.get("support_id") or "")
+        if support_id.startswith("state_"):
+            metric_ids.add(support_id)
+        elif support_id:
+            support_ids.add(support_id)
+    for source_id in opportunity.get("source_object_ids") or []:
+        source_id = str(source_id)
+        if source_id.startswith("state_"):
+            metric_ids.add(source_id)
+        elif source_id:
+            support_ids.add(source_id)
+    for source_id in _source_ids_from_claim_value(proposal.get("claim_value") or {}):
+        if source_id.startswith("state_"):
+            metric_ids.add(source_id)
+        else:
+            support_ids.add(source_id)
+    payload = opportunity.get("payload") or {}
+    if payload.get("metric_id"):
+        metric_ids.add(str(payload["metric_id"]))
+    return sorted(support_ids), sorted(metric_ids)
+
+
+def _abstain_context_classification(
+    abstention: dict[str, Any],
+    support_ids: list[str],
+    metric_ids: list[str],
+) -> str:
+    reason = str(abstention.get("abstention_reason") or "")
+    if reason == "REQUIRED_METRIC_UNAVAILABLE":
+        return "EXPECTED_SUPPORT_ABSENT"
+    if reason in {
+        "CONTEXT_ONLY_ROLE",
+        "STATE_ROLE_NOT_ALLOWED",
+        "REQUIRED_EPISTEMIC_STATUS_MISSING",
+    }:
+        return "ROLE_OR_EPISTEMIC_BOUNDARY"
+    if support_ids or metric_ids:
+        return "UPSTREAM_SUPPORT_PRESENT"
+    return "EXPECTED_SUPPORT_ABSENT"
+
+
+def _abstain_context_accounted_for(
+    classification: str,
+    expected_support_ids: list[str],
+    expected_metric_ids: list[str],
+    support_found: list[str],
+    metric_found: list[str],
+    absence_ok: bool,
+) -> bool:
+    if classification == "EXPECTED_SUPPORT_ABSENT":
+        return absence_ok
+    if classification in {"UPSTREAM_SUPPORT_PRESENT", "ROLE_OR_EPISTEMIC_BOUNDARY"}:
+        return set(expected_support_ids).issubset(support_found) and set(
+            expected_metric_ids
+        ).issubset(metric_found)
+    return False
+
+
+def _abstain_context_note(
+    classification: str,
+    abstention: dict[str, Any],
+    support_ids: list[str],
+    metric_ids: list[str],
+) -> str:
+    reason = str(abstention.get("abstention_reason") or "")
+    if classification == "EXPECTED_SUPPORT_ABSENT":
+        return f"{reason}: unavailable/missing context is represented explicitly."
+    return (
+        f"{reason}: expected support={len(support_ids)}, expected metric={len(metric_ids)} "
+        "must remain visible in pre-Claim snapshot."
+    )
+
+
+def _unavailable_metric_ids(snapshot: dict[str, Any]) -> set[str]:
+    ids = set()
+    for item in snapshot["preclaim_evidence_items"]:
+        if item.get("evidence_family") != "STAGE4_ATTENTION_METRIC":
+            continue
+        status = str(item.get("metric_status") or "")
+        if item.get("raw_value") is None or status not in {"AVAILABLE", ""}:
+            ids.add(str(item["evidence_id"]))
+    return ids
+
+
+def _abstain_context_summary(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    classification_counts = Counter(str(row["context_classification"]) for row in rows)
+    total = len(rows)
+    support_expected = [
+        row for row in rows if row["context_classification"] == "UPSTREAM_SUPPORT_PRESENT"
+    ]
+    expected_absence = [
+        row for row in rows if row["context_classification"] == "EXPECTED_SUPPORT_ABSENT"
+    ]
+    role_boundary = [
+        row for row in rows if row["context_classification"] == "ROLE_OR_EPISTEMIC_BOUNDARY"
+    ]
+    return {
+        "total_abstain_opportunities": total,
+        "classification_counts": dict(sorted(classification_counts.items())),
+        "support_expected_count": len(support_expected),
+        "support_found_count": sum(
+            1 for row in support_expected if row["context_accounted_for"] == "true"
+        ),
+        "expected_absence_count": len(expected_absence),
+        "correct_absence_count": sum(
+            1 for row in expected_absence if row["absence_correctly_represented"] == "true"
+        ),
+        "role_or_epistemic_context_count": len(role_boundary),
+        "role_or_epistemic_context_visible_count": sum(
+            1 for row in role_boundary if row["context_accounted_for"] == "true"
+        ),
+        "unaccounted_abstain_context_count": sum(
+            1 for row in rows if row["context_accounted_for"] != "true"
+        ),
+    }
 
 
 def _baseline_claim_layer_leakage_audit(snapshots: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -1352,13 +1699,141 @@ def _product_task_contracts() -> dict[str, Any]:
 
 
 def _snapshot_source_ids(snapshot: dict[str, Any]) -> list[str]:
+    return sorted({str(item["evidence_id"]) for item in snapshot["preclaim_evidence_items"]})
+
+
+def _source_identity_mapping(
+    snapshots: list[dict[str, Any]], proposed_refs: list[dict[str, Any]]
+) -> list[dict[str, Any]]:
+    rows_by_key: dict[tuple[str, str], dict[str, Any]] = {}
+    for snapshot in snapshots:
+        for source_id in _snapshot_source_ids(snapshot):
+            namespace = _source_namespace(source_id)
+            rows_by_key[(namespace, source_id)] = {
+                "source_namespace": namespace,
+                "source_id": source_id,
+                "normalized_source_identity": _normalized_source_identity(source_id),
+                "source_object_type": _source_object_type(source_id),
+                "mapping_rule": "PREFIX_NAMESPACE_AND_EXACT_ID",
+            }
+    for ref in proposed_refs:
+        for source_id in ref["proposed_actual_authoritative_source_ids"]:
+            namespace = _source_namespace(source_id)
+            rows_by_key.setdefault(
+                (namespace, source_id),
+                {
+                    "source_namespace": namespace,
+                    "source_id": source_id,
+                    "normalized_source_identity": _normalized_source_identity(source_id),
+                    "source_object_type": _source_object_type(source_id),
+                    "mapping_rule": "PREFIX_NAMESPACE_AND_EXACT_ID",
+                },
+            )
+    return [rows_by_key[key] for key in sorted(rows_by_key)]
+
+
+def _normalized_snapshot_source_ids(
+    snapshot: dict[str, Any], mapping: dict[tuple[str, str], str]
+) -> list[str]:
     return sorted(
         {
-            str(item["evidence_id"])
-            for item in snapshot["preclaim_evidence_items"]
-            if item["evidence_family"] != "STAGE4_ATTENTION_METRIC"
+            mapping[(_source_namespace(source_id), source_id)]
+            for source_id in _snapshot_source_ids(snapshot)
         }
     )
+
+
+def _normalized_proposed_source_ids(
+    proposed_ref: dict[str, Any], mapping: dict[tuple[str, str], str]
+) -> list[str]:
+    return sorted(
+        {
+            mapping.get(
+                (_source_namespace(source_id), source_id),
+                _normalized_source_identity(source_id),
+            )
+            for source_id in proposed_ref["proposed_actual_authoritative_source_ids"]
+        }
+    )
+
+
+def _extract_proposed_actual_sources(bundle: dict[str, Any]) -> list[str]:
+    source_ids: set[str] = set()
+    for lock in bundle["pack"].locked_facts:
+        payload = lock.model_dump(mode="json") if hasattr(lock, "model_dump") else dict(lock)
+        source_ids.update(_source_ids_from_claim_value(payload.get("claim_value") or {}))
+        for ref in payload.get("authoritative_support_refs") or []:
+            if ref.get("support_id"):
+                source_ids.add(str(ref["support_id"]))
+            source_ids.update(str(trace_id) for trace_id in ref.get("trace_ref_ids") or [])
+        source_ids.update(str(trace_id) for trace_id in payload.get("trace_refs") or [])
+    for unit in bundle["units"]:
+        payload = unit.model_dump(mode="json") if hasattr(unit, "model_dump") else dict(unit)
+        source_ids.update(str(source_id) for source_id in payload.get("source_evidence_ids") or [])
+        source_ids.update(str(trace_id) for trace_id in payload.get("trace_refs") or [])
+        source_ids.update(_source_ids_from_claim_value(payload.get("claim_value") or {}))
+    return sorted(source_id for source_id in source_ids if _is_authoritative_source_id(source_id))
+
+
+def _source_ids_from_claim_value(value: dict[str, Any]) -> set[str]:
+    ids = set()
+    for key in [
+        "source_evidence_id",
+        "metric_id",
+        "state_rai_id",
+        "state_grs_id",
+        "state_grci_id",
+    ]:
+        if value.get(key):
+            ids.add(str(value[key]))
+    return ids
+
+
+def _is_authoritative_source_id(source_id: str) -> bool:
+    return (
+        source_id.startswith("doc_")
+        or source_id.startswith("state_rai_")
+        or source_id.startswith("state_grs_")
+        or source_id.startswith("state_grci_")
+        or _looks_response_evidence_id(source_id)
+    )
+
+
+def _source_namespace(source_id: str) -> str:
+    if source_id.startswith("doc_"):
+        return "STAGE2_GEOLOGICAL_EVIDENCE"
+    if source_id.startswith("state_rai_"):
+        return "STAGE4_RAI"
+    if source_id.startswith("state_grs_"):
+        return "STAGE4_GRS"
+    if source_id.startswith("state_grci_"):
+        return "STAGE4_GRCI"
+    if _looks_response_evidence_id(source_id):
+        return "STAGE2_RESPONSE_EVIDENCE"
+    return "UNRESOLVED"
+
+
+def _normalized_source_identity(source_id: str) -> str:
+    return f"{_source_namespace(source_id)}::{source_id}"
+
+
+def _source_object_type(source_id: str) -> str:
+    namespace = _source_namespace(source_id)
+    if namespace == "STAGE2_GEOLOGICAL_EVIDENCE":
+        return "Stage2 GeologicalEvidence"
+    if namespace == "STAGE2_RESPONSE_EVIDENCE":
+        return "Stage2 ResponseEvidence"
+    if namespace == "STAGE4_RAI":
+        return "Stage4 RAI"
+    if namespace == "STAGE4_GRS":
+        return "Stage4 GRS"
+    if namespace == "STAGE4_GRCI":
+        return "Stage4 GRCI"
+    return "Unresolved"
+
+
+def _looks_response_evidence_id(source_id: str) -> bool:
+    return len(source_id) == 24 and all(char in "0123456789abcdef" for char in source_id)
 
 
 def _build_case_studies(
@@ -1844,9 +2319,11 @@ def _hard_checks(
     benchmark_rows: list[dict[str, Any]],
     overlap_rows: list[dict[str, Any]],
     snapshot_rows: list[dict[str, Any]],
+    state_universe_rows: list[dict[str, Any]],
     future_rows: list[dict[str, Any]],
     revision_rows: list[dict[str, Any]],
     abstain_rows: list[dict[str, Any]],
+    abstain_completeness_rows: list[dict[str, Any]],
     leakage_rows: list[dict[str, Any]],
     equivalence_rows: list[dict[str, Any]],
     fairness_rows: list[dict[str, Any]],
@@ -1876,6 +2353,15 @@ def _hard_checks(
         1
         for row in future_rows
         if not row.get("actual_available_time") or not row.get("source_field")
+    )
+    state_universe_missing = sum(
+        int(row["missing_state_version_count"]) for row in state_universe_rows
+    )
+    state_universe_unexpected = sum(
+        int(row["unexpected_state_version_count"]) for row in state_universe_rows
+    )
+    state_universe_factlock = sum(
+        1 for row in state_universe_rows if row["selection_basis"] == "EXPRESSIBLE_FACTLOCK_DERIVED"
     )
     rows = [
         _check(
@@ -1946,6 +2432,24 @@ def _hard_checks(
         ),
         _check("stage7_main_benchmark_changed_count", benchmark_changed, "0", "COMPUTED"),
         _check(
+            "baseline_state_universe_factlock_dependency_count",
+            state_universe_factlock,
+            "0",
+            "COMPUTED",
+        ),
+        _check(
+            "baseline_state_universe_missing_count",
+            state_universe_missing,
+            "0",
+            "COMPUTED",
+        ),
+        _check(
+            "baseline_state_universe_unexpected_count",
+            state_universe_unexpected,
+            "0",
+            "COMPUTED",
+        ),
+        _check(
             "baseline_snapshot_factlock_source_count",
             snapshot_factlock_sources,
             "0",
@@ -1966,6 +2470,12 @@ def _hard_checks(
         _check(
             "abstain_context_removed_by_proposed_preprocessing_count",
             sum(1 for row in abstain_rows if row["status"] != "PASS"),
+            "0",
+            "COMPUTED",
+        ),
+        _check(
+            "unaccounted_abstain_context_count",
+            sum(1 for row in abstain_completeness_rows if row["context_accounted_for"] != "true"),
             "0",
             "COMPUTED",
         ),
@@ -2021,8 +2531,26 @@ def _hard_checks(
             "COMPUTED",
         ),
         _check(
-            "baseline_source_information_loss_count",
-            sum(int(row["baseline_source_information_loss_count"]) for row in fairness_rows),
+            "proposed_actual_source_not_in_baseline_count",
+            sum(int(row["proposed_actual_source_not_in_baseline_count"]) for row in fairness_rows),
+            "0",
+            "COMPUTED",
+        ),
+        _check(
+            "source_identity_unresolved_count",
+            sum(int(row["source_identity_unresolved_count"]) for row in fairness_rows),
+            "0",
+            "COMPUTED",
+        ),
+        _check(
+            "three_method_source_audit_tautology_count",
+            sum(int(row["three_method_source_audit_tautology_count"]) for row in fairness_rows),
+            "0",
+            "COMPUTED",
+        ),
+        _check(
+            "baseline_authoritative_source_loss_count",
+            sum(int(row["baseline_authoritative_source_loss_count"]) for row in fairness_rows),
             "0",
             "COMPUTED",
         ),
@@ -2522,12 +3050,14 @@ and exact n; do not report p-values alone.
 
 
 def _readme(manifest: dict[str, Any]) -> str:
-    return f"""# Stage7A.1 Experimental Protocol v1.1
+    return f"""# Stage7A.2 Experimental Protocol v1.2
 
-This artifact corrects Stage7A v1 before any Stage7B model execution. B0/B1
-now receive pre-Claim bitemporal construction-state snapshots built directly
-from frozen Stage3B state versions, Stage2 evidence, and Stage4 metrics rather
-than downstream FactLocks or RealizationUnits.
+This artifact performs the final pre-Claim snapshot completeness and
+independent source-fairness correction before any Stage7B model execution.
+B0/B1 receive complete pre-Claim bitemporal construction-state snapshots built
+from frozen Stage3B state scope, Stage2 evidence/applicability, and Stage4
+metrics rather than downstream FactLocks, RealizationUnits, or EXPRESSIBLE
+Claim membership.
 
 - Original eligible universe size: {manifest["original_eligible_count"]}
 - True held-out universe size: {manifest["true_heldout_count"]}
@@ -2603,7 +3133,9 @@ prohibited-transformation machinery.
 
 The proposed method is tied to the same frozen knowledge state and evidence
 universe, with extra method-derived constraints represented separately in
-`stage7_proposed_input_reference.jsonl`.
+`stage7_proposed_preclaim_reference.jsonl`. Its source-equivalence audit is
+reconstructed from actual Stage6B FactLock, EvidencePack, and RealizationUnit
+provenance rather than copied from the baseline pre-Claim snapshot.
 
 ## Hard Checks
 
