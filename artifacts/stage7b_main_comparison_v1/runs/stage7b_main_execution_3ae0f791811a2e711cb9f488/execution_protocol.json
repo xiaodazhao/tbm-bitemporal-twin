@@ -1,0 +1,53 @@
+{
+  "b0_prompt_hash": "3966cce71fe560c4d1cb323ec1b46506b97595f89168cafdf327d5b147c2d296",
+  "b1_prompt_hash": "7ad1dfec254bf1c5107c99f559bc65cfd590b595750089b38dd498bcbbfbecea",
+  "baseline_output_policy": "preserve raw model text exactly",
+  "execution_protocol_hash": "19c1bb629765198316c44951bddfbdf7547f017da6793c698c6f98f376260cbf",
+  "method_order_policy": {
+    "task_index_mod_0": [
+      "B0_DIRECT_LLM",
+      "B1_STRUCTURED_PROMPT_LLM",
+      "P_PROPOSED"
+    ],
+    "task_index_mod_1": [
+      "B1_STRUCTURED_PROMPT_LLM",
+      "P_PROPOSED",
+      "B0_DIRECT_LLM"
+    ],
+    "task_index_mod_2": [
+      "P_PROPOSED",
+      "B0_DIRECT_LLM",
+      "B1_STRUCTURED_PROMPT_LLM"
+    ]
+  },
+  "product_task_contract_hash": "ad599756f428514cf731bb982ecccf21b0705e14579ebf64095524a674ecc98d",
+  "proposed_output_policy": "raw plan first, strict parse, deterministic validation, deterministic composition",
+  "protocol_version": "stage7b_main_comparison_v1",
+  "provider_config_public": {
+    "api_key_env_var": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "json_repair": false,
+    "max_output_tokens": 4096,
+    "max_retries": 0,
+    "model": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "provider_side_structured_outputs": false,
+    "reasoning_effort": "none",
+    "schema_request_policy": "schema-requested and deterministically validated",
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "retry_policy": {
+    "max_retries": 0,
+    "retry_on_parse_failure": false,
+    "retry_on_transport_failure": false,
+    "retry_on_validation_failure": false
+  },
+  "stage6b_commit": "ecf0fc47cd2f1f4a8bb5a962c32caaa7c5284550",
+  "stage6b_tag": "stage6b-controlled-realization-v1-frozen",
+  "stage7_asof_binding_hash": "92bdea500aef7bedb27e6133e92ec058f03ccfd48810e84aed11388838d12bc4",
+  "stage7_main_manifest_hash": "e9ef8e3f9bd25f345f89f79dc753040e3bfc1f95e562902aea625a8e50334f6f",
+  "stage7a_artifact_dir": "artifacts/stage7a_experimental_protocol_v1_3",
+  "stage7a_commit": "6007afe7c1b1228d6638503afeba979ee2f66878",
+  "stage7a_tag": "stage7a-experimental-protocol-v1.3-frozen"
+}

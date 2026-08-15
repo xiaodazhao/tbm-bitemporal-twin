@@ -52,6 +52,7 @@ class DeepSeekResponsesPlanProvider:
             api_key=api_key,
             base_url=self.config.base_url,
             max_retries=self.config.max_retries,
+            timeout=self.config.timeout_seconds,
         )
         try:
             response = cast(Any, client.responses).create(

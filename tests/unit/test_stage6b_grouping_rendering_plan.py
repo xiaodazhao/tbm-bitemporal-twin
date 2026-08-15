@@ -810,10 +810,11 @@ def test_stage6b_deepseek_adapter_uses_official_responses_base_url_without_netwo
             return FakeResponse()
 
     class FakeOpenAI:
-        def __init__(self, api_key: str, base_url: str, max_retries: int) -> None:
+        def __init__(self, api_key: str, base_url: str, max_retries: int, timeout: int) -> None:
             calls["api_key"] = api_key
             calls["base_url"] = base_url
             calls["max_retries"] = max_retries
+            calls["timeout"] = timeout
             self.responses = FakeResponses()
 
     monkeypatch.setitem(sys.modules, "openai", types.SimpleNamespace(OpenAI=FakeOpenAI))
@@ -840,6 +841,7 @@ def test_stage6b_deepseek_adapter_uses_official_responses_base_url_without_netwo
     assert calls["api_key"] == "test-deepseek-key"
     assert calls["base_url"] == DEEPSEEK_RESPONSES_BASE_URL
     assert calls["max_retries"] == 0
+    assert calls["timeout"] == 120
     kwargs = calls["create_kwargs"]
     assert kwargs["model"] == DEEPSEEK_RESPONSES_SUPPORTED_MODEL
     assert kwargs["temperature"] == 0.0
@@ -870,8 +872,9 @@ def test_stage6b_deepseek_adapter_records_exception_accounting_without_network(
             raise TimeoutError("deepseek timeout")
 
     class FakeOpenAI:
-        def __init__(self, api_key: str, base_url: str, max_retries: int) -> None:
+        def __init__(self, api_key: str, base_url: str, max_retries: int, timeout: int) -> None:
             assert max_retries == 0
+            assert timeout == 120
             self.responses = FakeResponses()
 
     monkeypatch.setitem(sys.modules, "openai", types.SimpleNamespace(OpenAI=FakeOpenAI))
@@ -938,8 +941,9 @@ def test_stage6b_deepseek_malformed_json_is_parse_failure_not_transport_failure(
             return FakeResponse()
 
     class FakeOpenAI:
-        def __init__(self, api_key: str, base_url: str, max_retries: int) -> None:
+        def __init__(self, api_key: str, base_url: str, max_retries: int, timeout: int) -> None:
             assert max_retries == 0
+            assert timeout == 120
             self.responses = FakeResponses()
 
     monkeypatch.setitem(sys.modules, "openai", types.SimpleNamespace(OpenAI=FakeOpenAI))

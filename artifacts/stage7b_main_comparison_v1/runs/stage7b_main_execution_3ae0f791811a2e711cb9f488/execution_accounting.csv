@@ -1,0 +1,3 @@
+metric,recomputed_value,reported_value,status
+real_api_request_attempt_count,144,144,PASS
+real_api_transport_success_count,144,144,PASS

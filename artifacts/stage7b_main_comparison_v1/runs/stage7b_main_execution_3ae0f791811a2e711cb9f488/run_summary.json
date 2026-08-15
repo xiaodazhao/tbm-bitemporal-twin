@@ -1,0 +1,20 @@
+{
+  "b0_output_count": 48,
+  "b1_output_count": 48,
+  "benchmark_task_count": 48,
+  "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+  "execution_item_count": 144,
+  "execution_protocol_hash": "19c1bb629765198316c44951bddfbdf7547f017da6793c698c6f98f376260cbf",
+  "model": "deepseek-v4-flash",
+  "p_final_output_count": 45,
+  "p_plan_valid_count": 45,
+  "p_post_audit_fail_count": 0,
+  "p_post_audit_pass_count": 45,
+  "p_raw_plan_count": 48,
+  "provider": "deepseek",
+  "real_api_request_attempt_count": 144,
+  "real_api_transport_success_count": 144,
+  "stage7b_status": "EXECUTED",
+  "structure_audit_fail_count": 3,
+  "transport_failure_count": 0
+}
