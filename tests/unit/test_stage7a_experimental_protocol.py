@@ -1,4 +1,4 @@
-"""Regression tests for Stage7A.2 pre-Claim protocol construction."""
+"""Regression tests for Stage7A.3 exact as-of protocol construction."""
 
 from __future__ import annotations
 
@@ -25,8 +25,8 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 @pytest.fixture(scope="module")
-def stage7a2_out(tmp_path_factory: pytest.TempPathFactory) -> Path:
-    return build_stage7a_protocol(REPO_ROOT, tmp_path_factory.mktemp("stage7a2"))
+def stage7a3_out(tmp_path_factory: pytest.TempPathFactory) -> Path:
+    return build_stage7a_protocol(REPO_ROOT, tmp_path_factory.mktemp("stage7a3"))
 
 
 def _rows(path: Path) -> list[dict[str, str]]:
@@ -42,15 +42,14 @@ def _jsonl(path: Path) -> list[dict[str, Any]]:
     return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line]
 
 
-def test_stage7a2_preserves_v1_benchmark_and_uses_state_scope(
-    stage7a2_out: Path,
+def test_stage7a3_preserves_48_task_selection_and_product_quotas(
+    stage7a3_out: Path,
 ) -> None:
     v1 = _json(
         REPO_ROOT / "artifacts/stage7a_experimental_protocol_v1/stage7_main_benchmark_manifest.json"
     )
-    manifest = _json(stage7a2_out / "stage7_main_benchmark_manifest.json")
-    state_rows = _rows(stage7a2_out / "stage7_task_preclaim_state_universe_audit.csv")
-    hard_rows = _rows(stage7a2_out / "stage7a2_hard_check.csv")
+    manifest = _json(stage7a3_out / "stage7_main_benchmark_manifest.json")
+    hard_rows = _rows(stage7a3_out / "stage7a3_hard_check.csv")
 
     assert [row["benchmark_task_id"] for row in manifest["tasks"]] == [
         row["benchmark_task_id"] for row in v1["tasks"]
@@ -62,17 +61,11 @@ def test_stage7a2_preserves_v1_benchmark_and_uses_state_scope(
         "forward_attention": 12,
         "metric_review": 12,
     }
-    assert len(state_rows) == 48
-    assert {row["selection_basis"] for row in state_rows} == {"SLICE_SPEC_AND_FROZEN_STATE_SCOPE"}
-    assert {row["factlock_dependency"] for row in state_rows} == {"false"}
-    assert {row["missing_state_version_count"] for row in state_rows} == {"0"}
-    assert {row["unexpected_state_version_count"] for row in state_rows} == {"0"}
-    assert all(int(row["included_stage3b_state_version_count"]) > 0 for row in state_rows)
     assert {row["status"] for row in hard_rows} == {"PASS"}
 
 
-def test_stage7a2_manifest_hash_and_product_quotas(stage7a2_out: Path) -> None:
-    manifest = _json(stage7a2_out / "stage7_main_benchmark_manifest.json")
+def test_stage7a3_manifest_hash_remains_selection_identity(stage7a3_out: Path) -> None:
+    manifest = _json(stage7a3_out / "stage7_main_benchmark_manifest.json")
     expected_hash = stable_hash(
         [
             {
@@ -91,24 +84,92 @@ def test_stage7a2_manifest_hash_and_product_quotas(stage7a2_out: Path) -> None:
             for row in manifest["tasks"]
         ]
     )
+    method = _json(stage7a3_out / "method_version.json")
 
     assert manifest["actual_size"] == 48
     assert manifest["stage7_main_manifest_hash"] == expected_hash
+    assert method["main_benchmark_manifest_hash"] == expected_hash
+    assert method["asof_evaluation_binding_manifest_hash"]
 
 
-def test_stage7a2_snapshot_has_preclaim_metrics_and_no_downstream_sources(
-    stage7a2_out: Path,
+def test_stage7a3_reproduces_pre_correction_superseded_exposure(
+    stage7a3_out: Path,
 ) -> None:
-    snapshots = _jsonl(stage7a2_out / "stage7_preclaim_benchmark_evidence_snapshots.jsonl")
-    leakage_rows = _rows(stage7a2_out / "stage7_baseline_claim_layer_leakage_audit.csv")
-    payloads = _jsonl(stage7a2_out / "stage7_b0_input_payloads.jsonl")
+    rows = _rows(stage7a3_out / "stage7_asof_pre_correction_audit.csv")
+    exposed = [row for row in rows if row["status"] == "SUPERSEDED_EXPOSED"]
+
+    assert exposed
+    assert len({row["task_id"] for row in exposed}) == 22
+    assert sum(len(row["superseded_version_ids"].split(";")) for row in exposed) == 37
+    assert {row["multiple_versions_for_same_cell"] for row in exposed} == {"true"}
+
+
+def test_stage7a3_active_state_scope_uses_half_open_asof_interval(
+    stage7a3_out: Path,
+) -> None:
+    sources = _load_preclaim_sources(REPO_ROOT)
+    query = sources["asof_query"]
+    pre_rows = _rows(stage7a3_out / "stage7_asof_pre_correction_audit.csv")
+    boundary_case = next(
+        row
+        for row in pre_rows
+        if row["status"] == "SUPERSEDED_EXPOSED"
+        and any(
+            sources["stage3b_versions_by_bitemporal"][version_id]["knowledge_time_end_local_date"]
+            == row["knowledge_boundary"]
+            for version_id in row["superseded_version_ids"].split(";")
+        )
+    )
+
+    selected = query.get_state_as_known(
+        boundary_case["valid_date"],
+        boundary_case["cell_id"],
+        boundary_case["knowledge_boundary"],
+    )
+
+    assert selected is not None
+    assert selected["bitemporal_version_id"] == boundary_case["active_asof_version_id"]
+    assert selected["bitemporal_version_id"] not in boundary_case["superseded_version_ids"].split(
+        ";"
+    )
+
+
+def test_stage7a3_one_active_version_per_cell_and_no_superseded_snapshot(
+    stage7a3_out: Path,
+) -> None:
+    state_rows = _rows(stage7a3_out / "stage7_task_preclaim_state_universe_audit.csv")
+    exposure_rows = _rows(stage7a3_out / "stage7_asof_state_exposure_audit.csv")
+
+    assert {row["selection_basis"] for row in state_rows} == {
+        "SLICE_SPEC_AND_FROZEN_STATE_SCOPE_PLUS_ASOF_KNOWLEDGE_INTERVAL"
+    }
+    assert {row["factlock_dependency"] for row in state_rows} == {"false"}
+    assert {row["multiple_active_version_count"] for row in state_rows} == {"0"}
+    assert {row["missing_state_version_count"] for row in state_rows} == {"0"}
+    assert {row["unexpected_state_version_count"] for row in state_rows} == {"0"}
+    assert {row["duplicate_cell_version_count"] for row in exposure_rows} == {"0"}
+    assert {row["superseded_state_count_in_snapshot"] for row in exposure_rows} == {"0"}
+    assert {row["status"] for row in exposure_rows} == {"PASS"}
+
+
+def test_stage7a3_stage4_metrics_bind_only_active_versions(stage7a3_out: Path) -> None:
+    rows = _rows(stage7a3_out / "stage7_asof_metric_binding_audit.csv")
+
+    assert rows
+    assert {row["status"] for row in rows} == {"PASS"}
+    assert {row["superseded_metric_count"] for row in rows} == {"0"}
+    assert all(row["active_bitemporal_version_id"] for row in rows)
+    assert all(row["task_knowledge_boundary"] for row in rows)
+
+
+def test_stage7a3_snapshot_has_preclaim_metrics_and_no_downstream_sources(
+    stage7a3_out: Path,
+) -> None:
+    snapshots = _jsonl(stage7a3_out / "stage7_preclaim_benchmark_evidence_snapshots.jsonl")
+    leakage_rows = _rows(stage7a3_out / "stage7_baseline_claim_layer_leakage_audit.csv")
+    payloads = _jsonl(stage7a3_out / "stage7_b0_input_payloads.jsonl")
     items = [item for snapshot in snapshots for item in snapshot["preclaim_evidence_items"]]
     metric_items = [item for item in items if item["evidence_family"] == "STAGE4_ATTENTION_METRIC"]
-    unavailable_metrics = [
-        item
-        for item in metric_items
-        if item.get("raw_value") is None or item.get("metric_status") not in {"AVAILABLE", ""}
-    ]
     forbidden = [
         "fact_lock_",
         "realization_unit_",
@@ -126,7 +187,6 @@ def test_stage7a2_snapshot_has_preclaim_metrics_and_no_downstream_sources(
     assert len(snapshots) == 48
     assert {row["status"] for row in leakage_rows} == {"PASS"}
     assert metric_items
-    assert unavailable_metrics
     for snapshot in snapshots:
         assert snapshot["snapshot_source"] == "STAGE3B_STAGE4_PRE_CLAIM_STATE"
         assert snapshot["preclaim_evidence_items"]
@@ -138,17 +198,32 @@ def test_stage7a2_snapshot_has_preclaim_metrics_and_no_downstream_sources(
     assert all(token not in payload_text for token in forbidden)
 
 
-def test_stage7a2_abstain_context_completeness_by_reason(stage7a2_out: Path) -> None:
-    summary = _json(stage7a2_out / "stage7_abstain_context_summary.json")
-    rows = _rows(stage7a2_out / "stage7_abstain_context_completeness_audit.csv")
+def test_stage7a3_proposed_bundle_filters_factlocks_and_abstentions_to_asof(
+    stage7a3_out: Path,
+) -> None:
+    rows = _rows(stage7a3_out / "stage7_asof_evaluation_binding_manifest.csv")
+    proposed_refs = _jsonl(stage7a3_out / "stage7_proposed_preclaim_reference.jsonl")
 
-    assert summary["total_abstain_opportunities"] == 386
-    assert summary["unaccounted_abstain_context_count"] == 0
-    assert summary["classification_counts"] == {
-        "EXPECTED_SUPPORT_ABSENT": 22,
-        "ROLE_OR_EPISTEMIC_BOUNDARY": 202,
-        "UPSTREAM_SUPPORT_PRESENT": 162,
+    assert len(rows) == 48
+    assert {row["status"] for row in rows} == {"PASS"}
+    assert {row["proposed_non_asof_factlock_count"] for row in rows} == {"0"}
+    assert {row["proposed_non_asof_abstention_count"] for row in rows} == {"0"}
+    assert all(row["asof_pack_id"] for row in rows)
+    assert all(row["asof_realization_unit_ids"] for row in rows)
+    assert {row["source_reconstruction_basis"] for row in proposed_refs} == {
+        "STAGE7_ASOF_FILTERED_STAGE6B_BUNDLE_PROVENANCE"
     }
+
+
+def test_stage7a3_active_abstain_context_completeness(stage7a3_out: Path) -> None:
+    summary = _json(stage7a3_out / "stage7_asof_abstain_context_summary.json")
+    rows = _rows(stage7a3_out / "stage7_asof_abstain_context_completeness_audit.csv")
+    binding_rows = _rows(stage7a3_out / "stage7_asof_evaluation_binding_manifest.csv")
+
+    assert len(rows) == sum(int(row["active_abstain_count"]) for row in binding_rows)
+    assert len(rows) < 386
+    assert summary["total_abstain_opportunities"] == len(rows)
+    assert summary["unaccounted_abstain_context_count"] == 0
     assert {row["status"] for row in rows} == {"PASS"}
     assert {
         "CONTEXT_ONLY_ROLE",
@@ -157,42 +232,45 @@ def test_stage7a2_abstain_context_completeness_by_reason(stage7a2_out: Path) -> 
         "STATE_ROLE_NOT_ALLOWED",
         "UNKNOWN_SOURCE_VALUE",
     } <= {row["abstention_reason"] for row in rows}
-    assert all(
-        row["expected_absence"] == "true" and row["absence_correctly_represented"] == "true"
-        for row in rows
-        if row["abstention_reason"] == "REQUIRED_METRIC_UNAVAILABLE"
-    )
-    assert all(
-        row["context_accounted_for"] == "true"
-        for row in rows
-        if row["context_classification"] == "ROLE_OR_EPISTEMIC_BOUNDARY"
-    )
 
 
-def test_stage7a2_abstain_audit_detects_removed_context(stage7a2_out: Path) -> None:
-    snapshots = _jsonl(stage7a2_out / "stage7_preclaim_benchmark_evidence_snapshots.jsonl")
+def test_stage7a3_abstain_audit_detects_removed_active_context(stage7a3_out: Path) -> None:
+    snapshots = _jsonl(stage7a3_out / "stage7_preclaim_benchmark_evidence_snapshots.jsonl")
     sources = _load_preclaim_sources(REPO_ROOT)
     benchmark_rows = _load_v1_benchmark_rows(REPO_ROOT)
-    audit_rows = _rows(stage7a2_out / "stage7_abstain_context_completeness_audit.csv")
-    target = next(row for row in audit_rows if row["expected_support_ids"])
+    audit_rows = _rows(stage7a3_out / "stage7_asof_abstain_context_completeness_audit.csv")
+    binding_rows = _rows(stage7a3_out / "stage7_asof_evaluation_binding_manifest.csv")
+    active_ids = {
+        row["benchmark_task_id"]: set(row["asof_abstention_ids"].split(";"))
+        if row["asof_abstention_ids"]
+        else set()
+        for row in binding_rows
+    }
+    target = next(row for row in audit_rows if row["snapshot_support_ids_found"])
     mutated = json.loads(json.dumps(snapshots))
     snapshot = next(row for row in mutated if row["benchmark_task_id"] == target["task_id"])
-    removed_id = target["expected_support_ids"].split(";")[0]
+    removed_id = target["snapshot_support_ids_found"].split(";")[0]
     snapshot["preclaim_evidence_items"] = [
         item for item in snapshot["preclaim_evidence_items"] if item["evidence_id"] != removed_id
     ]
 
-    rows, summary = _abstain_context_completeness_audit({}, benchmark_rows, mutated, sources)
+    rows, summary = _abstain_context_completeness_audit(
+        {},
+        benchmark_rows,
+        mutated,
+        sources,
+        active_abstention_ids_by_task=active_ids,
+    )
 
     assert summary["unaccounted_abstain_context_count"] > 0
     assert any(row["status"] == "FAIL" for row in rows if row["task_id"] == target["task_id"])
 
 
-def test_stage7a2_preserves_actual_availability_and_detects_future_injection(
-    stage7a2_out: Path,
+def test_stage7a3_preserves_availability_and_detects_future_injection(
+    stage7a3_out: Path,
 ) -> None:
-    future_rows = _rows(stage7a2_out / "stage7_snapshot_future_leakage_audit.csv")
-    snapshots = _jsonl(stage7a2_out / "stage7_preclaim_benchmark_evidence_snapshots.jsonl")
+    future_rows = _rows(stage7a3_out / "stage7_asof_future_leakage_audit.csv")
+    snapshots = _jsonl(stage7a3_out / "stage7_preclaim_benchmark_evidence_snapshots.jsonl")
     injected = json.loads(json.dumps(snapshots[0]))
     injected["preclaim_evidence_items"][0]["actual_available_time"] = "2999-01-01"
 
@@ -203,11 +281,11 @@ def test_stage7a2_preserves_actual_availability_and_detects_future_injection(
     assert any(row["is_future"] == "true" for row in injected_audit)
 
 
-def test_stage7a2_proposed_source_equivalence_is_reconstructed_independently(
-    stage7a2_out: Path,
+def test_stage7a3_asof_source_equivalence_is_reconstructed_independently(
+    stage7a3_out: Path,
 ) -> None:
-    rows = _rows(stage7a2_out / "stage7_three_method_source_equivalence_audit_v1_2.csv")
-    proposed_refs = _jsonl(stage7a2_out / "stage7_proposed_preclaim_reference.jsonl")
+    rows = _rows(stage7a3_out / "stage7_asof_three_method_source_equivalence_audit.csv")
+    proposed_refs = _jsonl(stage7a3_out / "stage7_proposed_preclaim_reference.jsonl")
 
     assert {row["status"] for row in rows} == {"PASS"}
     assert {row["proposed_actual_source_not_in_baseline_count"] for row in rows} == {"0"}
@@ -215,15 +293,12 @@ def test_stage7a2_proposed_source_equivalence_is_reconstructed_independently(
     assert {row["source_identity_unresolved_count"] for row in rows} == {"0"}
     assert {row["three_method_source_audit_tautology_count"] for row in rows} == {"0"}
     assert {row["baseline_authoritative_source_loss_count"] for row in rows} == {"0"}
-    assert {row["source_reconstruction_basis"] for row in proposed_refs} == {
-        "STAGE6B_BUNDLE_FACTLOCK_AND_REALIZATIONUNIT_PROVENANCE"
-    }
     assert all("preclaim_source_evidence_ids" not in row for row in proposed_refs)
 
 
-def test_stage7a2_proposed_only_source_is_detected(stage7a2_out: Path) -> None:
-    snapshots = _jsonl(stage7a2_out / "stage7_preclaim_benchmark_evidence_snapshots.jsonl")
-    proposed_refs = _jsonl(stage7a2_out / "stage7_proposed_preclaim_reference.jsonl")
+def test_stage7a3_proposed_only_source_is_detected(stage7a3_out: Path) -> None:
+    snapshots = _jsonl(stage7a3_out / "stage7_preclaim_benchmark_evidence_snapshots.jsonl")
+    proposed_refs = _jsonl(stage7a3_out / "stage7_proposed_preclaim_reference.jsonl")
     mutated = json.loads(json.dumps(proposed_refs))
     mutated[0]["proposed_actual_authoritative_source_ids"].append("doc_injected_future_source")
 
@@ -234,11 +309,11 @@ def test_stage7a2_proposed_only_source_is_detected(stage7a2_out: Path) -> None:
     assert any(int(row["proposed_actual_source_not_in_baseline_count"]) > 0 for row in rows)
 
 
-def test_stage7a2_source_equivalence_cannot_pass_by_copying_baseline_ids(
-    stage7a2_out: Path,
+def test_stage7a3_source_equivalence_cannot_pass_by_copying_baseline_ids(
+    stage7a3_out: Path,
 ) -> None:
-    snapshots = _jsonl(stage7a2_out / "stage7_preclaim_benchmark_evidence_snapshots.jsonl")
-    proposed_refs = _jsonl(stage7a2_out / "stage7_proposed_preclaim_reference.jsonl")
+    snapshots = _jsonl(stage7a3_out / "stage7_preclaim_benchmark_evidence_snapshots.jsonl")
+    proposed_refs = _jsonl(stage7a3_out / "stage7_proposed_preclaim_reference.jsonl")
     mutated = json.loads(json.dumps(proposed_refs))
     baseline_ids = {
         snapshot["benchmark_task_id"]: sorted(
@@ -257,12 +332,12 @@ def test_stage7a2_source_equivalence_cannot_pass_by_copying_baseline_ids(
     assert {row["three_method_source_audit_tautology_count"] for row in rows} == {1}
 
 
-def test_stage7a2_b0_b1_inputs_and_product_contracts_are_equivalent(
-    stage7a2_out: Path,
+def test_stage7a3_b0_b1_inputs_and_product_contracts_are_equivalent(
+    stage7a3_out: Path,
 ) -> None:
-    audit_rows = _rows(stage7a2_out / "stage7_b0_b1_equivalence_audit.csv")
-    b0_payloads = _jsonl(stage7a2_out / "stage7_b0_input_payloads.jsonl")
-    b1_payloads = _jsonl(stage7a2_out / "stage7_b1_input_payloads.jsonl")
+    audit_rows = _rows(stage7a3_out / "stage7_b0_b1_equivalence_audit.csv")
+    b0_payloads = _jsonl(stage7a3_out / "stage7_b0_input_payloads.jsonl")
+    b1_payloads = _jsonl(stage7a3_out / "stage7_b1_input_payloads.jsonl")
 
     assert {row["status"] for row in audit_rows} == {"PASS"}
     assert {row["b0_b1_evidence_difference_count"] for row in audit_rows} == {"0"}
@@ -273,10 +348,10 @@ def test_stage7a2_b0_b1_inputs_and_product_contracts_are_equivalent(
         assert b0["method_id"] != b1["method_id"]
 
 
-def test_stage7a2_gold_and_blind_protocols_remain_valid(stage7a2_out: Path) -> None:
-    gold_rows = _rows(stage7a2_out / "stage7_claim_gold_sampling_plan.csv")
-    blind_rows = _rows(stage7a2_out / "stage7_text_evaluation_blind_manifest.csv")
-    internal_rows = _rows(stage7a2_out / "stage7_text_evaluation_internal_mapping.csv")
+def test_stage7a3_gold_and_blind_protocols_remain_valid(stage7a3_out: Path) -> None:
+    gold_rows = _rows(stage7a3_out / "stage7_claim_gold_sampling_plan.csv")
+    blind_rows = _rows(stage7a3_out / "stage7_text_evaluation_blind_manifest.csv")
+    internal_rows = _rows(stage7a3_out / "stage7_text_evaluation_internal_mapping.csv")
 
     forbidden = ["B0_", "B1_", "P_PROPOSED", "DIRECT_LLM", "STRUCTURED_PROMPT"]
     blind_text = json.dumps(blind_rows, ensure_ascii=False)
@@ -289,29 +364,32 @@ def test_stage7a2_gold_and_blind_protocols_remain_valid(stage7a2_out: Path) -> N
     assert "true_method_identity" in internal_rows[0]
 
 
-def test_stage7a2_generated_artifact_contains_complete_required_files(
-    stage7a2_out: Path,
+def test_stage7a3_generated_artifact_contains_complete_required_files(
+    stage7a3_out: Path,
 ) -> None:
     required = {
         "stage7_main_benchmark_manifest.json",
         "stage7_main_benchmark_manifest.csv",
-        "stage7_task_preclaim_state_universe_audit.csv",
+        "stage7_asof_evaluation_binding_manifest.json",
+        "stage7_asof_evaluation_binding_manifest.csv",
+        "stage7_asof_pre_correction_audit.csv",
+        "stage7_asof_state_exposure_audit.csv",
+        "stage7_asof_metric_binding_audit.csv",
         "stage7_preclaim_benchmark_evidence_snapshots.jsonl",
-        "stage7_abstain_context_completeness_audit.csv",
-        "stage7_abstain_context_summary.json",
         "stage7_b0_input_payloads.jsonl",
         "stage7_b1_input_payloads.jsonl",
-        "stage7_source_identity_mapping.csv",
-        "stage7_three_method_source_equivalence_audit_v1_2.csv",
-        "stage7_snapshot_future_leakage_audit.csv",
-        "stage7a2_hard_check.csv",
-        "stage7a2_freeze_report.md",
+        "stage7_asof_abstain_context_completeness_audit.csv",
+        "stage7_asof_abstain_context_summary.json",
+        "stage7_asof_three_method_source_equivalence_audit.csv",
+        "stage7_asof_future_leakage_audit.csv",
+        "stage7a3_hard_check.csv",
+        "stage7a3_freeze_report.md",
         "method_version.json",
         "file_hashes.sha256",
     }
-    existing = {path.name for path in stage7a2_out.iterdir() if path.is_file()}
+    existing = {path.name for path in stage7a3_out.iterdir() if path.is_file()}
 
     assert required <= existing
     assert (
-        len(read_jsonl(stage7a2_out / "stage7_preclaim_benchmark_evidence_snapshots.jsonl")) == 48
+        len(read_jsonl(stage7a3_out / "stage7_preclaim_benchmark_evidence_snapshots.jsonl")) == 48
     )

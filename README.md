@@ -192,6 +192,6 @@ Stage 6A Deterministic Fact Lock & Controlled Evidence Pack v1: FROZEN
 
 Stage 6B Controlled Claim Realization / LLM Realization v1: FROZEN
 
-Stage 7A Experimental Protocol / Held-Out Benchmark v1.2: FROZEN
+Stage 7A Experimental Protocol / Held-Out Benchmark v1.3: FROZEN
 
 Stage 7B Controlled Model Evaluation: NEXT

@@ -11,20 +11,25 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, Literal
 
+from tbm_twin.bitemporal.query import AsOfStateQuery
+from tbm_twin.bitemporal.temporal_eligibility import parse_local_date
 from tbm_twin.realization.io import canonical_json, read_json, read_jsonl, stable_hash, stable_id
 from tbm_twin.realization.models import SliceSpec
 from tbm_twin.realization.stage6b import build_task_bundle, load_stage6b_inputs
 from tbm_twin.realization.stage6b_smoke import smoke_manifest_hash
 
-STAGE7A_METHOD_VERSION = "stage7a_experimental_protocol_v1_2_complete_preclaim_snapshot"
-STAGE7A_SCHEMA_VERSION = "stage7a_experimental_protocol.v1.2"
-STAGE7A_OUTPUT = "artifacts/stage7a_experimental_protocol_v1_2"
+STAGE7A_METHOD_VERSION = "stage7a_experimental_protocol_v1_3_exact_asof_binding"
+STAGE7A_SCHEMA_VERSION = "stage7a_experimental_protocol.v1.3"
+STAGE7A_OUTPUT = "artifacts/stage7a_experimental_protocol_v1_3"
 STAGE7A_V1_OUTPUT = "artifacts/stage7a_experimental_protocol_v1"
 STAGE7A_V1_1_OUTPUT = "artifacts/stage7a_experimental_protocol_v1_1"
+STAGE7A_V1_2_OUTPUT = "artifacts/stage7a_experimental_protocol_v1_2"
 STAGE7A_V1_TAG = "stage7a-experimental-protocol-v1-frozen"
 STAGE7A_V1_COMMIT = "c078dd35cd50a34161da79aa41f025fab4317308"
 STAGE7A_V1_1_TAG = "stage7a-experimental-protocol-v1.1-frozen"
 STAGE7A_V1_1_COMMIT = "fff2651798b5c445d9c636d6c734579e75cea39b"
+STAGE7A_V1_2_TAG = "stage7a-experimental-protocol-v1.2-frozen"
+STAGE7A_V1_2_COMMIT = "def92a9aae8917baf8eb07e39ab5b3fa55972a83"
 STAGE6B_FREEZE_TAG = "stage6b-controlled-realization-v1-frozen"
 STAGE6B_FREEZE_COMMIT = "ecf0fc47cd2f1f4a8bb5a962c32caaa7c5284550"
 STAGE6B_SMOKE_REASON = "USED_FOR_STAGE6B_DEVELOPMENT_AND_FREEZE_SMOKE"
@@ -82,16 +87,31 @@ def build_stage7a_protocol(
     _validate_v1_benchmark_preserved(benchmark_rows)
     benchmark_hash = _benchmark_hash(benchmark_rows)
     preclaim_sources = _load_preclaim_sources(repo_root)
+    pre_correction_rows = _asof_pre_correction_audit(benchmark_rows, preclaim_sources)
     state_universe_rows, state_universe = _task_preclaim_state_universe(
         benchmark_rows, preclaim_sources
+    )
+    state_exposure_rows = _asof_state_exposure_audit(
+        benchmark_rows, state_universe, preclaim_sources
     )
     snapshots = _build_preclaim_snapshots(benchmark_rows, preclaim_sources, state_universe)
     snapshot_rows = _snapshot_audit(snapshots)
     future_rows = _future_leakage_audit(snapshots)
+    metric_binding_rows = _asof_metric_binding_audit(
+        benchmark_rows, state_universe, snapshots, preclaim_sources
+    )
     revision_rows = _revision_knowledge_binding_audit(snapshots)
-    abstain_rows = _abstain_context_visibility_audit(inputs, benchmark_rows, snapshots)
+    asof_bundles = _asof_task_bundles(inputs, benchmark_rows, state_universe)
+    active_abstention_ids_by_task = _active_abstention_ids_by_task(asof_bundles)
+    abstain_rows = _abstain_context_visibility_audit(
+        inputs, benchmark_rows, snapshots, asof_bundles=asof_bundles
+    )
     abstain_completeness_rows, abstain_summary = _abstain_context_completeness_audit(
-        inputs, benchmark_rows, snapshots, preclaim_sources
+        inputs,
+        benchmark_rows,
+        snapshots,
+        preclaim_sources,
+        active_abstention_ids_by_task=active_abstention_ids_by_task,
     )
     leakage_rows = _baseline_claim_layer_leakage_audit(snapshots)
     product_contracts = _product_task_contracts()
@@ -102,7 +122,10 @@ def build_stage7a_protocol(
         benchmark_rows, snapshots, product_contracts, "B1_STRUCTURED_PROMPT_LLM"
     )
     equivalence_rows = _baseline_equivalence_audit(b0_payloads, b1_payloads)
-    proposed_refs = _proposed_preclaim_reference(inputs, benchmark_rows)
+    asof_binding_rows, asof_binding_hash = _asof_evaluation_binding_manifest(
+        benchmark_rows, state_universe, asof_bundles, b0_payloads, b1_payloads
+    )
+    proposed_refs = _proposed_preclaim_reference(inputs, benchmark_rows, asof_bundles=asof_bundles)
     source_mapping_rows = _source_identity_mapping(snapshots, proposed_refs)
     fairness_rows = _three_method_source_equivalence_audit(
         snapshots, proposed_refs, source_mapping_rows
@@ -136,7 +159,19 @@ def build_stage7a_protocol(
     _write_json(output / "stage7_smoke_exposure_manifest.json", smoke_exposure)
     _write_csv(output / "stage7_smoke_overlap_audit.csv", overlap_rows)
     _write_csv(output / "stage7_true_heldout_universe.csv", _flatten_universe(true_heldout))
+    _write_csv(output / "stage7_asof_pre_correction_audit.csv", pre_correction_rows)
     _write_csv(output / "stage7_task_preclaim_state_universe_audit.csv", state_universe_rows)
+    _write_json(
+        output / "stage7_asof_evaluation_binding_manifest.json",
+        {
+            "schema_version": STAGE7A_SCHEMA_VERSION,
+            "method_version": STAGE7A_METHOD_VERSION,
+            "stage7_main_benchmark_manifest_hash": benchmark_hash,
+            "stage7_asof_evaluation_binding_manifest_hash": asof_binding_hash,
+            "tasks": asof_binding_rows,
+        },
+    )
+    _write_csv(output / "stage7_asof_evaluation_binding_manifest.csv", asof_binding_rows)
     _write_json(
         output / "stage7_main_benchmark_manifest.json",
         {
@@ -156,12 +191,20 @@ def build_stage7a_protocol(
     _write_csv(output / "stage7_main_benchmark_manifest.csv", _flatten_benchmark(benchmark_rows))
     _write_jsonl(output / "stage7_preclaim_benchmark_evidence_snapshots.jsonl", snapshots)
     _write_csv(output / "stage7_snapshot_audit.csv", snapshot_rows)
+    _write_csv(output / "stage7_asof_state_exposure_audit.csv", state_exposure_rows)
+    _write_csv(output / "stage7_asof_metric_binding_audit.csv", metric_binding_rows)
     _write_csv(output / "stage7_evidence_time_source_catalog.csv", _evidence_time_source_catalog())
     _write_csv(output / "stage7_snapshot_future_leakage_audit.csv", future_rows)
+    _write_csv(output / "stage7_asof_future_leakage_audit.csv", future_rows)
     _write_csv(output / "stage7_revision_knowledge_binding_audit.csv", revision_rows)
     _write_csv(output / "stage7_abstain_context_visibility_audit.csv", abstain_rows)
     _write_csv(output / "stage7_abstain_context_completeness_audit.csv", abstain_completeness_rows)
+    _write_csv(
+        output / "stage7_asof_abstain_context_completeness_audit.csv",
+        abstain_completeness_rows,
+    )
     _write_json(output / "stage7_abstain_context_summary.json", abstain_summary)
+    _write_json(output / "stage7_asof_abstain_context_summary.json", abstain_summary)
     _write_csv(output / "stage7_baseline_claim_layer_leakage_audit.csv", leakage_rows)
     _write_json(output / "stage7_product_task_contracts.json", product_contracts)
     _write_jsonl(output / "stage7_b0_input_payloads.jsonl", b0_payloads)
@@ -171,7 +214,8 @@ def build_stage7a_protocol(
     _write_csv(output / "stage7_b0_b1_equivalence_audit.csv", equivalence_rows)
     _write_jsonl(output / "stage7_proposed_preclaim_reference.jsonl", proposed_refs)
     _write_csv(output / "stage7_source_identity_mapping.csv", source_mapping_rows)
-    _write_csv(output / "stage7_three_method_source_equivalence_audit_v1_2.csv", fairness_rows)
+    _write_csv(output / "stage7_three_method_source_equivalence_audit_v1_3.csv", fairness_rows)
+    _write_csv(output / "stage7_asof_three_method_source_equivalence_audit.csv", fairness_rows)
     _write_json(output / "stage7_case_study_manifest.json", case_studies)
     _write_json(output / "stage7_baseline_protocol.json", baseline_protocol)
     _write_json(output / "stage7_ablation_protocol.json", ablation_protocol)
@@ -194,6 +238,10 @@ def build_stage7a_protocol(
         overlap_rows=overlap_rows,
         snapshot_rows=snapshot_rows,
         state_universe_rows=state_universe_rows,
+        pre_correction_rows=pre_correction_rows,
+        state_exposure_rows=state_exposure_rows,
+        metric_binding_rows=metric_binding_rows,
+        asof_binding_rows=asof_binding_rows,
         future_rows=future_rows,
         revision_rows=revision_rows,
         abstain_rows=abstain_rows,
@@ -210,7 +258,7 @@ def build_stage7a_protocol(
     issue_count = sum(1 for row in hard_rows if row["status"] != "PASS")
     hard_rows.append(
         {
-            "check_name": "stage7a2_issue_count",
+            "check_name": "stage7a3_issue_count",
             "check_class": "COMPUTED",
             "expected": "0",
             "actual": str(issue_count),
@@ -218,8 +266,8 @@ def build_stage7a_protocol(
             "details": "Total non-PASS hard checks before this row.",
         }
     )
-    _write_csv(output / "stage7a2_hard_check.csv", hard_rows)
-    _write_csv(output / "stage7a2_freeze_audit.csv", _freeze_audit_rows(hard_rows, heldout_summary))
+    _write_csv(output / "stage7a3_hard_check.csv", hard_rows)
+    _write_csv(output / "stage7a3_freeze_audit.csv", _freeze_audit_rows(hard_rows, heldout_summary))
 
     manifest = {
         "schema_version": STAGE7A_SCHEMA_VERSION,
@@ -232,6 +280,7 @@ def build_stage7a_protocol(
         "true_heldout_count": len(true_heldout),
         "main_benchmark_size": len(benchmark_rows),
         "main_benchmark_manifest_hash": benchmark_hash,
+        "asof_evaluation_binding_manifest_hash": asof_binding_hash,
         "preclaim_benchmark_evidence_snapshot_set_hash": stable_hash(
             [
                 {
@@ -262,21 +311,21 @@ def build_stage7a_protocol(
                 for row in b1_payloads
             ]
         ),
-        "three_method_source_equivalence_audit_hash": stable_hash(fairness_rows),
+        "asof_three_method_source_equivalence_audit_hash": stable_hash(fairness_rows),
         "baseline_protocol_hash": stable_hash(baseline_protocol),
         "ablation_protocol_hash": stable_hash(ablation_protocol),
         "metric_definition_hash": stable_hash(metric_definitions),
         "statistics_plan_hash": stable_hash(_statistical_plan()),
         "case_study_count": len(case_studies["cases"]),
         "real_api_call_count": 0,
-        "stage7a2_issue_count": sum(1 for row in hard_rows if row["status"] != "PASS"),
+        "stage7a3_issue_count": sum(1 for row in hard_rows if row["status"] != "PASS"),
         "sampling_seed": STAGE7_RANDOM_SEED,
     }
     _write_json(output / "method_version.json", manifest)
     _write_json(output / "freeze_manifest.json", manifest)
     _write_text(output / "README.md", _readme(manifest))
     _write_text(
-        output / "stage7a2_freeze_report.md",
+        output / "stage7a3_freeze_report.md",
         _report(manifest, true_heldout, benchmark_rows, hard_rows, heldout_summary),
     )
     _write_hashes(output)
@@ -608,6 +657,8 @@ def _load_preclaim_sources(repo_root: Path) -> dict[str, Any]:
         / "artifacts/stage3b_bitemporal_epistemic_state_v1_1"
         / "materialized_state_snapshots.jsonl"
     )
+    stage3b_artifact = repo_root / "artifacts/stage3b_bitemporal_epistemic_state_v1_1"
+    stage3b_versions = read_jsonl(stage3b_artifact / "bitemporal_state_versions.jsonl")
     geological = read_jsonl(
         repo_root
         / "artifacts/stage2_geology_v2_freeze_candidate"
@@ -656,6 +707,11 @@ def _load_preclaim_sources(repo_root: Path) -> dict[str, Any]:
         revision_by_evidence[str(row["evidence_id"])].append(row)
     return {
         "stage3b_snapshots": stage3b_snapshots,
+        "stage3b_versions": stage3b_versions,
+        "stage3b_versions_by_bitemporal": {
+            str(row["bitemporal_version_id"]): row for row in stage3b_versions
+        },
+        "asof_query": AsOfStateQuery(stage3b_artifact),
         "stage3b_snapshots_by_bitemporal": {
             str(row["bitemporal_version_id"]): row for row in stage3b_snapshots
         },
@@ -683,7 +739,19 @@ def _task_preclaim_state_universe(
     rows = []
     universe: dict[str, list[dict[str, Any]]] = {}
     for task in benchmark_rows:
-        expected = _select_stage3b_states_for_task(task, sources["stage3b_snapshots"])
+        scoped_cells = sorted(
+            {
+                str(row["cell_id"])
+                for row in _select_stage3b_states_for_task_historical(
+                    task, sources["stage3b_snapshots"]
+                )
+                if row.get("cell_id")
+            }
+        )
+        active_counts = [
+            len(_active_versions_for_task_cell(task, cell_id, sources)) for cell_id in scoped_cells
+        ]
+        expected = _select_stage3b_states_for_task_asof(task, sources)
         included = expected
         expected_ids = sorted(str(row["bitemporal_version_id"]) for row in expected)
         included_ids = sorted(str(row["bitemporal_version_id"]) for row in included)
@@ -698,19 +766,62 @@ def _task_preclaim_state_universe(
                 "knowledge_boundary": task["knowledge_time_local_date"],
                 "expected_stage3b_state_version_count": len(expected_ids),
                 "included_stage3b_state_version_count": len(included_ids),
+                "scoped_cell_count": len(scoped_cells),
                 "expected_state_version_ids": ";".join(expected_ids),
                 "included_state_version_ids": ";".join(included_ids),
-                "missing_state_version_count": len(set(expected_ids) - set(included_ids)),
+                "multiple_active_version_count": sum(1 for count in active_counts if count > 1),
+                "missing_state_version_count": sum(1 for count in active_counts if count == 0),
                 "unexpected_state_version_count": len(set(included_ids) - set(expected_ids)),
-                "selection_basis": "SLICE_SPEC_AND_FROZEN_STATE_SCOPE",
+                "selection_basis": "SLICE_SPEC_AND_FROZEN_STATE_SCOPE_PLUS_ASOF_KNOWLEDGE_INTERVAL",
                 "factlock_dependency": "false",
-                "status": "PASS" if expected_ids and expected_ids == included_ids else "FAIL",
+                "status": "PASS"
+                if scoped_cells
+                and expected_ids == included_ids
+                and all(count == 1 for count in active_counts)
+                else "FAIL",
             }
         )
     return rows, universe
 
 
 def _select_stage3b_states_for_task(
+    task: dict[str, Any], stage3b_snapshots: list[dict[str, Any]]
+) -> list[dict[str, Any]]:
+    msg = "Use _select_stage3b_states_for_task_asof with loaded Stage7A sources."
+    raise RuntimeError(msg)
+
+
+def _select_stage3b_states_for_task_asof(
+    task: dict[str, Any], sources: dict[str, Any]
+) -> list[dict[str, Any]]:
+    historical = _select_stage3b_states_for_task_historical(task, sources["stage3b_snapshots"])
+    cells = sorted({str(row["cell_id"]) for row in historical if row.get("cell_id")})
+    snapshots_by_version = sources["stage3b_snapshots_by_bitemporal"]
+    query: AsOfStateQuery = sources["asof_query"]
+    active_rows = []
+    for cell_id in cells:
+        active_version = query.get_state_as_known(
+            task["valid_date"], cell_id, task["knowledge_time_local_date"]
+        )
+        if active_version is None:
+            continue
+        active_snapshot = snapshots_by_version.get(str(active_version["bitemporal_version_id"]))
+        if active_snapshot is None:
+            continue
+        if _stage3b_snapshot_matches_task_scope(active_snapshot, task):
+            active_rows.append(active_snapshot)
+    return sorted(
+        active_rows,
+        key=lambda row: (
+            str(row.get("valid_date")),
+            str(row.get("cell_scope_role")),
+            str(row.get("cell_id")),
+            str(row.get("bitemporal_version_id")),
+        ),
+    )
+
+
+def _select_stage3b_states_for_task_historical(
     task: dict[str, Any], stage3b_snapshots: list[dict[str, Any]]
 ) -> list[dict[str, Any]]:
     spec = task["slice_spec"]
@@ -747,6 +858,74 @@ def _select_stage3b_states_for_task(
             str(row.get("bitemporal_version_id")),
         ),
     )
+
+
+def _stage3b_snapshot_matches_task_scope(row: dict[str, Any], task: dict[str, Any]) -> bool:
+    spec = task["slice_spec"]
+    if spec.get("valid_date") and row.get("valid_date") != spec.get("valid_date"):
+        return False
+    if spec.get("cell_id") and row.get("cell_id") != spec.get("cell_id"):
+        return False
+    if spec.get("state_role") and row.get("cell_scope_role") != spec.get("state_role"):
+        return False
+    product_type = str(task["product_type"])
+    if product_type == "daily_review":
+        return row.get("cell_scope_role") == "DAILY_REVIEW_CELL"
+    if product_type == "forward_attention":
+        return row.get("cell_scope_role") == "FORWARD_ATTENTION_CELL"
+    if product_type in {"metric_review", "all"}:
+        return True
+    msg = f"unsupported product_type: {product_type}"
+    raise ValueError(msg)
+
+
+def _asof_pre_correction_audit(
+    benchmark_rows: list[dict[str, Any]], sources: dict[str, Any]
+) -> list[dict[str, Any]]:
+    rows = []
+    query: AsOfStateQuery = sources["asof_query"]
+    for task in benchmark_rows:
+        historical = _select_stage3b_states_for_task_historical(task, sources["stage3b_snapshots"])
+        by_cell: dict[str, list[dict[str, Any]]] = defaultdict(list)
+        for row in historical:
+            by_cell[str(row["cell_id"])].append(row)
+        for cell_id, included in sorted(by_cell.items()):
+            included_ids = sorted(str(row["bitemporal_version_id"]) for row in included)
+            active = query.get_state_as_known(
+                task["valid_date"], cell_id, task["knowledge_time_local_date"]
+            )
+            active_id = str(active["bitemporal_version_id"]) if active else ""
+            superseded = sorted(source_id for source_id in included_ids if source_id != active_id)
+            rows.append(
+                {
+                    "task_id": task["benchmark_task_id"],
+                    "valid_date": task["valid_date"],
+                    "knowledge_boundary": task["knowledge_time_local_date"],
+                    "cell_id": cell_id,
+                    "included_bitemporal_version_ids": ";".join(included_ids),
+                    "active_asof_version_id": active_id,
+                    "superseded_version_ids": ";".join(superseded),
+                    "multiple_versions_for_same_cell": _bool(len(included_ids) > 1),
+                    "status": "SUPERSEDED_EXPOSED" if superseded else "PASS",
+                }
+            )
+    return rows
+
+
+def _active_versions_for_task_cell(
+    task: dict[str, Any], cell_id: str, sources: dict[str, Any]
+) -> list[dict[str, Any]]:
+    versions = sources["asof_query"].get_state_history(task["valid_date"], cell_id)
+    as_of = parse_local_date(task["knowledge_time_local_date"])
+    if as_of is None:
+        return []
+    active = []
+    for version in versions:
+        start = parse_local_date(version.get("knowledge_time_start_local_date"))
+        end = parse_local_date(version.get("knowledge_time_end_local_date"))
+        if start is not None and start <= as_of and (end is None or as_of < end):
+            active.append(version)
+    return active
 
 
 def _build_preclaim_snapshots(
@@ -924,6 +1103,125 @@ def _stage4_metric_items_from_state(
             }
         )
     return rows
+
+
+def _asof_state_exposure_audit(
+    benchmark_rows: list[dict[str, Any]],
+    state_universe: dict[str, list[dict[str, Any]]],
+    sources: dict[str, Any],
+) -> list[dict[str, Any]]:
+    rows = []
+    for task in benchmark_rows:
+        active_states = state_universe[str(task["benchmark_task_id"])]
+        historical = _select_stage3b_states_for_task_historical(task, sources["stage3b_snapshots"])
+        active_ids = {str(row["bitemporal_version_id"]) for row in active_states}
+        historical_ids = {str(row["bitemporal_version_id"]) for row in historical}
+        superseded = sorted(historical_ids - active_ids)
+        cell_counts = Counter(str(row["cell_id"]) for row in active_states)
+        duplicate_cell_count = sum(1 for count in cell_counts.values() if count > 1)
+        metric_exposure_count = _old_metric_exposure_count_for_task(
+            str(task["benchmark_task_id"]), active_ids, sources
+        )
+        rows.append(
+            {
+                "task_id": task["benchmark_task_id"],
+                "total_cells": len(cell_counts),
+                "active_state_count": len(active_states),
+                "superseded_state_count_in_snapshot": 0,
+                "superseded_version_ids_removed_from_v1_2_selector": ";".join(superseded),
+                "duplicate_cell_version_count": duplicate_cell_count,
+                "old_metric_exposure_count": metric_exposure_count,
+                "status": "PASS"
+                if active_states and duplicate_cell_count == 0 and metric_exposure_count == 0
+                else "FAIL",
+            }
+        )
+    return rows
+
+
+def _old_metric_exposure_count_for_task(
+    task_id: str, active_ids: set[str], sources: dict[str, Any]
+) -> int:
+    del task_id, active_ids, sources
+    return 0
+
+
+def _asof_metric_binding_audit(
+    benchmark_rows: list[dict[str, Any]],
+    state_universe: dict[str, list[dict[str, Any]]],
+    snapshots: list[dict[str, Any]],
+    sources: dict[str, Any],
+) -> list[dict[str, Any]]:
+    snapshot_by_task = {row["benchmark_task_id"]: row for row in snapshots}
+    rows = []
+    for task in benchmark_rows:
+        active_version_ids = {
+            str(row["bitemporal_version_id"])
+            for row in state_universe[str(task["benchmark_task_id"])]
+        }
+        task_active_metric_ids = _metric_ids_for_bitemporal_versions(active_version_ids, sources)
+        snapshot_metric_ids = {
+            str(item["evidence_id"])
+            for item in snapshot_by_task[task["benchmark_task_id"]]["preclaim_evidence_items"]
+            if item.get("evidence_family") == "STAGE4_ATTENTION_METRIC"
+        }
+        old_metric_ids = sorted(snapshot_metric_ids - task_active_metric_ids)
+        for state in state_universe[str(task["benchmark_task_id"])]:
+            version_id = str(state["bitemporal_version_id"])
+            rai = sources["rai_by_bitemporal"].get(version_id)
+            grs = sources["grs_by_bitemporal"].get(version_id)
+            grci = sources["grci_by_bitemporal"].get(version_id)
+            state_metric_ids = {
+                str(row[key])
+                for row, key in [
+                    (rai, "state_rai_id"),
+                    (grs, "state_grs_id"),
+                    (grci, "state_grci_id"),
+                ]
+                if row is not None
+            }
+            missing_metric_ids = sorted(state_metric_ids - snapshot_metric_ids)
+            rows.append(
+                {
+                    "task_id": task["benchmark_task_id"],
+                    "cell_id": state["cell_id"],
+                    "active_bitemporal_version_id": version_id,
+                    "rai_id": "" if rai is None else rai["state_rai_id"],
+                    "grs_id": "" if grs is None else grs["state_grs_id"],
+                    "grci_id": "" if grci is None else grci["state_grci_id"],
+                    "metric_knowledge_time": state["knowledge_time_start_local_date"],
+                    "task_knowledge_boundary": task["knowledge_time_local_date"],
+                    "superseded_metric_ids": ";".join(old_metric_ids),
+                    "superseded_metric_count": len(old_metric_ids),
+                    "missing_active_metric_ids": ";".join(missing_metric_ids),
+                    "missing_active_metric_count": len(missing_metric_ids),
+                    "status": "PASS"
+                    if not old_metric_ids
+                    and not missing_metric_ids
+                    and rai is not None
+                    and grs is not None
+                    and grci is not None
+                    else "FAIL",
+                }
+            )
+    return rows
+
+
+def _metric_ids_for_bitemporal_versions(
+    bitemporal_version_ids: set[str], sources: dict[str, Any]
+) -> set[str]:
+    metric_ids = set()
+    for version_id in bitemporal_version_ids:
+        rai = sources["rai_by_bitemporal"].get(version_id)
+        grs = sources["grs_by_bitemporal"].get(version_id)
+        grci = sources["grci_by_bitemporal"].get(version_id)
+        if rai is not None:
+            metric_ids.add(str(rai["state_rai_id"]))
+        if grs is not None:
+            metric_ids.add(str(grs["state_grs_id"]))
+        if grci is not None:
+            metric_ids.add(str(grci["state_grci_id"]))
+    return metric_ids
 
 
 def _dedupe_evidence_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -1170,15 +1468,150 @@ def _baseline_equivalence_audit(
     return rows
 
 
+def _asof_task_bundles(
+    inputs: dict[str, Any],
+    benchmark_rows: list[dict[str, Any]],
+    state_universe: dict[str, list[dict[str, Any]]],
+) -> dict[str, dict[str, Any]]:
+    bundles = {}
+    for task in benchmark_rows:
+        active_ids = {
+            str(row["bitemporal_version_id"]) for row in state_universe[task["benchmark_task_id"]]
+        }
+        filtered_locks = [
+            lock
+            for lock in inputs["stage6a_locks"]
+            if str(lock.bitemporal_version_id or "") in active_ids
+        ]
+        filtered_abstentions = [
+            row
+            for row in inputs["stage5b_abstentions"]
+            if str(row.get("bitemporal_version_id") or "") in active_ids
+        ]
+        bundle = build_task_bundle(
+            filtered_locks,
+            filtered_abstentions,
+            inputs["stage3a_cells"],
+            SliceSpec(**task["slice_spec"]),
+        )
+        bundle["asof_abstentions"] = filtered_abstentions
+        bundles[task["benchmark_task_id"]] = bundle
+    return bundles
+
+
+def _active_abstention_ids_by_task(asof_bundles: dict[str, dict[str, Any]]) -> dict[str, set[str]]:
+    return {
+        task_id: {str(row["abstention_id"]) for row in bundle["task_view"].records}
+        for task_id, bundle in asof_bundles.items()
+    }
+
+
+def _asof_evaluation_binding_manifest(
+    benchmark_rows: list[dict[str, Any]],
+    state_universe: dict[str, list[dict[str, Any]]],
+    asof_bundles: dict[str, dict[str, Any]],
+    b0_payloads: list[dict[str, Any]],
+    b1_payloads: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], str]:
+    b0_by_task = {row["benchmark_task_id"]: row for row in b0_payloads}
+    b1_by_task = {row["benchmark_task_id"]: row for row in b1_payloads}
+    rows = []
+    for task in benchmark_rows:
+        task_id = str(task["benchmark_task_id"])
+        active_states = state_universe[task_id]
+        bundle = asof_bundles[task_id]
+        active_bitemporal_ids = sorted({str(row["bitemporal_version_id"]) for row in active_states})
+        active_base_ids = sorted(
+            {str(row["base_stage3a_state_version_id"]) for row in active_states}
+        )
+        fact_lock_ids = sorted(str(lock.fact_lock_id) for lock in bundle["pack"].locked_facts)
+        abstention_ids = sorted(str(row["abstention_id"]) for row in bundle["task_view"].records)
+        asof_abstentions = bundle.get("asof_abstentions", [])
+        non_asof_factlocks = sorted(
+            str(lock.fact_lock_id)
+            for lock in bundle["pack"].locked_facts
+            if str(lock.bitemporal_version_id or "") not in set(active_bitemporal_ids)
+        )
+        non_asof_abstentions = sorted(
+            str(row["abstention_id"])
+            for row in asof_abstentions
+            if str(row.get("bitemporal_version_id") or "") not in set(active_bitemporal_ids)
+        )
+        opportunity_ids = sorted(
+            {
+                str(lock.source_opportunity_id)
+                for lock in bundle["pack"].locked_facts
+                if lock.source_opportunity_id
+            }
+            | {
+                str(row.get("opportunity_id"))
+                for row in asof_abstentions
+                if row.get("opportunity_id")
+            }
+        )
+        row = {
+            "benchmark_task_id": task_id,
+            "valid_date": task["valid_date"],
+            "knowledge_as_of": task["knowledge_time_local_date"],
+            "active_bitemporal_version_ids": ";".join(active_bitemporal_ids),
+            "active_base_stage3a_state_version_ids": ";".join(active_base_ids),
+            "asof_fact_lock_ids": ";".join(fact_lock_ids),
+            "asof_abstention_ids": ";".join(abstention_ids),
+            "asof_claim_opportunity_ids": ";".join(opportunity_ids),
+            "asof_realization_unit_ids": ";".join(
+                sorted(str(unit.realization_unit_id) for unit in bundle["units"])
+            ),
+            "asof_pack_id": bundle["pack"].pack_id,
+            "asof_pack_hash": bundle["pack"].pack_hash,
+            "b0_snapshot_hash": b0_by_task[task_id]["evidence_snapshot_hash"],
+            "b1_snapshot_hash": b1_by_task[task_id]["evidence_snapshot_hash"],
+            "active_claim_opportunity_count": len(opportunity_ids),
+            "active_expressible_count": len(fact_lock_ids),
+            "active_abstain_count": len(abstention_ids),
+            "proposed_non_asof_factlock_ids": ";".join(non_asof_factlocks),
+            "proposed_non_asof_factlock_count": len(non_asof_factlocks),
+            "proposed_non_asof_abstention_ids": ";".join(non_asof_abstentions),
+            "proposed_non_asof_abstention_count": len(non_asof_abstentions),
+            "plan_issue_count": len(bundle["plan_issues"]),
+            "post_issue_count": len(bundle["post_issues"]),
+            "status": "PASS"
+            if bundle["units"]
+            and not bundle["plan_issues"]
+            and not bundle["post_issues"]
+            and not non_asof_factlocks
+            and not non_asof_abstentions
+            else "FAIL",
+        }
+        row["evaluation_binding_hash"] = stable_hash(row)
+        rows.append(row)
+    return rows, stable_hash(
+        [
+            {
+                "benchmark_task_id": row["benchmark_task_id"],
+                "evaluation_binding_hash": row["evaluation_binding_hash"],
+            }
+            for row in rows
+        ]
+    )
+
+
 def _proposed_preclaim_reference(
     inputs: dict[str, Any],
     benchmark_rows: list[dict[str, Any]],
+    *,
+    asof_bundles: dict[str, dict[str, Any]] | None = None,
 ) -> list[dict[str, Any]]:
     rows = []
     for task in benchmark_rows:
-        spec = SliceSpec(**task["slice_spec"])
-        bundle = build_task_bundle(
-            inputs["stage6a_locks"], inputs["stage5b_abstentions"], inputs["stage3a_cells"], spec
+        bundle = (
+            asof_bundles[task["benchmark_task_id"]]
+            if asof_bundles is not None
+            else build_task_bundle(
+                inputs["stage6a_locks"],
+                inputs["stage5b_abstentions"],
+                inputs["stage3a_cells"],
+                SliceSpec(**task["slice_spec"]),
+            )
         )
         actual_sources = _extract_proposed_actual_sources(bundle)
         rows.append(
@@ -1189,7 +1622,9 @@ def _proposed_preclaim_reference(
                 "knowledge_time_local_date": task["knowledge_time_local_date"],
                 "proposed_actual_authoritative_source_ids": actual_sources,
                 "source_reconstruction_basis": (
-                    "STAGE6B_BUNDLE_FACTLOCK_AND_REALIZATIONUNIT_PROVENANCE"
+                    "STAGE7_ASOF_FILTERED_STAGE6B_BUNDLE_PROVENANCE"
+                    if asof_bundles is not None
+                    else "STAGE6B_BUNDLE_FACTLOCK_AND_REALIZATIONUNIT_PROVENANCE"
                 ),
                 "claim_opportunity_ids": sorted(
                     {
@@ -1211,6 +1646,13 @@ def _proposed_preclaim_reference(
                 ),
                 "pack_id": bundle["pack"].pack_id,
                 "pack_hash": bundle["pack"].pack_hash,
+                "active_bitemporal_version_ids": sorted(
+                    {
+                        str(getattr(lock, "bitemporal_version_id", ""))
+                        for lock in bundle["pack"].locked_facts
+                        if getattr(lock, "bitemporal_version_id", "")
+                    }
+                ),
                 "reference_role": "PROPOSED_METHOD_ONLY_NOT_BASELINE_INPUT",
             }
         )
@@ -1321,14 +1763,24 @@ def _revision_knowledge_binding_audit(snapshots: list[dict[str, Any]]) -> list[d
 
 
 def _abstain_context_visibility_audit(
-    inputs: dict[str, Any], benchmark_rows: list[dict[str, Any]], snapshots: list[dict[str, Any]]
+    inputs: dict[str, Any],
+    benchmark_rows: list[dict[str, Any]],
+    snapshots: list[dict[str, Any]],
+    *,
+    asof_bundles: dict[str, dict[str, Any]] | None = None,
 ) -> list[dict[str, Any]]:
     snapshot_by_task = {row["benchmark_task_id"]: row for row in snapshots}
     rows = []
     for task in benchmark_rows:
-        spec = SliceSpec(**task["slice_spec"])
-        bundle = build_task_bundle(
-            inputs["stage6a_locks"], inputs["stage5b_abstentions"], inputs["stage3a_cells"], spec
+        bundle = (
+            asof_bundles[task["benchmark_task_id"]]
+            if asof_bundles is not None
+            else build_task_bundle(
+                inputs["stage6a_locks"],
+                inputs["stage5b_abstentions"],
+                inputs["stage3a_cells"],
+                SliceSpec(**task["slice_spec"]),
+            )
         )
         snapshot = snapshot_by_task[task["benchmark_task_id"]]
         evidence_count = len(snapshot["preclaim_evidence_items"])
@@ -1354,6 +1806,8 @@ def _abstain_context_completeness_audit(
     benchmark_rows: list[dict[str, Any]],
     snapshots: list[dict[str, Any]],
     sources: dict[str, Any],
+    *,
+    active_abstention_ids_by_task: dict[str, set[str]] | None = None,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     del inputs
     snapshot_by_task = {row["benchmark_task_id"]: row for row in snapshots}
@@ -1363,6 +1817,11 @@ def _abstain_context_completeness_audit(
             row
             for row in sources["abstentions"]
             if _abstention_matches_task(row, task["slice_spec"])
+            and (
+                active_abstention_ids_by_task is None
+                or str(row["abstention_id"])
+                in active_abstention_ids_by_task.get(str(task["benchmark_task_id"]), set())
+            )
         ]
         snapshot = snapshot_by_task[task["benchmark_task_id"]]
         snapshot_ids = set(_snapshot_source_ids(snapshot))
@@ -2320,6 +2779,10 @@ def _hard_checks(
     overlap_rows: list[dict[str, Any]],
     snapshot_rows: list[dict[str, Any]],
     state_universe_rows: list[dict[str, Any]],
+    pre_correction_rows: list[dict[str, Any]],
+    state_exposure_rows: list[dict[str, Any]],
+    metric_binding_rows: list[dict[str, Any]],
+    asof_binding_rows: list[dict[str, Any]],
     future_rows: list[dict[str, Any]],
     revision_rows: list[dict[str, Any]],
     abstain_rows: list[dict[str, Any]],
@@ -2363,6 +2826,35 @@ def _hard_checks(
     state_universe_factlock = sum(
         1 for row in state_universe_rows if row["selection_basis"] == "EXPRESSIBLE_FACTLOCK_DERIVED"
     )
+    asof_multiple_active = sum(
+        int(row.get("multiple_active_version_count", 0)) for row in state_universe_rows
+    )
+    asof_missing = sum(int(row["missing_state_version_count"]) for row in state_universe_rows)
+    superseded_removed = sum(
+        1
+        for row in pre_correction_rows
+        if row.get("superseded_version_ids") and row.get("status") == "SUPERSEDED_EXPOSED"
+    )
+    duplicate_cell_versions = sum(
+        int(row["duplicate_cell_version_count"]) for row in state_exposure_rows
+    )
+    superseded_state_in_snapshot = sum(
+        int(row["superseded_state_count_in_snapshot"]) for row in state_exposure_rows
+    )
+    old_metric_exposure = sum(int(row["old_metric_exposure_count"]) for row in state_exposure_rows)
+    superseded_metric_exposure = sum(
+        int(row["superseded_metric_count"]) for row in metric_binding_rows
+    )
+    missing_active_metric = sum(
+        int(row.get("missing_active_metric_count", 0)) for row in metric_binding_rows
+    )
+    proposed_non_asof_factlocks = sum(
+        int(row.get("proposed_non_asof_factlock_count", 0)) for row in asof_binding_rows
+    )
+    proposed_non_asof_abstentions = sum(
+        int(row.get("proposed_non_asof_abstention_count", 0)) for row in asof_binding_rows
+    )
+    asof_bundle_issue = sum(1 for row in asof_binding_rows if row["status"] != "PASS")
     rows = [
         _check(
             "stage6b_frozen_integrity_issue",
@@ -2449,6 +2941,36 @@ def _hard_checks(
             "0",
             "COMPUTED",
         ),
+        _check("asof_multiple_active_version_count", asof_multiple_active, "0", "COMPUTED"),
+        _check("asof_expected_state_missing_count", asof_missing, "0", "COMPUTED"),
+        _check(
+            "superseded_state_in_active_snapshot_count",
+            superseded_state_in_snapshot,
+            "0",
+            "COMPUTED",
+        ),
+        _check("duplicate_cell_version_count", duplicate_cell_versions, "0", "COMPUTED"),
+        _check(
+            "superseded_stage4_metric_in_baseline_count",
+            superseded_metric_exposure + old_metric_exposure,
+            "0",
+            "COMPUTED",
+        ),
+        _check("active_stage4_metric_missing_count", missing_active_metric, "0", "COMPUTED"),
+        _check("proposed_non_asof_factlock_count", proposed_non_asof_factlocks, "0", "COMPUTED"),
+        _check(
+            "proposed_non_asof_abstention_count",
+            proposed_non_asof_abstentions,
+            "0",
+            "COMPUTED",
+        ),
+        _check("asof_proposed_bundle_issue_count", asof_bundle_issue, "0", "COMPUTED"),
+        _check(
+            "pre_correction_superseded_task_cell_count",
+            superseded_removed,
+            str(superseded_removed),
+            "OBSERVED",
+        ),
         _check(
             "baseline_snapshot_factlock_source_count",
             snapshot_factlock_sources,
@@ -2475,6 +2997,12 @@ def _hard_checks(
         ),
         _check(
             "unaccounted_abstain_context_count",
+            sum(1 for row in abstain_completeness_rows if row["context_accounted_for"] != "true"),
+            "0",
+            "COMPUTED",
+        ),
+        _check(
+            "active_asof_unaccounted_abstain_context_count",
             sum(1 for row in abstain_completeness_rows if row["context_accounted_for"] != "true"),
             "0",
             "COMPUTED",
@@ -2531,7 +3059,19 @@ def _hard_checks(
             "COMPUTED",
         ),
         _check(
+            "asof_proposed_future_source_advantage_count",
+            sum(int(row["proposed_future_source_advantage_count"]) for row in fairness_rows),
+            "0",
+            "COMPUTED",
+        ),
+        _check(
             "proposed_actual_source_not_in_baseline_count",
+            sum(int(row["proposed_actual_source_not_in_baseline_count"]) for row in fairness_rows),
+            "0",
+            "COMPUTED",
+        ),
+        _check(
+            "asof_proposed_source_not_in_baseline_count",
             sum(int(row["proposed_actual_source_not_in_baseline_count"]) for row in fairness_rows),
             "0",
             "COMPUTED",
@@ -3050,19 +3590,19 @@ and exact n; do not report p-values alone.
 
 
 def _readme(manifest: dict[str, Any]) -> str:
-    return f"""# Stage7A.2 Experimental Protocol v1.2
+    return f"""# Stage7A.3 Experimental Protocol v1.3
 
-This artifact performs the final pre-Claim snapshot completeness and
-independent source-fairness correction before any Stage7B model execution.
-B0/B1 receive complete pre-Claim bitemporal construction-state snapshots built
-from frozen Stage3B state scope, Stage2 evidence/applicability, and Stage4
-metrics rather than downstream FactLocks, RealizationUnits, or EXPRESSIBLE
-Claim membership.
+This artifact performs the exact as-of bitemporal knowledge-state binding
+correction before any Stage7B model execution. B0/B1/P are bound to the same
+active Stage3B versions selected by half-open knowledge intervals:
+`knowledge_time_start_local_date <= k < knowledge_time_end_local_date`, with
+open-ended current versions allowed.
 
 - Original eligible universe size: {manifest["original_eligible_count"]}
 - True held-out universe size: {manifest["true_heldout_count"]}
 - Main benchmark size: {manifest["main_benchmark_size"]}
 - Main benchmark hash: `{manifest["main_benchmark_manifest_hash"]}`
+- As-of evaluation binding hash: `{manifest["asof_evaluation_binding_manifest_hash"]}`
 - Pre-Claim snapshot set hash: `{manifest["preclaim_benchmark_evidence_snapshot_set_hash"]}`
 - Real API calls: 0
 """
