@@ -1,0 +1,4 @@
+execution_item_count,final_output_count,method_id,provider_request_attempt_count,transport_failure_count,transport_success_count
+48,48,B0_DIRECT_LLM,48,0,48
+48,48,B1_STRUCTURED_PROMPT_LLM,48,0,48
+48,45,P_PROPOSED,48,0,48

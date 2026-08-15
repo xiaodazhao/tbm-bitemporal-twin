@@ -1,9 +1,16 @@
 {
+  "b0_payload_set_hash": "accda9e4eda874e8e672b0b7afec044c57c3021d70d7fd5bfac300a88804762c",
+  "b1_payload_set_hash": "87592b9cd99642c1a2c01fa5a8e093753ce2eaae366636300ac6917e5410e3cc",
   "execution_manifest_hash": "75f2f9976b2cc85bdcf79a790baf07a8c623fa3fa24c2de16cdbdef9eafe34cc",
+  "execution_commit": "69507cc",
   "execution_protocol_hash": "19c1bb629765198316c44951bddfbdf7547f017da6793c698c6f98f376260cbf",
+  "final_artifact_commit": "RECORDED_BY_STAGE7B_MAIN_COMPARISON_V1_FROZEN_TAG",
+  "formal_protocol_binding_hash": "436b528ad185346dc852280e3c4676460b05d6dda5f6359f12dd7d283537c41e",
   "generated_at": "2026-08-15T08:59:30.033069+00:00",
   "hard_check_fail_count": 0,
+  "hard_check_failure_count": 0,
   "method_version": "stage7b_main_comparison_v1",
+  "preclaim_snapshot_set_hash": "8bbbc9083bfa2313fe583f88c6d431d199f9ffaa8cf1b0a7d28f70a11ab98a6c",
   "run_dir": "runs/stage7b_main_execution_3ae0f791811a2e711cb9f488",
   "run_summary": {
     "b0_output_count": 48,
@@ -26,5 +33,6 @@
     "structure_audit_fail_count": 3,
     "transport_failure_count": 0
   },
-  "schema_version": "stage7b_main_comparison.v1"
+  "schema_version": "stage7b_main_comparison.v1",
+  "stage6b_proposed_prompt_hash": "e54f22ef559d61caf51d0d4021989c96c92f3b3e1dc2adb5e7a7a1dbf0c95e0e"
 }
