@@ -1,0 +1,101 @@
+{
+  "annotators": 2,
+  "binary_values": [
+    "0",
+    "1",
+    "U"
+  ],
+  "blindness_definition": "METHOD_LABEL_BLINDED_HUMAN_EVALUATION",
+  "calibration_item_count": 12,
+  "confidence_values": [
+    1,
+    2,
+    3
+  ],
+  "evaluation_unit": "WHOLE_CONDITION_TEXT",
+  "formal_item_count": 141,
+  "frozen_output_residual_cues_possible": true,
+  "initial_e7_policy": "Use U when later origin cannot be established from the initial packet.",
+  "likert_values": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "method_version": "stage7c_human_evaluation_packet_v1_1",
+  "no_output_policy": {
+    "excluded_from_text_quality_packet": true,
+    "retained_in_48_task_denominator": true
+  },
+  "packet_seeds": {
+    "A": 2026082501,
+    "B": 2026082502
+  },
+  "randomization": {
+    "algorithm": "SEEDED_CONSTRAINED_BLOCK_ASSIGNMENT",
+    "batch_capacities": [
+      24,
+      24,
+      24,
+      23,
+      23,
+      23
+    ],
+    "minimum_same_task_gap_target": 15,
+    "packet_a": {
+      "applied_minimum_gap_constraint": 15,
+      "batch_hashes": [
+        "8b4513a12a1c80aca13893176c53d8c48df6a311d9ccb0839125b9b0d3bf74f7",
+        "406a5d57d3537bbca69e36938e80d95cf144abd18cf64931d8334ec9d9a8d37e",
+        "98305f7dd1958a8fdf2b31d4203b85219fb3ceb2921c8c352f509d7b39bf5016",
+        "0a24f206454b8fbc91417215ee5b2607839d4e88f909226693b1f38de5b8da65",
+        "8d8e5d53033b9b35876ead8d156b3f6091b0aaa53a005f1922d31018099d4931",
+        "568d9e1fa96d6252fae7a5c30def491f28699465f6d00fa27e57e89041e784cb"
+      ],
+      "minimum_gap": 39,
+      "packet_hash": "fa8adf000166929b26feb39b75d24cbb3a3c59d4be3cca98eb415a0516bdf5c5",
+      "requested_minimum_gap": 15,
+      "search_attempt": 0,
+      "seed": 2026082501
+    },
+    "packet_b": {
+      "applied_minimum_gap_constraint": 15,
+      "batch_hashes": [
+        "e117be2d8878f3663976083773674720df42f59cc2d736dc751a608453b4fa3e",
+        "f266b4fb558b58c5f66a5cd99cc774a8bd05e37cfaa7c8eda898d5bb1e0edb04",
+        "6e494e15008dc39fc1a36bc863934cfe00145e5e4d14d942530e2ef3f545543e",
+        "5eac6b47ad45b76a383969b1e0f0005853a2c68bd3e7aee1f111056d87b80e50",
+        "dda2fa1b69aae926233a2b8b7ffc48038fbbb3cbcb8d7b2509bf0ecb6092d95f",
+        "e7a070d15f2c55379c4589c79cec204e275d42bfc70abf2bc1ca2e9b9cd52f20"
+      ],
+      "minimum_gap": 24,
+      "packet_hash": "dbc88e89f635b396a7990dff14aafc59a93e580063908375ae8bdf98ac1aa71d",
+      "requested_minimum_gap": 15,
+      "search_attempt": 0,
+      "seed": 2026082502
+    }
+  },
+  "rating_fields": [
+    "E1_unsupported_claim",
+    "E5_forecast_factification",
+    "E6_observed_without_proof",
+    "E7_hindsight_leakage",
+    "E8_role_boundary_violation",
+    "E9_mechanical_geological_causation",
+    "E10_attention_probability_promotion",
+    "E11_unknown_to_normal",
+    "E12_other_admissibility_violation",
+    "overall_semantic_error",
+    "factual_support_score",
+    "epistemic_correctness_score",
+    "engineering_usefulness_score",
+    "clarity_score",
+    "misleading_risk_score",
+    "error_quote",
+    "annotator_confidence",
+    "annotator_comment"
+  ],
+  "same_task_same_context": true,
+  "schema_version": "stage7c_human_evaluation_packet.v1.1"
+}

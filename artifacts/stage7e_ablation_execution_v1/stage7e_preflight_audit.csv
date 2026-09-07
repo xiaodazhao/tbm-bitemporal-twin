@@ -1,0 +1,17 @@
+check_name,details,status
+protocol_tag_commit,0976e125dfd9781e770dc4587337e976984ea2b2,PASS
+protocol_file_hashes,0,PASS
+frozen_request_count,226,PASS
+frozen_arm_counts,"{'A2_NO_ARCHITECTURAL_ABSTENTION': 31, 'A3_NO_FACTLOCK': 147, 'A4_FREE_FINAL_REALIZATION': 48}",PASS
+request_integrity,0,PASS
+single_provider_config,1,PASS
+provider,deepseek,PASS
+model,deepseek-v4-flash,PASS
+base_url,https://api.deepseek.com,PASS
+temperature,0.0,PASS
+top_p,1.0,PASS
+reasoning_effort,none,PASS
+max_output_tokens,4096,PASS
+max_retries,0,PASS
+sdk_max_retries,0,PASS
+credential_present,REQUIRED_FOR_EXECUTION,PASS

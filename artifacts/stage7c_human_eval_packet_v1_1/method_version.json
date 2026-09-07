@@ -1,0 +1,33 @@
+{
+  "api_call_count": 0,
+  "assigns_human_labels": false,
+  "blindness_definition": "METHOD_LABEL_BLINDED_HUMAN_EVALUATION",
+  "generated_at": "2026-08-25T00:00:00+08:00",
+  "method_version": "stage7c_human_evaluation_packet_v1_1",
+  "packet_seeds": {
+    "A": 2026082501,
+    "B": 2026082502
+  },
+  "randomization": {
+    "algorithm": "SEEDED_CONSTRAINED_BLOCK_ASSIGNMENT",
+    "batch_capacities": [
+      24,
+      24,
+      24,
+      23,
+      23,
+      23
+    ],
+    "minimum_same_task_gap_target": 15,
+    "packet_a_minimum_gap": 39,
+    "packet_b_minimum_gap": 24
+  },
+  "schema_version": "stage7c_human_evaluation_packet.v1.1",
+  "stage7a_tag": "stage7a-experimental-protocol-v1.3-frozen",
+  "stage7b_execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+  "stage7b_rerun_count": 0,
+  "stage7b_tag": "stage7b-main-comparison-v1-frozen",
+  "stage7c1_tag": "stage7c-main-auto-evaluation-v1.2-frozen",
+  "uses_llm": false,
+  "uses_llm_as_judge": false
+}

@@ -1,0 +1,1394 @@
+{
+  "benchmark_task": {
+    "abstain_context_count": 1,
+    "abstain_presence": "ABSTAIN_PRESENT",
+    "abstention_reason_counts": {
+      "UNKNOWN_SOURCE_VALUE": 1
+    },
+    "available_automatic_semantic_checks": "unsupported_claim;numeric_value;spatial_scope;forecast_factification;attention_probability;trace;structure_contract",
+    "benchmark_task_id": "stage7_main_task_000",
+    "cell_id": "cell_3d2558b73586465c51997f14",
+    "claim_type_counts": {
+      "COUPLED_ATTENTION_REVIEW": 1,
+      "FORECAST_GEOLOGICAL_CONDITION": 7,
+      "GEOLOGICAL_EVIDENCE_ATTENTION_REVIEW": 1,
+      "OPERATIONAL_RESPONSE_ATTENTION": 1
+    },
+    "contains_coupled_attention": "true",
+    "contains_forecast_claim": "true",
+    "contains_geological_claim": "true",
+    "contains_metric_claim": "true",
+    "contains_observed_claim": "false",
+    "contains_revision_related_state": "false",
+    "epistemic_mix": "FORECAST_ONLY",
+    "expressible_count": 10,
+    "fact_lock_count": 10,
+    "focus_category": "COUPLED",
+    "knowledge_time_basis": "TARGET_DATE_END_OF_DAY_AS_KNOWN_INITIAL_STATE",
+    "knowledge_time_limitation": "HISTORICAL_DATABASE_TRANSACTION_LOG_UNAVAILABLE",
+    "knowledge_time_local_date": "2023-10-07",
+    "knowledge_time_proxy": "evidence available_local_date / Stage3B reconstructed knowledge boundary",
+    "member_fact_lock_ids": [
+      "fact_lock_01caee92f4c8babe430a4bfe",
+      "fact_lock_88b73f0df05f54d5aca69e33",
+      "fact_lock_8c638ec26ace682fa875a6df",
+      "fact_lock_9013b06e4db4a637be9ea2ed",
+      "fact_lock_97c681a2a7bd315e6a7e2fa9",
+      "fact_lock_9dd28fce34896d2835104f64",
+      "fact_lock_a3b19b85b45835fed58bff40",
+      "fact_lock_b32aea54bf2ead49d23c13e6",
+      "fact_lock_d464487bee4b7a46002d6055",
+      "fact_lock_f3b6d2030977246170028d65"
+    ],
+    "pack_hash": "63c2220e0e86875022a134b31e962fdb297116c50f532d60205f231643b391ca",
+    "pack_id": "evidence_pack_63c2220e0e86875022a134b3",
+    "product_type": "all",
+    "realization_unit_count": 10,
+    "realization_unit_ids": [
+      "realization_unit_13681e18146c44eaab86321e",
+      "realization_unit_2aade8307f86d0b95a574422",
+      "realization_unit_4566f5b89b62f2a4e506bff6",
+      "realization_unit_59f9b93455b6a1fbf84769eb",
+      "realization_unit_861d59c2a52fe8d1c00091cf",
+      "realization_unit_97225917abdb46c0f43de052",
+      "realization_unit_b51874b82172b767e7bcf890",
+      "realization_unit_b9e7ce94e38370312bb853e2",
+      "realization_unit_e2f846835be30c37cf06e2ac",
+      "realization_unit_e896fa88fb1c7a156be8175b"
+    ],
+    "revision_chain_id": "",
+    "revision_status": "BASE_ONLY",
+    "selection_reason": "deterministic_product_quota_true_heldout_diversity_selection",
+    "selection_stratum": "all|LOW|FORECAST_ONLY|BASE_ONLY|COUPLED|ABSTAIN_PRESENT",
+    "slice_spec": {
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "claim_type": null,
+      "product_type": "all",
+      "state_role": null,
+      "valid_date": "2023-10-07"
+    },
+    "source_task_id": "stage7_task_0998ad43d3087904b58a1111",
+    "stage3b_bitemporal_version_ids": [
+      "bitemporal_version_0fe4f28f30bcde0cc1b2cf31"
+    ],
+    "stage6b_smoke_overlap_status": "TRUE_HELDOUT_NO_SMOKE_CONTENT_OVERLAP",
+    "state_role": "DAILY_REVIEW_CELL",
+    "state_version_ids": [
+      "state_version_6a356d329dc94fa848660e62"
+    ],
+    "stratum": "all|LOW|FORECAST_ONLY|BASE_ONLY|COUPLED|ABSTAIN_PRESENT",
+    "unit_complexity_band": "LOW",
+    "valid_date": "2023-10-07",
+    "valid_time": "2023-10-07"
+  },
+  "B0": {
+    "benchmark_task_id": "stage7_main_task_000",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_a8302dde1a954c483f07c58f",
+    "method_id": "B0_DIRECT_LLM",
+    "output_hash": "10de62577fc99e2752444ae46e33a476a0a083a0bbdf7190d7c7e126dd158a1d",
+    "output_text": "### 施工状态\n本日（2023-10-07）伯舒拉岭隧道进口右线核心开挖段位于DyK1013+474～DyK1013+475，掘进进尺约1 m。该段施工处于正常推进状态，未出现停机或异常中断记录。\n\n### 机械响应\n- **贯入度**：均值6.75，中位数7.80，P10=2.84，P90=8.05，变异系数0.33，波动较大，存在局部低贯入段。\n- **刀盘扭矩**：均值4382，中位数4958，P10=1927，P90=5347，变异系数0.32，扭矩波动明显。\n- **总推力**：均值25419，中位数26791，P10=20910，P90=27208，变异系数0.14，整体稳定偏高。\n- **刀盘转速**：均值5.46，变异系数仅0.001，转速控制平稳。\n- **掘进速度**：均值36.84，中位数42.56，P10=15.55，P90=43.90，变异系数0.33，速度波动与贯入度波动一致。\n- 综合响应以**荷载响应**为主（RAI=0.315），推力维持高位而贯入度波动，提示掌子面荷载条件不均匀。\n\n### 地质证据\n- 超前地质预报（HSP，2023-10-06提交）覆盖DyK1013+466～DyK1013+506，预报结论：**未见明显反射异常**。\n- 岩性为**板岩夹变质砂岩**，弱风化，节理裂隙发育，岩体破碎，围岩整体稳定性较差，建议围岩级别**Ⅳ级**。\n- 预报提示**DyK1013+492附近存在掉块风险**。\n- 地质注意力指数GRS=0.542，主要关注维度为节理发育（0.75）和岩体完整性（0.75），综合关注指数GRCI=0.171。\n\n### 综合关注点\n1. 当前开挖段（DyK1013+474～475）位于预报区间内，预报显示无明显异常，但岩体破碎、节理发育，围岩稳定性差，需持续关注掌子面掉块风险。\n2. 机械响应显示推力高位、贯入度与扭矩波动较大，与“岩质软硬不均、岩体破碎”的地质特征相符，建议关注刀具受力均匀性。\n3. 前方DyK1013+492附近为预报掉块风险点，距离当前掌子面约17 m，建议提前做好支护和掉块防范准备。\n4. 本日数据单位未经校验（质量标记UNIT_UNVERIFIED），上述数值仅作趋势参考，不宜作为精确计量依据。",
+    "raw_preserved": true
+  },
+  "B1": {
+    "benchmark_task_id": "stage7_main_task_000",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_589109e3dcc2dbf4778cf315",
+    "method_id": "B1_STRUCTURED_PROMPT_LLM",
+    "output_hash": "6dba7fca1a10c8269e217aece695256a731157a48ea49c752b3b1058aeb81217",
+    "output_text": "{\n  \"施工状态\": \"2023-10-07日，伯舒拉岭隧道进口右线核心开挖段位于DyK1013+474～DyK1013+475（约1米范围）。该段掘进作业于01:56:10至02:13:40进行，共采集62个有效样本，无缺失数据。掘进速度均值36.84 mm/min，中位数42.56 mm/min，波动较大（变异系数0.33），存在明显低速时段（最低2.88 mm/min）。刀盘转速稳定在5.46 rpm左右，波动极小。总推力均值25418.57 kN，中位数26791.28 kN，波动较小（变异系数0.14）。刀盘扭矩均值4382.47 kN·m，中位数4957.75 kN·m，波动较大（变异系数0.32）。整体施工状态正常，但掘进速度和扭矩的波动性值得关注。\",\n  \"机械响应\": \"本段机械响应以荷载响应为主（RAI=0.315，非概率指标），推力与扭矩水平较高且扭矩波动明显，可能反映岩体软硬不均或局部破碎。掘进速度与扭矩的变异系数均超过0.3，表明掘进过程存在间歇性阻力变化。刀盘转速稳定，说明控制策略未因地质变化而大幅调整。所有数据均为实测操作数据，单位未验证，但缺失率为0，数据完整性好。\",\n  \"地质证据\": \"根据2023-10-06提交的水平声波超前地质预报（覆盖DyK1013+466～+506），该段未见明显反射异常，围岩较前段稍有变好。岩性为板岩夹变质砂岩，弱风化，节理裂隙发育，岩体破碎，围岩整体稳定性较差，建议围岩等级为Ⅳ级。预报中提示DyK1013+492附近有掉块风险。该预报为预测性结论（FORECAST），非实测揭露。地质注意力指标GRS=0.54（非概率），其中节理发育和岩体完整性注意力均为0.75，围岩等级注意力0.67，表明地质证据中节理和破碎特征突出。\",\n  \"综合关注点\": \"综合施工状态、机械响应和地质证据，本段围岩为板岩夹变质砂岩，弱风化，节理裂隙发育，岩体破碎，整体稳定性较差，与机械响应中扭矩和掘进速度波动较大的特征相符。预报显示无异常反射，但提示DyK1013+492附近有掉块风险，该位置尚未开挖，需在后续掘进中重点关注。当前开挖段（DyK1013+474～+475）机械响应未见极端异常，但扭矩和速度波动提示岩体不均质性。GRCI=0.17（非概率耦合注意力），反映地质与机械响应的综合关注度处于中等偏低水平。建议后续掘进中加强对DyK1013+492附近掉块风险的监测，并关注岩体破碎可能引起的超挖或支护压力。\"\n}",
+    "raw_preserved": true
+  },
+  "P_raw_plan": {
+    "benchmark_task_id": "stage7_main_task_000",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_4af392c9f32abb87430b4b92",
+    "parse_error": "",
+    "parse_valid": true,
+    "raw_response_text": "{\"product_type\": \"all\", \"sections\": [{\"section_id\": \"geological_observed\", \"ordered_unit_ids\": []}, {\"section_id\": \"geological_forecast\", \"ordered_unit_ids\": [\"realization_unit_2aade8307f86d0b95a574422\", \"realization_unit_59f9b93455b6a1fbf84769eb\", \"realization_unit_861d59c2a52fe8d1c00091cf\", \"realization_unit_97225917abdb46c0f43de052\", \"realization_unit_b51874b82172b767e7bcf890\", \"realization_unit_b9e7ce94e38370312bb853e2\", \"realization_unit_e2f846835be30c37cf06e2ac\"]}, {\"section_id\": \"operational_attention\", \"ordered_unit_ids\": [\"realization_unit_13681e18146c44eaab86321e\"]}, {\"section_id\": \"geological_attention\", \"ordered_unit_ids\": [\"realization_unit_4566f5b89b62f2a4e506bff6\"]}, {\"section_id\": \"coupled_attention\", \"ordered_unit_ids\": [\"realization_unit_e896fa88fb1c7a156be8175b\"]}, {\"section_id\": \"forward_attention\", \"ordered_unit_ids\": []}, {\"section_id\": \"insufficiency\", \"ordered_unit_ids\": []}], \"omitted_optional_unit_ids\": []}",
+    "schema_error_codes": [],
+    "schema_valid": true
+  },
+  "P_final": {
+    "benchmark_task_id": "stage7_main_task_000",
+    "blocks": [
+      {
+        "block_hash": "c0cbd3ccceecdd91a5a2aa1184f9ccfe33620e77591dc35f3f09ee4e46cfae9f",
+        "block_id": "composed_block_c0cbd3ccceecdd91a5a2aa11",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "geological_observed"
+        ],
+        "text": "## 地质观测事实"
+      },
+      {
+        "block_hash": "14f8ba47afc3d8d2c3c23f026207f34747d53ac3ecbd661b6e47a515cee0717e",
+        "block_id": "composed_block_14f8ba47afc3d8d2c3c23f02",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "geological_forecast"
+        ],
+        "text": "## 地质预报事实"
+      },
+      {
+        "block_hash": "8bbb22a10c21aba158a61f210f995cd302077d5f906221db6378fdec72c705f2",
+        "block_id": "composed_block_8bbb22a10c21aba158a61f21",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_df0df4e7e60b65d281b9c2c8",
+          "realization_unit_2aade8307f86d0b95a574422"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中地质结论字段记录为: 该段围岩较前段稍有变好。岩性 为板岩夹变质砂岩，弱风化，岩 质软硬不均，节理裂隙发育，岩 体破碎，围岩整体稳定性较差。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "06744c3ac96e05c737bc05a345965ef4bab8d14fca87f20a3ae9b80d7f32586e",
+        "block_id": "composed_block_06744c3ac96e05c737bc05a3",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_d3b15e58f17e7175fed3628f",
+          "realization_unit_59f9b93455b6a1fbf84769eb"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中风化程度记录为: 弱风化。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "82f6ab8baec0b024c6fc00f07f622f47223478d48cbef1aadef611c30577d76e",
+        "block_id": "composed_block_82f6ab8baec0b024c6fc00f0",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_aecbae80a7abb5e01f3e821b",
+          "realization_unit_861d59c2a52fe8d1c00091cf"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中岩性记录为: 板岩夹变质砂岩。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "055c60002ce5e597e034881bf531ae727841ac8b18f82a4b5050b02923dfbfd4",
+        "block_id": "composed_block_055c60002ce5e597e034881b",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_eb59514edc1ea5e85433f4d7",
+          "realization_unit_97225917abdb46c0f43de052"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中节理裂隙发育记录记录为: 节理裂隙发育。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "aed458840f0661746213fba24479687e53e3c03bd9d904c0ef897603dcfc906f",
+        "block_id": "composed_block_aed458840f0661746213fba2",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_ef4172653ed351b51883e957",
+          "realization_unit_b51874b82172b767e7bcf890"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中建议围岩等级字段记录为: Ⅳ级。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "12f698f8b512b73224aca11c58c2491fbfad452a231a227f95a8a6d796594a35",
+        "block_id": "composed_block_12f698f8b512b73224aca11c",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_8e198c6c65f3731620976455",
+          "realization_unit_b9e7ce94e38370312bb853e2"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中岩体状态记录为: 岩体破碎。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "84d83964d812044abf6fc85774256d8db230f4d061d9e4f84667085ab237634e",
+        "block_id": "composed_block_84d83964d812044abf6fc857",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_2e74c900c5e268347cbddfec",
+          "realization_unit_e2f846835be30c37cf06e2ac"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中风险提示字段记录为: 里程+492 附 近有掉块风 险。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "4ff41bbe08a3f03a37e0f28f252ccedb13bfb7daa6793e2bd5d13f84606a71e3",
+        "block_id": "composed_block_4ff41bbe08a3f03a37e0f28f",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "operational_attention"
+        ],
+        "text": "## 施工响应关注度"
+      },
+      {
+        "block_hash": "022b4379a8654c3761d5ea7cb0e93a3fba608fd4721881b39e7aa2f8a31cf383",
+        "block_id": "composed_block_022b4379a8654c3761d5ea7c",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_d9b2750eacbbc27f8b9d5d46",
+          "realization_unit_13681e18146c44eaab86321e"
+        ],
+        "text": "2023-10-07, 里程 1013470.0-1013480.0施工响应关注度 RAI 为 0.315。该值为非概率关注指标, 不表示地质原因。"
+      },
+      {
+        "block_hash": "8709848f599e52629f0edfc1f848d80749da8ca2fd6255f0db7991f407c9d3c8",
+        "block_id": "composed_block_8709848f599e52629f0edfc1",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "geological_attention"
+        ],
+        "text": "## 地质证据关注度"
+      },
+      {
+        "block_hash": "03fef0647482ca32b3dbf0071843b29311cde040bdf762e03034e998342616de",
+        "block_id": "composed_block_03fef0647482ca32b3dbf007",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_672d313052bdf90be55a7c93",
+          "realization_unit_4566f5b89b62f2a4e506bff6"
+        ],
+        "text": "2023-10-07, 里程 1013470.0-1013480.0地质证据关注度 GRS 为 0.542。该值为非概率关注指标。"
+      },
+      {
+        "block_hash": "6c315d3f31379f9b4b0eab9990a3a2038be686f47b48bfcfe3a2714f249e0cca",
+        "block_id": "composed_block_6c315d3f31379f9b4b0eab99",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "coupled_attention"
+        ],
+        "text": "## 耦合关注度"
+      },
+      {
+        "block_hash": "f575395d4ca3d8543aa1e05e6fd440f0715e63dca3007b0369ed5aaeabf70691",
+        "block_id": "composed_block_f575395d4ca3d8543aa1e05e",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_e28a343f750d3b5bd2944d0a",
+          "realization_unit_e896fa88fb1c7a156be8175b"
+        ],
+        "text": "2023-10-07, 里程 1013470.0-1013480.0 GRCI 为 0.171, 表示非概率性的地质证据—施工响应耦合关注程度。"
+      },
+      {
+        "block_hash": "3a46ad662c30eeb81695c640ccdb5114eecdeb5aad5adad7ecbb55016b9e44a0",
+        "block_id": "composed_block_3a46ad662c30eeb81695c640",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "forward_attention"
+        ],
+        "text": "## 前方关注度"
+      },
+      {
+        "block_hash": "9cb64b6fa092b29905ed43f2110dbf6dc7ae6988bfc147d36ec6d40e8d1bc2e9",
+        "block_id": "composed_block_9cb64b6fa092b29905ed43f2",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "insufficiency"
+        ],
+        "text": "## 证据不足边界"
+      },
+      {
+        "block_hash": "9cb64b6fa092b29905ed43f2110dbf6dc7ae6988bfc147d36ec6d40e8d1bc2e9",
+        "block_id": "composed_block_9cb64b6fa092b29905ed43f2",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "insufficiency"
+        ],
+        "text": "## 证据不足边界"
+      },
+      {
+        "block_hash": "38d6454de0ff218207fc5ef671de817ebe2155d7e192cd2aad3ce6673b586418",
+        "block_id": "composed_block_38d6454de0ff218207fc5ef6",
+        "block_type": "INSUFFICIENCY",
+        "source_ids": [
+          "task_abstention_view_1d807167b4a07ebfd99ea0aa"
+        ],
+        "text": "UNKNOWN_SOURCE_VALUE: 来源存在但目标属性值未形成可表达事实, 不作补充推断。"
+      }
+    ],
+    "composed_realization_id": "composed_realization_b4df11687f2041908369614b",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_4af392c9f32abb87430b4b92",
+    "insufficiency_statements": [
+      "UNKNOWN_SOURCE_VALUE: 来源存在但目标属性值未形成可表达事实, 不作补充推断。"
+    ],
+    "method_id": "P_PROPOSED",
+    "plan_id": "realization_plan_98c5a9ff063a9c0cc439d3b8",
+    "product_type": "all",
+    "realization_hash": "b4df11687f2041908369614b639d96d2d576af39c32bf01187258946e3dd7368",
+    "sections": [
+      {
+        "section_id": "geological_observed",
+        "sentence_ids": [],
+        "text": ""
+      },
+      {
+        "section_id": "geological_forecast",
+        "sentence_ids": [
+          "canonical_sentence_df0df4e7e60b65d281b9c2c8",
+          "canonical_sentence_d3b15e58f17e7175fed3628f",
+          "canonical_sentence_aecbae80a7abb5e01f3e821b",
+          "canonical_sentence_eb59514edc1ea5e85433f4d7",
+          "canonical_sentence_ef4172653ed351b51883e957",
+          "canonical_sentence_8e198c6c65f3731620976455",
+          "canonical_sentence_2e74c900c5e268347cbddfec"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中地质结论字段记录为: 该段围岩较前段稍有变好。岩性 为板岩夹变质砂岩，弱风化，岩 质软硬不均，节理裂隙发育，岩 体破碎，围岩整体稳定性较差。该表述保持为预报来源记录, 不作为实际揭露结论。\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中风化程度记录为: 弱风化。该表述保持为预报来源记录, 不作为实际揭露结论。\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中岩性记录为: 板岩夹变质砂岩。该表述保持为预报来源记录, 不作为实际揭露结论。\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中节理裂隙发育记录记录为: 节理裂隙发育。该表述保持为预报来源记录, 不作为实际揭露结论。\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中建议围岩等级字段记录为: Ⅳ级。该表述保持为预报来源记录, 不作为实际揭露结论。\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中岩体状态记录为: 岩体破碎。该表述保持为预报来源记录, 不作为实际揭露结论。\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中风险提示字段记录为: 里程+492 附 近有掉块风 险。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "section_id": "operational_attention",
+        "sentence_ids": [
+          "canonical_sentence_d9b2750eacbbc27f8b9d5d46"
+        ],
+        "text": "2023-10-07, 里程 1013470.0-1013480.0施工响应关注度 RAI 为 0.315。该值为非概率关注指标, 不表示地质原因。"
+      },
+      {
+        "section_id": "geological_attention",
+        "sentence_ids": [
+          "canonical_sentence_672d313052bdf90be55a7c93"
+        ],
+        "text": "2023-10-07, 里程 1013470.0-1013480.0地质证据关注度 GRS 为 0.542。该值为非概率关注指标。"
+      },
+      {
+        "section_id": "coupled_attention",
+        "sentence_ids": [
+          "canonical_sentence_e28a343f750d3b5bd2944d0a"
+        ],
+        "text": "2023-10-07, 里程 1013470.0-1013480.0 GRCI 为 0.171, 表示非概率性的地质证据—施工响应耦合关注程度。"
+      },
+      {
+        "section_id": "forward_attention",
+        "sentence_ids": [],
+        "text": ""
+      },
+      {
+        "section_id": "insufficiency",
+        "sentence_ids": [],
+        "text": ""
+      }
+    ],
+    "text": "## 地质观测事实\n\n## 地质预报事实\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中地质结论字段记录为: 该段围岩较前段稍有变好。岩性 为板岩夹变质砂岩，弱风化，岩 质软硬不均，节理裂隙发育，岩 体破碎，围岩整体稳定性较差。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中风化程度记录为: 弱风化。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中岩性记录为: 板岩夹变质砂岩。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中节理裂隙发育记录记录为: 节理裂隙发育。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中建议围岩等级字段记录为: Ⅳ级。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中岩体状态记录为: 岩体破碎。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中风险提示字段记录为: 里程+492 附 近有掉块风 险。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n## 施工响应关注度\n\n2023-10-07, 里程 1013470.0-1013480.0施工响应关注度 RAI 为 0.315。该值为非概率关注指标, 不表示地质原因。\n\n## 地质证据关注度\n\n2023-10-07, 里程 1013470.0-1013480.0地质证据关注度 GRS 为 0.542。该值为非概率关注指标。\n\n## 耦合关注度\n\n2023-10-07, 里程 1013470.0-1013480.0 GRCI 为 0.171, 表示非概率性的地质证据—施工响应耦合关注程度。\n\n## 前方关注度\n\n## 证据不足边界\n\n## 证据不足边界\n\nUNKNOWN_SOURCE_VALUE: 来源存在但目标属性值未形成可表达事实, 不作补充推断。"
+  },
+  "fact_locks": [
+    {
+      "allowed_rendering_semantics": [
+        "forecast",
+        "predicted",
+        "indicates",
+        "source_constrained"
+      ],
+      "authoritative_support_refs": [
+        {
+          "resolution_source": "FROZEN_GEOLOGICAL_EVIDENCE",
+          "resolution_status": "RESOLVED",
+          "resolved_base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+          "resolved_bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+          "resolved_cell_id": "cell_3d2558b73586465c51997f14",
+          "resolved_daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+          "resolved_epistemic_status": "FORECAST",
+          "resolved_spatial_scope": {
+            "cell_id": null,
+            "daily_state_id": null,
+            "end_chainage": 1013506.0,
+            "point_chainage": null,
+            "scope_basis": "hsp_forecast_table_row",
+            "scope_kind": "LOCATED_INTERVAL",
+            "start_chainage": 1013466.0,
+            "state_role": null,
+            "valid_date": null
+          },
+          "resolved_state_role": "DAILY_REVIEW_CELL",
+          "resolved_valid_date": "2023-10-07",
+          "support_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004",
+          "support_kind": "GEOLOGICAL_EVIDENCE",
+          "support_role": "PRIMARY_SUPPORT",
+          "trace_ref_ids": [
+            "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+          ]
+        }
+      ],
+      "base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "claim_modality": "GEOLOGICAL_FORECAST",
+      "claim_type": "FORECAST_GEOLOGICAL_CONDITION",
+      "claim_value": {
+        "attribute_dimension": null,
+        "attribute_name": "lithology",
+        "normalized_value": "板岩夹变质砂岩",
+        "source_evidence_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      },
+      "daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+      "fact_lock_id": "fact_lock_01caee92f4c8babe430a4bfe",
+      "lock_hash": "01caee92f4c8babe430a4bfe8f54f9f222eacb345fa8c412502afcf08054407a",
+      "prohibited_transformations": [
+        "invent_numeric_value",
+        "change_numeric_value",
+        "change_unit",
+        "expand_spatial_scope",
+        "expand_temporal_scope",
+        "promote_forecast_to_observed",
+        "promote_unknown_to_normal",
+        "promote_attention_to_probability",
+        "infer_geological_cause_from_mechanical_response",
+        "use_local_background_as_direct_support",
+        "render_grci_as_geological_risk_probability",
+        "fill_missing_fact_from_common_sense",
+        "extrapolate_from_other_cell",
+        "use_pack_external_knowledge_for_engineering_claim"
+      ],
+      "required_qualifiers": [
+        "FORECAST",
+        "PREDICTED",
+        "INDICATED_AHEAD",
+        "SOURCE_CONSTRAINED"
+      ],
+      "semantic_interpretation": "FORECAST_GEOLOGICAL_CONDITION",
+      "source_claim_id": "typed_claim_13dbac6cceca3cf843421b98",
+      "source_contract_id": "claim_contract_forecast_geological_condition_v1",
+      "source_decision_id": "claim_decision_6aebfb5e6af96abfc7883961",
+      "source_opportunity_id": "claim_opportunity_6d8722e83a19011d29a6b90a",
+      "source_proposal_id": "claim_proposal_7afe762ca50614a04a12d3ba",
+      "source_schema_version": "stage5a_typed_claim_contract.v1",
+      "spatial_scope": {
+        "cell_id": null,
+        "daily_state_id": null,
+        "end_chainage": 1013506.0,
+        "point_chainage": null,
+        "scope_basis": "hsp_forecast_table_row",
+        "scope_kind": "LOCATED_INTERVAL",
+        "start_chainage": 1013466.0,
+        "state_role": null,
+        "valid_date": null
+      },
+      "state_role": "DAILY_REVIEW_CELL",
+      "state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "trace_refs": [
+        "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      ],
+      "valid_date": "2023-10-07"
+    },
+    {
+      "allowed_rendering_semantics": [
+        "nonprobabilistic_attention",
+        "source_constrained"
+      ],
+      "authoritative_support_refs": [
+        {
+          "resolution_source": "FROZEN_STAGE4_METRIC",
+          "resolution_status": "RESOLVED",
+          "resolved_base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+          "resolved_bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+          "resolved_cell_id": "cell_3d2558b73586465c51997f14",
+          "resolved_daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+          "resolved_epistemic_status": null,
+          "resolved_spatial_scope": {
+            "cell_id": "cell_3d2558b73586465c51997f14",
+            "daily_state_id": null,
+            "end_chainage": null,
+            "point_chainage": null,
+            "scope_basis": "stage4_metric_subject",
+            "scope_kind": "CELL",
+            "start_chainage": null,
+            "state_role": "DAILY_REVIEW_CELL",
+            "valid_date": "2023-10-07"
+          },
+          "resolved_state_role": "DAILY_REVIEW_CELL",
+          "resolved_valid_date": "2023-10-07",
+          "support_id": "state_grci_65623bf22f0a3f4d8800b1fc",
+          "support_kind": "STATE_GRCI",
+          "support_role": "PRIMARY_SUPPORT",
+          "trace_ref_ids": [
+            "state_grci_65623bf22f0a3f4d8800b1fc"
+          ]
+        }
+      ],
+      "base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "claim_modality": "DERIVED_ATTENTION",
+      "claim_type": "COUPLED_ATTENTION_REVIEW",
+      "claim_value": {
+        "is_causal_estimate": false,
+        "is_hazard_probability": false,
+        "is_probability": false,
+        "metric_name": "GRCI",
+        "metric_semantics": "NONPROBABILISTIC_CONJUNCTIVE_PRODUCT",
+        "metric_status": "AVAILABLE",
+        "metric_value": 0.1706486756594387,
+        "source_metric_id": "state_grci_65623bf22f0a3f4d8800b1fc"
+      },
+      "daily_state_id": null,
+      "fact_lock_id": "fact_lock_b32aea54bf2ead49d23c13e6",
+      "lock_hash": "b32aea54bf2ead49d23c13e67a7016e15525e45171e25a1c68dc83f650ba5090",
+      "prohibited_transformations": [
+        "invent_numeric_value",
+        "change_numeric_value",
+        "change_unit",
+        "expand_spatial_scope",
+        "expand_temporal_scope",
+        "promote_forecast_to_observed",
+        "promote_unknown_to_normal",
+        "promote_attention_to_probability",
+        "infer_geological_cause_from_mechanical_response",
+        "use_local_background_as_direct_support",
+        "render_grci_as_geological_risk_probability",
+        "fill_missing_fact_from_common_sense",
+        "extrapolate_from_other_cell",
+        "use_pack_external_knowledge_for_engineering_claim"
+      ],
+      "required_qualifiers": [
+        "NONPROBABILISTIC_ATTENTION",
+        "SOURCE_CONSTRAINED"
+      ],
+      "semantic_interpretation": "COUPLED_ATTENTION",
+      "source_claim_id": "typed_claim_2730af786ea3aa5a46c472a6",
+      "source_contract_id": "claim_contract_coupled_attention_review_v1",
+      "source_decision_id": "claim_decision_ed4b0dbc34fb593106378df4",
+      "source_opportunity_id": "claim_opportunity_d372fe7a4478b5177bf5fcf6",
+      "source_proposal_id": "claim_proposal_771740aa74e5abf149717f42",
+      "source_schema_version": "stage5a_typed_claim_contract.v1",
+      "spatial_scope": {
+        "cell_id": "cell_3d2558b73586465c51997f14",
+        "daily_state_id": null,
+        "end_chainage": null,
+        "point_chainage": null,
+        "scope_basis": "stage5b_bitemporal_state_subject",
+        "scope_kind": "CELL",
+        "start_chainage": null,
+        "state_role": "DAILY_REVIEW_CELL",
+        "valid_date": "2023-10-07"
+      },
+      "state_role": "DAILY_REVIEW_CELL",
+      "state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "trace_refs": [
+        "state_grci_65623bf22f0a3f4d8800b1fc"
+      ],
+      "valid_date": "2023-10-07"
+    },
+    {
+      "allowed_rendering_semantics": [
+        "forecast",
+        "predicted",
+        "indicates",
+        "source_constrained"
+      ],
+      "authoritative_support_refs": [
+        {
+          "resolution_source": "FROZEN_GEOLOGICAL_EVIDENCE",
+          "resolution_status": "RESOLVED",
+          "resolved_base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+          "resolved_bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+          "resolved_cell_id": "cell_3d2558b73586465c51997f14",
+          "resolved_daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+          "resolved_epistemic_status": "FORECAST",
+          "resolved_spatial_scope": {
+            "cell_id": null,
+            "daily_state_id": null,
+            "end_chainage": 1013506.0,
+            "point_chainage": null,
+            "scope_basis": "hsp_forecast_table_row",
+            "scope_kind": "LOCATED_INTERVAL",
+            "start_chainage": 1013466.0,
+            "state_role": null,
+            "valid_date": null
+          },
+          "resolved_state_role": "DAILY_REVIEW_CELL",
+          "resolved_valid_date": "2023-10-07",
+          "support_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004",
+          "support_kind": "GEOLOGICAL_EVIDENCE",
+          "support_role": "PRIMARY_SUPPORT",
+          "trace_ref_ids": [
+            "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+          ]
+        }
+      ],
+      "base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "claim_modality": "GEOLOGICAL_FORECAST",
+      "claim_type": "FORECAST_GEOLOGICAL_CONDITION",
+      "claim_value": {
+        "attribute_dimension": null,
+        "attribute_name": "weathering",
+        "normalized_value": "弱风化",
+        "source_evidence_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      },
+      "daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+      "fact_lock_id": "fact_lock_9013b06e4db4a637be9ea2ed",
+      "lock_hash": "9013b06e4db4a637be9ea2ede44f1c5e72af99dfe923184301a222523a1dd78e",
+      "prohibited_transformations": [
+        "invent_numeric_value",
+        "change_numeric_value",
+        "change_unit",
+        "expand_spatial_scope",
+        "expand_temporal_scope",
+        "promote_forecast_to_observed",
+        "promote_unknown_to_normal",
+        "promote_attention_to_probability",
+        "infer_geological_cause_from_mechanical_response",
+        "use_local_background_as_direct_support",
+        "render_grci_as_geological_risk_probability",
+        "fill_missing_fact_from_common_sense",
+        "extrapolate_from_other_cell",
+        "use_pack_external_knowledge_for_engineering_claim"
+      ],
+      "required_qualifiers": [
+        "FORECAST",
+        "PREDICTED",
+        "INDICATED_AHEAD",
+        "SOURCE_CONSTRAINED"
+      ],
+      "semantic_interpretation": "FORECAST_GEOLOGICAL_CONDITION",
+      "source_claim_id": "typed_claim_6301ad9571de9a33e55b38eb",
+      "source_contract_id": "claim_contract_forecast_geological_condition_v1",
+      "source_decision_id": "claim_decision_54aaecdb752bb8e7652f0347",
+      "source_opportunity_id": "claim_opportunity_4b3f2861fc3cee48d0afedc2",
+      "source_proposal_id": "claim_proposal_c765e90ed8996dc271936a55",
+      "source_schema_version": "stage5a_typed_claim_contract.v1",
+      "spatial_scope": {
+        "cell_id": null,
+        "daily_state_id": null,
+        "end_chainage": 1013506.0,
+        "point_chainage": null,
+        "scope_basis": "hsp_forecast_table_row",
+        "scope_kind": "LOCATED_INTERVAL",
+        "start_chainage": 1013466.0,
+        "state_role": null,
+        "valid_date": null
+      },
+      "state_role": "DAILY_REVIEW_CELL",
+      "state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "trace_refs": [
+        "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      ],
+      "valid_date": "2023-10-07"
+    },
+    {
+      "allowed_rendering_semantics": [
+        "nonprobabilistic_attention",
+        "source_constrained"
+      ],
+      "authoritative_support_refs": [
+        {
+          "resolution_source": "FROZEN_STAGE4_METRIC",
+          "resolution_status": "RESOLVED",
+          "resolved_base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+          "resolved_bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+          "resolved_cell_id": "cell_3d2558b73586465c51997f14",
+          "resolved_daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+          "resolved_epistemic_status": null,
+          "resolved_spatial_scope": {
+            "cell_id": "cell_3d2558b73586465c51997f14",
+            "daily_state_id": null,
+            "end_chainage": null,
+            "point_chainage": null,
+            "scope_basis": "stage4_metric_subject",
+            "scope_kind": "CELL",
+            "start_chainage": null,
+            "state_role": "DAILY_REVIEW_CELL",
+            "valid_date": "2023-10-07"
+          },
+          "resolved_state_role": "DAILY_REVIEW_CELL",
+          "resolved_valid_date": "2023-10-07",
+          "support_id": "state_rai_65623bf22f0a3f4d8800b1fc",
+          "support_kind": "STATE_RAI",
+          "support_role": "PRIMARY_SUPPORT",
+          "trace_ref_ids": [
+            "state_rai_65623bf22f0a3f4d8800b1fc"
+          ]
+        }
+      ],
+      "base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "claim_modality": "DERIVED_ATTENTION",
+      "claim_type": "OPERATIONAL_RESPONSE_ATTENTION",
+      "claim_value": {
+        "is_causal_estimate": false,
+        "is_hazard_probability": false,
+        "is_probability": false,
+        "metric_name": "RAI",
+        "metric_semantics": "OPERATIONAL_RESPONSE_ATTENTION_INDEX",
+        "metric_status": "AVAILABLE",
+        "metric_value": 0.315043708909733,
+        "source_metric_id": "state_rai_65623bf22f0a3f4d8800b1fc"
+      },
+      "daily_state_id": null,
+      "fact_lock_id": "fact_lock_9dd28fce34896d2835104f64",
+      "lock_hash": "9dd28fce34896d2835104f6439d0076202a2baa64220da4f14e7cf06faa3c5e2",
+      "prohibited_transformations": [
+        "invent_numeric_value",
+        "change_numeric_value",
+        "change_unit",
+        "expand_spatial_scope",
+        "expand_temporal_scope",
+        "promote_forecast_to_observed",
+        "promote_unknown_to_normal",
+        "promote_attention_to_probability",
+        "infer_geological_cause_from_mechanical_response",
+        "use_local_background_as_direct_support",
+        "render_grci_as_geological_risk_probability",
+        "fill_missing_fact_from_common_sense",
+        "extrapolate_from_other_cell",
+        "use_pack_external_knowledge_for_engineering_claim"
+      ],
+      "required_qualifiers": [
+        "NONPROBABILISTIC_ATTENTION",
+        "SOURCE_CONSTRAINED"
+      ],
+      "semantic_interpretation": "OPERATIONAL_RESPONSE_ATTENTION",
+      "source_claim_id": "typed_claim_74102aa0e5351516e6dcf4b9",
+      "source_contract_id": "claim_contract_operational_response_attention_v1",
+      "source_decision_id": "claim_decision_a5714ae29d844a91bebe6af0",
+      "source_opportunity_id": "claim_opportunity_39e7a9ec729673e54cab8c91",
+      "source_proposal_id": "claim_proposal_b967318170c2010041ed4179",
+      "source_schema_version": "stage5a_typed_claim_contract.v1",
+      "spatial_scope": {
+        "cell_id": "cell_3d2558b73586465c51997f14",
+        "daily_state_id": null,
+        "end_chainage": null,
+        "point_chainage": null,
+        "scope_basis": "stage5b_bitemporal_state_subject",
+        "scope_kind": "CELL",
+        "start_chainage": null,
+        "state_role": "DAILY_REVIEW_CELL",
+        "valid_date": "2023-10-07"
+      },
+      "state_role": "DAILY_REVIEW_CELL",
+      "state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "trace_refs": [
+        "state_rai_65623bf22f0a3f4d8800b1fc"
+      ],
+      "valid_date": "2023-10-07"
+    },
+    {
+      "allowed_rendering_semantics": [
+        "forecast",
+        "predicted",
+        "indicates",
+        "source_constrained"
+      ],
+      "authoritative_support_refs": [
+        {
+          "resolution_source": "FROZEN_GEOLOGICAL_EVIDENCE",
+          "resolution_status": "RESOLVED",
+          "resolved_base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+          "resolved_bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+          "resolved_cell_id": "cell_3d2558b73586465c51997f14",
+          "resolved_daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+          "resolved_epistemic_status": "FORECAST",
+          "resolved_spatial_scope": {
+            "cell_id": null,
+            "daily_state_id": null,
+            "end_chainage": 1013506.0,
+            "point_chainage": null,
+            "scope_basis": "hsp_forecast_table_row",
+            "scope_kind": "LOCATED_INTERVAL",
+            "start_chainage": 1013466.0,
+            "state_role": null,
+            "valid_date": null
+          },
+          "resolved_state_role": "DAILY_REVIEW_CELL",
+          "resolved_valid_date": "2023-10-07",
+          "support_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004",
+          "support_kind": "GEOLOGICAL_EVIDENCE",
+          "support_role": "PRIMARY_SUPPORT",
+          "trace_ref_ids": [
+            "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+          ]
+        }
+      ],
+      "base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "claim_modality": "GEOLOGICAL_FORECAST",
+      "claim_type": "FORECAST_GEOLOGICAL_CONDITION",
+      "claim_value": {
+        "attribute_dimension": null,
+        "attribute_name": "rock_mass_state",
+        "normalized_value": "岩体破碎",
+        "source_evidence_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      },
+      "daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+      "fact_lock_id": "fact_lock_f3b6d2030977246170028d65",
+      "lock_hash": "f3b6d2030977246170028d658f697e21c50fa17602c1fdcb3dd3b7f20e0230af",
+      "prohibited_transformations": [
+        "invent_numeric_value",
+        "change_numeric_value",
+        "change_unit",
+        "expand_spatial_scope",
+        "expand_temporal_scope",
+        "promote_forecast_to_observed",
+        "promote_unknown_to_normal",
+        "promote_attention_to_probability",
+        "infer_geological_cause_from_mechanical_response",
+        "use_local_background_as_direct_support",
+        "render_grci_as_geological_risk_probability",
+        "fill_missing_fact_from_common_sense",
+        "extrapolate_from_other_cell",
+        "use_pack_external_knowledge_for_engineering_claim"
+      ],
+      "required_qualifiers": [
+        "FORECAST",
+        "PREDICTED",
+        "INDICATED_AHEAD",
+        "SOURCE_CONSTRAINED"
+      ],
+      "semantic_interpretation": "FORECAST_GEOLOGICAL_CONDITION",
+      "source_claim_id": "typed_claim_8d63f1d19eb9064c0e7451e0",
+      "source_contract_id": "claim_contract_forecast_geological_condition_v1",
+      "source_decision_id": "claim_decision_70c302e176e5c7d275f876bf",
+      "source_opportunity_id": "claim_opportunity_3fae07eb0188a84af261f409",
+      "source_proposal_id": "claim_proposal_688b92aecf277c1e268f5143",
+      "source_schema_version": "stage5a_typed_claim_contract.v1",
+      "spatial_scope": {
+        "cell_id": null,
+        "daily_state_id": null,
+        "end_chainage": 1013506.0,
+        "point_chainage": null,
+        "scope_basis": "hsp_forecast_table_row",
+        "scope_kind": "LOCATED_INTERVAL",
+        "start_chainage": 1013466.0,
+        "state_role": null,
+        "valid_date": null
+      },
+      "state_role": "DAILY_REVIEW_CELL",
+      "state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "trace_refs": [
+        "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      ],
+      "valid_date": "2023-10-07"
+    },
+    {
+      "allowed_rendering_semantics": [
+        "forecast",
+        "predicted",
+        "indicates",
+        "source_constrained"
+      ],
+      "authoritative_support_refs": [
+        {
+          "resolution_source": "FROZEN_GEOLOGICAL_EVIDENCE",
+          "resolution_status": "RESOLVED",
+          "resolved_base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+          "resolved_bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+          "resolved_cell_id": "cell_3d2558b73586465c51997f14",
+          "resolved_daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+          "resolved_epistemic_status": "FORECAST",
+          "resolved_spatial_scope": {
+            "cell_id": null,
+            "daily_state_id": null,
+            "end_chainage": 1013506.0,
+            "point_chainage": null,
+            "scope_basis": "hsp_forecast_table_row",
+            "scope_kind": "LOCATED_INTERVAL",
+            "start_chainage": 1013466.0,
+            "state_role": null,
+            "valid_date": null
+          },
+          "resolved_state_role": "DAILY_REVIEW_CELL",
+          "resolved_valid_date": "2023-10-07",
+          "support_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004",
+          "support_kind": "GEOLOGICAL_EVIDENCE",
+          "support_role": "PRIMARY_SUPPORT",
+          "trace_ref_ids": [
+            "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+          ]
+        }
+      ],
+      "base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "claim_modality": "GEOLOGICAL_FORECAST",
+      "claim_type": "FORECAST_GEOLOGICAL_CONDITION",
+      "claim_value": {
+        "attribute_dimension": null,
+        "attribute_name": "risk_hint",
+        "normalized_value": "里程+492 附 近有掉块风 险",
+        "source_evidence_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      },
+      "daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+      "fact_lock_id": "fact_lock_97c681a2a7bd315e6a7e2fa9",
+      "lock_hash": "97c681a2a7bd315e6a7e2fa954f037fe2c171a3879cea20fa563513d5648eac8",
+      "prohibited_transformations": [
+        "invent_numeric_value",
+        "change_numeric_value",
+        "change_unit",
+        "expand_spatial_scope",
+        "expand_temporal_scope",
+        "promote_forecast_to_observed",
+        "promote_unknown_to_normal",
+        "promote_attention_to_probability",
+        "infer_geological_cause_from_mechanical_response",
+        "use_local_background_as_direct_support",
+        "render_grci_as_geological_risk_probability",
+        "fill_missing_fact_from_common_sense",
+        "extrapolate_from_other_cell",
+        "use_pack_external_knowledge_for_engineering_claim"
+      ],
+      "required_qualifiers": [
+        "FORECAST",
+        "PREDICTED",
+        "INDICATED_AHEAD",
+        "SOURCE_CONSTRAINED"
+      ],
+      "semantic_interpretation": "FORECAST_GEOLOGICAL_CONDITION",
+      "source_claim_id": "typed_claim_986a6bed7d92f8b13cf1022e",
+      "source_contract_id": "claim_contract_forecast_geological_condition_v1",
+      "source_decision_id": "claim_decision_fa1bf6ececf4fd87b2712c65",
+      "source_opportunity_id": "claim_opportunity_e973c630095d4a86760622b7",
+      "source_proposal_id": "claim_proposal_514d3588341d6f7bb0b11df8",
+      "source_schema_version": "stage5a_typed_claim_contract.v1",
+      "spatial_scope": {
+        "cell_id": null,
+        "daily_state_id": null,
+        "end_chainage": 1013506.0,
+        "point_chainage": null,
+        "scope_basis": "hsp_forecast_table_row",
+        "scope_kind": "LOCATED_INTERVAL",
+        "start_chainage": 1013466.0,
+        "state_role": null,
+        "valid_date": null
+      },
+      "state_role": "DAILY_REVIEW_CELL",
+      "state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "trace_refs": [
+        "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      ],
+      "valid_date": "2023-10-07"
+    },
+    {
+      "allowed_rendering_semantics": [
+        "forecast",
+        "predicted",
+        "indicates",
+        "source_constrained"
+      ],
+      "authoritative_support_refs": [
+        {
+          "resolution_source": "FROZEN_GEOLOGICAL_EVIDENCE",
+          "resolution_status": "RESOLVED",
+          "resolved_base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+          "resolved_bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+          "resolved_cell_id": "cell_3d2558b73586465c51997f14",
+          "resolved_daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+          "resolved_epistemic_status": "FORECAST",
+          "resolved_spatial_scope": {
+            "cell_id": null,
+            "daily_state_id": null,
+            "end_chainage": 1013506.0,
+            "point_chainage": null,
+            "scope_basis": "hsp_forecast_table_row",
+            "scope_kind": "LOCATED_INTERVAL",
+            "start_chainage": 1013466.0,
+            "state_role": null,
+            "valid_date": null
+          },
+          "resolved_state_role": "DAILY_REVIEW_CELL",
+          "resolved_valid_date": "2023-10-07",
+          "support_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004",
+          "support_kind": "GEOLOGICAL_EVIDENCE",
+          "support_role": "PRIMARY_SUPPORT",
+          "trace_ref_ids": [
+            "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+          ]
+        }
+      ],
+      "base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "claim_modality": "GEOLOGICAL_FORECAST",
+      "claim_type": "FORECAST_GEOLOGICAL_CONDITION",
+      "claim_value": {
+        "attribute_dimension": null,
+        "attribute_name": "geological_conclusion",
+        "normalized_value": "该段围岩较前段稍有变好。岩性 为板岩夹变质砂岩，弱风化，岩 质软硬不均，节理裂隙发育，岩 体破碎，围岩整体稳定性较差",
+        "source_evidence_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      },
+      "daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+      "fact_lock_id": "fact_lock_88b73f0df05f54d5aca69e33",
+      "lock_hash": "88b73f0df05f54d5aca69e33456696e6d68d8fe7e899a153f85b19f73b363393",
+      "prohibited_transformations": [
+        "invent_numeric_value",
+        "change_numeric_value",
+        "change_unit",
+        "expand_spatial_scope",
+        "expand_temporal_scope",
+        "promote_forecast_to_observed",
+        "promote_unknown_to_normal",
+        "promote_attention_to_probability",
+        "infer_geological_cause_from_mechanical_response",
+        "use_local_background_as_direct_support",
+        "render_grci_as_geological_risk_probability",
+        "fill_missing_fact_from_common_sense",
+        "extrapolate_from_other_cell",
+        "use_pack_external_knowledge_for_engineering_claim"
+      ],
+      "required_qualifiers": [
+        "FORECAST",
+        "PREDICTED",
+        "INDICATED_AHEAD",
+        "SOURCE_CONSTRAINED"
+      ],
+      "semantic_interpretation": "FORECAST_GEOLOGICAL_CONDITION",
+      "source_claim_id": "typed_claim_e4c7b6475a059c36c0231e5d",
+      "source_contract_id": "claim_contract_forecast_geological_condition_v1",
+      "source_decision_id": "claim_decision_3dd07b665cd09f1d4b991b27",
+      "source_opportunity_id": "claim_opportunity_658f2e975926bc7af9dcc820",
+      "source_proposal_id": "claim_proposal_42ecfbc674dad23acd6a0171",
+      "source_schema_version": "stage5a_typed_claim_contract.v1",
+      "spatial_scope": {
+        "cell_id": null,
+        "daily_state_id": null,
+        "end_chainage": 1013506.0,
+        "point_chainage": null,
+        "scope_basis": "hsp_forecast_table_row",
+        "scope_kind": "LOCATED_INTERVAL",
+        "start_chainage": 1013466.0,
+        "state_role": null,
+        "valid_date": null
+      },
+      "state_role": "DAILY_REVIEW_CELL",
+      "state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "trace_refs": [
+        "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      ],
+      "valid_date": "2023-10-07"
+    },
+    {
+      "allowed_rendering_semantics": [
+        "forecast",
+        "predicted",
+        "indicates",
+        "source_constrained"
+      ],
+      "authoritative_support_refs": [
+        {
+          "resolution_source": "FROZEN_GEOLOGICAL_EVIDENCE",
+          "resolution_status": "RESOLVED",
+          "resolved_base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+          "resolved_bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+          "resolved_cell_id": "cell_3d2558b73586465c51997f14",
+          "resolved_daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+          "resolved_epistemic_status": "FORECAST",
+          "resolved_spatial_scope": {
+            "cell_id": null,
+            "daily_state_id": null,
+            "end_chainage": 1013506.0,
+            "point_chainage": null,
+            "scope_basis": "hsp_forecast_table_row",
+            "scope_kind": "LOCATED_INTERVAL",
+            "start_chainage": 1013466.0,
+            "state_role": null,
+            "valid_date": null
+          },
+          "resolved_state_role": "DAILY_REVIEW_CELL",
+          "resolved_valid_date": "2023-10-07",
+          "support_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004",
+          "support_kind": "GEOLOGICAL_EVIDENCE",
+          "support_role": "PRIMARY_SUPPORT",
+          "trace_ref_ids": [
+            "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+          ]
+        }
+      ],
+      "base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "claim_modality": "GEOLOGICAL_FORECAST",
+      "claim_type": "FORECAST_GEOLOGICAL_CONDITION",
+      "claim_value": {
+        "attribute_dimension": null,
+        "attribute_name": "suggested_grade",
+        "normalized_value": "Ⅳ级",
+        "source_evidence_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      },
+      "daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+      "fact_lock_id": "fact_lock_a3b19b85b45835fed58bff40",
+      "lock_hash": "a3b19b85b45835fed58bff400e0f815d510dcb1b1d5f18180b8b6f6801225181",
+      "prohibited_transformations": [
+        "invent_numeric_value",
+        "change_numeric_value",
+        "change_unit",
+        "expand_spatial_scope",
+        "expand_temporal_scope",
+        "promote_forecast_to_observed",
+        "promote_unknown_to_normal",
+        "promote_attention_to_probability",
+        "infer_geological_cause_from_mechanical_response",
+        "use_local_background_as_direct_support",
+        "render_grci_as_geological_risk_probability",
+        "fill_missing_fact_from_common_sense",
+        "extrapolate_from_other_cell",
+        "use_pack_external_knowledge_for_engineering_claim"
+      ],
+      "required_qualifiers": [
+        "FORECAST",
+        "PREDICTED",
+        "INDICATED_AHEAD",
+        "SOURCE_CONSTRAINED"
+      ],
+      "semantic_interpretation": "FORECAST_GEOLOGICAL_CONDITION",
+      "source_claim_id": "typed_claim_e9af4c5efb0af35fad4a0232",
+      "source_contract_id": "claim_contract_forecast_geological_condition_v1",
+      "source_decision_id": "claim_decision_e1e19813223fa6e0653ebffa",
+      "source_opportunity_id": "claim_opportunity_0ee30d7802e80d9e5289afe6",
+      "source_proposal_id": "claim_proposal_81ff3223f013731e4037b2bc",
+      "source_schema_version": "stage5a_typed_claim_contract.v1",
+      "spatial_scope": {
+        "cell_id": null,
+        "daily_state_id": null,
+        "end_chainage": 1013506.0,
+        "point_chainage": null,
+        "scope_basis": "hsp_forecast_table_row",
+        "scope_kind": "LOCATED_INTERVAL",
+        "start_chainage": 1013466.0,
+        "state_role": null,
+        "valid_date": null
+      },
+      "state_role": "DAILY_REVIEW_CELL",
+      "state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "trace_refs": [
+        "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      ],
+      "valid_date": "2023-10-07"
+    },
+    {
+      "allowed_rendering_semantics": [
+        "nonprobabilistic_attention",
+        "source_constrained"
+      ],
+      "authoritative_support_refs": [
+        {
+          "resolution_source": "FROZEN_STAGE4_METRIC",
+          "resolution_status": "RESOLVED",
+          "resolved_base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+          "resolved_bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+          "resolved_cell_id": "cell_3d2558b73586465c51997f14",
+          "resolved_daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+          "resolved_epistemic_status": null,
+          "resolved_spatial_scope": {
+            "cell_id": "cell_3d2558b73586465c51997f14",
+            "daily_state_id": null,
+            "end_chainage": null,
+            "point_chainage": null,
+            "scope_basis": "stage4_metric_subject",
+            "scope_kind": "CELL",
+            "start_chainage": null,
+            "state_role": "DAILY_REVIEW_CELL",
+            "valid_date": "2023-10-07"
+          },
+          "resolved_state_role": "DAILY_REVIEW_CELL",
+          "resolved_valid_date": "2023-10-07",
+          "support_id": "state_grs_65623bf22f0a3f4d8800b1fc",
+          "support_kind": "STATE_GRS",
+          "support_role": "PRIMARY_SUPPORT",
+          "trace_ref_ids": [
+            "state_grs_65623bf22f0a3f4d8800b1fc"
+          ]
+        }
+      ],
+      "base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "claim_modality": "DERIVED_ATTENTION",
+      "claim_type": "GEOLOGICAL_EVIDENCE_ATTENTION_REVIEW",
+      "claim_value": {
+        "is_causal_estimate": false,
+        "is_hazard_probability": false,
+        "is_probability": false,
+        "metric_name": "GRS",
+        "metric_semantics": "GEOLOGICAL_EVIDENCE_ATTENTION_INDEX",
+        "metric_status": "AVAILABLE",
+        "metric_value": 0.5416666666666666,
+        "source_metric_id": "state_grs_65623bf22f0a3f4d8800b1fc"
+      },
+      "daily_state_id": null,
+      "fact_lock_id": "fact_lock_d464487bee4b7a46002d6055",
+      "lock_hash": "d464487bee4b7a46002d6055251b6096be8448e15257a284222fae49cd84f05d",
+      "prohibited_transformations": [
+        "invent_numeric_value",
+        "change_numeric_value",
+        "change_unit",
+        "expand_spatial_scope",
+        "expand_temporal_scope",
+        "promote_forecast_to_observed",
+        "promote_unknown_to_normal",
+        "promote_attention_to_probability",
+        "infer_geological_cause_from_mechanical_response",
+        "use_local_background_as_direct_support",
+        "render_grci_as_geological_risk_probability",
+        "fill_missing_fact_from_common_sense",
+        "extrapolate_from_other_cell",
+        "use_pack_external_knowledge_for_engineering_claim"
+      ],
+      "required_qualifiers": [
+        "NONPROBABILISTIC_ATTENTION",
+        "SOURCE_CONSTRAINED"
+      ],
+      "semantic_interpretation": "GEOLOGICAL_EVIDENCE_ATTENTION",
+      "source_claim_id": "typed_claim_f31931ac1d469de46df32266",
+      "source_contract_id": "claim_contract_geological_evidence_attention_review_v1",
+      "source_decision_id": "claim_decision_94fed3ea7815c9b4c55a8516",
+      "source_opportunity_id": "claim_opportunity_9fd7cf891798e823170fd9c7",
+      "source_proposal_id": "claim_proposal_1e92a933f44b7602dbd9b15b",
+      "source_schema_version": "stage5a_typed_claim_contract.v1",
+      "spatial_scope": {
+        "cell_id": "cell_3d2558b73586465c51997f14",
+        "daily_state_id": null,
+        "end_chainage": null,
+        "point_chainage": null,
+        "scope_basis": "stage5b_bitemporal_state_subject",
+        "scope_kind": "CELL",
+        "start_chainage": null,
+        "state_role": "DAILY_REVIEW_CELL",
+        "valid_date": "2023-10-07"
+      },
+      "state_role": "DAILY_REVIEW_CELL",
+      "state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "trace_refs": [
+        "state_grs_65623bf22f0a3f4d8800b1fc"
+      ],
+      "valid_date": "2023-10-07"
+    },
+    {
+      "allowed_rendering_semantics": [
+        "forecast",
+        "predicted",
+        "indicates",
+        "source_constrained"
+      ],
+      "authoritative_support_refs": [
+        {
+          "resolution_source": "FROZEN_GEOLOGICAL_EVIDENCE",
+          "resolution_status": "RESOLVED",
+          "resolved_base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+          "resolved_bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+          "resolved_cell_id": "cell_3d2558b73586465c51997f14",
+          "resolved_daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+          "resolved_epistemic_status": "FORECAST",
+          "resolved_spatial_scope": {
+            "cell_id": null,
+            "daily_state_id": null,
+            "end_chainage": 1013506.0,
+            "point_chainage": null,
+            "scope_basis": "hsp_forecast_table_row",
+            "scope_kind": "LOCATED_INTERVAL",
+            "start_chainage": 1013466.0,
+            "state_role": null,
+            "valid_date": null
+          },
+          "resolved_state_role": "DAILY_REVIEW_CELL",
+          "resolved_valid_date": "2023-10-07",
+          "support_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004",
+          "support_kind": "GEOLOGICAL_EVIDENCE",
+          "support_role": "PRIMARY_SUPPORT",
+          "trace_ref_ids": [
+            "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+          ]
+        }
+      ],
+      "base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "claim_modality": "GEOLOGICAL_FORECAST",
+      "claim_type": "FORECAST_GEOLOGICAL_CONDITION",
+      "claim_value": {
+        "attribute_dimension": null,
+        "attribute_name": "joint_development",
+        "normalized_value": "节理裂隙发育",
+        "source_evidence_id": "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      },
+      "daily_state_id": "daily_state_7257f5fb58dcea3ce3deaab4",
+      "fact_lock_id": "fact_lock_8c638ec26ace682fa875a6df",
+      "lock_hash": "8c638ec26ace682fa875a6df50a29e2e2e6f8aabd520f6290c744673f0cc0cb3",
+      "prohibited_transformations": [
+        "invent_numeric_value",
+        "change_numeric_value",
+        "change_unit",
+        "expand_spatial_scope",
+        "expand_temporal_scope",
+        "promote_forecast_to_observed",
+        "promote_unknown_to_normal",
+        "promote_attention_to_probability",
+        "infer_geological_cause_from_mechanical_response",
+        "use_local_background_as_direct_support",
+        "render_grci_as_geological_risk_probability",
+        "fill_missing_fact_from_common_sense",
+        "extrapolate_from_other_cell",
+        "use_pack_external_knowledge_for_engineering_claim"
+      ],
+      "required_qualifiers": [
+        "FORECAST",
+        "PREDICTED",
+        "INDICATED_AHEAD",
+        "SOURCE_CONSTRAINED"
+      ],
+      "semantic_interpretation": "FORECAST_GEOLOGICAL_CONDITION",
+      "source_claim_id": "typed_claim_ff910119a249cb2e340c4296",
+      "source_contract_id": "claim_contract_forecast_geological_condition_v1",
+      "source_decision_id": "claim_decision_9286a784c05c731c38add630",
+      "source_opportunity_id": "claim_opportunity_e2f7dc32db8642abdfc6fe48",
+      "source_proposal_id": "claim_proposal_bb14372cd0ff9d0070fab397",
+      "source_schema_version": "stage5a_typed_claim_contract.v1",
+      "spatial_scope": {
+        "cell_id": null,
+        "daily_state_id": null,
+        "end_chainage": 1013506.0,
+        "point_chainage": null,
+        "scope_basis": "hsp_forecast_table_row",
+        "scope_kind": "LOCATED_INTERVAL",
+        "start_chainage": 1013466.0,
+        "state_role": null,
+        "valid_date": null
+      },
+      "state_role": "DAILY_REVIEW_CELL",
+      "state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "trace_refs": [
+        "doc_d1c24a2c5d644ba47f3ef2ec_e0004"
+      ],
+      "valid_date": "2023-10-07"
+    }
+  ],
+  "state_metrics": [
+    {
+      "base_stage3a_state_version_id": "state_version_6a356d329dc94fa848660e62",
+      "bitemporal_version_id": "bitemporal_version_0fe4f28f30bcde0cc1b2cf31",
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "cell_scope_role": "DAILY_REVIEW_CELL",
+      "co_dominant_geological_dimensions": [
+        "JOINT_DEVELOPMENT",
+        "ROCK_MASS_INTEGRITY"
+      ],
+      "co_dominant_response_families": [
+        "LOAD_RESPONSE"
+      ],
+      "dominant_geological_dimension": null,
+      "dominant_response_family": "LOAD_RESPONSE",
+      "forecast_geological_support_count": 1,
+      "geological_dimension_attention_tie": true,
+      "grci": 0.1706486756594387,
+      "grci_is_probability": false,
+      "grci_operator": "NONPROBABILISTIC_CONJUNCTIVE_PRODUCT",
+      "grci_status": "AVAILABLE",
+      "grs": 0.5416666666666666,
+      "grs_contributing_evidence_count": 1,
+      "grs_contributing_forecast_evidence_count": 1,
+      "grs_contributing_observed_evidence_count": 0,
+      "grs_dimension_coverage_count": 4,
+      "grs_dimension_coverage_ratio": 0.6666666666666666,
+      "grs_status": "AVAILABLE",
+      "knowledge_time_start_local_date": "2023-10-07",
+      "mapped_geological_evidence_count": 1,
+      "metric_method_contract_hash": "85881d657b59148c50695f2a576ac426c71aafe01b82b02bd40fff836ebeb31c",
+      "metric_quality_flags": [],
+      "metric_reason_codes": [],
+      "observed_geological_support_count": 0,
+      "rai": 0.315043708909733,
+      "rai_raw_deviation": 0.945131126729199,
+      "rai_status": "AVAILABLE",
+      "raw_deviation_dominant_family": "LOAD_RESPONSE",
+      "reconstructed_at": "2026-08-09T12:00:00+08:00",
+      "response_family_attention_tie": false,
+      "role_forecast_evidence_count": 1,
+      "role_geological_evidence_count": 1,
+      "role_observed_evidence_count": 0,
+      "stage4a2_method_version": "stage4_bitemporal_state_metrics_v1_1_trace_frozen",
+      "state_grci_id": "state_grci_65623bf22f0a3f4d8800b1fc",
+      "state_grs_id": "state_grs_65623bf22f0a3f4d8800b1fc",
+      "state_metric_summary_id": "state_metric_summary_65623bf22f0a3f4d8800b1fc",
+      "state_rai_id": "state_rai_65623bf22f0a3f4d8800b1fc",
+      "valid_date": "2023-10-07",
+      "version_number": 1
+    }
+  ]
+}

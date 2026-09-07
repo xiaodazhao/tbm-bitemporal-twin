@@ -1,0 +1,8 @@
+95% CI if applicable,Difference / affected count,Endpoint,Exact-as-of,Final-history,Rate
+"[0.0,0.0]",0,Task-level hindsight impact,as-known state,latest state for same valid date/cell,0.0
+,0,State-binding hindsight impact,201,0,0.0
+,0,Claim decision change,frozen contract re-executed,same contract re-executed,0.0
+,0,Hindsight-enabled Claim,ABSTAIN,EXPRESSIBLE,0.0
+,0,RAI drift incidence,exact metric,final metric,0.0
+,0,GRS drift incidence,exact metric,final metric,0.0
+,0,GRCI drift incidence,exact metric,final metric,0.0

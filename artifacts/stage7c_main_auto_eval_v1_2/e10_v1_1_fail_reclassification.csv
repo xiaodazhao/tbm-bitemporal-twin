@@ -1,0 +1,7 @@
+old_statement_id,old_error_code,old_result,v1_2_result,v1_2_reason,binding_object_id,changed_due_to_v1_2_closure,statement_text
+stage7c_statement_64c6f32b75ee92bd13a94209,E10,FAIL,PASS,NONPROBABILISTIC_QUALIFIER_PRESENT,,true,GRCI和RAI指标未定义或无关联响应，不构成概率或因果估计
+stage7c_statement_e05699dd476702eb427788e4,E10,FAIL,PASS,NONPROBABILISTIC_QUALIFIER_PRESENT,,true,**指标使用提醒**：GRS=0.583仅表示该区段地质证据注意力较高，不构成风险概率
+stage7c_statement_9086345bd02b8a91eaa83341,E10,FAIL,PASS,NONPROBABILISTIC_QUALIFIER_PRESENT,,true,GRCI和RAI未定义或未关联，不构成概率或因果估计
+stage7c_statement_496c7ea35375dd7b186dfc59,E10,FAIL,PASS,NONPROBABILISTIC_QUALIFIER_PRESENT,,true,RAI 和 GRCI 均未定义或不可用，不构成概率或因果判断
+stage7c_statement_b057929da4bf8ee8ff9ee8a2,E10,FAIL,PASS,NONPROBABILISTIC_QUALIFIER_PRESENT,,true,该GRS仅反映证据关注度，不直接代表风险概率
+stage7c_statement_a18007b1402c1f0ca3a76430,E10,FAIL,PASS,NONPROBABILISTIC_QUALIFIER_PRESENT,,true,注意力指标（GRS、GRCI、RAI）仅为注意力指数，不能直接解释为风险概率

@@ -1,0 +1,59 @@
+{
+  "api_calls": 0,
+  "automatic_robustness_classification": "NOT_PERFORMED",
+  "deepseek_calls": 0,
+  "generated_at": "2026-08-29T12:00:00+08:00",
+  "hard_check_failure_count": 0,
+  "llm_calls": 0,
+  "method_version": "stage7f_sensitivity_execution_v1_1_final_interpretation",
+  "native_quality_gate_rows": [
+    {
+      "arm_id": "cell_size_m_5",
+      "daily_review_vs_forward_attention_conflicts": 0,
+      "daily_review_vs_local_background_conflicts": 0,
+      "execution_status": "SUCCESS",
+      "interpretation_scope": "SENSITIVITY_COMPARISON",
+      "interval_overlap_mismatch": 0,
+      "method_validity_status": "VALID_SENSITIVITY_ARM",
+      "native_quality_gate_status": "PASS",
+      "point_missing_or_duplicate": 0,
+      "scope_role_conflicts": 0,
+      "sensitivity_adapter_continued_execution": false
+    },
+    {
+      "arm_id": "stage7f_baseline",
+      "daily_review_vs_forward_attention_conflicts": 0,
+      "daily_review_vs_local_background_conflicts": 0,
+      "execution_status": "REUSED_FROZEN_BASELINE",
+      "interpretation_scope": "BASELINE",
+      "interval_overlap_mismatch": 0,
+      "method_validity_status": "VALID_BASELINE",
+      "native_quality_gate_status": "PASS",
+      "point_missing_or_duplicate": 0,
+      "scope_role_conflicts": 0,
+      "sensitivity_adapter_continued_execution": false
+    },
+    {
+      "arm_id": "cell_size_m_20",
+      "daily_review_vs_forward_attention_conflicts": 41,
+      "daily_review_vs_local_background_conflicts": 49,
+      "execution_status": "SUCCESS",
+      "interpretation_scope": "COARSE_RESOLUTION_STRESS_TEST",
+      "interval_overlap_mismatch": 76,
+      "method_validity_status": "COARSE_RESOLUTION_VALIDITY_BOUNDARY_EXCEEDED",
+      "native_quality_gate_status": "FAIL_RESOLUTION_VALIDITY",
+      "point_missing_or_duplicate": 23,
+      "scope_role_conflicts": 90,
+      "sensitivity_adapter_continued_execution": true
+    }
+  ],
+  "old_output_hash_mismatch_count": 0,
+  "old_output_listed_file_count": 518,
+  "recommended_summary": "stage7f_final_machine_summary.json",
+  "schema_version": "stage7f_sensitivity_final_interpretation.v1.1",
+  "scope": "METADATA_AND_INTERPRETATION_ONLY",
+  "source_stage7f_b_commit": "8d3c9254078ec95059966ce7b882462d94c64eb5",
+  "source_stage7f_b_hash_manifest_sha256": "4910dc92bfd8b823b1ae1b8047604e40343117a7594c59019609219c8187703b",
+  "source_stage7f_b_tag": "stage7f-sensitivity-execution-v1-frozen",
+  "status": "FROZEN"
+}

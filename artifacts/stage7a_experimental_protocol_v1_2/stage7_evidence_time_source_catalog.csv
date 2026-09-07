@@ -1,4 +1,0 @@
-availability_field,epistemic_field,evidence_family,notes,source_object_type,validity_field
-available_local_date or knowledge_available_local_date,epistemic_status,GEOLOGICAL_EVIDENCE,Availability is read from applicability assignments/revision applicability.,Stage2 GeologicalEvidence via Stage2D applicability,spatial_scope plus Stage3B materialized role
-available_time,evidence_type/channel_name,OPERATIONAL_RESPONSE_EVIDENCE,"Operational measurement evidence remains mechanical response, not geology.",Stage2E response_evidence,valid_time
-knowledge_time_start_local_date,nonprobabilistic attention metric status,STAGE4_ATTENTION_METRIC,RAI/GRS/GRCI are shared non-probabilistic attention-state metrics.,Stage4 state_rai/state_grs/state_grci,valid_date

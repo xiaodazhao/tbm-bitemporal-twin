@@ -1,0 +1,10 @@
+{
+  "api_calls": 0,
+  "generated_at": "2026-08-29T18:00:00+08:00",
+  "git_base_commit": "4eb234f242ed4dd281d52cf95a8a892ed35c1d91",
+  "method_version": "final_research_handoff_v1",
+  "modifies_frozen_results": false,
+  "operation": "READ_INDEX_SUMMARIZE_TRACE_ONLY",
+  "schema_version": "final_research_handoff.v1",
+  "uses_llm": false
+}

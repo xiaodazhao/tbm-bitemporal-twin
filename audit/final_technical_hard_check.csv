@@ -1,0 +1,9 @@
+check_name,status,details
+paper_expected_values_reconciled,PASS,True
+claim_decision_totals_close,PASS,True
+abstention_reasons_close,PASS,True
+frozen_hashes_close,PASS,True
+frozen_mapping_entry_count_is_44,PASS,True
+unmapped_values_entering_grs_input_is_zero,PASS,True
+mapping_perturbation_claim_migration_is_zero,PASS,True
+spatial_text_true_violation_is_zero,PASS,True

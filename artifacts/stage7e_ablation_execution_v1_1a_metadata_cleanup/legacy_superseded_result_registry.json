@@ -1,0 +1,6 @@
+{
+  "current_result_reference": "a3_corrected_strict_numeric_audit.numeric_drift",
+  "legacy_v1_numeric_result_reason": "UNICODE_WORD_BOUNDARY_TOKENIZER_FALSE_POSITIVE",
+  "legacy_v1_numeric_result_status": "SUPERSEDED_BY_V1_1_CORRECTED_NUMERIC_AUDIT",
+  "legacy_v1_reported_numeric_drift_count": 149
+}

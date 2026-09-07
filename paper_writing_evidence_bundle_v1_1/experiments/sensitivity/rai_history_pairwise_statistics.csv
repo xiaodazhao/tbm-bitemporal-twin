@@ -1,0 +1,9 @@
+alternative_arm_id,automatic_stability_classification,iqr_absolute_difference,median_absolute_difference,metric_name,paired_n,reason,spearman_rank_correlation,state_role,status,summary_statistic
+rai_history_min_samples_20,NOT_PERFORMED,0.0,0.0,GRCI,78,,0.9999999999999998,DAILY_REVIEW_CELL,EVALUATED,max
+rai_history_min_samples_20,NOT_PERFORMED,0.0,0.0,GRCI,78,,1.0,DAILY_REVIEW_CELL,EVALUATED,median
+rai_history_min_samples_20,NOT_PERFORMED,0.0,0.0,RAI,78,,1.0000000000000002,DAILY_REVIEW_CELL,EVALUATED,max
+rai_history_min_samples_20,NOT_PERFORMED,0.0,0.0,RAI,78,,1.0,DAILY_REVIEW_CELL,EVALUATED,median
+rai_history_min_samples_40,NOT_PERFORMED,0.0,0.0,GRCI,77,,1.0,DAILY_REVIEW_CELL,EVALUATED,max
+rai_history_min_samples_40,NOT_PERFORMED,0.0,0.0,GRCI,77,,0.9999999999999998,DAILY_REVIEW_CELL,EVALUATED,median
+rai_history_min_samples_40,NOT_PERFORMED,0.0,0.0,RAI,77,,1.0,DAILY_REVIEW_CELL,EVALUATED,max
+rai_history_min_samples_40,NOT_PERFORMED,0.0,0.0,RAI,77,,1.0,DAILY_REVIEW_CELL,EVALUATED,median

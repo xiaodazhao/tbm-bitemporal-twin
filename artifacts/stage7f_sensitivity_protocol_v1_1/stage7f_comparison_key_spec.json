@@ -1,0 +1,29 @@
+{
+  "cell_size_identity_warning": "cell_id and claim_id are resolution-dependent",
+  "claim_layer_a_key": [
+    "valid_date",
+    "claim_type",
+    "decision"
+  ],
+  "claim_layer_b_key": [
+    "valid_date",
+    "claim_type",
+    "state_role",
+    "epistemic_status",
+    "decision"
+  ],
+  "method_version": "stage7f_sensitivity_protocol_v1_1_metric_semantics_corrected",
+  "metric_pair_eligibility": "metric available in baseline and comparison arm",
+  "metric_pair_key": [
+    "valid_date",
+    "state_role",
+    "metric_name",
+    "summary_statistic"
+  ],
+  "prohibited_primary_keys": [
+    "cell_id",
+    "claim_id",
+    "state_version_id"
+  ],
+  "raw_cell_count_interpretation": "RESOLUTION_DEPENDENT_NOT_DIRECT_STABILITY_EVIDENCE"
+}

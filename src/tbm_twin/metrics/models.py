@@ -18,7 +18,7 @@ class Stage4A1Config(BaseModel):
     model_config = ConfigDict(frozen=True, extra="forbid")
 
     repo_root: Path
-    output_dir: Path = Path("artifacts/stage4a1_metric_foundation_v1_candidate")
+    output_dir: Path = Path("artifacts/stage4a1_metric_foundation_v1")
     config_path: Path = Path("configs/metric_foundation.yaml")
     stage3b_dir: Path = Path("artifacts/stage3b_bitemporal_epistemic_state_v1_1")
     stage3a_dir: Path = Path("artifacts/stage3a_initial_epistemic_state_v1_1")

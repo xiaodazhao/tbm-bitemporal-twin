@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A2_NO_ARCHITECTURAL_ABSTENTION",
+  "attempt_number": 1,
+  "completion_output_token_count": 175,
+  "execution_index": 196,
+  "finish_reason": "completed",
+  "latency_ms": 2276,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 833,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "0c3c83b1-fcec-4741-8912-509710cf0c8e",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676633.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676631.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "0c3c83b1-fcec-4741-8912-509710cf0c8e",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"section_id\": \"operational_attention\",\n  \"text\": \"截至2023-12-09，所涉及的空间单元（cell_18dcb188dff729ae040f264a、cell_74aee36f89ce05bc1be1552b、cell_63f0b623e1aa623002144e00）均无关联的施工机械响应，RAI（非概率性运行响应关注指标）不可用。\",\n  \"used_context_ids\": [\n    \"state_rai_41864b22d6f17b5d110e92a7\",\n    \"state_rai_89e7ec6c010247e912741873\",\n    \"state_rai_aa93e4759a270ab0c0cf39c8\"\n  ]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "419dd67d-f2ea-4239-aa62-3cced5d21191",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 833,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 175,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1008
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"section_id\": \"operational_attention\",\n  \"text\": \"截至2023-12-09，所涉及的空间单元（cell_18dcb188dff729ae040f264a、cell_74aee36f89ce05bc1be1552b、cell_63f0b623e1aa623002144e00）均无关联的施工机械响应，RAI（非概率性运行响应关注指标）不可用。\",\n  \"used_context_ids\": [\n    \"state_rai_41864b22d6f17b5d110e92a7\",\n    \"state_rai_89e7ec6c010247e912741873\",\n    \"state_rai_aa93e4759a270ab0c0cf39c8\"\n  ]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:50:33.362159+00:00",
+  "request_id": "stage7e_v1_2_request_f57ffbd6d2cce618049d2520",
+  "request_payload_hash": "f57ffbd6d2cce618049d25208a55719bc8c9461953caec51b23901d56302cb05",
+  "request_scope": "operational_attention",
+  "request_started_at": "2026-08-25T16:50:31.085371+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_010",
+  "total_token_count": 1008,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

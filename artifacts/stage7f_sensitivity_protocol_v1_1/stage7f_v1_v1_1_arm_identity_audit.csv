@@ -1,0 +1,8 @@
+arm_id,v1_present,v1_1_present,parameter_id_match,parameter_value_match,baseline_value_match,ofat_isolation_match,arm_hash_match,mismatch_fields,status
+stage7f_baseline,True,True,True,True,True,True,True,,PASS
+cell_size_m_5,True,True,True,True,True,True,True,,PASS
+cell_size_m_20,True,True,True,True,True,True,True,,PASS
+rai_history_min_samples_20,True,True,True,True,True,True,True,,PASS
+rai_history_min_samples_40,True,True,True,True,True,True,True,,PASS
+rai_saturation_robust_z_2,True,True,True,True,True,True,True,,PASS
+rai_saturation_robust_z_4,True,True,True,True,True,True,True,,PASS

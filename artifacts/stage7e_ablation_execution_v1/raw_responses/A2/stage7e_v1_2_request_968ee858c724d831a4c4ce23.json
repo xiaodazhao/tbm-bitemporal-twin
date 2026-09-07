@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A2_NO_ARCHITECTURAL_ABSTENTION",
+  "attempt_number": 1,
+  "completion_output_token_count": 72,
+  "execution_index": 189,
+  "finish_reason": "completed",
+  "latency_ms": 1531,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 392,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "80dd0394-4a20-4a4e-b7b9-ea05be6d15ff",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676615.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676613.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "80dd0394-4a20-4a4e-b7b9-ea05be6d15ff",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"section_id\": \"operational_attention\",\n  \"text\": \"截至2023-09-15，施工响应关注指标（RAI）不可用，原因为因果参考样本不足。\",\n  \"used_context_ids\": [\"state_rai_d2744c1aef743b4ca3f6edab\"]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "c694ae5e-2386-47bc-9e05-47237694980c",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 392,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 72,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 464
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"section_id\": \"operational_attention\",\n  \"text\": \"截至2023-09-15，施工响应关注指标（RAI）不可用，原因为因果参考样本不足。\",\n  \"used_context_ids\": [\"state_rai_d2744c1aef743b4ca3f6edab\"]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:50:15.104257+00:00",
+  "request_id": "stage7e_v1_2_request_968ee858c724d831a4c4ce23",
+  "request_payload_hash": "968ee858c724d831a4c4ce230cbd04914ab0196a1d17a27a65152f35cc153de4",
+  "request_scope": "operational_attention",
+  "request_started_at": "2026-08-25T16:50:13.573111+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_019",
+  "total_token_count": 464,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

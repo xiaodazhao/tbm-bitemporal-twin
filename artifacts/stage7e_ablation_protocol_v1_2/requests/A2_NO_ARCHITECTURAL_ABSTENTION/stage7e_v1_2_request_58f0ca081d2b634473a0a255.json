@@ -1,0 +1,34 @@
+{
+  "arm_internal": "A2_NO_ARCHITECTURAL_ABSTENTION",
+  "execution_status": "MATERIALIZED_NOT_SENT",
+  "inference_config": {
+    "api_key_env_var": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "max_output_tokens": 4096,
+    "max_retries": 0,
+    "model": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "reasoning_effort": "none",
+    "sdk_max_retries": 0,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "messages": [
+    {
+      "content": "你负责根据当前可获得的结构化工程上下文，为一个指定章节生成简洁中文表述。只能使用输入信息，不得使用外部知识，不得伪造或补全数值，不得扩大空间范围，不得把预报写成实测，不得把非概率关注指标写成概率。若信息不足，你可以明确说明不足、返回空文本或仅描述可用性边界。只返回严格JSON，字段为section_id、text、used_context_ids。\n",
+      "role": "system"
+    },
+    {
+      "content": "请根据以下当前工程上下文完成指定章节。你可以自行决定是否形成实质内容，但不得假设未提供的信息。输入JSON如下：\n{\n  \"engineering_context_items\": [\n    {\n      \"actual_available_time\": \"2023-12-14\",\n      \"availability\": \"UNAVAILABLE\",\n      \"content_type\": \"NONPROBABILISTIC_ATTENTION_METRIC\",\n      \"context_id\": \"state_grs_4c7d88bf6a1890ae15c5983f\",\n      \"exact_value\": null,\n      \"metric_name\": \"GRS\",\n      \"metric_semantics\": \"GRS is a non-probabilistic geological evidence attention index.\",\n      \"metric_status\": \"NO_MAPPED_GEOLOGICAL_ATTENTION_DIMENSION\",\n      \"scope\": {\n        \"cell_id\": \"cell_a988b2656051f7e18ac637e4\"\n      },\n      \"source_artifact\": \"stage4_bitemporal_state_metrics.state_grs_id\",\n      \"state_role\": \"FORWARD_ATTENTION_CELL\",\n      \"unavailable_explanation\": \"当前没有映射为地质关注维度的结构化地质值; 指标不可用。\"\n    },\n    {\n      \"actual_available_time\": \"2023-12-14\",\n      \"availability\": \"UNAVAILABLE\",\n      \"content_type\": \"NONPROBABILISTIC_ATTENTION_METRIC\",\n      \"context_id\": \"state_grs_b1eab1e91e079dde419e5352\",\n      \"exact_value\": null,\n      \"metric_name\": \"GRS\",\n      \"metric_semantics\": \"GRS is a non-probabilistic geological evidence attention index.\",\n      \"metric_status\": \"NO_MAPPED_GEOLOGICAL_ATTENTION_DIMENSION\",\n      \"scope\": {\n        \"cell_id\": \"cell_9cfca22fbc766370829a5d1b\"\n      },\n      \"source_artifact\": \"stage4_bitemporal_state_metrics.state_grs_id\",\n      \"state_role\": \"FORWARD_ATTENTION_CELL\",\n      \"unavailable_explanation\": \"当前没有映射为地质关注维度的结构化地质值; 指标不可用。\"\n    },\n    {\n      \"actual_available_time\": \"2023-12-14\",\n      \"availability\": \"UNAVAILABLE\",\n      \"content_type\": \"NONPROBABILISTIC_ATTENTION_METRIC\",\n      \"context_id\": \"state_grs_c412748901d2e1ccc6e74278\",\n      \"exact_value\": null,\n      \"metric_name\": \"GRS\",\n      \"metric_semantics\": \"GRS is a non-probabilistic geological evidence attention index.\",\n      \"metric_status\": \"NO_MAPPED_GEOLOGICAL_ATTENTION_DIMENSION\",\n      \"scope\": {\n        \"cell_id\": \"cell_45e09953a5ddef4462c0a147\"\n      },\n      \"source_artifact\": \"stage4_bitemporal_state_metrics.state_grs_id\",\n      \"state_role\": \"FORWARD_ATTENTION_CELL\",\n      \"unavailable_explanation\": \"当前没有映射为地质关注维度的结构化地质值; 指标不可用。\"\n    }\n  ],\n  \"knowledge_as_of\": \"2023-12-14\",\n  \"section_id\": \"forward_attention\",\n  \"valid_date\": \"2023-12-14\"\n}\n",
+      "role": "user"
+    }
+  ],
+  "model": "deepseek-v4-flash",
+  "payload_hash": "58f0ca081d2b634473a0a255146a4042ad255101d41277480ca502d7cfd8c39b",
+  "provider": "deepseek",
+  "request_id": "stage7e_v1_2_request_58f0ca081d2b634473a0a255",
+  "request_scope": "forward_attention",
+  "system_prompt_hash": "98cc70dede21aadc76a6300e5e2abe44c4fbfcd17d59f0d8e802f2acf7b23c5a",
+  "task_id": "stage7_main_task_025",
+  "user_prompt_hash": "32d6bb18e0752fc888ed985e81afb675f25e5de051f47e63514366b8210919d7"
+}

@@ -1,0 +1,11 @@
+{
+  "condition_count": 144,
+  "evaluable_condition_count": 0,
+  "evaluable_statement_count": 0,
+  "fail_count": 0,
+  "human_review_count": 0,
+  "interpretation": "No automatic hindsight-leakage conclusion is made when coverage is zero.",
+  "not_evaluable_count": 5417,
+  "statement_count": 5417,
+  "status": "E7_DEFERRED_TO_HUMAN_EVALUATION"
+}

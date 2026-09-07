@@ -1,0 +1,8 @@
+analysis_scope,endpoint,numerator,denominator,rate,interpretation
+48-task benchmark alignment,affected tasks,0,48,0.0,null alignment; benchmark tasks did not overlap revision events
+full revision census,revision events,53,53,1.0,complete Stage3B revision census
+full revision census,RAI changed,0,53,0.0,metric availability or value changed across authoritative revision pair
+full revision census,GRS changed,36,53,0.6792452830188679,metric availability or value changed across authoritative revision pair
+full revision census,GRCI changed,1,53,0.018867924528301886,metric availability or value changed across authoritative revision pair
+full revision census,events with existing Claim decision switch,27,53,0.5094339622641509,ABSTAIN_TO_EXPRESSIBLE occurred in 27 events
+full revision census,OPPORTUNITY_ADDED rows,540,975,0.5538461538461539,504 FORECAST + 36 OBSERVED geological opportunities

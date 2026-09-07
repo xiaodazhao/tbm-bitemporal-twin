@@ -1,0 +1,11 @@
+{
+  "api_call_count": 0,
+  "code_path_scanned": [
+    "src/tbm_twin/evaluation/stage7c.py",
+    "scripts/build_stage7c_main_auto_eval.py"
+  ],
+  "forbidden_token_findings": [],
+  "llm_judge_call_count": 0,
+  "stage7b_rerun_count": 0,
+  "status": "PASS"
+}

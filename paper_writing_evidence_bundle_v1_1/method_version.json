@@ -1,0 +1,18 @@
+{
+  "bundle_name": "paper_writing_evidence_bundle_v1_1",
+  "method_version": "paper_writing_evidence_bundle_v1_1_writer_facing_table_clarification",
+  "source_bundle_tag": "paper-writing-evidence-bundle-v1-frozen",
+  "source_bundle_commit": "8f70768f877acc81e3b021ae3b0f77decf8fe2f2",
+  "source_handoff_tag": "final-research-handoff-v1-frozen",
+  "source_handoff_commit": "e63267813775f9464475ecc888941c02ed3124fc",
+  "target_journal": "Advanced Engineering Informatics",
+  "generated_at": "2026-08-29T16:39:52+08:00",
+  "new_experiments": 0,
+  "api_or_llm_calls": 0,
+  "human_evaluation_programs_deferred": 2,
+  "correction_scope": "WRITER_FACING_TABLE_FIGURE_AND_DENOMINATOR_METADATA_ONLY",
+  "experiment_results_changed": false,
+  "canonical_result_registry_entries": 387,
+  "hard_check_count": 31,
+  "hard_check_failure_count": 0
+}

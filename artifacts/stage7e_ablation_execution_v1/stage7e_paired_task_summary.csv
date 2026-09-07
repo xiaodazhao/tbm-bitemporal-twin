@@ -1,0 +1,5 @@
+comparison,denominator_definition,p_valid_count,primary_denominator,treatment_valid_count
+A2_VS_P,A2_AFFECTED_TASKS,24,24,24
+A3_VS_P,COMMON_P_VALID_TASKS,45,45,32
+A4_VS_P,COMMON_P_VALID_TASKS,45,45,45
+A4_ON_P_NO_OUTPUT,P_NO_OUTPUT_TASKS_022_026_042,0,3,3

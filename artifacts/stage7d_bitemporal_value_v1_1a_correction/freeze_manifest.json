@@ -1,0 +1,22 @@
+{
+  "api_call_count": 0,
+  "correction_type": "DOCUMENTATION_AND_DERIVED_DESCRIPTIVE_SUPPLEMENT_ONLY",
+  "counts": {
+    "abstain_to_expressible": 27,
+    "added_abstain": 86,
+    "added_expressible": 454,
+    "forecast_added": 504,
+    "observed_added": 36,
+    "opportunity_added": 540,
+    "transition_rows": 975
+  },
+  "generated_at": "2026-08-25T20:00:00+08:00",
+  "hard_check_failure_count": 0,
+  "llm_call_count": 0,
+  "method_version": "stage7d_bitemporal_value_v1_1a_method_correction",
+  "source_commit": "0dfb31d15717f6ff76d434c5496d7bb577dc687c",
+  "source_result_files_modified": 0,
+  "source_tag": "stage7d-bitemporal-value-v1.1-frozen",
+  "source_tree_hash": "736dfd176cb6db4852bb04576624b499ceca9a483f88f730728b3aedfec71aa5",
+  "status": "FROZEN"
+}

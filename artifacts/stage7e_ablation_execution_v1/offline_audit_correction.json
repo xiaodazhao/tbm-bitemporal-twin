@@ -1,0 +1,26 @@
+{
+  "actual_api_attempt_count_after": 226,
+  "actual_api_attempt_count_before": 226,
+  "attempt_manifest_sha256_after": "da88578a1af7be7c4184b5812a628134744f42a1bc5c9215d0e66e5a40279722",
+  "attempt_manifest_sha256_before": "da88578a1af7be7c4184b5812a628134744f42a1bc5c9215d0e66e5a40279722",
+  "corrections": [
+    {
+      "after": "FINAL_EXECUTION_SUMMARY_WITH_226_ATTEMPTS",
+      "before": "STALE_PREFLIGHT_SUMMARY_WITH_0_ATTEMPTS",
+      "issue_code": "RUN_SUMMARY_NOT_REFRESHED_AT_FINALIZE"
+    },
+    {
+      "after": "SECTION_USED_FACTLOCK_SCOPE_UNION",
+      "before": "EACH_FACTLOCK_SCOPE_AGAINST_FULL_MULTI_FACTLOCK_SECTION",
+      "issue_code": "A4_MULTI_SCOPE_SECTION_FALSE_POSITIVE"
+    }
+  ],
+  "new_api_request_count": 0,
+  "new_semantic_replay_hash": "af2156d1182592fc167224ba6c65271dc57f6610f2bf43367ffe8f30599d2b81",
+  "old_semantic_replay_hash": "386c9d7c47ca46391f01e1b3fce8a784e7adbef71679c96f5f31f904a7a2bda5",
+  "raw_response_count_after": 226,
+  "raw_response_count_before": 226,
+  "raw_response_tree_sha256_after": "8741c9dd57a1720e58520d49167267cc982daa29460d8282755178aba0a441bf",
+  "raw_response_tree_sha256_before": "8741c9dd57a1720e58520d49167267cc982daa29460d8282755178aba0a441bf",
+  "replay_mode": "NO_API_OFFLINE_REPLAY"
+}

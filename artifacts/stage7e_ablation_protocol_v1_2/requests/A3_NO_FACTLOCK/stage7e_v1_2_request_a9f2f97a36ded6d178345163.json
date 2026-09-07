@@ -1,0 +1,35 @@
+{
+  "arm_internal": "A3_NO_FACTLOCK",
+  "chunk_id": "a3_chunk_34e67725e5401c73fe08bc6c",
+  "execution_status": "MATERIALIZED_NOT_SENT",
+  "inference_config": {
+    "api_key_env_var": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "max_output_tokens": 4096,
+    "max_retries": 0,
+    "model": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "reasoning_effort": "none",
+    "sdk_max_retries": 0,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "messages": [
+    {
+      "content": "你负责把给定的结构化工程Claim逐条写成中文工程句子。每个输入claim_id必须恰好返回一次，不得增加、删除、合并或替换claim_id，不得形成章节叙事，不得使用外部知识。忠实保持给定值、已验证单位、空间范围、认识性质、状态角色和非概率限定。只返回严格JSON，字段为realizations；每项包含claim_id与sentence。\n",
+      "role": "system"
+    },
+    {
+      "content": "请依照给定顺序逐条表达以下结构化工程Claim，并保持claim_id一一对应。输入JSON如下：\n{\n  \"chunk_index\": 1,\n  \"claims\": [\n    {\n      \"claim_id\": \"typed_claim_086bc62d8d6f3dc110b1f46f\",\n      \"claim_type\": \"GEOLOGICAL_EVIDENCE_ATTENTION_REVIEW\",\n      \"claim_value\": \"{\\\"is_causal_estimate\\\":false,\\\"is_hazard_probability\\\":false,\\\"is_probability\\\":false,\\\"metric_name\\\":\\\"GRS\\\",\\\"metric_semantics\\\":\\\"GEOLOGICAL_EVIDENCE_ATTENTION_INDEX\\\",\\\"metric_status\\\":\\\"AVAILABLE\\\",\\\"metric_value\\\":0.5416666666666666,\\\"source_metric_id\\\":\\\"state_grs_6bbfd23859f4047f8afeca1f\\\"}\",\n      \"epistemic_status\": \"\",\n      \"nonprobabilistic_qualifier\": \"NONPROBABILISTIC_ATTENTION\",\n      \"order_index\": 8,\n      \"section_id\": \"geological_attention\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":\\\"cell_cb5a81a7ae16ac1f806d2b6b\\\",\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"stage5b_bitemporal_state_subject\\\",\\\"scope_kind\\\":\\\"CELL\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":\\\"DAILY_REVIEW_CELL\\\",\\\"valid_date\\\":\\\"2023-12-06\\\"}\",\n      \"support_summary\": \"state_grs_6bbfd23859f4047f8afeca1f\",\n      \"unit_verified\": false\n    },\n    {\n      \"claim_id\": \"typed_claim_f1c9967fa1c74a2571e85dc9\",\n      \"claim_type\": \"COUPLED_ATTENTION_REVIEW\",\n      \"claim_value\": \"{\\\"is_causal_estimate\\\":false,\\\"is_hazard_probability\\\":false,\\\"is_probability\\\":false,\\\"metric_name\\\":\\\"GRCI\\\",\\\"metric_semantics\\\":\\\"NONPROBABILISTIC_CONJUNCTIVE_PRODUCT\\\",\\\"metric_status\\\":\\\"AVAILABLE\\\",\\\"metric_value\\\":0.21968092622536187,\\\"source_metric_id\\\":\\\"state_grci_6bbfd23859f4047f8afeca1f\\\"}\",\n      \"epistemic_status\": \"\",\n      \"nonprobabilistic_qualifier\": \"NONPROBABILISTIC_ATTENTION\",\n      \"order_index\": 9,\n      \"section_id\": \"coupled_attention\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":\\\"cell_cb5a81a7ae16ac1f806d2b6b\\\",\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"stage5b_bitemporal_state_subject\\\",\\\"scope_kind\\\":\\\"CELL\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":\\\"DAILY_REVIEW_CELL\\\",\\\"valid_date\\\":\\\"2023-12-06\\\"}\",\n      \"support_summary\": \"state_grci_6bbfd23859f4047f8afeca1f\",\n      \"unit_verified\": false\n    }\n  ],\n  \"product_type\": \"daily_review\"\n}\n",
+      "role": "user"
+    }
+  ],
+  "model": "deepseek-v4-flash",
+  "payload_hash": "a9f2f97a36ded6d178345163d71d3abfcd8d4bff792324c0a95b06b0c06dcb47",
+  "provider": "deepseek",
+  "request_id": "stage7e_v1_2_request_a9f2f97a36ded6d178345163",
+  "request_scope": "chunk_001",
+  "system_prompt_hash": "061f8dd0116a0b38c0bec8107bddf6ca718709eeb899cdeed733989bc1d810d2",
+  "task_id": "stage7_main_task_040",
+  "user_prompt_hash": "fa25e95f9ca2d87a348a6ff969956ac0794cbf136342ff5a39946f3f5269639a"
+}

@@ -1,0 +1,33 @@
+{
+  "api_calls": 0,
+  "arms": {
+    "EXACT_AS_OF": "knowledge_time_start <= K and (knowledge_time_end is null or K < end)",
+    "FINAL_HISTORY": "maximum authoritative version_number for the same valid_date and cell"
+  },
+  "benchmark_task_count": 48,
+  "bootstrap_iterations": 10000,
+  "bootstrap_seed": 2026082503,
+  "claim_pairing": "Approved Stage5C logical key semantics; version wrappers and metric IDs excluded",
+  "claim_pipeline": "Stage5B opportunity discovery + proposal construction + Stage5A contract evaluator re-executed independently for each arm",
+  "corpus_analysis": "DESCRIPTIVE_SECONDARY_SINGLE_PROJECT",
+  "experiment_name": "Stage7D Bitemporal Value Experiment",
+  "fixed_across_arms": [
+    "valid_date",
+    "cell_id",
+    "product_type",
+    "state_role",
+    "spatial_governance",
+    "metric_implementation",
+    "claim_contract",
+    "claim_admissibility_code",
+    "normalization",
+    "thresholds",
+    "configs"
+  ],
+  "generated_at": "2026-08-25T17:00:00+08:00",
+  "llm_calls": 0,
+  "method_version": "stage7d_bitemporal_value_v1",
+  "primary_unit": "FROZEN_STAGE7A_BENCHMARK_TASK",
+  "schema_version": "stage7d_bitemporal_value.v1",
+  "single_changed_variable": "KNOWLEDGE_TIME_FILTERING"
+}

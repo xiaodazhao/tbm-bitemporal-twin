@@ -1,0 +1,25 @@
+{
+  "api_call_count": 0,
+  "claim_contract_changed": false,
+  "frozen_input_manifest_hashes": {
+    "stage3a": "07e327a9159d28e5da4398907671d3b6e2914e59714b2beb1ad3734ecdb7ceeb",
+    "stage3b": "2c8c8b8487b08f2d62d4630015cb17aaef2f6a3ca567613626862f8968f77578",
+    "stage4": "4ea7331e9a0ce3c49888adee2ba715cd7e5538399fb91a3006a1d9ef857fd12a",
+    "stage5b": "0ad4089e2b5c202260bbd68722cf961e9ebb949ae99021a0de51786e15df289b",
+    "stage7a": "6139a383c8c6b26d6001dda02d65bfe0ef1cb79fbf8dc351ed902e4a27f0d78b"
+  },
+  "generated_at": "2026-08-25T17:00:00+08:00",
+  "knowledge_time_ablation_only": true,
+  "method_version": "stage7d_bitemporal_value_v1",
+  "metric_formula_changed": false,
+  "schema_version": "stage7d_bitemporal_value.v1",
+  "spatial_rule_changed": false,
+  "stage3b_method": "stage3b_bitemporal_epistemic_state_v1_1_strict_trace",
+  "stage4_method": "stage4_bitemporal_state_metrics_v1_1_trace_frozen",
+  "stage5a_method": "stage5a_typed_claim_contract_v1_1_frozen",
+  "stage5b_method": "stage5b_deterministic_claim_builder_v1_frozen",
+  "stage7a_commit": "6007afe7c1b1228d6638503afeba979ee2f66878",
+  "stage7a_method": "stage7a_experimental_protocol_v1_3_exact_asof_binding",
+  "stage7a_tag": "stage7a-experimental-protocol-v1.3-frozen",
+  "uses_llm": false
+}

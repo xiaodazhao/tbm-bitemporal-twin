@@ -1,0 +1,26 @@
+check_name,details,status
+protocol_preflight,PASS,PASS
+protocol_tag_unchanged,0976e125dfd9781e770dc4587337e976984ea2b2,PASS
+planned_requests_226,226,PASS
+actual_attempts_226,226,PASS
+unique_request_ids_226,226,PASS
+one_attempt_per_frozen_request,226,PASS
+attempt_arm_counts,"{'A3_NO_FACTLOCK': 147, 'A4_FREE_FINAL_REALIZATION': 48, 'A2_NO_ARCHITECTURAL_ABSTENTION': 31}",PASS
+no_a1_attempt,0,PASS
+no_p_attempt,0,PASS
+retry_count_zero,0,PASS
+raw_response_record_preserved,0,PASS
+provider_response_ids_unique,"{'successful_transport_count': 226, 'provider_response_id_count': 226, 'unique_provider_response_id_count': 226}",PASS
+a2_request_count_31,31,PASS
+a2_affected_tasks_24,24,PASS
+a2_non_target_p_identity,0,PASS
+a3_request_count_147,147,PASS
+a3_expected_claims_989,989,PASS
+a3_p_plan_reuse,45,PASS
+a4_request_count_48,48,PASS
+a4_expected_factlocks_1022,1022,PASS
+a4_scope_section_audit_complete,153,PASS
+model_text_not_rewritten,0,PASS
+human_semantic_labels_not_generated,0,PASS
+deterministic_replay,0,PASS
+stage7e_a_hashes_unchanged,0,PASS

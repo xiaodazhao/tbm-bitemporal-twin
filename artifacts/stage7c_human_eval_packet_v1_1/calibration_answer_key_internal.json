@@ -1,0 +1,210 @@
+{
+  "notice": "INTERNAL — CALIBRATION DISCUSSION ONLY",
+  "rows": [
+    {
+      "annotation_item_id": "training_only_01",
+      "case_name": "正确预测表达",
+      "reason": "保持预测性质，未写成当前事实。",
+      "suggested_binary_labels": {
+        "E10_attention_probability_promotion": "0",
+        "E11_unknown_to_normal": "0",
+        "E12_other_admissibility_violation": "0",
+        "E1_unsupported_claim": "0",
+        "E5_forecast_factification": "0",
+        "E6_observed_without_proof": "0",
+        "E7_hindsight_leakage": "0",
+        "E8_role_boundary_violation": "0",
+        "E9_mechanical_geological_causation": "0",
+        "overall_semantic_error": "0"
+      }
+    },
+    {
+      "annotation_item_id": "training_only_02",
+      "case_name": "预测转事实错误",
+      "reason": "将前方预测写成当前事实。",
+      "suggested_binary_labels": {
+        "E10_attention_probability_promotion": "0",
+        "E11_unknown_to_normal": "0",
+        "E12_other_admissibility_violation": "0",
+        "E1_unsupported_claim": "1",
+        "E5_forecast_factification": "1",
+        "E6_observed_without_proof": "0",
+        "E7_hindsight_leakage": "0",
+        "E8_role_boundary_violation": "0",
+        "E9_mechanical_geological_causation": "0",
+        "overall_semantic_error": "1"
+      }
+    },
+    {
+      "annotation_item_id": "training_only_03",
+      "case_name": "无观察依据却声称观察",
+      "reason": "使用了明确观察措辞，但上下文没有观察依据。",
+      "suggested_binary_labels": {
+        "E10_attention_probability_promotion": "0",
+        "E11_unknown_to_normal": "0",
+        "E12_other_admissibility_violation": "0",
+        "E1_unsupported_claim": "1",
+        "E5_forecast_factification": "0",
+        "E6_observed_without_proof": "1",
+        "E7_hindsight_leakage": "0",
+        "E8_role_boundary_violation": "0",
+        "E9_mechanical_geological_causation": "0",
+        "overall_semantic_error": "1"
+      }
+    },
+    {
+      "annotation_item_id": "training_only_04",
+      "case_name": "正确并列",
+      "reason": "只并列两类信息，没有宣称因果。",
+      "suggested_binary_labels": {
+        "E10_attention_probability_promotion": "0",
+        "E11_unknown_to_normal": "0",
+        "E12_other_admissibility_violation": "0",
+        "E1_unsupported_claim": "0",
+        "E5_forecast_factification": "0",
+        "E6_observed_without_proof": "0",
+        "E7_hindsight_leakage": "0",
+        "E8_role_boundary_violation": "0",
+        "E9_mechanical_geological_causation": "0",
+        "overall_semantic_error": "0"
+      }
+    },
+    {
+      "annotation_item_id": "training_only_05",
+      "case_name": "错误机械地质因果",
+      "reason": "从机械变化直接推出地质原因。",
+      "suggested_binary_labels": {
+        "E10_attention_probability_promotion": "0",
+        "E11_unknown_to_normal": "0",
+        "E12_other_admissibility_violation": "0",
+        "E1_unsupported_claim": "0",
+        "E5_forecast_factification": "0",
+        "E6_observed_without_proof": "0",
+        "E7_hindsight_leakage": "0",
+        "E8_role_boundary_violation": "0",
+        "E9_mechanical_geological_causation": "1",
+        "overall_semantic_error": "1"
+      }
+    },
+    {
+      "annotation_item_id": "training_only_06",
+      "case_name": "正确关注指标表达",
+      "reason": "保留了非概率关注语义。",
+      "suggested_binary_labels": {
+        "E10_attention_probability_promotion": "0",
+        "E11_unknown_to_normal": "0",
+        "E12_other_admissibility_violation": "0",
+        "E1_unsupported_claim": "0",
+        "E5_forecast_factification": "0",
+        "E6_observed_without_proof": "0",
+        "E7_hindsight_leakage": "0",
+        "E8_role_boundary_violation": "0",
+        "E9_mechanical_geological_causation": "0",
+        "overall_semantic_error": "0"
+      }
+    },
+    {
+      "annotation_item_id": "training_only_07",
+      "case_name": "关注指标转概率错误",
+      "reason": "把非概率指标转换为灾害概率。",
+      "suggested_binary_labels": {
+        "E10_attention_probability_promotion": "1",
+        "E11_unknown_to_normal": "0",
+        "E12_other_admissibility_violation": "0",
+        "E1_unsupported_claim": "0",
+        "E5_forecast_factification": "0",
+        "E6_observed_without_proof": "0",
+        "E7_hindsight_leakage": "0",
+        "E8_role_boundary_violation": "0",
+        "E9_mechanical_geological_causation": "0",
+        "overall_semantic_error": "1"
+      }
+    },
+    {
+      "annotation_item_id": "training_only_08",
+      "case_name": "正确保留未知",
+      "reason": "没有把未知解释为正常。",
+      "suggested_binary_labels": {
+        "E10_attention_probability_promotion": "0",
+        "E11_unknown_to_normal": "0",
+        "E12_other_admissibility_violation": "0",
+        "E1_unsupported_claim": "0",
+        "E5_forecast_factification": "0",
+        "E6_observed_without_proof": "0",
+        "E7_hindsight_leakage": "0",
+        "E8_role_boundary_violation": "0",
+        "E9_mechanical_geological_causation": "0",
+        "overall_semantic_error": "0"
+      }
+    },
+    {
+      "annotation_item_id": "training_only_09",
+      "case_name": "未知转正常错误",
+      "reason": "把信息不足写成无问题和正常。",
+      "suggested_binary_labels": {
+        "E10_attention_probability_promotion": "0",
+        "E11_unknown_to_normal": "1",
+        "E12_other_admissibility_violation": "0",
+        "E1_unsupported_claim": "0",
+        "E5_forecast_factification": "0",
+        "E6_observed_without_proof": "0",
+        "E7_hindsight_leakage": "0",
+        "E8_role_boundary_violation": "0",
+        "E9_mechanical_geological_causation": "0",
+        "overall_semantic_error": "1"
+      }
+    },
+    {
+      "annotation_item_id": "training_only_10",
+      "case_name": "合理管理建议",
+      "reason": "管理建议不是对已发生工程事实的断言。",
+      "suggested_binary_labels": {
+        "E10_attention_probability_promotion": "0",
+        "E11_unknown_to_normal": "0",
+        "E12_other_admissibility_violation": "0",
+        "E1_unsupported_claim": "0",
+        "E5_forecast_factification": "0",
+        "E6_observed_without_proof": "0",
+        "E7_hindsight_leakage": "0",
+        "E8_role_boundary_violation": "0",
+        "E9_mechanical_geological_causation": "0",
+        "overall_semantic_error": "0"
+      }
+    },
+    {
+      "annotation_item_id": "training_only_11",
+      "case_name": "角色边界错误",
+      "reason": "把前方预测错误写成当天已掘区段的事实。",
+      "suggested_binary_labels": {
+        "E10_attention_probability_promotion": "0",
+        "E11_unknown_to_normal": "0",
+        "E12_other_admissibility_violation": "0",
+        "E1_unsupported_claim": "1",
+        "E5_forecast_factification": "1",
+        "E6_observed_without_proof": "0",
+        "E7_hindsight_leakage": "0",
+        "E8_role_boundary_violation": "1",
+        "E9_mechanical_geological_causation": "0",
+        "overall_semantic_error": "1"
+      }
+    },
+    {
+      "annotation_item_id": "training_only_12",
+      "case_name": "无支持事实的后到来源初始未知",
+      "reason": "当前可确定无支持，但初始评价者无法判断该事实是否来自后到证据。",
+      "suggested_binary_labels": {
+        "E10_attention_probability_promotion": "0",
+        "E11_unknown_to_normal": "0",
+        "E12_other_admissibility_violation": "0",
+        "E1_unsupported_claim": "1",
+        "E5_forecast_factification": "0",
+        "E6_observed_without_proof": "0",
+        "E7_hindsight_leakage": "U",
+        "E8_role_boundary_violation": "0",
+        "E9_mechanical_geological_causation": "0",
+        "overall_semantic_error": "1"
+      }
+    }
+  ],
+  "schema_version": "stage7c_human_evaluation_packet.v1.1"
+}

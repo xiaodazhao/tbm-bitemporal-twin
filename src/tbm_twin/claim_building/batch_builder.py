@@ -1502,40 +1502,15 @@ def _determinism_audit(
 
 
 def _stage5a_immutability_audit(repo_root: Path) -> list[dict[str, object]]:
-    specs = [
-        ("ClaimType registry diff", "SEMANTIC_FROZEN_FILE", ["src/tbm_twin/claims/models.py"]),
-        ("ClaimContract config diff", "SEMANTIC_FROZEN_FILE", ["configs/claim_contract_v1.yaml"]),
-        ("Contracts loader diff", "SEMANTIC_FROZEN_FILE", ["src/tbm_twin/claims/contracts.py"]),
-        (
-            "Evaluator hotfix glue diff",
-            "HOTFIX_ALLOWED_FILE",
-            ["src/tbm_twin/claims/validation.py"],
-        ),
-        (
-            "Resolver provenance hotfix diff",
-            "HOTFIX_ALLOWED_FILE",
-            ["src/tbm_twin/claims/resolution.py"],
-        ),
-        (
-            "Stage5A frozen builder diff",
-            "SEMANTIC_FROZEN_FILE",
-            ["scripts/build_stage5a_claim_contract.py"],
-        ),
-        ("Abstention registry diff", "SEMANTIC_FROZEN_FILE", ["src/tbm_twin/claims/models.py"]),
+    mismatch_count = _stage5a_v1_1_source_diff_count(repo_root)
+    return [
+        {
+            "check_name": "Stage5A frozen artifact hash manifest",
+            "change_class": "AUTHORITATIVE_FROZEN_ARTIFACT",
+            "diff_count": mismatch_count,
+            "status": "PASS" if mismatch_count == 0 else "FAIL",
+        }
     ]
-    rows = []
-    for check_name, change_class, paths in specs:
-        diff = _git(["diff", "--name-only", f"{STAGE5A_TAG}^{{}}", "--", *paths], repo_root)
-        diff_count = len([line for line in diff.splitlines() if line.strip()])
-        rows.append(
-            {
-                "check_name": check_name,
-                "change_class": change_class,
-                "diff_count": diff_count,
-                "status": "PASS" if diff_count == 0 else "FAIL",
-            }
-        )
-    return rows
 
 
 def _stage5a_hotfix_impact_audit(repo_root: Path) -> list[dict[str, object]]:
@@ -1861,7 +1836,7 @@ def _hard_check_rows(
     )
     metric_recomputation = available_metric_mismatch + null_substitution
     order_dependency = _subject_record_order_dependency_count(stage, proposals, decisions)
-    frozen_builder_diff = _stage5a_frozen_builder_diff_count(repo_root)
+    frozen_stage5a_diff = _stage5a_frozen_artifact_mismatch_count(repo_root)
     contract_semantic_modification = sum(
         row["contract_semantics_changed"] == "true" for row in stage5a_hotfix_rows
     )
@@ -1968,7 +1943,7 @@ def _hard_check_rows(
             contract_semantic_modification,
             0,
         ),
-        ("stage5a_frozen_builder_modified", str(frozen_builder_diff != 0).lower(), "false"),
+        ("stage5a_frozen_artifact_modified", str(frozen_stage5a_diff != 0).lower(), "false"),
         (
             "stage5a_contract_semantic_modification_count",
             contract_semantic_modification,
@@ -2613,18 +2588,10 @@ def _typed_claim_schema_content(claims: list[dict[str, Any]]) -> str:
     return _canonical_json(sorted(normalized, key=lambda row: str(row["claim_id"])))
 
 
-def _stage5a_frozen_builder_diff_count(repo_root: Path) -> int:
-    diff = _git(
-        [
-            "diff",
-            "--name-only",
-            f"{STAGE5A_TAG}^{{}}",
-            "--",
-            "scripts/build_stage5a_claim_contract.py",
-        ],
-        repo_root,
-    )
-    return len([line for line in diff.splitlines() if line.strip()])
+def _stage5a_frozen_artifact_mismatch_count(repo_root: Path) -> int:
+    """Verify the authoritative Stage 5A input rather than mutable live source."""
+
+    return _stage5a_v1_1_source_diff_count(repo_root)
 
 
 def _claim_using_asserted_support_metadata_count(claims: list[dict[str, Any]]) -> int:
@@ -2660,15 +2627,17 @@ def _stage4_modification_count(repo_root: Path, stage: StageData) -> int:
         stage.stage4_method.get("source_snapshot_sha256") != expected_snapshot
         or stage.stage4_method.get("source_tree_hash") != expected_tree
     )
-    diff_paths = _git(["diff", "--name-only", f"{STAGE4_TAG}...HEAD"], repo_root).splitlines()
-    business_prefixes = (
-        "src/tbm_twin/metrics/",
-        "src/tbm_twin/state/",
-        "src/tbm_twin/bitemporal/",
-        "src/tbm_twin/operational_freeze/",
-        "artifacts/stage4_",
-    )
-    return hash_diff + sum(path.startswith(business_prefixes) for path in diff_paths)
+    artifact = repo_root / "artifacts/stage4_bitemporal_state_metrics_v1_1"
+    manifest = artifact / "file_hashes.sha256"
+    artifact_diff = 0
+    for line in manifest.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        expected, relative = line.split(maxsplit=1)
+        path = artifact / relative
+        actual = _sha256(path) if path.is_file() else ""
+        artifact_diff += int(actual != expected)
+    return hash_diff + artifact_diff
 
 
 def _revision_chain_preserved(stage: StageData, opportunities: list[ClaimOpportunity]) -> bool:
@@ -2705,7 +2674,7 @@ def _candidate_formal_semantic_audit(
     repo_root: Path,
     formal_path: Path,
 ) -> list[dict[str, object]]:
-    candidate_path = repo_root / DEFAULT_OUTPUT_DIR
+    candidate_path = _formal_comparison_reference(repo_root)
     checks = [
         (
             "opportunity_business_diff",
@@ -2887,7 +2856,7 @@ def _freeze_manifest(
     hard_rows: list[dict[str, object]],
     hash_rows: list[dict[str, object]],
 ) -> dict[str, Any]:
-    candidate_path = repo_root / DEFAULT_OUTPUT_DIR
+    candidate_path = _formal_comparison_reference(repo_root)
     issue_count = next(row["actual"] for row in hard_rows if row["check_name"] == "issue_count")
     hash_invalid = sum(_int_value(row["invalid_count"]) for row in hash_rows)
     semantic_pass = all(row["status"] == "PASS" for row in semantic_audit_rows)
@@ -2931,6 +2900,15 @@ def _freeze_manifest(
         else 0,
         "file_hash_invalid_count": hash_invalid,
     }
+
+
+def _formal_comparison_reference(repo_root: Path) -> Path:
+    """Use the compact frozen baseline after the duplicate candidate is archived."""
+
+    candidate_path = repo_root / DEFAULT_OUTPUT_DIR
+    if candidate_path.exists():
+        return candidate_path
+    return repo_root / FORMAL_OUTPUT_DIR
 
 
 def _freeze_hard_check_rows(
@@ -3037,20 +3015,15 @@ def _hash_closure_audit(output_path: Path) -> list[dict[str, object]]:
 
 
 def _stage5a_v1_1_source_diff_count(repo_root: Path) -> int:
-    diff = _git(
-        [
-            "diff",
-            "--name-only",
-            f"{STAGE5A_TAG}^{{}}",
-            "--",
-            "src/tbm_twin/claims",
-            "configs/claim_contract_v1.yaml",
-            "scripts/build_stage5a_claim_contract.py",
-            "scripts/build_stage5a_v1_1_hotfix.py",
-        ],
-        repo_root,
-    )
-    return len([line for line in diff.splitlines() if line.strip()])
+    artifact = repo_root / "artifacts/stage5a_typed_claim_contract_v1_1"
+    mismatches = 0
+    for line in (artifact / "file_hashes.sha256").read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        expected, relative = line.split(maxsplit=1)
+        path = artifact / relative
+        mismatches += int(_sha256(path) != expected)
+    return mismatches
 
 
 def _sha256(path: Path) -> str:

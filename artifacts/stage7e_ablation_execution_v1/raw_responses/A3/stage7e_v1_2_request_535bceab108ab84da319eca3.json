@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A3_NO_FACTLOCK",
+  "attempt_number": 1,
+  "completion_output_token_count": 511,
+  "execution_index": 181,
+  "finish_reason": "completed",
+  "latency_ms": 3729,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 2559,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "b884f15c-2693-4047-a9cd-21606246dc9f",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676596.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676592.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "b884f15c-2693-4047-a9cd-21606246dc9f",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"realizations\": [\n    {\n      \"claim_id\": \"typed_claim_cf6c111578afaba6ab8c597e\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，岩性为板岩夹变质砂岩。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_0c71e478231956872d406991\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，该段围岩较前段变差，岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育密集，岩体破碎-极破碎，围岩整体稳定性差。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_138582386dd270ba4d73ca57\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，围岩风化程度为弱风化。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_14aa1f46903101cd2c61377d\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，异常等级为中等。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_57c9625bc37f72d872a9fbe3\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，节理裂隙发育密集。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_b410e57e83105e149f0d65b0\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，建议围岩级别为Ⅳ级。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_4228d9e9a71268443e9f8a3b\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，里程+886、+905、+910、+919附近有掉块风险。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_465a0d2ea32b68cdd61daa6c\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，岩体状态为破碎-极破碎。\"\n    }\n  ]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "794e871d-c69a-4b3c-be1e-6dee45da9d97",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 2559,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 511,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3070
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"realizations\": [\n    {\n      \"claim_id\": \"typed_claim_cf6c111578afaba6ab8c597e\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，岩性为板岩夹变质砂岩。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_0c71e478231956872d406991\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，该段围岩较前段变差，岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育密集，岩体破碎-极破碎，围岩整体稳定性差。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_138582386dd270ba4d73ca57\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，围岩风化程度为弱风化。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_14aa1f46903101cd2c61377d\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，异常等级为中等。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_57c9625bc37f72d872a9fbe3\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，节理裂隙发育密集。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_b410e57e83105e149f0d65b0\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，建议围岩级别为Ⅳ级。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_4228d9e9a71268443e9f8a3b\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，里程+886、+905、+910、+919附近有掉块风险。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_465a0d2ea32b68cdd61daa6c\",\n      \"sentence\": \"预测在里程1013886至1013922区间内，岩体状态为破碎-极破碎。\"\n    }\n  ]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:49:56.157552+00:00",
+  "request_id": "stage7e_v1_2_request_535bceab108ab84da319eca3",
+  "request_payload_hash": "535bceab108ab84da319eca3fc55efff8680a93fdea3df52d034eaaecb2dbf65",
+  "request_scope": "chunk_000",
+  "request_started_at": "2026-08-25T16:49:52.428283+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_006",
+  "total_token_count": 3070,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

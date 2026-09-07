@@ -1,0 +1,132 @@
+[
+  {
+    "cell_id": "cell_da32263c3a02dac7ce6611e3",
+    "cell_range": "1013180.0-1013200.0",
+    "conflicting_role": "LOCAL_BACKGROUND_CELL",
+    "daily_review_scope": {
+      "basis": "trusted_ten_meter_aligned_daily_review_scope",
+      "end_chainage": 1013200.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013190.0
+    },
+    "existing_role": "DAILY_REVIEW_CELL",
+    "forward_scope": {
+      "basis": "trusted_forward_attention_scope",
+      "end_chainage": 1013230.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013200.0
+    },
+    "local_background_scope": {
+      "basis": "trusted_local_background_scope",
+      "end_chainage": 1013190.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013090.0
+    },
+    "scope_key": "local_background_scope",
+    "target_date": "2023-09-15"
+  },
+  {
+    "cell_id": "cell_d1e83d27a7e98099969cd28d",
+    "cell_range": "1013200.0-1013220.0",
+    "conflicting_role": "LOCAL_BACKGROUND_CELL",
+    "daily_review_scope": {
+      "basis": "trusted_ten_meter_aligned_daily_review_scope",
+      "end_chainage": 1013220.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013210.0
+    },
+    "existing_role": "DAILY_REVIEW_CELL",
+    "forward_scope": {
+      "basis": "trusted_forward_attention_scope",
+      "end_chainage": 1013250.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013220.0
+    },
+    "local_background_scope": {
+      "basis": "trusted_local_background_scope",
+      "end_chainage": 1013210.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013110.0
+    },
+    "scope_key": "local_background_scope",
+    "target_date": "2023-09-17"
+  },
+  {
+    "cell_id": "cell_d1e83d27a7e98099969cd28d",
+    "cell_range": "1013200.0-1013220.0",
+    "conflicting_role": "LOCAL_BACKGROUND_CELL",
+    "daily_review_scope": {
+      "basis": "trusted_ten_meter_aligned_daily_review_scope",
+      "end_chainage": 1013220.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013210.0
+    },
+    "existing_role": "DAILY_REVIEW_CELL",
+    "forward_scope": {
+      "basis": "trusted_forward_attention_scope",
+      "end_chainage": 1013250.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013220.0
+    },
+    "local_background_scope": {
+      "basis": "trusted_local_background_scope",
+      "end_chainage": 1013210.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013110.0
+    },
+    "scope_key": "local_background_scope",
+    "target_date": "2023-09-18"
+  },
+  {
+    "cell_id": "cell_7fbae1f859778928bcd57c1a",
+    "cell_range": "1013220.0-1013240.0",
+    "conflicting_role": "FORWARD_ATTENTION_CELL",
+    "daily_review_scope": {
+      "basis": "trusted_ten_meter_aligned_daily_review_scope",
+      "end_chainage": 1013230.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013210.0
+    },
+    "existing_role": "DAILY_REVIEW_CELL",
+    "forward_scope": {
+      "basis": "trusted_forward_attention_scope",
+      "end_chainage": 1013260.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013230.0
+    },
+    "local_background_scope": {
+      "basis": "trusted_local_background_scope",
+      "end_chainage": 1013210.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013110.0
+    },
+    "scope_key": "forward_scope",
+    "target_date": "2023-09-19"
+  },
+  {
+    "cell_id": "cell_d1e83d27a7e98099969cd28d",
+    "cell_range": "1013200.0-1013220.0",
+    "conflicting_role": "LOCAL_BACKGROUND_CELL",
+    "daily_review_scope": {
+      "basis": "trusted_ten_meter_aligned_daily_review_scope",
+      "end_chainage": 1013230.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013210.0
+    },
+    "existing_role": "DAILY_REVIEW_CELL",
+    "forward_scope": {
+      "basis": "trusted_forward_attention_scope",
+      "end_chainage": 1013260.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013230.0
+    },
+    "local_background_scope": {
+      "basis": "trusted_local_background_scope",
+      "end_chainage": 1013210.0,
+      "kind": "INTERVAL",
+      "start_chainage": 1013110.0
+    },
+    "scope_key": "local_background_scope",
+    "target_date": "2023-09-19"
+  }
+]

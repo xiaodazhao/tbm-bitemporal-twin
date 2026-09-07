@@ -1,0 +1,22 @@
+{
+  "analysis_name": "A3_FENCE_ONLY_SYNTAX_NORMALIZATION_SENSITIVITY",
+  "analysis_role": "SECONDARY_POST_HOC_OFFLINE_DETERMINISTIC",
+  "fence_normalizable_chunk_count": 22,
+  "fence_only_parse_success_count": 22,
+  "fence_only_schema_success_count": 22,
+  "numeric_claim_count": 164,
+  "numeric_drift_count": 0,
+  "numeric_exact_count": 164,
+  "numeric_not_evaluable_count": 0,
+  "scope_status_distribution": {
+    "NOT_EXPLICIT": 180,
+    "PASS": 809
+  },
+  "secondary_claim_mappings": 989,
+  "secondary_complete_tasks": 45,
+  "secondary_valid_chunks": 147,
+  "strict_primary_claim_mappings": 828,
+  "strict_primary_complete_tasks": 32,
+  "strict_primary_valid_chunks": 125,
+  "total_mapped_claims": 989
+}

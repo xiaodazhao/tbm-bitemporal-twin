@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A3_NO_FACTLOCK",
+  "attempt_number": 1,
+  "completion_output_token_count": 328,
+  "execution_index": 156,
+  "finish_reason": "completed",
+  "latency_ms": 3209,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 1213,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "8ca90e28-df0a-46c0-b7d9-ccb30a914eeb",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676494.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676491.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "8ca90e28-df0a-46c0-b7d9-ccb30a914eeb",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"realizations\": [\n    {\n      \"claim_id\": \"typed_claim_800f1af64f6d21ff19f5e1d7\",\n      \"sentence\": \"在2023年9月28日，对于单元cell_759e1199e2f480da6470348f的日常审查单元状态，运行响应注意力指数（RAI）的值为0.5635428210574973，该指标状态为可用，属于非概率性注意力限定，且未经验证单位。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_1bbcbb937f2fbf040046d9ca\",\n      \"sentence\": \"在2023年9月28日，对于单元cell_759e1199e2f480da6470348f的日常审查单元状态，地质证据注意力指数（GRS）的值为0.9444444444444445，该指标状态为可用，属于非概率性注意力限定，且未经验证单位。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_dafe231660900fd3b0d0f3ae\",\n      \"sentence\": \"在2023年9月28日，对于单元cell_759e1199e2f480da6470348f的日常审查单元状态，耦合注意力指数（GRCI）的值为0.5322348865543031，该指标状态为可用，属于非概率性注意力限定，且未经验证单位。\"\n    }\n  ]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "734b3524-9187-4f77-8c65-1bc8edf594a9",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1213,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1541
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"realizations\": [\n    {\n      \"claim_id\": \"typed_claim_800f1af64f6d21ff19f5e1d7\",\n      \"sentence\": \"在2023年9月28日，对于单元cell_759e1199e2f480da6470348f的日常审查单元状态，运行响应注意力指数（RAI）的值为0.5635428210574973，该指标状态为可用，属于非概率性注意力限定，且未经验证单位。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_1bbcbb937f2fbf040046d9ca\",\n      \"sentence\": \"在2023年9月28日，对于单元cell_759e1199e2f480da6470348f的日常审查单元状态，地质证据注意力指数（GRS）的值为0.9444444444444445，该指标状态为可用，属于非概率性注意力限定，且未经验证单位。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_dafe231660900fd3b0d0f3ae\",\n      \"sentence\": \"在2023年9月28日，对于单元cell_759e1199e2f480da6470348f的日常审查单元状态，耦合注意力指数（GRCI）的值为0.5322348865543031，该指标状态为可用，属于非概率性注意力限定，且未经验证单位。\"\n    }\n  ]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:48:14.815769+00:00",
+  "request_id": "stage7e_v1_2_request_dbd5748b7076985d2c424db9",
+  "request_payload_hash": "dbd5748b7076985d2c424db9b301c1f9bd856aca5a3edf18168858e6178727c5",
+  "request_scope": "chunk_000",
+  "request_started_at": "2026-08-25T16:48:11.606126+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_005",
+  "total_token_count": 1541,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

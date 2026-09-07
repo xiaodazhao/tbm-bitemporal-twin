@@ -1,7 +1,29 @@
 # Archive Index
 
-The archive exists to keep Stage 2 history without leaving obsolete routes in
-the formal project root.
+## 2026-09-07 repository consolidation
+
+The active repository now keeps one canonical research route. Superseded
+candidates, earlier corrected result directories, and review transport ZIPs
+were moved outside the worktree to:
+
+```text
+/Users/zhaoxiaoda/Desktop/tbm-bitemporal-twin_local_archive_20260907/
+```
+
+The archive contains `archive_manifest.csv`. The former repository-level
+`_archive/` was also moved to
+`repository_root_archive/_archive/`; therefore none of the Stage 2 legacy
+implementation, parser snapshots, or review packages remains in the active
+GitHub tree. The pre-cleanup repository state is also preserved locally by
+branch `codex/pre-cleanup-20260907` at commit
+`a0f756a37ac87b347e8fe767424aa891d26a1c40`.
+
+This external archive is a recovery location, not a formal pipeline input and
+not part of the GitHub publication tree. The authoritative active paths are
+listed in `docs/CANONICAL_RESEARCH_PATH.md`.
+
+The sections below describe paths inside the externally archived `_archive/`,
+not directories that remain in the formal project root.
 
 ## `_archive/stage2_legacy/prototype_text_parser/`
 

@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A2_NO_ARCHITECTURAL_ABSTENTION",
+  "attempt_number": 1,
+  "completion_output_token_count": 78,
+  "execution_index": 56,
+  "finish_reason": "completed",
+  "latency_ms": 1325,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 393,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "1082837c-73e5-467e-8d10-47df544f411a",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676116.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676115.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "1082837c-73e5-467e-8d10-47df544f411a",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"section_id\": \"operational_attention\",\n  \"text\": \"截至2023-12-09，该空间状态未关联任何施工机械响应，RAI（非概率运行响应关注指标）不可用。\",\n  \"used_context_ids\": [\"state_rai_41864b22d6f17b5d110e92a7\"]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "50df122f-f496-4bea-a373-2feea3f20d1a",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 393,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 78,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 471
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"section_id\": \"operational_attention\",\n  \"text\": \"截至2023-12-09，该空间状态未关联任何施工机械响应，RAI（非概率运行响应关注指标）不可用。\",\n  \"used_context_ids\": [\"state_rai_41864b22d6f17b5d110e92a7\"]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:41:56.491339+00:00",
+  "request_id": "stage7e_v1_2_request_01c16c9d26128bbf9a64a9e0",
+  "request_payload_hash": "01c16c9d26128bbf9a64a9e09cd08ff11f342be9ae53ae3db3a2913d35316367",
+  "request_scope": "operational_attention",
+  "request_started_at": "2026-08-25T16:41:55.166069+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_023",
+  "total_token_count": 471,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

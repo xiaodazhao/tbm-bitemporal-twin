@@ -1,0 +1,58 @@
+{
+  "claim_transition_counts": {
+    "ABSTAIN_TO_EXPRESSIBLE": 27,
+    "CLAIM_VALUE_CHANGED": 10,
+    "OPPORTUNITY_ADDED": 540,
+    "RESOLVED_SUPPORT_CHANGED": 26,
+    "UNCHANGED_ABSTAIN": 84,
+    "UNCHANGED_EXPRESSIBLE": 288
+  },
+  "claim_transition_row_count": 975,
+  "claim_type_by_transition": {
+    "ABSTAIN_TO_EXPRESSIBLE": {
+      "FORWARD_GEOLOGICAL_ATTENTION": 27
+    },
+    "CLAIM_VALUE_CHANGED": {
+      "COUPLED_ATTENTION_REVIEW": 1,
+      "FORWARD_GEOLOGICAL_ATTENTION": 8,
+      "GEOLOGICAL_EVIDENCE_ATTENTION_REVIEW": 1
+    },
+    "OPPORTUNITY_ADDED": {
+      "FORECAST_GEOLOGICAL_CONDITION": 504,
+      "OBSERVED_GEOLOGICAL_CONDITION": 36
+    },
+    "RESOLVED_SUPPORT_CHANGED": {
+      "COUPLED_ATTENTION_REVIEW": 9,
+      "FORWARD_GEOLOGICAL_ATTENTION": 6,
+      "GEOLOGICAL_EVIDENCE_ATTENTION_REVIEW": 11
+    },
+    "UNCHANGED_ABSTAIN": {
+      "COUPLED_ATTENTION_REVIEW": 2,
+      "FORECAST_GEOLOGICAL_CONDITION": 36,
+      "OBSERVED_GEOLOGICAL_CONDITION": 3,
+      "OPERATIONAL_RESPONSE_ATTENTION": 43
+    },
+    "UNCHANGED_EXPRESSIBLE": {
+      "FORECAST_GEOLOGICAL_CONDITION": 241,
+      "OBSERVED_GEOLOGICAL_CONDITION": 37,
+      "OPERATIONAL_RESPONSE_ATTENTION": 10
+    }
+  },
+  "knowledge_delay_days": {
+    "iqr": [
+      1.0,
+      1.0
+    ],
+    "max": 1,
+    "median": 1,
+    "min": 1
+  },
+  "materialized_state_dates": 88,
+  "plc_monitored_dates": 91,
+  "revision_event_count": 53,
+  "revision_event_evidence_link_count": 72,
+  "revision_valid_date_count": 14,
+  "single_project": true,
+  "unique_later_evidence_count": 34,
+  "unique_revised_cell_count": 51
+}

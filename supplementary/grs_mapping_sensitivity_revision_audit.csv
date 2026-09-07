@@ -1,0 +1,3 @@
+arm_id,revision_event_id,baseline_grs_changed,perturbed_grs_changed,baseline_grci_changed,perturbed_grci_changed,decision_migration_count
+EXPLICIT_ANOMALY_1_UP,knowledge_revision_event_ecb0e61c665935ee1db3a67f,True,False,False,False,0
+EXPLICIT_ANOMALY_2_DOWN,knowledge_revision_event_ecb0e61c665935ee1db3a67f,True,False,False,False,0

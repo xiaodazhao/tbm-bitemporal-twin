@@ -1,0 +1,13 @@
+{
+  "affected_task_count": 24,
+  "empirical_scope": "UNAVAILABLE_ATTENTION_METRIC_CONTEXTS_IN_FROZEN_BENCHMARK",
+  "empty_text_count": 0,
+  "explicit_insufficiency_count": 0,
+  "insufficiency_unknown_count": 31,
+  "non_target_p_identity_mismatch_count": 0,
+  "nonempty_text_count": 31,
+  "target_section_count": 31,
+  "unknown_context_id_violation_count": 0,
+  "valid_affected_task_count": 24,
+  "valid_section_count": 31
+}

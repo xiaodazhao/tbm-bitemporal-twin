@@ -1,0 +1,372 @@
+{
+  "selection_reason": "端到端主案例，低复杂度 coupled task",
+  "context_summary": {
+    "abstain_context_count": 1,
+    "abstain_presence": "ABSTAIN_PRESENT",
+    "abstention_reason_counts": {
+      "UNKNOWN_SOURCE_VALUE": 1
+    },
+    "available_automatic_semantic_checks": "unsupported_claim;numeric_value;spatial_scope;forecast_factification;attention_probability;trace;structure_contract",
+    "benchmark_task_id": "stage7_main_task_000",
+    "cell_id": "cell_3d2558b73586465c51997f14",
+    "claim_type_counts": {
+      "COUPLED_ATTENTION_REVIEW": 1,
+      "FORECAST_GEOLOGICAL_CONDITION": 7,
+      "GEOLOGICAL_EVIDENCE_ATTENTION_REVIEW": 1,
+      "OPERATIONAL_RESPONSE_ATTENTION": 1
+    },
+    "contains_coupled_attention": "true",
+    "contains_forecast_claim": "true",
+    "contains_geological_claim": "true",
+    "contains_metric_claim": "true",
+    "contains_observed_claim": "false",
+    "contains_revision_related_state": "false",
+    "epistemic_mix": "FORECAST_ONLY",
+    "expressible_count": 10,
+    "fact_lock_count": 10,
+    "focus_category": "COUPLED",
+    "knowledge_time_basis": "TARGET_DATE_END_OF_DAY_AS_KNOWN_INITIAL_STATE",
+    "knowledge_time_limitation": "HISTORICAL_DATABASE_TRANSACTION_LOG_UNAVAILABLE",
+    "knowledge_time_local_date": "2023-10-07",
+    "knowledge_time_proxy": "evidence available_local_date / Stage3B reconstructed knowledge boundary",
+    "member_fact_lock_ids": [
+      "fact_lock_01caee92f4c8babe430a4bfe",
+      "fact_lock_88b73f0df05f54d5aca69e33",
+      "fact_lock_8c638ec26ace682fa875a6df",
+      "fact_lock_9013b06e4db4a637be9ea2ed",
+      "fact_lock_97c681a2a7bd315e6a7e2fa9",
+      "fact_lock_9dd28fce34896d2835104f64",
+      "fact_lock_a3b19b85b45835fed58bff40",
+      "fact_lock_b32aea54bf2ead49d23c13e6",
+      "fact_lock_d464487bee4b7a46002d6055",
+      "fact_lock_f3b6d2030977246170028d65"
+    ],
+    "pack_hash": "63c2220e0e86875022a134b31e962fdb297116c50f532d60205f231643b391ca",
+    "pack_id": "evidence_pack_63c2220e0e86875022a134b3",
+    "product_type": "all",
+    "realization_unit_count": 10,
+    "realization_unit_ids": [
+      "realization_unit_13681e18146c44eaab86321e",
+      "realization_unit_2aade8307f86d0b95a574422",
+      "realization_unit_4566f5b89b62f2a4e506bff6",
+      "realization_unit_59f9b93455b6a1fbf84769eb",
+      "realization_unit_861d59c2a52fe8d1c00091cf",
+      "realization_unit_97225917abdb46c0f43de052",
+      "realization_unit_b51874b82172b767e7bcf890",
+      "realization_unit_b9e7ce94e38370312bb853e2",
+      "realization_unit_e2f846835be30c37cf06e2ac",
+      "realization_unit_e896fa88fb1c7a156be8175b"
+    ],
+    "revision_chain_id": "",
+    "revision_status": "BASE_ONLY",
+    "selection_reason": "deterministic_product_quota_true_heldout_diversity_selection",
+    "selection_stratum": "all|LOW|FORECAST_ONLY|BASE_ONLY|COUPLED|ABSTAIN_PRESENT",
+    "slice_spec": {
+      "cell_id": "cell_3d2558b73586465c51997f14",
+      "claim_type": null,
+      "product_type": "all",
+      "state_role": null,
+      "valid_date": "2023-10-07"
+    },
+    "source_task_id": "stage7_task_0998ad43d3087904b58a1111",
+    "stage3b_bitemporal_version_ids": [
+      "bitemporal_version_0fe4f28f30bcde0cc1b2cf31"
+    ],
+    "stage6b_smoke_overlap_status": "TRUE_HELDOUT_NO_SMOKE_CONTENT_OVERLAP",
+    "state_role": "DAILY_REVIEW_CELL",
+    "state_version_ids": [
+      "state_version_6a356d329dc94fa848660e62"
+    ],
+    "stratum": "all|LOW|FORECAST_ONLY|BASE_ONLY|COUPLED|ABSTAIN_PRESENT",
+    "unit_complexity_band": "LOW",
+    "valid_date": "2023-10-07",
+    "valid_time": "2023-10-07"
+  },
+  "B0_output": {
+    "benchmark_task_id": "stage7_main_task_000",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_a8302dde1a954c483f07c58f",
+    "method_id": "B0_DIRECT_LLM",
+    "output_hash": "10de62577fc99e2752444ae46e33a476a0a083a0bbdf7190d7c7e126dd158a1d",
+    "output_text": "### 施工状态\n本日（2023-10-07）伯舒拉岭隧道进口右线核心开挖段位于DyK1013+474～DyK1013+475，掘进进尺约1 m。该段施工处于正常推进状态，未出现停机或异常中断记录。\n\n### 机械响应\n- **贯入度**：均值6.75，中位数7.80，P10=2.84，P90=8.05，变异系数0.33，波动较大，存在局部低贯入段。\n- **刀盘扭矩**：均值4382，中位数4958，P10=1927，P90=5347，变异系数0.32，扭矩波动明显。\n- **总推力**：均值25419，中位数26791，P10=20910，P90=27208，变异系数0.14，整体稳定偏高。\n- **刀盘转速**：均值5.46，变异系数仅0.001，转速控制平稳。\n- **掘进速度**：均值36.84，中位数42.56，P10=15.55，P90=43.90，变异系数0.33，速度波动与贯入度波动一致。\n- 综合响应以**荷载响应**为主（RAI=0.315），推力维持高位而贯入度波动，提示掌子面荷载条件不均匀。\n\n### 地质证据\n- 超前地质预报（HSP，2023-10-06提交）覆盖DyK1013+466～DyK1013+506，预报结论：**未见明显反射异常**。\n- 岩性为**板岩夹变质砂岩**，弱风化，节理裂隙发育，岩体破碎，围岩整体稳定性较差，建议围岩级别**Ⅳ级**。\n- 预报提示**DyK1013+492附近存在掉块风险**。\n- 地质注意力指数GRS=0.542，主要关注维度为节理发育（0.75）和岩体完整性（0.75），综合关注指数GRCI=0.171。\n\n### 综合关注点\n1. 当前开挖段（DyK1013+474～475）位于预报区间内，预报显示无明显异常，但岩体破碎、节理发育，围岩稳定性差，需持续关注掌子面掉块风险。\n2. 机械响应显示推力高位、贯入度与扭矩波动较大，与“岩质软硬不均、岩体破碎”的地质特征相符，建议关注刀具受力均匀性。\n3. 前方DyK1013+492附近为预报掉块风险点，距离当前掌子面约17 m，建议提前做好支护和掉块防范准备。\n4. 本日数据单位未经校验（质量标记UNIT_UNVERIFIED），上述数值仅作趋势参考，不宜作为精确计量依据。",
+    "raw_preserved": true
+  },
+  "B1_output": {
+    "benchmark_task_id": "stage7_main_task_000",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_589109e3dcc2dbf4778cf315",
+    "method_id": "B1_STRUCTURED_PROMPT_LLM",
+    "output_hash": "6dba7fca1a10c8269e217aece695256a731157a48ea49c752b3b1058aeb81217",
+    "output_text": "{\n  \"施工状态\": \"2023-10-07日，伯舒拉岭隧道进口右线核心开挖段位于DyK1013+474～DyK1013+475（约1米范围）。该段掘进作业于01:56:10至02:13:40进行，共采集62个有效样本，无缺失数据。掘进速度均值36.84 mm/min，中位数42.56 mm/min，波动较大（变异系数0.33），存在明显低速时段（最低2.88 mm/min）。刀盘转速稳定在5.46 rpm左右，波动极小。总推力均值25418.57 kN，中位数26791.28 kN，波动较小（变异系数0.14）。刀盘扭矩均值4382.47 kN·m，中位数4957.75 kN·m，波动较大（变异系数0.32）。整体施工状态正常，但掘进速度和扭矩的波动性值得关注。\",\n  \"机械响应\": \"本段机械响应以荷载响应为主（RAI=0.315，非概率指标），推力与扭矩水平较高且扭矩波动明显，可能反映岩体软硬不均或局部破碎。掘进速度与扭矩的变异系数均超过0.3，表明掘进过程存在间歇性阻力变化。刀盘转速稳定，说明控制策略未因地质变化而大幅调整。所有数据均为实测操作数据，单位未验证，但缺失率为0，数据完整性好。\",\n  \"地质证据\": \"根据2023-10-06提交的水平声波超前地质预报（覆盖DyK1013+466～+506），该段未见明显反射异常，围岩较前段稍有变好。岩性为板岩夹变质砂岩，弱风化，节理裂隙发育，岩体破碎，围岩整体稳定性较差，建议围岩等级为Ⅳ级。预报中提示DyK1013+492附近有掉块风险。该预报为预测性结论（FORECAST），非实测揭露。地质注意力指标GRS=0.54（非概率），其中节理发育和岩体完整性注意力均为0.75，围岩等级注意力0.67，表明地质证据中节理和破碎特征突出。\",\n  \"综合关注点\": \"综合施工状态、机械响应和地质证据，本段围岩为板岩夹变质砂岩，弱风化，节理裂隙发育，岩体破碎，整体稳定性较差，与机械响应中扭矩和掘进速度波动较大的特征相符。预报显示无异常反射，但提示DyK1013+492附近有掉块风险，该位置尚未开挖，需在后续掘进中重点关注。当前开挖段（DyK1013+474～+475）机械响应未见极端异常，但扭矩和速度波动提示岩体不均质性。GRCI=0.17（非概率耦合注意力），反映地质与机械响应的综合关注度处于中等偏低水平。建议后续掘进中加强对DyK1013+492附近掉块风险的监测，并关注岩体破碎可能引起的超挖或支护压力。\"\n}",
+    "raw_preserved": true
+  },
+  "P_raw_plan": {
+    "benchmark_task_id": "stage7_main_task_000",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_4af392c9f32abb87430b4b92",
+    "parse_error": "",
+    "parse_valid": true,
+    "raw_response_text": "{\"product_type\": \"all\", \"sections\": [{\"section_id\": \"geological_observed\", \"ordered_unit_ids\": []}, {\"section_id\": \"geological_forecast\", \"ordered_unit_ids\": [\"realization_unit_2aade8307f86d0b95a574422\", \"realization_unit_59f9b93455b6a1fbf84769eb\", \"realization_unit_861d59c2a52fe8d1c00091cf\", \"realization_unit_97225917abdb46c0f43de052\", \"realization_unit_b51874b82172b767e7bcf890\", \"realization_unit_b9e7ce94e38370312bb853e2\", \"realization_unit_e2f846835be30c37cf06e2ac\"]}, {\"section_id\": \"operational_attention\", \"ordered_unit_ids\": [\"realization_unit_13681e18146c44eaab86321e\"]}, {\"section_id\": \"geological_attention\", \"ordered_unit_ids\": [\"realization_unit_4566f5b89b62f2a4e506bff6\"]}, {\"section_id\": \"coupled_attention\", \"ordered_unit_ids\": [\"realization_unit_e896fa88fb1c7a156be8175b\"]}, {\"section_id\": \"forward_attention\", \"ordered_unit_ids\": []}, {\"section_id\": \"insufficiency\", \"ordered_unit_ids\": []}], \"omitted_optional_unit_ids\": []}",
+    "schema_error_codes": [],
+    "schema_valid": true
+  },
+  "P_plan_validation": {
+    "benchmark_task_id": "stage7_main_task_000",
+    "execution_item_id": "stage7b_execution_item_4af392c9f32abb87430b4b92",
+    "parse_valid": "true",
+    "plan_hash": "98c5a9ff063a9c0cc439d3b83dc00ad718dce4a8ef8a47acceeb6629e719f057",
+    "plan_id": "realization_plan_98c5a9ff063a9c0cc439d3b8",
+    "plan_valid": "true",
+    "schema_valid": "true",
+    "violation_codes": ""
+  },
+  "P_final_output": {
+    "benchmark_task_id": "stage7_main_task_000",
+    "blocks": [
+      {
+        "block_hash": "c0cbd3ccceecdd91a5a2aa1184f9ccfe33620e77591dc35f3f09ee4e46cfae9f",
+        "block_id": "composed_block_c0cbd3ccceecdd91a5a2aa11",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "geological_observed"
+        ],
+        "text": "## 地质观测事实"
+      },
+      {
+        "block_hash": "14f8ba47afc3d8d2c3c23f026207f34747d53ac3ecbd661b6e47a515cee0717e",
+        "block_id": "composed_block_14f8ba47afc3d8d2c3c23f02",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "geological_forecast"
+        ],
+        "text": "## 地质预报事实"
+      },
+      {
+        "block_hash": "8bbb22a10c21aba158a61f210f995cd302077d5f906221db6378fdec72c705f2",
+        "block_id": "composed_block_8bbb22a10c21aba158a61f21",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_df0df4e7e60b65d281b9c2c8",
+          "realization_unit_2aade8307f86d0b95a574422"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中地质结论字段记录为: 该段围岩较前段稍有变好。岩性 为板岩夹变质砂岩，弱风化，岩 质软硬不均，节理裂隙发育，岩 体破碎，围岩整体稳定性较差。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "06744c3ac96e05c737bc05a345965ef4bab8d14fca87f20a3ae9b80d7f32586e",
+        "block_id": "composed_block_06744c3ac96e05c737bc05a3",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_d3b15e58f17e7175fed3628f",
+          "realization_unit_59f9b93455b6a1fbf84769eb"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中风化程度记录为: 弱风化。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "82f6ab8baec0b024c6fc00f07f622f47223478d48cbef1aadef611c30577d76e",
+        "block_id": "composed_block_82f6ab8baec0b024c6fc00f0",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_aecbae80a7abb5e01f3e821b",
+          "realization_unit_861d59c2a52fe8d1c00091cf"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中岩性记录为: 板岩夹变质砂岩。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "055c60002ce5e597e034881bf531ae727841ac8b18f82a4b5050b02923dfbfd4",
+        "block_id": "composed_block_055c60002ce5e597e034881b",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_eb59514edc1ea5e85433f4d7",
+          "realization_unit_97225917abdb46c0f43de052"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中节理裂隙发育记录记录为: 节理裂隙发育。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "aed458840f0661746213fba24479687e53e3c03bd9d904c0ef897603dcfc906f",
+        "block_id": "composed_block_aed458840f0661746213fba2",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_ef4172653ed351b51883e957",
+          "realization_unit_b51874b82172b767e7bcf890"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中建议围岩等级字段记录为: Ⅳ级。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "12f698f8b512b73224aca11c58c2491fbfad452a231a227f95a8a6d796594a35",
+        "block_id": "composed_block_12f698f8b512b73224aca11c",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_8e198c6c65f3731620976455",
+          "realization_unit_b9e7ce94e38370312bb853e2"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中岩体状态记录为: 岩体破碎。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "84d83964d812044abf6fc85774256d8db230f4d061d9e4f84667085ab237634e",
+        "block_id": "composed_block_84d83964d812044abf6fc857",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_2e74c900c5e268347cbddfec",
+          "realization_unit_e2f846835be30c37cf06e2ac"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中风险提示字段记录为: 里程+492 附 近有掉块风 险。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "block_hash": "4ff41bbe08a3f03a37e0f28f252ccedb13bfb7daa6793e2bd5d13f84606a71e3",
+        "block_id": "composed_block_4ff41bbe08a3f03a37e0f28f",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "operational_attention"
+        ],
+        "text": "## 施工响应关注度"
+      },
+      {
+        "block_hash": "022b4379a8654c3761d5ea7cb0e93a3fba608fd4721881b39e7aa2f8a31cf383",
+        "block_id": "composed_block_022b4379a8654c3761d5ea7c",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_d9b2750eacbbc27f8b9d5d46",
+          "realization_unit_13681e18146c44eaab86321e"
+        ],
+        "text": "2023-10-07, 里程 1013470.0-1013480.0施工响应关注度 RAI 为 0.315。该值为非概率关注指标, 不表示地质原因。"
+      },
+      {
+        "block_hash": "8709848f599e52629f0edfc1f848d80749da8ca2fd6255f0db7991f407c9d3c8",
+        "block_id": "composed_block_8709848f599e52629f0edfc1",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "geological_attention"
+        ],
+        "text": "## 地质证据关注度"
+      },
+      {
+        "block_hash": "03fef0647482ca32b3dbf0071843b29311cde040bdf762e03034e998342616de",
+        "block_id": "composed_block_03fef0647482ca32b3dbf007",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_672d313052bdf90be55a7c93",
+          "realization_unit_4566f5b89b62f2a4e506bff6"
+        ],
+        "text": "2023-10-07, 里程 1013470.0-1013480.0地质证据关注度 GRS 为 0.542。该值为非概率关注指标。"
+      },
+      {
+        "block_hash": "6c315d3f31379f9b4b0eab9990a3a2038be686f47b48bfcfe3a2714f249e0cca",
+        "block_id": "composed_block_6c315d3f31379f9b4b0eab99",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "coupled_attention"
+        ],
+        "text": "## 耦合关注度"
+      },
+      {
+        "block_hash": "f575395d4ca3d8543aa1e05e6fd440f0715e63dca3007b0369ed5aaeabf70691",
+        "block_id": "composed_block_f575395d4ca3d8543aa1e05e",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_e28a343f750d3b5bd2944d0a",
+          "realization_unit_e896fa88fb1c7a156be8175b"
+        ],
+        "text": "2023-10-07, 里程 1013470.0-1013480.0 GRCI 为 0.171, 表示非概率性的地质证据—施工响应耦合关注程度。"
+      },
+      {
+        "block_hash": "3a46ad662c30eeb81695c640ccdb5114eecdeb5aad5adad7ecbb55016b9e44a0",
+        "block_id": "composed_block_3a46ad662c30eeb81695c640",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "forward_attention"
+        ],
+        "text": "## 前方关注度"
+      },
+      {
+        "block_hash": "9cb64b6fa092b29905ed43f2110dbf6dc7ae6988bfc147d36ec6d40e8d1bc2e9",
+        "block_id": "composed_block_9cb64b6fa092b29905ed43f2",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "insufficiency"
+        ],
+        "text": "## 证据不足边界"
+      },
+      {
+        "block_hash": "9cb64b6fa092b29905ed43f2110dbf6dc7ae6988bfc147d36ec6d40e8d1bc2e9",
+        "block_id": "composed_block_9cb64b6fa092b29905ed43f2",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "insufficiency"
+        ],
+        "text": "## 证据不足边界"
+      },
+      {
+        "block_hash": "38d6454de0ff218207fc5ef671de817ebe2155d7e192cd2aad3ce6673b586418",
+        "block_id": "composed_block_38d6454de0ff218207fc5ef6",
+        "block_type": "INSUFFICIENCY",
+        "source_ids": [
+          "task_abstention_view_1d807167b4a07ebfd99ea0aa"
+        ],
+        "text": "UNKNOWN_SOURCE_VALUE: 来源存在但目标属性值未形成可表达事实, 不作补充推断。"
+      }
+    ],
+    "composed_realization_id": "composed_realization_b4df11687f2041908369614b",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_4af392c9f32abb87430b4b92",
+    "insufficiency_statements": [
+      "UNKNOWN_SOURCE_VALUE: 来源存在但目标属性值未形成可表达事实, 不作补充推断。"
+    ],
+    "method_id": "P_PROPOSED",
+    "plan_id": "realization_plan_98c5a9ff063a9c0cc439d3b8",
+    "product_type": "all",
+    "realization_hash": "b4df11687f2041908369614b639d96d2d576af39c32bf01187258946e3dd7368",
+    "sections": [
+      {
+        "section_id": "geological_observed",
+        "sentence_ids": [],
+        "text": ""
+      },
+      {
+        "section_id": "geological_forecast",
+        "sentence_ids": [
+          "canonical_sentence_df0df4e7e60b65d281b9c2c8",
+          "canonical_sentence_d3b15e58f17e7175fed3628f",
+          "canonical_sentence_aecbae80a7abb5e01f3e821b",
+          "canonical_sentence_eb59514edc1ea5e85433f4d7",
+          "canonical_sentence_ef4172653ed351b51883e957",
+          "canonical_sentence_8e198c6c65f3731620976455",
+          "canonical_sentence_2e74c900c5e268347cbddfec"
+        ],
+        "text": "2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中地质结论字段记录为: 该段围岩较前段稍有变好。岩性 为板岩夹变质砂岩，弱风化，岩 质软硬不均，节理裂隙发育，岩 体破碎，围岩整体稳定性较差。该表述保持为预报来源记录, 不作为实际揭露结论。\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中风化程度记录为: 弱风化。该表述保持为预报来源记录, 不作为实际揭露结论。\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中岩性记录为: 板岩夹变质砂岩。该表述保持为预报来源记录, 不作为实际揭露结论。\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中节理裂隙发育记录记录为: 节理裂隙发育。该表述保持为预报来源记录, 不作为实际揭露结论。\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中建议围岩等级字段记录为: Ⅳ级。该表述保持为预报来源记录, 不作为实际揭露结论。\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中岩体状态记录为: 岩体破碎。该表述保持为预报来源记录, 不作为实际揭露结论。\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中风险提示字段记录为: 里程+492 附 近有掉块风 险。该表述保持为预报来源记录, 不作为实际揭露结论。"
+      },
+      {
+        "section_id": "operational_attention",
+        "sentence_ids": [
+          "canonical_sentence_d9b2750eacbbc27f8b9d5d46"
+        ],
+        "text": "2023-10-07, 里程 1013470.0-1013480.0施工响应关注度 RAI 为 0.315。该值为非概率关注指标, 不表示地质原因。"
+      },
+      {
+        "section_id": "geological_attention",
+        "sentence_ids": [
+          "canonical_sentence_672d313052bdf90be55a7c93"
+        ],
+        "text": "2023-10-07, 里程 1013470.0-1013480.0地质证据关注度 GRS 为 0.542。该值为非概率关注指标。"
+      },
+      {
+        "section_id": "coupled_attention",
+        "sentence_ids": [
+          "canonical_sentence_e28a343f750d3b5bd2944d0a"
+        ],
+        "text": "2023-10-07, 里程 1013470.0-1013480.0 GRCI 为 0.171, 表示非概率性的地质证据—施工响应耦合关注程度。"
+      },
+      {
+        "section_id": "forward_attention",
+        "sentence_ids": [],
+        "text": ""
+      },
+      {
+        "section_id": "insufficiency",
+        "sentence_ids": [],
+        "text": ""
+      }
+    ],
+    "text": "## 地质观测事实\n\n## 地质预报事实\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中地质结论字段记录为: 该段围岩较前段稍有变好。岩性 为板岩夹变质砂岩，弱风化，岩 质软硬不均，节理裂隙发育，岩 体破碎，围岩整体稳定性较差。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中风化程度记录为: 弱风化。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中岩性记录为: 板岩夹变质砂岩。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中节理裂隙发育记录记录为: 节理裂隙发育。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中建议围岩等级字段记录为: Ⅳ级。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中岩体状态记录为: 岩体破碎。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n2023-10-07, 针对里程 1013466.0-1013506.0, 既有地质预报资料中风险提示字段记录为: 里程+492 附 近有掉块风 险。该表述保持为预报来源记录, 不作为实际揭露结论。\n\n## 施工响应关注度\n\n2023-10-07, 里程 1013470.0-1013480.0施工响应关注度 RAI 为 0.315。该值为非概率关注指标, 不表示地质原因。\n\n## 地质证据关注度\n\n2023-10-07, 里程 1013470.0-1013480.0地质证据关注度 GRS 为 0.542。该值为非概率关注指标。\n\n## 耦合关注度\n\n2023-10-07, 里程 1013470.0-1013480.0 GRCI 为 0.171, 表示非概率性的地质证据—施工响应耦合关注程度。\n\n## 前方关注度\n\n## 证据不足边界\n\n## 证据不足边界\n\nUNKNOWN_SOURCE_VALUE: 来源存在但目标属性值未形成可表达事实, 不作补充推断。"
+  },
+  "note": "原始冻结输出，未人工改写。P_final_output 为空表示确定性 fail-closed。"
+}

@@ -1,0 +1,18 @@
+{
+  "arm_internal_is_internal_metadata_only": true,
+  "execution_status": "MATERIALIZED_NOT_SENT",
+  "required": [
+    "request_id",
+    "task_id",
+    "request_scope",
+    "arm_internal",
+    "provider",
+    "model",
+    "inference_config",
+    "system_prompt_hash",
+    "user_prompt_hash",
+    "payload_hash",
+    "messages",
+    "execution_status"
+  ]
+}

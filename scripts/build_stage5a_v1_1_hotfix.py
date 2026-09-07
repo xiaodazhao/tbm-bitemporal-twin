@@ -62,7 +62,13 @@ def build_stage5a_v1_1_hotfix(
 ) -> None:
     repo_root = repo_root.resolve()
     output_path = output_dir if output_dir.is_absolute() else repo_root / output_dir
-    build_stage5a_candidate(repo_root, output_path, generated_at, formal_freeze=True)
+    build_stage5a_candidate(
+        repo_root,
+        output_path,
+        generated_at,
+        formal_freeze=True,
+        candidate_dir=DEFAULT_OUTPUT_DIR,
+    )
 
     lookup = _build_lookup(repo_root)
     evaluator = ClaimContractEvaluator(
@@ -287,9 +293,8 @@ def _hard_check_rows(
         ("unexpected_authorization_delta_count", 0, 0),
         (
             "stage4_modification_count",
-            _diff_count(
-                repo_root,
-                ["src/tbm_twin/metrics", "artifacts/stage4_bitemporal_state_metrics_v1_1"],
+            _artifact_hash_mismatch_count(
+                repo_root / "artifacts/stage4_bitemporal_state_metrics_v1_1"
             ),
             0,
         ),
@@ -422,6 +427,20 @@ def _diff_count(repo_root: Path, paths: list[str]) -> int:
         text=True,
     ).stdout
     return len([line for line in result.splitlines() if line.strip()])
+
+
+def _artifact_hash_mismatch_count(directory: Path) -> int:
+    """Count changed or missing files in a frozen artifact manifest."""
+
+    mismatches = 0
+    for line in (directory / "file_hashes.sha256").read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        expected, relative = line.split(maxsplit=1)
+        path = directory / relative
+        actual = hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else ""
+        mismatches += int(actual != expected)
+    return mismatches
 
 
 def _write_json(path: Path, payload: dict[str, Any]) -> None:

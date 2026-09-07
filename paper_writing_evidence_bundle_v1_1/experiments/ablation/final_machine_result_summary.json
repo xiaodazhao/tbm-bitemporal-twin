@@ -1,0 +1,55 @@
+{
+  "a1": {
+    "execution_status": "NOT_EXECUTABLE",
+    "interpretation": "DESIGN_FEASIBILITY_NOT_MODEL_PERFORMANCE"
+  },
+  "a2": {
+    "affected_tasks": 24,
+    "target_sections": 31
+  },
+  "a3_corrected_strict_numeric_audit": {
+    "evaluator": "engineering_decimal_tokens_v2",
+    "numeric_claims": 149,
+    "numeric_drift": 0,
+    "numeric_exact": 149
+  },
+  "a3_primary_protocol_compliance": {
+    "claim_mappings": 828,
+    "complete_tasks": 32,
+    "total_chunks": 147,
+    "total_claims": 989,
+    "total_tasks": 45,
+    "valid_chunks": 125
+  },
+  "a3_secondary_fence_only": {
+    "analysis_role": "SECONDARY_POST_HOC_OFFLINE_DETERMINISTIC",
+    "claim_mappings": 989,
+    "complete_tasks": 45,
+    "numeric_claims": 164,
+    "numeric_drift": 0,
+    "numeric_exact": 164,
+    "total_chunks": 147,
+    "total_claims": 989,
+    "total_tasks": 45,
+    "valid_chunks": 147
+  },
+  "a4": {
+    "fact_lock_trace_coverage": 0.8297455968688845,
+    "numeric_evaluation_basis": "FACTLOCK_ID_TO_DECLARING_SECTION_EXACT_FROZEN_TOKEN_PRESENCE",
+    "numeric_fact_lock_trace_coverage": 0.9473684210526315,
+    "omitted_fact_locks": 174,
+    "omitted_numeric_fact_locks": 9,
+    "referenced_numeric_token_drift": 0,
+    "referenced_numeric_token_exact": 162,
+    "semantic_correctness_inference": "PROHIBITED",
+    "total_fact_locks": 1022,
+    "total_numeric_fact_locks": 171,
+    "used_fact_locks": 848,
+    "used_numeric_fact_locks": 162
+  },
+  "human_semantic_evaluation": "DEFERRED_TO_HUMAN",
+  "new_api_calls": 0,
+  "new_deepseek_calls": 0,
+  "new_llm_calls": 0,
+  "summary_role": "AUTHORITATIVE_STAGE7E_FINAL_MACHINE_RESULT_SUMMARY"
+}

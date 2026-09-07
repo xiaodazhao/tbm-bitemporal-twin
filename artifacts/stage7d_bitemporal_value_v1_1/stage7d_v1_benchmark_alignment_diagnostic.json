@@ -1,0 +1,12 @@
+{
+  "benchmark_task_count": 48,
+  "diagnostic_role": "BENCHMARK_ALIGNMENT_NULL_RESULT",
+  "exact_differs_final_binding_count": 0,
+  "exact_equals_final_binding_count": 201,
+  "interpretation": "Stage7D v1 is retained as an orthogonal benchmark-alignment diagnostic, not as the primary revision-sensitivity experiment.",
+  "post_revision_asof_task_count": 22,
+  "revised_cell_overlapping_binding_count": 37,
+  "revision_date_task_count": 23,
+  "task_cell_binding_count": 201,
+  "true_pre_revision_exposure_count": 0
+}

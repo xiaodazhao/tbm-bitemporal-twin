@@ -1,0 +1,21 @@
+{
+  "api_call_count": 0,
+  "frozen_input_hashes": {
+    "stage3b": "2c8c8b8487b08f2d62d4630015cb17aaef2f6a3ca567613626862f8968f77578",
+    "stage4": "4ea7331e9a0ce3c49888adee2ba715cd7e5538399fb91a3006a1d9ef857fd12a",
+    "stage5c": "6f931d802c108ee2e0b84099e3c68b26e0fe1bea9c9e7fd8728aee92662d0952",
+    "stage7a": "6139a383c8c6b26d6001dda02d65bfe0ef1cb79fbf8dc351ed902e4a27f0d78b",
+    "stage7d_v1": "66bed49d99f37a774d0a40d2ba2a07a70fef05ad51551043382cdb369877225e"
+  },
+  "generated_at": "2026-08-25T19:00:00+08:00",
+  "method_version": "stage7d_bitemporal_value_v1_1_revision_census",
+  "revision_event_count": 53,
+  "schema_version": "stage7d_bitemporal_value.v1.1",
+  "stage3b_method": "stage3b_bitemporal_epistemic_state_v1_1_strict_trace",
+  "stage4_method": "stage4_bitemporal_state_metrics_v1_1_trace_frozen",
+  "stage5a_method": "stage5a_typed_claim_contract_v1_1_frozen",
+  "stage5b_method": "stage5b_deterministic_claim_builder_v1_frozen",
+  "stage7d_v1_commit": "87d965d5139bfa526ef286471bdf82089a2456ac",
+  "stage7d_v1_tag": "stage7d-bitemporal-value-v1-frozen",
+  "uses_llm": false
+}

@@ -1,0 +1,43 @@
+{
+  "api_calls": 0,
+  "arm_manifest_hash": "716cc2c521aaa97eeb7e28c87de7c5cd24495ea4378cdfc41cf50134e2bae023",
+  "baseline": {
+    "cell_size_m": 10.0,
+    "minimum_baseline_sample_count": 30,
+    "saturation_robust_z": 3.0
+  },
+  "correction_type": "NON_TUNABLE_METRIC_METADATA_DEFINITION_CORRECTION",
+  "counts": {
+    "arm_identity_mismatches": 0,
+    "monitored_dates": 91,
+    "sensitivity_parameters": 3,
+    "unique_arms": 7
+  },
+  "frozen_metric_semantics": {
+    "GRCI": {
+      "is_causal_estimate": false,
+      "is_hazard_probability": false,
+      "is_probability": false,
+      "operator": "NONPROBABILISTIC_CONJUNCTIVE_PRODUCT",
+      "scope": "DAILY_REVIEW_CELL_ONLY"
+    },
+    "GRS": {
+      "dimension_operator": "max_mapped_attention",
+      "state_operator": "mean_non_null_dimension_attention"
+    }
+  },
+  "generated_at": "2026-08-28T12:00:00+08:00",
+  "hard_check_failure_count": 0,
+  "llm_calls": 0,
+  "method_version": "stage7f_sensitivity_protocol_v1_1_metric_semantics_corrected",
+  "pipeline_runs_executed": 0,
+  "protocol_hash": "c90eca6ccaa143c857c82c37841acd1ede53888cc817c8bedb2d491e30528dfb",
+  "schema_version": "stage7f_sensitivity_protocol.v1.1",
+  "sensitivity_outcomes_generated": 0,
+  "stage7e_final_commit": "25df4be17edb89ad669d2a7255e65b6b5fa8acbc",
+  "stage7e_final_tag": "stage7e-ablation-execution-v1.1a-final-machine-results",
+  "status": "FROZEN_PROTOCOL_METADATA_CORRECTED_NOT_EXECUTED",
+  "v1_artifact_manifest_sha256": "db7a5b8794eb844a529f2003fe7baf866a828b81ce41a1f356bcfda36c4865dc",
+  "v1_commit": "6f7cfdc05574110f6a22387bb3218bdec1343c1d",
+  "v1_tag": "stage7f-sensitivity-protocol-v1-frozen"
+}

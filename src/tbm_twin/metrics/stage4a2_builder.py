@@ -72,9 +72,10 @@ class Stage4A2Builder:
         self.geology_dir = repo_root / "artifacts/stage2_geology_v2_freeze_candidate"
         self.stage4a1_dir = repo_root / "artifacts/stage4a1_metric_foundation_v1"
         self.stage4a1_1_dir = repo_root / "artifacts/stage4a1_1_metric_method_freeze_v1"
-        self.stage4a2_candidate_dir = (
-            repo_root / "artifacts/stage4a2_bitemporal_state_metrics_v1_candidate"
-        )
+        # The superseded candidate is archived. Rebuilds compare business
+        # semantics with the frozen formal baseline instead of retaining a
+        # duplicate metric object set in the active repository.
+        self.stage4a2_candidate_dir = repo_root / "artifacts/stage4_bitemporal_state_metrics_v1_1"
         self.reproducibility_build_a_dir = reproducibility_build_a_dir
         self.reproducibility_build_b_dir = reproducibility_build_b_dir
 

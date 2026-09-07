@@ -1,0 +1,10 @@
+parameter,arm,validity_status,interpretation_scope,claim_opportunities,expressible,abstain,rai_available,grs_available,grci_available,claim_transition,quality_boundary
+cell_size,5m,VALID_SENSITIVITY_ARM,SENSITIVITY_COMPARISON,14534,9963,4571,279,2318,279,not directly comparable across changed grid universes,scope_conflicts=0; point=0; interval=0
+cell_size,10m,VALID_BASELINE,BASELINE,8679,6279,2400,174,1211,174,not directly comparable across changed grid universes,scope_conflicts=0; point=0; interval=0
+cell_size,20m,COARSE_RESOLUTION_VALIDITY_BOUNDARY_EXCEEDED,COARSE_RESOLUTION_STRESS_TEST,6572,5027,1545,132,694,132,not directly comparable across changed grid universes,scope_conflicts=90; point=23; interval=76
+history_min_observations,20,VALID,LIMITED_AVAILABILITY_BOUNDARY_SENSITIVITY,8679,6283,2396,176,1211,176,4 ABSTAIN→EXPRESSIBLE,common comparable available metrics largely value-stable; availability boundary shifts
+history_min_observations,30,VALID,LIMITED_AVAILABILITY_BOUNDARY_SENSITIVITY,8679,6279,2400,174,1211,174,baseline,common comparable available metrics largely value-stable; availability boundary shifts
+history_min_observations,40,VALID,LIMITED_AVAILABILITY_BOUNDARY_SENSITIVITY,8679,6275,2404,172,1211,172,4 EXPRESSIBLE→ABSTAIN,common comparable available metrics largely value-stable; availability boundary shifts
+rai_saturation_robust_z,2,VALID,VALUE_SENSITIVE_BUT_DECISION_STABLE,8679,6279,2400,174,1211,174,0,absolute RAI/GRCI shifts; high rank consistency; monotonicity violations=0
+rai_saturation_robust_z,3,VALID,VALUE_SENSITIVE_BUT_DECISION_STABLE,8679,6279,2400,174,1211,174,0,absolute RAI/GRCI shifts; high rank consistency; monotonicity violations=0
+rai_saturation_robust_z,4,VALID,VALUE_SENSITIVE_BUT_DECISION_STABLE,8679,6279,2400,174,1211,174,0,absolute RAI/GRCI shifts; high rank consistency; monotonicity violations=0

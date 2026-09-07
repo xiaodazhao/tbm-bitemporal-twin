@@ -1,0 +1,42 @@
+check_name,status,details
+task_count_48,PASS,48
+condition_count_144,PASS,144
+b0_condition_count_48,PASS,"Counter({'B0_DIRECT_LLM': 48, 'B1_STRUCTURED_PROMPT_LLM': 48, 'P_PROPOSED': 48})"
+b1_condition_count_48,PASS,"Counter({'B0_DIRECT_LLM': 48, 'B1_STRUCTURED_PROMPT_LLM': 48, 'P_PROPOSED': 48})"
+p_condition_count_48,PASS,"Counter({'B0_DIRECT_LLM': 48, 'B1_STRUCTURED_PROMPT_LLM': 48, 'P_PROPOSED': 48})"
+actual_text_count_141,PASS,141
+b0_text_count_48,PASS,"Counter({'B0_DIRECT_LLM': 48, 'B1_STRUCTURED_PROMPT_LLM': 48, 'P_PROPOSED': 45})"
+b1_text_count_48,PASS,"Counter({'B0_DIRECT_LLM': 48, 'B1_STRUCTURED_PROMPT_LLM': 48, 'P_PROPOSED': 45})"
+p_text_count_45,PASS,"Counter({'B0_DIRECT_LLM': 48, 'B1_STRUCTURED_PROMPT_LLM': 48, 'P_PROPOSED': 45})"
+p_no_valid_output_count_3,PASS,3
+p_no_valid_output_task_ids_exact,PASS,"['stage7_main_task_022', 'stage7_main_task_026', 'stage7_main_task_042']"
+p_no_valid_output_reason_invalid_section_order,PASS,{'INVALID_SECTION_ORDER'}
+invalid_plan_count_3,PASS,3
+invalid_plan_propagated_zero,PASS,0
+condition_ids_unique,PASS,
+multi_cell_metric_binding_collision_zero,PASS,0
+ambiguous_metric_binding_auto_fail_zero,PASS,0
+E3_decimal_prefix_false_positive_zero,PASS,0
+observed_statement_forecast_false_positive_zero,PASS,0
+explicit_probability_negation_false_positive_zero,PASS,0
+source_title_range_auto_scope_fail_zero,PASS,0
+P_statement_level_trace_unresolved_engineering_facts_zero,PASS,0
+E10_explicit_negation_false_positive_zero,PASS,0
+E5_context_loss_auto_fail_zero,PASS,0
+E5_recommendation_as_factification_false_positive_zero,PASS,covered by regression
+P_trace_uses_text_heuristic_as_authority_zero,PASS,0
+canonical_to_unit_relation_mismatch_zero,PASS,0
+canonical_to_fact_lock_relation_mismatch_zero,PASS,0
+unresolved_exact_P_trace_zero,PASS,0
+E13_plan_violation_count_3,PASS,3
+E13_invalid_plan_intercepted_count_3,PASS,3
+E13_invalid_plan_propagation_count_0,PASS,0
+E7_zero_coverage_misreported_as_zero_error_zero,PASS,"{'status': 'E7_DEFERRED_TO_HUMAN_EVALUATION', 'condition_count': 144, 'statement_count': 5417, 'evaluable_statement_count': 0, 'evaluable_condition_count': 0, 'fail_count': 0, 'human_review_count': 0, 'not_evaluable_count': 5417, 'interpretation': 'No automatic hindsight-leakage conclusion is made when coverage is zero.'}"
+frozen_input_hash_mismatch_zero,PASS,0
+frozen_git_ref_mismatch_zero,PASS,0
+api_call_count_zero,PASS,
+llm_judge_usage_zero,PASS,
+external_model_code_path_clean,PASS,[]
+stage7b_rerun_zero,PASS,Reads frozen outputs only
+v1_regression_tests_pass,PASS,Covered by tests/unit/test_stage7c_main_auto_eval.py real regression cases
+deterministic_rerun_identical,PASS,Covered by test_stage7c_build_is_deterministic

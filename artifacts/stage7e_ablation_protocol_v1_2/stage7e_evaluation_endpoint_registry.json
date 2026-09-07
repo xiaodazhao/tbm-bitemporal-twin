@@ -1,0 +1,41 @@
+{
+  "deferred_to_human": [
+    "forecast_factification",
+    "unsupported_causality",
+    "unknown_to_normal",
+    "unsupported_semantic_claim",
+    "epistemic_language_drift"
+  ],
+  "keyword_only_semantic_judgment_prohibited": true,
+  "layer_1_deterministic_audit": {
+    "A2_NO_ARCHITECTURAL_ABSTENTION": [
+      "explicit_empty_output",
+      "structurally_identifiable_explicit_insufficiency"
+    ],
+    "A3_NO_FACTLOCK": [
+      "claim_mapping_completeness",
+      "claim_id_addition_or_omission",
+      "numeric_drift",
+      "unit_drift",
+      "scope_drift"
+    ],
+    "A4_FREE_FINAL_REALIZATION": [
+      "factlock_trace_coverage",
+      "factlock_omission_or_addition",
+      "unknown_identifier_count",
+      "numeric_drift",
+      "unit_drift",
+      "scope_drift",
+      "post_realization_deterministic_hard_violations"
+    ],
+    "common": [
+      "transport_success",
+      "parse_schema_success",
+      "output_availability",
+      "numeric_hard_errors",
+      "unit_hard_errors",
+      "explicit_scope_hard_errors"
+    ]
+  },
+  "results_computed_in_stage7e_a_v1_2": false
+}

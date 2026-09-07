@@ -1,0 +1,1275 @@
+{
+  "notice": "INTERNAL — DO NOT DISTRIBUTE TO ANNOTATORS",
+  "rows": [
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_01a7ef0590949",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_01a7ef05909490",
+      "condition_id": "stage7b_execution_item_ab85c5ad6f7b8c11e5357980",
+      "context_hash": "d6436a344123e7453882f986098ad9255acf8f2bad6fa048e047d810064eff42",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_011",
+      "text_hash": "0ba6c1b81495c0389bb5dc86032b3630878100f4f2f3305ffceff41eaa6e88dc"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_03eb8db2dbec8",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_03eb8db2dbec8b",
+      "condition_id": "stage7b_execution_item_da85a63d8ae8045ad0a96249",
+      "context_hash": "d6436a344123e7453882f986098ad9255acf8f2bad6fa048e047d810064eff42",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_011",
+      "text_hash": "83b45bac89880788100713b1352828827ed40737b6720f31eecaf5974fccda57"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_0847ebc292339",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_0847ebc2923396",
+      "condition_id": "stage7b_execution_item_4af392c9f32abb87430b4b92",
+      "context_hash": "6de07bcf796e0069ccbbb20bc05dda05db65f291ca62989f15445b12175dc2c7",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_000",
+      "text_hash": "d584f6b61ebf7d5033ff70cd918390e29cf25f84aee36f241d3077f0f6c2ebf0"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_0a521af1d76e9",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_0a521af1d76e9b",
+      "condition_id": "stage7b_execution_item_c99e7ec617bb30d778936f3b",
+      "context_hash": "54e8e6a108d7cc7901f401dbfbf7eea787d990e2add834ddb31d5b168fda52d6",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_013",
+      "text_hash": "19c635b379a2b6d8ce79cac39de2710f99e1e3cdf28ee3c3235f361333a23289"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_0c7845e8e9be9",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_0c7845e8e9be94",
+      "condition_id": "stage7b_execution_item_b80fb0b162f92f2bfcc3d2be",
+      "context_hash": "6040e294c6e213e7984c9d550581433c566e6ff3e4b4b01d424d20e1dc0ed530",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_024",
+      "text_hash": "2bb7d91ed78c95734bdb6e10b0668d779162f2a7623b8eb3504e1d99ec2a7cfa"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_0ce1ecc0ae81e",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_0ce1ecc0ae81ec",
+      "condition_id": "stage7b_execution_item_e000b3847b0c1fdc92080252",
+      "context_hash": "32f5a83f9b42a55bfefffa15860bcfae2691e75628f2c3ee3ed3941ea0322f51",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_008",
+      "text_hash": "5161de78783c75f1a858dca3c57755d9e22b59b0b85a84176a96f9638d3fc571"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_0f80cabcaefae",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_0f80cabcaefae9",
+      "condition_id": "stage7b_execution_item_b2bb4ad4eec281a3dc820ca0",
+      "context_hash": "ea59fe000fa05bc49c58a12d1d120571dbcfcc00a711b32171ba953c95d3f8b6",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_037",
+      "text_hash": "893e5c284f110027b4ece08565574131ee42fe43866af26fdc1a000e1f1d7b8a"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_11ad9d50bdb61",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_11ad9d50bdb616",
+      "condition_id": "stage7b_execution_item_f0b7af1d87963dd80032b286",
+      "context_hash": "51e9cc3545fcef30d3861db90cf8139e4dcd59a248d98355651528a001a66b37",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_028",
+      "text_hash": "40db81202cad60bded657b3346023afc45b60dccd81f3d9967605cfc73c9095d"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_1344094f7344c",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_1344094f7344c8",
+      "condition_id": "stage7b_execution_item_f899ddce1942eeea51769cfc",
+      "context_hash": "54e8e6a108d7cc7901f401dbfbf7eea787d990e2add834ddb31d5b168fda52d6",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_013",
+      "text_hash": "a0221478e4c872878d9e85ca3b283b2098ae5902168729fdb77ae4b0799e0c81"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_14b853ea1fc0d",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_14b853ea1fc0dd",
+      "condition_id": "stage7b_execution_item_c5f51b7cd5b308a17483e98e",
+      "context_hash": "3ce710f41dc983517fe0b94bb09066235435e501dbd41a037a767704d7d0ce1d",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_012",
+      "text_hash": "e3de26b722269f6c988a452345856b5cbcecd18e764b24f6ce5e598fe4b0a061"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_154b374799803",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_154b3747998031",
+      "condition_id": "stage7b_execution_item_589109e3dcc2dbf4778cf315",
+      "context_hash": "6de07bcf796e0069ccbbb20bc05dda05db65f291ca62989f15445b12175dc2c7",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_000",
+      "text_hash": "c018cb4c575c98c1568ff67c73f3997ef58356271e908ef5fc075e5372aea131"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_1996757aa6b9b",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_1996757aa6b9b4",
+      "condition_id": "stage7b_execution_item_689994d79d36a6e09d0dba17",
+      "context_hash": "371b22fa4401ac4ff552126ab8d934d1d4ed7f357651f269d234b03fa64ddada",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_014",
+      "text_hash": "94334ee798ca616be986bf7ce2adf2d3fc22b742223bb48f49831eaa4b90b1e9"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_1f975bfc0c296",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_1f975bfc0c2969",
+      "condition_id": "stage7b_execution_item_0c64a68c21c3e37d1eb64a14",
+      "context_hash": "612425b6aaef10d9f0342d0970b638028e963601bb6cdeb70a92c2181a511e55",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_004",
+      "text_hash": "be1b53a4d4b03af0b7b0a4a76c72fbb0f44b78d47cf57bedb63512cd8fff8cda"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_25eb851060172",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_25eb8510601727",
+      "condition_id": "stage7b_execution_item_1739d26df9a3e473f978e700",
+      "context_hash": "34025ada009f0986d5045d8c75fbee34295c4a0dbed04a7f6e20232e83f028ca",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_001",
+      "text_hash": "036b2b5a15884250444c3c311799df88727aa85a1b58e4634e9910be23b16225"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_2c25e7b8d69b0",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_2c25e7b8d69b04",
+      "condition_id": "stage7b_execution_item_d79633a0b9ae814e8f028207",
+      "context_hash": "c06605037f40f7f9b6efbe4f39bb3c3f5e816c6643f6184a42d345a1a3e6068d",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_042",
+      "text_hash": "612c1ad51f92f2d889714cf1a3d6003dd2fb3bd85b0779055943ebd8a761a8ca"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_2cf9f14922694",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_2cf9f149226943",
+      "condition_id": "stage7b_execution_item_65e2dd1e7f8ad79402666800",
+      "context_hash": "fe0252d058b1ab8e67bec0577e857c38f4665349c1abd3d3544ca28875c4d832",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_015",
+      "text_hash": "2d530e46bba60a1c7dd0d118f1c5f0bc17a3866c8bd5f5c94ced81c6c2519a70"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_2eecde2bbf340",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_2eecde2bbf340c",
+      "condition_id": "stage7b_execution_item_a01d409738fd0c0e2e78e7f8",
+      "context_hash": "0149904dd1c30806a88831ee4707b46e96fb869131040ef8b6a443000f69fbc2",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_046",
+      "text_hash": "63dc8aaf7d931c2a41fec96d2341db8b49e2ee769f39447d0eaa2b38c7f059a7"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_328078ac8a119",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_328078ac8a1199",
+      "condition_id": "stage7b_execution_item_343bb51fb03345cc5397faff",
+      "context_hash": "85d75edd760e8eed1ca41332de6f8389aa6ac9e12aed0800243d221380e1698f",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_009",
+      "text_hash": "5431d553032f0a8cd31542fece98828985e97a3c899afc11fceae0eb8e6609f8"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_3388e1498fa29",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_3388e1498fa291",
+      "condition_id": "stage7b_execution_item_9d18a1d291284d0ed6a0f9a9",
+      "context_hash": "74e3e10671a4301e7320734168e9395b0d9601241324374e3b46c40f1a5f6883",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_031",
+      "text_hash": "1ba130aa2d6bd810a9b09e422c9bc6ae63d6e5e16e498fdd2d783d38a1bebe45"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_39efb53022168",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_39efb530221681",
+      "condition_id": "stage7b_execution_item_e5c2055761cd8a845691255e",
+      "context_hash": "b9d509a6eff5d849c072d899c781f86abb9f60326afa7e29820cb8f79ad27083",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_036",
+      "text_hash": "b18ae0f27929faadba280c31766a65de640aba61e8f115bd99127bfd1b29cad4"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_3a6dfe0329366",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_3a6dfe03293669",
+      "condition_id": "stage7b_execution_item_b844c2ad4d530eeb27d6ea23",
+      "context_hash": "6040e294c6e213e7984c9d550581433c566e6ff3e4b4b01d424d20e1dc0ed530",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_024",
+      "text_hash": "885a87274c751422e060461bd2712f20814486ea0ddacb41cd4237dbefa0a7e4"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_3cf45e1e4fd7e",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_3cf45e1e4fd7ea",
+      "condition_id": "stage7b_execution_item_48db1ebc808d9791436c22b3",
+      "context_hash": "34f2079a7cd66f7f9e5bd396670d65fd639eb414c4ef81c5184884160c63f4b3",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_027",
+      "text_hash": "d2d6129aa277bf5a3ac1d2a21e049683e6cbcdd783a69e08c06e20510056ed9d"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_3d4446a429c31",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_3d4446a429c316",
+      "condition_id": "stage7b_execution_item_78cdbb3b5127e4ef939b0dcf",
+      "context_hash": "6fffffa5cfe1d38ce66e0dce45604285da13e3962436548f1316580f6eca03fa",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_021",
+      "text_hash": "f5affe16b3e1fa7d311c4d4ff6b7785ae6a11dd4e925199a109ff58522622707"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_3f25247847d6f",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_3f25247847d6fb",
+      "condition_id": "stage7b_execution_item_d8db7e946bcc04a036284659",
+      "context_hash": "109771bc4b1d21c5fb4bf047c4c0f21bf9c4ea2ca12f03e891a2e329b5ab4696",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_035",
+      "text_hash": "30476114770b1daa08101f4ba0a7c82f5f169b6604a4c4704c4281183373bd7f"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_413996d00fea4",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_413996d00fea40",
+      "condition_id": "stage7b_execution_item_cb76d11f8a794e119f0a660c",
+      "context_hash": "7dbc5d81109c632c3b501bb8cd07cc1850a526cfeb53d53b5c54653aae4ff96d",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_017",
+      "text_hash": "5f437a3346694200284c5113667486ddfaff93cf05281adc3cea4ddc926abd71"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_436e05a7708d8",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_436e05a7708d83",
+      "condition_id": "stage7b_execution_item_4d0ae4d3be40487e72361113",
+      "context_hash": "34f2079a7cd66f7f9e5bd396670d65fd639eb414c4ef81c5184884160c63f4b3",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_027",
+      "text_hash": "fc50b6e0c0611937fe6282e98775436fe6157efa39c2e3f17a3bee748305749a"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_438ab96b00bab",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_438ab96b00bab3",
+      "condition_id": "stage7b_execution_item_0a7694795443208724405fc0",
+      "context_hash": "74e3e10671a4301e7320734168e9395b0d9601241324374e3b46c40f1a5f6883",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_031",
+      "text_hash": "b2024a62299b3148501cce6703341c1b32096c59c795c1ebe95c73d7681eac01"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_470b7468fb0e1",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_470b7468fb0e14",
+      "condition_id": "stage7b_execution_item_c58da06c05e9d1f601d877f8",
+      "context_hash": "fe0252d058b1ab8e67bec0577e857c38f4665349c1abd3d3544ca28875c4d832",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_015",
+      "text_hash": "8988487b1475db38e34cef649842a71970b798aee03fbecd1542e4167d2b549f"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_4769caa6e0b1b",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_4769caa6e0b1b8",
+      "condition_id": "stage7b_execution_item_3b5b80b1f8a377356ab26eb2",
+      "context_hash": "81734dee91e5bd7c198b8d380c4af915c10608a634b6b7d490372ffa629d17db",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_034",
+      "text_hash": "29e7b83ccf304c762f91c3247cf126eb58e4f4611f62e3d9fb8c104722a8d1ee"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_4822038fba9fa",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_4822038fba9fac",
+      "condition_id": "stage7b_execution_item_891d909a516c4d687154b36e",
+      "context_hash": "ad197126eeaefaa4e89d64d62bea39395ebf43c1221be3ddec6f72d55042ba40",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_016",
+      "text_hash": "875dc1a1a3881bb847d55d23aa4c6b14e9a7e8e8fc7575fbca4c9242b9579600"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_48ede1816adf4",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_48ede1816adf47",
+      "condition_id": "stage7b_execution_item_781de04195147e9c7e85bc1f",
+      "context_hash": "34025ada009f0986d5045d8c75fbee34295c4a0dbed04a7f6e20232e83f028ca",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_001",
+      "text_hash": "cf1b59e16cb514a21968583489afc3dd0ea771642b240758f4b024b5388fb69b"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_4ab813f2c5085",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_4ab813f2c5085f",
+      "condition_id": "stage7b_execution_item_ed120258e45cd3e31f922a4e",
+      "context_hash": "109771bc4b1d21c5fb4bf047c4c0f21bf9c4ea2ca12f03e891a2e329b5ab4696",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_035",
+      "text_hash": "d0d227ed723dcf55ad93892eab7a768c1f9dc2db13cd5180d73124703e4b2117"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_4b4801f5698e5",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_4b4801f5698e5c",
+      "condition_id": "stage7b_execution_item_3391d7bb93478596e2d30867",
+      "context_hash": "7dbc5d81109c632c3b501bb8cd07cc1850a526cfeb53d53b5c54653aae4ff96d",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_017",
+      "text_hash": "635c550f1c25ab334d87895a5c24f8062b9c5055d03bb29b86174393198d8211"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_4b8855d87548c",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_4b8855d87548c4",
+      "condition_id": "stage7b_execution_item_f47ff5d293269ba7f1b68573",
+      "context_hash": "a1633dfeb1306046d864f64a2588710b8d5816f12493a489c4086b38a3f0e547",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_018",
+      "text_hash": "e9682cd4f6683abd7300f35109709657274777024072b36b4df2df65cfa39884"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_4cba4fad50d52",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_4cba4fad50d529",
+      "condition_id": "stage7b_execution_item_2c0f1e514d87c7e032695c39",
+      "context_hash": "0149904dd1c30806a88831ee4707b46e96fb869131040ef8b6a443000f69fbc2",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_046",
+      "text_hash": "508a8bc9e87e5753e133c3e0e7e2c7d297b1fbf494f781d9825efd6b08c36bee"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_4ddbae578092e",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_4ddbae578092e6",
+      "condition_id": "stage7b_execution_item_e3cfd8c13f048802dcf0f5ec",
+      "context_hash": "081cdddd28b723315f473e5722218721d0fc2b2ad9de8edbca086cf29ff8edd9",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_038",
+      "text_hash": "c445f1bc24d6761c2b216fc9effd1ced9a6534c1dafab0f4f8943495039815b1"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_4f238e56786db",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_4f238e56786db3",
+      "condition_id": "stage7b_execution_item_27ac32002e69808c3f11c9dd",
+      "context_hash": "109771bc4b1d21c5fb4bf047c4c0f21bf9c4ea2ca12f03e891a2e329b5ab4696",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_035",
+      "text_hash": "3911e9d432c5d5a270d5619bf3b0e4eba0acaf57c00ce900547619b22e28ad34"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_5021b687b01e6",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_5021b687b01e6d",
+      "condition_id": "stage7b_execution_item_44b99605374cc6e11a401847",
+      "context_hash": "b9d509a6eff5d849c072d899c781f86abb9f60326afa7e29820cb8f79ad27083",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_036",
+      "text_hash": "1d03a851707b43cb6306704596f842334765dab28eb6b9c2245239bf268116fd"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_51bc3fca304fb",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_51bc3fca304fba",
+      "condition_id": "stage7b_execution_item_d522d770ad95632dc266e879",
+      "context_hash": "9a6b1bcc8fe7061b783e50e5a5adfcd0451a923743baffc2b8d4080cd2d6282e",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_006",
+      "text_hash": "41e8c41fe407db6ca04b567eb16e18009e8228ab2a005f2caf6ae80caca60690"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_529d2612b0843",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_529d2612b08433",
+      "condition_id": "stage7b_execution_item_b93a5f141a21ba4cdbd0c3fc",
+      "context_hash": "8429048c2383832f3b5adcd982fe07b0a2ea36e45485133d42c878548340d65e",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_041",
+      "text_hash": "325b400efb7670a99637c0fbd59a466f9c50982afc390e3fd98088d9ca4ede4e"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_544aeb01a5eac",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_544aeb01a5eac8",
+      "condition_id": "stage7b_execution_item_fa30a1cb01ff3d42d4633b6e",
+      "context_hash": "f094ad2213414c5679b3f5e56fd791349d46319c0cc20c64f7b255db48444b04",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_033",
+      "text_hash": "5273454a7eee253d0ff1dd73316881d23ae9af079a267c79db1d96f5eb89423a"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_54b9adc1e6d6e",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_54b9adc1e6d6ea",
+      "condition_id": "stage7b_execution_item_03d0135e79e01f4cf510a24a",
+      "context_hash": "ad197126eeaefaa4e89d64d62bea39395ebf43c1221be3ddec6f72d55042ba40",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_016",
+      "text_hash": "9242c95bff83d3b8943c9af6b9b4a91ab50bd3376f9ed5ae782c71e7ceb94566"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_565a8630be674",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_565a8630be674d",
+      "condition_id": "stage7b_execution_item_39c27d5051ed04902393d1d3",
+      "context_hash": "81734dee91e5bd7c198b8d380c4af915c10608a634b6b7d490372ffa629d17db",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_034",
+      "text_hash": "24e48585a4227343a3503453f25762812cb9cd5b6f0b95bcef1f0887d55ddfde"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_57a5b1e465325",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_57a5b1e465325c",
+      "condition_id": "stage7b_execution_item_bc6d4e14fb0b6449d245ee31",
+      "context_hash": "115d7e468fae2312aaf7e170d6f0297f4f146fde1e09feb9661d9bcf411c3e46",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_007",
+      "text_hash": "f1897730313e9684ddc2eaa15d9e0dc233699c3c3d489a0ef983e34931219811"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_5af47c3e57ac3",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_5af47c3e57ac3c",
+      "condition_id": "stage7b_execution_item_0fa0f5824d8c9713be2b21c3",
+      "context_hash": "c06605037f40f7f9b6efbe4f39bb3c3f5e816c6643f6184a42d345a1a3e6068d",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_042",
+      "text_hash": "53174c5cee2282d1624934ba2ba0d5576c537819defdd7ecfef2f6a1aa205f09"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_5c6b380bf1732",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_5c6b380bf17329",
+      "condition_id": "stage7b_execution_item_a4179284b2c4779303e23233",
+      "context_hash": "292976f007368d33385c6caffd517fd29ab33091a1c8604041aa3a9994ff9887",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_005",
+      "text_hash": "66ca607ce358ce7c7b1a5ed8520711d8c6ea01f3b4c6fb6bc16af9b05a5d3cf1"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_5d3e269cd3b0e",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_5d3e269cd3b0ef",
+      "condition_id": "stage7b_execution_item_45f194f4591eb6d779367ede",
+      "context_hash": "9db0a874e113ddbe4cffb422efdee9d735920ad97c91d5fc0eda776b50b49cd6",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_029",
+      "text_hash": "a70af47b574f21e67d489a8537addb350e172b98acee4b61858da4b2ea46d4d6"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_5dc753cee6177",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_5dc753cee6177d",
+      "condition_id": "stage7b_execution_item_32596ed0f8d54b62b0f4b63e",
+      "context_hash": "9db0a874e113ddbe4cffb422efdee9d735920ad97c91d5fc0eda776b50b49cd6",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_029",
+      "text_hash": "22993cc1d653d05e2074f329ad6637626223734d309e2707c2b7b06b070b5ac9"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_5ef0d6c6be328",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_5ef0d6c6be328d",
+      "condition_id": "stage7b_execution_item_fd87e234de6856d515960ece",
+      "context_hash": "2868221f68e2ac4dea660acbd4f71eedbd0fc0630570cf3dbdfaa65d57e552e1",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_040",
+      "text_hash": "22e335b08f5c044b47703319fc417bdd67de453830ef1404a11715b514aeae3c"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_63c92806eeb3a",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_63c92806eeb3a0",
+      "condition_id": "stage7b_execution_item_d2bd0fc39a277e953cdb8d23",
+      "context_hash": "a1633dfeb1306046d864f64a2588710b8d5816f12493a489c4086b38a3f0e547",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_018",
+      "text_hash": "b0d065f5fc93b79a1fcc4ca2fb3a2b4bd886fa8dc6d40b4919db84d035cd04c7"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_64232c18b860f",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_64232c18b860f0",
+      "condition_id": "stage7b_execution_item_99846f45125d0860b49324d0",
+      "context_hash": "371b22fa4401ac4ff552126ab8d934d1d4ed7f357651f269d234b03fa64ddada",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_014",
+      "text_hash": "e8c6bd20baa32e84040a76dfb627764bc50837d1923d9a7004c21b760d1ef71d"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_66bb2be9322e9",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_66bb2be9322e9f",
+      "condition_id": "stage7b_execution_item_687247aece33e0647f7b5eb5",
+      "context_hash": "ed69d3a08eb86998c08121e54ac9f3615cd64b5b92465a80d7dd74fd33106dae",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_044",
+      "text_hash": "6935ff978ed9602d89ce3b9c7b8c9028dc04f5a069377327186d18443b95f2c4"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_6700e523ce514",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_6700e523ce514e",
+      "condition_id": "stage7b_execution_item_d22bf06c85d667b3f92e11f8",
+      "context_hash": "34f2079a7cd66f7f9e5bd396670d65fd639eb414c4ef81c5184884160c63f4b3",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_027",
+      "text_hash": "4ea74419c34ec8e87696481c5557f62994bf6d6386c1e4165c37091b53eae368"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_67d83267e7a3c",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_67d83267e7a3c1",
+      "condition_id": "stage7b_execution_item_7b4f7f22ed2d2b3c81f20f8d",
+      "context_hash": "a1d156685b037b001d1af80f9444f77b555c80384f71d7215541025da3b8c239",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_030",
+      "text_hash": "44c29afe82e049618679b479aa6ab5411a57a4e2d6812f26e56c965d25d882be"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_68212e8f0f1db",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_68212e8f0f1dbe",
+      "condition_id": "stage7b_execution_item_cb77546559607e6432dede20",
+      "context_hash": "d6436a344123e7453882f986098ad9255acf8f2bad6fa048e047d810064eff42",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_011",
+      "text_hash": "10dd0bd51e27999cb1713b5372abdeeb9ee8b6f9b9fc205492595d37bbbd6fae"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_69ffa714ceefc",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_69ffa714ceefc4",
+      "condition_id": "stage7b_execution_item_409ab345c38666283acad43b",
+      "context_hash": "ea59fe000fa05bc49c58a12d1d120571dbcfcc00a711b32171ba953c95d3f8b6",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_037",
+      "text_hash": "0e0ece8b8e38c06beeb859ce035d25607d98c988b9d1d5ce17c3613c58b8e340"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_6d08d6ce1a0c8",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_6d08d6ce1a0c8c",
+      "condition_id": "stage7b_execution_item_da0c33a003e9a7f5d7d28b59",
+      "context_hash": "813fceb7795e2f0478b862130e06b6e46baf94ea51500cc27afa04a1ac82efcb",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_047",
+      "text_hash": "87f418278d7ac8a0980cf2041963f3cfda60697f71d2d05bfcffd4a86d4fc966"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_6d115092ee24d",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_6d115092ee24d0",
+      "condition_id": "stage7b_execution_item_9b7953e762f660a3fe14cec8",
+      "context_hash": "115d7e468fae2312aaf7e170d6f0297f4f146fde1e09feb9661d9bcf411c3e46",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_007",
+      "text_hash": "0bfb3a06c71a6b39867b2b8dfaebabdd8538dd74b67ff3d1c24d9ee882f715d8"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_6dc09e5f2917d",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_6dc09e5f2917dd",
+      "condition_id": "stage7b_execution_item_62664e64e82d9281c076931c",
+      "context_hash": "371b22fa4401ac4ff552126ab8d934d1d4ed7f357651f269d234b03fa64ddada",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_014",
+      "text_hash": "dfe4a313b8f248f37b137bfd77b062b730cea0e41c72c5705abaee10b2e82a64"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_6fb6ca7fd2d08",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_6fb6ca7fd2d08f",
+      "condition_id": "stage7b_execution_item_a8302dde1a954c483f07c58f",
+      "context_hash": "6de07bcf796e0069ccbbb20bc05dda05db65f291ca62989f15445b12175dc2c7",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_000",
+      "text_hash": "b4cba046535c8a8b9f522e8a5eddfaea07934b455f8473aa96fed547a4a9d4ee"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_74e2585eb37f5",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_74e2585eb37f59",
+      "condition_id": "stage7b_execution_item_72da86cb99ed3ac5bc560c5a",
+      "context_hash": "ed69d3a08eb86998c08121e54ac9f3615cd64b5b92465a80d7dd74fd33106dae",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_044",
+      "text_hash": "24ca2b99e6c2f42e6840e2d428542e48b46ead6e7274e3fb4b1b13d696975671"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_758c207a34608",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_758c207a346080",
+      "condition_id": "stage7b_execution_item_172af0fa8c4ceca7e60a9ab8",
+      "context_hash": "8429048c2383832f3b5adcd982fe07b0a2ea36e45485133d42c878548340d65e",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_041",
+      "text_hash": "83e4a366a09294f21a39f556a3718542d193ae341459573d349083e6f998150d"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_7a2cab98f0279",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_7a2cab98f02797",
+      "condition_id": "stage7b_execution_item_2c28efcff1a892c209fc8a48",
+      "context_hash": "81734dee91e5bd7c198b8d380c4af915c10608a634b6b7d490372ffa629d17db",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_034",
+      "text_hash": "37e67c626cd39015386ef617bd659f484e3370f54d522cbb8725233631b9838d"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_7aed46c70fbe2",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_7aed46c70fbe20",
+      "condition_id": "stage7b_execution_item_f3a117ea6ec9de2f22e0f265",
+      "context_hash": "eb56a0916ed464a37bff5d093b57c93f4f3a4ee3dc8ff57ce1190540e84e22a7",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_002",
+      "text_hash": "3f95c079e89b5891ca1fcc966b2741f0dfa573ec84b0c3ba9db5d8d4fd715b8f"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_7e1960c649bc6",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_7e1960c649bc6b",
+      "condition_id": "stage7b_execution_item_bb543e85c0b7af086a2b0a59",
+      "context_hash": "0f03391890d014829f216e3699360cef7ed225208098fb8ac4454aebf9323003",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_032",
+      "text_hash": "ae50ac52acdbc945e197b5fdb91408ca91376a4693d23569bfca08fd8bc0dc96"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_819d90e3a70f5",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_819d90e3a70f5d",
+      "condition_id": "stage7b_execution_item_36857b7d93b4e2c5abd79f7c",
+      "context_hash": "6fffffa5cfe1d38ce66e0dce45604285da13e3962436548f1316580f6eca03fa",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_021",
+      "text_hash": "50a46ee7dec32bf20acec907ab7261913960e03a93a916b8724276217e9c5e22"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_819f3b8fdd68a",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_819f3b8fdd68af",
+      "condition_id": "stage7b_execution_item_5a7ae74158e474689ab7f6f3",
+      "context_hash": "85d75edd760e8eed1ca41332de6f8389aa6ac9e12aed0800243d221380e1698f",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_009",
+      "text_hash": "675e95e105cee6fa12b1ae8ad90a701a8e8db77cb53abc4469f73ef0e47da6d0"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_842909ba3a9d9",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_842909ba3a9d94",
+      "condition_id": "stage7b_execution_item_d584bad7850d8b02330df438",
+      "context_hash": "9db0a874e113ddbe4cffb422efdee9d735920ad97c91d5fc0eda776b50b49cd6",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_029",
+      "text_hash": "cb1b27137018d375963cc8be57819f08bba805943f2f1e1b9181d6a1d0f6ba68"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_859f95e7aaf9d",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_859f95e7aaf9db",
+      "condition_id": "stage7b_execution_item_1358da44dfe242219c03883d",
+      "context_hash": "a1fe59ddd27ba5ad688c2ed4738592810c7f4f564a82e8bd1da78fc1e4e6e2eb",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_043",
+      "text_hash": "b3474fdadd9f56835cebe6be5b05de3ccee2fdfa56229b74def3177928d92c05"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_8846109472c72",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_8846109472c723",
+      "condition_id": "stage7b_execution_item_665eadb2ef002ab2bb39add5",
+      "context_hash": "85d75edd760e8eed1ca41332de6f8389aa6ac9e12aed0800243d221380e1698f",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_009",
+      "text_hash": "1842816a46cc662e6b7d67cc6af2964417913a5f11644082230c23729bddb354"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_8847ecb87f843",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_8847ecb87f843e",
+      "condition_id": "stage7b_execution_item_13b8314e5c85a250ba0c11b6",
+      "context_hash": "54e8e6a108d7cc7901f401dbfbf7eea787d990e2add834ddb31d5b168fda52d6",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_013",
+      "text_hash": "ede6a59d766264fcf6019e9f0e18acc70eb1965bf2872abf36ee453d300a276f"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_884c0cd0d7270",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_884c0cd0d7270e",
+      "condition_id": "stage7b_execution_item_3971d3bbc18d5de1f1ed18f3",
+      "context_hash": "ed69d3a08eb86998c08121e54ac9f3615cd64b5b92465a80d7dd74fd33106dae",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_044",
+      "text_hash": "941c40d9713341399bb4a885035196a8a8bb28e4058cd243ef33eb35313e8bb0"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_88bfc300beec9",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_88bfc300beec95",
+      "condition_id": "stage7b_execution_item_70fcb9c12dcab4b2174eafda",
+      "context_hash": "1d79f252bdf3805925b88f2e04fbb5a529a82e4604da60be05cf0b698060b51c",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_020",
+      "text_hash": "648541a1763ab2e34cd05cb46035e4f012281892ac6cd1e0e3b34d6deeec3632"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_89e8170a1e645",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_89e8170a1e645f",
+      "condition_id": "stage7b_execution_item_f3e8f347f726279d276f338b",
+      "context_hash": "9a6b1bcc8fe7061b783e50e5a5adfcd0451a923743baffc2b8d4080cd2d6282e",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_006",
+      "text_hash": "d5ed6288b7ced51cec3f25c25cc43da0664fabe0a88794e1fcb4c47b75e1e06a"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_8ac74258fd6a1",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_8ac74258fd6a13",
+      "condition_id": "stage7b_execution_item_1e0e316a96f36b624597e66a",
+      "context_hash": "32f5a83f9b42a55bfefffa15860bcfae2691e75628f2c3ee3ed3941ea0322f51",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_008",
+      "text_hash": "39054912eb91fe1a25e1c8a7884405b19df55d4647036f2f4584f6ba6da9b720"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_8d37330f6c628",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_8d37330f6c6280",
+      "condition_id": "stage7b_execution_item_d3d352813c501e9db819188b",
+      "context_hash": "a1d156685b037b001d1af80f9444f77b555c80384f71d7215541025da3b8c239",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_030",
+      "text_hash": "c966c889f9be362f0fcd87184768c9fd8e32df4e590aba187ee128752fd2bc50"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_8f5f29c37b5a1",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_8f5f29c37b5a16",
+      "condition_id": "stage7b_execution_item_61138d5aa3e194731a406cc5",
+      "context_hash": "a1633dfeb1306046d864f64a2588710b8d5816f12493a489c4086b38a3f0e547",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_018",
+      "text_hash": "5701c9d5a9d7e184affb9a26de49ed1f6dd7668c2c7e21e0a040e620e14db274"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_9058bb111871a",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_9058bb111871a2",
+      "condition_id": "stage7b_execution_item_c7b5032f9460139ef2298815",
+      "context_hash": "a1d156685b037b001d1af80f9444f77b555c80384f71d7215541025da3b8c239",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_030",
+      "text_hash": "91deb98c761e038bc103c33260b4d5daaead13d404bf398d0cf548d1019b0135"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_9236c0d81a734",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_9236c0d81a734a",
+      "condition_id": "stage7b_execution_item_2d682251828f8c8c08ce3f17",
+      "context_hash": "7c6c39109f80c6120875c6061f308f1c671ccd86e5bb2c7e83767f11d652fcb1",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_022",
+      "text_hash": "689ed353458ddf6f3e28b756cfbbbed85fa053062264ff12208bdf76834165d8"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_93a05a7803c64",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_93a05a7803c64f",
+      "condition_id": "stage7b_execution_item_2660452d2949056324c292b3",
+      "context_hash": "6040e294c6e213e7984c9d550581433c566e6ff3e4b4b01d424d20e1dc0ed530",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_024",
+      "text_hash": "67f0f0487d651dda4b091c0799a7f609c8535a4c76efd323c5b8149bcaf1e5dc"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_93d1282e7ebfc",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_93d1282e7ebfcd",
+      "condition_id": "stage7b_execution_item_20de6dfb58116c697e61a681",
+      "context_hash": "7dbc5d81109c632c3b501bb8cd07cc1850a526cfeb53d53b5c54653aae4ff96d",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_017",
+      "text_hash": "5f3434a35fda842d3b55eacacb7257efe1738000bc7f55ed4cff8ccf2637c359"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_945ed08019503",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_945ed08019503c",
+      "condition_id": "stage7b_execution_item_5c01a76679d1d13a0e57f59c",
+      "context_hash": "38470c27619a89e6e8e8958f4722ea8aad72c249af757969279304cd041e3877",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_045",
+      "text_hash": "33294b774936018401d84417c391391e20ae021a27152eb2005280781c1b2dd3"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_9522efa9a720b",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_9522efa9a720bf",
+      "condition_id": "stage7b_execution_item_3e09eeb81cae5341abb742a6",
+      "context_hash": "3307425cc0ad0ee00bc5458ee5d08cfb263f79f5eb6d8a949376a8205647e0a3",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_023",
+      "text_hash": "34c86889a84a543a87edc899cd6927722d38bbe6e12e1f4042067bdf089c54a4"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_9594ec6b6296d",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_9594ec6b6296de",
+      "condition_id": "stage7b_execution_item_a75e1e10cefcf6e1f3ac2bc5",
+      "context_hash": "af04a030bf8e88f1ca75d30acee587390b2131b59e5513d2e6d6694f67b0e417",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_010",
+      "text_hash": "9d279973f690bc5546d7454bab28de162ad69fdf80ad55fe22be13e298da8f2e"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_95aef1e370fd9",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_95aef1e370fd9f",
+      "condition_id": "stage7b_execution_item_4066d9ce8633043308074cfa",
+      "context_hash": "3ce710f41dc983517fe0b94bb09066235435e501dbd41a037a767704d7d0ce1d",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_012",
+      "text_hash": "b6d216e5d26153db827e4a24502554c9a49c401b78b4aa9d754a446d2e1fdf1f"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_96547154a0ec0",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_96547154a0ec02",
+      "condition_id": "stage7b_execution_item_d4668bc392b9baf211c66d6a",
+      "context_hash": "292976f007368d33385c6caffd517fd29ab33091a1c8604041aa3a9994ff9887",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_005",
+      "text_hash": "102ea663d356f15e32c6cb0dd40572e070ead4a5e6b644cfb8908da00aa3d3d8"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_9889cfb9371ff",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_9889cfb9371ffe",
+      "condition_id": "stage7b_execution_item_8f5ed7dfc62a0ceaad208e6f",
+      "context_hash": "3307425cc0ad0ee00bc5458ee5d08cfb263f79f5eb6d8a949376a8205647e0a3",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_023",
+      "text_hash": "7ae1c3fc21fdbae9618b5d8a67a37cba55a33dfa44162f2dc07e7db102ec6fe7"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_99d777c0c36d0",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_99d777c0c36d04",
+      "condition_id": "stage7b_execution_item_69b49a01bf0ba2ac5b9cbe8a",
+      "context_hash": "eb56a0916ed464a37bff5d093b57c93f4f3a4ee3dc8ff57ce1190540e84e22a7",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_002",
+      "text_hash": "3d43ec338ea5b5ab6944d4a55f0f33e4ebebabdfbc9681d12429247413732705"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_9f6e47743dfc4",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_9f6e47743dfc41",
+      "condition_id": "stage7b_execution_item_e7c3c3b954cf69352acb54e0",
+      "context_hash": "aae4b0635e708564b69aa599bc4f98f2966ce6a572a34a12e4b144d331f755dd",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_025",
+      "text_hash": "f3e1e69c711baa77ff18664432bc92caef346325ca4daf6009bd7b52351c4770"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_9fc249e95259f",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_9fc249e95259fb",
+      "condition_id": "stage7b_execution_item_64b594b92bb55f98719331f8",
+      "context_hash": "f511c4694ef25b0134aa5ecf3fa5712148dcb27c1a48a2a45790075c4c82491d",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_019",
+      "text_hash": "e011e5f998fae86da04b67ef48f662a9338f89d574865c173808d7cadb2bdcf7"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_a021eaf638e3d",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_a021eaf638e3d5",
+      "condition_id": "stage7b_execution_item_51988fa2a23e3e36bcb3d3d3",
+      "context_hash": "51e9cc3545fcef30d3861db90cf8139e4dcd59a248d98355651528a001a66b37",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_028",
+      "text_hash": "f46ab9fd8dd6c239210badf2f909e6bfc0fe522536316047db5d9cfa45e515a3"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_a4ab1eac129dd",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_a4ab1eac129dde",
+      "condition_id": "stage7b_execution_item_f2fc5ed962481bd509923ad8",
+      "context_hash": "3ce710f41dc983517fe0b94bb09066235435e501dbd41a037a767704d7d0ce1d",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_012",
+      "text_hash": "4f7ae5c193c0ca04324035b62836b777941c1a8d1c49a218cff636cbad711e0a"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_a592700dafa3a",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_a592700dafa3ab",
+      "condition_id": "stage7b_execution_item_e268196b78732056e5e849c5",
+      "context_hash": "3307425cc0ad0ee00bc5458ee5d08cfb263f79f5eb6d8a949376a8205647e0a3",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_023",
+      "text_hash": "c4e78beabd0d47adb0272a285756f60fbe8bf66ae2fd6bb7259cb386a07bdfa9"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_a5c1d4bacf8d9",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_a5c1d4bacf8d92",
+      "condition_id": "stage7b_execution_item_cc32b812a21a2b1c1815471a",
+      "context_hash": "813fceb7795e2f0478b862130e06b6e46baf94ea51500cc27afa04a1ac82efcb",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_047",
+      "text_hash": "af234c6ab77d957f61cd36d34d8fb63aa8af14df3078ecd18c633da13a7204b5"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_a78cf57802c04",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_a78cf57802c043",
+      "condition_id": "stage7b_execution_item_785118c17f1aaf6c3af2bbdd",
+      "context_hash": "8429048c2383832f3b5adcd982fe07b0a2ea36e45485133d42c878548340d65e",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_041",
+      "text_hash": "b76befd4c8bd6d150150bb523a41682a0673470743b87558d674176caa2d68cc"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_a80f1ad665090",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_a80f1ad665090a",
+      "condition_id": "stage7b_execution_item_20c1eac7458788e67e8db0e2",
+      "context_hash": "34025ada009f0986d5045d8c75fbee34295c4a0dbed04a7f6e20232e83f028ca",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_001",
+      "text_hash": "22fd941bc28173c9ce858e696748e011095ef074599b0971e1c15281344b4f99"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_a9318b27c08ca",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_a9318b27c08cab",
+      "condition_id": "stage7b_execution_item_dedc8a9ee85570035e78d420",
+      "context_hash": "3ca51d9eca4faf6bbb12319220d05095d614219f1e4e9840642cbdbba75e99a2",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_039",
+      "text_hash": "07e5702970ca7fbdc5b154cca630786059974d0b4bfa2ab788db46e06054c30e"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_aced500c63f22",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_aced500c63f22d",
+      "condition_id": "stage7b_execution_item_9be8fd4e24cebf50c63f0a8d",
+      "context_hash": "1d79f252bdf3805925b88f2e04fbb5a529a82e4604da60be05cf0b698060b51c",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_020",
+      "text_hash": "ad5d8b95a345b0ab12b31e6a7266c47b1982fbb4db88398a69690120c6ec3a60"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_aea7005d0c8c0",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_aea7005d0c8c0b",
+      "condition_id": "stage7b_execution_item_00e9ff8ae07841b666b16998",
+      "context_hash": "1d79f252bdf3805925b88f2e04fbb5a529a82e4604da60be05cf0b698060b51c",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_020",
+      "text_hash": "6d58ec8bcd5742c18e3451ebfa0cb7e96294eb11eccc897da5974e295c941ab1"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_b0a52e25623c6",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_b0a52e25623c68",
+      "condition_id": "stage7b_execution_item_5aec9af5b9598f4d2aaad44c",
+      "context_hash": "0149904dd1c30806a88831ee4707b46e96fb869131040ef8b6a443000f69fbc2",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_046",
+      "text_hash": "f7c6fac137933c6361db975dff0d19fcd442c0059daab255a6d4483c00651053"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_b0fe042b17d80",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_b0fe042b17d807",
+      "condition_id": "stage7b_execution_item_dba5eda0395cf736a700804d",
+      "context_hash": "af04a030bf8e88f1ca75d30acee587390b2131b59e5513d2e6d6694f67b0e417",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_010",
+      "text_hash": "b1ef392c33a4412223c62e057edf750379ea34419cb91c5d3cc5f315b0ef4452"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_b1a363292d8a1",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_b1a363292d8a1a",
+      "condition_id": "stage7b_execution_item_a161fe852f6eaf7508efa6d6",
+      "context_hash": "aae4b0635e708564b69aa599bc4f98f2966ce6a572a34a12e4b144d331f755dd",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_025",
+      "text_hash": "75a2f7adcefb1e8fefdd0bf2854119ab64e58df5e6a96c6574b87fc03a1bbaba"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_b215f27023ddc",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_b215f27023ddc3",
+      "condition_id": "stage7b_execution_item_0f1e0366d76d667cc52fe10f",
+      "context_hash": "f511c4694ef25b0134aa5ecf3fa5712148dcb27c1a48a2a45790075c4c82491d",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_019",
+      "text_hash": "2b0695545b3796c80f86d0f7441d30b6951729c8f8ff6c20b17f73fc75c7c9ef"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_b3b08261386f1",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_b3b08261386f14",
+      "condition_id": "stage7b_execution_item_0ab421b394b9af83bedcaee1",
+      "context_hash": "c26fe85a1573e591a761ab834b38bde75bc98556438183b6c3b3986a3573f4dd",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_026",
+      "text_hash": "030003ef5cb7ba2f629449f0b005bcef9231c3ef0638eb3403a0ade715ee12b7"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_bd7c6b2de1722",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_bd7c6b2de17226",
+      "condition_id": "stage7b_execution_item_dbd1ca2cc97e80d8f166bd06",
+      "context_hash": "f511c4694ef25b0134aa5ecf3fa5712148dcb27c1a48a2a45790075c4c82491d",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_019",
+      "text_hash": "0ab61f2dc1d2b0b07f27efcb1f6cd04178ea96191a63ad7daa9f3b818a5ec5b9"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_c4cb881ec666b",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_c4cb881ec666b9",
+      "condition_id": "stage7b_execution_item_1d4d1210c5fa6fff0efcf4c9",
+      "context_hash": "74e3e10671a4301e7320734168e9395b0d9601241324374e3b46c40f1a5f6883",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_031",
+      "text_hash": "a9a7e381d6531a197ab8850e589ee5dc6952ee38fa147241bb6d3aa342530fc5"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_c4ce0f607545f",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_c4ce0f607545f8",
+      "condition_id": "stage7b_execution_item_2250c0b69ae0508135535eee",
+      "context_hash": "2868221f68e2ac4dea660acbd4f71eedbd0fc0630570cf3dbdfaa65d57e552e1",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_040",
+      "text_hash": "a249d3af6d0fff6f26efb2d7f922b95c395012b8b423e47cb21d7b83db7f0ec7"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_c6565478fdc8b",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_c6565478fdc8bd",
+      "condition_id": "stage7b_execution_item_60bc8ced2b4b46c62af57bd8",
+      "context_hash": "2868221f68e2ac4dea660acbd4f71eedbd0fc0630570cf3dbdfaa65d57e552e1",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_040",
+      "text_hash": "5ff3a9edafb4288d4eaa1dea57379d116b54849a8f70bf3da973e32fa2fad4e8"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_c8635d39d51bc",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_c8635d39d51bca",
+      "condition_id": "stage7b_execution_item_f183048637e41fe176980009",
+      "context_hash": "6fffffa5cfe1d38ce66e0dce45604285da13e3962436548f1316580f6eca03fa",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_021",
+      "text_hash": "e5923f0bc86fc0c83c9ef3db55e0828301a4754a03dd06df0dba2cbc503aaf9e"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_c8c02df88c190",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_c8c02df88c1907",
+      "condition_id": "stage7b_execution_item_7caad119e5717ed869b3a530",
+      "context_hash": "b54122606c4ce09e30808241353c4a6608880aa7e33d645c83d38c4095750f77",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_003",
+      "text_hash": "519b65da4d1bf9d6d2ddbd077d8a7f2ded588eb5ddb604571c6a558c95c03fed"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_cad2532d19baf",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_cad2532d19baf0",
+      "condition_id": "stage7b_execution_item_bf0491798b5194c6b8a8963d",
+      "context_hash": "813fceb7795e2f0478b862130e06b6e46baf94ea51500cc27afa04a1ac82efcb",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_047",
+      "text_hash": "42680ad44369c9c57b70d7920c6f25dd4ebea99383b7fe656afac4561eb175d8"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_cb52d002e50aa",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_cb52d002e50aaa",
+      "condition_id": "stage7b_execution_item_2141ea46d353d137bce244e9",
+      "context_hash": "eb56a0916ed464a37bff5d093b57c93f4f3a4ee3dc8ff57ce1190540e84e22a7",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_002",
+      "text_hash": "c321bcdc8898f0ab8f6925a1fd4e9cc862d12b28210ba72c09e837b9125f4cdb"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_cbb26aaba0386",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_cbb26aaba03863",
+      "condition_id": "stage7b_execution_item_265626598d194cb1b00c29c2",
+      "context_hash": "af04a030bf8e88f1ca75d30acee587390b2131b59e5513d2e6d6694f67b0e417",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_010",
+      "text_hash": "3bc36ff2e23ff267a4ded20a81558b32ca98ab887cefdc743a9e6fd9ff766da6"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_cc515915addeb",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_cc515915addebe",
+      "condition_id": "stage7b_execution_item_b205e4a1449e8bc2e6426295",
+      "context_hash": "fe0252d058b1ab8e67bec0577e857c38f4665349c1abd3d3544ca28875c4d832",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_015",
+      "text_hash": "c535c1dba3cd95b1363a6d1a89525da6332dbb8f4e0be134541ba25a4afda0d2"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_d1217d73dbdda",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_d1217d73dbddaa",
+      "condition_id": "stage7b_execution_item_c071b8352834e72fdd62a75c",
+      "context_hash": "7c6c39109f80c6120875c6061f308f1c671ccd86e5bb2c7e83767f11d652fcb1",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_022",
+      "text_hash": "61cbba937d24db2cb8b87936ca5e62217efb5d10a71758e8404b13fa3cd03e9a"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_d1cd9da736f10",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_d1cd9da736f10f",
+      "condition_id": "stage7b_execution_item_baf13c189ad75c031427bc17",
+      "context_hash": "9a6b1bcc8fe7061b783e50e5a5adfcd0451a923743baffc2b8d4080cd2d6282e",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_006",
+      "text_hash": "feb58f190a71d7aaaabaee0c484faa66234f06d3a23839bee0ec48c3ee8f1c92"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_d34d0b43d6acf",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_d34d0b43d6acf5",
+      "condition_id": "stage7b_execution_item_dd88641ac5bcdb7bcef78dc8",
+      "context_hash": "b54122606c4ce09e30808241353c4a6608880aa7e33d645c83d38c4095750f77",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_003",
+      "text_hash": "488df42b04f33a301fd27a99ffa2c13dc968b07c0b354471dab9f29af29ed9a6"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_d539b014f765b",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_d539b014f765b6",
+      "condition_id": "stage7b_execution_item_9f1027bf330c0e78f6ce2665",
+      "context_hash": "38470c27619a89e6e8e8958f4722ea8aad72c249af757969279304cd041e3877",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_045",
+      "text_hash": "ed091620195a2392c0befe42070ffc0c48f7444d2d3d8b1665759ad893662dd5"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_d838a412c0481",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_d838a412c04818",
+      "condition_id": "stage7b_execution_item_a4ea9e530e73eedcb31ee4fc",
+      "context_hash": "0f03391890d014829f216e3699360cef7ed225208098fb8ac4454aebf9323003",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_032",
+      "text_hash": "3cbdb3bc2d60a92fbd6ff47e431e7c698a466e8983b54576a91e45e5f921d6eb"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_d8565ebdf754e",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_d8565ebdf754e8",
+      "condition_id": "stage7b_execution_item_d5e1c4108a7358c5f69bfb47",
+      "context_hash": "ad197126eeaefaa4e89d64d62bea39395ebf43c1221be3ddec6f72d55042ba40",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_016",
+      "text_hash": "563338d09769eaa1d444c6747f883988abde42c6a0c3b2274e7f776e6b5428b0"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_d9da17a5ea62b",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_d9da17a5ea62bf",
+      "condition_id": "stage7b_execution_item_8d384fbc819aca8c2dc90670",
+      "context_hash": "081cdddd28b723315f473e5722218721d0fc2b2ad9de8edbca086cf29ff8edd9",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_038",
+      "text_hash": "5c26454798c097f967a5f3671eb492cfc2ad5e5515e5bec4f8e51c348a1d3d46"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_dd6a5f4edf86d",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_dd6a5f4edf86d5",
+      "condition_id": "stage7b_execution_item_7f6e26e0fb67d00ada3b1c50",
+      "context_hash": "aae4b0635e708564b69aa599bc4f98f2966ce6a572a34a12e4b144d331f755dd",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_025",
+      "text_hash": "ccf486af271bf41428a95cceef415eb8634307c723737ee210c86cb9e2d346fe"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_dffa7811c4697",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_dffa7811c46974",
+      "condition_id": "stage7b_execution_item_03e9ab9ad0f7999d7a88983c",
+      "context_hash": "0f03391890d014829f216e3699360cef7ed225208098fb8ac4454aebf9323003",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_032",
+      "text_hash": "889cada3fca996c76e5291144359e3a00e1ce2dcf4f774376a014fc4d62553f5"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_e14e2a27d512e",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_e14e2a27d512e9",
+      "condition_id": "stage7b_execution_item_841d0839944b3ddc8d8079c5",
+      "context_hash": "115d7e468fae2312aaf7e170d6f0297f4f146fde1e09feb9661d9bcf411c3e46",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_007",
+      "text_hash": "93a8e898b1f4e7817e2c645dc19e805e5795e6d37c6ce979cfcfd17819614cf5"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_e1a961c4ce53d",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_e1a961c4ce53de",
+      "condition_id": "stage7b_execution_item_80607b4051160b17a5c4ea92",
+      "context_hash": "38470c27619a89e6e8e8958f4722ea8aad72c249af757969279304cd041e3877",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_045",
+      "text_hash": "b8f5dccb77d7d26afacff5141a1e557a7fdc0c21d828039aef22c18508f979b6"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_e24ac4513958f",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_e24ac4513958fa",
+      "condition_id": "stage7b_execution_item_0d706878e6870a6017ab3679",
+      "context_hash": "612425b6aaef10d9f0342d0970b638028e963601bb6cdeb70a92c2181a511e55",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_004",
+      "text_hash": "7650542b99802c077141867617faf1d7c123f0cb13aff58c2c1d8781f6908f23"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_e337fdc997b11",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_e337fdc997b116",
+      "condition_id": "stage7b_execution_item_b8038a528da549fc5ba11ffc",
+      "context_hash": "51e9cc3545fcef30d3861db90cf8139e4dcd59a248d98355651528a001a66b37",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_028",
+      "text_hash": "35026a35d0b42e93a79e29ed7fbf827aedc2ac571c03a8b7b1c1a8b5af444d29"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_e4c9d6f9508c3",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_e4c9d6f9508c3b",
+      "condition_id": "stage7b_execution_item_66dac22a069f33f1995aa31a",
+      "context_hash": "f094ad2213414c5679b3f5e56fd791349d46319c0cc20c64f7b255db48444b04",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_033",
+      "text_hash": "b8b007ec3c0ff47dc6e6baff9f63cba142b3a74fc7bc96054147f3cd7cfd10fb"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_e4ed267289b96",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_e4ed267289b96d",
+      "condition_id": "stage7b_execution_item_78a38332a359c012d24fb865",
+      "context_hash": "a1fe59ddd27ba5ad688c2ed4738592810c7f4f564a82e8bd1da78fc1e4e6e2eb",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_043",
+      "text_hash": "5a5d44164af8aa4b2232c539053db6325f0abbda215cfd57cea02573bd651b2d"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_e6785bff6ef4a",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_e6785bff6ef4a0",
+      "condition_id": "stage7b_execution_item_6be833443d33ba4edf72bcea",
+      "context_hash": "081cdddd28b723315f473e5722218721d0fc2b2ad9de8edbca086cf29ff8edd9",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_038",
+      "text_hash": "922c618c5af8cc7a217085b5ee6031fb6dde85dedc4b1cf39b7d7dee903ffab7"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_ea3c2f8259ff1",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_ea3c2f8259ff10",
+      "condition_id": "stage7b_execution_item_c82e8846129dca688da20a45",
+      "context_hash": "a1fe59ddd27ba5ad688c2ed4738592810c7f4f564a82e8bd1da78fc1e4e6e2eb",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_043",
+      "text_hash": "4c4a02d1f165d34e9351698e86297b429a6bb6651ee81f19d45a69f65609d212"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_eb56dc5448fda",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_eb56dc5448fda6",
+      "condition_id": "stage7b_execution_item_a20f5d76686b8b69c500181e",
+      "context_hash": "292976f007368d33385c6caffd517fd29ab33091a1c8604041aa3a9994ff9887",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_005",
+      "text_hash": "9a5a5b4f5b4ea05ca7588cf86ab55a4dea967daa30ca38afe14b53ec560878ee"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_eb656234e7e30",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_eb656234e7e308",
+      "condition_id": "stage7b_execution_item_d8a5240206be9c093e7d0155",
+      "context_hash": "32f5a83f9b42a55bfefffa15860bcfae2691e75628f2c3ee3ed3941ea0322f51",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_008",
+      "text_hash": "cbe358ebe4269e779842a0681e9db92e9e33dafa16b250b85998c7f7aac0371f"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_ee3c61e740e10",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_ee3c61e740e102",
+      "condition_id": "stage7b_execution_item_10d85e37cc49bc3f9b774293",
+      "context_hash": "b54122606c4ce09e30808241353c4a6608880aa7e33d645c83d38c4095750f77",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_003",
+      "text_hash": "ece1ebb6e8bec08fd76864ea45a9d39fcb3d809be3daece3235f74456bfc4f36"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_efe32cf88eaed",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_efe32cf88eaedd",
+      "condition_id": "stage7b_execution_item_eb55e8c89e5dbe0edbac3f95",
+      "context_hash": "3ca51d9eca4faf6bbb12319220d05095d614219f1e4e9840642cbdbba75e99a2",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_039",
+      "text_hash": "a8a6e2815dff54accf1130a5a2a83de2d76949990764ab4f72293c393ee8e67f"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_f362b0b0d1f4f",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_f362b0b0d1f4f5",
+      "condition_id": "stage7b_execution_item_6ab1d3f5b1d94fb307ff2e83",
+      "context_hash": "c26fe85a1573e591a761ab834b38bde75bc98556438183b6c3b3986a3573f4dd",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_026",
+      "text_hash": "92df626571c6395b0bd51a00df700380d2791590264ee4c99c46df8dcdb1d756"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_f3cecd051cf62",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_f3cecd051cf62f",
+      "condition_id": "stage7b_execution_item_c7cb02d9316ce659053665ab",
+      "context_hash": "612425b6aaef10d9f0342d0970b638028e963601bb6cdeb70a92c2181a511e55",
+      "method": "P_PROPOSED",
+      "task_id": "stage7_main_task_004",
+      "text_hash": "348583322530d6ea11a351fc5bf2cb5265689d5a239605087f7fa4d7ad9beb2b"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_f6bb97473911f",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_f6bb97473911f6",
+      "condition_id": "stage7b_execution_item_d242fcb20f91b2d04dd31e34",
+      "context_hash": "3ca51d9eca4faf6bbb12319220d05095d614219f1e4e9840642cbdbba75e99a2",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_039",
+      "text_hash": "2897b5cb5f208a2210a55f43a19e6f23edf599c9934fa4f5c276791ccc9fb675"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_f96f62bf47903",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_f96f62bf47903b",
+      "condition_id": "stage7b_execution_item_981f88dc2157d863b9b78a9c",
+      "context_hash": "ea59fe000fa05bc49c58a12d1d120571dbcfcc00a711b32171ba953c95d3f8b6",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_037",
+      "text_hash": "c8a00fbbe6a4d5d5d40293ee5eea0ad8b28f99b46de1274a5d97ca22a63d554b"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_f9804cfff9e82",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_f9804cfff9e82b",
+      "condition_id": "stage7b_execution_item_7728400ff31d2cd3acc62a0f",
+      "context_hash": "f094ad2213414c5679b3f5e56fd791349d46319c0cc20c64f7b255db48444b04",
+      "method": "B1_STRUCTURED_PROMPT_LLM",
+      "task_id": "stage7_main_task_033",
+      "text_hash": "3d093ab5284a1b4cfa788c8558a8755933d982e105ebc0a4a462515e9528aa7c"
+    },
+    {
+      "annotation_item_id": "stage7c_human_item_annotation_ff140d380d274",
+      "anonymous_condition_id": "stage7c_blind_condition_condition_ff140d380d2749",
+      "condition_id": "stage7b_execution_item_2688f5d9ebb073f68ec903c8",
+      "context_hash": "b9d509a6eff5d849c072d899c781f86abb9f60326afa7e29820cb8f79ad27083",
+      "method": "B0_DIRECT_LLM",
+      "task_id": "stage7_main_task_036",
+      "text_hash": "d24480cc48ef148d2c4e9457fc6329eb8c0d82269193c304341851d5e1eb99bd"
+    }
+  ],
+  "schema_version": "stage7c_human_evaluation_packet.v1.1"
+}

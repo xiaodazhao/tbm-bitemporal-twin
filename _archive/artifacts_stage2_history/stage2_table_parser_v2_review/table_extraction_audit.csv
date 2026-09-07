@@ -1,8 +1,0 @@
-sample,source_type,table_evidence_count,assertion_count,source_span_count,table_cell_span_count,zero_bbox_count
-sketch_dyk1013_184_2,FACE_SKETCH,1,0,14,14,0
-hsp_dyk1013_190_2,SONIC_FORECAST,5,0,20,20,0
-tsp_dyk1013_080_2,TSP_REPORT,8,9,39,30,0
-blank_trailing_page_sketch,FACE_SKETCH,1,0,14,14,0
-hsp_13_page,SONIC_FORECAST,7,0,29,29,0
-tsp_21_page,TSP_REPORT,8,17,47,30,0
-hsp_non1013_prefix,SONIC_FORECAST,9,0,39,39,0

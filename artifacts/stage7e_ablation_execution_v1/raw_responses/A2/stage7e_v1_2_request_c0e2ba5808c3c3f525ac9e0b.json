@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A2_NO_ARCHITECTURAL_ABSTENTION",
+  "attempt_number": 1,
+  "completion_output_token_count": 94,
+  "execution_index": 139,
+  "finish_reason": "completed",
+  "latency_ms": 1605,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 387,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "0d8b24f5-f66f-4f08-b3e3-d4ce7d5f3f06",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676424.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676423.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "0d8b24f5-f66f-4f08-b3e3-d4ce7d5f3f06",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"section_id\": \"operational_attention\",\n  \"text\": \"截至2023-10-08，该空间状态（cell_3d2558b73586465c51997f14）的RAI（非概率性运行响应关注指标）不可用，原因是当前没有可连接的施工机械响应。\",\n  \"used_context_ids\": [\"state_rai_2eed925a14cd21632079694f\"]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "0d100fa7-56d9-4133-8d61-08869886a84c",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 387,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 94,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 481
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"section_id\": \"operational_attention\",\n  \"text\": \"截至2023-10-08，该空间状态（cell_3d2558b73586465c51997f14）的RAI（非概率性运行响应关注指标）不可用，原因是当前没有可连接的施工机械响应。\",\n  \"used_context_ids\": [\"state_rai_2eed925a14cd21632079694f\"]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:47:04.504223+00:00",
+  "request_id": "stage7e_v1_2_request_c0e2ba5808c3c3f525ac9e0b",
+  "request_payload_hash": "c0e2ba5808c3c3f525ac9e0b9a36fd98485c4f6e13742e893403a0acbe35a793",
+  "request_scope": "operational_attention",
+  "request_started_at": "2026-08-25T16:47:02.899151+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_031",
+  "total_token_count": 481,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

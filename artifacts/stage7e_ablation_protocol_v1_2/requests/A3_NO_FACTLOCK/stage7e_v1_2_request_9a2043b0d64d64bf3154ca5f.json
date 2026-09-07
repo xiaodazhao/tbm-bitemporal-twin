@@ -1,0 +1,35 @@
+{
+  "arm_internal": "A3_NO_FACTLOCK",
+  "chunk_id": "a3_chunk_283129fadbe4928dcbaf6db8",
+  "execution_status": "MATERIALIZED_NOT_SENT",
+  "inference_config": {
+    "api_key_env_var": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "max_output_tokens": 4096,
+    "max_retries": 0,
+    "model": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "reasoning_effort": "none",
+    "sdk_max_retries": 0,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "messages": [
+    {
+      "content": "你负责把给定的结构化工程Claim逐条写成中文工程句子。每个输入claim_id必须恰好返回一次，不得增加、删除、合并或替换claim_id，不得形成章节叙事，不得使用外部知识。忠实保持给定值、已验证单位、空间范围、认识性质、状态角色和非概率限定。只返回严格JSON，字段为realizations；每项包含claim_id与sentence。\n",
+      "role": "system"
+    },
+    {
+      "content": "请依照给定顺序逐条表达以下结构化工程Claim，并保持claim_id一一对应。输入JSON如下：\n{\n  \"chunk_index\": 1,\n  \"claims\": [\n    {\n      \"claim_id\": \"typed_claim_42943472b80336b12a40862d\",\n      \"claim_type\": \"COUPLED_ATTENTION_REVIEW\",\n      \"claim_value\": \"{\\\"is_causal_estimate\\\":false,\\\"is_hazard_probability\\\":false,\\\"is_probability\\\":false,\\\"metric_name\\\":\\\"GRCI\\\",\\\"metric_semantics\\\":\\\"NONPROBABILISTIC_CONJUNCTIVE_PRODUCT\\\",\\\"metric_status\\\":\\\"AVAILABLE\\\",\\\"metric_value\\\":0.19361750557209936,\\\"source_metric_id\\\":\\\"state_grci_39772fe30dde2192a0bad331\\\"}\",\n      \"epistemic_status\": \"\",\n      \"nonprobabilistic_qualifier\": \"NONPROBABILISTIC_ATTENTION\",\n      \"order_index\": 8,\n      \"section_id\": \"coupled_attention\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":\\\"cell_2dfc9a7f03542dcf190b7553\\\",\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"stage5b_bitemporal_state_subject\\\",\\\"scope_kind\\\":\\\"CELL\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":\\\"DAILY_REVIEW_CELL\\\",\\\"valid_date\\\":\\\"2023-10-18\\\"}\",\n      \"support_summary\": \"state_grci_39772fe30dde2192a0bad331\",\n      \"unit_verified\": false\n    },\n    {\n      \"claim_id\": \"typed_claim_608b3b3eecce761eeab4c599\",\n      \"claim_type\": \"FORWARD_GEOLOGICAL_ATTENTION\",\n      \"claim_value\": \"{\\\"is_causal_estimate\\\":false,\\\"is_hazard_probability\\\":false,\\\"is_probability\\\":false,\\\"metric_name\\\":\\\"GRS\\\",\\\"metric_semantics\\\":\\\"FORWARD_GEOLOGICAL_EVIDENCE_ATTENTION_INDEX\\\",\\\"metric_status\\\":\\\"AVAILABLE\\\",\\\"metric_value\\\":0.8333333333333333,\\\"source_metric_id\\\":\\\"state_grs_ecf3501edda2757c936f3e6c\\\"}\",\n      \"epistemic_status\": \"\",\n      \"nonprobabilistic_qualifier\": \"NONPROBABILISTIC_ATTENTION\",\n      \"order_index\": 9,\n      \"section_id\": \"forward_attention\",\n      \"state_role\": \"FORWARD_ATTENTION_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":\\\"cell_e610b4ce3922994ac4da48cb\\\",\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"stage5b_bitemporal_state_subject\\\",\\\"scope_kind\\\":\\\"CELL\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":\\\"FORWARD_ATTENTION_CELL\\\",\\\"valid_date\\\":\\\"2023-10-18\\\"}\",\n      \"support_summary\": \"state_grs_ecf3501edda2757c936f3e6c\",\n      \"unit_verified\": false\n    },\n    {\n      \"claim_id\": \"typed_claim_8bc6aa7a6f72c88e8795fdb0\",\n      \"claim_type\": \"FORWARD_GEOLOGICAL_ATTENTION\",\n      \"claim_value\": \"{\\\"is_causal_estimate\\\":false,\\\"is_hazard_probability\\\":false,\\\"is_probability\\\":false,\\\"metric_name\\\":\\\"GRS\\\",\\\"metric_semantics\\\":\\\"FORWARD_GEOLOGICAL_EVIDENCE_ATTENTION_INDEX\\\",\\\"metric_status\\\":\\\"AVAILABLE\\\",\\\"metric_value\\\":0.8333333333333333,\\\"source_metric_id\\\":\\\"state_grs_5e34c835e08798e845e03f3d\\\"}\",\n      \"epistemic_status\": \"\",\n      \"nonprobabilistic_qualifier\": \"NONPROBABILISTIC_ATTENTION\",\n      \"order_index\": 10,\n      \"section_id\": \"forward_attention\",\n      \"state_role\": \"FORWARD_ATTENTION_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":\\\"cell_9014e249e35a590ee949d882\\\",\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"stage5b_bitemporal_state_subject\\\",\\\"scope_kind\\\":\\\"CELL\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":\\\"FORWARD_ATTENTION_CELL\\\",\\\"valid_date\\\":\\\"2023-10-18\\\"}\",\n      \"support_summary\": \"state_grs_5e34c835e08798e845e03f3d\",\n      \"unit_verified\": false\n    },\n    {\n      \"claim_id\": \"typed_claim_81107e13ae5f0682fd9e6d07\",\n      \"claim_type\": \"FORWARD_GEOLOGICAL_ATTENTION\",\n      \"claim_value\": \"{\\\"is_causal_estimate\\\":false,\\\"is_hazard_probability\\\":false,\\\"is_probability\\\":false,\\\"metric_name\\\":\\\"GRS\\\",\\\"metric_semantics\\\":\\\"FORWARD_GEOLOGICAL_EVIDENCE_ATTENTION_INDEX\\\",\\\"metric_status\\\":\\\"AVAILABLE\\\",\\\"metric_value\\\":0.8333333333333333,\\\"source_metric_id\\\":\\\"state_grs_e7a4515cd812b863eae37044\\\"}\",\n      \"epistemic_status\": \"\",\n      \"nonprobabilistic_qualifier\": \"NONPROBABILISTIC_ATTENTION\",\n      \"order_index\": 11,\n      \"section_id\": \"forward_attention\",\n      \"state_role\": \"FORWARD_ATTENTION_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":\\\"cell_feb25603908516ff7807e05b\\\",\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"stage5b_bitemporal_state_subject\\\",\\\"scope_kind\\\":\\\"CELL\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":\\\"FORWARD_ATTENTION_CELL\\\",\\\"valid_date\\\":\\\"2023-10-18\\\"}\",\n      \"support_summary\": \"state_grs_e7a4515cd812b863eae37044\",\n      \"unit_verified\": false\n    }\n  ],\n  \"product_type\": \"metric_review\"\n}\n",
+      "role": "user"
+    }
+  ],
+  "model": "deepseek-v4-flash",
+  "payload_hash": "9a2043b0d64d64bf3154ca5f1d5efdce6dc496ccec16526b8c810608a21b8407",
+  "provider": "deepseek",
+  "request_id": "stage7e_v1_2_request_9a2043b0d64d64bf3154ca5f",
+  "request_scope": "chunk_001",
+  "system_prompt_hash": "061f8dd0116a0b38c0bec8107bddf6ca718709eeb899cdeed733989bc1d810d2",
+  "task_id": "stage7_main_task_046",
+  "user_prompt_hash": "09cdadaebf9d60ee46ab385c9d6a058ec1e3649b767e374c2aa0552cfa2bc27b"
+}

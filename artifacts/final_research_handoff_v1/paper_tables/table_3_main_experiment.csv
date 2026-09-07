@@ -1,0 +1,4 @@
+method,description,planned_tasks,actual_outputs,output_availability_rate,structure_fail_closed,automatic_fail_count_across_defined_checks,human_review_marks,semantic_endpoint_status,denominator_caveat
+B0_DIRECT_LLM,直接 LLM 基线,48,48,1.0,0,2,1494,DEFERRED_TO_HUMAN,"automatic rows are check-instance counts, not task-level accuracy"
+B1_STRUCTURED_PROMPT_LLM,结构化提示基线,48,48,1.0,0,0,2472,DEFERRED_TO_HUMAN,"automatic rows are check-instance counts, not task-level accuracy"
+P_PROPOSED,Claim-gated controlled realization,48,45,0.9375,3,0,214,DEFERRED_TO_HUMAN,"automatic rows are check-instance counts, not task-level accuracy"

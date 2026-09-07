@@ -1,0 +1,22 @@
+layer,object,count,unit,source,caveat
+PLC,normalized observations,328217,rows,stage2_plc_operational_freeze_v2/freeze_manifest.json,原始字段单位未经验证者不参与物理量推导
+PLC,monitored construction dates,91,dates,stage2_plc_operational_freeze_v2/freeze_manifest.json,spanning 2023-09-15 to 2023-12-30; calendar gaps exist
+Process,ExcavationEpisode,1119,episodes,stage2_plc_operational_freeze_v2/freeze_manifest.json,由确定性 phase segmentation 重建，不是人工逐条标注真值
+Operational evidence,ResponseEvidence,5595,objects,stage3a_initial_epistemic_state_v1_1/freeze_manifest.json,5 channels per eligible episode; 75 spatially unlocated
+Geology,canonical documents,223,documents,stage2_geology_v2_freeze_candidate/freeze_manifest.json,SHA duplicates and out-of-scope assets excluded from canonical documents
+Geology,Primary Evidence,659,evidence objects,stage2_geology_v2_freeze_candidate/freeze_manifest.json,278 OBSERVED and 381 FORECAST
+Geology,OBSERVED Primary Evidence,278,evidence objects,stage2_geology_v2_freeze_candidate/freeze_manifest.json,source epistemic status retained
+Geology,FORECAST Primary Evidence,381,evidence objects,stage2_geology_v2_freeze_candidate/freeze_manifest.json,never promoted to OBSERVED
+Geology,ReportAssertion,122,assertions,stage2_geology_v2_freeze_candidate/freeze_manifest.json,kept separate from Primary Evidence
+Provenance,SourceSpan,4713,spans,stage2_geology_v2_freeze_candidate/freeze_manifest.json,4713/4713 frozen validation pass
+State,ConstructionStateCell,156,cells,stage3a_initial_epistemic_state_v1_1/freeze_manifest.json,10 m research index; not atomic ground truth
+State,DailyConstructionState,91,dates,stage3a_initial_epistemic_state_v1_1/freeze_manifest.json,one per PLC-monitored construction date
+State,initial state versions,1322,versions,stage3a_initial_epistemic_state_v1_1/freeze_manifest.json,as-known initial states
+Bitemporal state,bitemporal versions,1375,versions,stage3b_bitemporal_epistemic_state_v1_1/freeze_manifest.json,1322 initial plus 53 revised versions
+Bitemporal state,knowledge revision events,53,events,stage3b_bitemporal_epistemic_state_v1_1/freeze_manifest.json,reconstructed knowledge availability
+Metrics,RAI available,174,of 1375 versions,stage4_bitemporal_state_metrics_v1_1/freeze_manifest.json,non-probabilistic operational attention
+Metrics,GRS available,1211,of 1375 versions,stage4_bitemporal_state_metrics_v1_1/freeze_manifest.json,ordinal evidence attention
+Metrics,GRCI available,174,of 1375 versions,stage4_bitemporal_state_metrics_v1_1/freeze_manifest.json,daily-review product only; not probability or causality
+Claim,Claim opportunities,8679,opportunities,stage5c_claim_expressibility_analysis_v1/analysis_universe_manifest.json,frozen deterministic universe
+Claim,EXPRESSIBLE,6279,decisions,stage5c_claim_expressibility_analysis_v1/overall_expressibility_summary.csv,rate=0.723470
+Claim,ABSTAIN,2400,decisions,stage5c_claim_expressibility_analysis_v1/overall_expressibility_summary.csv,"rate=0.276530; formal output, not failure"

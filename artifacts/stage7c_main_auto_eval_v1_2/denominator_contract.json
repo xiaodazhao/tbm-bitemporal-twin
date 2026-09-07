@@ -1,0 +1,30 @@
+{
+  "actual_text_denominator": 141,
+  "condition_denominator": 144,
+  "method_condition_denominator": {
+    "B0_DIRECT_LLM": 48,
+    "B1_STRUCTURED_PROMPT_LLM": 48,
+    "P_PROPOSED": 48
+  },
+  "method_version": "stage7c_main_auto_eval_v1_2_final_closure",
+  "no_valid_output_policy": {
+    "included_in_condition_denominator": true,
+    "included_in_output_availability": true,
+    "not_counted_as_prose_semantic_fail": true,
+    "not_counted_as_semantic_pass": true,
+    "text_evaluation_eligible": false
+  },
+  "pending_human_codes": [
+    "E1",
+    "E6",
+    "E7",
+    "E8",
+    "E9",
+    "E11",
+    "E12"
+  ],
+  "proposed_no_valid_output_denominator": 3,
+  "schema_version": "stage7c_main_auto_eval.v1.2",
+  "scope": "PRE-HUMAN AUTOMATIC EVALUATION",
+  "task_denominator": 48
+}

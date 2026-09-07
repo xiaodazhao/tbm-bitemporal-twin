@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A3_NO_FACTLOCK",
+  "attempt_number": 1,
+  "completion_output_token_count": 501,
+  "execution_index": 101,
+  "finish_reason": "completed",
+  "latency_ms": 3569,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 2175,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "aaf46b9e-95a0-46bf-904b-4797cdfa2012",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676278.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676275.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "aaf46b9e-95a0-46bf-904b-4797cdfa2012",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"realizations\": [\n    {\n      \"claim_id\": \"typed_claim_3cc9c56fe7a6ee98f4030a12\",\n      \"sentence\": \"在里程1013568至1013585区间，预报异常等级为中等。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_5e8bc1907077a91ed1746dba\",\n      \"sentence\": \"在里程1013568至1013585区间，预报地质结论为：该段围岩较前段变差，岩性以板岩为主，弱风化，岩质软，节理裂隙发育密集，岩体破碎至极破碎，围岩整体稳定性差。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_c462c60ec688368ab1604960\",\n      \"sentence\": \"在里程1013568至1013585区间，预报风险提示为：里程+568、+578、+581附近有掉块风险。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_5f832aaf37dc1826072185d0\",\n      \"sentence\": \"在2023年10月14日的日检单元cell_e64cfd0ce48c0a1b76f17f99中，运行响应注意指数RAI的值为0.297847581638655，该值为非概率性注意指标。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_e0b898baf3a1589e0e1b7f8e\",\n      \"sentence\": \"在2023年10月14日的日检单元cell_e64cfd0ce48c0a1b76f17f99中，地质证据注意指数GRS的值为0.9444444444444445，该值为非概率性注意指标。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_3c6e2138d9c3263493e1693d\",\n      \"sentence\": \"在2023年10月14日的日检单元cell_e64cfd0ce48c0a1b76f17f99中，耦合注意指数GRCI的值为0.28130049376984084，该值为非概率性注意指标。\"\n    }\n  ]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "82eee374-7063-4975-bf24-03601f27f366",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 2175,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 501,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2676
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"realizations\": [\n    {\n      \"claim_id\": \"typed_claim_3cc9c56fe7a6ee98f4030a12\",\n      \"sentence\": \"在里程1013568至1013585区间，预报异常等级为中等。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_5e8bc1907077a91ed1746dba\",\n      \"sentence\": \"在里程1013568至1013585区间，预报地质结论为：该段围岩较前段变差，岩性以板岩为主，弱风化，岩质软，节理裂隙发育密集，岩体破碎至极破碎，围岩整体稳定性差。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_c462c60ec688368ab1604960\",\n      \"sentence\": \"在里程1013568至1013585区间，预报风险提示为：里程+568、+578、+581附近有掉块风险。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_5f832aaf37dc1826072185d0\",\n      \"sentence\": \"在2023年10月14日的日检单元cell_e64cfd0ce48c0a1b76f17f99中，运行响应注意指数RAI的值为0.297847581638655，该值为非概率性注意指标。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_e0b898baf3a1589e0e1b7f8e\",\n      \"sentence\": \"在2023年10月14日的日检单元cell_e64cfd0ce48c0a1b76f17f99中，地质证据注意指数GRS的值为0.9444444444444445，该值为非概率性注意指标。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_3c6e2138d9c3263493e1693d\",\n      \"sentence\": \"在2023年10月14日的日检单元cell_e64cfd0ce48c0a1b76f17f99中，耦合注意指数GRCI的值为0.28130049376984084，该值为非概率性注意指标。\"\n    }\n  ]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:44:38.802418+00:00",
+  "request_id": "stage7e_v1_2_request_045305e2f9df9d69bc537ead",
+  "request_payload_hash": "045305e2f9df9d69bc537ead5088d9cfde2d3a58384d5878e3cb82075e201660",
+  "request_scope": "chunk_003",
+  "request_started_at": "2026-08-25T16:44:35.232875+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_017",
+  "total_token_count": 2676,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

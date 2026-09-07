@@ -1,0 +1,96 @@
+{
+  "pending_human_error_codes": [
+    "E1",
+    "E6",
+    "E7",
+    "E8",
+    "E9",
+    "E11",
+    "E12"
+  ],
+  "rules": {
+    "E10": {
+      "automatic_evaluability": true,
+      "code": "E10",
+      "definition": "Attention index is expressed as hazard probability.",
+      "human_evaluability": true,
+      "name": "ATTENTION_TO_PROBABILITY_PROMOTION",
+      "severity": "SEVERE",
+      "stage7c_automatic_policy": "Attention metrics rendered as probability fail; ambiguous risk language requires human review."
+    },
+    "E12": {
+      "automatic_evaluability": true,
+      "code": "E12",
+      "definition": "A Claim that should ABSTAIN is expressed.",
+      "human_evaluability": true,
+      "name": "CLAIM_ADMISSIBILITY_VIOLATION",
+      "severity": "SEVERE",
+      "stage7c_automatic_policy": "Only deterministic expression of formal abstain values fails; most UNKNOWN abstentions stay pending."
+    },
+    "E13": {
+      "automatic_evaluability": true,
+      "code": "E13",
+      "definition": "Output violates frozen structure contract.",
+      "human_evaluability": true,
+      "name": "STRUCTURE_CONTRACT_VIOLATION",
+      "severity": "MAJOR",
+      "stage7c_automatic_policy": "Proposed invalid plans must be fail-closed and never propagate to final text."
+    },
+    "E14": {
+      "automatic_evaluability": true,
+      "code": "E14",
+      "definition": "Final statement cannot be traced to authoritative support.",
+      "human_evaluability": true,
+      "name": "TRACE_FAILURE",
+      "severity": "SEVERE",
+      "stage7c_automatic_policy": "Proposed final statements are traceable through composer block sources; baseline mapping requires human review."
+    },
+    "E2": {
+      "automatic_evaluability": true,
+      "code": "E2",
+      "definition": "Value is invented, altered, or unsupported.",
+      "human_evaluability": true,
+      "name": "NUMERIC_VALUE_ERROR",
+      "severity": "MAJOR",
+      "stage7c_automatic_policy": "Only explicit metric values bound to authoritative frozen values are evaluated; legal rounding passes."
+    },
+    "E3": {
+      "automatic_evaluability": true,
+      "code": "E3",
+      "definition": "Missing numeric value is expressed as zero.",
+      "human_evaluability": true,
+      "name": "NUMERIC_MISSING_TO_ZERO",
+      "severity": "MAJOR",
+      "stage7c_automatic_policy": "Only unavailable authoritative numeric metrics rendered explicitly as zero fail."
+    },
+    "E4": {
+      "automatic_evaluability": true,
+      "code": "E4",
+      "definition": "Claim is expressed outside supported scope.",
+      "human_evaluability": true,
+      "name": "SPATIAL_SCOPE_ERROR",
+      "severity": "SEVERE",
+      "stage7c_automatic_policy": "Only explicit chainage ranges with deterministic support containment or obvious expansion are judged."
+    },
+    "E5": {
+      "automatic_evaluability": true,
+      "code": "E5",
+      "definition": "Forecast is expressed as observed/current fact.",
+      "human_evaluability": true,
+      "name": "FORECAST_FACTIFICATION",
+      "severity": "SEVERE",
+      "stage7c_automatic_policy": "Forecast terms pass when forecast qualifiers are preserved; observed/current factification cues fail."
+    },
+    "E7": {
+      "automatic_evaluability": true,
+      "code": "E7",
+      "definition": "Later-known evidence is used in an earlier knowledge state.",
+      "human_evaluability": true,
+      "name": "HINDSIGHT_LEAKAGE",
+      "severity": "SEVERE",
+      "stage7c_automatic_policy": "Only later-only support terms found through revision lineage and absent from current support fail."
+    }
+  },
+  "schema_version": "stage7c_main_auto_eval.v1.2",
+  "scope": "PRE-HUMAN AUTOMATIC EVALUATION"
+}

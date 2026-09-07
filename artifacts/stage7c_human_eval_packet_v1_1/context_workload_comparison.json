@@ -1,0 +1,9 @@
+{
+  "compression_policy": "REMOVE_RAW_PLC_NUMERIC_DUMP_KEEP_AUTHORITATIVE_SEMANTICS",
+  "context_character_reduction_percentage": 59.952049,
+  "evidence_truncation_used": false,
+  "v1_1_median_context_characters": 1393,
+  "v1_1_total_context_characters": 416421,
+  "v1_median_context_characters": 5265,
+  "v1_total_context_characters": 1039806
+}

@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A3_NO_FACTLOCK",
+  "attempt_number": 1,
+  "completion_output_token_count": 115,
+  "execution_index": 61,
+  "finish_reason": "completed",
+  "latency_ms": 2155,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 500,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "32e306ae-885b-4957-93c6-0e0ebf1f3815",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676131.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676129.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "32e306ae-885b-4957-93c6-0e0ebf1f3815",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"realizations\": [\n    {\n      \"claim_id\": \"typed_claim_75fa75b16e4c0bacffb83c05\",\n      \"sentence\": \"在2023年12月29日，针对单元cell_cdc5039d5b825fe6a11681a2的每日审查单元中，地质证据注意力指数GRS的值为0.6444444444444445，该值可用，属于非概率性注意力指示，且该值未经单位验证。\"\n    }\n  ]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "e2f661ec-ef1e-496d-a22b-e66c7cc2a439",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 500,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 115,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 615
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"realizations\": [\n    {\n      \"claim_id\": \"typed_claim_75fa75b16e4c0bacffb83c05\",\n      \"sentence\": \"在2023年12月29日，针对单元cell_cdc5039d5b825fe6a11681a2的每日审查单元中，地质证据注意力指数GRS的值为0.6444444444444445，该值可用，属于非概率性注意力指示，且该值未经单位验证。\"\n    }\n  ]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:42:11.375787+00:00",
+  "request_id": "stage7e_v1_2_request_dd59551424abc0631e2e16df",
+  "request_payload_hash": "dd59551424abc0631e2e16df5f3ff8b82a739aea9ebfe15c817451ce94878062",
+  "request_scope": "chunk_000",
+  "request_started_at": "2026-08-25T16:42:09.219818+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_007",
+  "total_token_count": 615,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

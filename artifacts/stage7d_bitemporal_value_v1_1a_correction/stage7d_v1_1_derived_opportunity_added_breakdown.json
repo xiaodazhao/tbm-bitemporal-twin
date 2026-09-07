@@ -1,0 +1,26 @@
+{
+  "by_claim_type_and_post_decision": {
+    "FORECAST_GEOLOGICAL_CONDITION": {
+      "ABSTAIN": 86,
+      "EXPRESSIBLE": 418
+    },
+    "OBSERVED_GEOLOGICAL_CONDITION": {
+      "EXPRESSIBLE": 36
+    }
+  },
+  "by_post_decision": {
+    "ABSTAIN": 86,
+    "EXPRESSIBLE": 454
+  },
+  "counts": {
+    "abstain_to_expressible": 27,
+    "added_abstain": 86,
+    "added_expressible": 454,
+    "forecast_added": 504,
+    "observed_added": 36,
+    "opportunity_added": 540,
+    "transition_rows": 975
+  },
+  "derivation": "deterministic_group_by_transition_claim_type_and_post_decision",
+  "source": "frozen_stage7d_v1_1_transition_csv"
+}

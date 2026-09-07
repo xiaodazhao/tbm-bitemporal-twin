@@ -1,0 +1,16 @@
+{
+  "api_calls": 0,
+  "claim_pipeline": "INDEPENDENT_STAGE5A_STAGE5B_DETERMINISTIC_REEXECUTION_PER_ARM",
+  "experiment": "Stage7D v1.1 Revision-Census Bitemporal Value Experiment",
+  "generated_at": "2026-08-25T19:00:00+08:00",
+  "llm_calls": 0,
+  "method_version": "stage7d_bitemporal_value_v1_1_revision_census",
+  "post_arm": "POST_REVISION_FINAL_HISTORY",
+  "pre_arm": "PRE_REVISION_AS_KNOWN",
+  "primary_population": "ALL_FROZEN_STAGE3B_KNOWLEDGE_REVISION_EVENTS",
+  "primary_unit": "REVISION_EVENT_PAIR",
+  "revision_event_count": 53,
+  "sampling": "NONE_COMPLETE_CENSUS",
+  "schema_version": "stage7d_bitemporal_value.v1.1",
+  "stage5c_use": "POST_HOC_RECONCILIATION_ONLY"
+}

@@ -1,0 +1,10 @@
+analysis_scope,endpoint,numerator,denominator,rate,interpretation
+48-task benchmark alignment,affected tasks,0,48,0.0,null alignment; benchmark tasks did not overlap revision events
+full revision census,revision events,53,53,1.0,complete Stage3B revision census
+full revision census,RAI changed,0,53,0.0,metric availability or value changed across authoritative revision pair
+full revision census,GRS changed,36,53,0.6792452830188679,metric availability or value changed across authoritative revision pair
+full revision census,GRCI changed,1,53,0.018867924528301886,metric availability or value changed across authoritative revision pair
+full revision census,events with existing Claim decision switch,27,53,0.5094339622641509,ABSTAIN_TO_EXPRESSIBLE occurred in 27 events
+transition-row descriptive accounting,new opportunities,540,,,count of OPPORTUNITY_ADDED transition rows; not an event rate
+transition-row descriptive accounting,new EXPRESSIBLE opportunities,454,,,subset of 540 newly added opportunities
+transition-row descriptive accounting,new ABSTAIN opportunities,86,,,subset of 540 newly added opportunities

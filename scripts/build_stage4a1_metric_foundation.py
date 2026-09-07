@@ -1,4 +1,4 @@
-"""Build Stage 4A1 metric foundation candidate artifacts."""
+"""Build the formal Stage 4A1 metric foundation artifacts."""
 
 from __future__ import annotations
 
@@ -21,7 +21,7 @@ def _parse_generated_at(value: str) -> datetime:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo-root", default=".")
-    parser.add_argument("--output-dir", default="artifacts/stage4a1_metric_foundation_v1_candidate")
+    parser.add_argument("--output-dir", default="artifacts/stage4a1_metric_foundation_v1")
     parser.add_argument("--generated-at", required=True, type=_parse_generated_at)
     args = parser.parse_args()
     repo_root = Path(args.repo_root).resolve()

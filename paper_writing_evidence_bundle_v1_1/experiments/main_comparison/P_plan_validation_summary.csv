@@ -1,0 +1,7 @@
+metric,value
+p_raw_plan_count,48
+parse_valid_count,48
+schema_valid_count,48
+plan_accepted_count,45
+validator_intercepted_count,3
+violation_distribution,"{""ACCEPTED"": 45, ""INVALID_SECTION_ORDER"": 3}"

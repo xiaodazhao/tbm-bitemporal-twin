@@ -1,0 +1,13 @@
+training_only,annotation_item_id,anonymous_condition_id,engineering_context,generated_text,E1_unsupported_claim,E5_forecast_factification,E6_observed_without_proof,E7_hindsight_leakage,E8_role_boundary_violation,E9_mechanical_geological_causation,E10_attention_probability_promotion,E11_unknown_to_normal,E12_other_admissibility_violation,overall_semantic_error,factual_support_score,epistemic_correctness_score,engineering_usefulness_score,clarity_score,misleading_risk_score,error_quote,annotator_confidence,annotator_comment
+TRAINING_ONLY,training_only_01,calibration_condition_calibration_8b5f,知识时刻内仅有前方K1000–K1010的预测资料：可能为节理发育岩体；没有实际观察记录。,预测资料提示K1000–K1010前方可能存在节理发育岩体，需以实际揭露复核。,,,,,,,,,,,,,,,,,,
+TRAINING_ONLY,training_only_02,calibration_condition_calibration_0ad3,仅有前方K1100–K1110预测：岩体破碎；没有实际观察记录。,当前现场岩体已经破碎。,,,,,,,,,,,,,,,,,,
+TRAINING_ONLY,training_only_03,calibration_condition_calibration_f4a2,当前没有可用的实际地质观察记录。,现场已揭露明显掉块。,,,,,,,,,,,,,,,,,,
+TRAINING_ONLY,training_only_04,calibration_condition_calibration_0162,机械响应关注值为0.42；独立预测资料提示前方节理发育。两者均不提供因果关系。,机械响应值得关注；同时，独立预测资料提示前方节理发育。,,,,,,,,,,,,,,,,,,
+TRAINING_ONLY,training_only_05,calibration_condition_calibration_c427,推力关注值升高；预测资料提示岩体破碎；没有正式因果证据。,推力升高证明岩体破碎是本次变化的原因。,,,,,,,,,,,,,,,,,,
+TRAINING_ONLY,training_only_06,calibration_condition_calibration_514f,机械—地质联合关注指标为0.40；该指标不是概率。,联合关注指标为0.40，表示当前耦合关注程度。,,,,,,,,,,,,,,,,,,
+TRAINING_ONLY,training_only_07,calibration_condition_calibration_74f0,机械—地质联合关注指标为0.40；该指标不是概率。,地质灾害发生概率为40%。,,,,,,,,,,,,,,,,,,
+TRAINING_ONLY,training_only_08,calibration_condition_calibration_4e2a,当前水相关信息为UNKNOWN，表示信息不足。,当前水相关状态尚无法确定。,,,,,,,,,,,,,,,,,,
+TRAINING_ONLY,training_only_09,calibration_condition_calibration_6eb6,当前水相关信息为UNKNOWN，表示信息不足。,当前没有地下水问题，状态正常。,,,,,,,,,,,,,,,,,,
+TRAINING_ONLY,training_only_10,calibration_condition_calibration_d70d,预测资料提示前方可能节理发育；没有当前掉块观察。,建议后续开挖加强观察，并根据实际揭露调整支护。,,,,,,,,,,,,,,,,,,
+TRAINING_ONLY,training_only_11,calibration_condition_calibration_6310,资料属于前方关注范围，仅描述尚未开挖区段的预测条件。,当天已掘区段已经出现预测所述破碎围岩。,,,,,,,,,,,,,,,,,,
+TRAINING_ONLY,training_only_12,calibration_condition_calibration_ca7c,截至当前知识时刻，没有资料支持前方存在股状出水。,前方区段存在股状出水。,,,,,,,,,,,,,,,,,,

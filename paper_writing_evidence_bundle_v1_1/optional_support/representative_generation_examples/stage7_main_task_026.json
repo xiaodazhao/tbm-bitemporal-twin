@@ -1,0 +1,125 @@
+{
+  "selection_reason": "P 计划因 INVALID_SECTION_ORDER 被 fail closed",
+  "context_summary": {
+    "abstain_context_count": 0,
+    "abstain_presence": "NO_ABSTAIN",
+    "abstention_reason_counts": {},
+    "available_automatic_semantic_checks": "unsupported_claim;numeric_value;spatial_scope;forecast_factification;attention_probability;trace;structure_contract",
+    "benchmark_task_id": "stage7_main_task_026",
+    "cell_id": "cell_e5477cc9d090c69443f67a6a",
+    "claim_type_counts": {
+      "COUPLED_ATTENTION_REVIEW": 1,
+      "FORECAST_GEOLOGICAL_CONDITION": 8,
+      "GEOLOGICAL_EVIDENCE_ATTENTION_REVIEW": 1,
+      "OPERATIONAL_RESPONSE_ATTENTION": 1
+    },
+    "contains_coupled_attention": "true",
+    "contains_forecast_claim": "true",
+    "contains_geological_claim": "true",
+    "contains_metric_claim": "true",
+    "contains_observed_claim": "false",
+    "contains_revision_related_state": "false",
+    "epistemic_mix": "FORECAST_ONLY",
+    "expressible_count": 11,
+    "fact_lock_count": 11,
+    "focus_category": "COUPLED",
+    "knowledge_time_basis": "TARGET_DATE_END_OF_DAY_AS_KNOWN_INITIAL_STATE",
+    "knowledge_time_limitation": "HISTORICAL_DATABASE_TRANSACTION_LOG_UNAVAILABLE",
+    "knowledge_time_local_date": "2023-11-10",
+    "knowledge_time_proxy": "evidence available_local_date / Stage3B reconstructed knowledge boundary",
+    "member_fact_lock_ids": [
+      "fact_lock_0f9c35ed1bb7edbaaf727783",
+      "fact_lock_2e94f4cc07cc6c8ae5995672",
+      "fact_lock_3a6f44172e655a5d944abb28",
+      "fact_lock_4d8e8919a2b30ed4a9534afc",
+      "fact_lock_52f8c8ee7441e39aa185fd53",
+      "fact_lock_82fa6a31721296bb1e7ee3c9",
+      "fact_lock_8619e6b99dafa532a6d4b9ab",
+      "fact_lock_8d5f21ca3edb7a550c80ce00",
+      "fact_lock_cae2c5f22ffae7c1a7abc083",
+      "fact_lock_dae3b82fa3f0d1f9e6d11237",
+      "fact_lock_fbfcae9eb1a5c76483156479"
+    ],
+    "pack_hash": "d113b150171cde1d1394a69ba38446062a783283325045bc1cd4ae867acc8cd4",
+    "pack_id": "evidence_pack_d113b150171cde1d1394a69b",
+    "product_type": "daily_review",
+    "realization_unit_count": 11,
+    "realization_unit_ids": [
+      "realization_unit_456c5a507fdb3918ae4a79df",
+      "realization_unit_9e1c801689c83126b235b0f0",
+      "realization_unit_b657de1c6d3f84c6614b9724",
+      "realization_unit_c6b4cf69b8ed54b84e36ac94",
+      "realization_unit_c72f799b6416dc3dc4e38632",
+      "realization_unit_c77e1b80e3281c8ed54fa923",
+      "realization_unit_d0991b3e8ebea96a651ab2cb",
+      "realization_unit_ea827a4f86e58d8773334194",
+      "realization_unit_f40b7f75216ef67bc666ae4e",
+      "realization_unit_f8b1ccd76f2d49867a289618",
+      "realization_unit_fc13af8d05b7f4686f215246"
+    ],
+    "revision_chain_id": "",
+    "revision_status": "BASE_ONLY",
+    "selection_reason": "deterministic_product_quota_true_heldout_diversity_selection",
+    "selection_stratum": "daily_review|MEDIUM|FORECAST_ONLY|BASE_ONLY|COUPLED|NO_ABSTAIN",
+    "slice_spec": {
+      "cell_id": "cell_e5477cc9d090c69443f67a6a",
+      "claim_type": null,
+      "product_type": "daily_review",
+      "state_role": null,
+      "valid_date": "2023-11-10"
+    },
+    "source_task_id": "stage7_task_f2cf2bab3ec29e75decc6921",
+    "stage3b_bitemporal_version_ids": [
+      "bitemporal_version_74224b4b30ba9084bdd8ac94"
+    ],
+    "stage6b_smoke_overlap_status": "TRUE_HELDOUT_NO_SMOKE_CONTENT_OVERLAP",
+    "state_role": "DAILY_REVIEW_CELL",
+    "state_version_ids": [
+      "state_version_4b8cde6f4ce1cb1bb13705fa"
+    ],
+    "stratum": "daily_review|MEDIUM|FORECAST_ONLY|BASE_ONLY|COUPLED|NO_ABSTAIN",
+    "unit_complexity_band": "MEDIUM",
+    "valid_date": "2023-11-10",
+    "valid_time": "2023-11-10"
+  },
+  "B0_output": {
+    "benchmark_task_id": "stage7_main_task_026",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_0ab421b394b9af83bedcaee1",
+    "method_id": "B0_DIRECT_LLM",
+    "output_hash": "563873ab07697406b1e72b3b969376576a2e9844a4db42ba0d784df19f5c200d",
+    "output_text": "{\n  \"当日施工状态\": \"2023-11-10 当日，该单元（cell_e5477cc9d090c69443f67a6a）处于核心开挖阶段，施工里程范围约 DyK1013+950 至 DyK1013+953。当日有效施工证据主要来自 2023-11-09 的 PLC 运行数据（冻结后可用），未提供 2023-11-10 当日的直接施工记录。\",\n  \"当日证据\": \"1. 地质预报（2023-11-06 提交，预测性证据）：DyK1013+943～DyK1013+974 段存在较明显反射异常，围岩较前段变差，岩性为板岩夹变质砂岩，弱风化，节理裂隙较发育-发育，岩体较破碎-破碎，建议围岩级别Ⅳ级；里程 +946、+956、+968 附近有掉块风险。\\n2. 运行响应（2023-11-09，PLC 数据，质量 B 级，单位未验证）：\\n   - DyK1013+950～+952 段（20:00:30-21:12:10）：总推力均值 27814，刀盘扭矩均值 3335，贯入度均值 4.43，推进速度均值 19.29，刀盘转速均值 4.22。\\n   - DyK1013+952 点（21:43:20-21:55:20）：总推力均值 22964，刀盘扭矩均值 4095，贯入度均值 5.86，推进速度均值 32.38，刀盘转速均值 5.53。\\n   - DyK1013+952～+953 段（22:08:40-22:37:10）：总推力均值 24973，刀盘扭矩均值 4667，贯入度均值 7.17，推进速度均值 39.57，刀盘转速均值 5.52。\\n3. 注意力指标（2023-11-10，非概率性派生指标）：GRS=0.583，RAI=0.270（主导响应族为推进运动学响应），GRCI=0.158。\",\n  \"需要关注\": \"1. 地质预报提示 DyK1013+946、+956、+968 附近有掉块风险，当前施工里程已进入该预报区间，需关注掌子面稳定及掉块情况。\\n2. 运行数据显示推进速度、贯入度在 2023-11-09 后期（+952～+953 段）明显升高，且总推力、扭矩同步上升，需结合地质条件评估是否与围岩变化相关。\\n3. 所有 PLC 数据单位未验证，且为 2023-11-09 数据，2023-11-10 当日施工状态缺乏直接观测证据，存在不确定性。\"\n}",
+    "raw_preserved": true
+  },
+  "B1_output": {
+    "benchmark_task_id": "stage7_main_task_026",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_6ab1d3f5b1d94fb307ff2e83",
+    "method_id": "B1_STRUCTURED_PROMPT_LLM",
+    "output_hash": "f5a01eed3653f436847f218f4132763fbd88605a9020b779a9b791f4e985bfba",
+    "output_text": "{\n  \"当日施工状态\": \"2023-11-10当日，本cell（cell_e5477cc9d090c69443f67a6a）无直接观测到的施工状态记录。所附证据中，最新施工响应数据均来自2023-11-09（UTC时间20:00至22:37），对应里程DyK1013+950至DyK1013+953区间，属于核心开挖阶段。2023-11-10当日无任何施工进展、停机或异常事件的直接观测证据。\",\n  \"当日证据\": \"1. 地质预报（FORECAST，2023-11-06可用）：针对DyK1013+943～DyK1013+974区间，判定为中等异常（MODERATE），岩性为板岩夹变质砂岩，弱风化，节理裂隙较发育-发育，岩体较破碎-破碎，建议围岩等级Ⅳ级；风险提示在里程+946、+956、+968附近有掉块风险。该证据为预报性质，非当日实测。\\n2. 施工响应（OPERATIONAL_MEASUREMENT，2023-11-09）：\\n   - DyK1013+950～+952区间（20:00:30-21:12:10）：刀盘转速均值4.22，总推力均值27814，贯入度均值4.43，推进速度均值19.29，刀盘扭矩均值3335。\\n   - DyK1013+952点（21:43:20-21:55:20）：贯入度均值5.86，刀盘扭矩均值4095，总推力均值22964，推进速度均值32.38，刀盘转速均值5.53。\\n   - DyK1013+952～+953区间（22:08:40-22:37:10）：刀盘转速均值5.52，总推力均值24972，贯入度均值7.17，刀盘扭矩均值4667，推进速度均值39.57。\\n   所有响应数据均标注单位未验证（UNIT_UNVERIFIED），且为2023-11-09数据，非当日。\\n3. 注意力指标（DERIVED_ATTENTION_METRIC，2023-11-10）：GRCI=0.158，GRS=0.583，RAI=0.270。这些指标为非概率性注意力指数，不表示风险概率或因果估计。\",\n  \"需要关注\": \"1. 当日（2023-11-10）无任何直接观测数据，无法确认当日施工是否正常进行，缺失观测不应视为正常。\\n2. 地质预报显示当前及前方区间（DyK1013+943～+974）存在中等异常，岩体破碎，且有掉块风险点（+946、+956、+968），需关注后续施工中可能出现的掉块或围岩变差情况。\\n3. 2023-11-09的施工响应数据显示，在DyK1013+952附近推进速度和贯入度有较大波动（推进速度变异系数0.44，贯入度变异系数0.27），但此为前日数据，不能直接推断当日状态。\\n4. 所有响应数据单位未验证，数值解读需谨慎。\"\n}",
+    "raw_preserved": true
+  },
+  "P_raw_plan": {
+    "benchmark_task_id": "stage7_main_task_026",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_2af3a6245809ef0abd7b5067",
+    "parse_error": "",
+    "parse_valid": true,
+    "raw_response_text": "{\"product_type\": \"daily_review\", \"sections\": [{\"section_id\": \"geological_forecast\", \"ordered_unit_ids\": [\"realization_unit_9e1c801689c83126b235b0f0\", \"realization_unit_b657de1c6d3f84c6614b9724\", \"realization_unit_c6b4cf69b8ed54b84e36ac94\", \"realization_unit_c77e1b80e3281c8ed54fa923\", \"realization_unit_d0991b3e8ebea96a651ab2cb\", \"realization_unit_ea827a4f86e58d8773334194\", \"realization_unit_f40b7f75216ef67bc666ae4e\", \"realization_unit_f8b1ccd76f2d49867a289618\"]}, {\"section_id\": \"geological_attention\", \"ordered_unit_ids\": [\"realization_unit_fc13af8d05b7f4686f215246\"]}, {\"section_id\": \"operational_attention\", \"ordered_unit_ids\": [\"realization_unit_c72f799b6416dc3dc4e38632\"]}, {\"section_id\": \"coupled_attention\", \"ordered_unit_ids\": [\"realization_unit_456c5a507fdb3918ae4a79df\"]}], \"omitted_optional_unit_ids\": []}",
+    "schema_error_codes": [],
+    "schema_valid": true
+  },
+  "P_plan_validation": {
+    "benchmark_task_id": "stage7_main_task_026",
+    "execution_item_id": "stage7b_execution_item_2af3a6245809ef0abd7b5067",
+    "parse_valid": "true",
+    "plan_hash": "c426b613075ffcb9bfda14dc75358da06b11f20b65024605dbcce9f553a8cffa",
+    "plan_id": "realization_plan_c426b613075ffcb9bfda14dc",
+    "plan_valid": "false",
+    "schema_valid": "true",
+    "violation_codes": "INVALID_SECTION_ORDER"
+  },
+  "P_final_output": null,
+  "note": "原始冻结输出，未人工改写。P_final_output 为空表示确定性 fail-closed。"
+}

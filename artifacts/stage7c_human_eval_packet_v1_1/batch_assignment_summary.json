@@ -1,0 +1,242 @@
+{
+  "batch_capacities": [
+    24,
+    24,
+    24,
+    23,
+    23,
+    23
+  ],
+  "minimum_same_task_gap_target": 15,
+  "notice": "INTERNAL — METHOD COUNTS MUST NOT BE SHOWN TO ANNOTATORS",
+  "packets": {
+    "A": {
+      "applied_minimum_gap_constraint": 15,
+      "batch_hashes": [
+        "8b4513a12a1c80aca13893176c53d8c48df6a311d9ccb0839125b9b0d3bf74f7",
+        "406a5d57d3537bbca69e36938e80d95cf144abd18cf64931d8334ec9d9a8d37e",
+        "98305f7dd1958a8fdf2b31d4203b85219fb3ceb2921c8c352f509d7b39bf5016",
+        "0a24f206454b8fbc91417215ee5b2607839d4e88f909226693b1f38de5b8da65",
+        "8d8e5d53033b9b35876ead8d156b3f6091b0aaa53a005f1922d31018099d4931",
+        "568d9e1fa96d6252fae7a5c30def491f28699465f6d00fa27e57e89041e784cb"
+      ],
+      "batches": [
+        {
+          "batch_hash": "8b4513a12a1c80aca13893176c53d8c48df6a311d9ccb0839125b9b0d3bf74f7",
+          "batch_id": "batch_01",
+          "method_distribution_internal": {
+            "B0_DIRECT_LLM": 8,
+            "B1_STRUCTURED_PROMPT_LLM": 8,
+            "P_PROPOSED": 8
+          },
+          "product_distribution": {
+            "all": 6,
+            "daily_review": 6,
+            "forward_attention": 6,
+            "metric_review": 6
+          },
+          "row_count": 24
+        },
+        {
+          "batch_hash": "406a5d57d3537bbca69e36938e80d95cf144abd18cf64931d8334ec9d9a8d37e",
+          "batch_id": "batch_02",
+          "method_distribution_internal": {
+            "B0_DIRECT_LLM": 8,
+            "B1_STRUCTURED_PROMPT_LLM": 8,
+            "P_PROPOSED": 8
+          },
+          "product_distribution": {
+            "all": 6,
+            "daily_review": 6,
+            "forward_attention": 6,
+            "metric_review": 6
+          },
+          "row_count": 24
+        },
+        {
+          "batch_hash": "98305f7dd1958a8fdf2b31d4203b85219fb3ceb2921c8c352f509d7b39bf5016",
+          "batch_id": "batch_03",
+          "method_distribution_internal": {
+            "B0_DIRECT_LLM": 8,
+            "B1_STRUCTURED_PROMPT_LLM": 8,
+            "P_PROPOSED": 8
+          },
+          "product_distribution": {
+            "all": 6,
+            "daily_review": 6,
+            "forward_attention": 6,
+            "metric_review": 6
+          },
+          "row_count": 24
+        },
+        {
+          "batch_hash": "0a24f206454b8fbc91417215ee5b2607839d4e88f909226693b1f38de5b8da65",
+          "batch_id": "batch_04",
+          "method_distribution_internal": {
+            "B0_DIRECT_LLM": 8,
+            "B1_STRUCTURED_PROMPT_LLM": 8,
+            "P_PROPOSED": 7
+          },
+          "product_distribution": {
+            "all": 5,
+            "daily_review": 6,
+            "forward_attention": 6,
+            "metric_review": 6
+          },
+          "row_count": 23
+        },
+        {
+          "batch_hash": "8d8e5d53033b9b35876ead8d156b3f6091b0aaa53a005f1922d31018099d4931",
+          "batch_id": "batch_05",
+          "method_distribution_internal": {
+            "B0_DIRECT_LLM": 8,
+            "B1_STRUCTURED_PROMPT_LLM": 8,
+            "P_PROPOSED": 7
+          },
+          "product_distribution": {
+            "all": 6,
+            "daily_review": 6,
+            "forward_attention": 5,
+            "metric_review": 6
+          },
+          "row_count": 23
+        },
+        {
+          "batch_hash": "568d9e1fa96d6252fae7a5c30def491f28699465f6d00fa27e57e89041e784cb",
+          "batch_id": "batch_06",
+          "method_distribution_internal": {
+            "B0_DIRECT_LLM": 8,
+            "B1_STRUCTURED_PROMPT_LLM": 8,
+            "P_PROPOSED": 7
+          },
+          "product_distribution": {
+            "all": 6,
+            "daily_review": 5,
+            "forward_attention": 7,
+            "metric_review": 5
+          },
+          "row_count": 23
+        }
+      ],
+      "minimum_gap": 39,
+      "packet_hash": "fa8adf000166929b26feb39b75d24cbb3a3c59d4be3cca98eb415a0516bdf5c5",
+      "requested_minimum_gap": 15,
+      "search_attempt": 0,
+      "seed": 2026082501
+    },
+    "B": {
+      "applied_minimum_gap_constraint": 15,
+      "batch_hashes": [
+        "e117be2d8878f3663976083773674720df42f59cc2d736dc751a608453b4fa3e",
+        "f266b4fb558b58c5f66a5cd99cc774a8bd05e37cfaa7c8eda898d5bb1e0edb04",
+        "6e494e15008dc39fc1a36bc863934cfe00145e5e4d14d942530e2ef3f545543e",
+        "5eac6b47ad45b76a383969b1e0f0005853a2c68bd3e7aee1f111056d87b80e50",
+        "dda2fa1b69aae926233a2b8b7ffc48038fbbb3cbcb8d7b2509bf0ecb6092d95f",
+        "e7a070d15f2c55379c4589c79cec204e275d42bfc70abf2bc1ca2e9b9cd52f20"
+      ],
+      "batches": [
+        {
+          "batch_hash": "e117be2d8878f3663976083773674720df42f59cc2d736dc751a608453b4fa3e",
+          "batch_id": "batch_01",
+          "method_distribution_internal": {
+            "B0_DIRECT_LLM": 8,
+            "B1_STRUCTURED_PROMPT_LLM": 8,
+            "P_PROPOSED": 8
+          },
+          "product_distribution": {
+            "all": 6,
+            "daily_review": 6,
+            "forward_attention": 6,
+            "metric_review": 6
+          },
+          "row_count": 24
+        },
+        {
+          "batch_hash": "f266b4fb558b58c5f66a5cd99cc774a8bd05e37cfaa7c8eda898d5bb1e0edb04",
+          "batch_id": "batch_02",
+          "method_distribution_internal": {
+            "B0_DIRECT_LLM": 8,
+            "B1_STRUCTURED_PROMPT_LLM": 8,
+            "P_PROPOSED": 8
+          },
+          "product_distribution": {
+            "all": 6,
+            "daily_review": 6,
+            "forward_attention": 6,
+            "metric_review": 6
+          },
+          "row_count": 24
+        },
+        {
+          "batch_hash": "6e494e15008dc39fc1a36bc863934cfe00145e5e4d14d942530e2ef3f545543e",
+          "batch_id": "batch_03",
+          "method_distribution_internal": {
+            "B0_DIRECT_LLM": 8,
+            "B1_STRUCTURED_PROMPT_LLM": 8,
+            "P_PROPOSED": 8
+          },
+          "product_distribution": {
+            "all": 6,
+            "daily_review": 6,
+            "forward_attention": 6,
+            "metric_review": 6
+          },
+          "row_count": 24
+        },
+        {
+          "batch_hash": "5eac6b47ad45b76a383969b1e0f0005853a2c68bd3e7aee1f111056d87b80e50",
+          "batch_id": "batch_04",
+          "method_distribution_internal": {
+            "B0_DIRECT_LLM": 8,
+            "B1_STRUCTURED_PROMPT_LLM": 8,
+            "P_PROPOSED": 7
+          },
+          "product_distribution": {
+            "all": 6,
+            "daily_review": 6,
+            "forward_attention": 6,
+            "metric_review": 5
+          },
+          "row_count": 23
+        },
+        {
+          "batch_hash": "dda2fa1b69aae926233a2b8b7ffc48038fbbb3cbcb8d7b2509bf0ecb6092d95f",
+          "batch_id": "batch_05",
+          "method_distribution_internal": {
+            "B0_DIRECT_LLM": 8,
+            "B1_STRUCTURED_PROMPT_LLM": 8,
+            "P_PROPOSED": 7
+          },
+          "product_distribution": {
+            "all": 5,
+            "daily_review": 6,
+            "forward_attention": 6,
+            "metric_review": 6
+          },
+          "row_count": 23
+        },
+        {
+          "batch_hash": "e7a070d15f2c55379c4589c79cec204e275d42bfc70abf2bc1ca2e9b9cd52f20",
+          "batch_id": "batch_06",
+          "method_distribution_internal": {
+            "B0_DIRECT_LLM": 8,
+            "B1_STRUCTURED_PROMPT_LLM": 8,
+            "P_PROPOSED": 7
+          },
+          "product_distribution": {
+            "all": 6,
+            "daily_review": 5,
+            "forward_attention": 6,
+            "metric_review": 6
+          },
+          "row_count": 23
+        }
+      ],
+      "minimum_gap": 24,
+      "packet_hash": "dbc88e89f635b396a7990dff14aafc59a93e580063908375ae8bdf98ac1aa71d",
+      "requested_minimum_gap": 15,
+      "search_attempt": 0,
+      "seed": 2026082502
+    }
+  }
+}

@@ -1,0 +1,9 @@
+denominator,endpoint,numerator,rate
+53,Revision event census,53,1.0
+53,RAI changed event,0,0.0
+53,GRS changed event,36,0.6792452830188679
+53,GRCI changed event,1,0.018867924528301886
+53,P3_existing_claim_decision_switch_event_rate,27,0.5094339622641509
+53,P4_later_knowledge_created_opportunity_event_rate,53,1.0
+53,P5_any_claim_semantic_change_event_rate,53,1.0
+53,P6_observed_opportunity_creation_event_rate,9,0.16981132075471697

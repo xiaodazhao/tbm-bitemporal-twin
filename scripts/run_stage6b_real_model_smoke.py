@@ -40,15 +40,15 @@ def main() -> None:
     parser.add_argument("--model", default="UNSET_REAL_MODEL")
     parser.add_argument(
         "--task-manifest",
-        default="artifacts/stage6b_controlled_realization_v1_candidate/real_model_smoke/task_manifest.json",
+        default="artifacts/stage6b_controlled_realization_v1/real_model_smoke/task_manifest.json",
     )
     parser.add_argument(
         "--prompt-payloads",
-        default="artifacts/stage6b_controlled_realization_v1_candidate/real_model_smoke/prompt_payloads.jsonl",
+        default="artifacts/stage6b_controlled_realization_v1/real_model_smoke/prompt_payloads.jsonl",
     )
     parser.add_argument(
         "--output-dir",
-        default="artifacts/stage6b_controlled_realization_v1_candidate/real_model_smoke",
+        default="artifacts/stage6b_controlled_realization_v1/real_model_smoke",
     )
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--execute", action="store_true")

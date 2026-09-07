@@ -1,0 +1,4 @@
+method,description,planned_tasks,actual_outputs,output_availability_rate,structure_fail_closed,post_audit_pass,semantic_endpoint_status
+B0_DIRECT_LLM,直接 LLM 基线,48,48,1.0,0,NOT_APPLICABLE,DEFERRED_TO_HUMAN
+B1_STRUCTURED_PROMPT_LLM,结构化提示基线,48,48,1.0,0,NOT_APPLICABLE,DEFERRED_TO_HUMAN
+P_PROPOSED,Claim-gated controlled realization,48,45,0.9375,3,45/45,DEFERRED_TO_HUMAN

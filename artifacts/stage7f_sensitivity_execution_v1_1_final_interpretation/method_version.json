@@ -1,0 +1,13 @@
+{
+  "api_calls": 0,
+  "automatic_robustness_classification": "NOT_PERFORMED",
+  "deepseek_calls": 0,
+  "generated_at": "2026-08-29T12:00:00+08:00",
+  "llm_calls": 0,
+  "method_version": "stage7f_sensitivity_execution_v1_1_final_interpretation",
+  "schema_version": "stage7f_sensitivity_final_interpretation.v1.1",
+  "scope": "METADATA_AND_INTERPRETATION_ONLY",
+  "source_stage7f_b_commit": "8d3c9254078ec95059966ce7b882462d94c64eb5",
+  "source_stage7f_b_hash_manifest_sha256": "4910dc92bfd8b823b1ae1b8047604e40343117a7594c59019609219c8187703b",
+  "source_stage7f_b_tag": "stage7f-sensitivity-execution-v1-frozen"
+}

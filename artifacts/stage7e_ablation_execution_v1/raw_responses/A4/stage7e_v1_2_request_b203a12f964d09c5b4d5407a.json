@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A4_FREE_FINAL_REALIZATION",
+  "attempt_number": 1,
+  "completion_output_token_count": 530,
+  "execution_index": 217,
+  "finish_reason": "completed",
+  "latency_ms": 3601,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 1168,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "9b109f80-4c3b-4181-b1ee-8c0655246770",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676700.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676697.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "9b109f80-4c3b-4181-b1ee-8c0655246770",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"sections\": [\n    {\n      \"section_name\": \"指标概览\",\n      \"text\": \"本报告基于2023-11-05的日审查单元（cell_146050071152b2bd18f8a541）生成，仅包含以下三项可用指标：地质证据注意力指数（GRS）为0.8333333333333333，运营响应注意力指数（RAI）为0.8061198134233232，耦合注意力指数（GRCI）为0.6717665111861025。所有指标均为非概率性注意力指标，且受来源约束。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_468058fccf0216f4dd07fbc3\",\n        \"fact_lock_59d39d83dc3512b783316478\",\n        \"fact_lock_d3269838cf57a1dee3462ed2\"\n      ]\n    },\n    {\n      \"section_name\": \"地质证据注意力\",\n      \"text\": \"地质证据注意力指数（GRS）的当前值为0.8333333333333333，该指标状态为可用，语义为地质证据注意力指数，属于非概率性注意力指标。该值仅反映当前日审查单元中的注意力水平，不构成概率或风险估计。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_468058fccf0216f4dd07fbc3\"\n      ]\n    },\n    {\n      \"section_name\": \"运营响应注意力\",\n      \"text\": \"运营响应注意力指数（RAI）的当前值为0.8061198134233232，该指标状态为可用，语义为运营响应注意力指数，属于非概率性注意力指标。该值仅反映当前日审查单元中的注意力水平，不构成概率或风险估计。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_59d39d83dc3512b783316478\"\n      ]\n    },\n    {\n      \"section_name\": \"耦合注意力\",\n      \"text\": \"耦合注意力指数（GRCI）的当前值为0.6717665111861025，该指标状态为可用，语义为非概率性合取乘积，属于非概率性注意力指标。该值仅反映当前日审查单元中的耦合注意力水平，不构成概率或风险估计。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_d3269838cf57a1dee3462ed2\"\n      ]\n    }\n  ]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "d0c780a9-598f-4d9d-b262-30affc24ef14",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1168,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 530,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1698
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"sections\": [\n    {\n      \"section_name\": \"指标概览\",\n      \"text\": \"本报告基于2023-11-05的日审查单元（cell_146050071152b2bd18f8a541）生成，仅包含以下三项可用指标：地质证据注意力指数（GRS）为0.8333333333333333，运营响应注意力指数（RAI）为0.8061198134233232，耦合注意力指数（GRCI）为0.6717665111861025。所有指标均为非概率性注意力指标，且受来源约束。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_468058fccf0216f4dd07fbc3\",\n        \"fact_lock_59d39d83dc3512b783316478\",\n        \"fact_lock_d3269838cf57a1dee3462ed2\"\n      ]\n    },\n    {\n      \"section_name\": \"地质证据注意力\",\n      \"text\": \"地质证据注意力指数（GRS）的当前值为0.8333333333333333，该指标状态为可用，语义为地质证据注意力指数，属于非概率性注意力指标。该值仅反映当前日审查单元中的注意力水平，不构成概率或风险估计。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_468058fccf0216f4dd07fbc3\"\n      ]\n    },\n    {\n      \"section_name\": \"运营响应注意力\",\n      \"text\": \"运营响应注意力指数（RAI）的当前值为0.8061198134233232，该指标状态为可用，语义为运营响应注意力指数，属于非概率性注意力指标。该值仅反映当前日审查单元中的注意力水平，不构成概率或风险估计。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_59d39d83dc3512b783316478\"\n      ]\n    },\n    {\n      \"section_name\": \"耦合注意力\",\n      \"text\": \"耦合注意力指数（GRCI）的当前值为0.6717665111861025，该指标状态为可用，语义为非概率性合取乘积，属于非概率性注意力指标。该值仅反映当前日审查单元中的耦合注意力水平，不构成概率或风险估计。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_d3269838cf57a1dee3462ed2\"\n      ]\n    }\n  ]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:51:40.611257+00:00",
+  "request_id": "stage7e_v1_2_request_b203a12f964d09c5b4d5407a",
+  "request_payload_hash": "b203a12f964d09c5b4d5407a2228da1db96aaab1d0054b9032e422091015e3db",
+  "request_scope": "task",
+  "request_started_at": "2026-08-25T16:51:37.009431+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_022",
+  "total_token_count": 1698,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

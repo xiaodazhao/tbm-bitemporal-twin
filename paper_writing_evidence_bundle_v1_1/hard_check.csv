@@ -1,0 +1,32 @@
+check_name,status,details
+old_v1_tag_unchanged,PASS,8f70768f877acc81e3b021ae3b0f77decf8fe2f2
+experiment_results_unchanged,PASS,v1=22; v1.1=22
+method_definitions_unchanged,PASS,v1=5; v1.1=5
+cases_unchanged,PASS,v1=4; v1.1=4
+scientific_boundaries_unchanged,PASS,byte-identical
+Table3_no_human_review_marks,PASS,"method,description,planned_tasks,actual_outputs,output_availability_rate,structure_fail_closed,post_audit_pass,semantic_endpoint_status"
+Figure3_no_human_review_marks,PASS,"method,description,planned_tasks,actual_outputs,output_availability_rate,structure_fail_closed,post_audit_pass,semantic_endpoint_status"
+Table3_no_automatic_diagnostic_count,PASS,"method,description,planned_tasks,actual_outputs,output_availability_rate,structure_fail_closed,post_audit_pass,semantic_endpoint_status"
+Figure3_no_automatic_diagnostic_count,PASS,"method,description,planned_tasks,actual_outputs,output_availability_rate,structure_fail_closed,post_audit_pass,semantic_endpoint_status"
+Table3_only_canonical_machine_endpoints,PASS,"method,description,planned_tasks,actual_outputs,output_availability_rate,structure_fail_closed,post_audit_pass,semantic_endpoint_status"
+P_output_45_of_48,PASS,45/48; 0.9375
+P_fail_closed_3,PASS,3
+P_post_audit_45_of_45,PASS,45/45
+B0_B1_P_semantic_deferred,PASS,3/3 DEFERRED_TO_HUMAN
+human_review_marks_writer_facing_occurrences,PASS,0
+Table4_benchmark_denominator_48,PASS,0/48
+Table4_revision_denominator_53,PASS,full revision census uses 53
+Table4_transition_universe_975_explicit,PASS,975-row descriptive universe explicit
+Table4_no_primary_540_975_rate,PASS,540 retained as count only
+Stage7D_new_opportunities,PASS,540
+Stage7D_new_EXPRESSIBLE_opportunities,PASS,454
+Stage7D_new_ABSTAIN_opportunities,PASS,86
+all_paper_table_numbers_registry_traceable,PASS,audited=275; unregistered=0
+case_summary_numbers_registry_traceable,PASS,12/12
+traceability_failures,PASS,387 entries; failures=0
+superseded_leakage,PASS,leakage=0
+secret_and_path_scan,PASS,violations=0
+API_calls_zero,PASS,0
+LLM_calls_zero,PASS,0
+DeepSeek_calls_zero,PASS,0
+human_evaluation_status_unchanged,PASS,DEFERRED_TO_HUMAN / NOT_YET_EXECUTED

@@ -1,0 +1,9 @@
+{
+  "items_per_annotator": 141,
+  "median_context_characters": 5265,
+  "median_generated_text_characters": 1085,
+  "time_estimate_provided": false,
+  "total_context_characters": 1039806,
+  "total_displayed_characters": 1255733,
+  "total_generated_text_characters": 215927
+}

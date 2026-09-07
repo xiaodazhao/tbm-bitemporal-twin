@@ -24,7 +24,7 @@ class OperationalFreezeConfig(BaseModel):
     plc_data_dir: Path | None = None
     reconstruction_time: datetime
     overwrite: bool = False
-    applicability_dir: Path = Path("artifacts/stage2d_applicability_v2")
+    applicability_dir: Path = Path("artifacts/stage2d_applicability_v2_1")
     geology_freeze_dir: Path = Path("artifacts/stage2_geology_v2_freeze_candidate")
     stage1_validation_dir: Path = Path("artifacts/stage1_validation")
     channel_catalog_path: Path = Path("configs/plc_channels.yaml")

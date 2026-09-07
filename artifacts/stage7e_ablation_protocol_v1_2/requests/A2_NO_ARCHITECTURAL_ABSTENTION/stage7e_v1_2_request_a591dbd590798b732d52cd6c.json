@@ -1,0 +1,34 @@
+{
+  "arm_internal": "A2_NO_ARCHITECTURAL_ABSTENTION",
+  "execution_status": "MATERIALIZED_NOT_SENT",
+  "inference_config": {
+    "api_key_env_var": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "max_output_tokens": 4096,
+    "max_retries": 0,
+    "model": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "reasoning_effort": "none",
+    "sdk_max_retries": 0,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "messages": [
+    {
+      "content": "你负责根据当前可获得的结构化工程上下文，为一个指定章节生成简洁中文表述。只能使用输入信息，不得使用外部知识，不得伪造或补全数值，不得扩大空间范围，不得把预报写成实测，不得把非概率关注指标写成概率。若信息不足，你可以明确说明不足、返回空文本或仅描述可用性边界。只返回严格JSON，字段为section_id、text、used_context_ids。\n",
+      "role": "system"
+    },
+    {
+      "content": "请根据以下当前工程上下文完成指定章节。你可以自行决定是否形成实质内容，但不得假设未提供的信息。输入JSON如下：\n{\n  \"engineering_context_items\": [\n    {\n      \"actual_available_time\": \"2023-11-18\",\n      \"availability\": \"UNAVAILABLE\",\n      \"content_type\": \"NONPROBABILISTIC_ATTENTION_METRIC\",\n      \"context_id\": \"state_rai_62b781a410e414d231579467\",\n      \"exact_value\": null,\n      \"metric_name\": \"RAI\",\n      \"metric_semantics\": \"RAI is a non-probabilistic operational response attention index.\",\n      \"metric_status\": \"NO_CELL_LINKED_OPERATIONAL_RESPONSE\",\n      \"scope\": {\n        \"cell_id\": \"cell_74760c064abb487c9a1b536d\"\n      },\n      \"source_artifact\": \"stage4_bitemporal_state_metrics.state_rai_id\",\n      \"state_role\": \"FORWARD_ATTENTION_CELL\",\n      \"unavailable_explanation\": \"当前空间状态没有可连接的施工机械响应; 指标不可用。\"\n    }\n  ],\n  \"knowledge_as_of\": \"2023-11-18\",\n  \"section_id\": \"operational_attention\",\n  \"valid_date\": \"2023-11-18\"\n}\n",
+      "role": "user"
+    }
+  ],
+  "model": "deepseek-v4-flash",
+  "payload_hash": "a591dbd590798b732d52cd6c4f03ef0f31b8291b63ce75d57c11f65c0c06c593",
+  "provider": "deepseek",
+  "request_id": "stage7e_v1_2_request_a591dbd590798b732d52cd6c",
+  "request_scope": "operational_attention",
+  "system_prompt_hash": "98cc70dede21aadc76a6300e5e2abe44c4fbfcd17d59f0d8e802f2acf7b23c5a",
+  "task_id": "stage7_main_task_009",
+  "user_prompt_hash": "a04305ecbf39645fde11dd1414c7afce5ae32e323481f98446c0f52409106f99"
+}

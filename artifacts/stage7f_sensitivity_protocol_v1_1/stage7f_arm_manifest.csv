@@ -1,0 +1,8 @@
+arm_id,parameter_id,parameter_value,is_baseline,changed_config_path,baseline_value,all_other_parameters_frozen,expected_pipeline_start_stage,expected_pipeline_end_stage,llm_required,api_required,arm_hash
+stage7f_baseline,BASELINE_VECTOR,"{""CELL_SIZE_M"":10.0,""RAI_MINIMUM_HISTORICAL_SAMPLE_COUNT"":30,""RAI_SATURATION_ROBUST_Z"":3.0}",True,,"{""CELL_SIZE_M"":10.0,""RAI_MINIMUM_HISTORICAL_SAMPLE_COUNT"":30,""RAI_SATURATION_ROBUST_Z"":3.0}",True,STAGE3A,STAGE5C,False,False,a9185d340266640aec59f73801c1fd501ea8e3b6762ddc1cda36b865834fe088
+cell_size_m_5,CELL_SIZE_M,5.0,False,cell_size_m,10.0,True,STAGE3A,STAGE5C,False,False,beff2a4a2c1f6b2f6a351b612746532e1156d8fc631524cebab6fdbf8f18f7c1
+cell_size_m_20,CELL_SIZE_M,20.0,False,cell_size_m,10.0,True,STAGE3A,STAGE5C,False,False,1ff5d3ff019339485455b89436095677a0b3529415bdf03d7b171497fb33e522
+rai_history_min_samples_20,RAI_MINIMUM_HISTORICAL_SAMPLE_COUNT,20,False,minimum_baseline_sample_count,30,True,STAGE4A1,STAGE5C,False,False,9f05113833bca458cb3cc90dd1e1e414ecb9ecdf06a9cf3ef8bc54528435c917
+rai_history_min_samples_40,RAI_MINIMUM_HISTORICAL_SAMPLE_COUNT,40,False,minimum_baseline_sample_count,30,True,STAGE4A1,STAGE5C,False,False,640c651c0293799a276c7363ad014e83ec60a2e5b9ba4dd53c69ec2c46e3a3e1
+rai_saturation_robust_z_2,RAI_SATURATION_ROBUST_Z,2.0,False,rai.saturation_robust_z,3.0,True,STAGE4A2,STAGE5C,False,False,f3927c55ddbb2d87fa39416a95eb7e9cedbf915ce5ad7607c05e276a8e2d2d03
+rai_saturation_robust_z_4,RAI_SATURATION_ROBUST_Z,4.0,False,rai.saturation_robust_z,3.0,True,STAGE4A2,STAGE5C,False,False,b463c393275157ab96a274aa38bd05e0f009b79ee28080b8daa3b22fd4317ede

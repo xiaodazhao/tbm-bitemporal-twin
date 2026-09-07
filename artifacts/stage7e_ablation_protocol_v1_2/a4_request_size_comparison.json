@@ -1,0 +1,17 @@
+{
+  "comparison_basis": "CANONICAL_JSON_MESSAGES_CHARACTER_COUNT",
+  "fact_deletion_count": 0,
+  "max_character_reduction_percentage": 64.0758641348815,
+  "v1": {
+    "count": 48,
+    "maximum": 223663,
+    "median": 30365.0,
+    "minimum": 2938
+  },
+  "v1_2": {
+    "count": 48,
+    "maximum": 80349,
+    "median": 12470.0,
+    "minimum": 2370
+  }
+}

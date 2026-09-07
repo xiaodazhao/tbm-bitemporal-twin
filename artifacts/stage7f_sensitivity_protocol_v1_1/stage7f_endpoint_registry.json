@@ -1,0 +1,87 @@
+{
+  "cell_size": {
+    "claim_stability": {
+      "layer_a_key": [
+        "valid_date",
+        "claim_type",
+        "decision"
+      ],
+      "layer_b_key": [
+        "valid_date",
+        "claim_type",
+        "state_role",
+        "epistemic_status",
+        "decision"
+      ]
+    },
+    "date_role_metrics": {
+      "metrics": [
+        "RAI",
+        "GRS",
+        "GRCI"
+      ],
+      "pairing": "same valid_date and role with metric available in both arms",
+      "statistics": [
+        "median_absolute_difference",
+        "IQR_absolute_difference",
+        "Spearman_rank_correlation"
+      ],
+      "summaries": [
+        "median",
+        "max"
+      ]
+    },
+    "normalized_counts": [
+      "claim_opportunities_per_day",
+      "expressible_per_day",
+      "abstain_per_day",
+      "claim_opportunities_per_100m",
+      "expressible_per_100m",
+      "abstain_per_100m"
+    ],
+    "resolution_dependent_counts": [
+      "cell_count",
+      "daily_review_cell_count",
+      "forward_attention_cell_count",
+      "claim_opportunity_count",
+      "expressible_count",
+      "abstain_count"
+    ]
+  },
+  "common": [
+    "monitored_date_count",
+    "RAI_availability_rate",
+    "GRS_availability_rate",
+    "GRCI_availability_rate",
+    "EXPRESSIBLE_rate",
+    "ABSTAIN_rate",
+    "ABSTAIN_reason_distribution"
+  ],
+  "interpretation": "DESCRIPTIVE_ONLY_NO_AUTOMATIC_PASS_THRESHOLD",
+  "method_version": "stage7f_sensitivity_protocol_v1_1_metric_semantics_corrected",
+  "rai_history": {
+    "endpoints": [
+      "RAI_availability",
+      "RAI_value_stability",
+      "GRCI_availability",
+      "GRCI_value_stability",
+      "Claim_decision_transitions"
+    ],
+    "hard_invariant": "GRS identity unchanged"
+  },
+  "rai_saturation": {
+    "endpoints": [
+      "RAI_rank_stability",
+      "RAI_absolute_value_shift",
+      "GRCI_shift",
+      "RAI_related_Claim_availability",
+      "RAI_related_Claim_decision_changes"
+    ],
+    "hard_invariants": [
+      "cell structure unchanged",
+      "geological evidence bindings unchanged",
+      "GRS unchanged",
+      "Claim Contract unchanged"
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A3_NO_FACTLOCK",
+  "attempt_number": 1,
+  "completion_output_token_count": 514,
+  "execution_index": 33,
+  "finish_reason": "completed",
+  "latency_ms": 3144,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 1950,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "c9c0a1d3-0bf7-4cd4-af50-27fe63ea421c",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676038.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676035.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "c9c0a1d3-0bf7-4cd4-af50-27fe63ea421c",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"realizations\": [\n    {\n      \"claim_id\": \"typed_claim_a9bdab67ecf30132298f9fd4\",\n      \"sentence\": \"在2023年12月2日，单元cell_1786a4b270fc12b3e2cbde93的每日审查单元状态中，运行响应注意力指数（RAI）的值为0.3009903704546621，该值可用，且属于非概率性注意力限定。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_ed12bda56851115e10cf21c2\",\n      \"sentence\": \"在2023年12月2日，单元cell_1786a4b270fc12b3e2cbde93的每日审查单元状态中，地质证据注意力指数（GRS）的值为0.5416666666666666，该值可用，且属于非概率性注意力限定。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_2584d52bdfbab8ae5d3b655b\",\n      \"sentence\": \"在2023年12月2日，单元cell_1786a4b270fc12b3e2cbde93的每日审查单元状态中，耦合注意力指数（GRCI）的值为0.16303645066294195，该值可用，且属于非概率性注意力限定。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_aaa4a1d9dad2c2cc2d01073a\",\n      \"sentence\": \"在2023年12月2日，单元cell_cbe6f12faedc4a536f287879的前瞻注意力单元状态中，前瞻地质证据注意力指数（GRS）的值为0.7083333333333333，该值可用，且属于非概率性注意力限定。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_5b7ea5fcdee2549cca1d3dcd\",\n      \"sentence\": \"在2023年12月2日，单元cell_e05c5d458652315d2804569f的前瞻注意力单元状态中，前瞻地质证据注意力指数（GRS）的值为0.5416666666666666，该值可用，且属于非概率性注意力限定。\"\n    }\n  ]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "982dfd4e-1409-4136-9bba-06e83bef361e",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1950,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 514,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2464
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"realizations\": [\n    {\n      \"claim_id\": \"typed_claim_a9bdab67ecf30132298f9fd4\",\n      \"sentence\": \"在2023年12月2日，单元cell_1786a4b270fc12b3e2cbde93的每日审查单元状态中，运行响应注意力指数（RAI）的值为0.3009903704546621，该值可用，且属于非概率性注意力限定。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_ed12bda56851115e10cf21c2\",\n      \"sentence\": \"在2023年12月2日，单元cell_1786a4b270fc12b3e2cbde93的每日审查单元状态中，地质证据注意力指数（GRS）的值为0.5416666666666666，该值可用，且属于非概率性注意力限定。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_2584d52bdfbab8ae5d3b655b\",\n      \"sentence\": \"在2023年12月2日，单元cell_1786a4b270fc12b3e2cbde93的每日审查单元状态中，耦合注意力指数（GRCI）的值为0.16303645066294195，该值可用，且属于非概率性注意力限定。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_aaa4a1d9dad2c2cc2d01073a\",\n      \"sentence\": \"在2023年12月2日，单元cell_cbe6f12faedc4a536f287879的前瞻注意力单元状态中，前瞻地质证据注意力指数（GRS）的值为0.7083333333333333，该值可用，且属于非概率性注意力限定。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_5b7ea5fcdee2549cca1d3dcd\",\n      \"sentence\": \"在2023年12月2日，单元cell_e05c5d458652315d2804569f的前瞻注意力单元状态中，前瞻地质证据注意力指数（GRS）的值为0.5416666666666666，该值可用，且属于非概率性注意力限定。\"\n    }\n  ]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:40:37.984900+00:00",
+  "request_id": "stage7e_v1_2_request_a9eb87e4d9d7d9e491b2293b",
+  "request_payload_hash": "a9eb87e4d9d7d9e491b2293bea70dfa0d8971d3edff7ef60192d348979757b58",
+  "request_scope": "chunk_000",
+  "request_started_at": "2026-08-25T16:40:34.839958+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_020",
+  "total_token_count": 2464,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

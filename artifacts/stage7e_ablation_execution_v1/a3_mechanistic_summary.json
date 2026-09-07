@@ -1,0 +1,15 @@
+{
+  "chunk_count": 147,
+  "complete_task_count": 32,
+  "duplicate_claim_count": 0,
+  "empty_sentence_count": 0,
+  "expected_claim_count": 989,
+  "explicit_scope_drift_count": 0,
+  "mapping_complete_count": 828,
+  "missing_claim_count": 161,
+  "numeric_drift_count": 149,
+  "truncation_count": 0,
+  "unexpected_claim_id_count": 0,
+  "valid_chunk_count": 125,
+  "verified_unit_drift_count": 0
+}

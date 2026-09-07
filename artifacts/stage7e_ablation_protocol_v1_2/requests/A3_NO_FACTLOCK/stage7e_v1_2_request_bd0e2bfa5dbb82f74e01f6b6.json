@@ -1,0 +1,35 @@
+{
+  "arm_internal": "A3_NO_FACTLOCK",
+  "chunk_id": "a3_chunk_9961987df09312409fb08b6b",
+  "execution_status": "MATERIALIZED_NOT_SENT",
+  "inference_config": {
+    "api_key_env_var": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "max_output_tokens": 4096,
+    "max_retries": 0,
+    "model": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "reasoning_effort": "none",
+    "sdk_max_retries": 0,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "messages": [
+    {
+      "content": "你负责把给定的结构化工程Claim逐条写成中文工程句子。每个输入claim_id必须恰好返回一次，不得增加、删除、合并或替换claim_id，不得形成章节叙事，不得使用外部知识。忠实保持给定值、已验证单位、空间范围、认识性质、状态角色和非概率限定。只返回严格JSON，字段为realizations；每项包含claim_id与sentence。\n",
+      "role": "system"
+    },
+    {
+      "content": "请依照给定顺序逐条表达以下结构化工程Claim，并保持claim_id一一对应。输入JSON如下：\n{\n  \"chunk_index\": 2,\n  \"claims\": [\n    {\n      \"claim_id\": \"typed_claim_752e75fa26d61f6a046ef8bb\",\n      \"claim_type\": \"FORECAST_GEOLOGICAL_CONDITION\",\n      \"claim_value\": \"{\\\"attribute_dimension\\\":null,\\\"attribute_name\\\":\\\"geological_conclusion\\\",\\\"normalized_value\\\":\\\"该段围岩与当前掌子面相当。岩 性为板岩夹变质砂岩，弱风化， 岩质软硬不均，节理裂隙发育， 岩体破碎，围岩整体稳定性差\\\",\\\"source_evidence_id\\\":\\\"doc_56a4057acb6bbfd5196d07a6_e0002\\\"}\",\n      \"epistemic_status\": \"FORECAST\",\n      \"nonprobabilistic_qualifier\": \"\",\n      \"order_index\": 15,\n      \"section_id\": \"geological_forecast\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":null,\\\"daily_state_id\\\":null,\\\"end_chainage\\\":1013224.0,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"hsp_forecast_table_row\\\",\\\"scope_kind\\\":\\\"LOCATED_INTERVAL\\\",\\\"start_chainage\\\":1013190.2,\\\"state_role\\\":null,\\\"valid_date\\\":null}\",\n      \"support_summary\": \"doc_56a4057acb6bbfd5196d07a6_e0002\",\n      \"unit_verified\": false\n    },\n    {\n      \"claim_id\": \"typed_claim_13c0c681ee8ed50182d1b391\",\n      \"claim_type\": \"FORECAST_GEOLOGICAL_CONDITION\",\n      \"claim_value\": \"{\\\"attribute_dimension\\\":null,\\\"attribute_name\\\":\\\"suggested_grade\\\",\\\"normalized_value\\\":\\\"Ⅴ级\\\",\\\"source_evidence_id\\\":\\\"doc_58b5929e39d044c3fabb2d14_e0008\\\"}\",\n      \"epistemic_status\": \"FORECAST\",\n      \"nonprobabilistic_qualifier\": \"\",\n      \"order_index\": 16,\n      \"section_id\": \"geological_forecast\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":null,\\\"daily_state_id\\\":null,\\\"end_chainage\\\":1013200.2,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"tsp_forecast_table_row\\\",\\\"scope_kind\\\":\\\"LOCATED_INTERVAL\\\",\\\"start_chainage\\\":1013182.0,\\\"state_role\\\":null,\\\"valid_date\\\":null}\",\n      \"support_summary\": \"doc_58b5929e39d044c3fabb2d14_e0008\",\n      \"unit_verified\": false\n    },\n    {\n      \"claim_id\": \"typed_claim_177f6ba08f2556a066095c31\",\n      \"claim_type\": \"GEOLOGICAL_EVIDENCE_ATTENTION_REVIEW\",\n      \"claim_value\": \"{\\\"is_causal_estimate\\\":false,\\\"is_hazard_probability\\\":false,\\\"is_probability\\\":false,\\\"metric_name\\\":\\\"GRS\\\",\\\"metric_semantics\\\":\\\"GEOLOGICAL_EVIDENCE_ATTENTION_INDEX\\\",\\\"metric_status\\\":\\\"AVAILABLE\\\",\\\"metric_value\\\":0.76,\\\"source_metric_id\\\":\\\"state_grs_d2744c1aef743b4ca3f6edab\\\"}\",\n      \"epistemic_status\": \"\",\n      \"nonprobabilistic_qualifier\": \"NONPROBABILISTIC_ATTENTION\",\n      \"order_index\": 17,\n      \"section_id\": \"geological_attention\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":\\\"cell_ef1e570e1653555101dff5f3\\\",\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"stage5b_bitemporal_state_subject\\\",\\\"scope_kind\\\":\\\"CELL\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":\\\"DAILY_REVIEW_CELL\\\",\\\"valid_date\\\":\\\"2023-09-15\\\"}\",\n      \"support_summary\": \"state_grs_d2744c1aef743b4ca3f6edab\",\n      \"unit_verified\": false\n    }\n  ],\n  \"product_type\": \"all\"\n}\n",
+      "role": "user"
+    }
+  ],
+  "model": "deepseek-v4-flash",
+  "payload_hash": "bd0e2bfa5dbb82f74e01f6b6a3eb4d06113f2133f646e1933c1313af5fbd355f",
+  "provider": "deepseek",
+  "request_id": "stage7e_v1_2_request_bd0e2bfa5dbb82f74e01f6b6",
+  "request_scope": "chunk_002",
+  "system_prompt_hash": "061f8dd0116a0b38c0bec8107bddf6ca718709eeb899cdeed733989bc1d810d2",
+  "task_id": "stage7_main_task_019",
+  "user_prompt_hash": "1a4f78c8daac3e76833d8ef809c7458eccef7d85e63e6b1fead2c6d77732dd05"
+}

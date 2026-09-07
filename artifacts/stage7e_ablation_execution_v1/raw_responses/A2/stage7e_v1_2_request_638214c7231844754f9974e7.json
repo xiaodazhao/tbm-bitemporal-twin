@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A2_NO_ARCHITECTURAL_ABSTENTION",
+  "attempt_number": 1,
+  "completion_output_token_count": 81,
+  "execution_index": 155,
+  "finish_reason": "completed",
+  "latency_ms": 1628,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 390,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "c281512a-62d3-48b5-ba4e-2d4ecee6e04c",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676491.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676490.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "c281512a-62d3-48b5-ba4e-2d4ecee6e04c",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"section_id\": \"coupled_attention\",\n  \"text\": \"截至2023-09-23，耦合关注指标（GRCI）不可用，无法计算。该指标为耦合关注度，并非灾害概率或因果估计。\",\n  \"used_context_ids\": [\"state_grci_34d2e00055e8575c980655b7\"]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "80ed4922-004c-4f02-8721-4a17a68336e9",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 390,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 81,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 471
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"section_id\": \"coupled_attention\",\n  \"text\": \"截至2023-09-23，耦合关注指标（GRCI）不可用，无法计算。该指标为耦合关注度，并非灾害概率或因果估计。\",\n  \"used_context_ids\": [\"state_grci_34d2e00055e8575c980655b7\"]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:48:11.601459+00:00",
+  "request_id": "stage7e_v1_2_request_638214c7231844754f9974e7",
+  "request_payload_hash": "638214c7231844754f9974e76536f116106d6a32da206ae5a5ede3d0f150db9e",
+  "request_scope": "coupled_attention",
+  "request_started_at": "2026-08-25T16:48:09.972726+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_037",
+  "total_token_count": 471,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

@@ -1,4 +1,4 @@
-"""Build Stage 4A1.1 metric method-freeze candidate artifacts."""
+"""Build the formal Stage 4A1.1 metric method-freeze artifacts."""
 
 from __future__ import annotations
 
@@ -20,9 +20,7 @@ def _parse_generated_at(value: str) -> datetime:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo-root", default=".")
-    parser.add_argument(
-        "--output-dir", default="artifacts/stage4a1_1_metric_method_freeze_candidate"
-    )
+    parser.add_argument("--output-dir", default="artifacts/stage4a1_1_metric_method_freeze_v1")
     parser.add_argument("--generated-at", required=True, type=_parse_generated_at)
     args = parser.parse_args()
     result = Stage4A11Builder(
@@ -30,7 +28,7 @@ def main() -> None:
         generated_at=args.generated_at,
         output_dir=Path(args.output_dir),
     ).build()
-    print(f"Stage 4A1.1 method-freeze candidate written to {result.output_dir}")
+    print(f"Stage 4A1.1 method freeze written to {result.output_dir}")
     print(f"hard_check_failures={result.hard_check_failures}")
 
 

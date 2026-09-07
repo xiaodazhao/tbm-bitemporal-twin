@@ -1,8 +1,0 @@
-condition,expected_api_calls,reason,requires_new_llm_call,task_count
-B0_DIRECT_LLM,48,One first-attempt direct generation call per main benchmark task.,true,48
-B1_STRUCTURED_PROMPT_LLM,48,One first-attempt structured prompt call per main benchmark task.,true,48
-P_PROPOSED,48,One first-attempt plan-only call per main benchmark task.,true,48
-A1_WITHOUT_BITEMPORAL_GATING,48,Counterfactual task calls after deterministic counterfactual snapshot construction.,true,48
-A2_WITHOUT_CLAIM_ADMISSIBILITY_ABSTAIN,48,Counterfactual calls without Claim admissibility gate.,true,48
-A3_WITHOUT_FACT_LOCK,48,Counterfactual calls without semantic lock.,true,48
-A4_WITHOUT_DETERMINISTIC_PLAN_VALIDATOR,0,Offline replay using frozen Stage6B interception cases where possible.,false,3

@@ -1,0 +1,30 @@
+{
+  "artifact_dir": "artifacts/stage7c_main_auto_eval_v1_2",
+  "counts": {
+    "actual_text_count": 141,
+    "b0_condition_count": 48,
+    "b0_text_count": 48,
+    "b1_condition_count": 48,
+    "b1_text_count": 48,
+    "condition_count": 144,
+    "p_condition_count": 48,
+    "p_no_output_count": 3,
+    "p_text_count": 45,
+    "task_count": 48
+  },
+  "frozen_inputs": {
+    "stage6b_commit": "ecf0fc47cd2f1f4a8bb5a962c32caaa7c5284550",
+    "stage6b_tag": "stage6b-controlled-realization-v1-frozen",
+    "stage7a3_commit": "6007afe7c1b1228d6638503afeba979ee2f66878",
+    "stage7a3_tag": "stage7a-experimental-protocol-v1.3-frozen",
+    "stage7b_execution_commit": "69507cc00874aeb498f3fa4543a7969f94dbdc51",
+    "stage7b_execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "stage7b_formal_audit_commit": "38da398b3c5edc8e3e5f8180273f1f04fdff4fbb",
+    "stage7b_tag": "stage7b-main-comparison-v1-frozen"
+  },
+  "generated_at": "2026-08-17T00:00:00+08:00",
+  "hard_check_fail_count": 0,
+  "method_version": "stage7c_main_auto_eval_v1_2_final_closure",
+  "no_llm_or_api_calls": true,
+  "schema_version": "stage7c_main_auto_eval.v1.2"
+}

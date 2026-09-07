@@ -1,0 +1,49 @@
+{
+  "P1": {
+    "bootstrap_95_ci": [
+      0.0,
+      0.0
+    ],
+    "denominator": 48,
+    "name": "Task-level hindsight impact rate",
+    "numerator": 0,
+    "rate": 0.0,
+    "statistical_unit": "benchmark_task"
+  },
+  "P2": {
+    "denominator": 201,
+    "name": "State binding hindsight impact rate",
+    "numerator": 0,
+    "rate": 0.0
+  },
+  "P3": {
+    "denominator": 1341,
+    "name": "Claim decision change rate",
+    "numerator": 0,
+    "rate": 0.0
+  },
+  "P4": {
+    "denominator": 1341,
+    "name": "Hindsight-enabled Claim rate",
+    "numerator": 0,
+    "rate": 0.0
+  },
+  "P5": {
+    "count": 0,
+    "name": "Observed-claim hindsight enablement count"
+  },
+  "P6": {
+    "changed_counts": {
+      "GRCI": 0,
+      "GRS": 0,
+      "RAI": 0
+    },
+    "denominator_per_metric": 201,
+    "name": "Metric drift incidence",
+    "rates": {
+      "GRCI": 0.0,
+      "GRS": 0.0,
+      "RAI": 0.0
+    }
+  }
+}

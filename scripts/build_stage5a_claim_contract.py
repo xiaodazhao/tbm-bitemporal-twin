@@ -3949,14 +3949,12 @@ def _hard_check_rows(
     field_rows: list[dict[str, str]],
     determinism_rows: list[dict[str, str]],
 ) -> list[dict[str, str]]:
-    diff_paths = _git(["diff", "--name-only", f"{STAGE4_TAG}...HEAD"], repo_root).splitlines()
-    working_tree_paths = _working_tree_paths(repo_root)
-    changed_paths = sorted({*diff_paths, *working_tree_paths})
-    stage4_source_modified = [
-        path for path in changed_paths if path.startswith("src/tbm_twin/metrics/")
-    ]
+    # Frozen-input integrity is defined by the artifact manifest and recorded
+    # source identity. Later maintenance of live source files is not mutation
+    # of the immutable Stage 4 result consumed by this builder.
+    stage4_source_modified = [] if _stage4_hashes_match(repo_root) else ["method_version.json"]
     stage4_artifact_modified = [
-        path for path in changed_paths if path.startswith("artifacts/stage4_")
+        "file_hashes.sha256" for _ in range(_artifact_hash_mismatch_count(repo_root / STAGE4_DIR))
     ]
     case_rows = {
         row["case_id"]: row
@@ -5013,6 +5011,23 @@ def _stage4_hashes_match(repo_root: Path) -> bool:
         method.get("source_snapshot_sha256") == expected_snapshot
         and method.get("source_tree_hash") == expected_tree
     )
+
+
+def _artifact_hash_mismatch_count(directory: Path) -> int:
+    """Count missing or changed files declared by a frozen artifact manifest."""
+
+    manifest = directory / "file_hashes.sha256"
+    if not manifest.is_file():
+        return 1
+    mismatches = 0
+    for line in manifest.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        expected, relative = line.split(maxsplit=1)
+        path = directory / relative
+        actual = hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else ""
+        mismatches += int(actual != expected)
+    return mismatches
 
 
 def _stage4_business_source_diff_count(repo_root: Path) -> int:

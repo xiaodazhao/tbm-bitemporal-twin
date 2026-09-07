@@ -1,0 +1,52 @@
+path,category,reason,required_for_reproduction,required_for_paper,recoverable_from_git,recommended_action
+src/,KEEP_IN_WORKTREE,canonical implementation,YES,YES,YES,keep
+configs/,KEEP_IN_WORKTREE,frozen method contracts,YES,YES,YES,keep
+scripts/,KEEP_IN_WORKTREE,reproducible builders,YES,YES,YES,keep
+tests/,KEEP_IN_WORKTREE,method and regression verification,YES,NO,YES,keep
+docs/,KEEP_IN_WORKTREE,architecture and freeze reports,NO,YES,YES,keep
+pyproject.toml,KEEP_IN_WORKTREE,dependency and quality configuration,YES,NO,YES,keep
+uv.lock,KEEP_IN_WORKTREE,resolved dependencies,YES,NO,YES,keep if present
+artifacts/final_research_handoff_v1/,NEVER_DELETE,canonical manuscript evidence index,NO,YES,YES,retain in repository
+artifacts/stage2_geology_v2_freeze_candidate/,KEEP_IN_WORKTREE,canonical geological evidence and provenance,YES,YES,YES,keep
+artifacts/stage2_plc_operational_freeze_v2/,KEEP_IN_WORKTREE,canonical operational evidence,YES,YES,YES,keep
+artifacts/stage2d_applicability_v2_1/,KEEP_IN_WORKTREE,canonical evidence applicability,YES,YES,YES,keep
+artifacts/stage3a_initial_epistemic_state_v1_1/,KEEP_IN_WORKTREE,canonical initial states,YES,YES,YES,keep
+artifacts/stage3b_bitemporal_epistemic_state_v1_1/,KEEP_IN_WORKTREE,canonical revisions,YES,YES,YES,keep
+artifacts/stage4_bitemporal_state_metrics_v1_1/,KEEP_IN_WORKTREE,canonical metrics,YES,YES,YES,keep
+artifacts/stage5a_typed_claim_contract_v1_1/,KEEP_IN_WORKTREE,canonical Claim contract,YES,YES,YES,keep
+artifacts/stage5b_deterministic_claim_builder_v1/,KEEP_IN_WORKTREE,canonical Claim universe,YES,YES,YES,keep
+artifacts/stage5c_claim_expressibility_analysis_v1/,KEEP_IN_WORKTREE,canonical admissibility analysis,YES,YES,YES,keep
+artifacts/stage6a_fact_lock_evidence_pack_v1/,KEEP_IN_WORKTREE,canonical FactLocks,YES,YES,YES,keep
+artifacts/stage6b_controlled_realization_v1/,KEEP_IN_WORKTREE,controlled realization freeze,YES,YES,YES,keep
+artifacts/stage7a_experimental_protocol_v1_3/,KEEP_IN_WORKTREE,frozen benchmark and evaluation rules,YES,YES,YES,keep
+artifacts/stage7b_main_comparison_v1/,KEEP_IN_WORKTREE,main experiment and raw model responses,YES,YES,YES,keep; additionally archive raw responses
+artifacts/stage7c_main_auto_eval_v1_2/,KEEP_IN_WORKTREE,final deterministic evaluation,YES,YES,YES,keep
+artifacts/stage7d_bitemporal_value_v1/,KEEP_IN_WORKTREE,benchmark-alignment null diagnostic,YES,YES,YES,keep
+artifacts/stage7d_bitemporal_value_v1_1/,KEEP_IN_WORKTREE,full revision census,YES,YES,YES,keep
+artifacts/stage7d_bitemporal_value_v1_1a_correction/,KEEP_IN_WORKTREE,final opportunity-added interpretation,YES,YES,YES,keep
+artifacts/stage7e_ablation_execution_v1_1a_metadata_cleanup/,KEEP_IN_WORKTREE,authoritative ablation machine summary,YES,YES,YES,keep
+artifacts/stage7f_sensitivity_execution_v1_1_final_interpretation/,KEEP_IN_WORKTREE,authoritative sensitivity interpretation,YES,YES,YES,keep
+data/raw/plc/,ARCHIVE_EXTERNALLY,large irreplaceable source data,YES,NO,NO,checksum and archive with access control
+data/raw/geology_pdfs/,ARCHIVE_EXTERNALLY,copyright-sensitive source PDFs,YES,NO,NO,checksum and archive with access control
+artifacts/stage7b_main_comparison_v1/runs/*/raw_model_outputs.jsonl,ARCHIVE_EXTERNALLY,irreplaceable paid API responses,YES,YES,YES,keep in Git where allowed plus external checksum copy
+artifacts/stage7e_ablation_execution_v1/runs/,ARCHIVE_EXTERNALLY,frozen ablation raw responses,YES,NO,YES,external checksum copy
+*.zip,ARCHIVE_EXTERNALLY,review packets are duplicative but useful for audit exchange,NO,NO,NO,archive outside worktree after review
+artifacts/*_candidate/,KEEP_VIA_GIT_HISTORY_ONLY,superseded candidates after formal freeze,NO,NO,YES,remove only after manual review and verified tag
+artifacts/stage3a_initial_epistemic_state_v1/,KEEP_VIA_GIT_HISTORY_ONLY,superseded point-incomplete state,NO,NO,YES,retain through Git history
+artifacts/stage4_bitemporal_state_metrics_v1_candidate/,KEEP_VIA_GIT_HISTORY_ONLY,superseded metric candidate,NO,NO,YES,retain through Git history
+artifacts/stage5a_claim_contract_v1_candidate/,KEEP_VIA_GIT_HISTORY_ONLY,superseded contract candidate,NO,NO,YES,retain through Git history
+artifacts/stage5b_deterministic_claim_builder_v1_candidate/,KEEP_VIA_GIT_HISTORY_ONLY,superseded builder candidate,NO,NO,YES,retain through Git history
+artifacts/stage7c_main_auto_eval_v1/,SAFE_TO_DELETE_AFTER_REVIEW,superseded evaluator,NO,NO,YES,delete only after handoff review
+artifacts/stage7c_main_auto_eval_v1_1/,SAFE_TO_DELETE_AFTER_REVIEW,superseded evaluator closure,NO,NO,YES,delete only after handoff review
+artifacts/stage7e_ablation_execution_v1/,SAFE_TO_DELETE_AFTER_REVIEW,contains superseded numeric audit,NO,NO,YES,preserve raw responses elsewhere; delete derived duplicate only
+artifacts/stage7e_ablation_execution_v1_1_correction/,SAFE_TO_DELETE_AFTER_REVIEW,superseded by v1.1a final metadata,NO,NO,YES,delete only after final hashes checked
+artifacts/stage7f_sensitivity_protocol_v1/,SAFE_TO_DELETE_AFTER_REVIEW,superseded method descriptions,NO,NO,YES,delete only after review
+artifacts/stage7f_sensitivity_execution_v1/,SAFE_TO_DELETE_AFTER_REVIEW,superseded interpretation,NO,NO,YES,delete only after review
+stage7c_*_audit.zip,SAFE_TO_DELETE_AFTER_REVIEW,review transport duplicate,NO,NO,NO,archive or delete after review
+stage7d_*_audit.zip,SAFE_TO_DELETE_AFTER_REVIEW,review transport duplicate,NO,NO,NO,archive or delete after review
+stage7e_*_audit.zip,SAFE_TO_DELETE_AFTER_REVIEW,review transport duplicate,NO,NO,NO,archive or delete after review
+stage7f_*_audit.zip,SAFE_TO_DELETE_AFTER_REVIEW,review transport duplicate,NO,NO,NO,archive or delete after review
+.pytest_cache/,SAFE_TO_DELETE_AFTER_REVIEW,test cache,NO,NO,NO,safe cache cleanup later
+.ruff_cache/,SAFE_TO_DELETE_AFTER_REVIEW,linter cache,NO,NO,NO,safe cache cleanup later
+.mypy_cache/,SAFE_TO_DELETE_AFTER_REVIEW,type-check cache,NO,NO,NO,safe cache cleanup later
+.venv/,SAFE_TO_DELETE_AFTER_REVIEW,rebuildable environment,NO,NO,NO,recreate from lock file

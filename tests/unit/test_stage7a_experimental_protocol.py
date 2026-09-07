@@ -45,9 +45,7 @@ def _jsonl(path: Path) -> list[dict[str, Any]]:
 def test_stage7a3_preserves_48_task_selection_and_product_quotas(
     stage7a3_out: Path,
 ) -> None:
-    v1 = _json(
-        REPO_ROOT / "artifacts/stage7a_experimental_protocol_v1/stage7_main_benchmark_manifest.json"
-    )
+    v1 = _json(REPO_ROOT / "configs/frozen_inputs/stage7a_v1_main_benchmark_manifest.json")
     manifest = _json(stage7a3_out / "stage7_main_benchmark_manifest.json")
     hard_rows = _rows(stage7a3_out / "stage7a3_hard_check.csv")
 

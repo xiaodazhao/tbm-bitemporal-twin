@@ -1,0 +1,28 @@
+{
+  "duplicate_used_fact_lock_id_count": 146,
+  "expected_fact_lock_count": 1022,
+  "fact_lock_coverage": 0.8297455968688845,
+  "normal_completion_coverage": 0.8297455968688845,
+  "numeric_drift_count": 149,
+  "p_no_output_task_results": {
+    "stage7_main_task_022": true,
+    "stage7_main_task_026": true,
+    "stage7_main_task_042": true
+  },
+  "scope_drift_count": 0,
+  "scope_section_count": 153,
+  "scope_section_status_distribution": {
+    "NOT_EVALUABLE": 2,
+    "NOT_EXPLICIT": 108,
+    "PASS": 43
+  },
+  "task_count": 48,
+  "truncated_output_coverage": null,
+  "truncation_count": 0,
+  "unit_drift_count": 0,
+  "unknown_fact_lock_id_count": 0,
+  "used_fact_lock_count": 848,
+  "valid_p_common_task_count": 45,
+  "valid_p_no_output_task_count": 3,
+  "valid_task_count": 48
+}

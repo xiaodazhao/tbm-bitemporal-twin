@@ -1,0 +1,39 @@
+{
+  "arm_execution": {
+    "A1_NO_SEMANTIC_CLAIM_GATE": "NOT_EXECUTABLE_ON_FROZEN_48_TASK_BENCHMARK",
+    "A2_NO_ARCHITECTURAL_ABSTENTION": 31,
+    "A3_NO_FACTLOCK": 147,
+    "A4_FREE_FINAL_REALIZATION": 48,
+    "P_FULL": "FROZEN_REFERENCE_NO_NEW_API"
+  },
+  "execution_order_hash": "d6fccc383a6b8750617f9615c14ae53c7d7c584290c1ba9f266899ecc7e5bc19",
+  "execution_order_policy": "SHA256_REQUEST_ID_LEXICAL_ASCENDING",
+  "execution_protocol_hash": "067d8053348ec650a5c5775e3c627d9a6d40b21330748ca08bcad29003360b15",
+  "frozen_protocol_commit": "0976e125dfd9781e770dc4587337e976984ea2b2",
+  "frozen_protocol_tag": "stage7e-ablation-protocol-v1.2-frozen",
+  "human_semantic_evaluation": "DEFERRED",
+  "json_repair": false,
+  "llm_repair": false,
+  "method_version": "stage7e_ablation_execution_v1",
+  "planned_request_count": 226,
+  "provider_config": {
+    "api_key_env_var": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "max_output_tokens": 4096,
+    "max_retries": 0,
+    "model": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "reasoning_effort": "none",
+    "sdk_max_retries": 0,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "raw_first_persistence": true,
+  "request_tree_hash": "784d92718814f8a5a058174f5a43baa575edd88e29d7831b90fe644eae603c40",
+  "retry_policy": {
+    "max_retries": 0,
+    "retry_on_any_failure": false,
+    "sdk_max_retries": 0
+  },
+  "schema_version": "stage7e_ablation_execution.v1"
+}

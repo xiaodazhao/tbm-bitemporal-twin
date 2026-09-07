@@ -21,7 +21,7 @@ from tbm_twin.realization.stage6b_smoke import smoke_manifest_hash
 STAGE7A_METHOD_VERSION = "stage7a_experimental_protocol_v1_3_exact_asof_binding"
 STAGE7A_SCHEMA_VERSION = "stage7a_experimental_protocol.v1.3"
 STAGE7A_OUTPUT = "artifacts/stage7a_experimental_protocol_v1_3"
-STAGE7A_V1_OUTPUT = "artifacts/stage7a_experimental_protocol_v1"
+STAGE7A_V1_BENCHMARK_INPUT = "configs/frozen_inputs/stage7a_v1_main_benchmark_manifest.json"
 STAGE7A_V1_1_OUTPUT = "artifacts/stage7a_experimental_protocol_v1_1"
 STAGE7A_V1_2_OUTPUT = "artifacts/stage7a_experimental_protocol_v1_2"
 STAGE7A_V1_TAG = "stage7a-experimental-protocol-v1-frozen"
@@ -632,7 +632,7 @@ def _select_product_rows(
 
 
 def _load_v1_benchmark_rows(repo_root: Path) -> list[dict[str, Any]]:
-    manifest = read_json(repo_root / STAGE7A_V1_OUTPUT / "stage7_main_benchmark_manifest.json")
+    manifest = read_json(repo_root / STAGE7A_V1_BENCHMARK_INPUT)
     rows = list(manifest["tasks"])
     if len(rows) != TARGET_MAIN_SIZE:
         msg = f"Frozen Stage7A v1 benchmark task count is not 48: {len(rows)}"

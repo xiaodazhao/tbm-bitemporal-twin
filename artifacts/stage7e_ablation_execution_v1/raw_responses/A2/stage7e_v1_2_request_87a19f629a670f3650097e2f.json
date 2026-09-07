@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A2_NO_ARCHITECTURAL_ABSTENTION",
+  "attempt_number": 1,
+  "completion_output_token_count": 190,
+  "execution_index": 47,
+  "finish_reason": "completed",
+  "latency_ms": 1967,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 839,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "2e9e8521-494c-4a26-89a8-1a1ee291f7c8",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676080.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676078.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "2e9e8521-494c-4a26-89a8-1a1ee291f7c8",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"section_id\": \"operational_attention\",\n  \"text\": \"截至2023年11月18日，针对三个前向关注单元（cell_007ae6b7a81e2b90469a65fa、cell_eb2c3c433c9ba2151c8c98b3、cell_74760c064abb487c9a1b536d）的RAI（非概率性运行响应关注指数）均不可用，原因均为当前空间状态没有可连接的施工机械响应。\",\n  \"used_context_ids\": [\n    \"state_rai_1667a287c53a0d6c8ab5ae22\",\n    \"state_rai_8cb773ca6beddf9b71347860\",\n    \"state_rai_9d8bbd91768c9db94f08faed\"\n  ]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "b6a185a5-b162-4921-9dc1-6530f95affa5",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 839,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1029
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"section_id\": \"operational_attention\",\n  \"text\": \"截至2023年11月18日，针对三个前向关注单元（cell_007ae6b7a81e2b90469a65fa、cell_eb2c3c433c9ba2151c8c98b3、cell_74760c064abb487c9a1b536d）的RAI（非概率性运行响应关注指数）均不可用，原因均为当前空间状态没有可连接的施工机械响应。\",\n  \"used_context_ids\": [\n    \"state_rai_1667a287c53a0d6c8ab5ae22\",\n    \"state_rai_8cb773ca6beddf9b71347860\",\n    \"state_rai_9d8bbd91768c9db94f08faed\"\n  ]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:41:19.969820+00:00",
+  "request_id": "stage7e_v1_2_request_87a19f629a670f3650097e2f",
+  "request_payload_hash": "87a19f629a670f3650097e2ffaca2f849f051a3305fed18419a34b6d5445f2ee",
+  "request_scope": "operational_attention",
+  "request_started_at": "2026-08-25T16:41:18.002266+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_002",
+  "total_token_count": 1029,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

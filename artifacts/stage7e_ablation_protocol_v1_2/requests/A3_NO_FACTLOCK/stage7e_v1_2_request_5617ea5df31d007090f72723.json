@@ -1,0 +1,35 @@
+{
+  "arm_internal": "A3_NO_FACTLOCK",
+  "chunk_id": "a3_chunk_1709bb974366965db7353296",
+  "execution_status": "MATERIALIZED_NOT_SENT",
+  "inference_config": {
+    "api_key_env_var": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "max_output_tokens": 4096,
+    "max_retries": 0,
+    "model": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "reasoning_effort": "none",
+    "sdk_max_retries": 0,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "messages": [
+    {
+      "content": "你负责把给定的结构化工程Claim逐条写成中文工程句子。每个输入claim_id必须恰好返回一次，不得增加、删除、合并或替换claim_id，不得形成章节叙事，不得使用外部知识。忠实保持给定值、已验证单位、空间范围、认识性质、状态角色和非概率限定。只返回严格JSON，字段为realizations；每项包含claim_id与sentence。\n",
+      "role": "system"
+    },
+    {
+      "content": "请依照给定顺序逐条表达以下结构化工程Claim，并保持claim_id一一对应。输入JSON如下：\n{\n  \"chunk_index\": 1,\n  \"claims\": [\n    {\n      \"claim_id\": \"typed_claim_5cc673d4bdbd17fbadc820bc\",\n      \"claim_type\": \"COUPLED_ATTENTION_REVIEW\",\n      \"claim_value\": \"{\\\"is_causal_estimate\\\":false,\\\"is_hazard_probability\\\":false,\\\"is_probability\\\":false,\\\"metric_name\\\":\\\"GRCI\\\",\\\"metric_semantics\\\":\\\"NONPROBABILISTIC_CONJUNCTIVE_PRODUCT\\\",\\\"metric_status\\\":\\\"AVAILABLE\\\",\\\"metric_value\\\":0.1632754375626248,\\\"source_metric_id\\\":\\\"state_grci_dae68719f768cbc3c0f9fbc4\\\"}\",\n      \"epistemic_status\": \"\",\n      \"nonprobabilistic_qualifier\": \"NONPROBABILISTIC_ATTENTION\",\n      \"order_index\": 8,\n      \"section_id\": \"coupled_attention\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":\\\"cell_a9e80bb164104fa9f94acd7a\\\",\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"stage5b_bitemporal_state_subject\\\",\\\"scope_kind\\\":\\\"CELL\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":\\\"DAILY_REVIEW_CELL\\\",\\\"valid_date\\\":\\\"2023-10-22\\\"}\",\n      \"support_summary\": \"state_grci_dae68719f768cbc3c0f9fbc4\",\n      \"unit_verified\": false\n    },\n    {\n      \"claim_id\": \"typed_claim_2ef2736b26ea2db539819125\",\n      \"claim_type\": \"COUPLED_ATTENTION_REVIEW\",\n      \"claim_value\": \"{\\\"is_causal_estimate\\\":false,\\\"is_hazard_probability\\\":false,\\\"is_probability\\\":false,\\\"metric_name\\\":\\\"GRCI\\\",\\\"metric_semantics\\\":\\\"NONPROBABILISTIC_CONJUNCTIVE_PRODUCT\\\",\\\"metric_status\\\":\\\"AVAILABLE\\\",\\\"metric_value\\\":0.2736371528742307,\\\"source_metric_id\\\":\\\"state_grci_d47397d0ed92f592c77dd37c\\\"}\",\n      \"epistemic_status\": \"\",\n      \"nonprobabilistic_qualifier\": \"NONPROBABILISTIC_ATTENTION\",\n      \"order_index\": 9,\n      \"section_id\": \"coupled_attention\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":\\\"cell_96b4757cd7a8528a4fb821e7\\\",\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"stage5b_bitemporal_state_subject\\\",\\\"scope_kind\\\":\\\"CELL\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":\\\"DAILY_REVIEW_CELL\\\",\\\"valid_date\\\":\\\"2023-10-22\\\"}\",\n      \"support_summary\": \"state_grci_d47397d0ed92f592c77dd37c\",\n      \"unit_verified\": false\n    },\n    {\n      \"claim_id\": \"typed_claim_d119faa75ba1f7cbd36b29f4\",\n      \"claim_type\": \"COUPLED_ATTENTION_REVIEW\",\n      \"claim_value\": \"{\\\"is_causal_estimate\\\":false,\\\"is_hazard_probability\\\":false,\\\"is_probability\\\":false,\\\"metric_name\\\":\\\"GRCI\\\",\\\"metric_semantics\\\":\\\"NONPROBABILISTIC_CONJUNCTIVE_PRODUCT\\\",\\\"metric_status\\\":\\\"AVAILABLE\\\",\\\"metric_value\\\":0.0725994977240459,\\\"source_metric_id\\\":\\\"state_grci_03e827c91c7f32d5d05f75df\\\"}\",\n      \"epistemic_status\": \"\",\n      \"nonprobabilistic_qualifier\": \"NONPROBABILISTIC_ATTENTION\",\n      \"order_index\": 10,\n      \"section_id\": \"coupled_attention\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":\\\"cell_c8a195ce5490d52eac969260\\\",\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"stage5b_bitemporal_state_subject\\\",\\\"scope_kind\\\":\\\"CELL\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":\\\"DAILY_REVIEW_CELL\\\",\\\"valid_date\\\":\\\"2023-10-22\\\"}\",\n      \"support_summary\": \"state_grci_03e827c91c7f32d5d05f75df\",\n      \"unit_verified\": false\n    },\n    {\n      \"claim_id\": \"typed_claim_ead17a147ca63819d874b502\",\n      \"claim_type\": \"COUPLED_ATTENTION_REVIEW\",\n      \"claim_value\": \"{\\\"is_causal_estimate\\\":false,\\\"is_hazard_probability\\\":false,\\\"is_probability\\\":false,\\\"metric_name\\\":\\\"GRCI\\\",\\\"metric_semantics\\\":\\\"NONPROBABILISTIC_CONJUNCTIVE_PRODUCT\\\",\\\"metric_status\\\":\\\"AVAILABLE\\\",\\\"metric_value\\\":0.2503564841056022,\\\"source_metric_id\\\":\\\"state_grci_2c6f4afc5cb0aa886050c901\\\"}\",\n      \"epistemic_status\": \"\",\n      \"nonprobabilistic_qualifier\": \"NONPROBABILISTIC_ATTENTION\",\n      \"order_index\": 11,\n      \"section_id\": \"coupled_attention\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":\\\"cell_fccd76a8459740ecc3617390\\\",\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"stage5b_bitemporal_state_subject\\\",\\\"scope_kind\\\":\\\"CELL\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":\\\"DAILY_REVIEW_CELL\\\",\\\"valid_date\\\":\\\"2023-10-22\\\"}\",\n      \"support_summary\": \"state_grci_2c6f4afc5cb0aa886050c901\",\n      \"unit_verified\": false\n    }\n  ],\n  \"product_type\": \"metric_review\"\n}\n",
+      "role": "user"
+    }
+  ],
+  "model": "deepseek-v4-flash",
+  "payload_hash": "5617ea5df31d007090f72723b0d309535372dc2ae65d9e36a1198f86b2914a9b",
+  "provider": "deepseek",
+  "request_id": "stage7e_v1_2_request_5617ea5df31d007090f72723",
+  "request_scope": "chunk_001",
+  "system_prompt_hash": "061f8dd0116a0b38c0bec8107bddf6ca718709eeb899cdeed733989bc1d810d2",
+  "task_id": "stage7_main_task_028",
+  "user_prompt_hash": "8b8cd46a951de91705ca1a5067a130e725ca960932e23384e50997853818b5cd"
+}

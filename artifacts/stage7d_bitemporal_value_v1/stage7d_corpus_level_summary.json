@@ -1,0 +1,24 @@
+{
+  "analysis_type": "CORPUS_LEVEL_DESCRIPTIVE_SECONDARY_ANALYSIS",
+  "bitemporal_state_version_count": 1375,
+  "cells_with_revision_count": 51,
+  "claim_analysis_basis": "DESCRIPTIVE_REUSE_OF_FROZEN_STAGE5C_LOGICAL_REVISION_ANALYSIS; NO_NEW_CORPUS_BENCHMARK_TASKS_CREATED",
+  "dates_with_materialized_cell_state": 88,
+  "dates_with_revision_count": 14,
+  "frozen_stage5c_revision_transition_counts": {
+    "ABSTAIN_TO_EXPRESSIBLE": 27,
+    "CLAIM_VALUE_CHANGED": 10,
+    "OPPORTUNITY_ADDED": 540,
+    "RESOLVED_SUPPORT_CHANGED": 26,
+    "UNCHANGED_ABSTAIN": 84,
+    "UNCHANGED_EXPRESSIBLE": 288
+  },
+  "metric_changed_revision_chain_count": {
+    "GRCI": 1,
+    "GRS": 36
+  },
+  "plc_monitored_date_count": 91,
+  "project_scope_limitation": "SINGLE_PROJECT_91_PLC_MONITORED_DATES_NOT_CROSS_PROJECT_GENERALIZATION",
+  "revision_chain_count": 53,
+  "valid_date_cell_state_count": 1322
+}

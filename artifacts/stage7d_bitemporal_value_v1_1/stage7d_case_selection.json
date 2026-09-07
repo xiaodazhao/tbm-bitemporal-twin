@@ -1,0 +1,26 @@
+[
+  {
+    "case_label": "A",
+    "cell_id": "cell_7f60fb415d2265a3f3a9e060",
+    "revision_event_id": "knowledge_revision_event_6b0d8288fd43937664e27e4e",
+    "selection_reason": "MAX_LATER_EVIDENCE_LINK_COUNT",
+    "selection_value": 3,
+    "valid_date": "2023-11-28"
+  },
+  {
+    "case_label": "B",
+    "cell_id": "cell_59d7ded1be93617fff859fd7",
+    "revision_event_id": "knowledge_revision_event_8aeca0de8248562abb07a638",
+    "selection_reason": "MAX_EXISTING_CLAIM_DECISION_SWITCH_COUNT",
+    "selection_value": 1,
+    "valid_date": "2023-09-22"
+  },
+  {
+    "case_label": "C",
+    "cell_id": "cell_a7a9faa90556b5f0054f0fd0",
+    "revision_event_id": "knowledge_revision_event_9177a8cf2b831a3ad8fc81ec",
+    "selection_reason": "MAX_OBSERVED_OPPORTUNITY_ADDED_COUNT",
+    "selection_value": 4,
+    "valid_date": "2023-09-22"
+  }
+]

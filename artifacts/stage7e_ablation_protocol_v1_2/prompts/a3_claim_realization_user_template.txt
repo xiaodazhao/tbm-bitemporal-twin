@@ -1,0 +1,2 @@
+请依照给定顺序逐条表达以下结构化工程Claim，并保持claim_id一一对应。输入JSON如下：
+{{PAYLOAD_JSON}}

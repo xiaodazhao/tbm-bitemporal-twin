@@ -1,0 +1,46 @@
+{
+  "branch": "paper-final-technical-audit",
+  "dependency_identity": "pyproject.toml; no lock file present",
+  "freeze_hash_validation": {
+    "artifact_without_hash_manifest_count": 0,
+    "checked_entry_count": 441,
+    "issue_count": 0,
+    "pass_count": 441
+  },
+  "head_commit": "0b6aa8237d3543904590b8df78d0fb272144ab70",
+  "head_tags": [
+    "paper-writing-evidence-bundle-v1.1-frozen"
+  ],
+  "mapping_method": "stage4a2_bitemporal_state_metrics_v1_family_rai_ordinal_grs",
+  "metric_method": {
+    "final_patch_type": "REPRODUCIBILITY_AND_AUDIT_ONLY",
+    "generated_at": "2026-08-09T12:00:00+08:00",
+    "generated_at_semantics": "OFFLINE_RECONSTRUCTION_TIME",
+    "geological_attention_mapping_sha256": "c49c800a0a712ca8e5a86698972258b5fb904d0a1ac18eb50904b782679ba888",
+    "git_commit_hash": "ad9fca4b6272f17b73d61e3f24525f0a0e0bc75c",
+    "method_version": "stage4_bitemporal_state_metrics_v1_1_trace_frozen",
+    "metric_formula_changed": false,
+    "metric_method_contract_hash": "85881d657b59148c50695f2a576ac426c71aafe01b82b02bd40fff836ebeb31c",
+    "metric_semantics_changed": false,
+    "operational_measurement_regime_review_sha256": "8ec1d00e12da9db3c6ffcfe6d19bedd999f61138178d3493f65a31c4ecf0dde2",
+    "rai_saturation_robust_z": 3.0,
+    "schema_version": "stage4_bitemporal_state_metrics.v1.1",
+    "source_hashes": {
+      "stage2_geology": "5215d985d0043aeb9172076b3ca98616a770ae544057499820324e52c06b286e",
+      "stage2e": "6eacac0e49e2242956f45ad479748d5f1f37a2ee27faafad7b8e89e30db4bc9c",
+      "stage3a": "07e327a9159d28e5da4398907671d3b6e2914e59714b2beb1ad3734ecdb7ceeb",
+      "stage3b": "2c8c8b8487b08f2d62d4630015cb17aaef2f6a3ca567613626862f8968f77578",
+      "stage4a1": "4a6384669e2412cd3790c9fbc0a733dad1bed59672c45bedba8e1d8d45155f86",
+      "stage4a1_1": "fec7f7532e192311d8dda602122a995d042f012e296c9f176a4e3b45215f76c7"
+    },
+    "source_snapshot_sha256": "906a6d8636483adc5e71099af1c4a801f21dff427beb6c8ac198dd435244373d",
+    "source_tree_hash": "a8e9eee5c5e26e266fffd0a495be51dbea0727a09ac84c63ac9834d2e7602464",
+    "state_metric_definition_sha256": "bd8d7a3d86d9d9a80a29077b87ace58124074b7f92a3208479e3396085a20c24",
+    "version_upgrade_reason": "TRACE_AND_METHOD_CONTRACT_SCHEMA_REFINEMENT",
+    "working_tree_dirty": true
+  },
+  "python_version": "3.13.5",
+  "stage7b_model": "deepseek-v4-flash",
+  "stage7b_provider": "deepseek",
+  "working_tree_dirty": true
+}

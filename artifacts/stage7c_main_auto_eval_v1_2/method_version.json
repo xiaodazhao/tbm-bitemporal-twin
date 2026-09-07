@@ -1,0 +1,20 @@
+{
+  "automatic_error_codes": [
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E7",
+    "E10",
+    "E12",
+    "E13",
+    "E14"
+  ],
+  "generated_at": "2026-08-17T00:00:00+08:00",
+  "method_version": "stage7c_main_auto_eval_v1_2_final_closure",
+  "reruns_stage7b": false,
+  "schema_version": "stage7c_main_auto_eval.v1.2",
+  "stage7b_execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+  "uses_llm": false,
+  "uses_llm_as_judge": false
+}

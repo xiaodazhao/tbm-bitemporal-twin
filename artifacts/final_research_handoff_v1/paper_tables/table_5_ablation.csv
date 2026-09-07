@@ -1,0 +1,9 @@
+arm,endpoint,numerator,denominator,rate,status,result,caveat
+A1,Claim gate bypass,,,,NOT_EXECUTABLE_ON_FROZEN_48_TASK_BENCHMARK,NO_CONCRETE_GATE_BYPASS_CANDIDATES,design feasibility only; not model performance
+A2,target sections,31,,,EXECUTED,24 affected tasks,section-level removal analysis
+A3 strict primary,valid chunks,125,147,0.8503401360544217,PRIMARY,828/989 mappings; 32/45 complete tasks,strict parser compliance
+A3 strict primary,numeric exact,149,149,1.0,PRIMARY,0 numeric drift,corrected Unicode-safe evaluator
+A3 fence-only secondary,valid chunks,147,147,1.0,SECONDARY_POST_HOC,989/989 mappings; 45/45 complete tasks,not the preregistered primary parser
+A3 fence-only secondary,numeric exact,164,164,1.0,SECONDARY_POST_HOC,0 numeric drift,numeric exactness is not semantic correctness
+A4,FactLock trace coverage,848,1022,0.8297455968688845,EXECUTED,174 omitted,trace coverage is not semantic correctness
+A4,numeric FactLock trace coverage,162,171,0.9473684210526315,EXECUTED,162/162 referenced exact; 9 omitted; 0 drift,exact token retention is not full semantic correctness

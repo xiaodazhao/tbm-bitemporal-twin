@@ -1,0 +1,29 @@
+{
+  "claim_contract_method": "stage5a_typed_claim_contract_v1_1_frozen",
+  "claim_rows_by_product_type": {
+    "all": 575,
+    "daily_review": 317,
+    "forward_attention": 275,
+    "metric_review": 174
+  },
+  "claim_rows_by_type": {
+    "COUPLED_ATTENTION_REVIEW": 48,
+    "FORECAST_GEOLOGICAL_CONDITION": 829,
+    "FORWARD_GEOLOGICAL_ATTENTION": 53,
+    "GEOLOGICAL_EVIDENCE_ATTENTION_REVIEW": 48,
+    "OBSERVED_GEOLOGICAL_CONDITION": 162,
+    "OPERATIONAL_RESPONSE_ATTENTION": 201
+  },
+  "claim_support_only_changed_count": 0,
+  "claim_value_changed_count": 0,
+  "evidence_delay_iqr_days": null,
+  "evidence_delay_max_days": null,
+  "evidence_delay_min_days": null,
+  "future_evidence_by_epistemic_status": {},
+  "future_evidence_by_role": {},
+  "future_evidence_by_type": {},
+  "future_evidence_count": 0,
+  "median_evidence_delay_days": null,
+  "same_claim_contract_both_arms": true,
+  "unknown_to_known_count": 0
+}

@@ -1,0 +1,13 @@
+{
+  "alternative_arm_count": 6,
+  "api_calls": 0,
+  "baseline_arm_count": 1,
+  "frozen_baseline_reuse_count": 1,
+  "full_factorial_arm_count_if_prohibited_design_were_used": 27,
+  "full_factorial_planned": false,
+  "llm_calls": 0,
+  "new_deterministic_pipeline_runs_expected": 6,
+  "stage7f_a_outcomes_generated": 0,
+  "stage7f_a_pipeline_runs_executed": 0,
+  "unique_arm_count": 7
+}

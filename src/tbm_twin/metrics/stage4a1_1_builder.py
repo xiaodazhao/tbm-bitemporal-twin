@@ -79,12 +79,12 @@ class Stage4A11Builder:
         self,
         repo_root: Path,
         generated_at: datetime,
-        output_dir: Path = Path("artifacts/stage4a1_1_metric_method_freeze_candidate"),
+        output_dir: Path = Path("artifacts/stage4a1_1_metric_method_freeze_v1"),
     ) -> None:
         self.repo_root = repo_root
         self.generated_at = generated_at
         self.output_dir = repo_root / output_dir if not output_dir.is_absolute() else output_dir
-        self.stage4a1_dir = repo_root / "artifacts/stage4a1_metric_foundation_v1_candidate"
+        self.stage4a1_dir = repo_root / "artifacts/stage4a1_metric_foundation_v1"
         self.operational_dir = repo_root / "artifacts/stage2_plc_operational_freeze_v2"
         self.stage3a_dir = repo_root / "artifacts/stage3a_initial_epistemic_state_v1_1"
         self.stage3b_dir = repo_root / "artifacts/stage3b_bitemporal_epistemic_state_v1_1"

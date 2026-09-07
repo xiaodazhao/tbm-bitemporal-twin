@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A3_NO_FACTLOCK",
+  "attempt_number": 1,
+  "completion_output_token_count": 537,
+  "execution_index": 122,
+  "finish_reason": "completed",
+  "latency_ms": 3935,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 2527,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "3b01d185-1817-4864-b33e-42214db53a51",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676367.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676363.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "3b01d185-1817-4864-b33e-42214db53a51",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"realizations\": [\n    {\n      \"claim_id\": \"typed_claim_9ccf55f6369e3db63c5a0e3a\",\n      \"sentence\": \"在桩号1014431.0处，观察到岩体破碎。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_4a6aa6bea2915fc0c114e258\",\n      \"sentence\": \"在桩号1014431.0处，观察到岩性为板岩夹变质砂岩。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_4ba84a798ea1c077a85caf95\",\n      \"sentence\": \"在桩号1014431.0处，观察到地质描述为：开挖面地质概况当前掌子面地层岩性为石炭二叠系板岩夹变质砂岩，矿物成分以石英、长石为主，钙质胶结。围岩整体弱风化，岩质硬，节理裂隙发育密集，岩体破碎，层间结合差，掌子面滴渗水，存在掉块现象。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_9a30215fabcb8da49cb7efd2\",\n      \"sentence\": \"在桩号1014431.0处，观察到围岩弱风化。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_030dcaa14622c675b8167ac4\",\n      \"sentence\": \"预报在桩号1014431.0至1014445.0区间内，岩体破碎。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_100efeb00f4e4cb96fd5b3c6\",\n      \"sentence\": \"预报在桩号1014419.0至1014449.0区间内，节理裂隙发育密集。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_e5759bb2d6b95f32f409bfd5\",\n      \"sentence\": \"预报在桩号1014431.0至1014445.0区间内，节理裂隙发育。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_002321f049a5ba4821afc7c8\",\n      \"sentence\": \"预报在桩号1014419.0至1014449.0区间内，围岩弱风化。\"\n    }\n  ]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "f0809afe-99eb-4a2e-9fd3-464ecc679918",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 2527,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 537,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3064
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"realizations\": [\n    {\n      \"claim_id\": \"typed_claim_9ccf55f6369e3db63c5a0e3a\",\n      \"sentence\": \"在桩号1014431.0处，观察到岩体破碎。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_4a6aa6bea2915fc0c114e258\",\n      \"sentence\": \"在桩号1014431.0处，观察到岩性为板岩夹变质砂岩。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_4ba84a798ea1c077a85caf95\",\n      \"sentence\": \"在桩号1014431.0处，观察到地质描述为：开挖面地质概况当前掌子面地层岩性为石炭二叠系板岩夹变质砂岩，矿物成分以石英、长石为主，钙质胶结。围岩整体弱风化，岩质硬，节理裂隙发育密集，岩体破碎，层间结合差，掌子面滴渗水，存在掉块现象。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_9a30215fabcb8da49cb7efd2\",\n      \"sentence\": \"在桩号1014431.0处，观察到围岩弱风化。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_030dcaa14622c675b8167ac4\",\n      \"sentence\": \"预报在桩号1014431.0至1014445.0区间内，岩体破碎。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_100efeb00f4e4cb96fd5b3c6\",\n      \"sentence\": \"预报在桩号1014419.0至1014449.0区间内，节理裂隙发育密集。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_e5759bb2d6b95f32f409bfd5\",\n      \"sentence\": \"预报在桩号1014431.0至1014445.0区间内，节理裂隙发育。\"\n    },\n    {\n      \"claim_id\": \"typed_claim_002321f049a5ba4821afc7c8\",\n      \"sentence\": \"预报在桩号1014419.0至1014449.0区间内，围岩弱风化。\"\n    }\n  ]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:46:07.235242+00:00",
+  "request_id": "stage7e_v1_2_request_2e1beca2d7e8e7010ee93ad9",
+  "request_payload_hash": "2e1beca2d7e8e7010ee93ad93e332e1616f331b952279684bfa97d69acc5ef6d",
+  "request_scope": "chunk_000",
+  "request_started_at": "2026-08-25T16:46:03.300035+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_032",
+  "total_token_count": 3064,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

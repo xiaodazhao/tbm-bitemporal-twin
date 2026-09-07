@@ -1,0 +1,4 @@
+abstain_count,claim_type_count,expressibility_rate,expressible_count,opportunity_count,state_role,unique_subject_count
+722,5,0.8447645667598366,3929,4651,DAILY_REVIEW_CELL,380
+798,3,0.7465057179161372,2350,3148,FORWARD_ATTENTION_CELL,505
+880,1,0.0,0,880,LOCAL_BACKGROUND_CELL,880

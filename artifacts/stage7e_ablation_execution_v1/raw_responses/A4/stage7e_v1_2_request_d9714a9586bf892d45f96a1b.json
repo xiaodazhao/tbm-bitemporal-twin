@@ -1,0 +1,108 @@
+{
+  "arm_internal": "A4_FREE_FINAL_REALIZATION",
+  "attempt_number": 1,
+  "completion_output_token_count": 375,
+  "execution_index": 80,
+  "finish_reason": "completed",
+  "latency_ms": 3180,
+  "output_termination_class": "NORMAL_COMPLETION",
+  "parse_status": "NOT_PARSED_RAW_FIRST",
+  "prompt_input_token_count": 2444,
+  "provider_error_message": null,
+  "provider_error_type": null,
+  "provider_response_id": "2780a048-e566-474c-b377-45c974849362",
+  "provider_returned_model_identity": "deepseek-v4-flash",
+  "provider_status": "completed",
+  "raw_response_body": {
+    "background": false,
+    "completed_at": 1787676202.0,
+    "content_filters": null,
+    "conversation": null,
+    "created_at": 1787676199.0,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "2780a048-e566-474c-b377-45c974849362",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "deepseek-v4-flash",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"sections\": [\n    {\n      \"section_name\": \"预报结论\",\n      \"text\": \"根据预报，该段围岩较前段变差。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育密集，岩体破碎-极破碎，围岩整体稳定性差。建议围岩级别为Ⅴ级。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_849cda5fa7f01fa874c24614\",\n        \"fact_lock_4ef0656b91fbbc52e1263170\",\n        \"fact_lock_5bd9fc80e44b363240d62d12\",\n        \"fact_lock_fe55860b31861ee573e48bbc\",\n        \"fact_lock_3d83de01771d49d220bfcf20\",\n        \"fact_lock_5d6f28d6891dd1bfc2d2c76c\"\n      ]\n    },\n    {\n      \"section_name\": \"风险提示\",\n      \"text\": \"预报显示，里程+224、+232附近有掉块风险，异常等级为中等。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_ee6bc26c3732ef7420f647b0\",\n        \"fact_lock_c342f2de278bce5df5cf77a8\"\n      ]\n    },\n    {\n      \"section_name\": \"超前关注指标\",\n      \"text\": \"当前超前地质证据关注指标GRS值为0.9166666666666666。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_cc4f994565b8c0236ea8eccc\"\n      ]\n    }\n  ]\n}",
+            "type": "output_text"
+          }
+        ],
+        "id": "37e346a3-5aff-497f-b2a5-64e01c638a74",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "context": null,
+      "effort": "none",
+      "generate_summary": null,
+      "mode": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 0.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": null
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 2444,
+      "input_tokens_details": {
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      },
+      "output_tokens": 375,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2819
+    },
+    "user": null
+  },
+  "raw_response_content": "{\n  \"sections\": [\n    {\n      \"section_name\": \"预报结论\",\n      \"text\": \"根据预报，该段围岩较前段变差。岩性为板岩夹变质砂岩，弱风化，岩质软硬不均，节理裂隙发育密集，岩体破碎-极破碎，围岩整体稳定性差。建议围岩级别为Ⅴ级。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_849cda5fa7f01fa874c24614\",\n        \"fact_lock_4ef0656b91fbbc52e1263170\",\n        \"fact_lock_5bd9fc80e44b363240d62d12\",\n        \"fact_lock_fe55860b31861ee573e48bbc\",\n        \"fact_lock_3d83de01771d49d220bfcf20\",\n        \"fact_lock_5d6f28d6891dd1bfc2d2c76c\"\n      ]\n    },\n    {\n      \"section_name\": \"风险提示\",\n      \"text\": \"预报显示，里程+224、+232附近有掉块风险，异常等级为中等。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_ee6bc26c3732ef7420f647b0\",\n        \"fact_lock_c342f2de278bce5df5cf77a8\"\n      ]\n    },\n    {\n      \"section_name\": \"超前关注指标\",\n      \"text\": \"当前超前地质证据关注指标GRS值为0.9166666666666666。\",\n      \"used_fact_lock_ids\": [\n        \"fact_lock_cc4f994565b8c0236ea8eccc\"\n      ]\n    }\n  ]\n}",
+  "real_api_attempted": true,
+  "request_finished_at": "2026-08-25T16:43:22.423408+00:00",
+  "request_id": "stage7e_v1_2_request_d9714a9586bf892d45f96a1b",
+  "request_payload_hash": "d9714a9586bf892d45f96a1bb5a3831c62554f434ae278cc0395ae6cec92883c",
+  "request_scope": "task",
+  "request_started_at": "2026-08-25T16:43:19.242885+00:00",
+  "retry_count": 0,
+  "schema_status": "NOT_VALIDATED_RAW_FIRST",
+  "task_id": "stage7_main_task_013",
+  "total_token_count": 2819,
+  "transport_status": "SUCCESS",
+  "transport_success": true,
+  "truncation_exposed": false
+}

@@ -1,6 +1,6 @@
 # TBM Bitemporal Twin
 
-Formal post-Stage-2 route:
+Formal research route:
 
 ```text
 Stage 2 Geology V2 Freeze
@@ -11,6 +11,15 @@ Stage 2 Geology V2 Freeze
 -> Stage 4 Bitemporal State Metrics v1.1
 -> Stage 5A Typed Claim Contract v1.1
 -> Stage 5B Deterministic Claim Builder v1
+-> Stage 5C Claim Expressibility Analysis v1
+-> Stage 6A Deterministic Fact Lock v1
+-> Stage 6B Controlled Claim Realization v1
+-> Stage 7A Held-out Protocol v1.3
+-> Stage 7B Three-method Model Comparison v1
+-> Stage 7C Automatic Evaluation v1.2
+-> Stage 7D Bitemporal Value Analysis v1.1a
+-> Stage 7E Ablation Analysis v1.1a
+-> Stage 7F Sensitivity Interpretation v1.1
 ```
 
 Stage 3 must read only:
@@ -24,15 +33,10 @@ artifacts/stage3b_bitemporal_epistemic_state_v1_1/
 ```
 
 Stage3B must read only `artifacts/stage3a_initial_epistemic_state_v1_1/` for
-Stage3A state input. Do not use `artifacts/stage3a_initial_epistemic_state_v1/`
-because it is `SUPERSEDED_BY_STAGE3A_V1_1` and `POINT_RESPONSE_INCOMPLETE`. Do
-not use `artifacts/stage3a_initial_epistemic_state_v1_1_candidate/` as a formal
-input.
+Stage3A state input.
 
 Post-Stage3B metrics and Claim layers must read only
-`artifacts/stage3b_bitemporal_epistemic_state_v1_1/`. Do not use
-`artifacts/stage3b_bitemporal_epistemic_state_v1_candidate/` as a formal input;
-it is retained only for promotion audit.
+`artifacts/stage3b_bitemporal_epistemic_state_v1_1/`.
 
 Stage5 and later layers must read Stage4 metrics only from:
 
@@ -43,7 +47,8 @@ artifacts/stage4_bitemporal_state_metrics_v1_1/
 Stage4 RAI, GRS and GRCI are non-probabilistic attention metrics. They are not
 risk probabilities, hazard probabilities, causal estimates, or Typed Claims.
 
-See [docs/STAGE2_FROZEN_PIPELINE.md](docs/STAGE2_FROZEN_PIPELINE.md) and
+See [docs/CANONICAL_RESEARCH_PATH.md](docs/CANONICAL_RESEARCH_PATH.md),
+[docs/STAGE2_FROZEN_PIPELINE.md](docs/STAGE2_FROZEN_PIPELINE.md), and
 [docs/ARCHIVE_INDEX.md](docs/ARCHIVE_INDEX.md).
 
 本项目研究TBM动态施工证据如何形成事件对齐、可追溯和可版本化的施工状态，并为后续来源约束的工程Claim推理提供可靠事实对象。
@@ -52,7 +57,7 @@ See [docs/STAGE2_FROZEN_PIPELINE.md](docs/STAGE2_FROZEN_PIPELINE.md) and
 
 PLC数据是不规则采样的，地质证据也会动态到达。本项目的长期问题是：如何把来源、时间、空间和认识性质不同的证据组织为可追溯状态对象，并在未来判断工程Claim是否被允许成立。
 
-当前仓库主线已冻结到 Stage 6A：从原始PLC CSV建立 `SourceAsset`、YAML驱动的 `ChannelCatalog`、标准化PLC观测、质量诊断、透明 `OperationPhase` 弱标签、PLC-inferred `ExcavationEpisode` 和质量感知 `SpatialFootprint`；随后冻结机械响应证据、规则化地质证据，并给出地质证据对91天PLC日期范围的非布尔适用性判断；再生成91天日终初始认识状态、10m Cell索引和地质/机械证据到Cell的可追溯连接；基于知识可用日期建立双时间认识状态修订链；生成非概率性的 RAI、GRS 和 GRCI 状态指标；冻结 Stage5A v1.1 Typed Claim Schema 与 Claim Contract；由 Stage5B 确定性批量物化 `ClaimOpportunity`、`ClaimProposal`、`ClaimDecision`、`TypedEngineeringClaim` 和 `ClaimAbstention`；Stage5C 冻结批量 Claim expressibility / abstention 分析；Stage6A 冻结将 EXPRESSIBLE `TypedEngineeringClaim` 投影为 deterministic FactLock，并生成受控 Evidence Pack 与 machine-readable Rendering Contract。
+当前机器研究主线已完成到 Stage 7F：在冻结证据、双时间状态、非概率关注指标、工程陈述准入和事实锁定的基础上，完成三方法真实模型比较、自动边界评价、双时间价值分析、组件消融和参数敏感性分析。人工语义评价材料已经冻结，但正式评分仍待完成。
 
 ```text
 Raw PLC CSV
@@ -73,12 +78,20 @@ Raw PLC CSV
 → Stage 5B Deterministic Claim Builder v1
 → Stage 5C Claim Expressibility Analysis v1
 → Stage 6A Deterministic Fact Lock / Controlled Evidence Pack v1
+→ Stage 6B Controlled Claim Realization v1
+→ Stage 7A Experimental Protocol v1.3
+→ Stage 7B Main Model Comparison v1
+→ Stage 7C Automatic Evaluation v1.2
+→ Stage 7D Bitemporal Value Analysis v1.1a
+→ Stage 7E Ablation Analysis v1.1a
+→ Stage 7F Sensitivity Interpretation v1.1
 ```
 
-## 当前不做
+## 当前边界
 
-本阶段不实现日报、LLM、Prompt、API、前端、数据库服务或自然语言Claim生成。机械响应只用于施工过程弱标签、状态连接和非概率指标，不被解释为地质原因。
-Stage6A 只生成结构化 FactLock、Controlled Evidence Pack 和 Rendering Contract；它不调用 LLM、不生成自然语言、不进行实验解释。Stage6B 才会研究受控 Claim realization。
+LLM 只用于冻结事实之后的受控表达和实验基线，不计算施工事实、不判断地质原因、不改变数值、时间、空间或认识身份。机械响应仍不得直接解释为地质原因，RAI、GRS 和 GRCI 仍不是风险概率。当前下一项研究工作是完成盲法人工语义评价和论文写作，不继续扩展方法链。
+
+大型冻结数据、原始 PLC/PDF 和本地审查运输包不作为普通 GitHub 源码内容；GitHub 保留实现、配置、测试、正式小型审计结果和论文证据索引。完整数据身份由冻结清单和 SHA-256 维持。
 
 ## 安装
 
@@ -194,4 +207,16 @@ Stage 6B Controlled Claim Realization / LLM Realization v1: FROZEN
 
 Stage 7A Experimental Protocol / Held-Out Benchmark v1.3: FROZEN
 
-Stage 7B Controlled Model Evaluation: NEXT
+Stage 7B Three-method Real-model Comparison v1: FROZEN
+
+Stage 7C Deterministic Automatic Evaluation v1.2: FROZEN
+
+Stage 7C Human Semantic Evaluation v1.1: PACKET FROZEN, SCORING PENDING
+
+Stage 7D Bitemporal Value Analysis v1.1a: FROZEN
+
+Stage 7E Ablation Analysis v1.1a: FROZEN
+
+Stage 7F Sensitivity and Validity-boundary Analysis v1.1: FROZEN
+
+Paper Writing and Human Evaluation: CURRENT

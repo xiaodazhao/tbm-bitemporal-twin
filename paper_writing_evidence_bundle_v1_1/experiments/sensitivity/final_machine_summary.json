@@ -1,0 +1,343 @@
+{
+  "api_calls": 0,
+  "automatic_robustness_classification": "NOT_PERFORMED",
+  "cell_size": {
+    "10m": {
+      "abstain_per_100m": "18.154311649016645",
+      "arm_id": "stage7f_baseline",
+      "cell_count": "156",
+      "cell_size_m": "{\"CELL_SIZE_M\": 10.0, \"RAI_MINIMUM_HISTORICAL_SAMPLE_COUNT\": 30, \"RAI_SATURATION_ROBUST_Z\": 3.0}",
+      "claim_opportunities_per_100m": "65.65052950075643",
+      "daily_review_vs_forward_attention_conflicts": 0,
+      "daily_review_vs_local_background_conflicts": 0,
+      "denominator_caveat": "NONE",
+      "evaluated_cell_length_m": "13220.0",
+      "execution_status": "REUSED_FROZEN_BASELINE",
+      "expressible_per_100m": "47.49621785173979",
+      "frozen_results": {
+        "abstain_count": "2400",
+        "abstain_rate": "0.27652955409609403",
+        "claim_opportunity_count": "8679",
+        "expressible_count": "6279",
+        "expressible_rate": "0.723470445903906",
+        "grci_availability_rate": "0.9157894736842105",
+        "grci_available_count": "174",
+        "grci_eligible_count": "190",
+        "grs_availability_rate": "0.8807272727272727",
+        "grs_available_count": "1211",
+        "grs_eligible_count": "1375",
+        "rai_availability_rate": "0.12654545454545454",
+        "rai_available_count": "174",
+        "rai_eligible_count": "1375"
+      },
+      "interpretation_scope": "BASELINE",
+      "interval_overlap_mismatch": 0,
+      "method_validity_status": "VALID_BASELINE",
+      "native_quality_gate_status": "PASS",
+      "point_missing_or_duplicate": 0,
+      "scope_role_conflicts": 0,
+      "sensitivity_adapter_continued_execution": false
+    },
+    "20m": {
+      "abstain_per_100m": "10.895627644569815",
+      "arm_id": "cell_size_m_20",
+      "cell_count": "79",
+      "cell_size_m": "20.0",
+      "claim_opportunities_per_100m": "46.34696755994358",
+      "daily_review_vs_forward_attention_conflicts": 41,
+      "daily_review_vs_local_background_conflicts": 49,
+      "denominator_caveat": "Actual coarse-cell exposure includes boundary-spanning cells; not an equal-support density comparison.",
+      "evaluated_cell_length_m": "14180.0",
+      "execution_status": "SUCCESS",
+      "expressible_per_100m": "35.451339915373765",
+      "frozen_results": {
+        "abstain_count": "1545",
+        "abstain_rate": "0.23508825319537432",
+        "claim_opportunity_count": "6572",
+        "expressible_count": "5027",
+        "expressible_rate": "0.7649117468046257",
+        "grci_availability_rate": "0.9041095890410958",
+        "grci_available_count": "132",
+        "grci_eligible_count": "146",
+        "grs_availability_rate": "0.9353099730458221",
+        "grs_available_count": "694",
+        "grs_eligible_count": "742",
+        "rai_availability_rate": "0.1778975741239892",
+        "rai_available_count": "132",
+        "rai_eligible_count": "742"
+      },
+      "interpretation_scope": "COARSE_RESOLUTION_STRESS_TEST",
+      "interval_overlap_mismatch": 76,
+      "method_validity_status": "COARSE_RESOLUTION_VALIDITY_BOUNDARY_EXCEEDED",
+      "native_quality_gate_status": "FAIL_RESOLUTION_VALIDITY",
+      "point_missing_or_duplicate": 23,
+      "scope_role_conflicts": 90,
+      "sensitivity_adapter_continued_execution": true
+    },
+    "5m": {
+      "abstain_per_100m": "34.57639939485628",
+      "arm_id": "cell_size_m_5",
+      "cell_count": "312",
+      "cell_size_m": "5.0",
+      "claim_opportunities_per_100m": "109.93948562783662",
+      "daily_review_vs_forward_attention_conflicts": 0,
+      "daily_review_vs_local_background_conflicts": 0,
+      "denominator_caveat": "NONE",
+      "evaluated_cell_length_m": "13220.0",
+      "execution_status": "SUCCESS",
+      "expressible_per_100m": "75.36308623298034",
+      "frozen_results": {
+        "abstain_count": "4571",
+        "abstain_rate": "0.3145039218384478",
+        "claim_opportunity_count": "14534",
+        "expressible_count": "9963",
+        "expressible_rate": "0.6854960781615522",
+        "grci_availability_rate": "0.7420212765957447",
+        "grci_available_count": "279",
+        "grci_eligible_count": "376",
+        "grs_availability_rate": "0.8450601531170252",
+        "grs_available_count": "2318",
+        "grs_eligible_count": "2743",
+        "rai_availability_rate": "0.1017134524243529",
+        "rai_available_count": "279",
+        "rai_eligible_count": "2743"
+      },
+      "interpretation_scope": "SENSITIVITY_COMPARISON",
+      "interval_overlap_mismatch": 0,
+      "method_validity_status": "VALID_SENSITIVITY_ARM",
+      "native_quality_gate_status": "PASS",
+      "point_missing_or_duplicate": 0,
+      "scope_role_conflicts": 0,
+      "sensitivity_adapter_continued_execution": false
+    }
+  },
+  "deepseek_calls": 0,
+  "generated_at": "2026-08-29T12:00:00+08:00",
+  "history": {
+    "20": {
+      "abstain_count": "2396",
+      "abstain_rate": "0.27606867150593384",
+      "claim_opportunity_count": "8679",
+      "expressible_count": "6283",
+      "expressible_rate": "0.7239313284940662",
+      "grci_availability_rate": "0.9263157894736842",
+      "grci_available_count": "176",
+      "grci_eligible_count": "190",
+      "grs_availability_rate": "0.8807272727272727",
+      "grs_available_count": "1211",
+      "grs_eligible_count": "1375",
+      "rai_availability_rate": "0.128",
+      "rai_available_count": "176",
+      "rai_eligible_count": "1375"
+    },
+    "30": {
+      "abstain_count": "2400",
+      "abstain_rate": "0.27652955409609403",
+      "claim_opportunity_count": "8679",
+      "expressible_count": "6279",
+      "expressible_rate": "0.723470445903906",
+      "grci_availability_rate": "0.9157894736842105",
+      "grci_available_count": "174",
+      "grci_eligible_count": "190",
+      "grs_availability_rate": "0.8807272727272727",
+      "grs_available_count": "1211",
+      "grs_eligible_count": "1375",
+      "rai_availability_rate": "0.12654545454545454",
+      "rai_available_count": "174",
+      "rai_eligible_count": "1375"
+    },
+    "40": {
+      "abstain_count": "2404",
+      "abstain_rate": "0.27699043668625417",
+      "claim_opportunity_count": "8679",
+      "expressible_count": "6275",
+      "expressible_rate": "0.7230095633137458",
+      "grci_availability_rate": "0.9052631578947369",
+      "grci_available_count": "172",
+      "grci_eligible_count": "190",
+      "grs_availability_rate": "0.8807272727272727",
+      "grs_available_count": "1211",
+      "grs_eligible_count": "1375",
+      "rai_availability_rate": "0.12509090909090909",
+      "rai_available_count": "172",
+      "rai_eligible_count": "1375"
+    },
+    "claim_transitions": [
+      {
+        "alternative_arm_id": "rai_history_min_samples_20",
+        "count": "2396",
+        "transition": "ABSTAIN_TO_ABSTAIN"
+      },
+      {
+        "alternative_arm_id": "rai_history_min_samples_20",
+        "count": "4",
+        "transition": "ABSTAIN_TO_EXPRESSIBLE"
+      },
+      {
+        "alternative_arm_id": "rai_history_min_samples_20",
+        "count": "6279",
+        "transition": "EXPRESSIBLE_TO_EXPRESSIBLE"
+      },
+      {
+        "alternative_arm_id": "rai_history_min_samples_20",
+        "count": "0",
+        "transition": "OPPORTUNITY_ADDED"
+      },
+      {
+        "alternative_arm_id": "rai_history_min_samples_20",
+        "count": "0",
+        "transition": "OPPORTUNITY_REMOVED"
+      },
+      {
+        "alternative_arm_id": "rai_history_min_samples_40",
+        "count": "2400",
+        "transition": "ABSTAIN_TO_ABSTAIN"
+      },
+      {
+        "alternative_arm_id": "rai_history_min_samples_40",
+        "count": "4",
+        "transition": "EXPRESSIBLE_TO_ABSTAIN"
+      },
+      {
+        "alternative_arm_id": "rai_history_min_samples_40",
+        "count": "6275",
+        "transition": "EXPRESSIBLE_TO_EXPRESSIBLE"
+      },
+      {
+        "alternative_arm_id": "rai_history_min_samples_40",
+        "count": "0",
+        "transition": "OPPORTUNITY_ADDED"
+      },
+      {
+        "alternative_arm_id": "rai_history_min_samples_40",
+        "count": "0",
+        "transition": "OPPORTUNITY_REMOVED"
+      }
+    ],
+    "interpretation": "LIMITED_AVAILABILITY_BOUNDARY_SENSITIVITY"
+  },
+  "interpretation_boundaries": {
+    "five_vs_ten_m": "PRIMARY_CLEAN_FINER_RESOLUTION_COMPARISON",
+    "no_best_parameter_selected": true,
+    "no_p_value_stability_claim": true,
+    "twenty_m": "COARSE_RESOLUTION_STRESS_TEST_NOT_INTERCHANGEABLE",
+    "twenty_m_per_100m": "DESCRIPTIVE_USING_ACTUAL_COARSE_CELL_EXPOSURE_NOT_EQUAL_SPATIAL_SUPPORT"
+  },
+  "llm_calls": 0,
+  "method_version": "stage7f_sensitivity_execution_v1_1_final_interpretation",
+  "recommended_stage7f_machine_summary": true,
+  "saturation": {
+    "2": {
+      "abstain_count": "2400",
+      "abstain_rate": "0.27652955409609403",
+      "claim_opportunity_count": "8679",
+      "expressible_count": "6279",
+      "expressible_rate": "0.723470445903906",
+      "grci_availability_rate": "0.9157894736842105",
+      "grci_available_count": "174",
+      "grci_eligible_count": "190",
+      "grs_availability_rate": "0.8807272727272727",
+      "grs_available_count": "1211",
+      "grs_eligible_count": "1375",
+      "rai_availability_rate": "0.12654545454545454",
+      "rai_available_count": "174",
+      "rai_eligible_count": "1375"
+    },
+    "3": {
+      "abstain_count": "2400",
+      "abstain_rate": "0.27652955409609403",
+      "claim_opportunity_count": "8679",
+      "expressible_count": "6279",
+      "expressible_rate": "0.723470445903906",
+      "grci_availability_rate": "0.9157894736842105",
+      "grci_available_count": "174",
+      "grci_eligible_count": "190",
+      "grs_availability_rate": "0.8807272727272727",
+      "grs_available_count": "1211",
+      "grs_eligible_count": "1375",
+      "rai_availability_rate": "0.12654545454545454",
+      "rai_available_count": "174",
+      "rai_eligible_count": "1375"
+    },
+    "4": {
+      "abstain_count": "2400",
+      "abstain_rate": "0.27652955409609403",
+      "claim_opportunity_count": "8679",
+      "expressible_count": "6279",
+      "expressible_rate": "0.723470445903906",
+      "grci_availability_rate": "0.9157894736842105",
+      "grci_available_count": "174",
+      "grci_eligible_count": "190",
+      "grs_availability_rate": "0.8807272727272727",
+      "grs_available_count": "1211",
+      "grs_eligible_count": "1375",
+      "rai_availability_rate": "0.12654545454545454",
+      "rai_available_count": "174",
+      "rai_eligible_count": "1375"
+    },
+    "claim_transitions": [
+      {
+        "alternative_arm_id": "rai_saturation_robust_z_2",
+        "count": "2400",
+        "transition": "ABSTAIN_TO_ABSTAIN"
+      },
+      {
+        "alternative_arm_id": "rai_saturation_robust_z_2",
+        "count": "6279",
+        "transition": "EXPRESSIBLE_TO_EXPRESSIBLE"
+      },
+      {
+        "alternative_arm_id": "rai_saturation_robust_z_2",
+        "count": "0",
+        "transition": "OPPORTUNITY_ADDED"
+      },
+      {
+        "alternative_arm_id": "rai_saturation_robust_z_2",
+        "count": "0",
+        "transition": "OPPORTUNITY_REMOVED"
+      },
+      {
+        "alternative_arm_id": "rai_saturation_robust_z_4",
+        "count": "2400",
+        "transition": "ABSTAIN_TO_ABSTAIN"
+      },
+      {
+        "alternative_arm_id": "rai_saturation_robust_z_4",
+        "count": "6279",
+        "transition": "EXPRESSIBLE_TO_EXPRESSIBLE"
+      },
+      {
+        "alternative_arm_id": "rai_saturation_robust_z_4",
+        "count": "0",
+        "transition": "OPPORTUNITY_ADDED"
+      },
+      {
+        "alternative_arm_id": "rai_saturation_robust_z_4",
+        "count": "0",
+        "transition": "OPPORTUNITY_REMOVED"
+      }
+    ],
+    "interpretation": "VALUE_SENSITIVE_BUT_DECISION_STABLE",
+    "metadata_consistency": [
+      {
+        "actual_saturation_robust_z": 2.0,
+        "arm_id": "rai_saturation_robust_z_2",
+        "authoritative_execution_parameter": "rai.saturation_robust_z",
+        "authoritative_implementation": "tbm_twin.evaluation.stage7f_execution._rai_saturation",
+        "legacy_label_used_as_authoritative_parameter": false,
+        "legacy_operator_label": "min_raw_deviation_divided_by_3",
+        "status": "LEGACY_LABEL_STALE_EXECUTION_PARAMETER_CORRECT"
+      },
+      {
+        "actual_saturation_robust_z": 4.0,
+        "arm_id": "rai_saturation_robust_z_4",
+        "authoritative_execution_parameter": "rai.saturation_robust_z",
+        "authoritative_implementation": "tbm_twin.evaluation.stage7f_execution._rai_saturation",
+        "legacy_label_used_as_authoritative_parameter": false,
+        "legacy_operator_label": "min_raw_deviation_divided_by_3",
+        "status": "LEGACY_LABEL_STALE_EXECUTION_PARAMETER_CORRECT"
+      }
+    ]
+  },
+  "schema_version": "stage7f_sensitivity_final_interpretation.v1.1"
+}

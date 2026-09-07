@@ -1,0 +1,29 @@
+{
+  "audit_invariant_tests": {
+    "command": "python -m pytest -q tests/unit/test_final_paper_technical_audit.py --cache-clear",
+    "passed": 9,
+    "failed": 0
+  },
+  "full_pytest": {
+    "command": "python -m pytest -q --cache-clear",
+    "duration_seconds": 117.87,
+    "failed": 0,
+    "passed": 687,
+    "warnings": 5
+  },
+  "mypy": {
+    "command": "python -m mypy src",
+    "source_files": 153,
+    "status": "PASS"
+  },
+  "real_api_call_count": 0,
+  "ruff_check": {
+    "command": "python -m ruff check .",
+    "status": "PASS"
+  },
+  "ruff_format_check": {
+    "command": "python -m ruff format --check .",
+    "formatted_file_count": 471,
+    "status": "PASS"
+  }
+}

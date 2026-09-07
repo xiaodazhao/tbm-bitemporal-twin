@@ -1,0 +1,25 @@
+{
+  "actual_api_attempts": 226,
+  "execution_order_hash": "d6fccc383a6b8750617f9615c14ae53c7d7c584290c1ba9f266899ecc7e5bc19",
+  "generated_at": "2026-08-26T05:24:26.608529+00:00",
+  "human_semantic_evaluation": "DEFERRED",
+  "method_version": "stage7e_ablation_execution_v1",
+  "protocol_commit": "0976e125dfd9781e770dc4587337e976984ea2b2",
+  "protocol_tag": "stage7e-ablation-protocol-v1.2-frozen",
+  "provider_config": {
+    "api_key_env_var": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "max_output_tokens": 4096,
+    "max_retries": 0,
+    "model": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "reasoning_effort": "none",
+    "sdk_max_retries": 0,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "request_tree_hash": "784d92718814f8a5a058174f5a43baa575edd88e29d7831b90fe644eae603c40",
+  "retry_count": 0,
+  "schema_version": "stage7e_ablation_execution.v1",
+  "semantic_replay_hash": "af2156d1182592fc167224ba6c65271dc57f6610f2bf43367ffe8f30599d2b81"
+}

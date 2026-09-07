@@ -1,0 +1,67 @@
+{
+  "a3_chunking": {
+    "formula": "32_JSON_WRAPPER_CHARS_PLUS_SUM_OF_96_PLUS_CLAIM_ID_LENGTH_PLUS_VALUE_TEXT_LENGTH_PLUS_MIN_SCOPE_JSON_LENGTH_220",
+    "maximum_claims_per_request": 20,
+    "maximum_estimated_response_characters": 3000,
+    "order": "TASK_THEN_FROZEN_SECTION_THEN_ORDER_INDEX"
+  },
+  "a4_payload": "NORMALIZED_LOSSLESS_FACTLOCK_PAYLOAD",
+  "api_calls_executed": 0,
+  "benchmark_task_count": 48,
+  "executable_ablation_arms": [
+    "A2_NO_ARCHITECTURAL_ABSTENTION",
+    "A3_NO_FACTLOCK",
+    "A4_FREE_FINAL_REALIZATION"
+  ],
+  "expected_api_call_budget": {
+    "A1_NO_SEMANTIC_CLAIM_GATE": 0,
+    "A2_NO_ARCHITECTURAL_ABSTENTION": 31,
+    "A3_NO_FACTLOCK": 147,
+    "A4_FREE_FINAL_REALIZATION": 48,
+    "P_FULL": 0,
+    "executed_this_round": 0,
+    "total": 226
+  },
+  "generated_at": "2026-08-25T23:00:00+08:00",
+  "human_semantic_evaluation": "DEFERRED",
+  "llm_calls_executed": 0,
+  "method_version": "stage7e_ablation_protocol_v1_2",
+  "non_executable_arm": {
+    "arm": "A1_NO_SEMANTIC_CLAIM_GATE",
+    "feasibility_instances": 163,
+    "gate_bypass_candidates": 0,
+    "interpretation": "DESIGN_FEASIBILITY_AUDIT_NOT_MODEL_PERFORMANCE",
+    "reason": "NO_CONCRETE_GATE_BYPASS_CANDIDATES",
+    "reason_distribution": {
+      "CONTEXT_ONLY_ROLE": 100,
+      "REQUIRED_EPISTEMIC_STATUS_MISSING": 10,
+      "STATE_ROLE_NOT_ALLOWED": 53
+    },
+    "status": "NOT_EXECUTABLE_ON_FROZEN_48_TASK_BENCHMARK",
+    "support_status_distribution": {
+      "NO_CELL_LINKED_OPERATIONAL_RESPONSE": 153,
+      "NO_MAPPED_GEOLOGICAL_ATTENTION_DIMENSION": 10
+    },
+    "unique_proposals": 145
+  },
+  "primary_mechanistic_questions": {
+    "A2_NO_ARCHITECTURAL_ABSTENTION": "ARCHITECTURAL_ABSTENTION_VS_LLM_DISCRETION",
+    "A3_NO_FACTLOCK": "TYPED_CLAIM_TO_LANGUAGE_DRIFT_WITHOUT_FACTLOCK",
+    "A4_FREE_FINAL_REALIZATION": "FREE_FINAL_LANGUAGE_GENERATION_WITH_FROZEN_FACTLOCKS"
+  },
+  "provider_config": {
+    "api_key_env_var": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "max_output_tokens": 4096,
+    "max_retries": 0,
+    "model": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "reasoning_effort": "none",
+    "sdk_max_retries": 0,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "reference": "P_FULL",
+  "schema_version": "stage7e_ablation_protocol.v1.2",
+  "status": "EXECUTABLE_PROTOCOL_FROZEN_NOT_EXECUTED"
+}

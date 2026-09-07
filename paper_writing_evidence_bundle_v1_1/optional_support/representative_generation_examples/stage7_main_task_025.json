@@ -1,0 +1,286 @@
+{
+  "selection_reason": "与 fail-closed task_026 相邻的高拒答任务",
+  "context_summary": {
+    "abstain_context_count": 16,
+    "abstain_presence": "ABSTAIN_PRESENT",
+    "abstention_reason_counts": {
+      "CONTEXT_ONLY_ROLE": 10,
+      "REQUIRED_EPISTEMIC_STATUS_MISSING": 3,
+      "STATE_ROLE_NOT_ALLOWED": 3
+    },
+    "available_automatic_semantic_checks": "unsupported_claim;numeric_value;spatial_scope;forecast_factification;attention_probability;trace;structure_contract",
+    "benchmark_task_id": "stage7_main_task_025",
+    "cell_id": "",
+    "claim_type_counts": {
+      "COUPLED_ATTENTION_REVIEW": 2,
+      "GEOLOGICAL_EVIDENCE_ATTENTION_REVIEW": 2,
+      "OPERATIONAL_RESPONSE_ATTENTION": 2
+    },
+    "contains_coupled_attention": "true",
+    "contains_forecast_claim": "false",
+    "contains_geological_claim": "false",
+    "contains_metric_claim": "true",
+    "contains_observed_claim": "false",
+    "contains_revision_related_state": "false",
+    "epistemic_mix": "ATTENTION_ONLY",
+    "expressible_count": 6,
+    "fact_lock_count": 6,
+    "focus_category": "COUPLED",
+    "knowledge_time_basis": "TARGET_DATE_END_OF_DAY_AS_KNOWN_INITIAL_STATE",
+    "knowledge_time_limitation": "HISTORICAL_DATABASE_TRANSACTION_LOG_UNAVAILABLE",
+    "knowledge_time_local_date": "2023-12-14",
+    "knowledge_time_proxy": "evidence available_local_date / Stage3B reconstructed knowledge boundary",
+    "member_fact_lock_ids": [
+      "fact_lock_05a6f09d124ea701b4cfd815",
+      "fact_lock_44726b0fb34c8e68e04d7147",
+      "fact_lock_c084a2bb0ddaca9ab1d0e025",
+      "fact_lock_eb363e321327f7fd66bbeeb3",
+      "fact_lock_f1c227f1c59b190a3ad8650a",
+      "fact_lock_f44f350d626dc6a34649830b"
+    ],
+    "pack_hash": "d1ee9692d79e13d04f4bd277dda0e24c1dc846642952c671f68c3d4da120b017",
+    "pack_id": "evidence_pack_d1ee9692d79e13d04f4bd277",
+    "product_type": "metric_review",
+    "realization_unit_count": 6,
+    "realization_unit_ids": [
+      "realization_unit_294f145431882860ffca1bb6",
+      "realization_unit_5b576be839574185b0434ae2",
+      "realization_unit_679d27dd81172a07f09fb772",
+      "realization_unit_8848007144e61366980662a3",
+      "realization_unit_901cdc00c662ae2f4e2f5991",
+      "realization_unit_c40827df9455ac0b37f7da78"
+    ],
+    "revision_chain_id": "stage7_revision_chain_3d6d20e0ccc55414fe85c062",
+    "revision_status": "BASE_ONLY",
+    "selection_reason": "deterministic_product_quota_true_heldout_diversity_selection",
+    "selection_stratum": "metric_review|LOW|ATTENTION_ONLY|BASE_ONLY|COUPLED|ABSTAIN_PRESENT",
+    "slice_spec": {
+      "cell_id": null,
+      "claim_type": null,
+      "product_type": "metric_review",
+      "state_role": null,
+      "valid_date": "2023-12-14"
+    },
+    "source_task_id": "stage7_task_83501d62c2ef9e20c825bf89",
+    "stage3b_bitemporal_version_ids": [
+      "bitemporal_version_28226e3546bf4c33aeccd26d",
+      "bitemporal_version_c3c84c16e72a8d2cd7f5291c"
+    ],
+    "stage6b_smoke_overlap_status": "TRUE_HELDOUT_NO_SMOKE_CONTENT_OVERLAP",
+    "state_role": "DAILY_REVIEW_CELL",
+    "state_version_ids": [
+      "state_version_471d34e84f24aceb591b7896",
+      "state_version_5723579106da7e132be9338d"
+    ],
+    "stratum": "metric_review|LOW|ATTENTION_ONLY|BASE_ONLY|COUPLED|ABSTAIN_PRESENT",
+    "unit_complexity_band": "LOW",
+    "valid_date": "2023-12-14",
+    "valid_time": "2023-12-14"
+  },
+  "B0_output": {
+    "benchmark_task_id": "stage7_main_task_025",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_a161fe852f6eaf7508efa6d6",
+    "method_id": "B0_DIRECT_LLM",
+    "output_hash": "4ec4d7bce9f726e4c76b561078f9f246f1796e85a012571280b7dc8c52775e28",
+    "output_text": "{\n  \"指标状态\": {\n    \"RAI\": {\n      \"cell_0c1a8a5de6439f092738b956\": 0.20285886224246932,\n      \"cell_3f0b8f25291fde24a559e007\": 0.36750418448019645\n    },\n    \"GRS\": {\n      \"cell_0c1a8a5de6439f092738b956\": 0.7888888888888889,\n      \"cell_3f0b8f25291fde24a559e007\": 0.7888888888888889\n    },\n    \"GRCI\": {\n      \"cell_0c1a8a5de6439f092738b956\": 0.1600331024357258,\n      \"cell_3f0b8f25291fde24a559e007\": 0.2899199677565994\n    }\n  },\n  \"支撑证据\": {\n    \"地质证据\": \"2023-12-14日检状态，掌子面DyK1014+419素描显示：围岩Ⅳ级，弱风化，节理裂隙发育密集，岩体破碎，掌子面滴渗水，正面掉块。预报段DyK1014+419~+449存在掉块风险。\",\n    \"物探预报\": \"2023-12-09水平声波预报报告显示：DyK1014+352~+380段存在较明显反射异常，里程+352、+363、+375附近有掉块风险；DyK1014+410~+441段存在较明显反射异常，里程+412、+417、+423、+428、+433、+438附近有掉块风险。\",\n    \"施工响应\": \"2023-12-14日检单元（DyK1014+424~+425）掘进速度均值26.21，总推力均值8930.14，刀盘扭矩均值269.05，贯入度均值5.23，刀盘转速均值82.50。\",\n    \"指标语义\": \"RAI、GRS、GRCI均为非概率性注意力指数，非风险概率或因果估计。\"\n  },\n  \"限制\": {\n    \"GRCI未定义\": \"GRCI在本地背景单元及前向注意力单元未定义，仅日检单元有值。\",\n    \"RAI未定义\": \"RAI在本地背景单元及前向注意力单元未定义，仅日检单元有值。\",\n    \"GRS未定义\": \"GRS在前向注意力单元未定义（无映射地质注意力维度）。\",\n    \"数据质量\": \"PLC数据质量等级为B，存在单位未验证、内部中断、低时间覆盖率等标记。\",\n    \"时间基准\": \"指标状态基于2023-12-14日检状态，物探预报为2023-12-09提交。\"\n  }\n}",
+    "raw_preserved": true
+  },
+  "B1_output": {
+    "benchmark_task_id": "stage7_main_task_025",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_7f6e26e0fb67d00ada3b1c50",
+    "method_id": "B1_STRUCTURED_PROMPT_LLM",
+    "output_hash": "bf38d3fc607522e66c8db89f7806c287fa5c2f29da7ecfeee3f5d8c6de57cbae",
+    "output_text": "{\n  \"指标状态\": {\n    \"RAI\": {\n      \"状态\": \"AVAILABLE\",\n      \"数值\": 0.20285886224246932,\n      \"主导响应族\": \"LOAD_RESPONSE\",\n      \"说明\": \"非概率性运行响应注意力指数\"\n    },\n    \"GRS\": {\n      \"状态\": \"AVAILABLE\",\n      \"数值\": 0.7888888888888889,\n      \"维度注意力值\": {\n        \"EXPLICIT_ANOMALY\": 0.6666666666666666,\n        \"JOINT_DEVELOPMENT\": 1.0,\n        \"ROCK_MASS_INTEGRITY\": 1.0,\n        \"STABILITY_BLOCK\": 1.0,\n        \"SURROUNDING_ROCK_GRADE\": 0.6666666666666666,\n        \"WATER_ATTENTION\": 0.4\n      },\n      \"说明\": \"非概率性地质证据注意力指数\"\n    },\n    \"GRCI\": {\n      \"状态\": \"AVAILABLE\",\n      \"数值\": 0.1600331024357258,\n      \"说明\": \"非概率性耦合注意力指数，非灾害概率或因果估计\"\n    }\n  },\n  \"支撑证据\": {\n    \"地质证据\": [\n      \"2023-12-14 DyK1014+419掌子面素描：围岩Ⅳ级，弱风化，岩质硬，节理裂隙发育密集，岩体破碎，层间结合差，掌子面滴渗水，存在掉块现象。\",\n      \"2023-12-14 DyK1014+419预报段（DyK1014+419~+449）：板岩夹变质砂岩，节理裂隙发育密集，岩体破碎，滴渗水，存在掉块现象。\",\n      \"2023-12-12 DyK1014+389掌子面素描：围岩Ⅳ级，弱风化，岩质硬，节理裂隙发育密集，岩体破碎-极破碎，层间结合差，掌子面滴渗水，存在掉块现象。\",\n      \"2023-12-12 DyK1014+389预报段（DyK1014+389~+419）：板岩夹变质砂岩，节理裂隙发育密集，岩体破碎-极破碎，滴渗水，存在掉块现象。\",\n      \"2023-12-09 HSP预报（DyK1014+341~+441）：+352~+380段存在较明显反射异常，节理裂隙发育密集，岩体破碎-极破碎，+352、+363、+375附近有掉块风险；+410~+441段存在较明显反射异常，节理裂隙发育密集，岩体破碎-极破碎，+412、+417、+423、+428、+433、+438附近有掉块风险。\",\n      \"2023-12-03 HSP预报（DyK1014+266~+366）：+358~+366段存在明显反射异常，岩体破碎，层间结合差，+358附近有掉块风险。\"\n    ],\n    \"运行响应证据\": [\n      \"2023-12-14 13:24-13:27（DyK1014+424~+425）：刀盘扭矩均值269.05，总推力均值8930.14，推进速度均值26.21，贯入度均值5.23，刀盘转速均值82.50。\",\n      \"2023-12-14 14:49-15:38（DyK1014+426~+428）：刀盘扭矩均值4770.40，总推力均值26186.71，推进速度均值36.98，贯入度均值6.77，刀盘转速均值90.42。\",\n      \"2023-12-14 13:40-14:35（DyK1014+425~+426）：刀盘扭矩均值4610.37，总推力均值26400.00，推进速度均值34.00，贯入度均值6.23，刀盘转速均值90.49。\",\n      \"2023-12-14 11:19-11:59（DyK1014+423~+425）：刀盘扭矩均值5454.80，总推力均值26409.25，推进速度均值41.06，贯入度均值7.13，刀盘转速均值95.21。\",\n      \"2023-12-14 10:15-11:10（DyK1014+421~+423）：刀盘扭矩均值4749.01，总推力均值26410.84，推进速度均值32.55，贯入度均值6.04，刀盘转速均值88.62。\",\n      \"2023-12-14 08:41-09:40（DyK1014+419~+421）：刀盘扭矩均值4700.97，总推力均值26313.57，推进速度均值30.63，贯入度均值6.13，刀盘转速均值82.72。\",\n      \"2023-12-14 07:28-08:26（DyK1014+417~+419）：刀盘扭矩均值4703.02，总推力均值26378.28，推进速度均值31.26，贯入度均值6.08，刀盘转速均值84.84。\",\n      \"2023-12-14 05:13-06:45（DyK1014+415）：刀盘扭矩均值3557.38，总推力均值24064.46，推进速度均值20.77，贯入度均值4.80，刀盘转速均值68.08。\",\n      \"2023-12-14 04:58-05:01（DyK1014+415）：刀盘扭矩均值560.06，总推力均值9915.19，推进速度均值20.01，贯入度均值6.61，刀盘转速均值49.85。\",\n      \"2023-12-13 22:08-23:19（DyK1014+414）：刀盘扭矩均值3303.49，总推力均值24356.95，推进速度均值24.66，贯入度均值4.52，刀盘转速均值90.51。\",\n      \"2023-12-13 21:53-22:03（DyK1014+414）：刀盘扭矩均值2433.05，总推力均值23695.12，推进速度均值19.48，贯入度均值3.60，刀盘转速均值89.01。\",\n      \"2023-12-13 19:58-21:44（DyK1014+412~+414）：刀盘扭矩均值2505.28，总推力均值23231.19，推进速度均值18.37，贯入度均值3.37，刀盘转速均值89.89。\",\n      \"2023-12-13 17:23-19:25（DyK1014+410~+412）：刀盘扭矩均值2402.49，总推力均值22906.37，推进速度均值16.11，贯入度均值3.09，刀盘转速均值85.88。\"\n    ],\n    \"注意力指标证据\": [\n      \"RAI=0.20285886224246932，主导响应族为LOAD_RESPONSE（载荷响应），ADVANCE_KINEMATIC_RESPONSE=0.19566789014131783。\",\n      \"GRS=0.7888888888888889，其中JOINT_DEVELOPMENT、ROCK_MASS_INTEGRITY、STABILITY_BLOCK维度注意力均为1.0，EXPLICIT_ANOMALY=0.6667，SURROUNDING_ROCK_GRADE=0.6667，WATER_ATTENTION=0.4。\",\n      \"GRCI=0.1600331024357258，为RAI与GRS的耦合注意力指数。\"\n    ]\n  },\n  \"限制\": {\n    \"指标性质\": \"RAI、GRS、GRCI均为注意力指数，非概率值，不表示灾害发生概率或因果估计。\",\n    \"数据质量\": \"所有运行响应数据质量等级为B，单位未验证（UNIT_UNVERIFIED），部分时段存在内部中断或低时间覆盖标记。\",\n    \"空间范围\": \"本指标对应DAILY_REVIEW_CELL（cell_0c1a8a5de6439f092738b956），空间范围为DyK1014+424~+425附近，不适用于其他单元。\",\n    \"地质证据时效\": \"部分地质证据为预报性质（FORECAST），非实测，如HSP预报中的异常段和掉块风险点。\",\n    \"缺失处理\": \"未定义的指标（如FORWARD_ATTENTION_CELL的GRS/GRCI）按缺失处理，不视为零或正常值。\",\n    \"机械响应非地质原因\": \"运行参数（如扭矩、推力）的波动仅作为响应证据，不直接推断为地质原因。\"\n  }\n}",
+    "raw_preserved": true
+  },
+  "P_raw_plan": {
+    "benchmark_task_id": "stage7_main_task_025",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_e7c3c3b954cf69352acb54e0",
+    "parse_error": "",
+    "parse_valid": true,
+    "raw_response_text": "{\"product_type\": \"metric_review\", \"sections\": [{\"section_id\": \"operational_attention\", \"ordered_unit_ids\": [\"realization_unit_679d27dd81172a07f09fb772\", \"realization_unit_5b576be839574185b0434ae2\"]}, {\"section_id\": \"geological_attention\", \"ordered_unit_ids\": [\"realization_unit_c40827df9455ac0b37f7da78\", \"realization_unit_294f145431882860ffca1bb6\"]}, {\"section_id\": \"coupled_attention\", \"ordered_unit_ids\": [\"realization_unit_8848007144e61366980662a3\", \"realization_unit_901cdc00c662ae2f4e2f5991\"]}], \"omitted_optional_unit_ids\": []}",
+    "schema_error_codes": [],
+    "schema_valid": true
+  },
+  "P_plan_validation": {
+    "benchmark_task_id": "stage7_main_task_025",
+    "execution_item_id": "stage7b_execution_item_e7c3c3b954cf69352acb54e0",
+    "parse_valid": "true",
+    "plan_hash": "469f37d20e21995395e18cdfa076f73cef1fb35823ccfcb84fb5ecf5cb72f4c3",
+    "plan_id": "realization_plan_469f37d20e21995395e18cdf",
+    "plan_valid": "true",
+    "schema_valid": "true",
+    "violation_codes": ""
+  },
+  "P_final_output": {
+    "benchmark_task_id": "stage7_main_task_025",
+    "blocks": [
+      {
+        "block_hash": "4ff41bbe08a3f03a37e0f28f252ccedb13bfb7daa6793e2bd5d13f84606a71e3",
+        "block_id": "composed_block_4ff41bbe08a3f03a37e0f28f",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "operational_attention"
+        ],
+        "text": "## 施工响应关注度"
+      },
+      {
+        "block_hash": "18df66a296ea7bcbd8ddf69b75f216c9d8ef641c01f3561c3dbf846c3c0b88a2",
+        "block_id": "composed_block_18df66a296ea7bcbd8ddf69b",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_1e1828b2d03d645dcd15d7de",
+          "realization_unit_679d27dd81172a07f09fb772"
+        ],
+        "text": "2023-12-14, 里程 1014410.0-1014420.0施工响应关注度 RAI 为 0.368。该值为非概率关注指标, 不表示地质原因。"
+      },
+      {
+        "block_hash": "4d91ff5ee6a212abac260590c15ead288dd9ffe1bc29842f190712915883619a",
+        "block_id": "composed_block_4d91ff5ee6a212abac260590",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_93128ad12586c736080d1a37",
+          "realization_unit_5b576be839574185b0434ae2"
+        ],
+        "text": "2023-12-14, 里程 1014420.0-1014430.0施工响应关注度 RAI 为 0.203。该值为非概率关注指标, 不表示地质原因。"
+      },
+      {
+        "block_hash": "8709848f599e52629f0edfc1f848d80749da8ca2fd6255f0db7991f407c9d3c8",
+        "block_id": "composed_block_8709848f599e52629f0edfc1",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "geological_attention"
+        ],
+        "text": "## 地质证据关注度"
+      },
+      {
+        "block_hash": "956113ef53ba4dd1f426c8091dc6ec5a0e34889edcaa9187e810876593ffca00",
+        "block_id": "composed_block_956113ef53ba4dd1f426c809",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_68915f63fc8e8768e7836345",
+          "realization_unit_c40827df9455ac0b37f7da78"
+        ],
+        "text": "2023-12-14, 里程 1014410.0-1014420.0地质证据关注度 GRS 为 0.789。该值为非概率关注指标。"
+      },
+      {
+        "block_hash": "c924a6c0d6386059c4b3bc02b79da81acf1fcf2678411f63cdf57f861e839b18",
+        "block_id": "composed_block_c924a6c0d6386059c4b3bc02",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_e90905eb0afbf3a7265c0f81",
+          "realization_unit_294f145431882860ffca1bb6"
+        ],
+        "text": "2023-12-14, 里程 1014420.0-1014430.0地质证据关注度 GRS 为 0.789。该值为非概率关注指标。"
+      },
+      {
+        "block_hash": "6c315d3f31379f9b4b0eab9990a3a2038be686f47b48bfcfe3a2714f249e0cca",
+        "block_id": "composed_block_6c315d3f31379f9b4b0eab99",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "coupled_attention"
+        ],
+        "text": "## 耦合关注度"
+      },
+      {
+        "block_hash": "a2e6163b481e2e6367e121738b935050f82cea6b2f0ea5d5ad485fafed417c3d",
+        "block_id": "composed_block_a2e6163b481e2e6367e12173",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_c9a2b7a5241be4ca0a36df97",
+          "realization_unit_8848007144e61366980662a3"
+        ],
+        "text": "2023-12-14, 里程 1014410.0-1014420.0 GRCI 为 0.290, 表示非概率性的地质证据—施工响应耦合关注程度。"
+      },
+      {
+        "block_hash": "c0ada4bb2656cd57e5e9a9080504d98ad67e682ee6534b62f8f657bfd07bcd15",
+        "block_id": "composed_block_c0ada4bb2656cd57e5e9a908",
+        "block_type": "CANONICAL_FACT",
+        "source_ids": [
+          "canonical_sentence_006f6d573653a0b328bb2115",
+          "realization_unit_901cdc00c662ae2f4e2f5991"
+        ],
+        "text": "2023-12-14, 里程 1014420.0-1014430.0 GRCI 为 0.160, 表示非概率性的地质证据—施工响应耦合关注程度。"
+      },
+      {
+        "block_hash": "9cb64b6fa092b29905ed43f2110dbf6dc7ae6988bfc147d36ec6d40e8d1bc2e9",
+        "block_id": "composed_block_9cb64b6fa092b29905ed43f2",
+        "block_type": "SECTION_HEADING",
+        "source_ids": [
+          "insufficiency"
+        ],
+        "text": "## 证据不足边界"
+      },
+      {
+        "block_hash": "19defdb2372b2addd2cee0f557a0e6b59f96c4995999123b45bfeed70d23290c",
+        "block_id": "composed_block_19defdb2372b2addd2cee0f5",
+        "block_type": "INSUFFICIENCY",
+        "source_ids": [
+          "task_abstention_view_d88742d64085638ceb8cd987"
+        ],
+        "text": "CONTEXT_ONLY_ROLE: 当前证据仅具上下文角色, 不作为该任务的事实判断依据。"
+      },
+      {
+        "block_hash": "2a14351ddf7193289376db8e8c1117c959fbd78398fc73dc827ad1c9f0a398c5",
+        "block_id": "composed_block_2a14351ddf7193289376db8e",
+        "block_type": "INSUFFICIENCY",
+        "source_ids": [
+          "task_abstention_view_d88742d64085638ceb8cd987"
+        ],
+        "text": "REQUIRED_EPISTEMIC_STATUS_MISSING: 缺少满足所需认识状态的证据, 不作事实化表达。"
+      },
+      {
+        "block_hash": "cfde18eee0a6492ecceaeacaa3b47053dd16775257f93054bb8b50aca5e6cc46",
+        "block_id": "composed_block_cfde18eee0a6492ecceaeaca",
+        "block_type": "INSUFFICIENCY",
+        "source_ids": [
+          "task_abstention_view_d88742d64085638ceb8cd987"
+        ],
+        "text": "STATE_ROLE_NOT_ALLOWED: 当前状态角色不满足该类 Claim 的表达约束。"
+      }
+    ],
+    "composed_realization_id": "composed_realization_71f851dd4ef78ce0d2267f80",
+    "execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+    "execution_item_id": "stage7b_execution_item_e7c3c3b954cf69352acb54e0",
+    "insufficiency_statements": [
+      "CONTEXT_ONLY_ROLE: 当前证据仅具上下文角色, 不作为该任务的事实判断依据。",
+      "REQUIRED_EPISTEMIC_STATUS_MISSING: 缺少满足所需认识状态的证据, 不作事实化表达。",
+      "STATE_ROLE_NOT_ALLOWED: 当前状态角色不满足该类 Claim 的表达约束。"
+    ],
+    "method_id": "P_PROPOSED",
+    "plan_id": "realization_plan_469f37d20e21995395e18cdf",
+    "product_type": "metric_review",
+    "realization_hash": "71f851dd4ef78ce0d2267f80d831924cb967c9f08386827f7d0cd6127fd85532",
+    "sections": [
+      {
+        "section_id": "operational_attention",
+        "sentence_ids": [
+          "canonical_sentence_1e1828b2d03d645dcd15d7de",
+          "canonical_sentence_93128ad12586c736080d1a37"
+        ],
+        "text": "2023-12-14, 里程 1014410.0-1014420.0施工响应关注度 RAI 为 0.368。该值为非概率关注指标, 不表示地质原因。\n2023-12-14, 里程 1014420.0-1014430.0施工响应关注度 RAI 为 0.203。该值为非概率关注指标, 不表示地质原因。"
+      },
+      {
+        "section_id": "geological_attention",
+        "sentence_ids": [
+          "canonical_sentence_68915f63fc8e8768e7836345",
+          "canonical_sentence_e90905eb0afbf3a7265c0f81"
+        ],
+        "text": "2023-12-14, 里程 1014410.0-1014420.0地质证据关注度 GRS 为 0.789。该值为非概率关注指标。\n2023-12-14, 里程 1014420.0-1014430.0地质证据关注度 GRS 为 0.789。该值为非概率关注指标。"
+      },
+      {
+        "section_id": "coupled_attention",
+        "sentence_ids": [
+          "canonical_sentence_c9a2b7a5241be4ca0a36df97",
+          "canonical_sentence_006f6d573653a0b328bb2115"
+        ],
+        "text": "2023-12-14, 里程 1014410.0-1014420.0 GRCI 为 0.290, 表示非概率性的地质证据—施工响应耦合关注程度。\n2023-12-14, 里程 1014420.0-1014430.0 GRCI 为 0.160, 表示非概率性的地质证据—施工响应耦合关注程度。"
+      }
+    ],
+    "text": "## 施工响应关注度\n\n2023-12-14, 里程 1014410.0-1014420.0施工响应关注度 RAI 为 0.368。该值为非概率关注指标, 不表示地质原因。\n\n2023-12-14, 里程 1014420.0-1014430.0施工响应关注度 RAI 为 0.203。该值为非概率关注指标, 不表示地质原因。\n\n## 地质证据关注度\n\n2023-12-14, 里程 1014410.0-1014420.0地质证据关注度 GRS 为 0.789。该值为非概率关注指标。\n\n2023-12-14, 里程 1014420.0-1014430.0地质证据关注度 GRS 为 0.789。该值为非概率关注指标。\n\n## 耦合关注度\n\n2023-12-14, 里程 1014410.0-1014420.0 GRCI 为 0.290, 表示非概率性的地质证据—施工响应耦合关注程度。\n\n2023-12-14, 里程 1014420.0-1014430.0 GRCI 为 0.160, 表示非概率性的地质证据—施工响应耦合关注程度。\n\n## 证据不足边界\n\nCONTEXT_ONLY_ROLE: 当前证据仅具上下文角色, 不作为该任务的事实判断依据。\n\nREQUIRED_EPISTEMIC_STATUS_MISSING: 缺少满足所需认识状态的证据, 不作事实化表达。\n\nSTATE_ROLE_NOT_ALLOWED: 当前状态角色不满足该类 Claim 的表达约束。"
+  },
+  "note": "原始冻结输出，未人工改写。P_final_output 为空表示确定性 fail-closed。"
+}

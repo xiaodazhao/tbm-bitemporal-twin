@@ -1,0 +1,89 @@
+{
+  "api_call_count": 0,
+  "artifact_dir": "artifacts/stage7c_human_eval_packet_v1_1",
+  "assigns_human_labels": false,
+  "blindness_definition": "METHOD_LABEL_BLINDED_HUMAN_EVALUATION",
+  "context_workload": {
+    "compression_policy": "REMOVE_RAW_PLC_NUMERIC_DUMP_KEEP_AUTHORITATIVE_SEMANTICS",
+    "context_character_reduction_percentage": 59.952049,
+    "evidence_truncation_used": false,
+    "v1_1_median_context_characters": 1393,
+    "v1_1_total_context_characters": 416421,
+    "v1_median_context_characters": 5265,
+    "v1_total_context_characters": 1039806
+  },
+  "counts": {
+    "actual_texts": 141,
+    "calibration_rows": 12,
+    "conditions": 144,
+    "method_text_counts": {
+      "B0_DIRECT_LLM": 48,
+      "B1_STRUCTURED_PROMPT_LLM": 48,
+      "P_PROPOSED": 45
+    },
+    "no_output_rows": 3,
+    "packet_a_batches": 6,
+    "packet_a_rows": 141,
+    "packet_b_batches": 6,
+    "packet_b_rows": 141,
+    "tasks": 48
+  },
+  "frozen_inputs": {
+    "stage7a_commit": "6007afe7c1b1228d6638503afeba979ee2f66878",
+    "stage7a_tag": "stage7a-experimental-protocol-v1.3-frozen",
+    "stage7b_commit": "38da398b3c5edc8e3e5f8180273f1f04fdff4fbb",
+    "stage7b_tag": "stage7b-main-comparison-v1-frozen",
+    "stage7c1_commit": "b12567dcbba4206016bafebe2405a0e4652fdc58",
+    "stage7c1_tag": "stage7c-main-auto-evaluation-v1.2-frozen"
+  },
+  "frozen_output_residual_cue_item_count": 68,
+  "generated_at": "2026-08-25T00:00:00+08:00",
+  "hard_check_fail_count": 0,
+  "method_version": "stage7c_human_evaluation_packet_v1_1",
+  "packet_seeds": {
+    "A": 2026082501,
+    "B": 2026082502
+  },
+  "randomization": {
+    "algorithm": "SEEDED_CONSTRAINED_BLOCK_ASSIGNMENT",
+    "batch_capacities": [
+      24,
+      24,
+      24,
+      23,
+      23,
+      23
+    ],
+    "minimum_same_task_gap_target": 15,
+    "packet_a_minimum_gap": 39,
+    "packet_b_minimum_gap": 24
+  },
+  "rating_fields": [
+    "E1_unsupported_claim",
+    "E5_forecast_factification",
+    "E6_observed_without_proof",
+    "E7_hindsight_leakage",
+    "E8_role_boundary_violation",
+    "E9_mechanical_geological_causation",
+    "E10_attention_probability_promotion",
+    "E11_unknown_to_normal",
+    "E12_other_admissibility_violation",
+    "overall_semantic_error",
+    "factual_support_score",
+    "epistemic_correctness_score",
+    "engineering_usefulness_score",
+    "clarity_score",
+    "misleading_risk_score",
+    "error_quote",
+    "annotator_confidence",
+    "annotator_comment"
+  ],
+  "schema_version": "stage7c_human_evaluation_packet.v1.1",
+  "stage7a_tag": "stage7a-experimental-protocol-v1.3-frozen",
+  "stage7b_execution_id": "stage7b_main_execution_3ae0f791811a2e711cb9f488",
+  "stage7b_rerun_count": 0,
+  "stage7b_tag": "stage7b-main-comparison-v1-frozen",
+  "stage7c1_tag": "stage7c-main-auto-evaluation-v1.2-frozen",
+  "uses_llm": false,
+  "uses_llm_as_judge": false
+}

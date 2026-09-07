@@ -1,0 +1,4685 @@
+{
+  "notice": "INTERNAL — DO NOT DISTRIBUTE TO INITIAL ANNOTATORS",
+  "purpose": "Later-evidence adjudication only; never copied into packet A or B.",
+  "rows": [
+    {
+      "knowledge_as_of": "2023-10-07",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_52cacac91fb5b92032fa961d_e0001",
+          "later_available_time": "2023-10-10",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+485.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；滴渗水-线状出水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；滴渗水-线状出水；线状出水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱 风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙发育密集，存在掉块现象， 岩体相对破碎，拱顶见滴渗水-线状出水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013485.2,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+485.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013485.2
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_000",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013506.0,
+          "start_chainage": 1013466.0
+        },
+        {
+          "end_chainage": 1013480.0,
+          "start_chainage": 1013470.0
+        },
+        {
+          "end_chainage": 1013475.0,
+          "start_chainage": 1013474.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-28",
+      "later_evidence": [],
+      "task_id": "stage7_main_task_001",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014585.0,
+          "start_chainage": 1014555.0
+        },
+        {
+          "end_chainage": 1014591.0,
+          "start_chainage": 1014561.0
+        },
+        {
+          "end_chainage": 1014608.0,
+          "start_chainage": 1014562.0
+        },
+        {
+          "end_chainage": 1014572.0,
+          "start_chainage": 1014570.0
+        },
+        {
+          "end_chainage": 1014580.0,
+          "start_chainage": 1014570.0
+        },
+        {
+          "end_chainage": 1014572.0,
+          "start_chainage": 1014572.0
+        },
+        {
+          "end_chainage": 1014574.0,
+          "start_chainage": 1014572.0
+        },
+        {
+          "end_chainage": 1014576.0,
+          "start_chainage": 1014574.0
+        },
+        {
+          "end_chainage": 1014578.0,
+          "start_chainage": 1014576.0
+        },
+        {
+          "end_chainage": 1014579.0,
+          "start_chainage": 1014578.0
+        },
+        {
+          "end_chainage": 1014580.0,
+          "start_chainage": 1014579.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-11-18",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_636ad293c952180054cc36a6_e0001",
+          "later_available_time": "2023-11-19",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体较破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅲ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+038.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；线状出水\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它500\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅲ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙较发育，岩体较破碎，该段洞身左右两侧边墙与岩层产状形成不 利结构面，左侧边墙节理裂隙发育相对密集，层间结合一般，左右边墙存在轻微掉块现象，见滴渗水~线状出水， 当前段落发育石英脉体，岩质硬，存在掉块风险\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014038.6,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+038.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014038.6
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_45f916c0ce4f9d2ecbc0c82b_e0001",
+          "later_available_time": "2023-11-20",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体较破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅲ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+063.8 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；线状出水\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它500\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅲ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙较发育，岩体较破碎，该段洞身左右两侧边墙与岩层产状形成不 利结构面，左侧边墙节理裂隙发育相对密集，层间结合一般，左右边墙存在轻微掉块现象，见滴渗水~线状出水， 当前段落发育石英脉体，岩质硬，存在掉块风险\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014063.8,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+063.8 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014063.8
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_002",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014056.0,
+          "start_chainage": 1014019.0
+        },
+        {
+          "end_chainage": 1014040.0,
+          "start_chainage": 1014030.0
+        },
+        {
+          "end_chainage": 1014050.0,
+          "start_chainage": 1014040.0
+        },
+        {
+          "end_chainage": 1014060.0,
+          "start_chainage": 1014050.0
+        },
+        {
+          "end_chainage": 1014065.0,
+          "start_chainage": 1014056.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-10-02",
+      "later_evidence": [],
+      "task_id": "stage7_main_task_003",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013410.0,
+          "start_chainage": 1013400.0
+        },
+        {
+          "end_chainage": 1013403.0,
+          "start_chainage": 1013403.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-20",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_4690bb42eb75c472ebc5436e_e0001",
+          "later_available_time": "2023-12-21",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎-极破碎\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+531 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"10～25偶有渗水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"无充填张开＞1.0\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":false,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014531.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+531 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014531.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_4690bb42eb75c472ebc5436e_e0002",
+          "later_available_time": "2023-12-21",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"FORECAST_SEGMENT\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"节理裂隙发育\":\"节理裂隙发育\",\"观察范围类型\":\"FORECAST_SEGMENT\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "forecast_segment",
+            "end_chainage": 1014561.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014 Ⅳ +531~DyK1014+561",
+            "start_chainage": 1014531.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_004",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014531.0,
+          "start_chainage": 1014501.0
+        },
+        {
+          "end_chainage": 1014516.0,
+          "start_chainage": 1014504.0
+        },
+        {
+          "end_chainage": 1014520.0,
+          "start_chainage": 1014510.0
+        },
+        {
+          "end_chainage": 1014527.0,
+          "start_chainage": 1014512.0
+        },
+        {
+          "end_chainage": 1014522.0,
+          "start_chainage": 1014516.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-09-28",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_da98da5ae2750f54728a633f_e0001",
+          "later_available_time": "2023-09-30",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+373 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"渗滴水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"渗滴水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风 化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙发育密集，存在轻微掉块现 象，岩体相对破碎，掌子面拱顶见渗滴水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013373.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+373 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013373.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_005",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013352.0,
+          "start_chainage": 1013340.0
+        },
+        {
+          "end_chainage": 1013360.0,
+          "start_chainage": 1013350.0
+        },
+        {
+          "end_chainage": 1013350.2,
+          "start_chainage": 1013350.2
+        },
+        {
+          "end_chainage": 1013351.0,
+          "start_chainage": 1013351.0
+        },
+        {
+          "end_chainage": 1013353.0,
+          "start_chainage": 1013351.0
+        },
+        {
+          "end_chainage": 1013373.0,
+          "start_chainage": 1013352.0
+        },
+        {
+          "end_chainage": 1013353.0,
+          "start_chainage": 1013353.0
+        },
+        {
+          "end_chainage": 1013355.0,
+          "start_chainage": 1013353.0
+        },
+        {
+          "end_chainage": 1013355.0,
+          "start_chainage": 1013355.0
+        },
+        {
+          "end_chainage": 1013356.0,
+          "start_chainage": 1013355.0
+        },
+        {
+          "end_chainage": 1013357.0,
+          "start_chainage": 1013356.0
+        },
+        {
+          "end_chainage": 1013357.0,
+          "start_chainage": 1013357.0
+        },
+        {
+          "end_chainage": 1013358.0,
+          "start_chainage": 1013357.0
+        },
+        {
+          "end_chainage": 1013360.0,
+          "start_chainage": 1013358.0
+        },
+        {
+          "end_chainage": 1013360.0,
+          "start_chainage": 1013360.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-10-28",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_d18280884169f13cf2a02c5f_e0001",
+          "later_available_time": "2023-11-03",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+894.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"线-股状出水；股状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"线-股状出水；股状出水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它2000\",\"表单水状态附加值\":\"2000\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，该段里程拱顶节理 裂隙发育密集，层间结合差，存在掉块现象，见线-股状出水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013894.6,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+894.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013894.6
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_006",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013922.0,
+          "start_chainage": 1013886.0
+        },
+        {
+          "end_chainage": 1013900.0,
+          "start_chainage": 1013890.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-29",
+      "later_evidence": [],
+      "task_id": "stage7_main_task_007",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014608.0,
+          "start_chainage": 1014562.0
+        },
+        {
+          "end_chainage": 1014621.0,
+          "start_chainage": 1014591.0
+        },
+        {
+          "end_chainage": 1014610.0,
+          "start_chainage": 1014600.0
+        },
+        {
+          "end_chainage": 1014641.0,
+          "start_chainage": 1014608.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-11-13",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_0ea449e9a718deb00b8e4001_e0001",
+          "later_available_time": "2023-11-15",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体较破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅲ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+979.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；线状出水\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它500\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅲ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙较发育，岩体较破碎，该段洞身左右两侧边墙与岩层产状形成不 利结构面，左侧边墙节理裂隙发育相对密集，层间结合一般，左右边墙存在轻微掉块现象，见滴渗水~线状出水， 当前段落发育石英脉体，岩质硬，在撑靴作用下易形成应力集中释放点，存在掉块风险\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013979.2,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+979.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013979.2
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_008",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013992.0,
+          "start_chainage": 1013974.0
+        },
+        {
+          "end_chainage": 1013981.0,
+          "start_chainage": 1013980.0
+        },
+        {
+          "end_chainage": 1013990.0,
+          "start_chainage": 1013980.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-11-18",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_45f916c0ce4f9d2ecbc0c82b_e0001",
+          "later_available_time": "2023-11-20",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体较破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅲ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+063.8 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；线状出水\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它500\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅲ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙较发育，岩体较破碎，该段洞身左右两侧边墙与岩层产状形成不 利结构面，左侧边墙节理裂隙发育相对密集，层间结合一般，左右边墙存在轻微掉块现象，见滴渗水~线状出水， 当前段落发育石英脉体，岩质硬，存在掉块风险\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014063.8,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+063.8 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014063.8
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_009",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014060.0,
+          "start_chainage": 1014050.0
+        },
+        {
+          "end_chainage": 1014065.0,
+          "start_chainage": 1014056.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-09",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_286f9e5cb8ea3835ba56976e_e0001",
+          "later_available_time": "2023-12-10",
+          "later_supported_fact_summary": "{\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+359 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"无充填张开＞1.0\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014359.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+359 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014359.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_286f9e5cb8ea3835ba56976e_e0002",
+          "later_available_time": "2023-12-10",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"FORECAST_SEGMENT\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"正文水文观察\":\"滴渗水\",\"水状态类型\":\"滴渗水\",\"节理裂隙发育\":\"节理裂隙发育\",\"观察范围类型\":\"FORECAST_SEGMENT\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩体 破碎，层间结合差，掌子面滴渗水，存在掉块现象，岩质硬，板理产状：N22°E67°S\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "forecast_segment",
+            "end_chainage": 1014389.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014 Ⅳ +359~DyK1014+389",
+            "start_chainage": 1014359.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_ba88f6fa9c1322ffb400b974_e0001",
+          "later_available_time": "2023-12-11",
+          "later_supported_fact_summary": "{\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+359 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"无充填张开＞1.0\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014359.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+359 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014359.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_ba88f6fa9c1322ffb400b974_e0002",
+          "later_available_time": "2023-12-11",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"FORECAST_SEGMENT\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"正文水文观察\":\"滴渗水\",\"水状态类型\":\"滴渗水\",\"节理裂隙发育\":\"节理裂隙发育\",\"观察范围类型\":\"FORECAST_SEGMENT\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩体 破碎，层间结合差，掌子面滴渗水，存在掉块现象，岩质硬，板理产状：N33°E62°S\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "forecast_segment",
+            "end_chainage": 1014366.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014 Ⅳ +359~DyK1014+366",
+            "start_chainage": 1014359.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_010",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014360.0,
+          "start_chainage": 1014350.0
+        },
+        {
+          "end_chainage": 1014380.0,
+          "start_chainage": 1014352.0
+        },
+        {
+          "end_chainage": 1014366.0,
+          "start_chainage": 1014358.0
+        },
+        {
+          "end_chainage": 1014370.0,
+          "start_chainage": 1014360.0
+        },
+        {
+          "end_chainage": 1014380.0,
+          "start_chainage": 1014370.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-11-22",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_83b3edad4953f55492994132_e0001",
+          "later_available_time": "2023-11-24",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+130.4 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；线状出水\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它500\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩体破碎，层间结合差，左右边墙存在轻微掉块现象，见 滴渗水~线状出水，岩质硬，存在掉块风险\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014130.4,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+130.4 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014130.4
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_407057cf25e0204c83302fe4_e0001",
+          "later_available_time": "2023-11-25",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+152.0 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；线状出水\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它500\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩体破碎，层间结合差，左右边墙存在轻微掉块现象，见 滴渗水~线状出水，岩质硬，存在掉块风险\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014152.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+152.0 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014152.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_011",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014002.0,
+          "start_chainage": 1013992.0
+        },
+        {
+          "end_chainage": 1014010.0,
+          "start_chainage": 1014000.0
+        },
+        {
+          "end_chainage": 1014014.0,
+          "start_chainage": 1014002.0
+        },
+        {
+          "end_chainage": 1014004.4,
+          "start_chainage": 1014004.4
+        },
+        {
+          "end_chainage": 1014020.0,
+          "start_chainage": 1014010.0
+        },
+        {
+          "end_chainage": 1014020.0,
+          "start_chainage": 1014014.0
+        },
+        {
+          "end_chainage": 1014018.8,
+          "start_chainage": 1014018.8
+        },
+        {
+          "end_chainage": 1014019.0,
+          "start_chainage": 1014019.0
+        },
+        {
+          "end_chainage": 1014056.0,
+          "start_chainage": 1014019.0
+        },
+        {
+          "end_chainage": 1014029.0,
+          "start_chainage": 1014020.0
+        },
+        {
+          "end_chainage": 1014030.0,
+          "start_chainage": 1014020.0
+        },
+        {
+          "end_chainage": 1014040.0,
+          "start_chainage": 1014030.0
+        },
+        {
+          "end_chainage": 1014038.6,
+          "start_chainage": 1014038.6
+        },
+        {
+          "end_chainage": 1014050.0,
+          "start_chainage": 1014040.0
+        },
+        {
+          "end_chainage": 1014060.0,
+          "start_chainage": 1014050.0
+        },
+        {
+          "end_chainage": 1014065.0,
+          "start_chainage": 1014056.0
+        },
+        {
+          "end_chainage": 1014070.0,
+          "start_chainage": 1014060.0
+        },
+        {
+          "end_chainage": 1014063.8,
+          "start_chainage": 1014063.8
+        },
+        {
+          "end_chainage": 1014073.0,
+          "start_chainage": 1014065.0
+        },
+        {
+          "end_chainage": 1014080.0,
+          "start_chainage": 1014070.0
+        },
+        {
+          "end_chainage": 1014079.0,
+          "start_chainage": 1014073.0
+        },
+        {
+          "end_chainage": 1014098.0,
+          "start_chainage": 1014079.0
+        },
+        {
+          "end_chainage": 1014090.0,
+          "start_chainage": 1014080.0
+        },
+        {
+          "end_chainage": 1014081.8,
+          "start_chainage": 1014081.8
+        },
+        {
+          "end_chainage": 1014100.0,
+          "start_chainage": 1014090.0
+        },
+        {
+          "end_chainage": 1014106.0,
+          "start_chainage": 1014098.0
+        },
+        {
+          "end_chainage": 1014099.8,
+          "start_chainage": 1014099.8
+        },
+        {
+          "end_chainage": 1014110.0,
+          "start_chainage": 1014100.0
+        },
+        {
+          "end_chainage": 1014107.0,
+          "start_chainage": 1014105.0
+        },
+        {
+          "end_chainage": 1014115.0,
+          "start_chainage": 1014106.0
+        },
+        {
+          "end_chainage": 1014108.0,
+          "start_chainage": 1014107.0
+        },
+        {
+          "end_chainage": 1014109.0,
+          "start_chainage": 1014108.0
+        },
+        {
+          "end_chainage": 1014109.0,
+          "start_chainage": 1014109.0
+        },
+        {
+          "end_chainage": 1014110.0,
+          "start_chainage": 1014109.0
+        },
+        {
+          "end_chainage": 1014122.0,
+          "start_chainage": 1014109.0
+        },
+        {
+          "end_chainage": 1014111.0,
+          "start_chainage": 1014110.0
+        },
+        {
+          "end_chainage": 1014120.0,
+          "start_chainage": 1014110.0
+        },
+        {
+          "end_chainage": 1014113.0,
+          "start_chainage": 1014111.0
+        },
+        {
+          "end_chainage": 1014113.0,
+          "start_chainage": 1014113.0
+        },
+        {
+          "end_chainage": 1014114.0,
+          "start_chainage": 1014113.0
+        },
+        {
+          "end_chainage": 1014116.0,
+          "start_chainage": 1014114.0
+        },
+        {
+          "end_chainage": 1014119.0,
+          "start_chainage": 1014115.0
+        },
+        {
+          "end_chainage": 1014117.0,
+          "start_chainage": 1014116.0
+        },
+        {
+          "end_chainage": 1014119.0,
+          "start_chainage": 1014119.0
+        },
+        {
+          "end_chainage": 1014130.0,
+          "start_chainage": 1014120.0
+        },
+        {
+          "end_chainage": 1014143.0,
+          "start_chainage": 1014122.0
+        },
+        {
+          "end_chainage": 1014140.0,
+          "start_chainage": 1014130.0
+        },
+        {
+          "end_chainage": 1014150.0,
+          "start_chainage": 1014140.0
+        },
+        {
+          "end_chainage": 1014163.0,
+          "start_chainage": 1014143.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-23",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_e1a6e160ca63e609c5af325e_e0001",
+          "later_available_time": "2023-12-24",
+          "later_supported_fact_summary": "{\"地质描述\":\"开挖面 地质概况 掌子面附近已开挖段地层岩性为石炭二叠系板岩夹变质砂岩，矿物成分以 石英、长石为主，钙质胶结。围岩整体弱风化，岩质硬，节理裂隙发育密集， 岩体破碎-极破碎，层间结合差，存在掉块现象，掌子面滴渗水。\",\"岩体状态\":\"岩体破碎-极破碎\",\"岩性\":\"板岩夹变质砂岩\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_face_chainage_cell",
+            "end_chainage": 1014545.0,
+            "kind": "POINT",
+            "raw_expression": "1014545.0",
+            "start_chainage": 1014545.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_e1a6e160ca63e609c5af325e_e0002",
+          "later_available_time": "2023-12-24",
+          "later_supported_fact_summary": "{\"地质结论\":\"该段围岩与当前掌子面相当。岩 性为板岩夹变质砂岩，弱风化， 岩质硬，节理裂隙发育密集，岩 体破碎-极破碎，层间结合差。\",\"岩体状态\":\"岩体破碎-极破碎\",\"岩性\":\"板岩夹变质砂岩\",\"建议围岩等级\":\"Ⅳ级\",\"异常原文\":\"该段无明显反射异常\",\"异常等级\":\"NONE\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"风化程度\":\"弱风化\",\"风险提示\":\"该段存在掉 块风险\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_forecast_table_row",
+            "end_chainage": 1014555.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014+545 ~ DyK1014+555",
+            "start_chainage": 1014545.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_e1a6e160ca63e609c5af325e_e0003",
+          "later_available_time": "2023-12-24",
+          "later_supported_fact_summary": "{\"地质结论\":\"该段围岩较前段稍变差。岩性为 板岩夹变质砂岩，弱风化，岩质 软硬不均，节理裂隙发育密集， 岩体破碎-极破碎，层间结合度 差。\",\"岩体状态\":\"岩体破碎-极破碎\",\"岩性\":\"板岩夹变质砂岩\",\"建议围岩等级\":\"Ⅳ级\",\"异常原文\":\"该段存在弱反射异常\",\"异常等级\":\"LOW\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"风化程度\":\"弱风化\",\"风险提示\":\"里程+555 附 近有掉块风 险\",\"风险点里程\":[1014555.0]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_forecast_table_row",
+            "end_chainage": 1014562.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014+555 ~ DyK1014+562",
+            "start_chainage": 1014555.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_012",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014527.0,
+          "start_chainage": 1014512.0
+        },
+        {
+          "end_chainage": 1014522.0,
+          "start_chainage": 1014516.0
+        },
+        {
+          "end_chainage": 1014530.0,
+          "start_chainage": 1014520.0
+        },
+        {
+          "end_chainage": 1014531.0,
+          "start_chainage": 1014522.0
+        },
+        {
+          "end_chainage": 1014555.0,
+          "start_chainage": 1014527.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-09-17",
+      "later_evidence": [],
+      "task_id": "stage7_main_task_013",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013230.0,
+          "start_chainage": 1013220.0
+        },
+        {
+          "end_chainage": 1013238.0,
+          "start_chainage": 1013224.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-10-28",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_ef1f13d1332945f7a370fa19_e0001",
+          "later_available_time": "2023-10-31",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+869.4 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"线-股状出水；股状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"线-股状出水；股状出水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它2000\",\"表单水状态附加值\":\"2000\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，当前里程拱顶右侧 及右侧边墙节理裂隙发育密集，层间结合差，存在掉块现象，见线-股状出水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013869.4,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+869.4 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013869.4
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_d18280884169f13cf2a02c5f_e0001",
+          "later_available_time": "2023-11-03",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+894.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"线-股状出水；股状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"线-股状出水；股状出水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它2000\",\"表单水状态附加值\":\"2000\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，该段里程拱顶节理 裂隙发育密集，层间结合差，存在掉块现象，见线-股状出水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013894.6,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+894.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013894.6
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_014",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013774.0,
+          "start_chainage": 1013736.0
+        },
+        {
+          "end_chainage": 1013760.0,
+          "start_chainage": 1013750.0
+        },
+        {
+          "end_chainage": 1013770.0,
+          "start_chainage": 1013760.0
+        },
+        {
+          "end_chainage": 1013764.0,
+          "start_chainage": 1013764.0
+        },
+        {
+          "end_chainage": 1013786.0,
+          "start_chainage": 1013764.0
+        },
+        {
+          "end_chainage": 1013768.6,
+          "start_chainage": 1013768.6
+        },
+        {
+          "end_chainage": 1013780.0,
+          "start_chainage": 1013770.0
+        },
+        {
+          "end_chainage": 1013790.0,
+          "start_chainage": 1013780.0
+        },
+        {
+          "end_chainage": 1013864.0,
+          "start_chainage": 1013786.0
+        },
+        {
+          "end_chainage": 1013800.0,
+          "start_chainage": 1013790.0
+        },
+        {
+          "end_chainage": 1013790.2,
+          "start_chainage": 1013790.2
+        },
+        {
+          "end_chainage": 1013810.0,
+          "start_chainage": 1013800.0
+        },
+        {
+          "end_chainage": 1013820.0,
+          "start_chainage": 1013810.0
+        },
+        {
+          "end_chainage": 1013813.6,
+          "start_chainage": 1013813.6
+        },
+        {
+          "end_chainage": 1013830.0,
+          "start_chainage": 1013820.0
+        },
+        {
+          "end_chainage": 1013840.0,
+          "start_chainage": 1013830.0
+        },
+        {
+          "end_chainage": 1013850.0,
+          "start_chainage": 1013840.0
+        },
+        {
+          "end_chainage": 1013840.6,
+          "start_chainage": 1013840.6
+        },
+        {
+          "end_chainage": 1013845.0,
+          "start_chainage": 1013845.0
+        },
+        {
+          "end_chainage": 1013886.0,
+          "start_chainage": 1013845.0
+        },
+        {
+          "end_chainage": 1013860.0,
+          "start_chainage": 1013850.0
+        },
+        {
+          "end_chainage": 1013851.4,
+          "start_chainage": 1013851.4
+        },
+        {
+          "end_chainage": 1013859.0,
+          "start_chainage": 1013859.0
+        },
+        {
+          "end_chainage": 1013861.0,
+          "start_chainage": 1013859.0
+        },
+        {
+          "end_chainage": 1013870.0,
+          "start_chainage": 1013860.0
+        },
+        {
+          "end_chainage": 1013863.0,
+          "start_chainage": 1013861.0
+        },
+        {
+          "end_chainage": 1013864.0,
+          "start_chainage": 1013863.0
+        },
+        {
+          "end_chainage": 1013864.0,
+          "start_chainage": 1013864.0
+        },
+        {
+          "end_chainage": 1013865.0,
+          "start_chainage": 1013864.0
+        },
+        {
+          "end_chainage": 1013866.0,
+          "start_chainage": 1013865.0
+        },
+        {
+          "end_chainage": 1013867.0,
+          "start_chainage": 1013866.0
+        },
+        {
+          "end_chainage": 1013868.0,
+          "start_chainage": 1013867.0
+        },
+        {
+          "end_chainage": 1013870.0,
+          "start_chainage": 1013868.0
+        },
+        {
+          "end_chainage": 1013870.0,
+          "start_chainage": 1013870.0
+        },
+        {
+          "end_chainage": 1013871.0,
+          "start_chainage": 1013870.0
+        },
+        {
+          "end_chainage": 1013880.0,
+          "start_chainage": 1013870.0
+        },
+        {
+          "end_chainage": 1013890.0,
+          "start_chainage": 1013880.0
+        },
+        {
+          "end_chainage": 1013922.0,
+          "start_chainage": 1013886.0
+        },
+        {
+          "end_chainage": 1013900.0,
+          "start_chainage": 1013890.0
+        },
+        {
+          "end_chainage": 1013910.0,
+          "start_chainage": 1013900.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-28",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_6f7e51718168ae232ce0bacb_e0001",
+          "later_available_time": "2023-12-29",
+          "later_supported_fact_summary": "{\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+621 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"渗滴水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"渗滴水；线状出水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"密闭＜0.1\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014621.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+621 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014621.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_6f7e51718168ae232ce0bacb_e0002",
+          "later_available_time": "2023-12-29",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"FORECAST_SEGMENT\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"正文水文观察\":\"渗滴水；线状出水\",\"水状态类型\":\"渗滴水；线状出水\",\"节理裂隙发育\":\"节理裂隙发育\",\"观察范围类型\":\"FORECAST_SEGMENT\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩体 破碎,掌子面拱顶及左右两侧边墙见渗滴水~线状出水，存在轻微掉块现象\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "forecast_segment",
+            "end_chainage": 1014651.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014 Ⅳ +621~DyK1014+651",
+            "start_chainage": 1014621.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_80b7d57907ec65316553d190_e0001",
+          "later_available_time": "2023-12-29",
+          "later_supported_fact_summary": "{\"地质描述\":\"开挖面 地质概况 掌子面附近地层岩性为石炭二叠系板岩夹变质砂岩，围岩整体弱风化，岩 质硬，节理裂隙发育，岩体破碎，存在掉块现象，掌子面湿润。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_face_chainage_cell",
+            "end_chainage": 1014635.0,
+            "kind": "POINT",
+            "raw_expression": "1014635.0",
+            "start_chainage": 1014635.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_80b7d57907ec65316553d190_e0002",
+          "later_available_time": "2023-12-29",
+          "later_supported_fact_summary": "{\"地质结论\":\"该段围岩与当前掌子面相当。岩 性为板岩夹变质砂岩，弱风化， 岩质硬，节理裂隙发育，岩体破 碎\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"建议围岩等级\":\"Ⅳ级\",\"异常原文\":\"该段无明显反射异常\",\"异常等级\":\"NONE\",\"节理裂隙发育\":\"节理裂隙发育\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_forecast_table_row",
+            "end_chainage": 1014670.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014+635 ~ DyK1014+670",
+            "start_chainage": 1014635.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_015",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014471.0,
+          "start_chainage": 1014441.0
+        },
+        {
+          "end_chainage": 1014476.0,
+          "start_chainage": 1014445.0
+        },
+        {
+          "end_chainage": 1014512.0,
+          "start_chainage": 1014455.0
+        },
+        {
+          "end_chainage": 1014480.0,
+          "start_chainage": 1014470.0
+        },
+        {
+          "end_chainage": 1014471.0,
+          "start_chainage": 1014471.0
+        },
+        {
+          "end_chainage": 1014501.0,
+          "start_chainage": 1014471.0
+        },
+        {
+          "end_chainage": 1014494.0,
+          "start_chainage": 1014476.0
+        },
+        {
+          "end_chainage": 1014490.0,
+          "start_chainage": 1014480.0
+        },
+        {
+          "end_chainage": 1014500.0,
+          "start_chainage": 1014490.0
+        },
+        {
+          "end_chainage": 1014504.0,
+          "start_chainage": 1014494.0
+        },
+        {
+          "end_chainage": 1014510.0,
+          "start_chainage": 1014500.0
+        },
+        {
+          "end_chainage": 1014501.0,
+          "start_chainage": 1014501.0
+        },
+        {
+          "end_chainage": 1014531.0,
+          "start_chainage": 1014501.0
+        },
+        {
+          "end_chainage": 1014516.0,
+          "start_chainage": 1014504.0
+        },
+        {
+          "end_chainage": 1014520.0,
+          "start_chainage": 1014510.0
+        },
+        {
+          "end_chainage": 1014527.0,
+          "start_chainage": 1014512.0
+        },
+        {
+          "end_chainage": 1014522.0,
+          "start_chainage": 1014516.0
+        },
+        {
+          "end_chainage": 1014530.0,
+          "start_chainage": 1014520.0
+        },
+        {
+          "end_chainage": 1014531.0,
+          "start_chainage": 1014522.0
+        },
+        {
+          "end_chainage": 1014555.0,
+          "start_chainage": 1014527.0
+        },
+        {
+          "end_chainage": 1014540.0,
+          "start_chainage": 1014530.0
+        },
+        {
+          "end_chainage": 1014531.0,
+          "start_chainage": 1014531.0
+        },
+        {
+          "end_chainage": 1014561.0,
+          "start_chainage": 1014531.0
+        },
+        {
+          "end_chainage": 1014550.0,
+          "start_chainage": 1014540.0
+        },
+        {
+          "end_chainage": 1014545.0,
+          "start_chainage": 1014545.0
+        },
+        {
+          "end_chainage": 1014555.0,
+          "start_chainage": 1014545.0
+        },
+        {
+          "end_chainage": 1014560.0,
+          "start_chainage": 1014550.0
+        },
+        {
+          "end_chainage": 1014555.0,
+          "start_chainage": 1014555.0
+        },
+        {
+          "end_chainage": 1014562.0,
+          "start_chainage": 1014555.0
+        },
+        {
+          "end_chainage": 1014585.0,
+          "start_chainage": 1014555.0
+        },
+        {
+          "end_chainage": 1014570.0,
+          "start_chainage": 1014560.0
+        },
+        {
+          "end_chainage": 1014561.0,
+          "start_chainage": 1014561.0
+        },
+        {
+          "end_chainage": 1014591.0,
+          "start_chainage": 1014561.0
+        },
+        {
+          "end_chainage": 1014608.0,
+          "start_chainage": 1014562.0
+        },
+        {
+          "end_chainage": 1014572.0,
+          "start_chainage": 1014570.0
+        },
+        {
+          "end_chainage": 1014580.0,
+          "start_chainage": 1014570.0
+        },
+        {
+          "end_chainage": 1014572.0,
+          "start_chainage": 1014572.0
+        },
+        {
+          "end_chainage": 1014574.0,
+          "start_chainage": 1014572.0
+        },
+        {
+          "end_chainage": 1014576.0,
+          "start_chainage": 1014574.0
+        },
+        {
+          "end_chainage": 1014578.0,
+          "start_chainage": 1014576.0
+        },
+        {
+          "end_chainage": 1014579.0,
+          "start_chainage": 1014578.0
+        },
+        {
+          "end_chainage": 1014580.0,
+          "start_chainage": 1014579.0
+        },
+        {
+          "end_chainage": 1014590.0,
+          "start_chainage": 1014580.0
+        },
+        {
+          "end_chainage": 1014600.0,
+          "start_chainage": 1014590.0
+        },
+        {
+          "end_chainage": 1014621.0,
+          "start_chainage": 1014591.0
+        },
+        {
+          "end_chainage": 1014610.0,
+          "start_chainage": 1014600.0
+        },
+        {
+          "end_chainage": 1014641.0,
+          "start_chainage": 1014608.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-09-22",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_042ef22be43ba006975946e2_e0001",
+          "later_available_time": "2023-09-23",
+          "later_supported_fact_summary": "{\"地质描述\":\"开挖面 地质概况 掌子面地层岩性为石炭二叠系板岩夹变质砂岩，围岩整体弱风化，岩质软 硬不均，节理裂隙发育，岩体破碎，拱顶节理裂隙发育相对密集，存在轻微掉 块现象，围岩自稳性较差。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_face_chainage_cell",
+            "end_chainage": 1013273.0,
+            "kind": "POINT",
+            "raw_expression": "1013273.0",
+            "start_chainage": 1013273.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_042ef22be43ba006975946e2_e0002",
+          "later_available_time": "2023-09-23",
+          "later_supported_fact_summary": "{\"地质结论\":\"该段围岩与当前掌子面相当。岩 性为板岩夹变质砂岩，弱风化， 岩质软硬不均，节理裂隙发育， 岩体破碎，围岩整体稳定性差\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"建议围岩等级\":\"Ⅳ级\",\"异常原文\":\"该段未见明显反射异常\",\"异常等级\":\"NONE\",\"节理裂隙发育\":\"节理裂隙发育\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_forecast_table_row",
+            "end_chainage": 1013320.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1013+273 ~ DyK1013+320",
+            "start_chainage": 1013273.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_4bfb59b96dd77affde7668ba_e0001",
+          "later_available_time": "2023-09-24",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+290.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"渗滴水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"渗滴水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱 风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙发育密集，存在轻微掉块 现象，岩体相对破碎，掌子面拱顶见渗滴水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013290.2,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+290.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013290.2
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_016",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013265.0,
+          "start_chainage": 1013238.0
+        },
+        {
+          "end_chainage": 1013270.0,
+          "start_chainage": 1013260.0
+        },
+        {
+          "end_chainage": 1013290.2,
+          "start_chainage": 1013265.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-10-14",
+      "later_evidence": [],
+      "task_id": "stage7_main_task_017",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013585.0,
+          "start_chainage": 1013568.0
+        },
+        {
+          "end_chainage": 1013580.0,
+          "start_chainage": 1013570.0
+        },
+        {
+          "end_chainage": 1013573.0,
+          "start_chainage": 1013571.0
+        },
+        {
+          "end_chainage": 1013574.0,
+          "start_chainage": 1013573.0
+        },
+        {
+          "end_chainage": 1013575.0,
+          "start_chainage": 1013574.0
+        },
+        {
+          "end_chainage": 1013575.0,
+          "start_chainage": 1013575.0
+        },
+        {
+          "end_chainage": 1013576.0,
+          "start_chainage": 1013575.0
+        },
+        {
+          "end_chainage": 1013576.0,
+          "start_chainage": 1013576.0
+        },
+        {
+          "end_chainage": 1013578.0,
+          "start_chainage": 1013576.0
+        },
+        {
+          "end_chainage": 1013580.0,
+          "start_chainage": 1013578.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-10-08",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_52cacac91fb5b92032fa961d_e0001",
+          "later_available_time": "2023-10-10",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+485.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；滴渗水-线状出水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；滴渗水-线状出水；线状出水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱 风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙发育密集，存在掉块现象， 岩体相对破碎，拱顶见滴渗水-线状出水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013485.2,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+485.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013485.2
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_461518eeef3ab92c61be900b_e0001",
+          "later_available_time": "2023-10-12",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+515.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；滴渗水-线状出水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；滴渗水-线状出水；线状出水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱 风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙发育密集，存在掉块现象， 岩体相对破碎，拱顶见滴渗水-线状出水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013515.2,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+515.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013515.2
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_c03e80c9fabf17e0b238ec9a_e0001",
+          "later_available_time": "2023-10-12",
+          "later_supported_fact_summary": "{\"地质描述\":\"开挖面 地质概况 掌子面地层岩性为石炭二叠系板岩夹变质砂岩，围岩整体弱风化，岩质软 硬不均，节理裂隙发育，岩体破碎，拱顶节理裂隙发育密集，存在掉块现象， 岩体相对破碎，拱顶见滴渗水-线状出水，围岩自稳性较差。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_face_chainage_cell",
+            "end_chainage": 1013525.0,
+            "kind": "POINT",
+            "raw_expression": "1013525.0",
+            "start_chainage": 1013525.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_c03e80c9fabf17e0b238ec9a_e0002",
+          "later_available_time": "2023-10-12",
+          "later_supported_fact_summary": "{\"地质结论\":\"该段围岩与当前掌子面相当。岩 性为板岩夹变质砂岩，弱风化， 岩质软硬不均，节理裂隙发育， 岩体破碎，围岩整体稳定性较差\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"建议围岩等级\":\"Ⅳ级\",\"异常原文\":\"该段未见明显反射异常\",\"异常等级\":\"NONE\",\"节理裂隙发育\":\"节理裂隙发育\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_forecast_table_row",
+            "end_chainage": 1013540.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1013+525 ~ DyK1013+540",
+            "start_chainage": 1013525.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_c03e80c9fabf17e0b238ec9a_e0003",
+          "later_available_time": "2023-10-12",
+          "later_supported_fact_summary": "{\"地质结论\":\"该段围岩较前段变差。岩性以板 岩为主，弱风化，岩质软，节理 裂隙发育密集，岩体破碎-极破 碎，围岩整体稳定性差\",\"岩体状态\":\"岩体破碎-极破碎\",\"岩性\":\"板岩\",\"建议围岩等级\":\"Ⅴ级\",\"异常原文\":\"该段存在较明显反射异常\",\"异常等级\":\"MODERATE\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"风化程度\":\"弱风化\",\"风险提示\":\"里程+541、 +546、+552 附近有掉块 风险\",\"风险点里程\":[1013541.0,1013546.0,1013552.0]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_forecast_table_row",
+            "end_chainage": 1013555.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1013+540 ~ DyK1013+555",
+            "start_chainage": 1013540.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_a78d4ad4e8f5dc81b15b774a_e0001",
+          "later_available_time": "2023-10-13",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+545 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；滴渗水-线状出水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；滴渗水-线状出水；线状出水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风 化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙发育密集，存在掉块现象， 岩体相对破碎，拱顶见滴渗水-线状出水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013545.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+545 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013545.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_018",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013490.0,
+          "start_chainage": 1013480.0
+        },
+        {
+          "end_chainage": 1013500.0,
+          "start_chainage": 1013490.0
+        },
+        {
+          "end_chainage": 1013510.0,
+          "start_chainage": 1013500.0
+        },
+        {
+          "end_chainage": 1013545.0,
+          "start_chainage": 1013506.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-09-15",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_859f83de3f71c5e2e55823bf_e0001",
+          "later_available_time": "2023-09-16",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅴ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+190.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"渗滴水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"渗滴水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅴ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱 风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙发育相对密集，存在轻微 掉块现象，岩体相对破碎，掌子面拱顶及左右两侧边墙见渗滴水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013190.2,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+190.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013190.2
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_4eb6eb6db956703cca83a995_e0001",
+          "later_available_time": "2023-09-17",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅴ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+220.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"渗滴水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"渗滴水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅴ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱 风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙发育相对密集，存在轻微 掉块现象，岩体相对破碎，掌子面拱顶及左右两侧边墙见渗滴水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013220.2,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+220.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013220.2
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_019",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013200.2,
+          "start_chainage": 1013182.0
+        },
+        {
+          "end_chainage": 1013200.0,
+          "start_chainage": 1013190.0
+        },
+        {
+          "end_chainage": 1013190.2,
+          "start_chainage": 1013190.2
+        },
+        {
+          "end_chainage": 1013224.0,
+          "start_chainage": 1013190.2
+        },
+        {
+          "end_chainage": 1013198.0,
+          "start_chainage": 1013197.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-03",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_d25594e6efb61245383fd13d_e0001",
+          "later_available_time": "2023-12-04",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体较破碎\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+285.8 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"自稳困难、要及时支护\",\"水状态类型\":\"滴渗水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"密闭＜0.1\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.06～0.2\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙较发育 ，岩体较破碎，层间结合一般，存在轻微掉块现象，滴渗水，岩质硬，板理产状：N41°E38°S\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014285.8,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+285.8 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014285.8
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_d25594e6efb61245383fd13d_e0002",
+          "later_available_time": "2023-12-04",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"CURRENT_EXCAVATED_INTERVAL\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"观察范围类型\":\"CURRENT_EXCAVATED_INTERVAL\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "current_excavated_interval",
+            "end_chainage": 1014299.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014+285.8~DyK1014+299",
+            "start_chainage": 1014285.8
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_8022d2d99bfe5dfacfebc8e6_e0001",
+          "later_available_time": "2023-12-05",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+299 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"自稳困难、要及时支护\",\"水状态类型\":\"滴渗水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"密闭＜0.1\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.06～0.2\",\"节理裂隙发育\":\"节理裂隙发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩 体破碎，层间结合差，存在轻微掉块现象，滴渗水，岩质硬，板理产状：N41°E38°S\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014299.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+299 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014299.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_8022d2d99bfe5dfacfebc8e6_e0002",
+          "later_available_time": "2023-12-05",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"CURRENT_EXCAVATED_INTERVAL\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"观察范围类型\":\"CURRENT_EXCAVATED_INTERVAL\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "current_excavated_interval",
+            "end_chainage": 1014329.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014+299~DyK1014+329",
+            "start_chainage": 1014299.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_020",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014143.0,
+          "start_chainage": 1014122.0
+        },
+        {
+          "end_chainage": 1014150.0,
+          "start_chainage": 1014140.0
+        },
+        {
+          "end_chainage": 1014163.0,
+          "start_chainage": 1014143.0
+        },
+        {
+          "end_chainage": 1014160.0,
+          "start_chainage": 1014150.0
+        },
+        {
+          "end_chainage": 1014152.0,
+          "start_chainage": 1014152.0
+        },
+        {
+          "end_chainage": 1014170.0,
+          "start_chainage": 1014160.0
+        },
+        {
+          "end_chainage": 1014187.0,
+          "start_chainage": 1014163.0
+        },
+        {
+          "end_chainage": 1014166.4,
+          "start_chainage": 1014166.4
+        },
+        {
+          "end_chainage": 1014180.0,
+          "start_chainage": 1014170.0
+        },
+        {
+          "end_chainage": 1014190.0,
+          "start_chainage": 1014180.0
+        },
+        {
+          "end_chainage": 1014199.0,
+          "start_chainage": 1014187.0
+        },
+        {
+          "end_chainage": 1014200.0,
+          "start_chainage": 1014190.0
+        },
+        {
+          "end_chainage": 1014196.4,
+          "start_chainage": 1014196.4
+        },
+        {
+          "end_chainage": 1014199.0,
+          "start_chainage": 1014199.0
+        },
+        {
+          "end_chainage": 1014209.0,
+          "start_chainage": 1014199.0
+        },
+        {
+          "end_chainage": 1014231.0,
+          "start_chainage": 1014199.0
+        },
+        {
+          "end_chainage": 1014210.0,
+          "start_chainage": 1014200.0
+        },
+        {
+          "end_chainage": 1014209.0,
+          "start_chainage": 1014209.0
+        },
+        {
+          "end_chainage": 1014220.0,
+          "start_chainage": 1014210.0
+        },
+        {
+          "end_chainage": 1014230.0,
+          "start_chainage": 1014220.0
+        },
+        {
+          "end_chainage": 1014225.8,
+          "start_chainage": 1014225.8
+        },
+        {
+          "end_chainage": 1014240.0,
+          "start_chainage": 1014230.0
+        },
+        {
+          "end_chainage": 1014238.0,
+          "start_chainage": 1014231.0
+        },
+        {
+          "end_chainage": 1014262.0,
+          "start_chainage": 1014238.0
+        },
+        {
+          "end_chainage": 1014250.0,
+          "start_chainage": 1014240.0
+        },
+        {
+          "end_chainage": 1014243.0,
+          "start_chainage": 1014241.0
+        },
+        {
+          "end_chainage": 1014243.0,
+          "start_chainage": 1014243.0
+        },
+        {
+          "end_chainage": 1014244.0,
+          "start_chainage": 1014243.0
+        },
+        {
+          "end_chainage": 1014245.0,
+          "start_chainage": 1014244.0
+        },
+        {
+          "end_chainage": 1014245.0,
+          "start_chainage": 1014245.0
+        },
+        {
+          "end_chainage": 1014246.0,
+          "start_chainage": 1014245.0
+        },
+        {
+          "end_chainage": 1014247.0,
+          "start_chainage": 1014246.0
+        },
+        {
+          "end_chainage": 1014260.0,
+          "start_chainage": 1014250.0
+        },
+        {
+          "end_chainage": 1014270.0,
+          "start_chainage": 1014260.0
+        },
+        {
+          "end_chainage": 1014269.0,
+          "start_chainage": 1014262.0
+        },
+        {
+          "end_chainage": 1014317.0,
+          "start_chainage": 1014266.0
+        },
+        {
+          "end_chainage": 1014296.0,
+          "start_chainage": 1014269.0
+        },
+        {
+          "end_chainage": 1014280.0,
+          "start_chainage": 1014270.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-19",
+      "later_evidence": [],
+      "task_id": "stage7_main_task_021",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014335.0,
+          "start_chainage": 1014323.0
+        },
+        {
+          "end_chainage": 1014359.0,
+          "start_chainage": 1014329.0
+        },
+        {
+          "end_chainage": 1014340.0,
+          "start_chainage": 1014330.0
+        },
+        {
+          "end_chainage": 1014340.0,
+          "start_chainage": 1014335.0
+        },
+        {
+          "end_chainage": 1014350.0,
+          "start_chainage": 1014340.0
+        },
+        {
+          "end_chainage": 1014358.0,
+          "start_chainage": 1014340.0
+        },
+        {
+          "end_chainage": 1014341.0,
+          "start_chainage": 1014341.0
+        },
+        {
+          "end_chainage": 1014352.0,
+          "start_chainage": 1014341.0
+        },
+        {
+          "end_chainage": 1014360.0,
+          "start_chainage": 1014350.0
+        },
+        {
+          "end_chainage": 1014380.0,
+          "start_chainage": 1014352.0
+        },
+        {
+          "end_chainage": 1014366.0,
+          "start_chainage": 1014358.0
+        },
+        {
+          "end_chainage": 1014359.0,
+          "start_chainage": 1014359.0
+        },
+        {
+          "end_chainage": 1014366.0,
+          "start_chainage": 1014359.0
+        },
+        {
+          "end_chainage": 1014389.0,
+          "start_chainage": 1014359.0
+        },
+        {
+          "end_chainage": 1014370.0,
+          "start_chainage": 1014360.0
+        },
+        {
+          "end_chainage": 1014380.0,
+          "start_chainage": 1014370.0
+        },
+        {
+          "end_chainage": 1014390.0,
+          "start_chainage": 1014380.0
+        },
+        {
+          "end_chainage": 1014410.0,
+          "start_chainage": 1014380.0
+        },
+        {
+          "end_chainage": 1014389.0,
+          "start_chainage": 1014389.0
+        },
+        {
+          "end_chainage": 1014419.0,
+          "start_chainage": 1014389.0
+        },
+        {
+          "end_chainage": 1014400.0,
+          "start_chainage": 1014390.0
+        },
+        {
+          "end_chainage": 1014410.0,
+          "start_chainage": 1014400.0
+        },
+        {
+          "end_chainage": 1014420.0,
+          "start_chainage": 1014410.0
+        },
+        {
+          "end_chainage": 1014441.0,
+          "start_chainage": 1014410.0
+        },
+        {
+          "end_chainage": 1014419.0,
+          "start_chainage": 1014419.0
+        },
+        {
+          "end_chainage": 1014449.0,
+          "start_chainage": 1014419.0
+        },
+        {
+          "end_chainage": 1014430.0,
+          "start_chainage": 1014420.0
+        },
+        {
+          "end_chainage": 1014440.0,
+          "start_chainage": 1014430.0
+        },
+        {
+          "end_chainage": 1014431.0,
+          "start_chainage": 1014431.0
+        },
+        {
+          "end_chainage": 1014445.0,
+          "start_chainage": 1014431.0
+        },
+        {
+          "end_chainage": 1014437.0,
+          "start_chainage": 1014437.0
+        },
+        {
+          "end_chainage": 1014438.0,
+          "start_chainage": 1014437.0
+        },
+        {
+          "end_chainage": 1014438.0,
+          "start_chainage": 1014438.0
+        },
+        {
+          "end_chainage": 1014439.0,
+          "start_chainage": 1014438.0
+        },
+        {
+          "end_chainage": 1014441.0,
+          "start_chainage": 1014439.0
+        },
+        {
+          "end_chainage": 1014450.0,
+          "start_chainage": 1014440.0
+        },
+        {
+          "end_chainage": 1014441.0,
+          "start_chainage": 1014441.0
+        },
+        {
+          "end_chainage": 1014442.0,
+          "start_chainage": 1014441.0
+        },
+        {
+          "end_chainage": 1014471.0,
+          "start_chainage": 1014441.0
+        },
+        {
+          "end_chainage": 1014444.0,
+          "start_chainage": 1014442.0
+        },
+        {
+          "end_chainage": 1014446.0,
+          "start_chainage": 1014444.0
+        },
+        {
+          "end_chainage": 1014476.0,
+          "start_chainage": 1014445.0
+        },
+        {
+          "end_chainage": 1014446.0,
+          "start_chainage": 1014446.0
+        },
+        {
+          "end_chainage": 1014447.0,
+          "start_chainage": 1014446.0
+        },
+        {
+          "end_chainage": 1014448.0,
+          "start_chainage": 1014447.0
+        },
+        {
+          "end_chainage": 1014460.0,
+          "start_chainage": 1014450.0
+        },
+        {
+          "end_chainage": 1014512.0,
+          "start_chainage": 1014455.0
+        },
+        {
+          "end_chainage": 1014470.0,
+          "start_chainage": 1014460.0
+        },
+        {
+          "end_chainage": 1014480.0,
+          "start_chainage": 1014470.0
+        },
+        {
+          "end_chainage": 1014501.0,
+          "start_chainage": 1014471.0
+        },
+        {
+          "end_chainage": 1014494.0,
+          "start_chainage": 1014476.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-11-06",
+      "later_evidence": [],
+      "task_id": "stage7_main_task_022",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013922.0,
+          "start_chainage": 1013886.0
+        },
+        {
+          "end_chainage": 1013921.0,
+          "start_chainage": 1013920.0
+        },
+        {
+          "end_chainage": 1013930.0,
+          "start_chainage": 1013920.0
+        },
+        {
+          "end_chainage": 1013921.0,
+          "start_chainage": 1013921.0
+        },
+        {
+          "end_chainage": 1013922.0,
+          "start_chainage": 1013921.0
+        },
+        {
+          "end_chainage": 1013923.0,
+          "start_chainage": 1013922.0
+        },
+        {
+          "end_chainage": 1013938.0,
+          "start_chainage": 1013922.0
+        },
+        {
+          "end_chainage": 1013924.0,
+          "start_chainage": 1013923.0
+        },
+        {
+          "end_chainage": 1013926.0,
+          "start_chainage": 1013924.0
+        },
+        {
+          "end_chainage": 1013926.0,
+          "start_chainage": 1013926.0
+        },
+        {
+          "end_chainage": 1013927.0,
+          "start_chainage": 1013926.0
+        },
+        {
+          "end_chainage": 1013927.0,
+          "start_chainage": 1013927.0
+        },
+        {
+          "end_chainage": 1013928.0,
+          "start_chainage": 1013927.0
+        },
+        {
+          "end_chainage": 1013929.0,
+          "start_chainage": 1013929.0
+        },
+        {
+          "end_chainage": 1013943.0,
+          "start_chainage": 1013929.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-09",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_286f9e5cb8ea3835ba56976e_e0001",
+          "later_available_time": "2023-12-10",
+          "later_supported_fact_summary": "{\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+359 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"无充填张开＞1.0\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014359.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+359 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014359.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_286f9e5cb8ea3835ba56976e_e0002",
+          "later_available_time": "2023-12-10",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"FORECAST_SEGMENT\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"正文水文观察\":\"滴渗水\",\"水状态类型\":\"滴渗水\",\"节理裂隙发育\":\"节理裂隙发育\",\"观察范围类型\":\"FORECAST_SEGMENT\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩体 破碎，层间结合差，掌子面滴渗水，存在掉块现象，岩质硬，板理产状：N22°E67°S\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "forecast_segment",
+            "end_chainage": 1014389.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014 Ⅳ +359~DyK1014+389",
+            "start_chainage": 1014359.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_ba88f6fa9c1322ffb400b974_e0001",
+          "later_available_time": "2023-12-11",
+          "later_supported_fact_summary": "{\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+359 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"无充填张开＞1.0\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014359.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+359 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014359.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_ba88f6fa9c1322ffb400b974_e0002",
+          "later_available_time": "2023-12-11",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"FORECAST_SEGMENT\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"正文水文观察\":\"滴渗水\",\"水状态类型\":\"滴渗水\",\"节理裂隙发育\":\"节理裂隙发育\",\"观察范围类型\":\"FORECAST_SEGMENT\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩体 破碎，层间结合差，掌子面滴渗水，存在掉块现象，岩质硬，板理产状：N33°E62°S\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "forecast_segment",
+            "end_chainage": 1014366.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014 Ⅳ +359~DyK1014+366",
+            "start_chainage": 1014359.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_023",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014380.0,
+          "start_chainage": 1014352.0
+        },
+        {
+          "end_chainage": 1014366.0,
+          "start_chainage": 1014358.0
+        },
+        {
+          "end_chainage": 1014370.0,
+          "start_chainage": 1014360.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-17",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_26329a21844828d7f27d1512_e0001",
+          "later_available_time": "2023-12-18",
+          "later_supported_fact_summary": "{\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+471 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"无充填张开＞1.0\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014471.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+471 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014471.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_26329a21844828d7f27d1512_e0002",
+          "later_available_time": "2023-12-18",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"FORECAST_SEGMENT\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"正文水文观察\":\"滴渗水\",\"水状态类型\":\"滴渗水\",\"节理裂隙发育\":\"节理裂隙发育\",\"观察范围类型\":\"FORECAST_SEGMENT\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩体 破碎,层间结合差，掌子面滴渗水，存在掉块现象，岩质硬，板理产状：N21°W/63°S\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "forecast_segment",
+            "end_chainage": 1014501.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014 Ⅳ +471~DyK1014+501",
+            "start_chainage": 1014471.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_cae21ab80a31f71dbe3e20e9_e0001",
+          "later_available_time": "2023-12-19",
+          "later_supported_fact_summary": "{\"地质描述\":\"开挖面 地质概况 当前掌子面地层岩性为石炭二叠系板岩夹变质砂岩，矿物成分以石英、长 石为主，钙质胶结。围岩整体弱风化，岩质硬，节理裂隙发育，岩体破碎,层间 结合差，掌子面滴渗水，存在掉块现象。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_face_chainage_cell",
+            "end_chainage": 1014455.0,
+            "kind": "POINT",
+            "raw_expression": "1014455.0",
+            "start_chainage": 1014455.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_cae21ab80a31f71dbe3e20e9_e0002",
+          "later_available_time": "2023-12-19",
+          "later_supported_fact_summary": "{\"地质结论\":\"该段围岩与当前掌子面相当。岩 性为板岩夹变质砂岩，弱风化， 节理裂隙发育，岩体破碎。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"建议围岩等级\":\"Ⅳ级\",\"异常原文\":\"该段无明显反射异常\",\"异常等级\":\"NONE\",\"节理裂隙发育\":\"节理裂隙发育\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_forecast_table_row",
+            "end_chainage": 1014512.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014+455 ~ DyK1014+512",
+            "start_chainage": 1014455.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_024",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014471.0,
+          "start_chainage": 1014441.0
+        },
+        {
+          "end_chainage": 1014476.0,
+          "start_chainage": 1014445.0
+        },
+        {
+          "end_chainage": 1014470.0,
+          "start_chainage": 1014460.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-14",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_c6033d47fac60b63875a730d_e0001",
+          "later_available_time": "2023-12-16",
+          "later_supported_fact_summary": "{\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+441 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"无充填张开＞1.0\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014441.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+441 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014441.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_c6033d47fac60b63875a730d_e0002",
+          "later_available_time": "2023-12-16",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"FORECAST_SEGMENT\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"正文水文观察\":\"滴渗水\",\"水状态类型\":\"滴渗水\",\"节理裂隙发育\":\"节理裂隙发育\",\"观察范围类型\":\"FORECAST_SEGMENT\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩体 破碎,层间结合差，掌子面滴渗水，存在掉块现象，岩质硬，板理产状：N18°E/57°S\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "forecast_segment",
+            "end_chainage": 1014471.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014 Ⅳ +441~DyK1014+471",
+            "start_chainage": 1014441.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_99cb24b0b45c767bece0fac1_e0001",
+          "later_available_time": "2023-12-17",
+          "later_supported_fact_summary": "{\"地质描述\":\"开挖面 地质概况 当前掌子面地层岩性为石炭二叠系板岩夹变质砂岩，矿物成分以石英、长 石为主，钙质胶结。围岩整体弱风化，岩质硬，节理裂隙发育密集，岩体破碎, 层间结合差，掌子面滴渗水，存在掉块现象。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_face_chainage_cell",
+            "end_chainage": 1014431.0,
+            "kind": "POINT",
+            "raw_expression": "1014431.0",
+            "start_chainage": 1014431.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_99cb24b0b45c767bece0fac1_e0002",
+          "later_available_time": "2023-12-17",
+          "later_supported_fact_summary": "{\"地质结论\":\"该段围岩与当前掌子面相当。岩 性为板岩夹变质砂岩，弱风化， 节理裂隙发育，岩体破碎。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"建议围岩等级\":\"Ⅳ级\",\"异常原文\":\"该段无明显反射异常\",\"异常等级\":\"NONE\",\"节理裂隙发育\":\"节理裂隙发育\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_forecast_table_row",
+            "end_chainage": 1014445.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014+431 ~ DyK1014+445",
+            "start_chainage": 1014431.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_99cb24b0b45c767bece0fac1_e0003",
+          "later_available_time": "2023-12-17",
+          "later_supported_fact_summary": "{\"地质结论\":\"该段围岩较前段变差。岩性为板 岩夹变质砂岩，弱风化，岩质软 硬不均，节理裂隙发育密集，岩 体破碎，裂隙层间结合度差。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"建议围岩等级\":\"Ⅳ级\",\"异常原文\":\"该段存在较明显反射异常\",\"异常等级\":\"MODERATE\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"风化程度\":\"弱风化\",\"风险提示\":\"里程+448、 +458、+470 附近有掉块 风险\",\"风险点里程\":[1014448.0,1014458.0,1014470.0]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_forecast_table_row",
+            "end_chainage": 1014476.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014+445 ~ DyK1014+476",
+            "start_chainage": 1014445.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_cae21ab80a31f71dbe3e20e9_e0001",
+          "later_available_time": "2023-12-19",
+          "later_supported_fact_summary": "{\"地质描述\":\"开挖面 地质概况 当前掌子面地层岩性为石炭二叠系板岩夹变质砂岩，矿物成分以石英、长 石为主，钙质胶结。围岩整体弱风化，岩质硬，节理裂隙发育，岩体破碎,层间 结合差，掌子面滴渗水，存在掉块现象。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_face_chainage_cell",
+            "end_chainage": 1014455.0,
+            "kind": "POINT",
+            "raw_expression": "1014455.0",
+            "start_chainage": 1014455.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_cae21ab80a31f71dbe3e20e9_e0002",
+          "later_available_time": "2023-12-19",
+          "later_supported_fact_summary": "{\"地质结论\":\"该段围岩与当前掌子面相当。岩 性为板岩夹变质砂岩，弱风化， 节理裂隙发育，岩体破碎。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"建议围岩等级\":\"Ⅳ级\",\"异常原文\":\"该段无明显反射异常\",\"异常等级\":\"NONE\",\"节理裂隙发育\":\"节理裂隙发育\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_forecast_table_row",
+            "end_chainage": 1014512.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014+455 ~ DyK1014+512",
+            "start_chainage": 1014455.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_025",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014317.0,
+          "start_chainage": 1014266.0
+        },
+        {
+          "end_chainage": 1014329.0,
+          "start_chainage": 1014299.0
+        },
+        {
+          "end_chainage": 1014320.0,
+          "start_chainage": 1014310.0
+        },
+        {
+          "end_chainage": 1014323.0,
+          "start_chainage": 1014317.0
+        },
+        {
+          "end_chainage": 1014330.0,
+          "start_chainage": 1014320.0
+        },
+        {
+          "end_chainage": 1014335.0,
+          "start_chainage": 1014323.0
+        },
+        {
+          "end_chainage": 1014329.0,
+          "start_chainage": 1014329.0
+        },
+        {
+          "end_chainage": 1014359.0,
+          "start_chainage": 1014329.0
+        },
+        {
+          "end_chainage": 1014340.0,
+          "start_chainage": 1014330.0
+        },
+        {
+          "end_chainage": 1014340.0,
+          "start_chainage": 1014335.0
+        },
+        {
+          "end_chainage": 1014350.0,
+          "start_chainage": 1014340.0
+        },
+        {
+          "end_chainage": 1014358.0,
+          "start_chainage": 1014340.0
+        },
+        {
+          "end_chainage": 1014341.0,
+          "start_chainage": 1014341.0
+        },
+        {
+          "end_chainage": 1014352.0,
+          "start_chainage": 1014341.0
+        },
+        {
+          "end_chainage": 1014360.0,
+          "start_chainage": 1014350.0
+        },
+        {
+          "end_chainage": 1014380.0,
+          "start_chainage": 1014352.0
+        },
+        {
+          "end_chainage": 1014366.0,
+          "start_chainage": 1014358.0
+        },
+        {
+          "end_chainage": 1014359.0,
+          "start_chainage": 1014359.0
+        },
+        {
+          "end_chainage": 1014366.0,
+          "start_chainage": 1014359.0
+        },
+        {
+          "end_chainage": 1014389.0,
+          "start_chainage": 1014359.0
+        },
+        {
+          "end_chainage": 1014370.0,
+          "start_chainage": 1014360.0
+        },
+        {
+          "end_chainage": 1014380.0,
+          "start_chainage": 1014370.0
+        },
+        {
+          "end_chainage": 1014390.0,
+          "start_chainage": 1014380.0
+        },
+        {
+          "end_chainage": 1014410.0,
+          "start_chainage": 1014380.0
+        },
+        {
+          "end_chainage": 1014389.0,
+          "start_chainage": 1014389.0
+        },
+        {
+          "end_chainage": 1014419.0,
+          "start_chainage": 1014389.0
+        },
+        {
+          "end_chainage": 1014400.0,
+          "start_chainage": 1014390.0
+        },
+        {
+          "end_chainage": 1014410.0,
+          "start_chainage": 1014400.0
+        },
+        {
+          "end_chainage": 1014412.0,
+          "start_chainage": 1014410.0
+        },
+        {
+          "end_chainage": 1014420.0,
+          "start_chainage": 1014410.0
+        },
+        {
+          "end_chainage": 1014441.0,
+          "start_chainage": 1014410.0
+        },
+        {
+          "end_chainage": 1014414.0,
+          "start_chainage": 1014412.0
+        },
+        {
+          "end_chainage": 1014414.0,
+          "start_chainage": 1014414.0
+        },
+        {
+          "end_chainage": 1014415.0,
+          "start_chainage": 1014415.0
+        },
+        {
+          "end_chainage": 1014419.0,
+          "start_chainage": 1014417.0
+        },
+        {
+          "end_chainage": 1014419.0,
+          "start_chainage": 1014419.0
+        },
+        {
+          "end_chainage": 1014421.0,
+          "start_chainage": 1014419.0
+        },
+        {
+          "end_chainage": 1014449.0,
+          "start_chainage": 1014419.0
+        },
+        {
+          "end_chainage": 1014430.0,
+          "start_chainage": 1014420.0
+        },
+        {
+          "end_chainage": 1014423.0,
+          "start_chainage": 1014421.0
+        },
+        {
+          "end_chainage": 1014425.0,
+          "start_chainage": 1014423.0
+        },
+        {
+          "end_chainage": 1014425.0,
+          "start_chainage": 1014424.0
+        },
+        {
+          "end_chainage": 1014426.0,
+          "start_chainage": 1014425.0
+        },
+        {
+          "end_chainage": 1014428.0,
+          "start_chainage": 1014426.0
+        },
+        {
+          "end_chainage": 1014440.0,
+          "start_chainage": 1014430.0
+        },
+        {
+          "end_chainage": 1014450.0,
+          "start_chainage": 1014440.0
+        },
+        {
+          "end_chainage": 1014460.0,
+          "start_chainage": 1014450.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-11-10",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_0cbd80f2f12b2b7c126cc4cb_e0001",
+          "later_available_time": "2023-11-13",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体较破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅲ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+966.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；线状出水\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它500\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅲ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙较发育，岩体较破碎，该段洞身左右两侧边墙与岩层产状形成不 利结构面，左侧边墙节理裂隙发育相对密集，层间结合一般，左右边墙存在轻微掉块现象，见滴渗水~线状出水， 当前段落发育石英脉体，岩质硬，在撑靴作用下易形成应力集中释放点，存在掉块风险\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013966.6,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+966.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013966.6
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_026",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013974.0,
+          "start_chainage": 1013943.0
+        },
+        {
+          "end_chainage": 1013952.0,
+          "start_chainage": 1013950.0
+        },
+        {
+          "end_chainage": 1013960.0,
+          "start_chainage": 1013950.0
+        },
+        {
+          "end_chainage": 1013952.0,
+          "start_chainage": 1013952.0
+        },
+        {
+          "end_chainage": 1013953.0,
+          "start_chainage": 1013952.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-09-23",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_4bfb59b96dd77affde7668ba_e0001",
+          "later_available_time": "2023-09-24",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+290.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"渗滴水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"渗滴水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱 风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙发育密集，存在轻微掉块 现象，岩体相对破碎，掌子面拱顶见渗滴水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013290.2,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+290.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013290.2
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_027",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013320.0,
+          "start_chainage": 1013273.0
+        },
+        {
+          "end_chainage": 1013290.0,
+          "start_chainage": 1013280.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-10-22",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_44ad9e1bbc5923d99bfbf395_e0001",
+          "later_available_time": "2023-10-23",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+768.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙较发 育，存在掉块现象，岩体相对破碎，拱顶见滴渗水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013768.6,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+768.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013768.6
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_d4d239117cf91c326097d573_e0001",
+          "later_available_time": "2023-10-24",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+790.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，左右两侧边墙节理 裂隙较发育，存在掉块现象，岩体相对破碎，拱顶见滴渗水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013790.2,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+790.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013790.2
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_6e942e09ef8e4f22d0ea76aa_e0001",
+          "later_available_time": "2023-10-25",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+813.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，左右两侧边墙节理 裂隙较发育，存在掉块现象，岩体相对破碎，拱顶见滴渗水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013813.6,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+813.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013813.6
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_28d57b5baaf883772b83b6e8_e0001",
+          "later_available_time": "2023-10-27",
+          "later_supported_fact_summary": "{\"地质描述\":\"开挖面 地质概况 掌子面附近已开挖段地层岩性为石炭二叠系板岩夹变质砂岩，围岩整体弱 风化，岩质软硬不均，节理裂隙发育，岩体破碎，拱顶右侧及右侧边墙节理裂 隙发育密集，存在掉块现象，见股状出水，围岩自稳性较差。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_face_chainage_cell",
+            "end_chainage": 1013845.0,
+            "kind": "POINT",
+            "raw_expression": "1013845.0",
+            "start_chainage": 1013845.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_28d57b5baaf883772b83b6e8_e0002",
+          "later_available_time": "2023-10-27",
+          "later_supported_fact_summary": "{\"地质结论\":\"该段围岩与当前掌子面相当。岩 性为板岩夹变质砂岩，弱风化， 岩质软硬不均，节理裂隙发育， 岩体破碎，围岩整体稳定性较差\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"建议围岩等级\":\"Ⅳ级\",\"异常原文\":\"该段无明显反射异常\",\"异常等级\":\"NONE\",\"节理裂隙发育\":\"节理裂隙发育\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_forecast_table_row",
+            "end_chainage": 1013886.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1013+845 ~ DyK1013+886",
+            "start_chainage": 1013845.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_768ef42847f6d8bfa5af2a91_e0001",
+          "later_available_time": "2023-10-27",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+840.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"线-股状出水；股状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"线-股状出水；股状出水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它2000\",\"表单水状态附加值\":\"2000\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，当前里程拱顶右侧 及右侧边墙节理裂隙发育密集，层间结合差，存在掉块现象，见线-股状出水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013840.6,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+840.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013840.6
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_38c8f84450aaa7ae237ae63c_e0001",
+          "later_available_time": "2023-10-28",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+851.4 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"线-股状出水；股状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"线-股状出水；股状出水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它2000\",\"表单水状态附加值\":\"2000\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，当前里程拱顶右侧 及右侧边墙节理裂隙发育密集，层间结合差，存在掉块现象，见线-股状出水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013851.4,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+851.4 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013851.4
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_028",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013660.0,
+          "start_chainage": 1013636.0
+        },
+        {
+          "end_chainage": 1013660.0,
+          "start_chainage": 1013650.0
+        },
+        {
+          "end_chainage": 1013670.0,
+          "start_chainage": 1013660.0
+        },
+        {
+          "end_chainage": 1013691.0,
+          "start_chainage": 1013660.0
+        },
+        {
+          "end_chainage": 1013680.0,
+          "start_chainage": 1013670.0
+        },
+        {
+          "end_chainage": 1013674.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013736.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013674.4,
+          "start_chainage": 1013674.4
+        },
+        {
+          "end_chainage": 1013690.0,
+          "start_chainage": 1013680.0
+        },
+        {
+          "end_chainage": 1013700.0,
+          "start_chainage": 1013690.0
+        },
+        {
+          "end_chainage": 1013701.6,
+          "start_chainage": 1013691.0
+        },
+        {
+          "end_chainage": 1013710.0,
+          "start_chainage": 1013700.0
+        },
+        {
+          "end_chainage": 1013701.0,
+          "start_chainage": 1013701.0
+        },
+        {
+          "end_chainage": 1013720.0,
+          "start_chainage": 1013710.0
+        },
+        {
+          "end_chainage": 1013730.0,
+          "start_chainage": 1013720.0
+        },
+        {
+          "end_chainage": 1013723.6,
+          "start_chainage": 1013723.6
+        },
+        {
+          "end_chainage": 1013740.0,
+          "start_chainage": 1013730.0
+        },
+        {
+          "end_chainage": 1013774.0,
+          "start_chainage": 1013736.0
+        },
+        {
+          "end_chainage": 1013750.0,
+          "start_chainage": 1013740.0
+        },
+        {
+          "end_chainage": 1013747.0,
+          "start_chainage": 1013747.0
+        },
+        {
+          "end_chainage": 1013760.0,
+          "start_chainage": 1013750.0
+        },
+        {
+          "end_chainage": 1013758.0,
+          "start_chainage": 1013756.0
+        },
+        {
+          "end_chainage": 1013760.0,
+          "start_chainage": 1013758.0
+        },
+        {
+          "end_chainage": 1013760.0,
+          "start_chainage": 1013760.0
+        },
+        {
+          "end_chainage": 1013761.0,
+          "start_chainage": 1013760.0
+        },
+        {
+          "end_chainage": 1013770.0,
+          "start_chainage": 1013760.0
+        },
+        {
+          "end_chainage": 1013763.0,
+          "start_chainage": 1013761.0
+        },
+        {
+          "end_chainage": 1013765.0,
+          "start_chainage": 1013763.0
+        },
+        {
+          "end_chainage": 1013764.0,
+          "start_chainage": 1013764.0
+        },
+        {
+          "end_chainage": 1013786.0,
+          "start_chainage": 1013764.0
+        },
+        {
+          "end_chainage": 1013767.0,
+          "start_chainage": 1013765.0
+        },
+        {
+          "end_chainage": 1013769.0,
+          "start_chainage": 1013767.0
+        },
+        {
+          "end_chainage": 1013770.0,
+          "start_chainage": 1013769.0
+        },
+        {
+          "end_chainage": 1013770.0,
+          "start_chainage": 1013770.0
+        },
+        {
+          "end_chainage": 1013780.0,
+          "start_chainage": 1013770.0
+        },
+        {
+          "end_chainage": 1013772.0,
+          "start_chainage": 1013771.0
+        },
+        {
+          "end_chainage": 1013773.0,
+          "start_chainage": 1013772.0
+        },
+        {
+          "end_chainage": 1013774.0,
+          "start_chainage": 1013773.0
+        },
+        {
+          "end_chainage": 1013775.0,
+          "start_chainage": 1013774.0
+        },
+        {
+          "end_chainage": 1013776.0,
+          "start_chainage": 1013775.0
+        },
+        {
+          "end_chainage": 1013778.0,
+          "start_chainage": 1013776.0
+        },
+        {
+          "end_chainage": 1013779.0,
+          "start_chainage": 1013778.0
+        },
+        {
+          "end_chainage": 1013780.0,
+          "start_chainage": 1013779.0
+        },
+        {
+          "end_chainage": 1013781.0,
+          "start_chainage": 1013780.0
+        },
+        {
+          "end_chainage": 1013790.0,
+          "start_chainage": 1013780.0
+        },
+        {
+          "end_chainage": 1013781.0,
+          "start_chainage": 1013781.0
+        },
+        {
+          "end_chainage": 1013783.0,
+          "start_chainage": 1013781.0
+        },
+        {
+          "end_chainage": 1013864.0,
+          "start_chainage": 1013786.0
+        },
+        {
+          "end_chainage": 1013800.0,
+          "start_chainage": 1013790.0
+        },
+        {
+          "end_chainage": 1013810.0,
+          "start_chainage": 1013800.0
+        },
+        {
+          "end_chainage": 1013820.0,
+          "start_chainage": 1013810.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-11-18",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_636ad293c952180054cc36a6_e0001",
+          "later_available_time": "2023-11-19",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体较破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅲ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+038.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；线状出水\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它500\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅲ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙较发育，岩体较破碎，该段洞身左右两侧边墙与岩层产状形成不 利结构面，左侧边墙节理裂隙发育相对密集，层间结合一般，左右边墙存在轻微掉块现象，见滴渗水~线状出水， 当前段落发育石英脉体，岩质硬，存在掉块风险\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014038.6,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+038.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014038.6
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_029",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014021.0,
+          "start_chainage": 1014019.0
+        },
+        {
+          "end_chainage": 1014056.0,
+          "start_chainage": 1014019.0
+        },
+        {
+          "end_chainage": 1014029.0,
+          "start_chainage": 1014020.0
+        },
+        {
+          "end_chainage": 1014030.0,
+          "start_chainage": 1014020.0
+        },
+        {
+          "end_chainage": 1014021.0,
+          "start_chainage": 1014021.0
+        },
+        {
+          "end_chainage": 1014024.0,
+          "start_chainage": 1014023.0
+        },
+        {
+          "end_chainage": 1014025.0,
+          "start_chainage": 1014024.0
+        },
+        {
+          "end_chainage": 1014027.0,
+          "start_chainage": 1014025.0
+        },
+        {
+          "end_chainage": 1014029.0,
+          "start_chainage": 1014027.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-17",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_26329a21844828d7f27d1512_e0001",
+          "later_available_time": "2023-12-18",
+          "later_supported_fact_summary": "{\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+471 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"无充填张开＞1.0\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014471.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+471 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014471.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_26329a21844828d7f27d1512_e0002",
+          "later_available_time": "2023-12-18",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"FORECAST_SEGMENT\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"正文水文观察\":\"滴渗水\",\"水状态类型\":\"滴渗水\",\"节理裂隙发育\":\"节理裂隙发育\",\"观察范围类型\":\"FORECAST_SEGMENT\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩体 破碎,层间结合差，掌子面滴渗水，存在掉块现象，岩质硬，板理产状：N21°W/63°S\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "forecast_segment",
+            "end_chainage": 1014501.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014 Ⅳ +471~DyK1014+501",
+            "start_chainage": 1014471.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_cae21ab80a31f71dbe3e20e9_e0001",
+          "later_available_time": "2023-12-19",
+          "later_supported_fact_summary": "{\"地质描述\":\"开挖面 地质概况 当前掌子面地层岩性为石炭二叠系板岩夹变质砂岩，矿物成分以石英、长 石为主，钙质胶结。围岩整体弱风化，岩质硬，节理裂隙发育，岩体破碎,层间 结合差，掌子面滴渗水，存在掉块现象。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_face_chainage_cell",
+            "end_chainage": 1014455.0,
+            "kind": "POINT",
+            "raw_expression": "1014455.0",
+            "start_chainage": 1014455.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_cae21ab80a31f71dbe3e20e9_e0002",
+          "later_available_time": "2023-12-19",
+          "later_supported_fact_summary": "{\"地质结论\":\"该段围岩与当前掌子面相当。岩 性为板岩夹变质砂岩，弱风化， 节理裂隙发育，岩体破碎。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"建议围岩等级\":\"Ⅳ级\",\"异常原文\":\"该段无明显反射异常\",\"异常等级\":\"NONE\",\"节理裂隙发育\":\"节理裂隙发育\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_forecast_table_row",
+            "end_chainage": 1014512.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014+455 ~ DyK1014+512",
+            "start_chainage": 1014455.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_030",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014471.0,
+          "start_chainage": 1014441.0
+        },
+        {
+          "end_chainage": 1014476.0,
+          "start_chainage": 1014445.0
+        },
+        {
+          "end_chainage": 1014460.0,
+          "start_chainage": 1014450.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-10-08",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_52cacac91fb5b92032fa961d_e0001",
+          "later_available_time": "2023-10-10",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+485.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；滴渗水-线状出水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；滴渗水-线状出水；线状出水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱 风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙发育密集，存在掉块现象， 岩体相对破碎，拱顶见滴渗水-线状出水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013485.2,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+485.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013485.2
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_031",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013506.0,
+          "start_chainage": 1013466.0
+        },
+        {
+          "end_chainage": 1013480.0,
+          "start_chainage": 1013470.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-17",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_26329a21844828d7f27d1512_e0001",
+          "later_available_time": "2023-12-18",
+          "later_supported_fact_summary": "{\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+471 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"无充填张开＞1.0\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014471.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+471 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014471.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_26329a21844828d7f27d1512_e0002",
+          "later_available_time": "2023-12-18",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"FORECAST_SEGMENT\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"正文水文观察\":\"滴渗水\",\"水状态类型\":\"滴渗水\",\"节理裂隙发育\":\"节理裂隙发育\",\"观察范围类型\":\"FORECAST_SEGMENT\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩体 破碎,层间结合差，掌子面滴渗水，存在掉块现象，岩质硬，板理产状：N21°W/63°S\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "forecast_segment",
+            "end_chainage": 1014501.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014 Ⅳ +471~DyK1014+501",
+            "start_chainage": 1014471.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_cae21ab80a31f71dbe3e20e9_e0001",
+          "later_available_time": "2023-12-19",
+          "later_supported_fact_summary": "{\"地质描述\":\"开挖面 地质概况 当前掌子面地层岩性为石炭二叠系板岩夹变质砂岩，矿物成分以石英、长 石为主，钙质胶结。围岩整体弱风化，岩质硬，节理裂隙发育，岩体破碎,层间 结合差，掌子面滴渗水，存在掉块现象。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_face_chainage_cell",
+            "end_chainage": 1014455.0,
+            "kind": "POINT",
+            "raw_expression": "1014455.0",
+            "start_chainage": 1014455.0
+          }
+        },
+        {
+          "epistemic_status": "FORECAST",
+          "evidence_id": "doc_cae21ab80a31f71dbe3e20e9_e0002",
+          "later_available_time": "2023-12-19",
+          "later_supported_fact_summary": "{\"地质结论\":\"该段围岩与当前掌子面相当。岩 性为板岩夹变质砂岩，弱风化， 节理裂隙发育，岩体破碎。\",\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"建议围岩等级\":\"Ⅳ级\",\"异常原文\":\"该段无明显反射异常\",\"异常等级\":\"NONE\",\"节理裂隙发育\":\"节理裂隙发育\",\"风化程度\":\"弱风化\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "SONIC_FORECAST",
+          "spatial_scope": {
+            "basis": "hsp_forecast_table_row",
+            "end_chainage": 1014512.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014+455 ~ DyK1014+512",
+            "start_chainage": 1014455.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_032",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014335.0,
+          "start_chainage": 1014323.0
+        },
+        {
+          "end_chainage": 1014359.0,
+          "start_chainage": 1014329.0
+        },
+        {
+          "end_chainage": 1014340.0,
+          "start_chainage": 1014330.0
+        },
+        {
+          "end_chainage": 1014340.0,
+          "start_chainage": 1014335.0
+        },
+        {
+          "end_chainage": 1014350.0,
+          "start_chainage": 1014340.0
+        },
+        {
+          "end_chainage": 1014358.0,
+          "start_chainage": 1014340.0
+        },
+        {
+          "end_chainage": 1014341.0,
+          "start_chainage": 1014341.0
+        },
+        {
+          "end_chainage": 1014352.0,
+          "start_chainage": 1014341.0
+        },
+        {
+          "end_chainage": 1014360.0,
+          "start_chainage": 1014350.0
+        },
+        {
+          "end_chainage": 1014380.0,
+          "start_chainage": 1014352.0
+        },
+        {
+          "end_chainage": 1014366.0,
+          "start_chainage": 1014358.0
+        },
+        {
+          "end_chainage": 1014359.0,
+          "start_chainage": 1014359.0
+        },
+        {
+          "end_chainage": 1014366.0,
+          "start_chainage": 1014359.0
+        },
+        {
+          "end_chainage": 1014389.0,
+          "start_chainage": 1014359.0
+        },
+        {
+          "end_chainage": 1014370.0,
+          "start_chainage": 1014360.0
+        },
+        {
+          "end_chainage": 1014380.0,
+          "start_chainage": 1014370.0
+        },
+        {
+          "end_chainage": 1014390.0,
+          "start_chainage": 1014380.0
+        },
+        {
+          "end_chainage": 1014410.0,
+          "start_chainage": 1014380.0
+        },
+        {
+          "end_chainage": 1014389.0,
+          "start_chainage": 1014389.0
+        },
+        {
+          "end_chainage": 1014419.0,
+          "start_chainage": 1014389.0
+        },
+        {
+          "end_chainage": 1014400.0,
+          "start_chainage": 1014390.0
+        },
+        {
+          "end_chainage": 1014410.0,
+          "start_chainage": 1014400.0
+        },
+        {
+          "end_chainage": 1014420.0,
+          "start_chainage": 1014410.0
+        },
+        {
+          "end_chainage": 1014441.0,
+          "start_chainage": 1014410.0
+        },
+        {
+          "end_chainage": 1014419.0,
+          "start_chainage": 1014419.0
+        },
+        {
+          "end_chainage": 1014449.0,
+          "start_chainage": 1014419.0
+        },
+        {
+          "end_chainage": 1014430.0,
+          "start_chainage": 1014420.0
+        },
+        {
+          "end_chainage": 1014440.0,
+          "start_chainage": 1014430.0
+        },
+        {
+          "end_chainage": 1014431.0,
+          "start_chainage": 1014431.0
+        },
+        {
+          "end_chainage": 1014445.0,
+          "start_chainage": 1014431.0
+        },
+        {
+          "end_chainage": 1014450.0,
+          "start_chainage": 1014440.0
+        },
+        {
+          "end_chainage": 1014471.0,
+          "start_chainage": 1014441.0
+        },
+        {
+          "end_chainage": 1014476.0,
+          "start_chainage": 1014445.0
+        },
+        {
+          "end_chainage": 1014460.0,
+          "start_chainage": 1014450.0
+        },
+        {
+          "end_chainage": 1014470.0,
+          "start_chainage": 1014460.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-10-19",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_c07b0a00996054098b2a9fb7_e0001",
+          "later_available_time": "2023-10-20",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+701 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙较发 育，存在掉块现象，岩体相对破碎，拱顶见滴渗水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013701.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+701 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013701.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_00e536fe7ea614a87b155918_e0001",
+          "later_available_time": "2023-10-21",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+723.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙较发 育，存在掉块现象，岩体相对破碎，拱顶见滴渗水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013723.6,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+723.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013723.6
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_033",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013660.0,
+          "start_chainage": 1013636.0
+        },
+        {
+          "end_chainage": 1013660.0,
+          "start_chainage": 1013650.0
+        },
+        {
+          "end_chainage": 1013656.0,
+          "start_chainage": 1013654.0
+        },
+        {
+          "end_chainage": 1013656.0,
+          "start_chainage": 1013656.0
+        },
+        {
+          "end_chainage": 1013658.0,
+          "start_chainage": 1013656.0
+        },
+        {
+          "end_chainage": 1013659.0,
+          "start_chainage": 1013658.0
+        },
+        {
+          "end_chainage": 1013660.0,
+          "start_chainage": 1013659.0
+        },
+        {
+          "end_chainage": 1013662.0,
+          "start_chainage": 1013660.0
+        },
+        {
+          "end_chainage": 1013670.0,
+          "start_chainage": 1013660.0
+        },
+        {
+          "end_chainage": 1013691.0,
+          "start_chainage": 1013660.0
+        },
+        {
+          "end_chainage": 1013663.0,
+          "start_chainage": 1013662.0
+        },
+        {
+          "end_chainage": 1013665.0,
+          "start_chainage": 1013663.0
+        },
+        {
+          "end_chainage": 1013667.0,
+          "start_chainage": 1013665.0
+        },
+        {
+          "end_chainage": 1013668.0,
+          "start_chainage": 1013667.0
+        },
+        {
+          "end_chainage": 1013669.0,
+          "start_chainage": 1013668.0
+        },
+        {
+          "end_chainage": 1013669.0,
+          "start_chainage": 1013669.0
+        },
+        {
+          "end_chainage": 1013671.0,
+          "start_chainage": 1013669.0
+        },
+        {
+          "end_chainage": 1013680.0,
+          "start_chainage": 1013670.0
+        },
+        {
+          "end_chainage": 1013672.0,
+          "start_chainage": 1013671.0
+        },
+        {
+          "end_chainage": 1013674.0,
+          "start_chainage": 1013672.0
+        },
+        {
+          "end_chainage": 1013674.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013675.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013736.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013676.0,
+          "start_chainage": 1013675.0
+        },
+        {
+          "end_chainage": 1013678.0,
+          "start_chainage": 1013676.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-19",
+      "later_evidence": [],
+      "task_id": "stage7_main_task_034",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014335.0,
+          "start_chainage": 1014323.0
+        },
+        {
+          "end_chainage": 1014359.0,
+          "start_chainage": 1014329.0
+        },
+        {
+          "end_chainage": 1014340.0,
+          "start_chainage": 1014330.0
+        },
+        {
+          "end_chainage": 1014340.0,
+          "start_chainage": 1014335.0
+        },
+        {
+          "end_chainage": 1014350.0,
+          "start_chainage": 1014340.0
+        },
+        {
+          "end_chainage": 1014358.0,
+          "start_chainage": 1014340.0
+        },
+        {
+          "end_chainage": 1014341.0,
+          "start_chainage": 1014341.0
+        },
+        {
+          "end_chainage": 1014352.0,
+          "start_chainage": 1014341.0
+        },
+        {
+          "end_chainage": 1014360.0,
+          "start_chainage": 1014350.0
+        },
+        {
+          "end_chainage": 1014380.0,
+          "start_chainage": 1014352.0
+        },
+        {
+          "end_chainage": 1014366.0,
+          "start_chainage": 1014358.0
+        },
+        {
+          "end_chainage": 1014359.0,
+          "start_chainage": 1014359.0
+        },
+        {
+          "end_chainage": 1014366.0,
+          "start_chainage": 1014359.0
+        },
+        {
+          "end_chainage": 1014389.0,
+          "start_chainage": 1014359.0
+        },
+        {
+          "end_chainage": 1014370.0,
+          "start_chainage": 1014360.0
+        },
+        {
+          "end_chainage": 1014380.0,
+          "start_chainage": 1014370.0
+        },
+        {
+          "end_chainage": 1014390.0,
+          "start_chainage": 1014380.0
+        },
+        {
+          "end_chainage": 1014410.0,
+          "start_chainage": 1014380.0
+        },
+        {
+          "end_chainage": 1014389.0,
+          "start_chainage": 1014389.0
+        },
+        {
+          "end_chainage": 1014419.0,
+          "start_chainage": 1014389.0
+        },
+        {
+          "end_chainage": 1014400.0,
+          "start_chainage": 1014390.0
+        },
+        {
+          "end_chainage": 1014410.0,
+          "start_chainage": 1014400.0
+        },
+        {
+          "end_chainage": 1014420.0,
+          "start_chainage": 1014410.0
+        },
+        {
+          "end_chainage": 1014441.0,
+          "start_chainage": 1014410.0
+        },
+        {
+          "end_chainage": 1014419.0,
+          "start_chainage": 1014419.0
+        },
+        {
+          "end_chainage": 1014449.0,
+          "start_chainage": 1014419.0
+        },
+        {
+          "end_chainage": 1014430.0,
+          "start_chainage": 1014420.0
+        },
+        {
+          "end_chainage": 1014440.0,
+          "start_chainage": 1014430.0
+        },
+        {
+          "end_chainage": 1014431.0,
+          "start_chainage": 1014431.0
+        },
+        {
+          "end_chainage": 1014445.0,
+          "start_chainage": 1014431.0
+        },
+        {
+          "end_chainage": 1014437.0,
+          "start_chainage": 1014437.0
+        },
+        {
+          "end_chainage": 1014438.0,
+          "start_chainage": 1014437.0
+        },
+        {
+          "end_chainage": 1014438.0,
+          "start_chainage": 1014438.0
+        },
+        {
+          "end_chainage": 1014439.0,
+          "start_chainage": 1014438.0
+        },
+        {
+          "end_chainage": 1014441.0,
+          "start_chainage": 1014439.0
+        },
+        {
+          "end_chainage": 1014450.0,
+          "start_chainage": 1014440.0
+        },
+        {
+          "end_chainage": 1014441.0,
+          "start_chainage": 1014441.0
+        },
+        {
+          "end_chainage": 1014442.0,
+          "start_chainage": 1014441.0
+        },
+        {
+          "end_chainage": 1014471.0,
+          "start_chainage": 1014441.0
+        },
+        {
+          "end_chainage": 1014444.0,
+          "start_chainage": 1014442.0
+        },
+        {
+          "end_chainage": 1014446.0,
+          "start_chainage": 1014444.0
+        },
+        {
+          "end_chainage": 1014476.0,
+          "start_chainage": 1014445.0
+        },
+        {
+          "end_chainage": 1014446.0,
+          "start_chainage": 1014446.0
+        },
+        {
+          "end_chainage": 1014447.0,
+          "start_chainage": 1014446.0
+        },
+        {
+          "end_chainage": 1014448.0,
+          "start_chainage": 1014447.0
+        },
+        {
+          "end_chainage": 1014460.0,
+          "start_chainage": 1014450.0
+        },
+        {
+          "end_chainage": 1014512.0,
+          "start_chainage": 1014455.0
+        },
+        {
+          "end_chainage": 1014470.0,
+          "start_chainage": 1014460.0
+        },
+        {
+          "end_chainage": 1014480.0,
+          "start_chainage": 1014470.0
+        },
+        {
+          "end_chainage": 1014501.0,
+          "start_chainage": 1014471.0
+        },
+        {
+          "end_chainage": 1014494.0,
+          "start_chainage": 1014476.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-10-12",
+      "later_evidence": [],
+      "task_id": "stage7_main_task_035",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013530.0,
+          "start_chainage": 1013520.0
+        },
+        {
+          "end_chainage": 1013540.0,
+          "start_chainage": 1013525.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-11-29",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_7ed00e3e8e47fe30a31ae44c_e0001",
+          "later_available_time": "2023-12-01",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+225.8 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水；线状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水；线状出水\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩体破碎，层间结合差，左两侧边墙节理裂隙较发育-发育， 存在轻微掉块现象，见滴渗水~线状出水，岩质硬，板理产状：N51°E/34°S\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014225.8,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+225.8 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014225.8
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_036",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014199.0,
+          "start_chainage": 1014187.0
+        },
+        {
+          "end_chainage": 1014192.0,
+          "start_chainage": 1014190.0
+        },
+        {
+          "end_chainage": 1014200.0,
+          "start_chainage": 1014190.0
+        },
+        {
+          "end_chainage": 1014193.0,
+          "start_chainage": 1014192.0
+        },
+        {
+          "end_chainage": 1014194.0,
+          "start_chainage": 1014193.0
+        },
+        {
+          "end_chainage": 1014194.0,
+          "start_chainage": 1014194.0
+        },
+        {
+          "end_chainage": 1014195.0,
+          "start_chainage": 1014194.0
+        },
+        {
+          "end_chainage": 1014196.0,
+          "start_chainage": 1014195.0
+        },
+        {
+          "end_chainage": 1014196.0,
+          "start_chainage": 1014196.0
+        },
+        {
+          "end_chainage": 1014198.0,
+          "start_chainage": 1014196.0
+        },
+        {
+          "end_chainage": 1014198.0,
+          "start_chainage": 1014197.0
+        },
+        {
+          "end_chainage": 1014199.0,
+          "start_chainage": 1014198.0
+        },
+        {
+          "end_chainage": 1014199.0,
+          "start_chainage": 1014199.0
+        },
+        {
+          "end_chainage": 1014201.0,
+          "start_chainage": 1014199.0
+        },
+        {
+          "end_chainage": 1014209.0,
+          "start_chainage": 1014199.0
+        },
+        {
+          "end_chainage": 1014231.0,
+          "start_chainage": 1014199.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-09-23",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_4bfb59b96dd77affde7668ba_e0001",
+          "later_available_time": "2023-09-24",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+290.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"渗滴水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"渗滴水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱 风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙发育密集，存在轻微掉块 现象，岩体相对破碎，掌子面拱顶见渗滴水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013290.2,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+290.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013290.2
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_037",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013290.2,
+          "start_chainage": 1013265.0
+        },
+        {
+          "end_chainage": 1013280.0,
+          "start_chainage": 1013270.0
+        },
+        {
+          "end_chainage": 1013273.0,
+          "start_chainage": 1013273.0
+        },
+        {
+          "end_chainage": 1013320.0,
+          "start_chainage": 1013273.0
+        },
+        {
+          "end_chainage": 1013276.0,
+          "start_chainage": 1013275.0
+        },
+        {
+          "end_chainage": 1013277.0,
+          "start_chainage": 1013276.0
+        },
+        {
+          "end_chainage": 1013278.0,
+          "start_chainage": 1013277.0
+        },
+        {
+          "end_chainage": 1013278.0,
+          "start_chainage": 1013278.0
+        },
+        {
+          "end_chainage": 1013280.0,
+          "start_chainage": 1013278.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-09-23",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_4bfb59b96dd77affde7668ba_e0001",
+          "later_available_time": "2023-09-24",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+290.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"渗滴水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"渗滴水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱 风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙发育密集，存在轻微掉块 现象，岩体相对破碎，掌子面拱顶见渗滴水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013290.2,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+290.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013290.2
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_038",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013320.0,
+          "start_chainage": 1013273.0
+        },
+        {
+          "end_chainage": 1013290.0,
+          "start_chainage": 1013280.0
+        },
+        {
+          "end_chainage": 1013300.0,
+          "start_chainage": 1013290.0
+        },
+        {
+          "end_chainage": 1013310.0,
+          "start_chainage": 1013300.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-10-27",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_38c8f84450aaa7ae237ae63c_e0001",
+          "later_available_time": "2023-10-28",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+851.4 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"线-股状出水；股状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"线-股状出水；股状出水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它2000\",\"表单水状态附加值\":\"2000\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，当前里程拱顶右侧 及右侧边墙节理裂隙发育密集，层间结合差，存在掉块现象，见线-股状出水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013851.4,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+851.4 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013851.4
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_ef1f13d1332945f7a370fa19_e0001",
+          "later_available_time": "2023-10-31",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+869.4 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"线-股状出水；股状出水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"线-股状出水；股状出水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"其它2000\",\"表单水状态附加值\":\"2000\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，当前里程拱顶右侧 及右侧边墙节理裂隙发育密集，层间结合差，存在掉块现象，见线-股状出水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013869.4,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+869.4 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013869.4
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_039",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013886.0,
+          "start_chainage": 1013845.0
+        },
+        {
+          "end_chainage": 1013860.0,
+          "start_chainage": 1013850.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-06",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_6590107c1bbf2ace92f8db04_e0001",
+          "later_available_time": "2023-12-07",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+329 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"自稳困难、要及时支护\",\"水状态类型\":\"滴渗水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"无充填张开＞1.0\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.06～0.2\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩 体破碎，层间结合差，右侧边墙节理裂隙较发育-发育，掌子面滴渗水，存在掉块现象，岩质硬， 板理产状：N32°E65°S\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014329.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+329 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014329.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_6590107c1bbf2ace92f8db04_e0002",
+          "later_available_time": "2023-12-07",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"CURRENT_EXCAVATED_INTERVAL\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"观察范围类型\":\"CURRENT_EXCAVATED_INTERVAL\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "current_excavated_interval",
+            "end_chainage": 1014359.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014+329~DyK1014+359",
+            "start_chainage": 1014329.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_040",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014317.0,
+          "start_chainage": 1014266.0
+        },
+        {
+          "end_chainage": 1014329.0,
+          "start_chainage": 1014299.0
+        },
+        {
+          "end_chainage": 1014302.0,
+          "start_chainage": 1014300.0
+        },
+        {
+          "end_chainage": 1014310.0,
+          "start_chainage": 1014300.0
+        },
+        {
+          "end_chainage": 1014304.0,
+          "start_chainage": 1014302.0
+        },
+        {
+          "end_chainage": 1014304.0,
+          "start_chainage": 1014304.0
+        },
+        {
+          "end_chainage": 1014305.0,
+          "start_chainage": 1014304.0
+        },
+        {
+          "end_chainage": 1014306.0,
+          "start_chainage": 1014305.0
+        },
+        {
+          "end_chainage": 1014306.0,
+          "start_chainage": 1014306.0
+        },
+        {
+          "end_chainage": 1014307.0,
+          "start_chainage": 1014306.0
+        },
+        {
+          "end_chainage": 1014309.0,
+          "start_chainage": 1014307.0
+        },
+        {
+          "end_chainage": 1014309.0,
+          "start_chainage": 1014309.0
+        },
+        {
+          "end_chainage": 1014310.0,
+          "start_chainage": 1014309.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-12-06",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_6590107c1bbf2ace92f8db04_e0001",
+          "later_available_time": "2023-12-07",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1014+329 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"自稳困难、要及时支护\",\"水状态类型\":\"滴渗水\",\"结构面延伸性\":\"差\",\"结构面张开性\":\"无充填张开＞1.0\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.06～0.2\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"10～25偶有渗水\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质硬，节理裂隙发育，岩 体破碎，层间结合差，右侧边墙节理裂隙较发育-发育，掌子面滴渗水，存在掉块现象，岩质硬， 板理产状：N32°E65°S\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1014329.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1014+329 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1014329.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_6590107c1bbf2ace92f8db04_e0002",
+          "later_available_time": "2023-12-07",
+          "later_supported_fact_summary": "{\"原文语句角色\":\"CURRENT_EXCAVATED_INTERVAL\",\"岩性\":\"板岩夹变质砂岩\",\"异常等级\":\"NONE\",\"观察范围类型\":\"CURRENT_EXCAVATED_INTERVAL\"}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "current_excavated_interval",
+            "end_chainage": 1014359.0,
+            "kind": "INTERVAL",
+            "raw_expression": "DyK1014+329~DyK1014+359",
+            "start_chainage": 1014329.0
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_041",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014317.0,
+          "start_chainage": 1014266.0
+        },
+        {
+          "end_chainage": 1014329.0,
+          "start_chainage": 1014299.0
+        },
+        {
+          "end_chainage": 1014302.0,
+          "start_chainage": 1014300.0
+        },
+        {
+          "end_chainage": 1014310.0,
+          "start_chainage": 1014300.0
+        },
+        {
+          "end_chainage": 1014304.0,
+          "start_chainage": 1014302.0
+        },
+        {
+          "end_chainage": 1014304.0,
+          "start_chainage": 1014304.0
+        },
+        {
+          "end_chainage": 1014305.0,
+          "start_chainage": 1014304.0
+        },
+        {
+          "end_chainage": 1014306.0,
+          "start_chainage": 1014305.0
+        },
+        {
+          "end_chainage": 1014306.0,
+          "start_chainage": 1014306.0
+        },
+        {
+          "end_chainage": 1014307.0,
+          "start_chainage": 1014306.0
+        },
+        {
+          "end_chainage": 1014309.0,
+          "start_chainage": 1014307.0
+        },
+        {
+          "end_chainage": 1014309.0,
+          "start_chainage": 1014309.0
+        },
+        {
+          "end_chainage": 1014310.0,
+          "start_chainage": 1014309.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-09-23",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_4bfb59b96dd77affde7668ba_e0001",
+          "later_available_time": "2023-09-24",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"轻微掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+290.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"渗滴水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"渗滴水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙发育密集\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱 风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙发育密集，存在轻微掉块 现象，岩体相对破碎，掌子面拱顶见渗滴水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013290.2,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+290.2 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013290.2
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_042",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013290.2,
+          "start_chainage": 1013265.0
+        },
+        {
+          "end_chainage": 1013280.0,
+          "start_chainage": 1013270.0
+        },
+        {
+          "end_chainage": 1013273.0,
+          "start_chainage": 1013273.0
+        },
+        {
+          "end_chainage": 1013320.0,
+          "start_chainage": 1013273.0
+        },
+        {
+          "end_chainage": 1013276.0,
+          "start_chainage": 1013275.0
+        },
+        {
+          "end_chainage": 1013277.0,
+          "start_chainage": 1013276.0
+        },
+        {
+          "end_chainage": 1013278.0,
+          "start_chainage": 1013277.0
+        },
+        {
+          "end_chainage": 1013278.0,
+          "start_chainage": 1013278.0
+        },
+        {
+          "end_chainage": 1013280.0,
+          "start_chainage": 1013278.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-11-22",
+      "later_evidence": [],
+      "task_id": "stage7_main_task_043",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014106.0,
+          "start_chainage": 1014098.0
+        },
+        {
+          "end_chainage": 1014101.0,
+          "start_chainage": 1014100.0
+        },
+        {
+          "end_chainage": 1014110.0,
+          "start_chainage": 1014100.0
+        },
+        {
+          "end_chainage": 1014102.0,
+          "start_chainage": 1014102.0
+        },
+        {
+          "end_chainage": 1014103.0,
+          "start_chainage": 1014102.0
+        },
+        {
+          "end_chainage": 1014105.0,
+          "start_chainage": 1014103.0
+        },
+        {
+          "end_chainage": 1014105.0,
+          "start_chainage": 1014105.0
+        },
+        {
+          "end_chainage": 1014115.0,
+          "start_chainage": 1014106.0
+        },
+        {
+          "end_chainage": 1014109.0,
+          "start_chainage": 1014109.0
+        },
+        {
+          "end_chainage": 1014122.0,
+          "start_chainage": 1014109.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-10-19",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_c07b0a00996054098b2a9fb7_e0001",
+          "later_available_time": "2023-10-20",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+701 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙较发 育，存在掉块现象，岩体相对破碎，拱顶见滴渗水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013701.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+701 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013701.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_00e536fe7ea614a87b155918_e0001",
+          "later_available_time": "2023-10-21",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+723.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙较发 育，存在掉块现象，岩体相对破碎，拱顶见滴渗水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013723.6,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+723.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013723.6
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_044",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013691.0,
+          "start_chainage": 1013660.0
+        },
+        {
+          "end_chainage": 1013671.0,
+          "start_chainage": 1013669.0
+        },
+        {
+          "end_chainage": 1013680.0,
+          "start_chainage": 1013670.0
+        },
+        {
+          "end_chainage": 1013672.0,
+          "start_chainage": 1013671.0
+        },
+        {
+          "end_chainage": 1013674.0,
+          "start_chainage": 1013672.0
+        },
+        {
+          "end_chainage": 1013674.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013675.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013736.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013676.0,
+          "start_chainage": 1013675.0
+        },
+        {
+          "end_chainage": 1013678.0,
+          "start_chainage": 1013676.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-10-19",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_c07b0a00996054098b2a9fb7_e0001",
+          "later_available_time": "2023-10-20",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+701 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙较发 育，存在掉块现象，岩体相对破碎，拱顶见滴渗水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013701.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+701 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013701.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_00e536fe7ea614a87b155918_e0001",
+          "later_available_time": "2023-10-21",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+723.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙较发 育，存在掉块现象，岩体相对破碎，拱顶见滴渗水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013723.6,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+723.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013723.6
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_045",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013691.0,
+          "start_chainage": 1013660.0
+        },
+        {
+          "end_chainage": 1013671.0,
+          "start_chainage": 1013669.0
+        },
+        {
+          "end_chainage": 1013680.0,
+          "start_chainage": 1013670.0
+        },
+        {
+          "end_chainage": 1013672.0,
+          "start_chainage": 1013671.0
+        },
+        {
+          "end_chainage": 1013674.0,
+          "start_chainage": 1013672.0
+        },
+        {
+          "end_chainage": 1013674.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013675.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013736.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013676.0,
+          "start_chainage": 1013675.0
+        },
+        {
+          "end_chainage": 1013678.0,
+          "start_chainage": 1013676.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-10-19",
+      "later_evidence": [
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_c07b0a00996054098b2a9fb7_e0001",
+          "later_available_time": "2023-10-20",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+701 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙较发 育，存在掉块现象，岩体相对破碎，拱顶见滴渗水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013701.0,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+701 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013701.0
+          }
+        },
+        {
+          "epistemic_status": "OBSERVED",
+          "evidence_id": "doc_00e536fe7ea614a87b155918_e0001",
+          "later_available_time": "2023-10-21",
+          "later_supported_fact_summary": "{\"岩体状态\":\"岩体破碎\",\"岩性\":\"板岩夹变质砂岩\",\"岩溶发育程度\":\"无\",\"岩石强度\":\"30＜R≤60\",\"建议围岩等级\":\"Ⅳ级\",\"异常等级\":\"NONE\",\"掉块或坍塌\":\"掉块\",\"掌子面状态\":\"正面掉块\",\"掌子面里程原文\":\"里程：DyK1013+723.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部\",\"正文水文观察\":\"滴渗水\",\"毛开挖面状态\":\"随时间松弛、掉块\",\"水状态类型\":\"滴渗水\",\"稳定性\":\"自稳性较差\",\"结构面延伸性\":\"中等\",\"结构面张开性\":\"部分张开0.1～0.5\",\"结构面粗糙度\":\"平整光滑有擦痕\",\"结构面间距\":\"0.2～0.6\",\"节理裂隙发育\":\"节理裂隙较发育\",\"表单与正文水状态冲突\":true,\"表单勾选水状态\":\"25～125涌出或喷出\",\"表单水状态附加值\":\"500\",\"观察范围类型\":\"FACE_POINT\",\"设计围岩等级\":\"Ⅳ级\",\"风化程度\":\"弱风化\",\"风险原文\":[\"围岩整体弱风化，岩质软硬不均，节理裂隙发育，岩体破碎，呈碎石状压碎结构，拱顶节理裂隙较发 育，存在掉块现象，岩体相对破碎，拱顶见滴渗水，围岩自稳性较差\"]}",
+          "relationship_basis": "LATER_AVAILABLE_SPATIALLY_OVERLAPPING_EVIDENCE",
+          "source_type": "FACE_SKETCH",
+          "spatial_scope": {
+            "basis": "header_face_chainage",
+            "end_chainage": 1013723.6,
+            "kind": "POINT",
+            "raw_expression": "里程：DyK1013+723.6 地质预报单位：川藏铁路隧道超前地质预报项目部洛隆分部",
+            "start_chainage": 1013723.6
+          }
+        }
+      ],
+      "task_id": "stage7_main_task_046",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1013555.0,
+          "start_chainage": 1013540.0
+        },
+        {
+          "end_chainage": 1013560.0,
+          "start_chainage": 1013550.0
+        },
+        {
+          "end_chainage": 1013568.0,
+          "start_chainage": 1013555.0
+        },
+        {
+          "end_chainage": 1013570.0,
+          "start_chainage": 1013560.0
+        },
+        {
+          "end_chainage": 1013585.0,
+          "start_chainage": 1013568.0
+        },
+        {
+          "end_chainage": 1013580.0,
+          "start_chainage": 1013570.0
+        },
+        {
+          "end_chainage": 1013575.0,
+          "start_chainage": 1013575.0
+        },
+        {
+          "end_chainage": 1013590.0,
+          "start_chainage": 1013580.0
+        },
+        {
+          "end_chainage": 1013625.0,
+          "start_chainage": 1013585.0
+        },
+        {
+          "end_chainage": 1013600.0,
+          "start_chainage": 1013590.0
+        },
+        {
+          "end_chainage": 1013610.0,
+          "start_chainage": 1013600.0
+        },
+        {
+          "end_chainage": 1013601.6,
+          "start_chainage": 1013601.6
+        },
+        {
+          "end_chainage": 1013628.0,
+          "start_chainage": 1013601.6
+        },
+        {
+          "end_chainage": 1013605.0,
+          "start_chainage": 1013605.0
+        },
+        {
+          "end_chainage": 1013620.0,
+          "start_chainage": 1013610.0
+        },
+        {
+          "end_chainage": 1013630.0,
+          "start_chainage": 1013620.0
+        },
+        {
+          "end_chainage": 1013621.0,
+          "start_chainage": 1013621.0
+        },
+        {
+          "end_chainage": 1013636.0,
+          "start_chainage": 1013628.0
+        },
+        {
+          "end_chainage": 1013640.0,
+          "start_chainage": 1013630.0
+        },
+        {
+          "end_chainage": 1013660.0,
+          "start_chainage": 1013636.0
+        },
+        {
+          "end_chainage": 1013650.0,
+          "start_chainage": 1013640.0
+        },
+        {
+          "end_chainage": 1013644.4,
+          "start_chainage": 1013644.4
+        },
+        {
+          "end_chainage": 1013660.0,
+          "start_chainage": 1013650.0
+        },
+        {
+          "end_chainage": 1013656.0,
+          "start_chainage": 1013654.0
+        },
+        {
+          "end_chainage": 1013656.0,
+          "start_chainage": 1013656.0
+        },
+        {
+          "end_chainage": 1013658.0,
+          "start_chainage": 1013656.0
+        },
+        {
+          "end_chainage": 1013659.0,
+          "start_chainage": 1013658.0
+        },
+        {
+          "end_chainage": 1013660.0,
+          "start_chainage": 1013659.0
+        },
+        {
+          "end_chainage": 1013662.0,
+          "start_chainage": 1013660.0
+        },
+        {
+          "end_chainage": 1013670.0,
+          "start_chainage": 1013660.0
+        },
+        {
+          "end_chainage": 1013691.0,
+          "start_chainage": 1013660.0
+        },
+        {
+          "end_chainage": 1013663.0,
+          "start_chainage": 1013662.0
+        },
+        {
+          "end_chainage": 1013665.0,
+          "start_chainage": 1013663.0
+        },
+        {
+          "end_chainage": 1013667.0,
+          "start_chainage": 1013665.0
+        },
+        {
+          "end_chainage": 1013668.0,
+          "start_chainage": 1013667.0
+        },
+        {
+          "end_chainage": 1013669.0,
+          "start_chainage": 1013668.0
+        },
+        {
+          "end_chainage": 1013669.0,
+          "start_chainage": 1013669.0
+        },
+        {
+          "end_chainage": 1013671.0,
+          "start_chainage": 1013669.0
+        },
+        {
+          "end_chainage": 1013680.0,
+          "start_chainage": 1013670.0
+        },
+        {
+          "end_chainage": 1013672.0,
+          "start_chainage": 1013671.0
+        },
+        {
+          "end_chainage": 1013674.0,
+          "start_chainage": 1013672.0
+        },
+        {
+          "end_chainage": 1013674.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013675.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013736.0,
+          "start_chainage": 1013674.0
+        },
+        {
+          "end_chainage": 1013676.0,
+          "start_chainage": 1013675.0
+        },
+        {
+          "end_chainage": 1013678.0,
+          "start_chainage": 1013676.0
+        },
+        {
+          "end_chainage": 1013690.0,
+          "start_chainage": 1013680.0
+        },
+        {
+          "end_chainage": 1013700.0,
+          "start_chainage": 1013690.0
+        },
+        {
+          "end_chainage": 1013701.6,
+          "start_chainage": 1013691.0
+        },
+        {
+          "end_chainage": 1013710.0,
+          "start_chainage": 1013700.0
+        }
+      ]
+    },
+    {
+      "knowledge_as_of": "2023-11-22",
+      "later_evidence": [],
+      "task_id": "stage7_main_task_047",
+      "task_spatial_intervals": [
+        {
+          "end_chainage": 1014098.0,
+          "start_chainage": 1014079.0
+        },
+        {
+          "end_chainage": 1014090.0,
+          "start_chainage": 1014080.0
+        },
+        {
+          "end_chainage": 1014081.8,
+          "start_chainage": 1014081.8
+        },
+        {
+          "end_chainage": 1014089.0,
+          "start_chainage": 1014089.0
+        },
+        {
+          "end_chainage": 1014092.0,
+          "start_chainage": 1014090.0
+        },
+        {
+          "end_chainage": 1014100.0,
+          "start_chainage": 1014090.0
+        },
+        {
+          "end_chainage": 1014092.0,
+          "start_chainage": 1014092.0
+        },
+        {
+          "end_chainage": 1014093.0,
+          "start_chainage": 1014092.0
+        },
+        {
+          "end_chainage": 1014094.0,
+          "start_chainage": 1014093.0
+        },
+        {
+          "end_chainage": 1014095.0,
+          "start_chainage": 1014094.0
+        },
+        {
+          "end_chainage": 1014096.0,
+          "start_chainage": 1014095.0
+        },
+        {
+          "end_chainage": 1014098.0,
+          "start_chainage": 1014096.0
+        },
+        {
+          "end_chainage": 1014098.0,
+          "start_chainage": 1014098.0
+        },
+        {
+          "end_chainage": 1014106.0,
+          "start_chainage": 1014098.0
+        },
+        {
+          "end_chainage": 1014099.0,
+          "start_chainage": 1014099.0
+        },
+        {
+          "end_chainage": 1014100.0,
+          "start_chainage": 1014099.0
+        },
+        {
+          "end_chainage": 1014101.0,
+          "start_chainage": 1014100.0
+        },
+        {
+          "end_chainage": 1014110.0,
+          "start_chainage": 1014100.0
+        },
+        {
+          "end_chainage": 1014102.0,
+          "start_chainage": 1014102.0
+        },
+        {
+          "end_chainage": 1014103.0,
+          "start_chainage": 1014102.0
+        },
+        {
+          "end_chainage": 1014105.0,
+          "start_chainage": 1014103.0
+        },
+        {
+          "end_chainage": 1014105.0,
+          "start_chainage": 1014105.0
+        },
+        {
+          "end_chainage": 1014115.0,
+          "start_chainage": 1014106.0
+        },
+        {
+          "end_chainage": 1014109.0,
+          "start_chainage": 1014109.0
+        },
+        {
+          "end_chainage": 1014122.0,
+          "start_chainage": 1014109.0
+        }
+      ]
+    }
+  ],
+  "schema_version": "stage7c_human_evaluation_packet.v1.1"
+}

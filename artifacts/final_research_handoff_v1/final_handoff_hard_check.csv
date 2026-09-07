@@ -1,0 +1,16 @@
+check_name,status,details
+all_final_tags_resolved,PASS,"{'stage4': '472070a8aadb19c74f67dae63f95cd02e070e530', 'stage5a': '27426c2385425abe1921b9b4c92c2d023dedfff8', 'stage5b': '0be7a85ed6f5bcea31b82af9e1e8380037b3dd34', 'stage5c': '89bae5ca37c8802fcec6b3f53c36083a4328427f', 'stage6a': '0119c2408a5ef1f86823287aec89f70ad507a6b2', 'stage6b': 'ecf0fc47cd2f1f4a8bb5a962c32caaa7c5284550', 'stage7a': '6007afe7c1b1228d6638503afeba979ee2f66878', 'stage7b': '38da398b3c5edc8e3e5f8180273f1f04fdff4fbb', 'stage7c': 'b12567dcbba4206016bafebe2405a0e4652fdc58', 'stage7d': 'cdcf63e4f525ac5f2950906b4497a1d0fa93d5ab', 'stage7e': '25df4be17edb89ad669d2a7255e65b6b5fa8acbc', 'stage7f': '4eb234f242ed4dd281d52cf95a8a892ed35c1d91'}"
+all_final_commits_resolved,PASS,resolved=12
+all_paper_numbers_traceable,PASS,entries=49
+no_source_unknown,PASS,traceability contains no unresolved source
+frozen_claim_counts,PASS,8679=6279+2400
+no_superseded_numeric_drift_as_current,PASS,legacy 149 appears only in the superseded registry or as a negated warning
+a1_not_executable,PASS,A1 frozen boundary present
+twenty_m_stress_test,PASS,20m validity boundary present
+monitored_dates_not_consecutive,PASS,uses PLC-monitored construction dates
+grci_product_correct,PASS,product operator only in canonical documents
+grs_aggregation_correct,PASS,two-level aggregation present
+human_deferred_preserved,PASS,semantic endpoints remain deferred
+no_superseded_leakage,PASS,superseded claims only documented as forbidden
+no_api_or_llm_calls,PASS,"builder performs local file reads, hashing and Git inspection only"
+no_existing_file_deleted,PASS,missing=[]

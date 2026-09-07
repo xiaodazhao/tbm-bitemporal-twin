@@ -1,0 +1,14 @@
+check_name,details,status
+old_stage7d_v1_1_tag_unchanged,0dfb31d15717f6ff76d434c5496d7bb577dc687c,PASS
+old_stage7d_v1_1_artifact_hashes_valid,0,PASS
+old_stage7d_v1_1_tree_hash_stable,736dfd176cb6db4852bb04576624b499ceca9a483f88f730728b3aedfec71aa5,PASS
+revision_event_count_unchanged,53,PASS
+transition_rows_unchanged,975,PASS
+opportunity_added_unchanged,540,PASS
+abstain_to_expressible_unchanged,27,PASS
+observed_added_unchanged,36,PASS
+forecast_added_unchanged,504,PASS
+added_expressible_exact,454,PASS
+added_abstain_exact,86,PASS
+api_calls_zero,0,PASS
+llm_calls_zero,0,PASS

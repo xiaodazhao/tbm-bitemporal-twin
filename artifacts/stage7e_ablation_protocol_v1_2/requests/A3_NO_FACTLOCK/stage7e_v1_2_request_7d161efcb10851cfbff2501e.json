@@ -1,0 +1,35 @@
+{
+  "arm_internal": "A3_NO_FACTLOCK",
+  "chunk_id": "a3_chunk_2b353776c417b6e2aed87456",
+  "execution_status": "MATERIALIZED_NOT_SENT",
+  "inference_config": {
+    "api_key_env_var": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com",
+    "max_output_tokens": 4096,
+    "max_retries": 0,
+    "model": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "reasoning_effort": "none",
+    "sdk_max_retries": 0,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "messages": [
+    {
+      "content": "你负责把给定的结构化工程Claim逐条写成中文工程句子。每个输入claim_id必须恰好返回一次，不得增加、删除、合并或替换claim_id，不得形成章节叙事，不得使用外部知识。忠实保持给定值、已验证单位、空间范围、认识性质、状态角色和非概率限定。只返回严格JSON，字段为realizations；每项包含claim_id与sentence。\n",
+      "role": "system"
+    },
+    {
+      "content": "请依照给定顺序逐条表达以下结构化工程Claim，并保持claim_id一一对应。输入JSON如下：\n{\n  \"chunk_index\": 2,\n  \"claims\": [\n    {\n      \"claim_id\": \"typed_claim_1f0b3a58abc1d95caa188350\",\n      \"claim_type\": \"OBSERVED_GEOLOGICAL_CONDITION\",\n      \"claim_value\": \"{\\\"attribute_dimension\\\":null,\\\"attribute_name\\\":\\\"suggested_surrounding_rock_grade\\\",\\\"normalized_value\\\":\\\"Ⅳ级\\\",\\\"source_evidence_id\\\":\\\"doc_02523bc25efb424ef47e6e1b_e0001\\\"}\",\n      \"epistemic_status\": \"OBSERVED\",\n      \"nonprobabilistic_qualifier\": \"\",\n      \"order_index\": 16,\n      \"section_id\": \"geological_observed\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":null,\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":1013403.0,\\\"scope_basis\\\":\\\"header_face_chainage\\\",\\\"scope_kind\\\":\\\"LOCATED_POINT\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":null,\\\"valid_date\\\":null}\",\n      \"support_summary\": \"doc_02523bc25efb424ef47e6e1b_e0001\",\n      \"unit_verified\": false\n    },\n    {\n      \"claim_id\": \"typed_claim_30e029042bc1942f8cd7f616\",\n      \"claim_type\": \"OBSERVED_GEOLOGICAL_CONDITION\",\n      \"claim_value\": \"{\\\"attribute_dimension\\\":null,\\\"attribute_name\\\":\\\"joint_development\\\",\\\"normalized_value\\\":\\\"节理裂隙较发育\\\",\\\"source_evidence_id\\\":\\\"doc_02523bc25efb424ef47e6e1b_e0001\\\"}\",\n      \"epistemic_status\": \"OBSERVED\",\n      \"nonprobabilistic_qualifier\": \"\",\n      \"order_index\": 17,\n      \"section_id\": \"geological_observed\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":null,\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":1013403.0,\\\"scope_basis\\\":\\\"header_face_chainage\\\",\\\"scope_kind\\\":\\\"LOCATED_POINT\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":null,\\\"valid_date\\\":null}\",\n      \"support_summary\": \"doc_02523bc25efb424ef47e6e1b_e0001\",\n      \"unit_verified\": false\n    },\n    {\n      \"claim_id\": \"typed_claim_e17de7d9afa81d8a996d8db8\",\n      \"claim_type\": \"OBSERVED_GEOLOGICAL_CONDITION\",\n      \"claim_value\": \"{\\\"attribute_dimension\\\":null,\\\"attribute_name\\\":\\\"joint_spacing\\\",\\\"normalized_value\\\":\\\"0.2～0.6\\\",\\\"source_evidence_id\\\":\\\"doc_02523bc25efb424ef47e6e1b_e0001\\\"}\",\n      \"epistemic_status\": \"OBSERVED\",\n      \"nonprobabilistic_qualifier\": \"\",\n      \"order_index\": 18,\n      \"section_id\": \"geological_observed\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":null,\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":1013403.0,\\\"scope_basis\\\":\\\"header_face_chainage\\\",\\\"scope_kind\\\":\\\"LOCATED_POINT\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":null,\\\"valid_date\\\":null}\",\n      \"support_summary\": \"doc_02523bc25efb424ef47e6e1b_e0001\",\n      \"unit_verified\": false\n    },\n    {\n      \"claim_id\": \"typed_claim_f8404ad3d32abafee9851c7f\",\n      \"claim_type\": \"GEOLOGICAL_EVIDENCE_ATTENTION_REVIEW\",\n      \"claim_value\": \"{\\\"is_causal_estimate\\\":false,\\\"is_hazard_probability\\\":false,\\\"is_probability\\\":false,\\\"metric_name\\\":\\\"GRS\\\",\\\"metric_semantics\\\":\\\"GEOLOGICAL_EVIDENCE_ATTENTION_INDEX\\\",\\\"metric_status\\\":\\\"AVAILABLE\\\",\\\"metric_value\\\":0.611111111111111,\\\"source_metric_id\\\":\\\"state_grs_30c19ab1deac269310e068da\\\"}\",\n      \"epistemic_status\": \"\",\n      \"nonprobabilistic_qualifier\": \"NONPROBABILISTIC_ATTENTION\",\n      \"order_index\": 19,\n      \"section_id\": \"geological_attention\",\n      \"state_role\": \"DAILY_REVIEW_CELL\",\n      \"subject_scope\": \"{\\\"cell_id\\\":\\\"cell_1843a9337ceb7ea09519935e\\\",\\\"daily_state_id\\\":null,\\\"end_chainage\\\":null,\\\"point_chainage\\\":null,\\\"scope_basis\\\":\\\"stage5b_bitemporal_state_subject\\\",\\\"scope_kind\\\":\\\"CELL\\\",\\\"start_chainage\\\":null,\\\"state_role\\\":\\\"DAILY_REVIEW_CELL\\\",\\\"valid_date\\\":\\\"2023-10-02\\\"}\",\n      \"support_summary\": \"state_grs_30c19ab1deac269310e068da\",\n      \"unit_verified\": false\n    }\n  ],\n  \"product_type\": \"daily_review\"\n}\n",
+      "role": "user"
+    }
+  ],
+  "model": "deepseek-v4-flash",
+  "payload_hash": "7d161efcb10851cfbff2501e233766b5e702884aebbc6799f64afd394a10da42",
+  "provider": "deepseek",
+  "request_id": "stage7e_v1_2_request_7d161efcb10851cfbff2501e",
+  "request_scope": "chunk_002",
+  "system_prompt_hash": "061f8dd0116a0b38c0bec8107bddf6ca718709eeb899cdeed733989bc1d810d2",
+  "task_id": "stage7_main_task_003",
+  "user_prompt_hash": "1d1fec1fc5e0eca4f7fa830fc511f2af61c53b12753b08b321a12ac30478afb0"
+}

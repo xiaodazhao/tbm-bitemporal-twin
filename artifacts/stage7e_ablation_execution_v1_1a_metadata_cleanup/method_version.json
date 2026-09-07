@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-08-26T07:14:02.387902+00:00",
+  "method_version": "stage7e_ablation_execution_v1_1a_metadata_cleanup",
+  "new_api_calls": 0,
+  "new_deepseek_calls": 0,
+  "new_llm_calls": 0,
+  "numeric_evaluator": "engineering_decimal_tokens_v2",
+  "numeric_token_pattern": "(?<![\\d.])-?\\d+(?:\\.\\d+)?(?![\\d.])",
+  "operation": "REFERENCE_METADATA_INTERPRETATION_CLEANUP_ONLY",
+  "recommended_machine_result_summary": "artifacts/stage7e_ablation_execution_v1_1a_metadata_cleanup/stage7e_final_machine_result_summary.json",
+  "schema_version": "stage7e_final_machine_result_summary.v1.1a",
+  "semantic_replay_hash": "35536d668fcb65723cf777129baad3bd2df0c6115c934978e7253dbf7b5741dc",
+  "source_corrected_audit_commit": "7ffcd0921d89880d512f070596438f863666d60c",
+  "source_corrected_audit_tag": "stage7e-ablation-execution-v1.1-audit-corrected",
+  "source_execution_commit": "460c85268eaea121ad5325af9c384fc42bb71a0d",
+  "source_execution_tag": "stage7e-ablation-execution-v1-frozen"
+}

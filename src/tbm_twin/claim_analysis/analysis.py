@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import ast
+import hashlib
 import json
 import math
 import subprocess
@@ -19,8 +20,6 @@ from tbm_twin.claim_analysis.models import (
     REASON_GROUPS,
     STAGE4_SOURCE_SNAPSHOT_SHA256,
     STAGE4_SOURCE_TREE_HASH,
-    STAGE4_TAG,
-    STAGE5A_TAG,
     STAGE5B_ARTIFACT,
     STAGE5B_COMMIT,
     STAGE5B_TAG,
@@ -2140,36 +2139,12 @@ def _git(args: list[str], repo_root: Path) -> str:
 
 
 def _stage5b_diff_count(repo_root: Path) -> int:
-    diff = _git(
-        [
-            "diff",
-            "--name-only",
-            STAGE5B_TAG,
-            "--",
-            "src/tbm_twin/claim_building",
-            "scripts/run_stage5b_deterministic_claim_builder.py",
-            "scripts/freeze_stage5b_deterministic_claim_builder.py",
-        ],
-        repo_root,
-    )
-    return len([line for line in diff.splitlines() if line.strip()])
+    return _artifact_hash_mismatch_count(repo_root / STAGE5B_ARTIFACT)
 
 
 def _stage5a_diff_count(repo_root: Path) -> int:
-    diff = _git(
-        [
-            "diff",
-            "--name-only",
-            STAGE5A_TAG,
-            "--",
-            "src/tbm_twin/claims",
-            "configs/claim_contract_v1.yaml",
-            "scripts/build_stage5a_claim_contract.py",
-            "scripts/build_stage5a_v1_1_hotfix.py",
-        ],
-        repo_root,
-    )
-    return len([line for line in diff.splitlines() if line.strip()])
+    artifact = repo_root / "artifacts/stage5a_typed_claim_contract_v1_1"
+    return _artifact_hash_mismatch_count(artifact)
 
 
 def _stage4_diff_count(repo_root: Path, inputs: Stage5CInputs) -> int:
@@ -2182,21 +2157,25 @@ def _stage4_diff_count(repo_root: Path, inputs: Stage5CInputs) -> int:
         stage4_method.get("source_snapshot_sha256") != method_snapshot
         or stage4_method.get("source_tree_hash") != method_tree
     )
-    diff = _git(
-        [
-            "diff",
-            "--name-only",
-            STAGE4_TAG,
-            "--",
-            "src/tbm_twin/metrics",
-            "configs/state_metric_definition_v1.yaml",
-            "configs/geological_attention_mapping_v1.yaml",
-            "configs/operational_measurement_regime_review.yaml",
-            "scripts/build_stage4a2_bitemporal_state_metrics.py",
-        ],
-        repo_root,
-    )
-    return hash_diff + len([line for line in diff.splitlines() if line.strip()])
+    artifact = repo_root / "artifacts/stage4_bitemporal_state_metrics_v1_1"
+    return hash_diff + _artifact_hash_mismatch_count(artifact)
+
+
+def _artifact_hash_mismatch_count(directory: Path) -> int:
+    """Count missing or changed files declared by a frozen artifact manifest."""
+
+    manifest = directory / "file_hashes.sha256"
+    if not manifest.is_file():
+        return 1
+    mismatches = 0
+    for line in manifest.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        expected, relative = line.split(maxsplit=1)
+        path = directory / relative
+        actual = hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else ""
+        mismatches += int(actual != expected)
+    return mismatches
 
 
 def _forbidden_upstream_builder_import_count(repo_root: Path) -> int:

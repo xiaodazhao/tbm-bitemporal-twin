@@ -1,0 +1,22 @@
+{
+  "fact_lock_coverage": 0.8297455968688845,
+  "numeric_fact_lock_coverage": 0.9473684210526315,
+  "omitted_fact_lock_count": 174,
+  "omitted_numeric_fact_lock_count": 9,
+  "omitted_numeric_task_distribution": {
+    "stage7_main_task_002": 2,
+    "stage7_main_task_011": 1,
+    "stage7_main_task_047": 6
+  },
+  "scope_status_distribution": {
+    "NOT_EVALUABLE": 2,
+    "NOT_EXPLICIT": 108,
+    "PASS": 43
+  },
+  "total_fact_lock_count": 1022,
+  "total_numeric_fact_lock_count": 171,
+  "used_fact_lock_count": 848,
+  "used_numeric_drift_count": 0,
+  "used_numeric_exact_count": 162,
+  "used_numeric_fact_lock_count": 162
+}
