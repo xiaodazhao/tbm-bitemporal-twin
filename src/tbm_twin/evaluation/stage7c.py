@@ -1146,10 +1146,13 @@ def _statement_trace_table(
     task_by_id: dict[str, dict[str, Any]],
     preclaim_refs: dict[str, dict[str, Any]],
     repo_root: Path,
+    asof_binding_path: Path | None = None,
 ) -> tuple[list[dict[str, str]], list[dict[str, str]]]:
     condition_by_id = {row["condition_id"]: row for row in condition_rows}
     fact_locks_by_id = _fact_locks_by_id(repo_root)
-    task_trace_relations = _stage7a_asof_unit_trace_relations(repo_root, task_by_id)
+    task_trace_relations = _stage7a_asof_unit_trace_relations(
+        repo_root, task_by_id, asof_binding_path=asof_binding_path
+    )
     rows: list[dict[str, str]] = []
     cardinality_rows: list[dict[str, str]] = []
     for statement in statement_rows:
@@ -1263,11 +1266,15 @@ def _statement_trace_table(
 
 
 def _stage7a_asof_unit_trace_relations(
-    repo_root: Path, task_by_id: dict[str, dict[str, Any]]
+    repo_root: Path,
+    task_by_id: dict[str, dict[str, Any]],
+    *,
+    asof_binding_path: Path | None = None,
 ) -> dict[str, dict[str, Any]]:
     inputs = load_stage6b_inputs(repo_root)
     asof_rows = _read_csv(
-        repo_root
+        asof_binding_path
+        or repo_root
         / "artifacts/stage7a_experimental_protocol_v1_3/stage7_asof_evaluation_binding_manifest.csv"
     )
     asof_by_task = {row["benchmark_task_id"]: row for row in asof_rows}
@@ -2392,8 +2399,16 @@ def _has_probability_negation(text: str) -> bool:
         r"不.{0,4}等同于.{0,16}概率",
         r"不能解释为.{0,16}概率",
         r"不能.{0,4}解释为.{0,16}概率",
+        r"不能.{0,4}解读为.{0,16}概率",
+        r"不能.{0,8}推断.{0,16}概率",
         r"不可解释为.{0,16}概率",
         r"不可解读为.{0,16}概率",
+        r"不应.{0,24}(?:解释|解读|表述|作为|推断为).{0,16}概率",
+        r"不得.{0,24}(?:解释|解读|表述|作为|推断).{0,16}概率",
+        r"不宜.{0,24}(?:推断|解释|解读|表述|扩展为|生成).{0,16}概率",
+        r"不足以.{0,24}(?:得出|形成|推断|解释为).{0,16}概率",
+        r"不能.{0,24}得出.{0,16}概率",
+        r"不将.{0,24}(?:解释|解读|表述|作为).{0,16}概率",
         r"不应作为.{0,16}概率",
         r"不能作为.{0,16}概率",
         r"不用于.{0,16}概率",

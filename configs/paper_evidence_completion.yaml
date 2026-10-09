@@ -1,0 +1,76 @@
+method_version: paper_evidence_completion_v2
+random_seed: 20260914
+
+plc_episode_validation:
+  sample_count: 60
+  minimum_per_stratum: 5
+  context_padding_seconds: 120
+  minimum_iou_for_match: 0.5
+  boundary_tolerance_seconds: 60
+
+geology_field_validation:
+  samples_per_source_type: 20
+  fields:
+    - lithology
+    - weathering
+    - surrounding_rock_grade
+    - design_surrounding_rock_grade
+    - suggested_surrounding_rock_grade
+    - joint_development
+    - rock_mass_state
+    - stability
+    - water_type
+    - form_water_status
+    - narrative_water_observation
+    - block_fall_or_collapse
+    - deformation
+    - anomaly_level
+    - source_risk_text
+    - forecast_qualifiers
+
+construction_progression_review:
+  protocol_status: FROZEN_BEFORE_RESULT_INTERPRETATION
+  unit_of_analysis: DATE_CELL_STATE
+  required_state_role: DAILY_REVIEW_CELL
+  require_real_excavation_episode: true
+  require_operational_response: true
+  forecast_source_types:
+    - SONIC_FORECAST
+    - TSP_REPORT
+  observation_source_types:
+    - FACE_SKETCH
+  forecast_available_strictly_before_excavation_date: true
+  observation_available_by_excavation_date: true
+  primary_context_requires_same_observed_date: true
+  primary_context_requires_direct_scope_overlap: true
+  fixed_case_target_date: "2023-09-26"
+  fixed_case_chainage: 1013320.2
+  case_count: 3
+  comparison_dimensions:
+    lithology:
+      forecast_fields: [lithology]
+      observation_fields: [lithology]
+    weathering:
+      forecast_fields: [weathering]
+      observation_fields: [weathering]
+    surrounding_rock_grade:
+      forecast_fields: [suggested_grade, surrounding_rock_grade]
+      observation_fields: [suggested_surrounding_rock_grade, surrounding_rock_grade]
+    joint_development:
+      forecast_fields: [joint_development]
+      observation_fields: [joint_development]
+    rock_mass_state:
+      forecast_fields: [rock_mass_state]
+      observation_fields: [rock_mass_state]
+    stability:
+      forecast_fields: [stability]
+      observation_fields: [stability]
+    water_type:
+      forecast_fields: [water_type]
+      observation_fields: [water_type]
+    block_fall_or_collapse:
+      forecast_fields: [block_fall_or_collapse]
+      observation_fields: [block_fall_or_collapse]
+    deformation:
+      forecast_fields: [deformation]
+      observation_fields: [deformation]

@@ -133,6 +133,20 @@ def test_e10_attention_probability_promotion() -> None:
     assert evaluate_e10_attention_probability("GRCI不构成风险概率。").result == "PASS"
     assert evaluate_e10_attention_probability("RAI不直接代表风险概率。").result == "PASS"
     assert evaluate_e10_attention_probability("RAI不能直接解释为风险概率。").result == "PASS"
+    assert evaluate_e10_attention_probability("RAI、GRS、GRCI均不得解释为概率。").result == "PASS"
+    assert evaluate_e10_attention_probability("GRS不应解释为概率或因果估计。").result == "PASS"
+    assert evaluate_e10_attention_probability("不能据RAI推断风险概率或因果结论。").result == "PASS"
+    assert evaluate_e10_attention_probability("RAI不宜据此扩展为概率性结论。").result == "PASS"
+    assert evaluate_e10_attention_probability("RAI证据不足以形成概率性判断。").result == "PASS"
+    assert (
+        evaluate_e10_attention_probability(
+            "所给证据不足以对RAI进行评价;也不足以将任何指标解释为概率。"
+        ).result
+        == "PASS"
+    )
+    assert evaluate_e10_attention_probability("不能从RAI得出概率性结论。").result == "PASS"
+    assert evaluate_e10_attention_probability("不得据RAI推断风险概率。").result == "PASS"
+    assert evaluate_e10_attention_probability("不将RAI/GRS/GRCI解释为概率。").result == "PASS"
     assert (
         evaluate_e10_attention_probability(
             "GRCI=0.4",
